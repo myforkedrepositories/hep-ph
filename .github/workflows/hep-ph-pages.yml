@@ -1,0 +1,68 @@
+name: hep-ph network pages
+
+# Builds docs/ (served by GitHub Pages): one ranked hep-ph listing per announcement day for the
+# last 5 days, matched against the INSPIRE citation network of author 991924, plus docs/index.html.
+on:
+  schedule:
+    - cron: "17 12 * * 1-6"   # 07:17 Bogotá, after INSPIRE has harvested the previous announcement
+  workflow_dispatch:
+    inputs:
+      rebuild_network:
+        description: "Rebuild the INSPIRE network file even if it is recent"
+        type: boolean
+        default: false
+  push:
+    branches: [main, claude/charming-mccarthy-r3sl60]
+    paths: ["tools/**", ".github/workflows/hep-ph-pages.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hep-ph-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  AUTHOR: "991924"
+  NETWORK: data/inspire/network_991924.json
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build the citation network (hep-network-builder)
+        run: |
+          stale=$(python3 - <<'EOF'
+          import json, os, datetime
+          p = os.environ["NETWORK"]
+          if not os.path.exists(p): print("yes")
+          else:
+              b = datetime.date.fromisoformat(json.load(open(p))["built"])
+              print("yes" if (datetime.date.today() - b).days > 30 else "no")
+          EOF
+          )
+          if [ "$stale" = "yes" ] || [ "${{ inputs.rebuild_network }}" = "true" ]; then
+            python3 -I tools/build_network.py --author-recid "$AUTHOR" --max-authors 10 --out "$NETWORK.tmp"
+            mv "$NETWORK.tmp" "$NETWORK"
+          else
+            echo "network file is recent; keeping it"
+          fi
+
+      - name: Build the daily pages and the index (hep-ph-network-match)
+        run: python3 -I tools/build_site.py --network "$NETWORK" --site docs --days 5
+
+      - name: Commit the site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add docs "$NETWORK"
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "Update hep-ph network pages ($(date -u +%Y-%m-%d))"
+          git push origin HEAD:${{ github.ref_name }}
