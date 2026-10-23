@@ -5,6 +5,7 @@ name: hep-ph network pages
 on:
   schedule:
     - cron: "17 12 * * 1-6"   # 07:17 Bogotá, after INSPIRE has harvested the previous announcement
+    - cron: "47 18 * * 1-6"   # 13:47 Bogotá, fills days arXiv refused (HTTP 429) in the morning run
   workflow_dispatch:
     inputs:
       rebuild_network:

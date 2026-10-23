@@ -4,7 +4,8 @@
   python3 -I tools/build_site.py --network data/inspire/network_991924.json --site docs [--days 5]
 
 Days: the --days latest hep-ph announcement days dated before today (in --tz), read from
-arxiv.org/list/<cat>/recent and, when that page shows too few, earlier weekdays.
+arxiv.org/list/<cat>/recent (the last weekdays when that page cannot be fetched). A day whose
+listing cannot be fetched after --retries tries is left for the next run.
 A day's page is (re)built when it is missing or was built less than --settle days after the
 listing date (INSPIRE may not have harvested every paper yet). Pages of older days are kept
 and listed in the archive. Writes <site>/index.html, <site>/days.json and <site>/.nojekyll.
@@ -50,17 +51,19 @@ def summary(js, th):
 
 def index(site, man, net, args):
     e = html.escape
+    t = lambda x: e(re.sub(r"\$([^$]*)\$", lambda m: re.sub(r"[\\{}^_]", "", m.group(1)), x))   # plain text for $...$
     days = sorted(man.values(), key=lambda d: d["date"], reverse=True)
     cur, old = days[:args.days], days[args.days:]
     def card(d):
-        tops = "".join(f'<li><span class="sc">{t["score"]:.0f}</span> <a href="https://arxiv.org/abs/{e(t["arxiv"])}">{e(t["title"])}</a></li>'
-                       for t in d["top"]) or '<li class="none">No paper reached the threshold.</li>'
+        tops = "".join(f'<li><span class="sc">{x["score"]:.0f}</span> <a href="https://arxiv.org/abs/{e(x["arxiv"])}">{t(x["title"])}</a></li>'
+                       for x in d["top"]) or '<li class="none">No paper reached the threshold.</li>'
         wd = datetime.strptime(d["date"], "%Y-%m-%d").strftime("%A")
         return (f'<article class="day"><div class="when"><span class="wd">{wd}</span> {e(d["date"])}</div>'
                 f'<h2><a href="{e(d["page"])}">{d["nrel"]} of {d["nlist"]} papers match</a></h2><ol>{tops}</ol>'
                 f'<a class="open" href="{e(d["page"])}">Open the ranked listing →</a></article>')
     arch = "".join(f'<li><a href="{e(d["page"])}">{e(d["date"])}</a> · {d["nrel"]} of {d["nlist"]}</li>' for d in old)
     a = net["author"]; c = net["counts"]
+    who = " ".join(reversed(a["name"].split(", ", 1)))
     body = f"""{HEAD}<title>hep-ph Network Match</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -92,14 +95,14 @@ h3{{font-family:Spectral,Georgia,serif;font-weight:600;font-size:1.1rem;margin:0
 <div class="wrap">
 <header>
   <div class="eyebrow">arXiv {e(args.category)} · INSPIRE author {e(str(a["recid"]))}</div>
-  <h1>New {e(args.category)} papers close to the citation network of {e(a["name"])}</h1>
-  <p class="dek">The last {len(cur)} announcement days of the arXiv {e(args.category)} listing (new submissions, cross-lists and replacements), each ranked by how strongly a paper cites, shares references with or is written by members of the network. Scores run from 0 to 100; a page lists every paper scoring {args.threshold:g} or more.</p>
+  <h1>New {e(args.category)} papers close to the citation network of {e(who)}</h1>
+  <p class="dek">The last {len(cur)} announcement day{"s" if len(cur) != 1 else ""} of the arXiv {e(args.category)} listing (new submissions, cross-lists and replacements), each ranked by how strongly a paper cites, shares references with or is written by members of the network. Scores run from 0 to 100; a page lists every paper scoring {args.threshold:g} or more.</p>
 </header>
 <section class="days" aria-label="Latest announcement days">{"".join(card(d) for d in cur) or '<p>No pages yet.</p>'}</section>
 {f'<section><h3>Earlier days</h3><ul class="arch">{arch}</ul></section>' if arch else ''}
 <footer class="foot">
-  <p><b>Network.</b> {c["own"]} papers by {e(a["name"])} with at most {net["params"]["max_authors"]} authors and {c["external"]} papers by others around them ({c["coupled"]} by bibliographic coupling, {c["citing"]} important citing papers), built from INSPIRE-HEP on {e(net["built"])}. File: <a href="https://github.com/{e(args.repo)}/blob/main/{e(args.network)}">{e(os.path.basename(args.network))}</a>.</p>
-  <p><b>Method.</b> Pages made with the hep-network-builder and hep-ph-network-match tools in <a href="https://github.com/{e(args.repo)}/tree/main/tools">tools/</a>; rebuilt every weekday by a GitHub Actions workflow. Updated {time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())}.</p>
+  <p><b>Network.</b> {c["own"]} papers by {e(who)} with at most {net["params"]["max_authors"]} authors and {c["external"]} papers by others around them ({c["coupled"]} by bibliographic coupling, {c["citing"]} important citing papers), built from INSPIRE-HEP on {e(net["built"])}. File: <a href="https://github.com/{e(args.repo)}/blob/main/{e(args.network)}">{e(os.path.basename(args.network))}</a>.</p>
+  <p><b>Method.</b> Pages made with the hep-network-builder and hep-ph-network-match tools in <a href="https://github.com/{e(args.repo)}/tree/main/tools">tools/</a>; rebuilt twice a day, Monday to Saturday, by a GitHub Actions workflow. Updated {time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())}.</p>
 </footer>
 </div>
 </body>
@@ -115,6 +118,8 @@ def main():
     ap.add_argument("--settle", type=int, default=2, help="rebuild a page built less than this many days after its date")
     ap.add_argument("--repo", default=os.environ.get("GITHUB_REPOSITORY", "restrepo/hep-ph"))
     ap.add_argument("--work", default="hepph_work")
+    ap.add_argument("--retries", type=int, default=3, help="retries per day when arXiv or INSPIRE cannot be fetched")
+    ap.add_argument("--pause", type=int, default=90, help="seconds between days (multiplied on each retry)")
     args = ap.parse_args()
     os.makedirs(args.site, exist_ok=True)
     open(os.path.join(args.site, ".nojekyll"), "w").close()
@@ -123,30 +128,37 @@ def main():
     net = json.load(open(args.network))
 
     today = datetime.now(ZoneInfo(args.tz)).date()
-    cand = [d for d in recent_days(args.category) if d < today]
-    d = min(cand) if cand else today
-    while len(cand) < args.days + 6:              # earlier weekdays, in case 'recent' shows too few
-        d -= timedelta(days=1)
-        if d.weekday() < 5: cand.append(d)
-    cand = sorted(set(cand), reverse=True)
+    cand = sorted((d for d in recent_days(args.category) if d < today), reverse=True)
+    if not cand:                                  # 'recent' unreachable: assume weekdays are announcement days
+        d = today
+        while len(cand) < args.days:
+            d -= timedelta(days=1)
+            if d.weekday() < 5: cand.append(d)
+    cand = cand[:args.days]
 
-    done = 0
+    # arXiv answers 429 to bursts from cloud runners: pause between days, wait longer on each retry,
+    # and leave a day that still fails for the next run (an older day never takes its place).
+    first = True
     for d in cand:
-        if done >= args.days: break
         ds = d.isoformat(); page = f"hep-ph-{ds}.html"; out = os.path.join(args.site, page)
         old = man.get(ds)
         if old and old.get("nlist", 0) and os.path.exists(out) and \
            (date.fromisoformat(old["built"]) - d).days >= args.settle:
-            print(f"{ds}: up to date", file=sys.stderr); done += 1; continue
-        print(f"{ds}: building", file=sys.stderr)
-        p = subprocess.run([sys.executable, "-I", os.path.join(HERE, "hepph_match.py"), "--network", args.network,
-                            "--date", ds, "--threshold", str(args.threshold), "--category", args.category,
-                            "--work", os.path.join(args.work, ds), "--out", out])
+            print(f"{ds}: up to date", file=sys.stderr); continue
+        for attempt in range(args.retries + 1):
+            if not first: time.sleep(args.pause * (attempt + 1))
+            first = False
+            print(f"{ds}: building (attempt {attempt + 1})", file=sys.stderr, flush=True)
+            p = subprocess.run([sys.executable, "-I", os.path.join(HERE, "hepph_match.py"), "--network", args.network,
+                                "--date", ds, "--threshold", str(args.threshold), "--category", args.category,
+                                "--work", os.path.join(args.work, ds), "--out", out], stderr=subprocess.PIPE, text=True)
+            sys.stderr.write(p.stderr)
+            if p.returncode == 0 or "no papers found" in p.stderr: break
         if p.returncode != 0 or not os.path.exists(out):
-            print(f"{ds}: no listing (holiday?) or failed; skipped", file=sys.stderr); continue
+            print(f"{ds}: not built ({'no announcement' if 'no papers found' in p.stderr else 'fetch failed'})", file=sys.stderr)
+            continue
         standalone(out, ds)
         man[ds] = {"date": ds, "page": page, "built": today.isoformat(), **summary(os.path.splitext(out)[0] + ".json", args.threshold)}
-        done += 1
     json.dump(sorted(man.values(), key=lambda x: x["date"], reverse=True), open(mpath, "w"), ensure_ascii=False, indent=1)
     index(args.site, man, net, args)
     print(f"index: {len(man)} days -> {args.site}/index.html", file=sys.stderr)
