@@ -10,7 +10,7 @@ author [991924](https://inspirehep.net/authors/991924) (Diego Restrepo).
   (hep-ph-network-match), `tools/build_site.py` (index and last-5-days logic).
 - `skills/hep-ph-network-match/SKILL.md` — the hep-ph-network-match skill with the current code
   (upload it in claude.ai → Settings → Capabilities → Skills to update the skill).
-- `.github/workflows/hep-ph-pages.yml` — runs Monday–Friday at 07:17 and 13:47 Bogotá (and on demand from the
+- `.github/workflows/hep-ph-pages.yml` — runs once each weekday evening, 21:17 Bogotá, Monday–Friday (and on demand from the
   Actions tab), rebuilds the network when it is older than 30 days, and commits `docs/`.
 
 ## GitHub Pages
