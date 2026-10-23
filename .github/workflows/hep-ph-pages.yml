@@ -13,7 +13,7 @@ on:
         type: boolean
         default: false
   push:
-    branches: [main, claude/charming-mccarthy-r3sl60]
+    branches: [main]   # generated pages are committed on main only (PR branches would conflict)
     paths: ["tools/**", ".github/workflows/hep-ph-pages.yml"]
 
 permissions:

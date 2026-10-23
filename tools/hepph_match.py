@@ -5,14 +5,17 @@
          [--date YYYY-MM-DD|yesterday|latest]
          [--tz America/Bogota] [--category hep-ph] [--threshold 10] [--sections new,cross,replacement]
          [--author-recid 991924] [--author-name "Restrepo, Diego"]
-         [--work DIR] --out PAGE.html
+         [--work DIR] [--recent-html FILE] --out PAGE.html
 
 --network   compact network file from build_network.py (own + external papers, co-authors)
 --own       INSPIRE search response with the author's own papers (hits.hits[n].metadata)
 --external  INSPIRE search response (optionally .gz) with the other network papers
 --date      announcement date; default 'yesterday' = the latest announcement day in
             arxiv.org/list/<cat>/recent dated before today in --tz; 'latest' = arxiv.org/list/<cat>/new
-Writes PAGE.html (self-contained page) and PAGE.json (all scored papers).
+If the catchup page for --date is refused, the day's new submissions and cross-lists are read from
+arxiv.org/list/<cat>/recent instead (replacements are then missing).
+Writes PAGE.html (self-contained page, with the next 10 papers below the threshold in a collapsed
+list) and PAGE.json (all scored papers).
 """
 import argparse, gzip, io, json, math, os, re, sys, tarfile, time, unicodedata
 import urllib.parse, urllib.request, xml.etree.ElementTree as ET
@@ -49,9 +52,29 @@ def previous_day(cat, tz):
         if day < today: return day.isoformat()
     sys.exit("no announcement day before today in the recent listing")
 
-def listing(cat, date, work):
+def from_recent(cat, date, recent_html=None):
+    """One day's papers from arxiv.org/list/<cat>/recent (new submissions and cross-lists, no replacements).
+    Used when the catchup page is refused (arXiv often answers 429 to it from cloud machines)."""
+    from datetime import datetime
+    h = open(recent_html).read() if recent_html and os.path.exists(recent_html) else \
+        http(f"https://arxiv.org/list/{cat}/recent?skip=0&show=2000")
+    if not h: return []
+    parts = re.split(r"<h3>([^<]*)</h3>", h)
+    for i in range(1, len(parts), 2):
+        m = re.match(r"\s*(\w{3}, \d{1,2} \w{3} \d{4})", parts[i])
+        if m and datetime.strptime(m.group(1), "%a, %d %b %Y").date().isoformat() == date:
+            ids = dict.fromkeys(re.findall(r'href\s*=\s*"/abs/(\d{4}\.\d{4,5})', parts[i + 1]))
+            return [{"arxiv": a, "section": "new", "guess": True} for a in ids]
+    return []
+
+def listing(cat, date, work, recent_html=None):
     url = f"https://arxiv.org/catchup/{cat}/{date}" if date else f"https://arxiv.org/list/{cat}/new"
-    h = http(url)
+    h = http(url, tries=2 if date else 4)
+    if not h and date:
+        out = from_recent(cat, date, recent_html)
+        if not out: sys.exit(f"could not fetch {url}, and {date} is not in the recent listing")
+        print(f"[warn] {url} refused; using the recent listing (no replacements)", file=sys.stderr)
+        return out, time.strftime("%A, %d %B %Y", time.strptime(date, "%Y-%m-%d")), url
     if not h: sys.exit(f"could not fetch {url}")
     open(os.path.join(work, "listing.html"), "w").write(h)
     m = re.search(r"(?:Showing new listings for|New submissions for)\s*([^<]+)", h)
@@ -241,26 +264,31 @@ def score_all(rows, net, co, me_name):
     rows.sort(key=lambda r: -r["score"])
 
 # ---------- 5. page ----------
-def build(rows, net, th, meta, out):
+def why(r, net):
+    """One-line reasons a listing paper belongs to the network."""
+    lab = lambda k: f"{net[k]['first']} {net[k]['year']}"
+    refs = r["refs"]; bits = []
+    if r["isme"]: bits.append("You are an author.")
+    if r["coauthors"]: bits.append("Co-authors of yours: " + ", ".join(c.split(",")[0] for c in r["coauthors"]) + ".")
+    if r["citR"]: bits.append("Cites your papers: " + ", ".join(lab(x) for x in r["citR"]) + ".")
+    spec = [x for x in r["citE"] if net[x]["cites"] <= 1000]; gen = [x for x in r["citE"] if net[x]["cites"] > 1000]
+    if spec: bits.append(f"Cites {len(spec)} network paper{'s' if len(spec) > 1 else ''}: " +
+                         ", ".join(lab(x) for x in spec[:6]) + ("…" if len(spec) > 6 else "") + ".")
+    if gen: bits.append("Also cites widely used network papers: " + ", ".join(lab(x) for x in gen) + ".")
+    for (c, b), who in ((r["topR"][0], "your papers"), (r["topE"][0], "network paper")):
+        if c > 0: bits.append(f"Closest {'of ' if who == 'your papers' else ''}{who}: {lab(b)} "
+                              f"(coupling {c:.2f}, {len(refs & net[b]['refs'])} shared references).")
+    return " ".join(bits)
+
+def build(rows, net, th, meta, out, nnext=10):
     rel = [r for r in rows if r["score"] >= th]
     nodes, edges = {}, set()
-    lab = lambda k: f"{net[k]['first']} {net[k]['year']}"
     for rank, r in enumerate(rel, 1):
-        k = "new:" + r["arxiv"]; refs = r["refs"]; bits = []
-        if r["isme"]: bits.append("You are an author.")
-        if r["coauthors"]: bits.append("Co-authors of yours: " + ", ".join(c.split(",")[0] for c in r["coauthors"]) + ".")
-        if r["citR"]: bits.append("Cites your papers: " + ", ".join(lab(x) for x in r["citR"]) + ".")
-        spec = [x for x in r["citE"] if net[x]["cites"] <= 1000]; gen = [x for x in r["citE"] if net[x]["cites"] > 1000]
-        if spec: bits.append(f"Cites {len(spec)} network paper{'s' if len(spec) > 1 else ''}: " +
-                             ", ".join(lab(x) for x in spec[:6]) + ("…" if len(spec) > 6 else "") + ".")
-        if gen: bits.append("Also cites widely used network papers: " + ", ".join(lab(x) for x in gen) + ".")
-        for (c, b), who in ((r["topR"][0], "your papers"), (r["topE"][0], "network paper")):
-            if c > 0: bits.append(f"Closest {'of ' if who == 'your papers' else ''}{who}: {lab(b)} "
-                                  f"(coupling {c:.2f}, {len(refs & net[b]['refs'])} shared references).")
+        k = "new:" + r["arxiv"]; refs = r["refs"]
         au = r["authors"]
         nodes[k] = {"id": r["recid"], "arxiv": r["arxiv"], "title": r["title"],
                     "first": au[0].split()[-1] if au else "?", "nauth": len(au), "year": meta["year"], "cites": 0,
-                    "role": "repl" if r["section"] == "replacement" else "today", "note": " ".join(bits),
+                    "role": "repl" if r["section"] == "replacement" else "today", "note": why(r, net),
                     "score": r["score"], "rank": rank, "section": r["section"], "parts": r["parts"],
                     "abstract": r["abstract"], "authors": ", ".join(au), "nlinked": len(refs), "nref": r["nref"], "src": r["src"]}
         for x in r["citR"] + r["citE"]: edges.add((k, x, "c"))
@@ -281,8 +309,12 @@ def build(rows, net, th, meta, out):
                 req = urllib.request.Request(f"https://arxiv.org/html/{nd['arxiv']}", headers=UA, method="HEAD")
                 nd["html"] = urllib.request.urlopen(req, timeout=30).status == 200
             except Exception: nd["html"] = False
+    nxt = [{"arxiv": r["arxiv"], "id": r["recid"], "title": r["title"], "authors": ", ".join(r["authors"]),
+            "score": r["score"], "section": r["section"], "rank": len(rel) + j, "parts": r["parts"],
+            "note": why(r, net), "abstract": r["abstract"]}
+           for j, r in enumerate((r for r in rows if r["score"] < th), 1) if j <= nnext]
     keys = list(nodes); idx = {k: i for i, k in enumerate(keys)}
-    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges],
+    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges], "next": nxt,
             "meta": {**meta, "threshold": th, "nrel": len(rel), "nlist": len(rows),
                      "counts": {s: sum(1 for r in rows if r["section"] == s) for s in ("new", "cross", "replacement")},
                      "below": [{"arxiv": r["arxiv"], "title": r["title"], "score": r["score"]}
@@ -302,18 +334,22 @@ def main():
     ap.add_argument("--sections", default="new,cross,replacement")
     ap.add_argument("--author-recid", default="991924"); ap.add_argument("--author-name", default="Restrepo, Diego")
     ap.add_argument("--work", default="hepph_work"); ap.add_argument("--out", required=True)
+    ap.add_argument("--recent-html", help="saved arxiv.org/list/<cat>/recent?show=2000 page, used if the catchup page is refused")
     a = ap.parse_args()
     a.author_name_given = any(x.startswith("--author-name") for x in sys.argv)
     if not a.network and not a.external: ap.error("give --network, or --external (with or without --own)")
     os.makedirs(os.path.join(a.work, "src"), exist_ok=True)
     if a.date in (None, "", "yesterday"): a.date = previous_day(a.category, a.tz)
     elif a.date == "latest": a.date = None
-    L, label, url = listing(a.category, a.date, a.work)
+    L, label, url = listing(a.category, a.date, a.work, a.recent_html)
     a.out = a.out.replace("{date}", a.date or time.strftime("%Y-%m-%d"))
+    A = arxiv_meta([o["arxiv"] for o in L])
+    for o in L:   # recent-listing fallback: new submission if the primary category is ours, else cross-list
+        if o.pop("guess", False) and A.get(o["arxiv"], {}).get("primary", a.category) != a.category: o["section"] = "cross"
     secs = set(a.sections.split(",")); L = [o for o in L if o["section"] in secs]
     ids = [o["arxiv"] for o in L]
     print(f"{label}: {len(ids)} papers {dict(Counter(o['section'] for o in L))}", file=sys.stderr)
-    A = arxiv_meta(ids); F = inspire_records(ids)
+    F = inspire_records(ids)
     print(f"INSPIRE has {len(F)} of {len(ids)}; reading arXiv sources for the rest", file=sys.stderr)
     raw = {x: refs_from_source(x, os.path.join(a.work, "src")) for x in ids if x not in F}
     R = resolve(raw)
