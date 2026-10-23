@@ -5,7 +5,8 @@
 
 Days: the --days latest hep-ph announcement days dated before today (in --tz), read from
 arxiv.org/list/<cat>/recent (the last weekdays when that page cannot be fetched). A day whose
-listing cannot be fetched after --retries tries is left for the next run.
+listing cannot be fetched after --retries tries is left for the next run. hepph_match.py reads a
+day from the saved recent page when arXiv refuses its catchup page (HTTP 429).
 A day's page is (re)built when it is missing or was built less than --settle days after the
 listing date (INSPIRE may not have harvested every paper yet). Pages of older days are kept
 and listed in the archive. Writes <site>/index.html, <site>/days.json and <site>/.nojekyll.
@@ -19,18 +20,23 @@ UA = {"User-Agent": "hepph-network-match/1.0 (academic literature alert)"}
 HEAD = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n')
 
-def recent_days(cat):
+def recent_days(cat, save):
+    """Announcement days in arxiv.org/list/<cat>/recent; the page (all entries) is saved for hepph_match.py."""
+    h = ""
     for i in range(4):
         try:
-            with urllib.request.urlopen(urllib.request.Request(f"https://arxiv.org/list/{cat}/recent", headers=UA), timeout=120) as r:
+            with urllib.request.urlopen(urllib.request.Request(f"https://arxiv.org/list/{cat}/recent?skip=0&show=2000",
+                                                               headers=UA), timeout=120) as r:
                 h = r.read().decode("utf8", "ignore"); break
         except Exception as e:
-            print(f"[warn] recent listing: {e}", file=sys.stderr); time.sleep(5 * (i + 1)); h = ""
+            print(f"[warn] recent listing: {e}", file=sys.stderr); time.sleep(20 * (i + 1))
+    if h: open(save, "w").write(h)
     out = []
-    for d in re.findall(r'<a href="/list/[^"]*recent\?skip=[^"]*">\s*([^<]+?)\s*</a>', h):
+    for d in re.findall(r'<a href="/list/[^"]*recent\?skip=[^"]*">\s*([^<]+?)\s*</a>', h) + \
+             re.findall(r'<h3>\s*(\w{3}, \d{1,2} \w{3} \d{4})', h):
         try: out.append(datetime.strptime(d.strip(), "%a, %d %b %Y").date())
         except ValueError: pass
-    return out
+    return sorted(set(out))
 
 def standalone(page, day, back="index.html"):
     """Turn the artifact-style page from hepph_match.py into a complete HTML document with a back link."""
@@ -118,8 +124,8 @@ def main():
     ap.add_argument("--settle", type=int, default=2, help="rebuild a page built less than this many days after its date")
     ap.add_argument("--repo", default=os.environ.get("GITHUB_REPOSITORY", "restrepo/hep-ph"))
     ap.add_argument("--work", default="hepph_work")
-    ap.add_argument("--retries", type=int, default=3, help="retries per day when arXiv or INSPIRE cannot be fetched")
-    ap.add_argument("--pause", type=int, default=90, help="seconds between days (multiplied on each retry)")
+    ap.add_argument("--retries", type=int, default=1, help="retries per day when arXiv or INSPIRE cannot be fetched")
+    ap.add_argument("--pause", type=int, default=30, help="seconds between days (multiplied on each retry)")
     args = ap.parse_args()
     os.makedirs(args.site, exist_ok=True)
     open(os.path.join(args.site, ".nojekyll"), "w").close()
@@ -128,7 +134,9 @@ def main():
     net = json.load(open(args.network))
 
     today = datetime.now(ZoneInfo(args.tz)).date()
-    cand = sorted((d for d in recent_days(args.category) if d < today), reverse=True)
+    os.makedirs(args.work, exist_ok=True)
+    recent = os.path.join(args.work, "recent.html")
+    cand = sorted((d for d in recent_days(args.category, recent) if d < today), reverse=True)
     if not cand:                                  # 'recent' unreachable: assume weekdays are announcement days
         d = today
         while len(cand) < args.days:
@@ -151,7 +159,8 @@ def main():
             print(f"{ds}: building (attempt {attempt + 1})", file=sys.stderr, flush=True)
             p = subprocess.run([sys.executable, "-I", os.path.join(HERE, "hepph_match.py"), "--network", args.network,
                                 "--date", ds, "--threshold", str(args.threshold), "--category", args.category,
-                                "--work", os.path.join(args.work, ds), "--out", out], stderr=subprocess.PIPE, text=True)
+                                "--work", os.path.join(args.work, ds), "--recent-html", recent, "--out", out],
+                               stderr=subprocess.PIPE, text=True)
             sys.stderr.write(p.stderr)
             if p.returncode == 0 or "no papers found" in p.stderr: break
         if p.returncode != 0 or not os.path.exists(out):
