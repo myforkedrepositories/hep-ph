@@ -14,7 +14,7 @@
             arxiv.org/list/<cat>/recent dated before today in --tz; 'latest' = arxiv.org/list/<cat>/new
 If the catchup page for --date is refused, the day's new submissions and cross-lists are read from
 arxiv.org/list/<cat>/recent instead (replacements are then missing).
-Writes PAGE.html (self-contained page, with the next 10 papers below the threshold in a collapsed
+Writes PAGE.html (self-contained page, with the next --next (20) papers below the threshold in a collapsed
 list) and PAGE.json (all scored papers).
 """
 import argparse, gzip, io, json, math, os, re, sys, tarfile, time, unicodedata
@@ -280,7 +280,7 @@ def why(r, net):
                               f"(coupling {c:.2f}, {len(refs & net[b]['refs'])} shared references).")
     return " ".join(bits)
 
-def build(rows, net, th, meta, out, nnext=10):
+def build(rows, net, th, meta, out, nnext=20):
     rel = [r for r in rows if r["score"] >= th]
     nodes, edges = {}, set()
     for rank, r in enumerate(rel, 1):
@@ -331,6 +331,7 @@ def main():
     ap.add_argument("--date", help="YYYY-MM-DD, 'yesterday' (default) or 'latest'")
     ap.add_argument("--tz", default="America/Bogota"); ap.add_argument("--category", default="hep-ph")
     ap.add_argument("--threshold", type=float, default=10)
+    ap.add_argument("--next", type=int, default=20, help="papers below the threshold shown in the collapsed list")
     ap.add_argument("--sections", default="new,cross,replacement")
     ap.add_argument("--author-recid", default="991924"); ap.add_argument("--author-name", default="Restrepo, Diego")
     ap.add_argument("--work", default="hepph_work"); ap.add_argument("--out", required=True)
@@ -380,7 +381,7 @@ def main():
     meta = {"date": label, "url": url, "cat": a.category, "year": yr, "built": time.strftime("%Y-%m-%d"),
             "nown": sum(1 for v in net.values() if v["kind"] == "R"), "next": sum(1 for v in net.values() if v["kind"] == "E"),
             "onInspire": len(F)}
-    nr, nn, ne = build(rows, net, a.threshold, meta, a.out)
+    nr, nn, ne = build(rows, net, a.threshold, meta, a.out, a.next)
     json.dump([{**{k: v for k, v in r.items() if k not in ("refs",)},
                 "topR": [(round(c, 3), k) for c, k in r["topR"][:3]], "topE": [(round(c, 3), k) for c, k in r["topE"][:3]]}
                for r in rows], open(os.path.splitext(a.out)[0] + ".json", "w"), ensure_ascii=False, indent=0)
