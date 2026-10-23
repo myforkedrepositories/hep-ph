@@ -265,8 +265,9 @@ def score_all(rows, net, co, me_name):
 
 # ---------- 5. page ----------
 def why(r, net):
-    """One-line reasons a listing paper belongs to the network."""
-    lab = lambda k: f"{net[k]['first']} {net[k]['year']}"
+    """One-line reasons a listing paper belongs to the network. Each network paper appears as [[INSPIRE id]];
+    the page shows it as 'Author Year' with a pop-up of its authors, year and title."""
+    lab = lambda k: f"[[{k}]]"
     refs = r["refs"]; bits = []
     if r["isme"]: bits.append("You are an author.")
     if r["coauthors"]: bits.append("Co-authors of yours: " + ", ".join(c.split(",")[0] for c in r["coauthors"]) + ".")
@@ -314,7 +315,10 @@ def build(rows, net, th, meta, out, nnext=20):
             "note": why(r, net), "abstract": r["abstract"]}
            for j, r in enumerate((r for r in rows if r["score"] < th), 1) if j <= nnext]
     keys = list(nodes); idx = {k: i for i, k in enumerate(keys)}
-    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges], "next": nxt,
+    cited = {k for x in [nd.get("note", "") for nd in nodes.values()] + [x["note"] for x in nxt] for k in re.findall(r"\[\[(\d+)\]\]", x)}
+    refs = {k: {"first": net[k]["first"], "year": net[k]["year"], "nauth": net[k]["nauth"], "title": net[k]["title"],
+                "role": "seed" if net[k]["kind"] == "R" else "other"} for k in cited}
+    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges], "next": nxt, "refs": refs,
             "meta": {**meta, "threshold": th, "nrel": len(rel), "nlist": len(rows),
                      "counts": {s: sum(1 for r in rows if r["section"] == s) for s in ("new", "cross", "replacement")},
                      "below": [{"arxiv": r["arxiv"], "title": r["title"], "score": r["score"]}
