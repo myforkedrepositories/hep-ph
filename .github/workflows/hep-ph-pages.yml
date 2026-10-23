@@ -4,8 +4,9 @@ name: hep-ph network pages
 # last 5 days, matched against the INSPIRE citation network of author 991924, plus docs/index.html.
 on:
   schedule:
-    - cron: "17 12 * * 1-5"   # 07:17 Bogotá, after INSPIRE has harvested the previous announcement
-    - cron: "47 18 * * 1-5"   # 13:47 Bogotá, fills days arXiv refused (HTTP 429) in the morning run
+    # One late run per weekday: 21:17 Bogotá Monday-Friday (02:17 UTC Tuesday-Saturday). By then the
+    # day's listing, announced the evening before, is on INSPIRE with its references.
+    - cron: "17 2 * * 2-6"
   workflow_dispatch:
     inputs:
       rebuild_network:
@@ -59,7 +60,7 @@ jobs:
           fi
 
       - name: Build the daily pages and the index (hep-ph-network-match)
-        run: python3 -I tools/build_site.py --network "$NETWORK" --site docs --days 5
+        run: python3 -I tools/build_site.py --network "$NETWORK" --site docs --days 5 --include-today
 
       - name: Commit the site
         run: |
