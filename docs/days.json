@@ -1,0 +1,29 @@
+[
+ {
+  "date": "2026-10-20",
+  "page": "hep-ph-2026-10-20.html",
+  "built": "2026-10-22",
+  "nlist": 93,
+  "nrel": 11,
+  "top": [
+   {
+    "arxiv": "2610.24547",
+    "title": "Ultra-relativistic freeze-out of fermion dark matter through a heavy scalar mediator",
+    "score": 37.1,
+    "section": "new"
+   },
+   {
+    "arxiv": "2610.26648",
+    "title": "Dark Matter Interpretations of the Galactic Center Gamma-Ray Excess with 18 Years of Fermi-LAT Data and the FL16Y Source Catalog",
+    "score": 32.5,
+    "section": "new"
+   },
+   {
+    "arxiv": "2610.24063",
+    "title": "Testing Leptogenesis via CP asymmetries in Lepton-Number-Violating $W$ Decays at Colliders",
+    "score": 30.5,
+    "section": "new"
+   }
+  ]
+ }
+]
