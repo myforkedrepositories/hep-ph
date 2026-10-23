@@ -83,6 +83,7 @@ input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid
 .bars{display:flex;flex-wrap:wrap;gap:6px 18px}
 .aubtn{font:inherit;background:none;border:0;padding:0;color:var(--seed);text-decoration:underline dotted;cursor:pointer}
 .au-short{display:none}
+.bars .ps{display:none}
 .absmore{display:none}
 @media (max-width:600px){
   .paper{padding:14px 14px;gap:6px}
@@ -90,7 +91,8 @@ input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid
   .authors .au-full{display:none}.authors .au-short{display:inline}
   .authors.open .au-full{display:inline}.authors.open .au-short{display:none}
   .paper:not(.open) .abs{display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-  .absmore{display:inline;align-self:start}
+  .absmore{display:inline;justify-self:start}
+  .bars .pl{display:none}.bars .ps{display:inline}
   .absmore[hidden]{display:none}
   .row{display:grid;gap:6px}
   .bars{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}
@@ -155,6 +157,7 @@ document.getElementById('dek').textContent=`${M.nrel} of the ${M.nlist} papers i
 document.getElementById('foot').innerHTML=`<p><b>Score (0–100).</b> 40% direct citations of network papers (each of your papers counts 1, each other network paper 0.6, network papers with over 1,000 citations 0.06; saturating as 1 − e<sup>−x</sup>); 35% bibliographic coupling with your own papers (idf-weighted cosine of INSPIRE-linked reference sets, best match and mean of the top three, 0.30 = full marks); 15% best coupling with the other network papers (0.35 = full marks); 10% authorship (you, or your co-authors).</p>
 <p><b>Data.</b> Network: INSPIRE records supplied with the project. Listing papers: INSPIRE records where already harvested (${M.onInspire} of ${M.nlist}); for the rest the reference list was read from the arXiv source and matched to INSPIRE by arXiv number, DOI and texkey. Only links between papers on this page are drawn. Built ${esc(M.built)}.</p>`;
 const P=['Direct citations','Coupling to your papers','Coupling to network','Authorship'];
+const PS=['Citations','Your papers','Network','Authors'];   // short labels for phones
 function list(){const box=document.getElementById('list');
   if(!NEWS.length){box.innerHTML=`<div class="empty">No paper in this listing reaches a score of ${M.threshold}.</div>`;document.getElementById('mainnet').hidden=true;return}
   NEWS.forEach(n=>{const d=document.createElement('article');d.className='paper';d.id='p'+n.i;
@@ -163,7 +166,7 @@ function list(){const box=document.getElementById('list');
     <div class="authors">${authors(n.authors)} · arXiv:${esc(n.arxiv)}</div>
     <p class="abs">${esc(n.abstract)}</p><button class="linkbtn absmore" type="button" hidden>More</button>
     <p class="why">${why(n.note)}</p>
-    <div class="row"><div class="bars">${n.parts.map((v,j)=>`<span>${P[j]} <span class="mb"><i style="width:${Math.round(v*100)}%"></i></span></span>`).join('')}</div><span>${n.nlinked} of ${n.nref} references linked to INSPIRE · refs from ${esc(n.src)}</span></div>
+    <div class="row"><div class="bars">${n.parts.map((v,j)=>`<span><span class="pl">${P[j]}</span><span class="ps">${PS[j]}</span> <span class="mb"><i style="width:${Math.round(v*100)}%"></i></span></span>`).join('')}</div><span>${n.nlinked} of ${n.nref} references linked to INSPIRE · refs from ${esc(n.src)}</span></div>
     <div class="links">${n.id?`<a href="https://inspirehep.net/literature/${n.id}" target="_blank" rel="noopener">INSPIRE</a>`:''}<a href="https://arxiv.org/abs/${esc(n.arxiv)}" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/${esc(n.arxiv)}" target="_blank" rel="noopener">PDF</a>${n.html?`<a href="https://arxiv.org/html/${esc(n.arxiv)}" target="_blank" rel="noopener" title="arXiv's experimental HTML version">HTML</a>`:''}<button class="linkbtn graphbtn" type="button">Show in network</button></div>`;
     d.querySelector('.graphbtn').addEventListener('click',()=>pick(n,true));
     d.querySelector('.absmore').addEventListener('click',e=>{const o=d.classList.toggle('open');e.target.textContent=o?'Less':'More'});
@@ -177,8 +180,8 @@ function fold(){document.querySelectorAll('.paper').forEach(d=>{const p=d.queryS
   if(!p||!b||d.classList.contains('open'))return;b.hidden=!(p.scrollHeight>p.clientHeight+2)})}
 function toc(){const t=document.getElementById('toc');if(!NEWS.length)return;t.hidden=false;
   const X=RAW.next||[];
-  t.innerHTML=`<h3>In this listing</h3><ol>${NEWS.map(n=>`<li><a href="#p${n.i}"><span class="sc${n.role==='repl'?' repl':''}">${n.score.toFixed(0)}</span><span class="tt">${esc(plain(n.title))}</span></a></li>`).join('')}${X.length?`<li class="more-link"><a href="#more"><span class="sc">+${X.length}</span><span class="tt">The next ${X.length} papers by score (folded)</span></a></li>`:''}</ol>`;
-  const m=t.querySelector('.more-link a');if(m)m.addEventListener('click',()=>{document.getElementById('more').open=true})}
+  t.innerHTML=`<h3>In this listing</h3><ol>${NEWS.map(n=>`<li><a href="#p${n.i}"><span class="sc${n.role==='repl'?' repl':''}">${n.score.toFixed(0)}</span><span class="tt">${esc(n.title)}</span></a></li>`).join('')}${X.length?`<li class="more-link"><a href="#more"><span class="sc">+${X.length}</span><span class="tt">The next ${X.length} papers by score (folded)</span></a></li>`:''}</ol>`;
+  const m=t.querySelector('.more-link a');if(m)m.addEventListener('click',()=>{document.getElementById('more').open=true});tex(t)}
 let sel=NEWS[0]||null, hover=null, query='', G;
 const svg=d3.select('#svg'), tip=document.getElementById('tip');
 function draw(){
