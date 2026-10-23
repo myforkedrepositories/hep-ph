@@ -124,7 +124,7 @@ h3{{font-family:Spectral,Georgia,serif;font-weight:600;font-size:1.1rem;margin:0
 <div class="wrap">
 <header>
   <div class="eyebrow">arXiv {e(args.category)} · INSPIRE author {e(str(a["recid"]))}</div>
-  <h1>New {e(args.category)} papers close to the citation network of {e(who)}</h1>
+  <h1>New {e(args.category)} papers close to your citation network</h1>
   <p class="dek">The last {len(cur)} announcement day{"s" if len(cur) != 1 else ""} of the arXiv {e(args.category)} listing (new submissions, cross-lists and replacements), each ranked by how strongly a paper cites, shares references with or is written by members of the network. Scores run from 0 to 100; a page lists every paper scoring {args.threshold:g} or more.</p>
 </header>
 <section class="days" aria-label="Latest announcement days">{"".join(card(d) for d in cur) or '<p>No pages yet.</p>'}</section>

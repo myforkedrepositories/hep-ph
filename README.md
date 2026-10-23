@@ -1,7 +1,7 @@
 # hep-ph network match
 
 Daily pages ranking the arXiv **hep-ph** listing against the INSPIRE-HEP citation network of
-author [991924](https://inspirehep.net/authors/991924) (Diego Restrepo).
+author [991924](https://inspirehep.net/authors/991924).
 
 - `docs/index.html` — links to the last 5 announcement days; `docs/hep-ph-YYYY-MM-DD.html` — one ranked listing per day
   (papers above the threshold, the network graph, then the next 20 papers by score in a collapsed list).
