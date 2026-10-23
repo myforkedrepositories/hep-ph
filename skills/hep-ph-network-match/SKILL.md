@@ -77,7 +77,9 @@ What it does:
   authorship (the author by name, or co-authors from the own papers).
 - The page lists every paper at or above the threshold first, highest score first, each with
   section, score, title, authors, full abstract (math rendered with MathJax), the reasons
-  (cited network papers, closest own paper and network paper with shared references), the
+  (cited network papers, closest own paper and network paper with shared references; each
+  network paper is named "Author Year" and shows a pop-up with its authors, year and title on
+  hover, keyboard focus or tap, like the graph's tooltip), the
   four score components and links (INSPIRE, arXiv, PDF, and arXiv's experimental HTML
   version when it exists). Below it, the network laid out by year (citations solid,
   coupling-only links dashed) with a detail panel; then, collapsed (`<details>`), the next 20
@@ -373,8 +375,9 @@ def score_all(rows, net, co, me_name):
 
 # ---------- 5. page ----------
 def why(r, net):
-    """One-line reasons a listing paper belongs to the network."""
-    lab = lambda k: f"{net[k]['first']} {net[k]['year']}"
+    """One-line reasons a listing paper belongs to the network. Each network paper appears as [[INSPIRE id]];
+    the page shows it as 'Author Year' with a pop-up of its authors, year and title."""
+    lab = lambda k: f"[[{k}]]"
     refs = r["refs"]; bits = []
     if r["isme"]: bits.append("You are an author.")
     if r["coauthors"]: bits.append("Co-authors of yours: " + ", ".join(c.split(",")[0] for c in r["coauthors"]) + ".")
@@ -422,7 +425,10 @@ def build(rows, net, th, meta, out, nnext=20):
             "note": why(r, net), "abstract": r["abstract"]}
            for j, r in enumerate((r for r in rows if r["score"] < th), 1) if j <= nnext]
     keys = list(nodes); idx = {k: i for i, k in enumerate(keys)}
-    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges], "next": nxt,
+    cited = {k for x in [nd.get("note", "") for nd in nodes.values()] + [x["note"] for x in nxt] for k in re.findall(r"\[\[(\d+)\]\]", x)}
+    refs = {k: {"first": net[k]["first"], "year": net[k]["year"], "nauth": net[k]["nauth"], "title": net[k]["title"],
+                "role": "seed" if net[k]["kind"] == "R" else "other"} for k in cited}
+    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges], "next": nxt, "refs": refs,
             "meta": {**meta, "threshold": th, "nrel": len(rel), "nlist": len(rows),
                      "counts": {s: sum(1 for r in rows if r["section"] == s) for s in ("new", "cross", "replacement")},
                      "below": [{"arxiv": r["arxiv"], "title": r["title"], "score": r["score"]}
@@ -562,6 +568,10 @@ input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid
 .dim .nlabel:not(.on){opacity:.25}
 .dir{font-size:12px;color:var(--fg-3);padding:8px 14px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 18px}
 .dir b{font-weight:500;color:var(--fg-2)}.sw{display:inline-block;width:18px;height:0;border-top:2px solid;vertical-align:middle;margin-right:6px}
+.ref{text-decoration:underline dotted;text-underline-offset:3px;cursor:help;color:inherit}
+.ref.seed{text-decoration-color:var(--seed)}
+.ref:focus-visible{outline:2px solid var(--seed);outline-offset:1px;border-radius:2px}
+.reftip{position:fixed;z-index:10;pointer-events:none;background:var(--fg);color:var(--bg);font-size:12px;padding:6px 9px;border-radius:6px;max-width:min(320px,calc(100vw - 16px));line-height:1.35}
 .tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font-size:12px;padding:6px 9px;border-radius:6px;max-width:280px;line-height:1.35}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:10px;min-width:0;font-size:14px}
 .panel h4{font-family:var(--f-display);font-weight:600;font-size:1.08rem;line-height:1.3;margin:0;text-wrap:balance}
@@ -599,6 +609,7 @@ input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid
 </div>
 <details class="more" id="more" hidden><summary>Next papers by score <span id="moresub"></span></summary><ol class="nextlist" id="nextlist"></ol></details>
 <div class="foot" id="foot"></div>
+<div class="reftip" id="reftip" role="tooltip" hidden></div>
 </div>
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]},svg:{fontCache:'global'},startup:{typeset:false}};</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script>
@@ -619,6 +630,9 @@ const r=n=>isNew(n)?4+n.score/9:2.6+1.5*Math.log10(1+n.cites)+(n.role==='seed'?1
 const auth=n=>n.first+(n.nauth>2?' et al.':n.nauth===2?' + 1':'');
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const plain=s=>String(s).replace(/\$/g,'').replace(/\\([a-zA-Z]+)/g,'$1').replace(/[{}^_]/g,'');
+const REFS=RAW.refs||{};
+// reasons text: [[INSPIRE id]] becomes 'Author Year' with a pop-up (authors, year, title), like the graph's tooltip
+const why=s=>esc(s).replace(/\[\[(\d+)\]\]/g,(m,k)=>{const r=REFS[k];return r?`<span class="ref ${r.role}" tabindex="0" data-ref="${k}">${esc(r.first)} ${r.year}</span>`:m});
 const tex=el=>{if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([el]).catch(()=>{})};
 const NEWS=N.filter(isNew).sort((a,b)=>a.rank-b.rank);
 document.getElementById('eyebrow').innerHTML=`arXiv ${esc(M.cat)} · <a href="${esc(M.url)}" target="_blank" rel="noopener">${esc(M.date)}</a>`;
@@ -633,7 +647,7 @@ function list(){const box=document.getElementById('list');
     <h2>${esc(n.title)}</h2>
     <div class="authors">${esc(n.authors)} · arXiv:${esc(n.arxiv)}</div>
     <p class="abs">${esc(n.abstract)}</p>
-    <p class="why">${esc(n.note)}</p>
+    <p class="why">${why(n.note)}</p>
     <div class="row">${n.parts.map((v,j)=>`<span>${P[j]} <span class="mb"><i style="width:${Math.round(v*100)}%"></i></span></span>`).join('')}<span>${n.nlinked} of ${n.nref} references linked to INSPIRE</span><span>refs from ${esc(n.src)}</span></div>
     <div class="links">${n.id?`<a href="https://inspirehep.net/literature/${n.id}" target="_blank" rel="noopener">INSPIRE</a>`:''}<a href="https://arxiv.org/abs/${esc(n.arxiv)}" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/${esc(n.arxiv)}" target="_blank" rel="noopener">PDF</a>${n.html?`<a href="https://arxiv.org/html/${esc(n.arxiv)}" target="_blank" rel="noopener">HTML (experimental)</a>`:''}<button class="linkbtn" type="button">Show in network</button></div>`;
     d.querySelector('.linkbtn').addEventListener('click',()=>pick(n,true));box.appendChild(d)});
@@ -682,7 +696,7 @@ function panel(){const p=document.getElementById('panel'),n=sel;
   if(!n){p.innerHTML='<p>Select a paper in the network.</p>';return}
   const links=`<div class="links">${n.id?`<a href="https://inspirehep.net/literature/${n.id}" target="_blank" rel="noopener">INSPIRE</a>`:''}${n.arxiv?`<a href="https://arxiv.org/abs/${esc(n.arxiv)}" target="_blank" rel="noopener">arXiv</a>`:''}</div>`;
   if(isNew(n)) p.innerHTML=`<div class="role" style="color:${col(n)}">#${n.rank} · ${esc(SEC[n.section])} · score ${n.score.toFixed(1)}</div><h4>${esc(n.title)}</h4>
-   <div class="meta">${esc(auth(n))} · arXiv:${esc(n.arxiv)}</div><p>${esc(n.note)}</p><div class="links"><a href="#p${n.i}">Back to abstract</a></div>`;
+   <div class="meta">${esc(auth(n))} · arXiv:${esc(n.arxiv)}</div><p>${why(n.note)}</p><div class="links"><a href="#p${n.i}">Back to abstract</a></div>`;
   else p.innerHTML=`<div class="role" style="color:${col(n)}">${esc(ROLE[n.role])}</div><h4>${esc(n.title)}</h4>
    <div class="meta">${esc(auth(n))} · ${n.year}${n.arxiv?' · arXiv:'+esc(n.arxiv):''}</div>
    <div class="stats"><span>${n.cites.toLocaleString()} citations</span><span>${n.inn.filter(i=>isNew(N[i])).length} of the matches link here</span></div>${links}`;
@@ -698,10 +712,22 @@ function nextList(){const X=RAW.next||[];if(!X.length)return;const box=document.
   document.getElementById('moresub').textContent=`below the threshold of ${M.threshold}, not drawn in the network`;
   box.innerHTML=X.map(n=>`<li><div class="role" style="color:var(--${n.section==='replacement'?'repl':'today'})">#${n.rank} · ${esc(SEC[n.section])} · score ${n.score.toFixed(1)}</div>
     <div class="t">${esc(n.title)}</div><div class="authors">${esc(n.authors)} · arXiv:${esc(n.arxiv)}</div>
-    ${n.note?`<p class="why">${esc(n.note)}</p>`:''}
+    ${n.note?`<p class="why">${why(n.note)}</p>`:''}
     <details class="abs"><summary>Abstract</summary><p class="abs">${esc(n.abstract)}</p></details>
     <div class="links">${n.id?`<a href="https://inspirehep.net/literature/${n.id}" target="_blank" rel="noopener">INSPIRE</a>`:''}<a href="https://arxiv.org/abs/${esc(n.arxiv)}" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/${esc(n.arxiv)}" target="_blank" rel="noopener">PDF</a></div></li>`).join('');
   more.addEventListener('toggle',()=>{if(more.open)tex(box)})}
+const rtip=document.getElementById('reftip');let rcur=null;
+function refShow(el){const r=REFS[el.dataset.ref];if(!r)return;rcur=el;rtip.textContent=`${auth(r)} (${r.year}) — ${plain(r.title)}`;rtip.hidden=false;
+  const b=el.getBoundingClientRect(),t=rtip.getBoundingClientRect();let L=Math.min(Math.max(8,b.left),innerWidth-t.width-8),T=b.bottom+6;
+  if(T+t.height>innerHeight-8)T=b.top-t.height-6;rtip.style.left=L+'px';rtip.style.top=T+'px'}
+function refHide(){rtip.hidden=true;rcur=null}
+document.addEventListener('pointerover',e=>{const el=e.target.closest('.ref');if(el&&e.pointerType==='mouse')refShow(el)});
+document.addEventListener('pointerout',e=>{if(e.target.closest('.ref')&&e.pointerType==='mouse')refHide()});
+document.addEventListener('click',e=>{const el=e.target.closest('.ref');if(el)refShow(el);else if(rcur)refHide()});
+document.addEventListener('focusin',e=>{const el=e.target.closest('.ref');if(el)refShow(el)});
+document.addEventListener('focusout',e=>{if(e.target.closest('.ref'))refHide()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')refHide()});
+addEventListener('scroll',()=>{if(rcur)refHide()},{passive:true});
 list();nextList();draw();panel();
 window.addEventListener('load',()=>{tex(document.getElementById('list'));tex(document.getElementById('panel'))});
 </script>
