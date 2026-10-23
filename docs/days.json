@@ -1,5 +1,32 @@
 [
  {
+  "date": "2026-10-22",
+  "page": "hep-ph-2026-10-22.html",
+  "built": "2026-10-22",
+  "nlist": 68,
+  "nrel": 8,
+  "top": [
+   {
+    "arxiv": "2601.00436",
+    "title": "Anatomy of RHN DM relic in the vanilla scotogenic neutrino mass model",
+    "score": 51.2,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2607.27325",
+    "title": "Seesaw Cosmology",
+    "score": 38.4,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2610.29335",
+    "title": "Heavy Pseudo-Dirac Doublet Dark Matter and Non-Thermal Leptogenesis in Light of the LZ Event",
+    "score": 30.2,
+    "section": "new"
+   }
+  ]
+ },
+ {
   "date": "2026-10-21",
   "page": "hep-ph-2026-10-21.html",
   "built": "2026-10-22",
