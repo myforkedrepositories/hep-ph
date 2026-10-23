@@ -108,7 +108,7 @@ h3{{font-family:Spectral,Georgia,serif;font-weight:600;font-size:1.1rem;margin:0
 {f'<section><h3>Earlier days</h3><ul class="arch">{arch}</ul></section>' if arch else ''}
 <footer class="foot">
   <p><b>Network.</b> {c["own"]} papers by {e(who)} with at most {net["params"]["max_authors"]} authors and {c["external"]} papers by others around them ({c["coupled"]} by bibliographic coupling, {c["citing"]} important citing papers), built from INSPIRE-HEP on {e(net["built"])}. File: <a href="https://github.com/{e(args.repo)}/blob/main/{e(args.network)}">{e(os.path.basename(args.network))}</a>.</p>
-  <p><b>Method.</b> Pages made with the hep-network-builder and hep-ph-network-match tools in <a href="https://github.com/{e(args.repo)}/tree/main/tools">tools/</a>; rebuilt twice a day, Monday to Saturday, by a GitHub Actions workflow. Updated {time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())}.</p>
+  <p><b>Method.</b> Pages made with the hep-network-builder and hep-ph-network-match tools in <a href="https://github.com/{e(args.repo)}/tree/main/tools">tools/</a>; rebuilt twice a day on weekdays by a GitHub Actions workflow. Updated {time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())}.</p>
 </footer>
 </div>
 </body>
