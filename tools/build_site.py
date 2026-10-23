@@ -8,11 +8,12 @@ Days: the --days latest hep-ph announcement days dated before today (in --tz; up
 arxiv.org/list/<cat>/recent (the last weekdays when that page cannot be fetched). A day whose
 listing cannot be fetched after --retries tries is left for the next run. hepph_match.py reads a
 day from the saved recent page when arXiv refuses its catchup page (HTTP 429).
-A day's page is (re)built when it is missing or was built less than --settle days after the
-listing date (INSPIRE may not have harvested every paper yet). Pages of older days are kept
+A day's page is (re)built when it is missing, was made by different code (hepph_match.py,
+template.html or this file), or was built less than --settle days after the listing date
+(INSPIRE may not have harvested every paper yet). Pages of older days are kept
 and listed in the archive. Writes <site>/index.html, <site>/days.json and <site>/.nojekyll.
 """
-import argparse, html, json, os, re, subprocess, sys, time, urllib.request
+import argparse, hashlib, html, json, os, re, subprocess, sys, time, urllib.request
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -141,12 +142,14 @@ def main():
     recent = os.path.join(args.work, "recent.html")
     last = today if args.include_today else today - timedelta(days=1)
     cand = sorted((d for d in recent_days(args.category, recent) if d <= last), reverse=True)
-    if not cand:                                  # 'recent' unreachable: assume weekdays are announcement days
-        d = last + timedelta(days=1)
-        while len(cand) < args.days:
-            d -= timedelta(days=1)
-            if d.weekday() < 5: cand.append(d)
+    d = min(cand) if cand else last + timedelta(days=1)
+    while len(cand) < args.days:                  # 'recent' shows only 5 days (or none): add earlier weekdays
+        d -= timedelta(days=1)
+        if d.weekday() < 5: cand.append(d)
     cand = cand[:args.days]
+    # pages made by older code (template or scorer) are rebuilt, so page changes reach every day
+    code = hashlib.sha256(b"".join(open(os.path.join(HERE, f), "rb").read()
+                                   for f in ("hepph_match.py", "template.html", "build_site.py"))).hexdigest()[:12]
 
     # arXiv answers 429 to bursts from cloud runners: pause between days, wait longer on each retry,
     # and leave a day that still fails for the next run (an older day never takes its place).
@@ -154,7 +157,7 @@ def main():
     for d in cand:
         ds = d.isoformat(); page = f"hep-ph-{ds}.html"; out = os.path.join(args.site, page)
         old = man.get(ds)
-        if old and old.get("nlist", 0) and os.path.exists(out) and \
+        if old and old.get("nlist", 0) and os.path.exists(out) and old.get("code") == code and \
            (date.fromisoformat(old["built"]) - d).days >= args.settle:
             print(f"{ds}: up to date", file=sys.stderr); continue
         for attempt in range(args.retries + 1):
@@ -171,7 +174,7 @@ def main():
             print(f"{ds}: not built ({'no announcement' if 'no papers found' in p.stderr else 'fetch failed'})", file=sys.stderr)
             continue
         standalone(out, ds)
-        man[ds] = {"date": ds, "page": page, "built": today.isoformat(), **summary(os.path.splitext(out)[0] + ".json", args.threshold)}
+        man[ds] = {"date": ds, "page": page, "built": today.isoformat(), "code": code, **summary(os.path.splitext(out)[0] + ".json", args.threshold)}
     json.dump(sorted(man.values(), key=lambda x: x["date"], reverse=True), open(mpath, "w"), ensure_ascii=False, indent=1)
     index(args.site, man, net, args)
     print(f"index: {len(man)} days -> {args.site}/index.html", file=sys.stderr)
