@@ -3,7 +3,8 @@
 
   python3 -I tools/build_site.py --network data/inspire/network_991924.json --site docs [--days 5]
 
-Days: the --days latest hep-ph announcement days dated before today (in --tz), read from
+Days: the --days latest hep-ph announcement days dated before today (in --tz; up to today with
+--include-today), read from
 arxiv.org/list/<cat>/recent (the last weekdays when that page cannot be fetched). A day whose
 listing cannot be fetched after --retries tries is left for the next run. hepph_match.py reads a
 day from the saved recent page when arXiv refuses its catchup page (HTTP 429).
@@ -108,7 +109,7 @@ h3{{font-family:Spectral,Georgia,serif;font-weight:600;font-size:1.1rem;margin:0
 {f'<section><h3>Earlier days</h3><ul class="arch">{arch}</ul></section>' if arch else ''}
 <footer class="foot">
   <p><b>Network.</b> {c["own"]} papers by {e(who)} with at most {net["params"]["max_authors"]} authors and {c["external"]} papers by others around them ({c["coupled"]} by bibliographic coupling, {c["citing"]} important citing papers), built from INSPIRE-HEP on {e(net["built"])}. File: <a href="https://github.com/{e(args.repo)}/blob/main/{e(args.network)}">{e(os.path.basename(args.network))}</a>.</p>
-  <p><b>Method.</b> Pages made with the hep-network-builder and hep-ph-network-match tools in <a href="https://github.com/{e(args.repo)}/tree/main/tools">tools/</a>; rebuilt twice a day on weekdays by a GitHub Actions workflow. Updated {time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())}.</p>
+  <p><b>Method.</b> Pages made with the hep-network-builder and hep-ph-network-match tools in <a href="https://github.com/{e(args.repo)}/tree/main/tools">tools/</a>; rebuilt every weekday evening by a GitHub Actions workflow. Updated {time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())}.</p>
 </footer>
 </div>
 </body>
@@ -121,6 +122,8 @@ def main():
     ap.add_argument("--network", required=True); ap.add_argument("--site", default="docs")
     ap.add_argument("--days", type=int, default=5); ap.add_argument("--threshold", type=float, default=10)
     ap.add_argument("--category", default="hep-ph"); ap.add_argument("--tz", default="America/Bogota")
+    ap.add_argument("--include-today", action="store_true",
+                    help="also build today's listing (for a late run: it was announced the evening before)")
     ap.add_argument("--settle", type=int, default=2, help="rebuild a page built less than this many days after its date")
     ap.add_argument("--repo", default=os.environ.get("GITHUB_REPOSITORY", "restrepo/hep-ph"))
     ap.add_argument("--work", default="hepph_work")
@@ -136,9 +139,10 @@ def main():
     today = datetime.now(ZoneInfo(args.tz)).date()
     os.makedirs(args.work, exist_ok=True)
     recent = os.path.join(args.work, "recent.html")
-    cand = sorted((d for d in recent_days(args.category, recent) if d < today), reverse=True)
+    last = today if args.include_today else today - timedelta(days=1)
+    cand = sorted((d for d in recent_days(args.category, recent) if d <= last), reverse=True)
     if not cand:                                  # 'recent' unreachable: assume weekdays are announcement days
-        d = today
+        d = last + timedelta(days=1)
         while len(cand) < args.days:
             d -= timedelta(days=1)
             if d.weekday() < 5: cand.append(d)
