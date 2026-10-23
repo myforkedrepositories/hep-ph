@@ -72,6 +72,34 @@ input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid
 .nextlist li{display:grid;gap:4px;padding:12px 0;border-top:1px solid var(--line)}
 .nextlist .t{font-family:var(--f-display);font-weight:600;font-size:1.05rem;line-height:1.3}
 .nextlist .abs{font-size:14px}.nextlist .abs summary{cursor:pointer;color:var(--fg-3);font-size:13px}
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+.toc h3{font-size:1rem;margin:0 0 6px}
+.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.toc a{display:flex;gap:10px;align-items:baseline;padding:5px 0;color:var(--fg);text-decoration:none;font-size:14px;line-height:1.35}
+.toc a:hover .tt{text-decoration:underline}
+.toc .sc{font-family:var(--f-mono);font-size:12px;color:var(--today);min-width:2.4em;text-align:right;flex:none}
+.toc .sc.repl{color:var(--repl)}.toc .more-link .sc{color:var(--fg-3)}.toc .more-link .tt{color:var(--fg-2)}
+.paper{scroll-margin-top:12px}
+.bars{display:flex;flex-wrap:wrap;gap:6px 18px}
+.aubtn{font:inherit;background:none;border:0;padding:0;color:var(--seed);text-decoration:underline dotted;cursor:pointer}
+.au-short{display:none}
+.bars .ps{display:none}
+.absmore{display:none}
+@media (max-width:600px){
+  .paper{padding:14px 14px;gap:6px}
+  .paper h2{font-size:1.15rem}
+  .authors .au-full{display:none}.authors .au-short{display:inline}
+  .authors.open .au-full{display:inline}.authors.open .au-short{display:none}
+  .paper:not(.open) .abs{display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .absmore{display:inline;justify-self:start}
+  .bars .pl{display:none}.bars .ps{display:inline}
+  .absmore[hidden]{display:none}
+  .row{display:grid;gap:6px}
+  .bars{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}
+  .bars>span{justify-content:space-between}
+  .links{flex-wrap:wrap;gap:8px}
+  .links a,.links .linkbtn{display:inline-flex;align-items:center;min-height:34px;padding:0 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:13px;background:var(--bg)}
+}
 .foot{font-size:12px;color:var(--fg-3);max-width:100ch;display:grid;gap:6px}
 .foot p{margin:0}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
@@ -82,6 +110,7 @@ input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid
   <h1>New papers that belong to your citation network</h1>
   <p class="dek" id="dek"></p>
 </header>
+<nav class="toc" id="toc" aria-label="Contents" hidden></nav>
 <section aria-label="Matching papers"><div class="list" id="list"></div></section>
 <section>
   <h3>Where they sit in the network</h3>
@@ -121,25 +150,38 @@ const plain=s=>String(s).replace(/\$/g,'').replace(/\\([a-zA-Z]+)/g,'$1').replac
 const REFS=RAW.refs||{};
 // reasons text: [[INSPIRE id]] becomes 'Author Year' with a pop-up (authors, year, title), like the graph's tooltip
 const why=s=>esc(s).replace(/\[\[(\d+)\]\]/g,(m,k)=>{const r=REFS[k];return r?`<span class="ref ${r.role}" tabindex="0" data-ref="${k}">${esc(r.first)} ${r.year}</span>`:m});
-const tex=el=>{if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([el]).catch(()=>{})};
+const tex=el=>{if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([el]).then(()=>fold()).catch(()=>{})};
 const NEWS=N.filter(isNew).sort((a,b)=>a.rank-b.rank);
 document.getElementById('eyebrow').innerHTML=`arXiv ${esc(M.cat)} · <a href="${esc(M.url)}" target="_blank" rel="noopener">${esc(M.date)}</a>`;
 document.getElementById('dek').textContent=`${M.nrel} of the ${M.nlist} papers in this listing (${M.counts.new} new, ${M.counts.cross} cross-lists, ${M.counts.replacement} replacements) score ${M.threshold} or more for belonging to the reference and citation network of your ${M.nown} papers and the ${M.next} papers by other authors around them. Highest score first.`;
 document.getElementById('foot').innerHTML=`<p><b>Score (0–100).</b> 40% direct citations of network papers (each of your papers counts 1, each other network paper 0.6, network papers with over 1,000 citations 0.06; saturating as 1 − e<sup>−x</sup>); 35% bibliographic coupling with your own papers (idf-weighted cosine of INSPIRE-linked reference sets, best match and mean of the top three, 0.30 = full marks); 15% best coupling with the other network papers (0.35 = full marks); 10% authorship (you, or your co-authors).</p>
 <p><b>Data.</b> Network: INSPIRE records supplied with the project. Listing papers: INSPIRE records where already harvested (${M.onInspire} of ${M.nlist}); for the rest the reference list was read from the arXiv source and matched to INSPIRE by arXiv number, DOI and texkey. Only links between papers on this page are drawn. Built ${esc(M.built)}.</p>`;
 const P=['Direct citations','Coupling to your papers','Coupling to network','Authorship'];
+const PS=['Citations','Your papers','Network','Authors'];   // short labels for phones
 function list(){const box=document.getElementById('list');
   if(!NEWS.length){box.innerHTML=`<div class="empty">No paper in this listing reaches a score of ${M.threshold}.</div>`;document.getElementById('mainnet').hidden=true;return}
   NEWS.forEach(n=>{const d=document.createElement('article');d.className='paper';d.id='p'+n.i;
     d.innerHTML=`<div class="role" style="color:${col(n)}">#${n.rank} · ${esc(SEC[n.section])} · score ${n.score.toFixed(1)}</div>
     <h2>${esc(n.title)}</h2>
-    <div class="authors">${esc(n.authors)} · arXiv:${esc(n.arxiv)}</div>
-    <p class="abs">${esc(n.abstract)}</p>
+    <div class="authors">${authors(n.authors)} · arXiv:${esc(n.arxiv)}</div>
+    <p class="abs">${esc(n.abstract)}</p><button class="linkbtn absmore" type="button" hidden>More</button>
     <p class="why">${why(n.note)}</p>
-    <div class="row">${n.parts.map((v,j)=>`<span>${P[j]} <span class="mb"><i style="width:${Math.round(v*100)}%"></i></span></span>`).join('')}<span>${n.nlinked} of ${n.nref} references linked to INSPIRE</span><span>refs from ${esc(n.src)}</span></div>
-    <div class="links">${n.id?`<a href="https://inspirehep.net/literature/${n.id}" target="_blank" rel="noopener">INSPIRE</a>`:''}<a href="https://arxiv.org/abs/${esc(n.arxiv)}" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/${esc(n.arxiv)}" target="_blank" rel="noopener">PDF</a>${n.html?`<a href="https://arxiv.org/html/${esc(n.arxiv)}" target="_blank" rel="noopener">HTML (experimental)</a>`:''}<button class="linkbtn" type="button">Show in network</button></div>`;
-    d.querySelector('.linkbtn').addEventListener('click',()=>pick(n,true));box.appendChild(d)});
-  tex(box)}
+    <div class="row"><div class="bars">${n.parts.map((v,j)=>`<span><span class="pl">${P[j]}</span><span class="ps">${PS[j]}</span> <span class="mb"><i style="width:${Math.round(v*100)}%"></i></span></span>`).join('')}</div><span>${n.nlinked} of ${n.nref} references linked to INSPIRE · refs from ${esc(n.src)}</span></div>
+    <div class="links">${n.id?`<a href="https://inspirehep.net/literature/${n.id}" target="_blank" rel="noopener">INSPIRE</a>`:''}<a href="https://arxiv.org/abs/${esc(n.arxiv)}" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/${esc(n.arxiv)}" target="_blank" rel="noopener">PDF</a>${n.html?`<a href="https://arxiv.org/html/${esc(n.arxiv)}" target="_blank" rel="noopener" title="arXiv's experimental HTML version">HTML</a>`:''}<button class="linkbtn graphbtn" type="button">Show in network</button></div>`;
+    d.querySelector('.graphbtn').addEventListener('click',()=>pick(n,true));
+    d.querySelector('.absmore').addEventListener('click',e=>{const o=d.classList.toggle('open');e.target.textContent=o?'Less':'More'});
+    box.appendChild(d)});
+  toc();tex(box)}
+// Phones: long author lists show the first 3 and "et al." (tap to expand); abstracts fold to 3 lines with More.
+function authors(s){const a=String(s||'').split(', ');if(a.length<=3)return esc(s);
+  return `<span class="au-short">${esc(a.slice(0,3).join(', '))} <button class="aubtn" type="button" aria-label="Show all ${a.length} authors">et al. (+${a.length-3})</button></span><span class="au-full">${esc(s)}</span>`}
+document.addEventListener('click',e=>{const b=e.target.closest('.aubtn');if(b)b.closest('.authors').classList.add('open')});
+function fold(){document.querySelectorAll('.paper').forEach(d=>{const p=d.querySelector('.abs'),b=d.querySelector('.absmore');
+  if(!p||!b||d.classList.contains('open'))return;b.hidden=!(p.scrollHeight>p.clientHeight+2)})}
+function toc(){const t=document.getElementById('toc');if(!NEWS.length)return;t.hidden=false;
+  const X=RAW.next||[];
+  t.innerHTML=`<h3>In this listing</h3><ol>${NEWS.map(n=>`<li><a href="#p${n.i}"><span class="sc${n.role==='repl'?' repl':''}">${n.score.toFixed(0)}</span><span class="tt">${esc(n.title)}</span></a></li>`).join('')}${X.length?`<li class="more-link"><a href="#more"><span class="sc">+${X.length}</span><span class="tt">The next ${X.length} papers by score (folded)</span></a></li>`:''}</ol>`;
+  const m=t.querySelector('.more-link a');if(m)m.addEventListener('click',()=>{document.getElementById('more').open=true});tex(t)}
 let sel=NEWS[0]||null, hover=null, query='', G;
 const svg=d3.select('#svg'), tip=document.getElementById('tip');
 function draw(){
@@ -199,7 +241,7 @@ function nextList(){const X=RAW.next||[];if(!X.length)return;const box=document.
   more.hidden=false;more.querySelector('summary').firstChild.textContent=`The next ${X.length} papers by score `;
   document.getElementById('moresub').textContent=`below the threshold of ${M.threshold}, not drawn in the network`;
   box.innerHTML=X.map(n=>`<li><div class="role" style="color:var(--${n.section==='replacement'?'repl':'today'})">#${n.rank} · ${esc(SEC[n.section])} · score ${n.score.toFixed(1)}</div>
-    <div class="t">${esc(n.title)}</div><div class="authors">${esc(n.authors)} · arXiv:${esc(n.arxiv)}</div>
+    <div class="t">${esc(n.title)}</div><div class="authors">${authors(n.authors)} · arXiv:${esc(n.arxiv)}</div>
     ${n.note?`<p class="why">${why(n.note)}</p>`:''}
     <details class="abs"><summary>Abstract</summary><p class="abs">${esc(n.abstract)}</p></details>
     <div class="links">${n.id?`<a href="https://inspirehep.net/literature/${n.id}" target="_blank" rel="noopener">INSPIRE</a>`:''}<a href="https://arxiv.org/abs/${esc(n.arxiv)}" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/${esc(n.arxiv)}" target="_blank" rel="noopener">PDF</a></div></li>`).join('');
@@ -216,6 +258,8 @@ document.addEventListener('focusin',e=>{const el=e.target.closest('.ref');if(el)
 document.addEventListener('focusout',e=>{if(e.target.closest('.ref'))refHide()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')refHide()});
 addEventListener('scroll',()=>{if(rcur)refHide()},{passive:true});
-list();nextList();draw();panel();
-window.addEventListener('load',()=>{tex(document.getElementById('list'));tex(document.getElementById('panel'))});
+list();nextList();fold();draw();panel();
+window.addEventListener('load',()=>{tex(document.getElementById('list'));tex(document.getElementById('panel'));fold();
+  if(window.MathJax&&MathJax.startup&&MathJax.startup.promise)MathJax.startup.promise.then(()=>setTimeout(fold,300))});
+addEventListener('resize',()=>{clearTimeout(window._ft);window._ft=setTimeout(fold,200)});
 </script>

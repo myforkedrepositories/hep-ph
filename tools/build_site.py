@@ -40,16 +40,37 @@ def recent_days(cat, save):
         except ValueError: pass
     return sorted(set(out))
 
-def standalone(page, day, back="index.html"):
-    """Turn the artifact-style page from hepph_match.py into a complete HTML document with a back link."""
+NAV_CSS = ('<style>.daynav{max-width:1180px;margin:0 auto;padding:14px 16px 0;display:flex;flex-wrap:wrap;gap:8px 16px;'
+           'justify-content:space-between;align-items:center;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px}'
+           '.daynav.bottom{padding:0 16px 28px}.daynav a{color:var(--seed)}.daynav .pn{display:flex;gap:16px}'
+           '.daynav .off{color:var(--fg-3)}@media (max-width:600px){.daynav a,.daynav .off{display:inline-flex;align-items:center;min-height:34px}}</style>\n')
+
+def standalone(page, day):
+    """Turn the artifact-style page from hepph_match.py into a complete HTML document with day navigation slots."""
     s = open(page).read()
     if s.lstrip().lower().startswith("<!doctype"): return
-    nav = (f'<nav style="max-width:1180px;margin:0 auto;padding:16px 16px 0;font-family:\'IBM Plex Mono\',ui-monospace,monospace;font-size:13px">'
-           f'<a href="{back}" style="color:var(--seed)">← All days</a></nav>\n')
     s = s.replace("<title>", f"<title>{day} · ", 1)
     i = s.find('<div class="wrap">')
-    s = HEAD + s[:i] + "</head>\n<body>\n" + nav + s[i:] + "\n</body>\n</html>\n"
+    s = (HEAD + NAV_CSS + s[:i] + "</head>\n<body>\n<!--daynav--><!--/daynav-->\n" + s[i:] +
+         "\n<!--daynav2--><!--/daynav2-->\n</body>\n</html>\n")
     open(page, "w").write(s)
+
+def daynav(site, man):
+    """Fill each day page's navigation: back to the index, and links to the previous (older) and next (newer) day."""
+    days = sorted(man)
+    short = lambda d: datetime.strptime(d, "%Y-%m-%d").strftime("%a %-d %b")
+    for j, d in enumerate(days):
+        page = os.path.join(site, man[d]["page"])
+        if not os.path.exists(page): continue
+        prev = days[j - 1] if j > 0 else None; nxt = days[j + 1] if j + 1 < len(days) else None
+        pn = ((f'<a href="{man[prev]["page"]}" rel="prev">‹ {short(prev)}</a>' if prev else '<span class="off">‹ older</span>') +
+              (f'<a href="{man[nxt]["page"]}" rel="next">{short(nxt)} ›</a>' if nxt else '<span class="off">newer ›</span>'))
+        body = f'<a href="index.html">← All days</a><span class="pn">{pn}</span>'
+        s = open(page).read()
+        for tag, cls in (("daynav", "daynav"), ("daynav2", "daynav bottom")):
+            s = re.sub(rf"<!--{tag}-->.*?<!--/{tag}-->",
+                       lambda m: f'<!--{tag}--><nav class="{cls}" aria-label="Days">{body}</nav><!--/{tag}-->', s, flags=re.S)
+        open(page, "w").write(s)
 
 def summary(js, th):
     rows = json.load(open(js))
@@ -175,6 +196,7 @@ def main():
             continue
         standalone(out, ds)
         man[ds] = {"date": ds, "page": page, "built": today.isoformat(), "code": code, **summary(os.path.splitext(out)[0] + ".json", args.threshold)}
+    daynav(args.site, man)
     json.dump(sorted(man.values(), key=lambda x: x["date"], reverse=True), open(mpath, "w"), ensure_ascii=False, indent=1)
     index(args.site, man, net, args)
     print(f"index: {len(man)} days -> {args.site}/index.html", file=sys.stderr)
