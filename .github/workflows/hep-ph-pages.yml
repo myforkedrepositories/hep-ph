@@ -5,6 +5,7 @@ name: hep-ph network pages
 on:
   schedule:
     - cron: "17 12 * * 1-6"   # 07:17 Bogotá, after INSPIRE has harvested the previous announcement
+    - cron: "47 18 * * 1-6"   # 13:47 Bogotá, fills days arXiv refused (HTTP 429) in the morning run
   workflow_dispatch:
     inputs:
       rebuild_network:
@@ -32,6 +33,8 @@ jobs:
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -65,4 +68,11 @@ jobs:
           git add docs "$NETWORK"
           if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
           git commit -m "Update hep-ph network pages ($(date -u +%Y-%m-%d))"
-          git push origin HEAD:${{ github.ref_name }}
+          # Another run (or a merge) may have pushed generated files meanwhile: merge it, keeping
+          # this run's version of any conflicting file, and push again.
+          for i in 1 2 3; do
+            git push origin HEAD:${{ github.ref_name }} && exit 0
+            git fetch origin ${{ github.ref_name }}
+            git merge --no-edit -X ours origin/${{ github.ref_name }}
+          done
+          exit 1
