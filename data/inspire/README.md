@@ -4,7 +4,7 @@
 
 Full INSPIRE-HEP literature records (all fields, including complete reference
 lists) for the **251 papers by other authors** in the coupling and citation
-network built around Diego Restrepo's papers (INSPIRE author 991924).
+network built around the papers of INSPIRE author 991924.
 Retrieved from the INSPIRE REST API on 2026-10-21.
 
 - Compressed: 14 MB (gzip). Uncompressed: 59 MB.
@@ -15,9 +15,9 @@ Retrieved from the INSPIRE REST API on 2026-10-21.
 
 ### Which papers are included
 
-The starting set is Restrepo's 65 papers with 1–10 authors:
+The starting set is the author's 65 papers with 1–10 authors:
 `authors.recid:991924 and ac 1->10`. That file, `restrepo_inspire_ac1-10.json`,
-is kept separately. The 251 papers here are not authored by him and come from two
+is kept separately. The 251 papers here are not by that author and come from two
 sources:
 
 1. **Related by bibliographic coupling (178 papers).** Candidates are papers citing
