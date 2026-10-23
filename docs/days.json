@@ -1,8 +1,36 @@
 [
  {
+  "date": "2026-10-23",
+  "page": "hep-ph-2026-10-23.html",
+  "built": "2026-10-23",
+  "code": "8077551e15f8",
+  "nlist": 80,
+  "nrel": 5,
+  "top": [
+   {
+    "arxiv": "2610.30240",
+    "title": "Probing Heavy Neutral Leptons through New Gauge Interactions at the Forward Physics Facilities",
+    "score": 29.5,
+    "section": "new"
+   },
+   {
+    "arxiv": "2610.25925",
+    "title": "Exploring a low-mass H dibaryon in light of the LZ event: A QCD sum rule study",
+    "score": 26.2,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2610.30534",
+    "title": "What if dark matter is composite of least interacting particles?",
+    "score": 25.2,
+    "section": "new"
+   }
+  ]
+ },
+ {
   "date": "2026-10-22",
   "page": "hep-ph-2026-10-22.html",
-  "built": "2026-10-22",
+  "built": "2026-10-23",
   "code": "8077551e15f8",
   "nlist": 68,
   "nrel": 8,
@@ -30,7 +58,7 @@
  {
   "date": "2026-10-21",
   "page": "hep-ph-2026-10-21.html",
-  "built": "2026-10-22",
+  "built": "2026-10-23",
   "code": "8077551e15f8",
   "nlist": 78,
   "nrel": 7,

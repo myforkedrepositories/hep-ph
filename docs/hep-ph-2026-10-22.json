@@ -2514,6 +2514,57 @@
 "score": 1.0
 },
 {
+"arxiv": "2402.16859",
+"section": "replacement",
+"recid": "2762133",
+"src": "INSPIRE",
+"nref": 39,
+"title": "Field-Induced Weyl-Like Crossings and Longitudinal Magnetoconductivity in Dirac Systems",
+"authors": [
+"J. L. Acosta Avalo"
+],
+"abstract": "We investigate the field-induced separation of effective Weyl-like crossings and the associated longitudinal magnetoconductivity in Dirac systems using a finite-temperature quantum electrodynamics response-function approach. Starting from the one-loop photon polarization tensor in a magnetized fermionic medium, we identify a longitudinal electromagnetic mode associated with a nonvanishing pseudoscalar invariant ${\\bf E}\\cdot{\\bf B}$. We use this response to construct an effective low-energy Dirac model in which the two chiral sectors undergo opposite momentum shifts. Within this description, we derive an analytical expression for the longitudinal magnetoconductivity without introducing an independent phenomenological internode relaxation time. The chiral contribution contains an explicit $B^2$ prefactor, while its coefficient depends on the magnetic field and temperature through Landau-level thresholds and Fermi-Dirac occupation factors. The resulting conductivity exhibits a nonmonotonic magnetic-field dependence and an inverse-temperature regime under appropriate conditions. These results provide a connection, within the proposed effective model, between the longitudinal electromagnetic response, field-induced Weyl-like crossings, and longitudinal magnetotransport.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"922002"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.024,
+"1812354"
+],
+[
+0.017,
+"1778129"
+],
+[
+0.015,
+"2062672"
+]
+],
+"isme": false,
+"coauthors": [],
+"parts": [
+0.0,
+0.0,
+0.07,
+0.0
+],
+"score": 1.0
+},
+{
 "arxiv": "2610.29392",
 "section": "new",
 "recid": "3217346",
@@ -2554,57 +2605,6 @@
 [
 0.014,
 "2665284"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.0,
-0.0,
-0.06,
-0.0
-],
-"score": 0.9
-},
-{
-"arxiv": "2402.16859",
-"section": "replacement",
-"recid": "2762133",
-"src": "INSPIRE",
-"nref": 52,
-"title": "Field-Induced Weyl-Like Crossings and Longitudinal Magnetoconductivity in Dirac Systems",
-"authors": [
-"J. L. Acosta Avalo"
-],
-"abstract": "We investigate the field-induced separation of effective Weyl-like crossings and the associated longitudinal magnetoconductivity in Dirac systems using a finite-temperature quantum electrodynamics response-function approach. Starting from the one-loop photon polarization tensor in a magnetized fermionic medium, we identify a longitudinal electromagnetic mode associated with a nonvanishing pseudoscalar invariant ${\\bf E}\\cdot{\\bf B}$. We use this response to construct an effective low-energy Dirac model in which the two chiral sectors undergo opposite momentum shifts. Within this description, we derive an analytical expression for the longitudinal magnetoconductivity without introducing an independent phenomenological internode relaxation time. The chiral contribution contains an explicit $B^2$ prefactor, while its coefficient depends on the magnetic field and temperature through Landau-level thresholds and Fermi-Dirac occupation factors. The resulting conductivity exhibits a nonmonotonic magnetic-field dependence and an inverse-temperature regime under appropriate conditions. These results provide a connection, within the proposed effective model, between the longitudinal electromagnetic response, field-induced Weyl-like crossings, and longitudinal magnetotransport.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"922002"
-],
-[
-0.0,
-"860906"
-]
-],
-"topE": [
-[
-0.022,
-"1812354"
-],
-[
-0.016,
-"1778129"
-],
-[
-0.014,
-"2062672"
 ]
 ],
 "isme": false,
