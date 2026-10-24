@@ -92,7 +92,6 @@ def index(site, man, net, args):
                 f'<a class="open" href="{e(d["page"])}">Open the ranked listing →</a></article>')
     arch = "".join(f'<li><a href="{e(d["page"])}">{e(d["date"])}</a> · {d["nrel"]} of {d["nlist"]}</li>' for d in old)
     a = net["author"]; c = net["counts"]
-    who = " ".join(reversed(a["name"].split(", ", 1)))
     body = f"""{HEAD}<title>hep-ph Network Match</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -124,13 +123,13 @@ h3{{font-family:Spectral,Georgia,serif;font-weight:600;font-size:1.1rem;margin:0
 <div class="wrap">
 <header>
   <div class="eyebrow">arXiv {e(args.category)} · INSPIRE author {e(str(a["recid"]))}</div>
-  <h1>New {e(args.category)} papers close to the citation network of {e(who)}</h1>
+  <h1>New {e(args.category)} papers close to your citation network</h1>
   <p class="dek">The last {len(cur)} announcement day{"s" if len(cur) != 1 else ""} of the arXiv {e(args.category)} listing (new submissions, cross-lists and replacements), each ranked by how strongly a paper cites, shares references with or is written by members of the network. Scores run from 0 to 100; a page lists every paper scoring {args.threshold:g} or more.</p>
 </header>
 <section class="days" aria-label="Latest announcement days">{"".join(card(d) for d in cur) or '<p>No pages yet.</p>'}</section>
 {f'<section><h3>Earlier days</h3><ul class="arch">{arch}</ul></section>' if arch else ''}
 <footer class="foot">
-  <p><b>Network.</b> {c["own"]} papers by {e(who)} with at most {net["params"]["max_authors"]} authors and {c["external"]} papers by others around them ({c["coupled"]} by bibliographic coupling, {c["citing"]} important citing papers), built from INSPIRE-HEP on {e(net["built"])}. File: <a href="https://github.com/{e(args.repo)}/blob/main/{e(args.network)}">{e(os.path.basename(args.network))}</a>.</p>
+  <p><b>Network.</b> {c["own"]} of your papers with at most {net["params"]["max_authors"]} authors and {c["external"]} papers by others around them ({c["coupled"]} by bibliographic coupling, {c["citing"]} important citing papers), built from INSPIRE-HEP on {e(net["built"])}. File: <a href="https://github.com/{e(args.repo)}/blob/main/{e(args.network)}">{e(os.path.basename(args.network))}</a>.</p>
   <p><b>Method.</b> Pages made with the hep-network-builder and hep-ph-network-match tools in <a href="https://github.com/{e(args.repo)}/tree/main/tools">tools/</a>; rebuilt every weekday evening by a GitHub Actions workflow. Updated {time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())}.</p>
 </footer>
 </div>

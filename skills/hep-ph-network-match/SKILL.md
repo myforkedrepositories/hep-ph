@@ -1,6 +1,6 @@
 ---
 name: "hep-ph-network-match"
-description: "Ranks the arXiv hep-ph listing (yesterday's announcement by default, or a given date) by how strongly each paper belongs to an author's INSPIRE reference and citation network (a network file from hep-network-builder, or Diego Restrepo's by default), and publishes an HTML page listing the papers above a score threshold (default 10) with title, authors and abstract, plus the next 20 papers by score in a collapsed list."
+description: "Ranks the arXiv hep-ph listing (yesterday's announcement by default, or a given date) by how strongly each paper belongs to an author's INSPIRE reference and citation network (a network file from hep-network-builder, or that of INSPIRE author 991924 by default), and publishes an HTML page listing the papers above a score threshold (default 10) with title, authors and abstract, plus the next 20 papers by score in a collapsed list."
 ---
 
 # hep-ph network match
@@ -119,7 +119,7 @@ paste the artifact URL.
   python3 -I hepph_match.py (--network NETWORK.json | [--own OWN.json] --external EXT.json.gz)
          [--date YYYY-MM-DD|yesterday|latest]
          [--tz America/Bogota] [--category hep-ph] [--threshold 10] [--sections new,cross,replacement]
-         [--author-recid 991924] [--author-name "Restrepo, Diego"]
+         [--author-recid 991924] [--author-name "Last, First"]
          [--work DIR] [--recent-html FILE] --out PAGE.html
 
 --network   compact network file from build_network.py (own + external papers, co-authors)
@@ -329,7 +329,7 @@ def network(own, ext, me_recid):
         net = {str(p["id"]): {"kind": p["k"], "refs": {str(x) for x in p["r"]}, "title": p["t"], "arxiv": p["a"],
                               "year": p["y"], "cites": p["c"], "first": p["f"], "nauth": p["n"]} for p in d0["papers"]}
         return net, d0.get("coauthors", []), d0["author"]["name"], str(d0["author"]["recid"])
-    net, co = {}, set()
+    net, co, me = {}, set(), None
     for kind, d in (("R", d0), ("E", load_json(ext))):
         for h in d["hits"]["hits"]:
             m = h["metadata"]; k = str(m["control_number"])
@@ -340,9 +340,10 @@ def network(own, ext, me_recid):
                       "first": (m.get("authors") or [{"full_name": "?"}])[0]["full_name"].split(",")[0],
                       "nauth": m.get("author_count", len(m.get("authors", [])))}
             if kind == "R":
-                co |= {a["full_name"] for a in m.get("authors", [])
-                       if a.get("record", {}).get("$ref", "").rsplit("/", 1)[-1] != me_recid}
-    return net, sorted(co), None, None
+                for a in m.get("authors", []):
+                    if a.get("record", {}).get("$ref", "").rsplit("/", 1)[-1] == me_recid: me = me or a["full_name"]
+                    else: co.add(a["full_name"])
+    return net, sorted(co), me, me_recid
 
 def namekey(n):
     n = unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode().lower()
@@ -452,7 +453,7 @@ def main():
     ap.add_argument("--threshold", type=float, default=10)
     ap.add_argument("--next", type=int, default=20, help="papers below the threshold shown in the collapsed list")
     ap.add_argument("--sections", default="new,cross,replacement")
-    ap.add_argument("--author-recid", default="991924"); ap.add_argument("--author-name", default="Restrepo, Diego")
+    ap.add_argument("--author-recid", default="991924"); ap.add_argument("--author-name", help="default: read from the network file or the author's INSPIRE records")
     ap.add_argument("--work", default="hepph_work"); ap.add_argument("--out", required=True)
     ap.add_argument("--recent-html", help="saved arxiv.org/list/<cat>/recent?show=2000 page, used if the catchup page is refused")
     a = ap.parse_args()
@@ -495,7 +496,7 @@ def main():
             open(a.own, "w").write(t)
     net, co, nname, nrecid = network(a.network or a.own, a.external, a.author_recid)
     if nname and not a.author_name_given: a.author_name, a.author_recid = nname, nrecid
-    score_all(rows, net, co, a.author_name)
+    score_all(rows, net, co, a.author_name or "")
     yr = int("20" + ids[0][:2]) if ids else int(time.strftime("%Y"))
     meta = {"date": label, "url": url, "cat": a.category, "year": yr, "built": time.strftime("%Y-%m-%d"),
             "nown": sum(1 for v in net.values() if v["kind"] == "R"), "next": sum(1 for v in net.values() if v["kind"] == "E"),
