@@ -227,6 +227,61 @@
 "score": 28.3
 },
 {
+"arxiv": "2610.25925",
+"section": "new",
+"recid": "3216348",
+"src": "INSPIRE",
+"nref": 101,
+"title": "Exploring a low-mass H dibaryon in light of the LZ event: A QCD sum rule study",
+"authors": [
+"Wei-Han Tan",
+"Hua-Xing Chen"
+],
+"abstract": "The LUX-ZEPLIN (LZ) Collaboration recently reported a candidate event consistent with a high-energy nuclear recoil, motivating a possible interpretation by Lee, Takahashi, and Tsai involving the production of an invisible baryon-number-two scalar with a mass near $1.85$ GeV. Motivated by this hypothetical scenario, we investigate the $J^P=0^+$ $uuddss$ hexaquark system using QCD sum rules. We consider five local diquark-diquark-diquark interpolating currents with different scalar and axial-vector diquark combinations, together with a baryon-baryon current constructed from two $Λ$-type baryon currents. The operator product expansions are calculated up to dimension sixteen, and their numerical behaviors are examined under different OPE truncations. Among the currents considered, only the $SU(3)_{\\rm flavor}$-singlet current $J_{SSS}$, consisting of three scalar color-$\\bar{\\mathbf{3}}_C$ diquarks, yields a low-mass solution at $D=12$, with $M_{SSS}=1.85^{+0.19}_{-0.20}$ GeV. Interestingly, scalar color-$\\bar{\\mathbf{3}}_C$ diquarks belong to the flavor $\\bar{\\mathbf{3}}_F$ representation, and their local color-singlet construction has a unique nonvanishing flavor structure, $[ud][ds][su]$, corresponding to $uuddss$. Analogous all-scalar-diquark currents vanish for other flavor configurations, such as $uuuddd$ and $uuudds$. Together with our QCD sum-rule results, this property highlights the special role of the all-scalar-diquark configuration, $[ud][ds][su]$, as a possible deeply bound structure. However, the higher-dimensional OPE contributions exhibit significant truncation dependence, and the low-mass solution remains conditional on the adopted OPE truncation rather than constituting a fully controlled mass prediction.",
+"citR": [],
+"citE": [
+"3201080",
+"2817040"
+],
+"topR": [
+[
+0.006,
+"2690106"
+],
+[
+0.006,
+"2855387"
+],
+[
+0.0,
+"926166"
+]
+],
+"topE": [
+[
+0.147,
+"3201080"
+],
+[
+0.007,
+"3205155"
+],
+[
+0.007,
+"2828406"
+]
+],
+"isme": false,
+"coauthors": [],
+"parts": [
+0.48,
+0.02,
+0.42,
+0.0
+],
+"score": 26.2
+},
+{
 "arxiv": "2609.02483",
 "section": "replacement",
 "recid": "3199052",
@@ -451,65 +506,6 @@
 "score": 15.0
 },
 {
-"arxiv": "2605.16540",
-"section": "replacement",
-"recid": "3157191",
-"src": "INSPIRE",
-"nref": 73,
-"title": "ULYSSES the Third: An Odyssey Towards a Unified Python Toolkit for Leptogenesis",
-"authors": [
-"Alessandro Granelli",
-"Juraj Klarić",
-"Dhruv Pasari",
-"Yuber F. Perez-Gonzalez",
-"Jessica Turner"
-],
-"abstract": "We present the third release of $\\texttt{ULYSSES}$, a Python package for the numerical evaluation of the baryon asymmetry generated through leptogenesis. This version includes code implementing state-of-the-art density matrix equations for low-scale leptogenesis with three quasi-degenerate right-handed neutrinos. We extend the validity of the code in this scenario beyond the 100 GeV right-handed neutrino mass scale, into the regime of resonant leptogenesis, by including neutrino production rates valid in both the relativistic and non-relativistic regimes. In addition, in the high-scale vanilla scenario, we provide routines for computing $ΔL = 1$ scattering processes, enabling full phase-space evolution of the right-handed neutrino and lepton asymmetry. A new $\\texttt{--extended}$ parameter interface allows users to pass model-specific inputs beyond the standard leptogenesis runcard without modifying the core infrastructure and demonstrate its use with a toy module that simultaneously solves the vanilla leptogenesis equations and the freeze-in production of dark matter. On top of these improvements, we introduce an alternative parametrisation of the Casas-Ibarra matrix, update the default neutrino oscillation parameters and report cross-checks of the new low-scale leptogenesis module against published benchmarks and independent codes. $\\texttt{ULYSSES}$ is publicly available on $\\href{https://github.com/earlyuniverse/ulysses}{\\texttt{GitHub}}$ and pip-installable from PyPI.",
-"citR": [],
-"citE": [
-"1362180",
-"2817040",
-"1688995"
-],
-"topR": [
-[
-0.029,
-"1249404"
-],
-[
-0.024,
-"922002"
-],
-[
-0.019,
-"1755250"
-]
-],
-"topE": [
-[
-0.077,
-"1210691"
-],
-[
-0.049,
-"1362180"
-],
-[
-0.049,
-"779828"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.16,
-0.09,
-0.22,
-0.0
-],
-"score": 13.1
-},
-{
 "arxiv": "2610.24404",
 "section": "new",
 "recid": "3216235",
@@ -564,6 +560,65 @@
 "score": 12.8
 },
 {
+"arxiv": "2605.16540",
+"section": "replacement",
+"recid": "3157191",
+"src": "INSPIRE",
+"nref": 73,
+"title": "ULYSSES the Third: An Odyssey Towards a Unified Python Toolkit for Leptogenesis",
+"authors": [
+"Alessandro Granelli",
+"Juraj Klarić",
+"Dhruv Pasari",
+"Yuber F. Perez-Gonzalez",
+"Jessica Turner"
+],
+"abstract": "We present the third release of $\\texttt{ULYSSES}$, a Python package for the numerical evaluation of the baryon asymmetry generated through leptogenesis. This version includes code implementing state-of-the-art density matrix equations for low-scale leptogenesis with three quasi-degenerate right-handed neutrinos. We extend the validity of the code in this scenario beyond the 100 GeV right-handed neutrino mass scale, into the regime of resonant leptogenesis, by including neutrino production rates valid in both the relativistic and non-relativistic regimes. In addition, in the high-scale vanilla scenario, we provide routines for computing $ΔL = 1$ scattering processes, enabling full phase-space evolution of the right-handed neutrino and lepton asymmetry. A new $\\texttt{--extended}$ parameter interface allows users to pass model-specific inputs beyond the standard leptogenesis runcard without modifying the core infrastructure and demonstrate its use with a toy module that simultaneously solves the vanilla leptogenesis equations and the freeze-in production of dark matter. On top of these improvements, we introduce an alternative parametrisation of the Casas-Ibarra matrix, update the default neutrino oscillation parameters and report cross-checks of the new low-scale leptogenesis module against published benchmarks and independent codes. $\\texttt{ULYSSES}$ is publicly available on $\\href{https://github.com/earlyuniverse/ulysses}{\\texttt{GitHub}}$ and pip-installable from PyPI.",
+"citR": [],
+"citE": [
+"1362180",
+"2817040",
+"1688995"
+],
+"topR": [
+[
+0.025,
+"922002"
+],
+[
+0.024,
+"1249404"
+],
+[
+0.016,
+"1455793"
+]
+],
+"topE": [
+[
+0.077,
+"1210691"
+],
+[
+0.049,
+"779828"
+],
+[
+0.048,
+"1362180"
+]
+],
+"isme": false,
+"coauthors": [],
+"parts": [
+0.16,
+0.08,
+0.22,
+0.0
+],
+"score": 12.6
+},
+{
 "arxiv": "2610.24028",
 "section": "new",
 "recid": "3216188",
@@ -614,60 +669,6 @@
 0.0
 ],
 "score": 11.8
-},
-{
-"arxiv": "2610.25925",
-"section": "new",
-"recid": "3216348",
-"src": "INSPIRE",
-"nref": 77,
-"title": "Exploring a low-mass H dibaryon in light of the LZ event: A QCD sum rule study",
-"authors": [
-"Wei-Han Tan",
-"Hua-Xing Chen"
-],
-"abstract": "The LUX-ZEPLIN (LZ) Collaboration recently reported a candidate event consistent with a high-energy nuclear recoil, motivating a possible interpretation by Lee, Takahashi, and Tsai involving the production of an invisible baryon-number-two scalar with a mass near $1.85$ GeV. Motivated by this hypothetical scenario, we investigate the $J^P=0^+$ $uuddss$ hexaquark system using QCD sum rules. We consider five local diquark-diquark-diquark interpolating currents with different scalar and axial-vector diquark combinations, together with a baryon-baryon current constructed from two $Λ$-type baryon currents. The operator product expansions are calculated up to dimension sixteen, and their numerical behaviors are examined under different OPE truncations. Among the currents considered, only the $SU(3)_{\\rm flavor}$-singlet current $J_{SSS}$, consisting of three scalar color-$\\bar{\\mathbf{3}}_C$ diquarks, yields a low-mass solution at $D=12$, with $M_{SSS}=1.85^{+0.19}_{-0.20}$ GeV. Interestingly, scalar color-$\\bar{\\mathbf{3}}_C$ diquarks belong to the flavor $\\bar{\\mathbf{3}}_F$ representation, and their local color-singlet construction has a unique nonvanishing flavor structure, $[ud][ds][su]$, corresponding to $uuddss$. Analogous all-scalar-diquark currents vanish for other flavor configurations, such as $uuuddd$ and $uuudds$. Together with our QCD sum-rule results, this property highlights the special role of the all-scalar-diquark configuration, $[ud][ds][su]$, as a possible deeply bound structure. However, the higher-dimensional OPE contributions exhibit significant truncation dependence, and the low-mass solution remains conditional on the adopted OPE truncation rather than constituting a fully controlled mass prediction.",
-"citR": [],
-"citE": [
-"2817040"
-],
-"topR": [
-[
-0.007,
-"2690106"
-],
-[
-0.007,
-"2855387"
-],
-[
-0.0,
-"926166"
-]
-],
-"topE": [
-[
-0.156,
-"3201080"
-],
-[
-0.008,
-"3205155"
-],
-[
-0.008,
-"2828406"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.06,
-0.02,
-0.45,
-0.0
-],
-"score": 9.7
 },
 {
 "arxiv": "2604.20581",
@@ -2887,7 +2888,7 @@
 "section": "cross",
 "recid": "3216271",
 "src": "INSPIRE",
-"nref": 172,
+"nref": 175,
 "title": "A Casimir turning point as the beginning of a small flat universe",
 "authors": [
 "Alan Zhang"
@@ -2919,7 +2920,7 @@
 "2835172"
 ],
 [
-0.013,
+0.012,
 "2817040"
 ]
 ],
