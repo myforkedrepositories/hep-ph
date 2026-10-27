@@ -34,7 +34,8 @@ sources:
 ## `network_991924.json`
 
 The compact network used by the daily pages (built by `tools/build_network.py`, the
-hep-network-builder skill). Same own, coupled and important citing papers as above, plus,
+hep-network-builder skill). Since 2026-10-27 it is kept on the branch `site` with the pages and
+published with them at <https://restrepo.github.io/hep-ph/network_991924.json>. Same own, coupled and important citing papers as above, plus,
 since 2026-10-27, **every** paper by other authors from the last 10 years and the current one
 that cites at least one of the own papers (`--recent-years 10`), so new papers citing work about
 the author's are linked to the network too. On the 2026-10-27 listing this gave 20 papers
