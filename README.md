@@ -5,7 +5,7 @@ author [991924](https://inspirehep.net/authors/991924).
 
 - `docs/index.html` — links to the last 5 announcement days; `docs/hep-ph-YYYY-MM-DD.html` — one ranked listing per day
   (papers above the threshold, the network graph, then the next 20 papers by score in a collapsed list).
-- `data/inspire/network_991924.json` — compact network (own papers with ≤ 10 authors, the papers most coupled to them, the important papers citing them and every paper citing them from the last 2 years and the current one).
+- `data/inspire/network_991924.json` — compact network (own papers with ≤ 10 authors, the papers most coupled to them, the important papers citing them and every paper citing them from the last 10 years and the current one).
 - `tools/build_network.py` (hep-network-builder), `tools/hepph_match.py` + `tools/template.html`
   (hep-ph-network-match), `tools/build_site.py` (index and last-5-days logic).
 - `skills/hep-network-builder/SKILL.md`, `skills/hep-ph-network-match/SKILL.md` — the two skills with the current code

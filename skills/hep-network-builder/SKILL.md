@@ -37,9 +37,9 @@ It logs each stage to stderr. Selection, as in the original study:
   more than 30 authors are dropped; each own paper keeps its 5 best with coupling ≥ 0.10.
 - **Citing papers**: papers by others that cite an own paper and have at least 200
   citations or cite at least 4 own papers (the important ones), plus **every** citing paper
-  from the last 2 years and the current one (`--recent-years 2`). New listing papers that cite
-  recent work about the author's are then linked to the network, without the score inflation
-  that keeping all citing papers causes (`--recent-years -1` turns this off).
+  from the last 10 years and the current one (`--recent-years 10`). New listing papers that cite
+  work about the author's are then linked to the network. A smaller value is more conservative
+  (2 keeps the daily list close to the important-only network); `--recent-years -1` turns it off.
 
 All thresholds are options (`--min-shared`, `--max-ref-cites`, `--candidates`,
 `--max-cand-authors`, `--top`, `--min-coupling`, `--cites-min`, `--cite-own-min`, `--recent-years`).
@@ -144,7 +144,7 @@ def main():
     ap.add_argument("--min-coupling", type=float, default=0.10)
     ap.add_argument("--cites-min", type=int, default=200)
     ap.add_argument("--cite-own-min", type=int, default=4)
-    ap.add_argument("--recent-years", type=int, default=2,
+    ap.add_argument("--recent-years", type=int, default=10,
                     help="also keep every citing paper from this many years before the current one (-1: none)")
     ap.add_argument("--out", default="network.json")
     a = ap.parse_args(); A = a.author_recid

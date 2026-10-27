@@ -74,7 +74,7 @@ def main():
     ap.add_argument("--min-coupling", type=float, default=0.10)
     ap.add_argument("--cites-min", type=int, default=200)
     ap.add_argument("--cite-own-min", type=int, default=4)
-    ap.add_argument("--recent-years", type=int, default=2,
+    ap.add_argument("--recent-years", type=int, default=10,
                     help="also keep every citing paper from this many years before the current one (-1: none)")
     ap.add_argument("--out", default="network.json")
     a = ap.parse_args(); A = a.author_recid
