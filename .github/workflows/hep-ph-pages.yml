@@ -26,8 +26,21 @@ concurrency:
   group: hep-ph-pages
   cancel-in-progress: false
 
+# Settings: repository variables (Settings -> Secrets and variables -> Actions -> Variables), each
+# with its default here. See README, "Fork this repository for another INSPIRE author".
 env:
   AUTHOR: ${{ vars.INSPIRE_AUTHOR || '991924' }}
+  # network size (a change rebuilds the network on the next run)
+  RECENT_YEARS: ${{ vars.RECENT_YEARS || '10' }}            # years of citing papers kept (-1: important ones only)
+  MAX_AUTHORS: ${{ vars.MAX_AUTHORS || '10' }}              # max authors of the author's own papers
+  COUPLED_PER_PAPER: ${{ vars.COUPLED_PER_PAPER || '5' }}   # most coupled papers kept per own paper
+  NETWORK_MAX_AGE: ${{ vars.NETWORK_MAX_AGE || '7' }}       # days before the network is rebuilt
+  # listing (a change rebuilds the pages on the next run)
+  ARXIV_CATEGORY: ${{ vars.ARXIV_CATEGORY || 'hep-ph' }}
+  SCORE_THRESHOLD: ${{ vars.SCORE_THRESHOLD || '10' }}
+  NEXT_PAPERS: ${{ vars.NEXT_PAPERS || '20' }}              # papers in each page's folded "next" list
+  DAYS: ${{ vars.DAYS || '5' }}                             # announcement days shown
+  TIMEZONE: ${{ vars.TIMEZONE || 'America/Bogota' }}        # decides which day is "today"
   SITE_BRANCH: site
 
 jobs:
@@ -73,22 +86,29 @@ jobs:
         run: |
           stale=$(python3 - <<'EOF'
           import json, os, datetime
-          p = os.environ["NETWORK"]
-          if not os.path.exists(p): print("yes")
+          E = os.environ; p = E["NETWORK"]
+          if not os.path.exists(p): print("missing")
           else:
-              b = datetime.date.fromisoformat(json.load(open(p))["built"])
-              print("yes" if (datetime.date.today() - b).days > 7 else "no")   # weekly: new citing papers join
+              n = json.load(open(p)); q = n.get("params", {})
+              want = {"recent_years": int(E["RECENT_YEARS"]), "max_authors": int(E["MAX_AUTHORS"]), "top": int(E["COUPLED_PER_PAPER"])}
+              age = (datetime.date.today() - datetime.date.fromisoformat(n["built"])).days
+              diff = [k for k, v in want.items() if q.get(k) != v]
+              print(f"settings changed: {diff}" if diff else f"{age} days old" if age > int(E["NETWORK_MAX_AGE"]) else "no")
           EOF
           )
-          if [ "$stale" = "yes" ] || [ "${{ inputs.rebuild_network }}" = "true" ]; then
-            python3 -I tools/build_network.py --author-recid "$AUTHOR" --max-authors 10 --out "$NETWORK.tmp"
+          if [ "$stale" != "no" ] || [ "${{ inputs.rebuild_network }}" = "true" ]; then
+            echo "rebuilding the network ($stale)"
+            python3 -I tools/build_network.py --author-recid "$AUTHOR" --max-authors "$MAX_AUTHORS" \
+              --recent-years "$RECENT_YEARS" --top "$COUPLED_PER_PAPER" --out "$NETWORK.tmp"
             mv "$NETWORK.tmp" "$NETWORK"
           else
             echo "network file is recent; keeping it"
           fi
 
       - name: Build the daily pages and the index (hep-ph-network-match)
-        run: python3 -I tools/build_site.py --network "$NETWORK" --site site --days 5 --include-today
+        run: |
+          python3 -I tools/build_site.py --network "$NETWORK" --site site --include-today --days "$DAYS" \
+            --category "$ARXIV_CATEGORY" --threshold "$SCORE_THRESHOLD" --next "$NEXT_PAPERS" --tz "$TIMEZONE"
 
       - name: Save the site on its branch
         working-directory: site

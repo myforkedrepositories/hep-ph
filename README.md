@@ -44,6 +44,32 @@ is a repository variable.
    address). From then on it updates by itself every weekday evening (21:17 Bogotá) and rebuilds the
    network weekly.
 
+**Optional settings.** Add any of these as repository variables, next to `INSPIRE_AUTHOR`
+(Settings → Secrets and variables → Actions → Variables). Unset means the default.
+
+*Network size* — a change rebuilds the network on the next run:
+
+| Variable | Default | What it does |
+|---|---|---|
+| `RECENT_YEARS` | `10` | Every paper citing the author's papers from this many past years (and the current one) joins the network. Lower is more conservative: `2` keeps the daily list close to the original selection, `-1` keeps only the important citing papers (≥ 200 citations or citing ≥ 4 of the author's papers). |
+| `MAX_AUTHORS` | `10` | The network starts from the author's papers with at most this many authors. Raise it for someone who mostly writes in larger groups. |
+| `COUPLED_PER_PAPER` | `5` | For each of the author's papers, this many papers by others that share the most references with it are kept. |
+| `NETWORK_MAX_AGE` | `7` | Days before the network is rebuilt, so new citing papers join. |
+
+*Listing* — a change rebuilds the pages on the next run:
+
+| Variable | Default | What it does |
+|---|---|---|
+| `ARXIV_CATEGORY` | `hep-ph` | arXiv listing to rank, e.g. `hep-th`, `astro-ph.CO`, `gr-qc`. |
+| `SCORE_THRESHOLD` | `10` | Papers scoring at least this (0–100) are listed in full on each day's page. |
+| `NEXT_PAPERS` | `20` | Papers just below the threshold shown in each page's folded list. |
+| `DAYS` | `5` | Announcement days shown on the site. |
+| `TIMEZONE` | `America/Bogota` | Time zone that decides which day is "today". |
+
+The time of the daily run (21:17 Bogotá) is the one setting that cannot be a variable: GitHub needs
+it written in `.github/workflows/hep-ph-pages.yml` (`cron`, in UTC). Editing that line is fine, but it
+may then need a quick conflict fix when syncing the fork.
+
 **Keeping the fork up to date.** When this repository gets improvements, click **Sync fork** on the
 fork's main page. `main` holds only code and data and the author lives in the variable, so syncing
 never conflicts; the next run uses the new code.

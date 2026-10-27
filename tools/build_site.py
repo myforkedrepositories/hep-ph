@@ -146,6 +146,7 @@ def main():
     ap.add_argument("--network", required=True); ap.add_argument("--site", default="docs")
     ap.add_argument("--days", type=int, default=5); ap.add_argument("--threshold", type=float, default=10)
     ap.add_argument("--category", default="hep-ph"); ap.add_argument("--tz", default="America/Bogota")
+    ap.add_argument("--next", type=int, default=20, help="papers below the threshold in each page's folded list")
     ap.add_argument("--include-today", action="store_true",
                     help="also build today's listing (for a late run: it was announced the evening before)")
     ap.add_argument("--settle", type=int, default=2, help="rebuild a page built less than this many days after its date")
@@ -170,9 +171,10 @@ def main():
         d -= timedelta(days=1)
         if d.weekday() < 5: cand.append(d)
     cand = cand[:args.days]
-    # pages made by older code (template or scorer) are rebuilt, so page changes reach every day
+    # pages made by older code (template or scorer) or other settings are rebuilt, so changes reach every day
     code = hashlib.sha256(b"".join(open(os.path.join(HERE, f), "rb").read()
-                                   for f in ("hepph_match.py", "template.html", "build_site.py"))).hexdigest()[:12]
+                                   for f in ("hepph_match.py", "template.html", "build_site.py")) +
+                          f"{args.category}|{args.threshold:g}|{args.next}".encode()).hexdigest()[:12]
 
     # arXiv answers 429 to bursts from cloud runners: pause between days, wait longer on each retry,
     # and leave a day that still fails for the next run (an older day never takes its place).
@@ -189,6 +191,7 @@ def main():
             print(f"{ds}: building (attempt {attempt + 1})", file=sys.stderr, flush=True)
             p = subprocess.run([sys.executable, "-I", os.path.join(HERE, "hepph_match.py"), "--network", args.network,
                                 "--date", ds, "--threshold", str(args.threshold), "--category", args.category,
+                                "--next", str(args.next),
                                 "--work", os.path.join(args.work, ds), "--recent-html", recent, "--out", out],
                                stderr=subprocess.PIPE, text=True)
             sys.stderr.write(p.stderr)
