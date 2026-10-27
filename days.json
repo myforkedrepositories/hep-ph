@@ -1,0 +1,142 @@
+[
+ {
+  "date": "2026-10-27",
+  "page": "hep-ph-2026-10-27.html",
+  "built": "2026-10-27",
+  "code": "e81425d2b35f",
+  "nlist": 100,
+  "nrel": 25,
+  "top": [
+   {
+    "arxiv": "2610.16968",
+    "title": "Self-Interacting Dark Matter: From Particle Physics Theories to Structure Formation Simulations",
+    "score": 70.4,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2610.29543",
+    "title": "Detectable Dark Matter Freeze-in via Low Reheating",
+    "score": 60.4,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2610.35444",
+    "title": "Probing the singlet-triplet scotogenic model with lepton flavor violation, gravitational waves and dark matter",
+    "score": 57.0,
+    "section": "new"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-26",
+  "page": "hep-ph-2026-10-26.html",
+  "built": "2026-10-27",
+  "code": "e81425d2b35f",
+  "nlist": 40,
+  "nrel": 11,
+  "top": [
+   {
+    "arxiv": "2610.32747",
+    "title": "Heavy Sterile Fermions from the Atmosphere: LZ Limits on Neutrino Up-Scattering",
+    "score": 34.3,
+    "section": "new"
+   },
+   {
+    "arxiv": "2610.32599",
+    "title": "Gauge-field energy density in inflationary kinetic-coupling models: QFT regularization versus horizon cutoffs",
+    "score": 34.3,
+    "section": "cross"
+   },
+   {
+    "arxiv": "2609.06750",
+    "title": "GUT-induced collider signatures of the LUX-ZEPLIN event",
+    "score": 34.1,
+    "section": "replacement"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-23",
+  "page": "hep-ph-2026-10-23.html",
+  "built": "2026-10-27",
+  "code": "e81425d2b35f",
+  "nlist": 80,
+  "nrel": 16,
+  "top": [
+   {
+    "arxiv": "2610.30984",
+    "title": "At the Highest-Frequency Frontier: Thermal Gravitational Waves from Supernovae",
+    "score": 55.1,
+    "section": "new"
+   },
+   {
+    "arxiv": "2610.31101",
+    "title": "Saxion Decay and Dark Radiation in the KSVZ Axion Model",
+    "score": 46.8,
+    "section": "new"
+   },
+   {
+    "arxiv": "2512.00166",
+    "title": "Searching for Ultralight Dark Matter with MOLeQuTE: a Massive Optically Levitated Quantum Tabletop Experiment",
+    "score": 38.4,
+    "section": "replacement"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-22",
+  "page": "hep-ph-2026-10-22.html",
+  "built": "2026-10-27",
+  "code": "e81425d2b35f",
+  "nlist": 68,
+  "nrel": 12,
+  "top": [
+   {
+    "arxiv": "2607.27325",
+    "title": "Seesaw Cosmology",
+    "score": 100.0,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2610.29967",
+    "title": "Gravitational Waves from New Inflation",
+    "score": 69.3,
+    "section": "new"
+   },
+   {
+    "arxiv": "2601.00436",
+    "title": "Anatomy of RHN DM relic in the vanilla scotogenic neutrino mass model",
+    "score": 65.7,
+    "section": "replacement"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-21",
+  "page": "hep-ph-2026-10-21.html",
+  "built": "2026-10-27",
+  "code": "e81425d2b35f",
+  "nlist": 78,
+  "nrel": 19,
+  "top": [
+   {
+    "arxiv": "2610.27105",
+    "title": "The Electron-Recoil Response Tail and the LZ High-Energy Event Background",
+    "score": 53.5,
+    "section": "cross"
+   },
+   {
+    "arxiv": "2610.27089",
+    "title": "Self-interacting dark matter from radiative bound-state-formation feedback",
+    "score": 50.2,
+    "section": "new"
+   },
+   {
+    "arxiv": "2610.27131",
+    "title": "Illuminating Light Dark Matter with Fixed-Target Experiments",
+    "score": 49.8,
+    "section": "new"
+   }
+  ]
+ }
+]
