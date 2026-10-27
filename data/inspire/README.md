@@ -31,6 +31,16 @@ sources:
    when it has at least 200 citations or cites at least 4 of the 65 papers. Of the
    96 that qualify, 23 were already among the coupled papers.
 
+## `network_991924.json`
+
+The compact network used by the daily pages (built by `tools/build_network.py`, the
+hep-network-builder skill). Same own, coupled and important citing papers as above, plus,
+since 2026-10-27, **every** paper by other authors from the last 10 years and the current one
+that cites at least one of the own papers (`--recent-years 10`), so new papers citing work about
+the author's are linked to the network too. On the 2026-10-27 listing this gave 20 papers
+scoring 10 or more instead of 15 (2 years: 16; all 1,309 citing papers: 20). It is rebuilt
+weekly by the workflow.
+
 ## Download
 
 ```bash

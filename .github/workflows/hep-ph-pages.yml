@@ -49,7 +49,7 @@ jobs:
           if not os.path.exists(p): print("yes")
           else:
               b = datetime.date.fromisoformat(json.load(open(p))["built"])
-              print("yes" if (datetime.date.today() - b).days > 30 else "no")
+              print("yes" if (datetime.date.today() - b).days > 7 else "no")   # weekly: new citing papers join
           EOF
           )
           if [ "$stale" = "yes" ] || [ "${{ inputs.rebuild_network }}" = "true" ]; then

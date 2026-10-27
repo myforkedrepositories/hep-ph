@@ -10,8 +10,9 @@ Selection (as in restrepo/hep-ph data/inspire/README.md):
                 core refs cited) are compared by idf-weighted cosine of INSPIRE reference sets;
                 collaboration papers and papers with > --max-cand-authors authors dropped; each own
                 paper keeps its --top best with coupling >= --min-coupling
-  citing      : papers by others citing an own paper with >= --cites-min citations or citing
-                >= --cite-own-min own papers
+  citing      : papers by others citing an own paper with >= --cites-min citations, citing
+                >= --cite-own-min own papers, or from the last --recent-years years (and the
+                current one), so new papers citing recent work about the author's are linked
 Output: one JSON with, per paper, id, kind (R own / E external), title, arXiv, year, citations,
 first author, author count and the INSPIRE ids it references; plus the co-author names.
 """
@@ -73,6 +74,8 @@ def main():
     ap.add_argument("--min-coupling", type=float, default=0.10)
     ap.add_argument("--cites-min", type=int, default=200)
     ap.add_argument("--cite-own-min", type=int, default=4)
+    ap.add_argument("--recent-years", type=int, default=10,
+                    help="also keep every citing paper from this many years before the current one (-1: none)")
     ap.add_argument("--out", default="network.json")
     a = ap.parse_args(); A = a.author_recid
     log = lambda s: print(s, file=sys.stderr, flush=True)
@@ -116,13 +119,16 @@ def main():
             if s >= a.min_coupling: keep[k] = max(keep.get(k, 0), s)
     log(f"coupled external papers: {len(keep)}")
 
-    # important citing papers
-    hits = Counter(); info = {}
+    # citing papers: important ones, plus every recent one
+    hits = Counter(); info = {}; year = {}
+    since = int(time.strftime("%Y")) - a.recent_years if a.recent_years >= 0 else 10**4
     for m in own:
-        for c in search(f"refersto:recid:{m['control_number']} and not authors.recid:{A}", "control_number,citation_count", 1000):
-            hits[c["control_number"]] += 1; info[c["control_number"]] = c.get("citation_count") or 0
-    imp = {k for k, n in hits.items() if n >= a.cite_own_min or info[k] >= a.cites_min}
-    log(f"papers citing own papers: {len(hits)}; important: {len(imp)} ({len(imp & set(keep))} already coupled)")
+        for c in search(f"refersto:recid:{m['control_number']} and not authors.recid:{A}", "control_number,citation_count,earliest_date", 1000):
+            k = c["control_number"]; hits[k] += 1; info[k] = c.get("citation_count") or 0
+            year[k] = int((c.get("earliest_date") or "0")[:4] or 0)
+    imp = {k for k, n in hits.items() if n >= a.cite_own_min or info[k] >= a.cites_min or year[k] >= since}
+    log(f"papers citing own papers: {len(hits)}; kept: {len(imp)} ({sum(year[k] >= since for k in imp)} since {since}; "
+        f"{len(imp & set(keep))} already coupled)")
 
     ext = set(keep) | imp
     E = by_recids(ext, META + ",authors.full_name")
