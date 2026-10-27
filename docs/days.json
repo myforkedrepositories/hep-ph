@@ -3,26 +3,26 @@
   "date": "2026-10-27",
   "page": "hep-ph-2026-10-27.html",
   "built": "2026-10-27",
-  "code": "c8f7e4297e49",
+  "code": "e01086a29df8",
   "nlist": 100,
-  "nrel": 15,
+  "nrel": 20,
   "top": [
    {
     "arxiv": "2610.35444",
     "title": "Probing the singlet-triplet scotogenic model with lepton flavor violation, gravitational waves and dark matter",
-    "score": 53.6,
+    "score": 56.4,
     "section": "new"
    },
    {
-    "arxiv": "2610.16968",
-    "title": "Self-Interacting Dark Matter: From Particle Physics Theories to Structure Formation Simulations",
-    "score": 27.4,
-    "section": "replacement"
+    "arxiv": "2610.34880",
+    "title": "Light top-flavoured dark matter in dark SMEFT: one-loop matching and phenomenology",
+    "score": 44.7,
+    "section": "new"
    },
    {
     "arxiv": "2512.24132",
     "title": "An $A_4$-Symmetric Double Seesaw for Neutrino Masses and Mixing in Light of JUNO results",
-    "score": 26.9,
+    "score": 44.5,
     "section": "replacement"
    }
   ]
@@ -31,27 +31,27 @@
   "date": "2026-10-26",
   "page": "hep-ph-2026-10-26.html",
   "built": "2026-10-27",
-  "code": "c8f7e4297e49",
+  "code": "e01086a29df8",
   "nlist": 40,
-  "nrel": 5,
+  "nrel": 7,
   "top": [
+   {
+    "arxiv": "2610.32747",
+    "title": "Heavy Sterile Fermions from the Atmosphere: LZ Limits on Neutrino Up-Scattering",
+    "score": 43.0,
+    "section": "new"
+   },
    {
     "arxiv": "2610.31770",
     "title": "Flavored $S_{3}$ Non-Minimal Left-Right Symmetric Model",
-    "score": 33.2,
+    "score": 40.3,
     "section": "new"
    },
    {
     "arxiv": "2609.06750",
     "title": "GUT-induced collider signatures of the LUX-ZEPLIN event",
-    "score": 32.9,
+    "score": 34.2,
     "section": "replacement"
-   },
-   {
-    "arxiv": "2610.32747",
-    "title": "Heavy Sterile Fermions from the Atmosphere: LZ Limits on Neutrino Up-Scattering",
-    "score": 24.7,
-    "section": "new"
    }
   ]
  },
@@ -59,26 +59,26 @@
   "date": "2026-10-23",
   "page": "hep-ph-2026-10-23.html",
   "built": "2026-10-27",
-  "code": "c8f7e4297e49",
+  "code": "e01086a29df8",
   "nlist": 80,
-  "nrel": 5,
+  "nrel": 10,
   "top": [
    {
-    "arxiv": "2610.30240",
-    "title": "Probing Heavy Neutral Leptons through New Gauge Interactions at the Forward Physics Facilities",
-    "score": 29.5,
+    "arxiv": "2610.31254",
+    "title": "A consistent neutrino determination of the low-energy weak mixing angle",
+    "score": 43.8,
     "section": "new"
    },
    {
-    "arxiv": "2610.25925",
-    "title": "Exploring a low-mass H dibaryon in light of the LZ event: A QCD sum rule study",
-    "score": 26.2,
-    "section": "replacement"
+    "arxiv": "2610.31658",
+    "title": "Neutrino Mass in Left-Right Symmetry: From Majorana Signals to Dirac Predictions",
+    "score": 38.2,
+    "section": "new"
    },
    {
-    "arxiv": "2610.30534",
-    "title": "What if dark matter is composite of least interacting particles?",
-    "score": 25.2,
+    "arxiv": "2610.30981",
+    "title": "Construction and phenomenological analysis of dynamical Inverse seesaw neutrino mixing model",
+    "score": 34.9,
     "section": "new"
    }
   ]
@@ -86,27 +86,27 @@
  {
   "date": "2026-10-22",
   "page": "hep-ph-2026-10-22.html",
-  "built": "2026-10-24",
-  "code": "c8f7e4297e49",
+  "built": "2026-10-27",
+  "code": "e01086a29df8",
   "nlist": 68,
-  "nrel": 8,
+  "nrel": 10,
   "top": [
    {
     "arxiv": "2601.00436",
     "title": "Anatomy of RHN DM relic in the vanilla scotogenic neutrino mass model",
-    "score": 51.2,
+    "score": 56.8,
     "section": "replacement"
    },
    {
     "arxiv": "2607.27325",
     "title": "Seesaw Cosmology",
-    "score": 38.4,
+    "score": 39.2,
     "section": "replacement"
    },
    {
     "arxiv": "2610.29335",
     "title": "Heavy Pseudo-Dirac Doublet Dark Matter and Non-Thermal Leptogenesis in Light of the LZ Event",
-    "score": 30.2,
+    "score": 36.9,
     "section": "new"
    }
   ]
@@ -114,27 +114,27 @@
  {
   "date": "2026-10-21",
   "page": "hep-ph-2026-10-21.html",
-  "built": "2026-10-24",
-  "code": "c8f7e4297e49",
+  "built": "2026-10-27",
+  "code": "e01086a29df8",
   "nlist": 78,
-  "nrel": 7,
+  "nrel": 8,
   "top": [
+   {
+    "arxiv": "2610.27105",
+    "title": "The Electron-Recoil Response Tail and the LZ High-Energy Event Background",
+    "score": 49.3,
+    "section": "cross"
+   },
    {
     "arxiv": "2610.28014",
     "title": "Two-Component Dark Matter and Strongly First-Order Electroweak Phase Transition via a Two-Step Mechanism in the Inert Doublet plus Real Singlet Model",
-    "score": 35.2,
+    "score": 49.0,
     "section": "new"
    },
    {
     "arxiv": "2610.27270",
     "title": "Correlations in oscillation data and their impact on neutrino mixing models",
-    "score": 29.5,
-    "section": "new"
-   },
-   {
-    "arxiv": "2610.28252",
-    "title": "Probing a heavy neutral lepton in a radiative neutrino model at a muon collider",
-    "score": 28.1,
+    "score": 47.5,
     "section": "new"
    }
   ]
