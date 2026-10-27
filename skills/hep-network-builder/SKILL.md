@@ -1,6 +1,6 @@
 ---
 name: "hep-network-builder"
-description: "Builds, from an INSPIRE author ID, a compact citation-network file (own papers with up to 10 authors, their most coupled papers and every paper by others that cites them, with INSPIRE reference lists) and saves it in the project for hep-ph-network-match."
+description: "Builds, from an INSPIRE author ID, a compact citation-network file (own papers with up to 10 authors, their most coupled papers, and the important and recent papers by others that cite them, with INSPIRE reference lists) and saves it in the project for hep-ph-network-match."
 ---
 
 # HEP network builder
@@ -35,13 +35,14 @@ It logs each stage to stderr. Selection, as in the original study:
   best (idf-weighted count of core references cited) are compared with each own paper by
   idf-weighted cosine of their INSPIRE reference sets; collaboration papers and papers with
   more than 30 authors are dropped; each own paper keeps its 5 best with coupling ≥ 0.10.
-- **Citing papers**: every paper by others that cites at least one own paper (direct
-  citations of the author's profile), so later papers that cite those are linked to the network
-  too. `--cite-own-min N` (N > 1) keeps only papers citing N own papers or having at least
-  `--cites-min` citations (the original study used 4 and 200).
+- **Citing papers**: papers by others that cite an own paper and have at least 200
+  citations or cite at least 4 own papers (the important ones), plus **every** citing paper
+  from the last 2 years and the current one (`--recent-years 2`). New listing papers that cite
+  recent work about the author's are then linked to the network, without the score inflation
+  that keeping all citing papers causes (`--recent-years -1` turns this off).
 
 All thresholds are options (`--min-shared`, `--max-ref-cites`, `--candidates`,
-`--max-cand-authors`, `--top`, `--min-coupling`, `--cites-min`, `--cite-own-min`).
+`--max-cand-authors`, `--top`, `--min-coupling`, `--cites-min`, `--cite-own-min`, `--recent-years`).
 
 The output keeps only what the matcher uses: for each paper its INSPIRE id, kind (own or
 external), title, arXiv number, year, citations, first author, number of authors and the
@@ -79,9 +80,9 @@ Selection (as in restrepo/hep-ph data/inspire/README.md):
                 core refs cited) are compared by idf-weighted cosine of INSPIRE reference sets;
                 collaboration papers and papers with > --max-cand-authors authors dropped; each own
                 paper keeps its --top best with coupling >= --min-coupling
-  citing      : papers by others citing an own paper; by default every one (--cite-own-min 1).
-                Raising --cite-own-min keeps only papers citing that many own papers or having
-                >= --cites-min citations
+  citing      : papers by others citing an own paper with >= --cites-min citations, citing
+                >= --cite-own-min own papers, or from the last --recent-years years (and the
+                current one), so new papers citing recent work about the author's are linked
 Output: one JSON with, per paper, id, kind (R own / E external), title, arXiv, year, citations,
 first author, author count and the INSPIRE ids it references; plus the co-author names.
 """
@@ -142,7 +143,9 @@ def main():
     ap.add_argument("--top", type=int, default=5)
     ap.add_argument("--min-coupling", type=float, default=0.10)
     ap.add_argument("--cites-min", type=int, default=200)
-    ap.add_argument("--cite-own-min", type=int, default=1)
+    ap.add_argument("--cite-own-min", type=int, default=4)
+    ap.add_argument("--recent-years", type=int, default=2,
+                    help="also keep every citing paper from this many years before the current one (-1: none)")
     ap.add_argument("--out", default="network.json")
     a = ap.parse_args(); A = a.author_recid
     log = lambda s: print(s, file=sys.stderr, flush=True)
@@ -186,13 +189,16 @@ def main():
             if s >= a.min_coupling: keep[k] = max(keep.get(k, 0), s)
     log(f"coupled external papers: {len(keep)}")
 
-    # citing papers (all of them by default)
-    hits = Counter(); info = {}
+    # citing papers: important ones, plus every recent one
+    hits = Counter(); info = {}; year = {}
+    since = int(time.strftime("%Y")) - a.recent_years if a.recent_years >= 0 else 10**4
     for m in own:
-        for c in search(f"refersto:recid:{m['control_number']} and not authors.recid:{A}", "control_number,citation_count", 1000):
-            hits[c["control_number"]] += 1; info[c["control_number"]] = c.get("citation_count") or 0
-    imp = {k for k, n in hits.items() if n >= a.cite_own_min or info[k] >= a.cites_min}
-    log(f"papers citing own papers: {len(hits)}; kept: {len(imp)} ({len(imp & set(keep))} already coupled)")
+        for c in search(f"refersto:recid:{m['control_number']} and not authors.recid:{A}", "control_number,citation_count,earliest_date", 1000):
+            k = c["control_number"]; hits[k] += 1; info[k] = c.get("citation_count") or 0
+            year[k] = int((c.get("earliest_date") or "0")[:4] or 0)
+    imp = {k for k, n in hits.items() if n >= a.cite_own_min or info[k] >= a.cites_min or year[k] >= since}
+    log(f"papers citing own papers: {len(hits)}; kept: {len(imp)} ({sum(year[k] >= since for k in imp)} since {since}; "
+        f"{len(imp & set(keep))} already coupled)")
 
     ext = set(keep) | imp
     E = by_recids(ext, META + ",authors.full_name")

@@ -34,10 +34,12 @@ sources:
 ## `network_991924.json`
 
 The compact network used by the daily pages (built by `tools/build_network.py`, the
-hep-network-builder skill). Same own and coupled papers as above, but since 2026-10-27 it keeps
-**every** paper by other authors that cites at least one of the own papers, not only the
-important ones, so later papers citing those are linked to the network too. It is rebuilt
-weekly by the workflow.
+hep-network-builder skill). Same own, coupled and important citing papers as above, plus,
+since 2026-10-27, **every** paper by other authors from the last 2 years and the current one
+that cites at least one of the own papers (`--recent-years 2`), so new papers citing recent work
+about the author's are linked to the network too. Keeping all 1,309 citing papers was tried and
+raised scores across the board; the recent ones add about 140 papers. It is rebuilt weekly by
+the workflow.
 
 ## Download
 
