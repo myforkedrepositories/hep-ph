@@ -52,6 +52,11 @@ jobs:
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
           if git ls-remote --exit-code --heads origin "$SITE_BRANCH" >/dev/null; then
             git worktree add --detach site "origin/$SITE_BRANCH"
+            # A fork that copied all branches has the original author's site: start over for this author.
+            if [ ! -e "site/network_$AUTHOR.json" ] && ls site/network_*.json >/dev/null 2>&1; then
+              echo "site branch belongs to another author; starting it over for $AUTHOR"
+              git -C site rm -rqf .
+            fi
           else
             git worktree add --orphan -b "$SITE_BRANCH" site
             # Seed it with the pages and network this author had on main before they moved here
