@@ -1,7 +1,12 @@
 name: hep-ph network pages
 
-# Builds docs/ (served by GitHub Pages): one ranked hep-ph listing per announcement day for the
-# last 5 days, matched against the INSPIRE citation network of author 991924, plus docs/index.html.
+# Builds and publishes the site (GitHub Pages, source "GitHub Actions"): one ranked hep-ph listing
+# per announcement day for the last 5 days, matched against the INSPIRE citation network of the
+# author in the repository variable INSPIRE_AUTHOR (default 991924), plus an index.
+#
+# Generated files never go to main: the network file and the pages are kept on the branch `site`,
+# which this workflow creates on its first run. A fork therefore only sets INSPIRE_AUTHOR
+# (Settings -> Secrets and variables -> Actions -> Variables) and can "Sync fork" without conflicts.
 on:
   schedule:
     # One late run per weekday: 21:17 Bogotá Monday-Friday (02:17 UTC Tuesday-Saturday). By then the
@@ -14,24 +19,36 @@ on:
         type: boolean
         default: false
   push:
-    branches: [main]   # generated pages are committed on main only (PR branches would conflict)
+    branches: [main]
     paths: ["tools/**", ".github/workflows/hep-ph-pages.yml"]
 
-permissions:
-  contents: write
-
 concurrency:
-  group: hep-ph-pages-${{ github.ref }}
+  group: hep-ph-pages
   cancel-in-progress: false
 
+# Settings: repository variables (Settings -> Secrets and variables -> Actions -> Variables), each
+# with its default here. See README, "Fork this repository for another INSPIRE author".
 env:
-  AUTHOR: "991924"
-  NETWORK: data/inspire/network_991924.json
+  AUTHOR: ${{ vars.INSPIRE_AUTHOR || '991924' }}
+  # network size (a change rebuilds the network on the next run)
+  RECENT_YEARS: ${{ vars.RECENT_YEARS || '10' }}            # years of citing papers kept (-1: important ones only)
+  MAX_AUTHORS: ${{ vars.MAX_AUTHORS || '10' }}              # max authors of the author's own papers
+  COUPLED_PER_PAPER: ${{ vars.COUPLED_PER_PAPER || '5' }}   # most coupled papers kept per own paper
+  NETWORK_MAX_AGE: ${{ vars.NETWORK_MAX_AGE || '7' }}       # days before the network is rebuilt
+  # listing (a change rebuilds the pages on the next run)
+  ARXIV_CATEGORY: ${{ vars.ARXIV_CATEGORY || 'hep-ph' }}
+  SCORE_THRESHOLD: ${{ vars.SCORE_THRESHOLD || '10' }}
+  NEXT_PAPERS: ${{ vars.NEXT_PAPERS || '20' }}              # papers in each page's folded "next" list
+  DAYS: ${{ vars.DAYS || '5' }}                             # announcement days shown
+  TIMEZONE: ${{ vars.TIMEZONE || 'America/Bogota' }}        # decides which day is "today"
+  SITE_BRANCH: site
 
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 150
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -41,39 +58,86 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check out the site branch (created on the first run)
+        run: |
+          echo "NETWORK=site/network_$AUTHOR.json" >> "$GITHUB_ENV"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin "$SITE_BRANCH" >/dev/null; then
+            git worktree add --detach site "origin/$SITE_BRANCH"
+            # A fork that copied all branches has the original author's site: start over for this author.
+            if [ ! -e "site/network_$AUTHOR.json" ] && ls site/network_*.json >/dev/null 2>&1; then
+              echo "site branch belongs to another author; starting it over for $AUTHOR"
+              git -C site rm -rqf .
+            fi
+          else
+            git worktree add --orphan -b "$SITE_BRANCH" site
+            # Seed it with the pages and network this author had on main before they moved here
+            # (a fork with another author starts empty).
+            c=$(git rev-list -1 HEAD -- docs/days.json)
+            if [ -n "$c" ] && git cat-file -e "$c^:data/inspire/network_$AUTHOR.json" 2>/dev/null; then
+              git archive "$c^" docs | tar -x -C site --strip-components=1
+              git show "$c^:data/inspire/network_$AUTHOR.json" > "site/network_$AUTHOR.json"
+              echo "seeded the site branch from $c^"
+            fi
+          fi
+
       - name: Build the citation network (hep-network-builder)
         run: |
           stale=$(python3 - <<'EOF'
           import json, os, datetime
-          p = os.environ["NETWORK"]
-          if not os.path.exists(p): print("yes")
+          E = os.environ; p = E["NETWORK"]
+          if not os.path.exists(p): print("missing")
           else:
-              b = datetime.date.fromisoformat(json.load(open(p))["built"])
-              print("yes" if (datetime.date.today() - b).days > 7 else "no")   # weekly: new citing papers join
+              n = json.load(open(p)); q = n.get("params", {})
+              want = {"recent_years": int(E["RECENT_YEARS"]), "max_authors": int(E["MAX_AUTHORS"]), "top": int(E["COUPLED_PER_PAPER"])}
+              age = (datetime.date.today() - datetime.date.fromisoformat(n["built"])).days
+              diff = [k for k, v in want.items() if q.get(k) != v]
+              print(f"settings changed: {diff}" if diff else f"{age} days old" if age > int(E["NETWORK_MAX_AGE"]) else "no")
           EOF
           )
-          if [ "$stale" = "yes" ] || [ "${{ inputs.rebuild_network }}" = "true" ]; then
-            python3 -I tools/build_network.py --author-recid "$AUTHOR" --max-authors 10 --out "$NETWORK.tmp"
+          if [ "$stale" != "no" ] || [ "${{ inputs.rebuild_network }}" = "true" ]; then
+            echo "rebuilding the network ($stale)"
+            python3 -I tools/build_network.py --author-recid "$AUTHOR" --max-authors "$MAX_AUTHORS" \
+              --recent-years "$RECENT_YEARS" --top "$COUPLED_PER_PAPER" --out "$NETWORK.tmp"
             mv "$NETWORK.tmp" "$NETWORK"
           else
             echo "network file is recent; keeping it"
           fi
 
       - name: Build the daily pages and the index (hep-ph-network-match)
-        run: python3 -I tools/build_site.py --network "$NETWORK" --site docs --days 5 --include-today
-
-      - name: Commit the site
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add docs "$NETWORK"
+          python3 -I tools/build_site.py --network "$NETWORK" --site site --include-today --days "$DAYS" \
+            --category "$ARXIV_CATEGORY" --threshold "$SCORE_THRESHOLD" --next "$NEXT_PAPERS" --tz "$TIMEZONE"
+
+      - name: Save the site on its branch
+        working-directory: site
+        run: |
+          git add -A
           if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
-          git commit -m "Update hep-ph network pages ($(date -u +%Y-%m-%d))"
-          # Another run (or a merge) may have pushed generated files meanwhile: merge it, keeping
-          # this run's version of any conflicting file, and push again.
+          git commit -q -m "Update hep-ph network pages ($(date -u +%Y-%m-%d))"
+          # Another run may have pushed meanwhile: merge it, keeping this run's version of any
+          # conflicting file, and push again.
           for i in 1 2 3; do
-            git push origin HEAD:${{ github.ref_name }} && exit 0
-            git fetch origin ${{ github.ref_name }}
-            git merge --no-edit -X ours origin/${{ github.ref_name }}
+            git push origin "HEAD:refs/heads/$SITE_BRANCH" && exit 0
+            git fetch origin "$SITE_BRANCH"
+            git merge --no-edit -X ours "origin/$SITE_BRANCH"
           done
           exit 1
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

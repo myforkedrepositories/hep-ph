@@ -92,6 +92,9 @@ def index(site, man, net, args):
                 f'<a class="open" href="{e(d["page"])}">Open the ranked listing →</a></article>')
     arch = "".join(f'<li><a href="{e(d["page"])}">{e(d["date"])}</a> · {d["nrel"]} of {d["nlist"]}</li>' for d in old)
     a = net["author"]; c = net["counts"]
+    # a network file published with the site is linked directly; otherwise its copy on GitHub
+    inside = os.path.commonpath([os.path.abspath(args.network), os.path.abspath(site)]) == os.path.abspath(site)
+    netlink = os.path.relpath(args.network, site) if inside else f"https://github.com/{args.repo}/blob/main/{args.network}"
     body = f"""{HEAD}<title>hep-ph Network Match</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -129,7 +132,7 @@ h3{{font-family:Spectral,Georgia,serif;font-weight:600;font-size:1.1rem;margin:0
 <section class="days" aria-label="Latest announcement days">{"".join(card(d) for d in cur) or '<p>No pages yet.</p>'}</section>
 {f'<section><h3>Earlier days</h3><ul class="arch">{arch}</ul></section>' if arch else ''}
 <footer class="foot">
-  <p><b>Network.</b> {c["own"]} of your papers with at most {net["params"]["max_authors"]} authors and {c["external"]} papers by others around them ({c["coupled"]} by bibliographic coupling, {c["citing"]} papers citing yours), built from INSPIRE-HEP on {e(net["built"])}. File: <a href="https://github.com/{e(args.repo)}/blob/main/{e(args.network)}">{e(os.path.basename(args.network))}</a>.</p>
+  <p><b>Network.</b> {c["own"]} of your papers with at most {net["params"]["max_authors"]} authors and {c["external"]} papers by others around them ({c["coupled"]} by bibliographic coupling, {c["citing"]} papers citing yours), built from INSPIRE-HEP on {e(net["built"])}. File: <a href="{e(netlink)}">{e(os.path.basename(args.network))}</a>.</p>
   <p><b>Method.</b> Pages made with the hep-network-builder and hep-ph-network-match tools in <a href="https://github.com/{e(args.repo)}/tree/main/tools">tools/</a>; rebuilt every weekday evening by a GitHub Actions workflow. Updated {time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())}.</p>
 </footer>
 </div>
@@ -143,6 +146,7 @@ def main():
     ap.add_argument("--network", required=True); ap.add_argument("--site", default="docs")
     ap.add_argument("--days", type=int, default=5); ap.add_argument("--threshold", type=float, default=10)
     ap.add_argument("--category", default="hep-ph"); ap.add_argument("--tz", default="America/Bogota")
+    ap.add_argument("--next", type=int, default=20, help="papers below the threshold in each page's folded list")
     ap.add_argument("--include-today", action="store_true",
                     help="also build today's listing (for a late run: it was announced the evening before)")
     ap.add_argument("--settle", type=int, default=2, help="rebuild a page built less than this many days after its date")
@@ -167,9 +171,10 @@ def main():
         d -= timedelta(days=1)
         if d.weekday() < 5: cand.append(d)
     cand = cand[:args.days]
-    # pages made by older code (template or scorer) are rebuilt, so page changes reach every day
+    # pages made by older code (template or scorer) or other settings are rebuilt, so changes reach every day
     code = hashlib.sha256(b"".join(open(os.path.join(HERE, f), "rb").read()
-                                   for f in ("hepph_match.py", "template.html", "build_site.py"))).hexdigest()[:12]
+                                   for f in ("hepph_match.py", "template.html", "build_site.py")) +
+                          f"{args.category}|{args.threshold:g}|{args.next}".encode()).hexdigest()[:12]
 
     # arXiv answers 429 to bursts from cloud runners: pause between days, wait longer on each retry,
     # and leave a day that still fails for the next run (an older day never takes its place).
@@ -186,6 +191,7 @@ def main():
             print(f"{ds}: building (attempt {attempt + 1})", file=sys.stderr, flush=True)
             p = subprocess.run([sys.executable, "-I", os.path.join(HERE, "hepph_match.py"), "--network", args.network,
                                 "--date", ds, "--threshold", str(args.threshold), "--category", args.category,
+                                "--next", str(args.next),
                                 "--work", os.path.join(args.work, ds), "--recent-html", recent, "--out", out],
                                stderr=subprocess.PIPE, text=True)
             sys.stderr.write(p.stderr)
