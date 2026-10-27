@@ -1740,6 +1740,61 @@
 "score": 3.2
 },
 {
+"arxiv": "2610.30338",
+"section": "new",
+"recid": "3218104",
+"src": "INSPIRE",
+"nref": 55,
+"title": "Machine Learning Neutrino-Nucleus Cross Sections II: More Leptons",
+"authors": [
+"Daniel C. Hackett",
+"Joshua Isaacson",
+"Shirley Weishi Li",
+"Karla Tame-Narvaez",
+"Michael L. Wagman"
+],
+"abstract": "Neutrino-nucleus cross sections are essential inputs for long-baseline neutrino oscillation experiments, yet remain challenging to model with high precision. Recent work demonstrated that fully black-box data-driven cross-section models cannot accurately generalize between near- and far-detector fluxes, but imposing Standard-Model symmetries via structure-function parameterizations provides a well-posed learning problem in a simplified DUNE-inspired muon-neutrino disappearance analysis. Here, we extend this framework to multiple lepton flavors and both neutrino and antineutrino beam modes, incorporating the electron appearance channel and enabling a simultaneous determination of $\\sin^2θ_{23}$, $Δm^2_{31}$, and the CP-violating phase $δ_{\\rm CP}$. We find that the learned cross section model recovers the injected oscillation parameters without significant bias, with constraints comparable to those obtained using the exact underlying cross section. Flux uncertainties have more significant effects in the multi-channel case, and incorporating flux nuisance parameters into the learning problem is required for accurate results. Our results demonstrate that this data-driven approach can be extended to the multi-channel measurements needed for long-baseline neutrino oscillation analyses.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.015,
+"1854224"
+],
+[
+0.013,
+"1397629"
+],
+[
+0.0,
+"926166"
+]
+],
+"topE": [
+[
+0.039,
+"2963992"
+],
+[
+0.029,
+"2762216"
+],
+[
+0.027,
+"1754895"
+]
+],
+"isme": false,
+"coauthors": [],
+"parts": [
+0.0,
+0.04,
+0.11,
+0.0
+],
+"score": 3.1
+},
+{
 "arxiv": "2610.30526",
 "section": "new",
 "recid": "3218045",
@@ -3989,61 +4044,6 @@
 "Kwangmin Yu"
 ],
 "abstract": "We study variational preparation of ground states and sector-resolved excited states in the $(1+1)$-dimensional lattice Gross-Neveu model. We construct fixed circuits preserving either total fermion number or every flavor number, and a problem-specific scalable-circuit adaptive variational quantum eigensolver (SC-ADAPT-VQE). Classical circuit benchmarks cover massless and massive systems through 30 qubits, using exact-diagonalization and tensor-network reference results. Imposing flavor-number conservation improves the achieved energies in the completed two-flavor comparisons. Selected massive fixed-ansatz benchmarks with one to four flavors have relative energy errors of approximately $1 \\times 10^{-5}$ - $2 \\times 10^{-4}$, smaller than the quoted literature errors where available, although discretizations and computational resources differ. The adaptive pool combines translated bulk and boundary-sensitive generators with an interaction-sensitive cross-flavor family. Selected massive SC-ADAPT benchmarks with one to three flavors have relative energy errors below $2.1 \\times 10^{-3}$. For one flavor, matrix-product-state evaluations extend the transferred circuits to 60-400 qubits without target-side operator selection or parameter optimization, giving energy deviations of approximately $0.35\\%$ - $1.76\\%$ from density-matrix renormalization-group reference values at maximum bond dimension 256. At fixed flavor number, range caps, and append count, the adaptive construction has a precompilation local-factor count linear in volume and a volume-independent shared-parameter count; fixed-accuracy performance at arbitrary volumes remains unestablished. Sequential deflation also prepares low-lying states within a fixed flavor-number sector, with projector fidelities providing a basis-independent assessment of degenerate target eigenspaces.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"922002"
-],
-[
-0.0,
-"860906"
-]
-],
-"topE": [
-[
-0.0,
-"939581"
-],
-[
-0.0,
-"922180"
-],
-[
-0.0,
-"914987"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.0,
-0.0,
-0.0,
-0.0
-],
-"score": 0.0
-},
-{
-"arxiv": "2610.30338",
-"section": "new",
-"recid": "3218104",
-"src": "INSPIRE",
-"nref": 1,
-"title": "Machine Learning Neutrino-Nucleus Cross Sections II: More Leptons",
-"authors": [
-"Daniel C. Hackett",
-"Joshua Isaacson",
-"Shirley Weishi Li",
-"Karla Tame-Narvaez",
-"Michael L. Wagman"
-],
-"abstract": "Neutrino-nucleus cross sections are essential inputs for long-baseline neutrino oscillation experiments, yet remain challenging to model with high precision. Recent work demonstrated that fully black-box data-driven cross-section models cannot accurately generalize between near- and far-detector fluxes, but imposing Standard-Model symmetries via structure-function parameterizations provides a well-posed learning problem in a simplified DUNE-inspired muon-neutrino disappearance analysis. Here, we extend this framework to multiple lepton flavors and both neutrino and antineutrino beam modes, incorporating the electron appearance channel and enabling a simultaneous determination of $\\sin^2θ_{23}$, $Δm^2_{31}$, and the CP-violating phase $δ_{\\rm CP}$. We find that the learned cross section model recovers the injected oscillation parameters without significant bias, with constraints comparable to those obtained using the exact underlying cross section. Flux uncertainties have more significant effects in the multi-channel case, and incorporating flux nuisance parameters into the learning problem is required for accurate results. Our results demonstrate that this data-driven approach can be extended to the multi-channel measurements needed for long-baseline neutrino oscillation analyses.",
 "citR": [],
 "citE": [],
 "topR": [
