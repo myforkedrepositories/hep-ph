@@ -10,8 +10,9 @@ Selection (as in restrepo/hep-ph data/inspire/README.md):
                 core refs cited) are compared by idf-weighted cosine of INSPIRE reference sets;
                 collaboration papers and papers with > --max-cand-authors authors dropped; each own
                 paper keeps its --top best with coupling >= --min-coupling
-  citing      : papers by others citing an own paper with >= --cites-min citations or citing
-                >= --cite-own-min own papers
+  citing      : papers by others citing an own paper; by default every one (--cite-own-min 1).
+                Raising --cite-own-min keeps only papers citing that many own papers or having
+                >= --cites-min citations
 Output: one JSON with, per paper, id, kind (R own / E external), title, arXiv, year, citations,
 first author, author count and the INSPIRE ids it references; plus the co-author names.
 """
@@ -72,7 +73,7 @@ def main():
     ap.add_argument("--top", type=int, default=5)
     ap.add_argument("--min-coupling", type=float, default=0.10)
     ap.add_argument("--cites-min", type=int, default=200)
-    ap.add_argument("--cite-own-min", type=int, default=4)
+    ap.add_argument("--cite-own-min", type=int, default=1)
     ap.add_argument("--out", default="network.json")
     a = ap.parse_args(); A = a.author_recid
     log = lambda s: print(s, file=sys.stderr, flush=True)
@@ -116,13 +117,13 @@ def main():
             if s >= a.min_coupling: keep[k] = max(keep.get(k, 0), s)
     log(f"coupled external papers: {len(keep)}")
 
-    # important citing papers
+    # citing papers (all of them by default)
     hits = Counter(); info = {}
     for m in own:
         for c in search(f"refersto:recid:{m['control_number']} and not authors.recid:{A}", "control_number,citation_count", 1000):
             hits[c["control_number"]] += 1; info[c["control_number"]] = c.get("citation_count") or 0
     imp = {k for k, n in hits.items() if n >= a.cite_own_min or info[k] >= a.cites_min}
-    log(f"papers citing own papers: {len(hits)}; important: {len(imp)} ({len(imp & set(keep))} already coupled)")
+    log(f"papers citing own papers: {len(hits)}; kept: {len(imp)} ({len(imp & set(keep))} already coupled)")
 
     ext = set(keep) | imp
     E = by_recids(ext, META + ",authors.full_name")
