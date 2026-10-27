@@ -20,7 +20,7 @@ variable `INSPIRE_AUTHOR`.
 ## GitHub Pages
 
 Settings → Pages → *Build and deployment* → Source: **GitHub Actions**.
-The site is then at <https://restrepo.github.io/hep-ph/>.
+The site is then at <https://myforkedrepositories.github.io/hep-ph/>.
 
 ## Fork this repository for another INSPIRE author
 
