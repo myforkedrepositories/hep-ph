@@ -92,7 +92,7 @@ jobs:
               n = json.load(open(p)); q = n.get("params", {})
               want = {"recent_years": int(E["RECENT_YEARS"]), "max_authors": int(E["MAX_AUTHORS"]), "top": int(E["COUPLED_PER_PAPER"])}
               age = (datetime.date.today() - datetime.date.fromisoformat(n["built"])).days
-              diff = [k for k, v in want.items() if q.get(k) != v]
+              diff = [k for k, v in want.items() if q.get(k) != v] + ([] if "phrases" in n else ["phrases"])
               print(f"settings changed: {diff}" if diff else f"{age} days old" if age > int(E["NETWORK_MAX_AGE"]) else "no")
           EOF
           )

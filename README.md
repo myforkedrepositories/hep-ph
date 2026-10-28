@@ -15,7 +15,8 @@ variable `INSPIRE_AUTHOR`.
   `index.html`, one `hep-ph-YYYY-MM-DD.html` per day (papers above the threshold, the network graph, then the next 20
   papers by score in a collapsed list) and `network_<author>.json`, the compact network (own papers with ≤ 10 authors,
   the papers most coupled to them, the important papers citing them and every paper citing them from the last 10 years
-  and the current one). `main` holds only code and data, so forks can sync without conflicts.
+  and the current one), with the technical phrases they share most (used for the 10% "shared topics" part of
+  the score). `main` holds only code and data, so forks can sync without conflicts.
 
 ## GitHub Pages
 
