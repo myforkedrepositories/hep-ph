@@ -15,7 +15,8 @@ variable `INSPIRE_AUTHOR`.
   `index.html`, one `hep-ph-YYYY-MM-DD.html` per day (papers above the threshold, the network graph, then the next 20
   papers by score in a collapsed list) and `network_<author>.json`, the compact network (own papers with ≤ 10 authors,
   the papers most coupled to them, the important papers citing them and every paper citing them from the last 10 years
-  and the current one). `main` holds only code and data, so forks can sync without conflicts.
+  and the current one), with the technical phrases they share most (used for the 10% "shared topics" part of
+  the score). `main` holds only code and data, so forks can sync without conflicts.
 
 ## GitHub Pages
 
@@ -37,7 +38,9 @@ is a repository variable.
 4. **Enable the workflow.** Open the fork's **Actions** tab and click "I understand my workflows, go
    ahead and enable them" (forks start with workflows, including scheduled ones, disabled).
 5. **Enable GitHub Pages.** **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-6. **First run.** **Actions → hep-ph network pages → Run workflow** (branch `main`). It builds the
+6. **Enable the scheduled runs and do the first run.** **Actions → hep-ph network pages.** GitHub
+   shows that scheduled workflows are disabled in forks: click **Enable workflow** (without this the
+   site is never updated automatically). Then **Run workflow** (branch `main`). It builds the
    author's citation network from INSPIRE (10–25 minutes), then the pages for the last 5 arXiv hep-ph
    announcement days, creates the `site` branch with the generated files and publishes them.
 7. **Open the site** at `https://<github-user>.github.io/hep-ph/` (the run's *deploy* step shows the

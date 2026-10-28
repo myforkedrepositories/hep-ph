@@ -236,8 +236,48 @@ def namekey(n):
     else: p = n.split(); last, first = (p[-1], " ".join(p[:-1])) if p else ("", "")
     return last + "|" + first[:1]
 
+# ---------- shared technical phrases (same normalization as build_network.py) ----------
+STOP = set("""a an the of and or in on at to for from by with without within into onto over under between among
+as is are was were be been being this that these those it its their there here we our us they which who whom whose
+can could may might must will would should shall do does did not no nor than then so such also both either each
+all any some many most more much few other only own same very via per using use used based new recent show shows
+shown find found study studied present presented discuss discussed consider considered obtain obtained provide
+provided propose proposed investigate investigated analyze analysed analyzed explore explored allow allows allowed
+while where when if whether however thus hence therefore moreover furthermore since because although even well
+one two three first second paper work article letter case cases way ways result results possible possibly
+particular particularly respectively give gives given let order one's i.e e.g eg ie probing probe simplest""".split())
+KEEP = {"higgs", "physics", "dynamics", "kinematics", "analysis", "basis", "axis", "lens", "bias", "gas", "mass",
+        "boson", "cosmos", "plus", "status", "bonus", "focus", "nucleus", "radius", "genesis", "synthesis"}
+MAP = {"vertices": "vertex", "violating": "violation", "matrices": "matrix"}
+
+def norm_tok(t):
+    t = t.replace("flavour", "flavor").replace("colour", "color")
+    if t in MAP: return MAP[t]
+    if t in KEEP or len(t) <= 4: return t
+    if t.endswith("sses"): return t[:-2]
+    if t.endswith("ies") and len(t) > 5: return t[:-3] + "y"
+    if t.endswith("s") and not t.endswith(("ss", "us", "is", "ys")): return t[:-1]
+    return t
+
+def grams(text):
+    """Normalized 2-5 word phrases in a title or abstract (math removed, no filler words at the ends)."""
+    out = set()
+    s = re.sub(r"\$[^$]*\$|\\\(.*?\\\)|\\[a-zA-Z]+|\{[^}]*\}", " | ", text).lower().replace("\u2019", "'")
+    for part in re.split(r"[^a-z0-9'\- ]+", s):
+        toks = [norm_tok(t.strip("-'")) for t in part.split() if t.strip("-'")]
+        for n in (2, 3, 4, 5):
+            for i in range(len(toks) - n + 1):
+                g = toks[i:i + n]
+                if g[0] in STOP or g[-1] in STOP or any(t in STOP and t not in ("of", "and") for t in g[1:-1]): continue
+                if any(re.fullmatch(r"[0-9\-']+", t) or len(t) < 2 for t in g): continue
+                out.add(" ".join(g))
+    return out
+
 # ---------- 4. score ----------
-def score_all(rows, net, co, me_name):
+def score_all(rows, net, co, me_name, phrases=None):
+    """Score 0-100. With the network's phrases: 35% direct citations, 30% coupling to own papers, 15% coupling to the
+    network, 10% authorship, 10% shared topics; without them (older network file): 40/35/15/10."""
+    P = {p: w for p, w, *_ in (phrases or {}).get("list", [])}
     D = len(net); df = Counter()
     for v in net.values(): df.update(v["refs"])
     idf = lambda x: math.log((D + 1) / (df.get(x, 0) + 1)) + 1.0
@@ -259,9 +299,13 @@ def score_all(rows, net, co, me_name):
         s_cpl = min(1, (0.6 * cR + 0.4 * mR) / 0.30)
         s_cplE = min(1, (topE[0][0] if topE else 0) / 0.35)
         s_auth = 1.0 if isme else min(1, 0.5 * len(coa))
+        tm = sorted((p for p in grams(r["title"] + " . " + r["abstract"]) if p in P), key=lambda p: -P[p]) if P else []
+        s_top = 1 - math.exp(-sum(P[p] for p in tm) / 3.0)
+        parts = (s_dir, s_cpl, s_cplE, s_auth) + ((s_top,) if P else ())
+        wts = (0.35, 0.30, 0.15, 0.10, 0.10) if P else (0.40, 0.35, 0.15, 0.10)
         r.update(citR=citR, citE=citE, topR=topR, topE=topE, isme=isme, coauthors=coa,
-                 parts=[round(x, 2) for x in (s_dir, s_cpl, s_cplE, s_auth)],
-                 score=round(100 * (0.40 * s_dir + 0.35 * s_cpl + 0.15 * s_cplE + 0.10 * s_auth), 1))
+                 topics=[p for p in tm if P[p] >= 0.3], parts=[round(x, 2) for x in parts],
+                 score=round(100 * sum(w * x for w, x in zip(wts, parts)), 1))
     rows.sort(key=lambda r: -r["score"])
 
 # ---------- 5. page ----------
@@ -280,6 +324,7 @@ def why(r, net):
     for (c, b), who in ((r["topR"][0], "your papers"), (r["topE"][0], "network paper")):
         if c > 0: bits.append(f"Closest {'of ' if who == 'your papers' else ''}{who}: {lab(b)} "
                               f"(coupling {c:.2f}, {len(refs & net[b]['refs'])} shared references).")
+    if r.get("topics"): bits.append("Shared topics: " + ", ".join(r["topics"][:5]) + ".")
     return " ".join(bits)
 
 def build(rows, net, th, meta, out, nnext=20):
@@ -380,10 +425,11 @@ def main():
             if not t: sys.exit("could not download the own papers from INSPIRE")
             open(a.own, "w").write(t)
     net, co, nname, nrecid = network(a.network or a.own, a.external, a.author_recid)
+    phrases = load_json(a.network).get("phrases") if a.network else None
     if nname and not a.author_name_given: a.author_name, a.author_recid = nname, nrecid
-    score_all(rows, net, co, a.author_name or "")
+    score_all(rows, net, co, a.author_name or "", phrases)
     yr = int("20" + ids[0][:2]) if ids else int(time.strftime("%Y"))
-    meta = {"date": label, "url": url, "cat": a.category, "year": yr, "built": time.strftime("%Y-%m-%d"),
+    meta = {"date": label, "url": url, "cat": a.category, "year": yr, "built": time.strftime("%Y-%m-%d"), "topics": bool(phrases),
             "nown": sum(1 for v in net.values() if v["kind"] == "R"), "next": sum(1 for v in net.values() if v["kind"] == "E"),
             "onInspire": len(F)}
     nr, nn, ne = build(rows, net, a.threshold, meta, a.out, a.next)
