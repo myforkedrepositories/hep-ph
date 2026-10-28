@@ -3,27 +3,27 @@
   "date": "2026-10-28",
   "page": "hep-ph-2026-10-28.html",
   "built": "2026-10-28",
-  "code": "e81425d2b35f",
+  "code": "cefd75cca98c",
   "nlist": 95,
-  "nrel": 20,
+  "nrel": 23,
   "top": [
-   {
-    "arxiv": "2610.36033",
-    "title": "Can inflationary axion fluctuations dominate over misalignment?",
-    "score": 48.1,
-    "section": "new"
-   },
    {
     "arxiv": "2609.11747",
     "title": "Precise bubble wall velocity in a specific phase transition pattern in the CxSM and beyond",
-    "score": 47.2,
+    "score": 50.5,
     "section": "replacement"
    },
    {
-    "arxiv": "2605.27519",
-    "title": "Probing the dynamical inverse seesaw mechanism with low-frequency gravitational waves",
+    "arxiv": "2610.36033",
+    "title": "Can inflationary axion fluctuations dominate over misalignment?",
+    "score": 47.0,
+    "section": "new"
+   },
+   {
+    "arxiv": "2610.36049",
+    "title": "Dark Matter Coherent Freeze-Out Mechanism: A Comprehensive Analysis",
     "score": 41.1,
-    "section": "replacement"
+    "section": "new"
    }
   ]
  },
@@ -31,27 +31,27 @@
   "date": "2026-10-27",
   "page": "hep-ph-2026-10-27.html",
   "built": "2026-10-28",
-  "code": "e81425d2b35f",
+  "code": "cefd75cca98c",
   "nlist": 101,
-  "nrel": 26,
+  "nrel": 29,
   "top": [
    {
     "arxiv": "2610.16968",
     "title": "Self-Interacting Dark Matter: From Particle Physics Theories to Structure Formation Simulations",
-    "score": 70.4,
-    "section": "replacement"
-   },
-   {
-    "arxiv": "2610.29543",
-    "title": "Detectable Dark Matter Freeze-in via Low Reheating",
-    "score": 60.4,
+    "score": 65.4,
     "section": "replacement"
    },
    {
     "arxiv": "2610.35444",
-    "title": "2610.35444",
-    "score": 57.0,
+    "title": "Probing the singlet-triplet scotogenic model with lepton flavor violation, gravitational waves and dark matter",
+    "score": 60.4,
     "section": "new"
+   },
+   {
+    "arxiv": "2610.29543",
+    "title": "Detectable Dark Matter Freeze-in via Low Reheating",
+    "score": 60.1,
+    "section": "replacement"
    }
   ]
  },
@@ -59,54 +59,54 @@
   "date": "2026-10-26",
   "page": "hep-ph-2026-10-26.html",
   "built": "2026-10-28",
-  "code": "e81425d2b35f",
+  "code": "cefd75cca98c",
   "nlist": 40,
-  "nrel": 11,
+  "nrel": 12,
   "top": [
    {
     "arxiv": "2610.32747",
     "title": "Heavy Sterile Fermions from the Atmosphere: LZ Limits on Neutrino Up-Scattering",
-    "score": 34.3,
+    "score": 33.2,
     "section": "new"
-   },
-   {
-    "arxiv": "2610.32599",
-    "title": "Gauge-field energy density in inflationary kinetic-coupling models: QFT regularization versus horizon cutoffs",
-    "score": 34.3,
-    "section": "cross"
    },
    {
     "arxiv": "2609.06750",
     "title": "GUT-induced collider signatures of the LUX-ZEPLIN event",
-    "score": 34.1,
+    "score": 32.6,
     "section": "replacement"
+   },
+   {
+    "arxiv": "2610.32599",
+    "title": "Gauge-field energy density in inflationary kinetic-coupling models: QFT regularization versus horizon cutoffs",
+    "score": 31.8,
+    "section": "cross"
    }
   ]
  },
  {
   "date": "2026-10-23",
   "page": "hep-ph-2026-10-23.html",
-  "built": "2026-10-27",
-  "code": "e81425d2b35f",
+  "built": "2026-10-28",
+  "code": "cefd75cca98c",
   "nlist": 80,
-  "nrel": 16,
+  "nrel": 19,
   "top": [
    {
     "arxiv": "2610.30984",
     "title": "At the Highest-Frequency Frontier: Thermal Gravitational Waves from Supernovae",
-    "score": 55.1,
+    "score": 50.2,
     "section": "new"
    },
    {
     "arxiv": "2610.31101",
     "title": "Saxion Decay and Dark Radiation in the KSVZ Axion Model",
-    "score": 46.8,
+    "score": 41.5,
     "section": "new"
    },
    {
     "arxiv": "2512.00166",
     "title": "Searching for Ultralight Dark Matter with MOLeQuTE: a Massive Optically Levitated Quantum Tabletop Experiment",
-    "score": 38.4,
+    "score": 35.2,
     "section": "replacement"
    }
   ]
@@ -114,28 +114,28 @@
  {
   "date": "2026-10-22",
   "page": "hep-ph-2026-10-22.html",
-  "built": "2026-10-27",
-  "code": "e81425d2b35f",
+  "built": "2026-10-28",
+  "code": "cefd75cca98c",
   "nlist": 68,
-  "nrel": 12,
+  "nrel": 16,
   "top": [
    {
     "arxiv": "2607.27325",
     "title": "Seesaw Cosmology",
-    "score": 100.0,
+    "score": 96.3,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2601.00436",
+    "title": "Anatomy of RHN DM relic in the vanilla scotogenic neutrino mass model",
+    "score": 68.6,
     "section": "replacement"
    },
    {
     "arxiv": "2610.29967",
     "title": "Gravitational Waves from New Inflation",
-    "score": 69.3,
+    "score": 63.6,
     "section": "new"
-   },
-   {
-    "arxiv": "2601.00436",
-    "title": "Anatomy of RHN DM relic in the vanilla scotogenic neutrino mass model",
-    "score": 65.7,
-    "section": "replacement"
    }
   ]
  },

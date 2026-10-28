@@ -9,8 +9,8 @@
 "authors": [
 "D. Aristizabal Sierra",
 "V. De Romeri",
-"D.K. Papoulias",
-"I.M. Shoemaker"
+"D. K. Papoulias",
+"I. M. Shoemaker"
 ],
 "abstract": "The LUX-ZEPLIN (LZ) experiment has recently reported data extending to nuclear-recoil energies of about 270 keV, including a single event at 248 keV in a nearly background-free region, for an exposure of 2.84 tonne-years. We examine this dataset through neutrino up-scattering to a heavy sterile fermion induced by atmospheric neutrinos, mediated by vector, axial-vector, scalar and dipole interactions. Our main result is a set of constraints: using the part of the LZ data where no excess is observed, we obtain new bounds on all four scenarios that probe regions of parameter space not tested before, and show that dark matter detectors can provide competitive limits on neutrino up-scattering for sterile fermion masses above $\\sim 50$ MeV. We also test whether the 248~keV event can be explained in this way while remaining consistent with the absence of events at lower recoil energies. For the scalar, vector and axial mediators this requires couplings at the edge of perturbativity, while the dipole does not provide a good fit, so we conclude that up-scattering is not a compelling explanation of the event.",
 "citR": [],
@@ -47,68 +47,17 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"dark matter"
+],
 "parts": [
 0.45,
 0.04,
 1,
-0.0
-],
-"score": 34.3
-},
-{
-"arxiv": "2610.32599",
-"section": "cross",
-"recid": "3218471",
-"src": "INSPIRE",
-"nref": 145,
-"title": "Gauge-field energy density in inflationary kinetic-coupling models: QFT regularization versus horizon cutoffs",
-"authors": [
-"A.O. Naidenko",
-"O.O. Sobol",
-"S.I. Vilchinskii"
-],
-"abstract": "Coupling gauge fields to the inflaton can amplify their quantum fluctuations during inflation, with potential applications to a range of cosmological phenomena. A central challenge is to define finite and physically meaningful observables, such as the gauge-field energy density. In this work, we study an Abelian gauge field kinetically coupled to the inflaton through $f^2(ϕ)F_{μν}F^{μν}$ in a de Sitter background with $f\\propto a^{γ_1}$, and compare conventional quantum-field-theoretic regularization with horizon-cutoff prescriptions. Using a hard physical-momentum cutoff and dimensional regularization, we derive the ultraviolet divergences in closed form and fix the remaining one-parameter finite-part ambiguity by requiring the coupling-induced total energy density to be nonnegative. We then examine five horizon-cutoff prescriptions based on characteristic scales of the mode equations. Their predictions depend sensitively on the choice of horizon scale and, for weak gauge-field production, can deviate substantially from the regularized result; for the adopted finite-part prescription, the minimal horizon agrees best with the regularized total energy density. As $|γ_1|\\to 2$, where infrared modes dominate, the relative deviation of all prescriptions from the regularized result vanishes, independently of the finite-part prescription. Outside this regime, the separate electric and magnetic contributions, which can become negative after regularization, are not reliably reproduced by any of the horizon-cutoff prescriptions.",
-"citR": [],
-"citE": [
-"2974439"
-],
-"topR": [
-[
-0.017,
-"2663002"
-],
-[
-0.014,
-"1655573"
-],
-[
 0.0,
-"926166"
-]
+0.13
 ],
-"topE": [
-[
-0.339,
-"3183493"
-],
-[
-0.187,
-"2974439"
-],
-[
-0.043,
-"2737356"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.45,
-0.05,
-0.97,
-0.0
-],
-"score": 34.3
+"score": 33.2
 },
 {
 "arxiv": "2609.06750",
@@ -157,13 +106,74 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"dark matter"
+],
 "parts": [
 0.45,
 0.12,
 0.8,
+0.0,
+0.13
+],
+"score": 32.6
+},
+{
+"arxiv": "2610.32599",
+"section": "cross",
+"recid": "3218471",
+"src": "INSPIRE",
+"nref": 145,
+"title": "Gauge-field energy density in inflationary kinetic-coupling models: QFT regularization versus horizon cutoffs",
+"authors": [
+"A. O. Naidenko",
+"O. O. Sobol",
+"S. I. Vilchinskii"
+],
+"abstract": "Coupling gauge fields to the inflaton can amplify their quantum fluctuations during inflation, with potential applications to a range of cosmological phenomena. A central challenge is to define finite and physically meaningful observables, such as the gauge-field energy density. In this work, we study an Abelian gauge field kinetically coupled to the inflaton through $f^2(φ)F_{μν}F^{μν}$ in a de Sitter background with $f\\propto a^{γ_1}$, and compare conventional quantum-field-theoretic regularization with horizon-cutoff prescriptions. Using a hard physical-momentum cutoff and dimensional regularization, we derive the ultraviolet divergences in closed form and fix the remaining one-parameter finite-part ambiguity by requiring the coupling-induced total energy density to be nonnegative. We then examine five horizon-cutoff prescriptions based on characteristic scales of the mode equations. Their predictions depend sensitively on the choice of horizon scale and, for weak gauge-field production, can deviate substantially from the regularized result; for the adopted finite-part prescription, the minimal horizon agrees best with the regularized total energy density. As $|γ_1|\\to 2$, where infrared modes dominate, the relative deviation of all prescriptions from the regularized result vanishes, independently of the finite-part prescription. Outside this regime, the separate electric and magnetic contributions, which can become negative after regularization, are not reliably reproduced by any of the horizon-cutoff prescriptions.",
+"citR": [],
+"citE": [
+"2974439"
+],
+"topR": [
+[
+0.017,
+"2663002"
+],
+[
+0.014,
+"1655573"
+],
+[
+0.0,
+"926166"
+]
+],
+"topE": [
+[
+0.339,
+"3183493"
+],
+[
+0.187,
+"2974439"
+],
+[
+0.043,
+"2737356"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"parts": [
+0.45,
+0.05,
+0.97,
+0.0,
 0.0
 ],
-"score": 34.1
+"score": 31.8
 },
 {
 "arxiv": "2512.04199",
@@ -171,14 +181,14 @@
 "recid": "3089324",
 "src": "INSPIRE",
 "nref": 130,
-"title": "Primordial black holes from inflation with a spectator field",
+"title": "Primordial Black Holes from Inflation with a Spectator Field",
 "authors": [
 "Dario L. Lorenzoni",
 "Sarah R. Geller",
 "David I. Kaiser",
 "Evan McDonough"
 ],
-"abstract": "How is the production of primordial black holes (PBHs) in single-field models of inflation impacted by the presence of additional scalar fields? We consider the effect of a spectator field—a free scalar field with sub-Hubble mass and no direct coupling to the inflaton and which makes a subdominant contribution to the total energy density—in the context of single-field models of inflation featuring a transient phase of ultraslow-roll evolution. Despite the modest title, a spectator field can have a dramatic impact: the slow-roll evolution of the spectator prevents the combined inflaton-and-spectator system from entering into ultraslow-roll, which naively might be expected to preclude the production of PBHs. However, we demonstrate that the growth of perturbations is maintained or enhanced by the spectator, through the rich interplay of curvature and isocurvature perturbations. We show in a model-independent way that the single-field phase of ultraslow-roll is replaced by two turns in field space encompassing a phase of tachyonic instability for the isocurvature perturbations and a transfer of power from isocurvature to curvature modes. Furthermore, we highlight a degeneracy between the fine-tuning of the feature in the inflaton potential and the parameters of the spectator, leading to an overall resilience of model predictions to parameter variations. This makes it easier for the underlying PBH model to accommodate both high-precision cosmic microwave background constraints and production of PBHs in the asteroid-mass range.",
+"abstract": "How is the production of primordial black holes (PBHs) in single-field models of inflation impacted by the presence of additional scalar fields? We consider the effect of a spectator field - a free scalar field with sub-Hubble mass and no direct coupling to the inflaton and which makes a subdominant contribution to the total energy density - in the context of single-field models of inflation featuring a transient phase of ultra-slow-roll evolution. Despite the modest title, a spectator field can have a dramatic impact: the slow-roll evolution of the spectator prevents the combined inflaton-and-spectator system from entering into ultra-slow-roll, which naively might be expected to preclude the production of PBHs. However, we demonstrate that the growth of perturbations is maintained or enhanced by the spectator, through the rich interplay of curvature and isocurvature perturbations. We show in a model-independent way that the single-field phase of ultra-slow-roll is replaced by two turns in field space encompassing a phase of tachyonic instability for the isocurvature perturbations and a transfer of power from isocurvature to curvature modes. Furthermore, we highlight a degeneracy between the fine-tuning of the feature in the inflaton potential and the parameters of the spectator, leading to an overall resilience of model predictions to parameter variations. This makes it easier for the underlying PBH model to accommodate both high-precision cosmic microwave background constraints and production of PBHs in the asteroid-mass range.",
 "citR": [],
 "citE": [
 "1803656"
@@ -213,71 +223,17 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"primordial black hole"
+],
 "parts": [
 0.45,
 0.12,
 0.29,
-0.0
+0.0,
+0.31
 ],
-"score": 26.4
-},
-{
-"arxiv": "2504.13251",
-"section": "replacement",
-"recid": "2913858",
-"src": "INSPIRE",
-"nref": 117,
-"title": "Light Scalar Fields Foster Production of Primordial Black Holes",
-"authors": [
-"Dario L. Lorenzoni",
-"Sarah R. Geller",
-"Zachary Ireland",
-"David I. Kaiser",
-"Evan McDonough",
-"Kyle A. Wittmeier"
-],
-"abstract": "Scalar fields are ubiquitous in theories of high-energy physics. In the context of cosmic inflation, this suggests the existence of spectator fields, which provide a subdominant source of energy density. We show that spectator fields boost the inflationary production of primordial black holes, with single-field ultra-slow roll evolution supplanted by a phase of evolution along the spectator direction, and primordial perturbations amplified by the resulting multifield dynamics. This generic mechanism is largely free from the severe fine-tuning that afflicts single-field inflationary PBH models.",
-"citR": [],
-"citE": [
-"1803656"
-],
-"topR": [
-[
-0.026,
-"1824064"
-],
-[
-0.024,
-"1832796"
-],
-[
-0.023,
-"1941263"
-]
-],
-"topE": [
-[
-0.098,
-"2077646"
-],
-[
-0.093,
-"2840581"
-],
-[
-0.092,
-"2665331"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.45,
-0.09,
-0.28,
-0.0
-],
-"score": 25.2
+"score": 26.7
 },
 {
 "arxiv": "2610.31770",
@@ -325,13 +281,80 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"discrete symmetry",
+"neutrino mass"
+],
 "parts": [
 0.45,
 0.07,
 0.23,
-0.0
+0.0,
+0.46
 ],
-"score": 24.0
+"score": 26.0
+},
+{
+"arxiv": "2504.13251",
+"section": "replacement",
+"recid": "2913858",
+"src": "INSPIRE",
+"nref": 117,
+"title": "Resilience of Primordial Black Hole Formation from Inflation with a Light Spectator Field",
+"authors": [
+"Dario L. Lorenzoni",
+"Sarah R. Geller",
+"Zachary Ireland",
+"David I. Kaiser",
+"Evan McDonough",
+"Kyle A. Wittmeier"
+],
+"abstract": "Scalar fields are ubiquitous in theories of high-energy physics. In the context of cosmic inflation, this suggests the existence of spectator fields, which provide a subdominant source of energy density. We show that spectator fields boost the inflationary production of primordial black holes, with single-field ultra-slow-roll evolution supplanted by a phase of evolution along the spectator direction, and primordial perturbations amplified by the resulting multifield dynamics. This generic mechanism is largely free from the severe fine-tuning that afflicts single-field inflationary PBH models.",
+"citR": [],
+"citE": [
+"1803656"
+],
+"topR": [
+[
+0.026,
+"1824064"
+],
+[
+0.024,
+"1832796"
+],
+[
+0.023,
+"1941263"
+]
+],
+"topE": [
+[
+0.098,
+"2077646"
+],
+[
+0.093,
+"2840581"
+],
+[
+0.092,
+"2665331"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"primordial black hole"
+],
+"parts": [
+0.45,
+0.09,
+0.28,
+0.0,
+0.31
+],
+"score": 25.7
 },
 {
 "arxiv": "2610.32091",
@@ -384,65 +407,15 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.06,
 0.36,
 0.41,
+0.0,
 0.0
 ],
-"score": 21.1
-},
-{
-"arxiv": "2610.32845",
-"section": "cross",
-"recid": "3218505",
-"src": "INSPIRE",
-"nref": 42,
-"title": "The Galactic Center Gamma-Ray Excess and the Look-Elsewhere Effect",
-"authors": [
-"Isabel S. Sands",
-"Philip F. Hopkins"
-],
-"abstract": "The origin of the excess of GeV gamma-rays in the Milky Way's galactic center observed by Fermi-LAT has been an open question for nearly two decades. The two leading interpretations of this signal are that it is produced either by annihilating dark matter (DM), or arises from unresolved point sources, such as a novel population of millisecond pulsars. In both scenarios, uncertainties and limitations in the modeling of galactic diffuse gamma-ray emission, such as the steady-state approximation of cosmic ray (CR) propagation and assumption of an axisymmetric distribution of CRs, complicate the interpretation of the galactic center excess (GCE). Simulations with full magnetohydrodynamics (MHD) and CR transport can provide a new avenue for understanding the astrophysical phenomena that drive galactic diffuse gamma-ray emission. We utilize MHD simulations of Milky Way analogs with time-dependent, spectrally-resolved CR transport to reconstruct diffuse gamma-ray emission. Comparing instantaneous emission to a time-averaged baseline, we find residuals up to several times larger than the Fermi GCE, with a wide range of spectral shapes and spatial morphologies. At some simulation snapshots, the spectrum and morphology of the residuals resemble the Fermi GCE. Our results suggest that the Fermi GCE may be a manifestation of the look-elsewhere effect- a transient fluctuation in diffuse emission from stellar sources, observed at an inopportune moment- and motivate the development of new Fermi-LAT analysis templates that account for time-dependent CR transport.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.113,
-"1421624"
-],
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-]
-],
-"topE": [
-[
-0.186,
-"2674992"
-],
-[
-0.186,
-"2634487"
-],
-[
-0.174,
-"3130997"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.0,
-0.28,
-0.53,
-0.0
-],
-"score": 17.6
+"score": 19.0
 },
 {
 "arxiv": "2610.31881",
@@ -491,13 +464,74 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"dark matter model",
+"dark matter"
+],
 "parts": [
 0.0,
 0.3,
 0.39,
-0.0
+0.0,
+0.3
 ],
-"score": 16.4
+"score": 17.9
+},
+{
+"arxiv": "2610.32845",
+"section": "cross",
+"recid": "3218505",
+"src": "INSPIRE",
+"nref": 42,
+"title": "The Galactic Center Gamma-Ray Excess and the Look-Elsewhere Effect",
+"authors": [
+"Isabel S. Sands",
+"Philip F. Hopkins"
+],
+"abstract": "The origin of the excess of GeV gamma-rays in the Milky Way's galactic center observed by Fermi-LAT has been an open question for nearly two decades. The two leading interpretations of this signal are that it is produced either by annihilating dark matter (DM), or arises from unresolved point sources, such as a novel population of millisecond pulsars. In both scenarios, uncertainties and limitations in the modeling of galactic diffuse gamma-ray emission, such as the steady-state approximation of cosmic ray (CR) propagation and assumption of an axisymmetric distribution of CRs, complicate the interpretation of the galactic center excess (GCE). Simulations with full magnetohydrodynamics (MHD) and CR transport can provide a new avenue for understanding the astrophysical phenomena that drive galactic diffuse gamma-ray emission. We utilize MHD simulations of Milky Way analogs with time-dependent, spectrally-resolved CR transport to reconstruct diffuse gamma-ray emission. Comparing instantaneous emission to a time-averaged baseline, we find residuals up to several times larger than the Fermi GCE, with a wide range of spectral shapes and spatial morphologies. At some simulation snapshots, the spectrum and morphology of the residuals resemble the Fermi GCE. Our results suggest that the Fermi GCE may be a manifestation of the look-elsewhere effect- a transient fluctuation in diffuse emission from stellar sources, observed at an inopportune moment- and motivate the development of new Fermi-LAT analysis templates that account for time-dependent CR transport.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.113,
+"1421624"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.186,
+"2674992"
+],
+[
+0.186,
+"2634487"
+],
+[
+0.174,
+"3130997"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter"
+],
+"parts": [
+0.0,
+0.28,
+0.53,
+0.0,
+0.13
+],
+"score": 17.5
 },
 {
 "arxiv": "2610.31717",
@@ -514,7 +548,7 @@
 "Xianing Feng",
 "Qingquan Jiang",
 "Jin Li",
-"L.F. Wei"
+"L. F. Wei"
 ],
 "abstract": "Microwave cavities in strong magnetic fields are among the most sensitive detectors for axion dark matter detection. Its sensitivity, however, is fundamentally limited by the second order nature of axion photon energy conversion, which yields an extremely weak signal. Here we propose a feasible approach to break this limitation, by pre-exciting the target cavity mode to generate a first order power response signal in situ. The resulting signal amplitude scales linearly with the axion-photon coupling parameter, which is in sharp contrast to the quadratic scaling of conventional schemes, and is detectable via standard quadrature balanced homodyne detection system, even though its phase remains stochastic. Numerical simulations demonstrate that this pre-excited seed field can effectively suppress thermal noise, and thus the detection sensitivity of the system can approach the lower quantum noise limit. Consequently, the sensitivities predicted by the KSVZ and DFSZ models could be surpassed. This proposal might offer a pathway to a major leap in axion dark matter searches, as it is within reach of current technology.",
 "citR": [],
@@ -549,65 +583,17 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"dark matter"
+],
 "parts": [
 0.0,
 0.28,
 0.31,
-0.0
-],
-"score": 14.6
-},
-{
-"arxiv": "2610.31756",
-"section": "new",
-"recid": "3218535",
-"src": "INSPIRE",
-"nref": 33,
-"title": "Soft scalar-field corrections to the topological susceptibility",
-"authors": [
-"Dietrich Bodeker",
-"Rasmus S.K. Nielsen"
-],
-"abstract": "We compute the contribution from soft scalar-field fluctuations to the topological susceptibility in SU(2) gauge theory at high temperature. We construct a 3-dimensional effective theory for the scalar field that accounts for the presence of an instanton. In the limit that the scalar selfcoupling $ λ$ is much larger than the square of the gauge coupling $g$ we obtain a correction of order $\\sqrtλ$ relative to the 1-loop result for the topological susceptibility.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.058,
-"1941263"
-],
-[
-0.041,
-"1955022"
-],
-[
-0.031,
-"1607572"
-]
-],
-"topE": [
-[
-0.097,
-"1963344"
-],
-[
-0.079,
-"1615480"
-],
-[
-0.073,
-"2822193"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
 0.0,
-0.17,
-0.28,
-0.0
+0.13
 ],
-"score": 10.2
+"score": 14.5
 },
 {
 "arxiv": "2610.31761",
@@ -654,13 +640,17 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"discrete symmetry"
+],
 "parts": [
 0.0,
 0.15,
 0.29,
-0.0
+0.0,
+0.26
 ],
-"score": 9.7
+"score": 11.6
 },
 {
 "arxiv": "2606.26240",
@@ -706,13 +696,17 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"standard model particle"
+],
 "parts": [
 0.0,
 0.16,
 0.24,
-0.0
+0.0,
+0.2
 ],
-"score": 9.1
+"score": 10.2
 },
 {
 "arxiv": "2405.13881",
@@ -720,13 +714,13 @@
 "recid": "2789241",
 "src": "INSPIRE",
 "nref": 87,
-"title": "Natural inflation with exponentially small tensor-to-scalar ratio",
+"title": "Natural Inflation with Exponentially Small Tensor-To-Scalar Ratio",
 "authors": [
 "Dario L. Lorenzoni",
 "David I. Kaiser",
 "Evan McDonough"
 ],
-"abstract": "We demonstrate that “natural inflation,” also known as “axion inflation,” can be compatible with Planck 2018 measurements of the cosmic microwave background while predicting an exponentially small tensor-to-scalar ratio, e.g., <math display=\"inline\"><mi>r</mi><mo>∼</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>15</mn></mrow></msup></math>. The strong suppression of <math display=\"inline\"><mi>r</mi></math> arises from dynamics of the radial component of the complex scalar field, whose phase is the axion. Such tiny values of <math display=\"inline\"><mi>r</mi></math> remain well below the threshold for detection by CMB-S4 or Simons Observatory B-mode searches. The model is testable with the running <math display=\"inline\"><msub><mi>α</mi><mi>s</mi></msub></math> of the spectral index, which is within reach of next-generation cosmic microwave background and large-scale structure experiments, motivating the running as a primary science goal for future experiments.",
+"abstract": "We demonstrate that \"natural inflation\", also known as \"axion inflation\", can be compatible with Planck 2018 measurements of the cosmic microwave background, while predicting an exponentially small tensor-to-scalar ratio, e.g., $r\\sim 10^{-15}$. The strong suppression of $r$ arises from dynamics of the radial component of the complex scalar field, whose phase is the axion. Such tiny values of $r$ remain well below the threshold for detection by CMB-S4 or Simons Observatory B-mode searches. The model is testable with the running $α_s$ of the spectral index, which is within reach of next-generation CMB and large-scale structure experiments, motivating the running as a primary science goal for future experiments.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -759,13 +753,71 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"complex scalar"
+],
 "parts": [
 0.0,
 0.14,
 0.25,
+0.0,
+0.18
+],
+"score": 9.8
+},
+{
+"arxiv": "2610.31756",
+"section": "new",
+"recid": "3218535",
+"src": "INSPIRE",
+"nref": 33,
+"title": "Soft scalar-field corrections to the topological susceptibility",
+"authors": [
+"Dietrich Bodeker",
+"Rasmus S. K. Nielsen"
+],
+"abstract": "We compute the contribution from soft scalar-field fluctuations to the topological susceptibility in SU(2) gauge theory at high temperature. We construct a 3-dimensional effective theory for the scalar field that accounts for the presence of an instanton. In the limit that the scalar selfcoupling $ λ$ is much larger than the square of the gauge coupling $g$ we obtain a correction of order $\\sqrtλ$ relative to the 1-loop result for the topological susceptibility.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.058,
+"1941263"
+],
+[
+0.041,
+"1955022"
+],
+[
+0.031,
+"1607572"
+]
+],
+"topE": [
+[
+0.097,
+"1963344"
+],
+[
+0.079,
+"1615480"
+],
+[
+0.073,
+"2822193"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"parts": [
+0.0,
+0.17,
+0.28,
+0.0,
 0.0
 ],
-"score": 8.7
+"score": 9.3
 },
 {
 "arxiv": "2608.28738",
@@ -815,13 +867,193 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"dark matter"
+],
 "parts": [
 0.06,
 0.07,
 0.24,
-0.0
+0.0,
+0.13
 ],
-"score": 8.5
+"score": 9.1
+},
+{
+"arxiv": "2601.14676",
+"section": "replacement",
+"recid": "3109773",
+"src": "INSPIRE",
+"nref": 29,
+"title": "Long-Lived Oscillons as Closed Domain Walls in the $\\mathbb Z_2$-Symmetric Two-Higgs-Doublet Model",
+"authors": [
+"Zhaoyu Meng"
+],
+"abstract": "Domain walls arising from spontaneous symmetry breaking in the early universe are typically unstable and decay rapidly. However, numerical simulations of the Z2-symmetric two-Higgs-doublet model (2HDM) reveal an unexpected long-lived closed domain wall structure that emerges at late stages of decay, which we identify as a high-amplitude oscillon. Their longevity stems from a potential with two distinct vacua: an interior oscillating in one vacuum and an exterior static in the other. Within a specific parameter regime, radiation is highly suppressed and the lifetime can exceed cosmological timescales. To gain analytical insight into the mechanism, we first consider reduced models with fewer fields (2 and 4 real scalars). These are not approximations to the 2HDM but rather toy models that capture the essential feature of a Z2-symmetric potential with two vacua. Floquet analysis further confirms the stability of these structures under perturbations in both the 4-field toy model and the full 2HDM.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.063,
+"2690106"
+],
+[
+0.01,
+"1402978"
+],
+[
+0.008,
+"1455793"
+]
+],
+"topE": [
+[
+0.063,
+"2797795"
+],
+[
+0.05,
+"2098321"
+],
+[
+0.049,
+"2808986"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"early universe"
+],
+"parts": [
+0.0,
+0.16,
+0.18,
+0.0,
+0.1
+],
+"score": 8.6
+},
+{
+"arxiv": "2603.12314",
+"section": "replacement",
+"recid": "3129073",
+"src": "INSPIRE",
+"nref": 89,
+"title": "Dark Matter, Baryon Number, and Cosmic-Ray Antinuclei",
+"authors": [
+"Caleb Gemmell",
+"Dan Hooper",
+"Seth Koren",
+"Fabrizio Vassallo"
+],
+"abstract": "Antideuterons and antihelium nuclei in the cosmic-ray spectrum have long been considered a smoking gun signature of dark matter annihilation, making the tentative observation of several such events by AMS highly intriguing. Conventional dark matter models, however, can produce only up to O(1) antideuteron events at AMS and are not capable of generating observable fluxes of antihelium. In this Letter, we propose a class of models in which dark matter annihilates into particles carrying baryon and lepton number, whose subsequent decays produce enhanced fluxes of antinucleons and antinuclei. Such scenarios are motivated by Grand Unified Theories and can lead to an order-of-magnitude or larger enhancement in the resulting antideuteron and antihelium-3 fluxes, providing a means by which to potentially explain the events reported by the AMS Collaboration.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.017,
+"3130296"
+],
+[
+0.013,
+"1589847"
+],
+[
+0.01,
+"1686334"
+]
+],
+"topE": [
+[
+0.087,
+"1759674"
+],
+[
+0.053,
+"2806152"
+],
+[
+0.05,
+"2795517"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter model",
+"dark matter"
+],
+"parts": [
+0.0,
+0.05,
+0.25,
+0.0,
+0.3
+],
+"score": 8.3
+},
+{
+"arxiv": "2609.13562",
+"section": "replacement",
+"recid": "3203046",
+"src": "INSPIRE",
+"nref": 3,
+"title": "Direct detection of right-handed fermionic dark matter: electron-recoil measurements in Xe atoms",
+"authors": [
+"Santiago Collazo",
+"Carlos Argüelles",
+"Soroush Shakeri",
+"Osvaldo Civitarese"
+],
+"abstract": "We present theoretical estimations of the event rates for the interaction between a right-handed fermionic dark matter with an electron bound to a xenon atom. Motivated by recent astrophysical and cosmological constraints on a fermionic dark matter candidate in the sub-MeV mass range, we study such an interaction through an effective electromagnetic channel where the output consists of standard-model particles. This mechanism allows right-handed neutral dark matter fermions to couple with standard-model particles with the interchange of $W^{\\pm}$ or $Z$ bosons, without the need to add extra fields. We generalize and extend previous results on this type of channels, by including for the ionization form factor arising from the interaction of the fermionic candidate with bound electrons. In addition, we compute the sensitivity curves for different direct detection experiments in such a challenging light particle mass range.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+],
+[
+0.0,
+"877394"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"fermionic dark matter",
+"dark matter candidate",
+"direct detection",
+"direct detection experiment",
+"dark matter"
+],
+"parts": [
+0.0,
+0.0,
+0.0,
+0.0,
+0.73
+],
+"score": 7.3
 },
 {
 "arxiv": "2610.30773",
@@ -867,13 +1099,15 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.06,
 0.26,
-0.0
+0.0,
+0.14
 ],
-"score": 6.2
+"score": 7.3
 },
 {
 "arxiv": "2610.32543",
@@ -924,67 +1158,15 @@
 "coauthors": [
 "Wagner, F."
 ],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.05,
-0.5
-],
-"score": 5.7
-},
-{
-"arxiv": "2603.12314",
-"section": "replacement",
-"recid": "3129073",
-"src": "INSPIRE",
-"nref": 89,
-"title": "Dark Matter, Baryon Number, and Cosmic-Ray Antinuclei",
-"authors": [
-"Caleb Gemmell",
-"Dan Hooper",
-"Seth Koren",
-"Fabrizio Vassallo"
-],
-"abstract": "Antideuterons and antihelium nuclei in the cosmic-ray spectrum have long been considered a smoking gun signature of dark matter annihilation, making the tentative observation of several such events by AMS highly intriguing. Conventional dark matter models, however, can produce only up to <math display=\"inline\"><mrow><mi mathvariant=\"script\">O</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow></math> antideuteron events at AMS and are not capable of generating observable fluxes of antihelium. In this Letter, we propose a class of models in which dark matter annihilates into particles carrying baryon and lepton number, whose subsequent decays produce enhanced fluxes of antinucleons and antinuclei. Such scenarios are motivated by grand unified theories and can lead to an order-of-magnitude or larger enhancement in the resulting antideuteron and antihelium-3 fluxes, providing a means by which to potentially explain the events reported by the AMS Collaboration.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.017,
-"3130296"
-],
-[
-0.013,
-"1589847"
-],
-[
-0.01,
-"1686334"
-]
-],
-"topE": [
-[
-0.087,
-"1759674"
-],
-[
-0.053,
-"2806152"
-],
-[
-0.05,
-"2795517"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.0,
-0.05,
-0.25,
+0.5,
 0.0
 ],
-"score": 5.5
+"score": 5.7
 },
 {
 "arxiv": "2610.31759",
@@ -1032,13 +1214,15 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.04,
 0.26,
+0.0,
 0.0
 ],
-"score": 5.4
+"score": 5.2
 },
 {
 "arxiv": "2610.31873",
@@ -1083,35 +1267,40 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.06,
 0.18,
+0.0,
 0.0
 ],
-"score": 4.8
+"score": 4.5
 },
 {
-"arxiv": "2601.14676",
-"section": "replacement",
-"recid": "3109773",
+"arxiv": "2610.32669",
+"section": "new",
+"recid": "3218550",
 "src": "INSPIRE",
-"nref": 40,
-"title": "Long-Lived Oscillons as Closed Domain Walls in the $\\mathbb Z_2$-Symmetric Two-Higgs-Doublet Model",
+"nref": 75,
+"title": "Systematic Study of Neutrino-Nucleus Interactions for the DUNE Experiment",
 "authors": [
-"Zhaoyu Meng"
+"L. F. B. M. Rodrigues",
+"F. G. Gardim",
+"G. A. Valdiviesso",
+" ."
 ],
-"abstract": "Domain walls arising from spontaneous symmetry breaking in the early universe are typically unstable and decay rapidly. However, numerical simulations of the Z2-symmetric two-Higgs-doublet model (2HDM) reveal an unexpected long-lived closed domain wall structure that emerges at late stages of decay, which we identify as a high-amplitude oscillon. Their longevity stems from a potential with two distinct vacua: an interior oscillating in one vacuum and an exterior static in the other. Within a specific parameter regime, radiation is highly suppressed and the lifetime can exceed cosmological timescales. To gain analytical insight into the mechanism, we first consider reduced models with fewer fields (2 and 4 real scalars). These are not approximations to the 2HDM but rather toy models that capture the essential feature of a Z2-symmetric potential with two vacua. Floquet analysis further confirms the stability of these structures under perturbations in both the 4-field toy model and the full 2HDM.",
+"abstract": "The recent generation of high-precision neutrino oscillation experiments, such as the Deep Underground Neutrino Experiment (DUNE), relies on the accurate reconstruction of incident neutrino energy to determine fundamental parameters like Charge-Parity (CP) violation and the neutrino mass hierarchy. The use of Liquid Argon, introduces significant theoretical complexities. This dissertation provides a investigation into neutrino-nucleus scattering phenomenologies, connecting fundamental electroweak theory with computational simulations using the GENIE Monte Carlo event generator. The study evaluates the limitations of traditional frameworks, such as the Relativistic Fermi Gas (RFG) model, specifically addressing the Axial Mass parameter and its impact on the Charged Current Quasi-Elastic (CCQE) channel. By comparing baseline RFG predictions against experimental data from MicroBooNE, this research quantifies the necessity of advanced many-body nuclear frameworks. The implementation of the Local Fermi Gas (LFG) model, Random Phase Approximation (RPA) screening, and the SuperScaling Approximation (SuSAv2) are systematically analyzed to resolve kinematic biases. Additionally, the impact of modernized phenomenological constraints, including the updated $M_A^{RES} = 0.96$ GeV for resonant pion production and the 2021 Bodek-Yang parameter updates for Deep Inelastic Scattering (DIS), is evaluated. Furthermore, this research integrates university extension initiatives by developing and presenting macroscopic 3D-printed educational models, consisting of a Linear Accelerator (LINAC) analog and a scattering experiment, and finally presenting it into the festival \"Mais Ciência Por Favor\".",
 "citR": [],
 "citE": [],
 "topR": [
 [
-0.011,
-"1402978"
+0.013,
+"860906"
 ],
 [
-0.01,
-"2690106"
+0.013,
+"3146383"
 ],
 [
 0.009,
@@ -1120,27 +1309,88 @@
 ],
 "topE": [
 [
-0.071,
-"2797795"
+0.027,
+"1489221"
 ],
 [
-0.056,
-"2098321"
+0.025,
+"2817040"
 ],
 [
-0.055,
-"2808986"
+0.02,
+"2952952"
 ]
 ],
 "isme": false,
 "coauthors": [],
+"topics": [
+"neutrino mass"
+],
 "parts": [
 0.0,
 0.04,
-0.2,
+0.08,
+0.0,
+0.2
+],
+"score": 4.5
+},
+{
+"arxiv": "2610.32947",
+"section": "cross",
+"recid": "3218517",
+"src": "INSPIRE",
+"nref": 49,
+"title": "The renormalization of the shell-model neutrinoless double-beta decay operator starting from effective field theory at next-to-next-to-leading order",
+"authors": [
+"S. L. Lyu",
+"U. Carusone",
+"G. De Gregorio",
+"N. Itaco",
+"L. Coraggio"
+],
+"abstract": "This paper is the continuation of a previous study, where shell-model calculations of the matrix elements for the neutrinoless double-beta decay were performed within a fully-consistent framework, starting from expressions of the nuclear Hamiltonian and decay operators which have been derived through chiral perturbation theory. The decays under our investigation are those involving 48Ca, 76Ge, and 82Se, as in our earlier analyses of electroweak nuclear decays with Hamiltonians and operators derived within effective field theory. In this work we focus on perturbative properties of the chiral expansion of the decay operator, namely in assessing the weight of terms beyond the leading order on the nuclear matrix elements of medium-mass candidates. To this end, we have constructed effective shell-model decay operators starting from two-body currents up to next-to-next-to-leading order and, for the first time, we introduce for nuclei of experimental interest contributions of the three-body current operators, which emerge at next-to-next-to-next-to-leading order of the chiral perturbation theory. Our investigation is aimed to evaluate the theoretical uncertainties affecting the calculated nuclear matrix elements of the neutrinoless double-beta decay, by conjugating the estimate of the inaccuracy related to the finiteness of the degrees of freedom of the nuclear model and the truncation of the chiral expansion of the decay operator.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.096,
+"2788951"
+],
+[
+0.02,
+"2963338"
+],
+[
+0.017,
+"1401402"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"parts": [
+0.0,
+0.0,
+0.27,
+0.0,
 0.0
 ],
-"score": 4.3
+"score": 4.1
 },
 {
 "arxiv": "2608.00158",
@@ -1186,68 +1436,15 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.05,
 0.16,
+0.0,
 0.0
 ],
-"score": 4.2
-},
-{
-"arxiv": "2610.32947",
-"section": "cross",
-"recid": "3218517",
-"src": "INSPIRE",
-"nref": 49,
-"title": "The renormalization of the shell-model neutrinoless double-beta decay operator starting from effective field theory at next-to-next-to-leading order",
-"authors": [
-"S.L. Lyu",
-"U. Carusone",
-"G. De Gregorio",
-"N. Itaco",
-"L. Coraggio"
-],
-"abstract": "This paper is the continuation of a previous study, where shell-model calculations of the matrix elements for the neutrinoless double-beta decay were performed within a fully-consistent framework, starting from expressions of the nuclear Hamiltonian and decay operators which have been derived through chiral perturbation theory. The decays under our investigation are those involving 48Ca, 76Ge, and 82Se, as in our earlier analyses of electroweak nuclear decays with Hamiltonians and operators derived within effective field theory. In this work we focus on perturbative properties of the chiral expansion of the decay operator, namely in assessing the weight of terms beyond the leading order on the nuclear matrix elements of medium-mass candidates. To this end, we have constructed effective shell-model decay operators starting from two-body currents up to next-to-next-to-leading order and, for the first time, we introduce for nuclei of experimental interest contributions of the three-body current operators, which emerge at next-to-next-to-next-to-leading order of the chiral perturbation theory. Our investigation is aimed to evaluate the theoretical uncertainties affecting the calculated nuclear matrix elements of the neutrinoless double-beta decay, by conjugating the estimate of the inaccuracy related to the finiteness of the degrees of freedom of the nuclear model and the truncation of the chiral expansion of the decay operator.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.096,
-"2788951"
-],
-[
-0.02,
-"2963338"
-],
-[
-0.017,
-"1401402"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.0,
-0.0,
-0.27,
-0.0
-],
-"score": 4.1
+"score": 4.0
 },
 {
 "arxiv": "2610.32790",
@@ -1295,64 +1492,15 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.06,
 0.01,
 0.08,
-0.0
-],
-"score": 3.9
-},
-{
-"arxiv": "2610.32669",
-"section": "new",
-"recid": "3218550",
-"src": "INSPIRE",
-"nref": 75,
-"title": "Systematic Study of Neutrino-Nucleus Interactions for the DUNE Experiment",
-"authors": [
-"L.F.B.M. Rodrigues"
-],
-"abstract": "The recent generation of high-precision neutrino oscillation experiments, such as the Deep Underground Neutrino Experiment (DUNE), relies on the accurate reconstruction of incident neutrino energy to determine fundamental parameters like Charge-Parity (CP) violation and the neutrino mass hierarchy. The use of Liquid Argon, introduces significant theoretical complexities. This dissertation provides a investigation into neutrino-nucleus scattering phenomenologies, connecting fundamental electroweak theory with computational simulations using the GENIE Monte Carlo event generator. The study evaluates the limitations of traditional frameworks, such as the Relativistic Fermi Gas (RFG) model, specifically addressing the Axial Mass parameter and its impact on the Charged Current Quasi-Elastic (CCQE) channel. By comparing baseline RFG predictions against experimental data from MicroBooNE, this research quantifies the necessity of advanced many-body nuclear frameworks. The implementation of the Local Fermi Gas (LFG) model, Random Phase Approximation (RPA) screening, and the SuperScaling Approximation (SuSAv2) are systematically analyzed to resolve kinematic biases. Additionally, the impact of modernized phenomenological constraints, including the updated $M_A^{RES} = 0.96$ GeV for resonant pion production and the 2021 Bodek-Yang parameter updates for Deep Inelastic Scattering (DIS), is evaluated. Furthermore, this research integrates university extension initiatives by developing and presenting macroscopic 3D-printed educational models, consisting of a Linear Accelerator (LINAC) analog and a scattering experiment, and finally presenting it into the festival \"Mais Ciência Por Favor\".",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.013,
-"860906"
-],
-[
-0.013,
-"3146383"
-],
-[
-0.009,
-"1455793"
-]
-],
-"topE": [
-[
-0.027,
-"1489221"
-],
-[
-0.025,
-"2817040"
-],
-[
-0.02,
-"2952952"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
 0.0,
-0.04,
-0.08,
 0.0
 ],
-"score": 2.6
+"score": 3.5
 },
 {
 "arxiv": "2602.14811",
@@ -1398,13 +1546,15 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.03,
 0.09,
+0.0,
 0.0
 ],
-"score": 2.6
+"score": 2.4
 },
 {
 "arxiv": "2610.28115",
@@ -1450,13 +1600,15 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.03,
 0.07,
+0.0,
 0.0
 ],
-"score": 2.0
+"score": 1.9
 },
 {
 "arxiv": "2610.31745",
@@ -1503,10 +1655,12 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.01,
 0.07,
+0.0,
 0.0
 ],
 "score": 1.5
@@ -1519,9 +1673,10 @@
 "nref": 7,
 "title": "Neutrino-Nucleus Scattering Simulation Using GENIE Event Generator",
 "authors": [
-"L.F.B.M. Rodrigues",
-"F.G. Gardim",
-"G.A. Valdiviesso"
+"L. F. B. M. Rodrigues",
+"F. G. Gardim",
+"G. A. Valdiviesso",
+" ."
 ],
 "abstract": "The Deep Underground Neutrino Experiment (DUNE) relies on the precise reconstruction of incident neutrino energy to extract oscillation parameters. The use of Liquid Argon introduces significant theoretical complexities due to nuclear effects. This work evaluates neutrino-nucleus scattering models using the GENIE Monte Carlo event generator. We demonstrate the limitations of the Relativistic Fermi Gas (RFG) model in the Charged Current Quasi-Elastic (CCQE) channel and its reliance on an inflated Axial Mass to match experimental data from MicroBooNE. We show that transitioning to advanced many-body frameworks, specifically the Local Fermi Gas (LFG) supplemented with Random Phase Approximation (RPA), is needed. Additionally, we evaluate the impact of the 2021 Bodek-Yang parameter updates on Deep Inelastic Scattering (DIS), concluding that modernized constraints are a prerequisite for mitigating systematic biases in DUNE.",
 "citR": [],
@@ -1556,10 +1711,12 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.09,
+0.0,
 0.0
 ],
 "score": 1.4
@@ -1608,10 +1765,12 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.09,
+0.0,
 0.0
 ],
 "score": 1.4
@@ -1661,10 +1820,12 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.08,
+0.0,
 0.0
 ],
 "score": 1.1
@@ -1680,7 +1841,7 @@
 "Qing-Hong Cao",
 "Xiaohui Liu",
 "Zhite Yu",
-"C.-P. Yuan",
+"C. -P. Yuan",
 "Feng Yuan",
 "Shu-Tao Zhang",
 "Hua Xing Zhu"
@@ -1718,13 +1879,15 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.01,
 0.04,
+0.0,
 0.0
 ],
-"score": 1.0
+"score": 0.9
 },
 {
 "arxiv": "2610.32139",
@@ -1773,10 +1936,12 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.05,
+0.0,
 0.0
 ],
 "score": 0.8
@@ -1827,10 +1992,12 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.04,
+0.0,
 0.0
 ],
 "score": 0.6
@@ -1879,10 +2046,12 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.04,
+0.0,
 0.0
 ],
 "score": 0.6
@@ -1930,10 +2099,12 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.03,
+0.0,
 0.0
 ],
 "score": 0.4
@@ -1984,10 +2155,12 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.02,
+0.0,
 0.0
 ],
 "score": 0.3
@@ -2037,67 +2210,15 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
 0.0,
 0.0,
 0.01,
+0.0,
 0.0
 ],
 "score": 0.1
-},
-{
-"arxiv": "2609.13562",
-"section": "replacement",
-"recid": "3203046",
-"src": "INSPIRE",
-"nref": 3,
-"title": "Direct detection of right-handed fermionic dark matter: electron-recoil measurements in Xe atoms",
-"authors": [
-"Santiago Collazo",
-"Carlos Argüelles",
-"Soroush Shakeri",
-"Osvaldo Civitarese"
-],
-"abstract": "We present theoretical estimations of the event rates for the interaction between a right-handed fermionic dark matter with an electron bound to a xenon atom. Motivated by recent astrophysical and cosmological constraints on a fermionic dark matter candidate in the sub-MeV mass range, we study such an interaction through an effective electromagnetic channel where the output consists of standard-model particles. This mechanism allows right-handed neutral dark matter fermions to couple with standard-model particles with the interchange of $W^{\\pm}$ or $Z$ bosons, without the need to add extra fields. We generalize and extend previous results on this type of channels, by including for the ionization form factor arising from the interaction of the fermionic candidate with bound electrons. In addition, we compute the sensitivity curves for different direct detection experiments in such a challenging light particle mass range.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.0,
-"913031"
-],
-[
-0.0,
-"881902"
-],
-[
-0.0,
-"877394"
-]
-],
-"isme": false,
-"coauthors": [],
-"parts": [
-0.0,
-0.0,
-0.0,
-0.0
-],
-"score": 0.0
 },
 {
 "arxiv": "2606.12698",
@@ -2144,7 +2265,9 @@
 ],
 "isme": false,
 "coauthors": [],
+"topics": [],
 "parts": [
+0.0,
 0.0,
 0.0,
 0.0,
