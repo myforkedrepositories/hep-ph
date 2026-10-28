@@ -23,8 +23,8 @@
 "2964960"
 ],
 "citE": [
-"3128103",
 "3070028",
+"3128103",
 "1969598",
 "2795517",
 "1846588",
@@ -133,20 +133,15 @@
 "recid": "",
 "src": "arXiv source",
 "nref": 124,
-"title": "Probing the singlet-triplet scotogenic model with lepton flavor violation, gravitational waves and dark matter",
-"authors": [
-"Shi-Yu Li",
-"Jun-Nan Lu",
-"Yang Zhang",
-"Gui-Jun Ding"
-],
-"abstract": "We perform a comprehensive phenomenological analysis of neutrino masses, lepton-flavor violation, gravitational-wave signature induced by the first-order electroweak phase transition, and scalar dark matter within the framework of the singlet--triplet scotogenic model. We derive general analytical expressions for the one-loop Wilson coefficients of the penguin and box contributions to lepton-flavor-violating processes, considering generic scalar and fermion mediators. These general results are then applied to the singlet--triplet scotogenic model to calculate the branching ratios of $μ\\to eγ$ and $μ\\to e\\overline{e}e$, as well as the coherent $μ$--$e$ conversion rate. We systematically investigate the lepton-flavor-violation phenomenology and the constraints from current and future experiments. It is found that the coupling $λ_5$ plays a key role in connecting neutrino masses, lepton flavor violation, and dark matter direct detection. We also study the finite-temperature effective potential and the gravitational-wave signatures of the resulting first-order phase transition. By analyzing the thermal history of the model, we identify the viable parameter space allowing for a first-order electroweak phase transition in the early Universe and find that the portal parameters $λ_1^Ω$ and $μ_1$ play a crucial role in determining the transition strength. The corresponding stochastic gravitational-wave spectra can be probed by future gravitational-wave observatories. As a representative example, we identify a benchmark point that simultaneously satisfies the current constraints from lepton-flavor-violation and dark-matter experiments and generates a stochastic gravitational-wave spectrum that may be probed by the Laser Interferometer Space Antenna, the Big Bang Observer, and the Ultimate Deci-hertz Interferometer Gravitational-wave Observatory.",
+"title": "2610.35444",
+"authors": [],
+"abstract": "",
 "citR": [],
 "citE": [
 "2871910",
 "2689316",
-"2940359",
 "1746620",
+"2940359",
 "1862804",
 "1456154",
 "1759674",
@@ -258,7 +253,7 @@
 "recid": "3190347",
 "src": "INSPIRE",
 "nref": 200,
-"title": "How to Identify a Majoron: Effective Field Theories of Spontaneous Lepton Number Breaking",
+"title": "How to identify a Majoron: Effective field theories of spontaneous lepton number breaking",
 "authors": [
 "Carla Biggio",
 "Marta Fuentes Zamoro",
@@ -266,7 +261,7 @@
 "Luca Merlo",
 "Luca Ottonello"
 ],
-"abstract": "We revisit the traditional type~I, II, and III seesaw mechanisms in the presence of a complex scalar field charged under a global $U(1)$ symmetry that can be identified with lepton number and the Peccei-Quinn symmetry. After symmetry breaking, the radial mode becomes heavy while the angular mode appears as an axionlike particle, traditionally dubbed the Majoron. We construct the effective field theory obtained after integrating out the heavy states and analyze two matching orders: first removing the radial mode and then the seesaw fields, and vice versa. Both procedures yield the same low-energy Lagrangian containing only Standard Model fields and the Majoron. Because a single vacuum expectation value fixes the mediator masses, the radial mode, and every Majoron coupling, these models predict relations among observables rather than their individual size, and it is these relations that are testable. Indeed, the invisible Higgs width is locked to the universal suppression of the Higgs couplings, while the Majoron-lepton coupling is fixed by the measured nonunitarity of the leptonic mixing matrix, and the two independently give comparable lower bounds on the same lepton-number-breaking scale, of the order of $1$--$10$~TeV. Neutrinoless double beta decay with Majoron emission, by contrast, has no sensitivity in this class of models. The framework is, thus, falsifiable even when the new states lie far beyond experimental reach.",
+"abstract": "We revisit the traditional type I, II, and III seesaw mechanisms in the presence of a complex scalar field charged under a global <math display=\"inline\"><mi>U</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo></math> symmetry that can be identified with lepton number and the Peccei-Quinn symmetry. After symmetry breaking, the radial mode becomes heavy while the angular mode appears as an axionlike particle, traditionally dubbed the Majoron. We construct the effective field theory obtained after integrating out the heavy states and analyze two matching orders: first removing the radial mode and then the seesaw fields, and vice versa. Both procedures yield the same low-energy Lagrangian containing only Standard Model fields and the Majoron. Because a single vacuum expectation value fixes the mediator masses, the radial mode, and every Majoron coupling, these models predict relations among observables rather than their individual size, and it is these relations that are testable. Indeed, the invisible Higgs width is locked to the universal suppression of the Higgs couplings, while the Majoron-lepton coupling is fixed by the measured nonunitarity of the leptonic mixing matrix, and the two independently give comparable lower bounds on the same lepton-number-breaking scale, of the order of 1–10 TeV. Neutrinoless double beta decay with Majoron emission, by contrast, has no sensitivity in this class of models. The framework is, thus, falsifiable even when the new states lie far beyond experimental reach.",
 "citR": [],
 "citE": [
 "2617409",
@@ -596,13 +591,13 @@
 "recid": "3133820",
 "src": "INSPIRE",
 "nref": 111,
-"title": "What does it take to have $N_{\\rm eff} < 3$ at CMB times?",
+"title": "What does it take to have <math display=\"inline\"><mrow><msub><mrow><mi>N</mi></mrow><mrow><mi>eff</mi></mrow></msub><mrow><mo>&lt;</mo><mn>3</mn></mrow></mrow></math> at CMB times?",
 "authors": [
-"Miguel Escudero",
+"Miguel Escudero Abenza",
 "Maksym Ovchynnikov",
 "Neal Weiner"
 ],
-"abstract": "The vast majority of extensions of the Standard Model affecting the number of effective relativistic neutrino species ($N_{\\rm eff}$) do so additively, namely, they enhance this quantity with some light state contributing to dark radiation. In this work, we consider precisely the opposite case: new physics scenarios that can lead to $N_{\\rm eff} < 3$ that are consistent with all known cosmological, astrophysical, and laboratory data. We are motivated by three main reasons: 1) a recent measurement from ACT and SPT in combination with Planck that leads to $N_{\\rm eff} = 2.81\\pm0.12$, 2) by a new and powerful measurement of the primordial helium abundance, which anchors $N_{\\rm eff}$ to be very close to the Standard Model value one second after the Big Bang, 3) by the deployment of the Simons Observatory which will provide precise tests of the radiation content in the Universe and which may detect with a high significance cosmologies with $N_{\\rm eff}<3$. We survey the main theoretical possibilities and find that only a few simple scenarios can consistently give $N_{\\rm eff}=2.81\\pm0.12$. One class consists of thermal electrophilic relics with masses $m\\sim 8\\!-\\!13\\,{\\rm MeV}$. Another consists of out-of-equilibrium particles decaying to $e^+e^-$ or $γγ$, with a rather particular lifetime $0.05\\,{\\rm s}\\lesssim τ\\lesssim 3\\,{\\rm min}$, mass $250\\,{\\rm MeV}\\lesssim m \\lesssim 600\\,{\\rm MeV}$, and abundance $ρ/ρ_γ\\sim 0.1$ at decay. Thermal electrophilic particles are especially interesting because they can account for the dark matter in the Universe and can be tested in experiments such as SENSEI, DAMIC-M, and Oscura, and their portals to the visible sector at experiments such as NA64 and LDMX. We conclude that if the Simons Observatory confirms that $N_{\\rm eff} \\simeq 2.8$, it will point to very specific extensions of the Standard Model.",
+"abstract": "The vast majority of extensions of the Standard Model affecting the number of effective relativistic neutrino species (<math display=\"inline\"><msub><mi>N</mi><mi>eff</mi></msub></math>) do so additively, namely, they enhance this quantity with some light state contributing to dark radiation. In this work, we consider precisely the opposite case: new physics scenarios that can lead to <math display=\"inline\"><msub><mi>N</mi><mi>eff</mi></msub><mo>&lt;</mo><mn>3</mn></math> that are consistent with all known cosmological, astrophysical, and laboratory data. We are motivated by three main reasons: (1) a recent measurement from Atacama Cosmology Telescope (ACT) and the South Pole Telescope (SPT) in combination with Planck that leads to <math display=\"inline\"><msub><mi>N</mi><mi>eff</mi></msub><mo>=</mo><mn>2.81</mn><mo>±</mo><mn>0.12</mn></math>, (2) by a new and powerful measurement of the primordial helium abundance, which anchors <math display=\"inline\"><msub><mi>N</mi><mi>eff</mi></msub></math> to be very close to the Standard Model value one second after the big bang, (3) by the deployment of the Simons Observatory which will provide precise tests of the radiation content in the Universe and which may detect with a high significance cosmologies with <math display=\"inline\"><msub><mi>N</mi><mi>eff</mi></msub><mo>&lt;</mo><mn>3</mn></math>. We survey the main theoretical possibilities and find that only a few simple scenarios can consistently give <math display=\"inline\"><msub><mi>N</mi><mi>eff</mi></msub><mo>=</mo><mn>2.81</mn><mo>±</mo><mn>0.12</mn></math>. One class consists of thermal electrophilic relics with masses <math display=\"inline\"><mi>m</mi><mo>∼</mo><mn>8</mn><mi>–</mi><mn>13</mn><mtext> </mtext><mtext> </mtext><mi>MeV</mi></math>. Another consists of out-of-equilibrium particles decaying to <math display=\"inline\"><msup><mi>e</mi><mo>+</mo></msup><msup><mi>e</mi><mo>-</mo></msup></math> or <math display=\"inline\"><mi>γ</mi><mi>γ</mi></math>, with a rather particular lifetime <math display=\"inline\"><mrow><mn>0.05</mn><mtext> </mtext><mtext> </mtext><mi mathvariant=\"normal\">s</mi><mo>≲</mo><mi>τ</mi><mo>≲</mo><mn>3</mn><mtext> </mtext><mtext> </mtext><mi>min</mi></mrow></math>, mass <math display=\"inline\"><mn>250</mn><mtext> </mtext><mtext> </mtext><mi>MeV</mi><mo>≲</mo><mi>m</mi><mo>≲</mo><mn>600</mn><mtext> </mtext><mtext> </mtext><mi>MeV</mi></math>, and abundance <math display=\"inline\"><mi>ρ</mi><mo>/</mo><msub><mi>ρ</mi><mi>γ</mi></msub><mo>∼</mo><mn>0.1</mn></math> at decay. Thermal electrophilic particles are especially interesting because they can account for the dark matter in the Universe and can be tested in experiments such as SENSEI, DAMIC-M, and Oscura, and their portals to the visible sector at experiments such as NA64 and LDMX. We conclude that if the Simons Observatory confirms that <math display=\"inline\"><msub><mi>N</mi><mi>eff</mi></msub><mo>≃</mo><mn>2.8</mn></math>, it will point to very specific extensions of the Standard Model.",
 "citR": [],
 "citE": [
 "1803656",
@@ -709,13 +704,13 @@
 "recid": "3217591",
 "src": "INSPIRE",
 "nref": 56,
-"title": "Catastrophe Structure and Stability of Axion Stars",
+"title": "Catastrophe structure and stability of axion stars",
 "authors": [
-"Fedor V Kusmartsev",
-"Joudy J F Beek",
-"Jack C M Hughes"
+"Fedor V. Kusmartsev",
+"Joudy J. F. Beek",
+"Jack C. M. Hughes"
 ],
-"abstract": "Axion stars are self-gravitating Bose--Einstein condensates of QCD axions or axion-like particles. Their stability determines whether they can survive as dark-matter structures and what astrophysical signatures they may produce. Here we combine a non-relativistic Schrödinger--Poisson description with catastrophe theory to develop a unified picture of axion-star stability. Beginning with the Einstein--Klein--Gordon system for a periodic axion potential, we derive the effective equations of motion and conserved quantities and construct a one-parameter family of star-like solutions. A Gaussian variational ansatz reduces the problem to an analytic energy functional $E(R;N)$. Within this model, equilibria appear and disappear through Arnold $A_2$, $A_3$, and $A_4$ catastrophes as the particle number $N$ and interaction strengths vary. A repulsive sextic interaction produces two stable branches---dilute and dense axion stars---separated by an unstable branch. The same catastrophe criteria apply beyond the sextic truncation: for the full cosine and QCD-corrected potentials, the fold conditions follow from the complete variational energy and can be evaluated numerically. We also separate stability within the collective-coordinate ansatz from full radial perturbative stability and specify the range in which the non-relativistic treatment is reliable. This framework provides a compact classification of axion-star phases and identifies model-dependent critical masses associated with collapse, bosenova-like emission, and black-hole formation.",
+"abstract": "Axion stars, which are self-gravitating Bose-Einstein condensates of QCD axions or axionlike particles, are compelling dark-matter candidates whose stability controls their cosmological and astrophysical impact. We develop a unified framework for axion-star stability that combines a nonrelativistic Schrödinger-Poisson description with catastrophe theory. Starting from the Einstein-Klein-Gordon theory with a periodic axion potential, we derive the effective equations of motion and conserved quantities for axion stars and construct a one-parameter family of starlike solutions. Using a Gaussian variational ansatz, we obtain an analytic one-dimensional energy functional \\(E(R;N)\\) and show that the appearance and disappearance of axion-star equilibria as a function of particle number \\(N\\) is governed by Arnold \\(A_{2}\\), \\(A_{3}\\), and \\(A_{4}\\) catastrophes. Including sextic self-interactions generates two distinct stable branches (dilute and dense axion stars) separated by an unstable branch. We further show how the catastrophe criteria extend beyond the sextic truncation to the full cosine and QCD-corrected axion potentials, for which the fold conditions are evaluated from the full variational energy. We distinguish explicitly between collective-coordinate stability within the ansatz and full radial perturbative stability, and we state the domain of validity of the nonrelativistic approximation. Our results provide a compact classification of axion-star phases and identify model-dependent critical masses directly linked to collapse, bosenovalike emission, and black-hole formation.",
 "citR": [],
 "citE": [
 "2969908"
@@ -938,7 +933,7 @@
 "Rotem Ovadia",
 "Antonio Politano"
 ],
-"abstract": "We propose the use of several unconventional materials as detectors for dark matter with mass beneath the MeV scale. These include the transition-metal dichalcogenide TiSe$_2$ hosting a low-energy plasmon in the charge-density-wave phase, Sr$_2$RuO$_4$ containing a low-energy acoustic demon mode, and hole-doped diamond with tunable optical and acoustic plasmon frequencies. We perform first-principles density functional theory computations of their loss functions at non-vanishing momenta and establish their reach into light dark matter parameter space. We show that due to intense low-energy plasmon modes -- of different microscopic origin in each -- the reach of detectors based on these materials could surpass existing proposals by several orders of magnitude for both dark matter scattering and absorption on electrons. The anisotropic response of these materials, which enables directional detection, renders them exceptionally strong detector candidates, motivating the design and fabrication of future devices.",
+"abstract": "We propose the use of several unconventional materials as detectors for dark matter with mass beneath the MeV scale. These include the transition-metal dichalcogenide <math display=\"inline\"><mrow><msub><mrow><mi>TiSe</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></math> hosting a low-energy plasmon in the charge-density-wave phase, <math display=\"inline\"><mrow><msub><mrow><mi>Sr</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mrow><msub><mrow><mi>RuO</mi></mrow><mrow><mn>4</mn></mrow></msub></mrow></math> containing a low-energy acoustic demon mode, and hole-doped diamond with tunable optical and acoustic plasmon frequencies. We perform first-principles density functional theory computations of their loss functions at nonvanishing momenta and establish their reach into light dark matter parameter space. We show that due to intense low-energy plasmon modes—of different microscopic origin in each—the reach of detectors based on these materials could surpass existing proposals by several orders of magnitude for both dark matter scattering and absorption on electrons. The anisotropic response of these materials, which enables directional detection, renders them exceptionally strong detector candidates, motivating the design and fabrication of future devices.",
 "citR": [],
 "citE": [
 "2051195"
@@ -1158,7 +1153,7 @@
 "Michela Negro",
 "Marco Regis"
 ],
-"abstract": "We perform a search for an X-ray monochromatic line arising from dark matter (DM) decay in the halo of the Large Magellanic Cloud. An emission line can be expected from two well-motivated DM candidates: sterile neturinos and axion-like particles (ALPs). We analyze the eROSITA-DE DR1 datasets in the energy range between 1 and 9 keV. No evidence for a DM line is found, and we set lower limits on the DM lifetime. We then recast these bounds into upper limits on the active-sterile neutrino mixing angle $\\sin^2(2θ)$ and on the ALP to photon coupling $g_{aγ}$, for DM masses between 2 and 18 keV. These results set new strong constraints for masses below 5 keV.",
+"abstract": "We perform a search for an X-ray monochromatic line arising from dark matter (DM) decay in the halo of the Large Magellanic Cloud. An emission line can be expected from two well-motivated DM candidates: sterile neturinos and axion-like particles (ALPs). We analyze the eROSITA-DE DR1 datasets in the energy range between 1 and 9 keV. No evidence for a DM line is found, and we set lower limits on the DM lifetime. We then recast these bounds into upper limits on the active-sterile neutrino mixing angle sin$^{2}$(2θ) and on the ALP to photon coupling gaγ, for DM masses between 2 and 18 keV. These results set new strong constraints for masses below 5 keV.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -1200,6 +1195,60 @@
 0.5
 ],
 "score": 19.0
+},
+{
+"arxiv": "2608.02498",
+"section": "replacement",
+"recid": "3187139",
+"src": "INSPIRE",
+"nref": 59,
+"title": "Axion Inflation: Perturbative control in the strong backreaction regime",
+"authors": [
+"Valerie Domcke",
+"Alexandros Papageorgiou",
+"Marco Peloso",
+"Stefan Sandner"
+],
+"abstract": "We study the strong backreaction regime in axion inflation, in which the friction from Abelian gauge fields generated via the pseudo-scalar interaction $\\fracβ{4 M_p} ϕF {\\tilde F}$ is comparable to Hubble friction. The non-linear dynamics associated with the gauge fields render this regime phenomenologically particularly interesting, but also notoriously difficult to study with perturbative methods. Quantifying the perturbative control through the direct impact on the spectral backreaction using (i) a first-order gradient-expansion formalism including axion gradients, and (ii) a one-loop in-in calculation, we discover an extended mild backreaction regime at large couplings $β$, with a relatively large, nearly constant particle production parameter $ξ$. In passing, we point out that CMB non-Gaussianity bounds impose a general upper limit on the product of axion gauge field coupling and Hubble parameter during inflation, $βH/M_p < 1.4\\cdot 10^{-3}$, independently of the choice of the axion potential.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.012,
+"1955022"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.417,
+"3183493"
+],
+[
+0.11,
+"2974439"
+],
+[
+0.048,
+"2797795"
+]
+],
+"isme": false,
+"coauthors": [],
+"parts": [
+0.0,
+0.03,
+1,
+0.0
+],
+"score": 16.0
 },
 {
 "arxiv": "2610.35379",
@@ -1369,12 +1418,12 @@
 "recid": "3149759",
 "src": "INSPIRE",
 "nref": 112,
-"title": "Accidental Peccei-Quinn Symmetry from Chiral Gauge Symmetry and Mirror QCD",
+"title": "Accidental Peccei-Quinn symmetry from chiral gauge symmetry and mirror QCD",
 "authors": [
 "Hajime Fukuda",
 "Keisuke Harigaya"
 ],
-"abstract": "We present a solution to the strong CP problem in which a simple chiral U(1) gauge symmetry gives rise to an accidental Peccei-Quinn symmetry that is both explicitly and spontaneously broken by mirror QCD dynamics, yielding a framework without massless fermions or a light QCD axion. The model contains no stable domain walls or colored relics, and it accommodates a sufficiently high reheating temperature to account for the baryon asymmetry of the Universe via leptogenesis. Metastable domain walls and first-order mirror QCD phase transition generate a stochastic background of primordial gravitational waves. Additionally, one of the pseudo-Nambu-Goldstone bosons serves as a viable WIMP dark matter candidate. The gauge boson associated with the chiral U(1) gauge symmetry, which kinetically mixes with the Standard Model hypercharge gauge boson, provides a vector portal connecting dark matter to the Standard Model and plays a central role in the dark-matter phenomenology. Colored pseudo-Nambu-Goldstone bosons can be probed at the LHC through searches for dijet resonances, jets plus missing energy, multijet events with leptons, and displaced vertices.",
+"abstract": "We present a solution to the strong CP problem in which a simple chiral U (1) gauge symmetry gives rise to an accidental Peccei-Quinn symmetry that is both explicitly and spontaneously broken by mirror QCD dynamics, yielding a framework without massless fermions or a light QCD axion. The model contains no stable domain walls or colored relics, and it accommodates a sufficiently high reheating temperature to account for the baryon asymmetry of the Universe via leptogenesis. Metastable domain walls and first-order mirror QCD phase transition generate a stochastic background of primordial gravitational waves. Additionally, one of the pseudo-Nambu-Goldstone bosons serves as a viable WIMP dark matter candidate. The gauge boson associated with the chiral U (1) gauge symmetry, which kinetically mixes with the Standard Model hypercharge gauge boson, provides a vector portal connecting dark matter to the Standard Model and plays a central role in the dark-matter phenomenology. Colored pseudo-Nambu-Goldstone bosons can be probed at the LHC through searches for dijet resonances, jets plus missing energy, multijet events with leptons, and displaced vertices.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -1421,11 +1470,12 @@
 "recid": "3183736",
 "src": "INSPIRE",
 "nref": 11,
-"title": "The Spectrum of a Compact Internal Space II: Effective Couplings and Mass Scales",
+"title": "Ultraviolet boundary condition and the Higgs mass",
 "authors": [
-"Jinku Guo"
+"Jinku Guo",
+"Junqiang Bai"
 ],
-"abstract": "Minimal unbiased compositional change generates the Gaussian source of the compact internal construction. We derive joint constraints on effective couplings and mass scales from its gauge and matter content, scalar sector, spectral endpoint and kinetic normalizations. Compatibility of source and colour screening selects three matter copies. Within the response family indexed by integers, shell support and position retention select the level R=5, whose transverse traceless endpoint equation has a unique positive root. Eliminating shared transfer parameters gives a relation among six geometric fermion masses. Bandwidth variation correlates the electron and electroweak scales, while two cosmological ratios are independent of the common neutrino mass normalization. Finite matching through one loop implements the generated Fermi, top and Higgs conditions in a common action. The absorptive top self energy gives the Born decay width as an additional output. The compact source covariance and positive RMS amplitude determine a local nonlinear flux that couples matter motion to source feedback. A model with an auxiliary radius admits autonomous source evolution, positive reduced propagation forms and a matter phase clock on a specified finite cosmological interval. Physical comparisons use the stated mass definitions, matching and thermal approximations. The fixed DESI DR2 distance comparison gives \\c{hi}^2 = 29.5087 for thirteen components and p=0.00554, indicating tension in the adopted cosmological mapping. Spectral tail and quadrature bounds control the finite response calculation.",
+"abstract": "Within the emergence framework, in which infrared physics is not fixed by ultraviolet Lagrangian parameters, the hypothesis that the Higgs quartic coupling vanishes at the Planck scale is tested within the full two-loop Standard Model. With lambda(M_P) = 0 imposed as the sole boundary condition and all other inputs fixed by experiment, a Higgs mass of m_h = 121.99 GeV is obtained from complete two-loop renormalisation-group evolution and full two-loop threshold matching. This lies 3.21 GeV (2.6%) below the measured value of 125.20 GeV. The dominant theoretical uncertainty, +/- 1.5 GeV, arises from unknown three-loop effects and is estimated by perturbative power counting. The calculation tests the simplest ultraviolet boundary condition consistent with the emergence framework of Ref. [1]. The agreement is meaningful at the available precision, since the hypothesis could easily have been excluded by a wide margin. A sharper test requires a complete three-loop calculation and an improved top-quark mass measurement.",
 "citR": [],
 "citE": [
 "2817040"
@@ -1530,7 +1580,7 @@
 "Swaraj Kumar Nanda",
 "Maibam Ricky Devi",
 "Chandini Dash",
-"R. N. Panda",
+"R.N. Panda",
 "Sudhanwa Patra"
 ],
 "abstract": "We discuss a double seesaw mechanism for generating light neutrino masses within the Standard Model extensions that include both right-handed neutrinos and extra gauge-singlet sterile fermions. The flavour structure of the double seesaw framework is invoked by an $A_4$ discrete symmetry which yields predictive textures for the Dirac neutrino mass matrix $M_D$, the mixing matrix $M_{RS}$ connecting right-handed and sterile neutrinos, and the bare Majorana mass matrix $M_S$ for the sterile neutrinos. The interesting feature of the present framework is that the combination of the double seesaw mechanism and $A_4$ flavour alignments yields a leading-order TBM structure, corrected by a single rotation in the (1-3) sector. We also derive analytic expressions for the heavy sterile eigenvalues and for the resulting light neutrino masses, thereby clarifying the role of the symmetry in shaping the neutrino mass hierarchy. We further incorporate the most recent JUNO measurements, which improve the precision of the solar mixing angle $\\sin^2θ_{12} \\simeq 0.31$, along with updated constraints on $\\sin^2θ_{13}$. We show that these results significantly restrict the allowed parameter space of the model. In particular, the observed value of $\\sin^2θ_{12}$ constrains the magnitude of the (1--3) rotation and the phases associated with the $A_4$ flavon couplings, while the value of $\\sin^2θ_{13}$ sharpens these restrictions further. Overall, the interplay between double seesaw dynamics, $A_4$ flavour symmetry, and the recent JUNO constraints yields a highly predictive framework for neutrino masses and mixings, offering a coherent explanation for the generation of light neutrino masses and testable predictions for future experiments.",
@@ -1582,7 +1632,7 @@
 "nref": 49,
 "title": "The neutrino fog for inelastic dark matter",
 "authors": [
-"C. S. Amarasinghe"
+"C.S. Amarasinghe"
 ],
 "abstract": "We characterize the behavior of the neutrino fog for inelastic dark matter scattering on xenon. The inelastic scattering kinematics reshape the recoil spectrum of the signal and produce a qualitatively different neutrino fog landscape. In some regions of the inelastic parameter space the fog is completely absent for future xenon experiments at any scale, while in other regions the fog is dispelled only to reappear at larger exposures. We find that multiple background sources with uncertain normalizations can make the onset of the fog jump discontinuously with the dark matter mass and mass splitting, while the discovery limit varies smoothly. We also describe a mechanism by which reduced uncertainties on neutrino rates may have the unintuitive effect of raising neutrino floors derived from the fog opacity.",
 "citR": [],
@@ -1750,12 +1800,13 @@
 "title": "Unraveling Dirac Magnetic Monopoles with Muon Beams at TeV Energies Using Machine Learning",
 "authors": [
 "M. Tayyab Javaid",
+"Mudassar Hussain",
 "Haroon Sagheer",
 "M. Danial Farooq",
 "Ijaz Ahmed",
 "Jamil Muhammad"
 ],
-"abstract": "The focus of this paper is the production of magnetic monopoles via the Drell-Yan and photon-fusion mechanisms to generate velocity-dependent scalar, fermionic, and vector monopoles of spin angular momentum 0, 1/2, 1, respectively at a future muon collider. A computational study compares the monopole pair-production cross-sections for both methods at various center-of-mass energies ($\\sqrt{s}$) with different magnetic dipole moments. The comparison of kinematic distributions of monopoles at the generator and reconstructed level is demonstrated for both DY and PF mechanisms. We demonstrate the observability of magnetic monopoles against the most relevant Standard Model background using multivariate analysis techniques. Specifically, we apply three different classifiers based on neural networks, e.g., Boosted Decision Trees, Multilayer Perceptrons, and Likelihood methods, to evaluate their effectiveness. Our results highlight the efficiency and robustness of these approaches in distinguishing magnetic monopole signals from background noise. Quantitatively, our analysis shows that the Photon-Fusion mechanism significantly dominates at high energies; for a spin-1/2 monopole with a mass of 1.5 TeV at $\\sqrt{s}=30$ TeV, the PF cross-section (13.33 Pb) is approximately 30 times larger than the Drell-Yan process (0.44 Pb). Furthermore, the Boosted Decision Tree (BDT) classifier outperforms other methods, reaching a signal efficiency of 0.97 and a statistical significance of 22.80 at an optimal cut of 0.042, with an AUC value of 0.989, underscoring the high discovery potential for magnetic monopoles in multi-TeV muon collisions.",
+"abstract": "The focus of this paper is the production of magnetic monopoles Drell-Yan and the Photon-Fusion mechanisms to generate velocity-dependent scalar, fermionic, and vector monopoles of spin angular momentum $0,\\frac{1}{2},1$ respectively at a future muon collider. A computational study compares the monopole pair-production cross-sections for both methods at various center-of-mass energies ($\\sqrt{s}$) with different magnetic dipole moments. The comparison of kinematic distributions of monopoles at the generator and reconstructed level is demonstrated for both DY and PF mechanisms. We demonstrate the observability of magnetic monopoles against the most relevant Standard Model background using multivariate analysis techniques. Specifically, we apply three different classifiers based on neural networks, e.g., Boosted Decision Trees, Multilayer Perceptrons, and Likelihood methods, to evaluate their effectiveness. Our results highlight the efficiency and robustness of these approaches in distinguishing magnetic monopole signals from background noise.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -1804,7 +1855,7 @@
 "nref": 50,
 "title": "Axions from Betelgeuse: Probing Axion Couplings with $^{23}\\rm{Na}$ and $^{55}\\rm{Mn}$",
 "authors": [
-"Nicholas A. M. Revel",
+"Nicholas A.M. Revel",
 "Baldeep Grewal",
 "Anupam Ray",
 "Aaron C. Vincent"
@@ -2184,7 +2235,7 @@
 "Subha Mitra",
 "Bharat Kumar"
 ],
-"abstract": "We calculated the diffusion mean free paths of electron neutrinos and antineutrinos in hot, neutrino-trapped matter containing $Δ(1232)$ isobars, as found in proto-neutron stars and neutron star merger remnants. We included charged-current absorption with the $NΔ$ weak vertex of weak pion production, neutral-current scattering on all baryons and three-body antineutrino absorption on electron--baryon pairs, with relativistic mean-field kinematics. The reaction $\\barν_e+e^-+n\\toΔ^-$ dominates the antineutrino opacity whenever the neutron and electron chemical potentials exceed the in-medium $Δ^-$ rest energy, even where the $Δ$ population is negligible. At two to four times saturation density, where the reaction is open, it shortens the antineutrino mean free path from \\nubarLamNucMin--\\nubarLamNucMax~m to \\nubarLamDMin--\\nubarLamDMax~cm. Because antineutrinos are scarce at high lepton fraction, this changes lepton-number diffusion only at low lepton fraction, by up to \\DtwoRedHi\\% at these densities and by a factor of \\DtwoRedLow\\ at 1.5 times saturation density. For electron neutrinos, absorption on the $Δ^-$ and, at low lepton fraction, the opening of nucleonic absorption shorten the mean free path by factors of up to \\nuRatioYLthreeMax\\ at lepton fraction 0.3 and up to about \\nuRatioYLoneMax\\ at lepton fraction 0.1. We also showed that, for a given axial coupling, the spin of the $Δ$ reduces its Gamow--Teller strength per particle from 3 to $5/3$.",
+"abstract": "We calculated the diffusion mean free paths of electron neutrinos and antineutrinos in hot, neutrino-trapped matter containing $Δ(1232)$ isobars, as found in proto-neutron stars and neutron star merger remnants. We included charged-current absorption with the $NΔ$ weak vertex of weak pion production, neutral-current scattering on all baryons and three-body antineutrino absorption on electron--baryon pairs, with relativistic mean-field kinematics. The reaction $\\barν_e+e^-+n\\toΔ^-$ dominates the antineutrino opacity whenever the neutron and electron chemical potentials exceed the in-medium $Δ^-$ rest energy, even where the $Δ$ population is negligible. At two to four times saturation density, where the reaction is open, it shortens the antineutrino mean free path from \\nubarLamNucMin--\\nubarLamNucMax~m to \\nubarLamDMin--\\nubarLamDMax~cm. Because antineutrinos are scarce at high lepton fraction, this changes lepton-number diffusion only at low lepton fraction, by up to \\DtwoRedHi% at these densities and by a factor of \\DtwoRedLow at 1.5 times saturation density. For electron neutrinos, absorption on the $Δ^-$ and, at low lepton fraction, the opening of nucleonic absorption shorten the mean free path by factors of up to \\nuRatioYLthreeMax at lepton fraction 0.3 and up to about \\nuRatioYLoneMax at lepton fraction 0.1. We also showed that, for a given axial coupling, the spin of the $Δ$ reduces its Gamow--Teller strength per particle from 3 to $5/3$.",
 "citR": [],
 "citE": [
 "2817040"
@@ -2238,7 +2289,7 @@
 "Paolo Castorina",
 "Helmut Satz"
 ],
-"abstract": "The suppression of strange hadrons in pp and p--Pb collisions at the LHC, including the $φ$ meson, has recently been described by the exact conservation of strangeness imposed on the quarks of a causally connected cluster before hadronization. Here we extend this approach to the light flavors. The numbers of up and down quarks and antiquarks are conserved in the same cluster, and the suppression of a baryon or a nucleus depends only on how many light quarks of each flavor it contains. With the strangeness sector fixed by the previous analysis, a single constant, the ratio $r$ of light to strange quark abundances, determines the multiplicity dependence of protons, deuterons, He and hypertriton in pp and p--Pb collisions. Including the finite size of the nuclei, one obtains a very good fit of the data for $r=3.76\\pm0.38$, i.e.\\ strange quarks about 0.27 times as abundant as light quarks per flavor, close to the value known from string fragmentation",
+"abstract": "The suppression of strange hadrons in pp and p--Pb collisions at the LHC, including the $ϕ$ meson, has recently been described by the exact conservation of strangeness imposed on the quarks of a causally connected cluster before hadronization. Here we extend this approach to the light flavors. The numbers of up and down quarks and antiquarks are conserved in the same cluster, and the suppression of a baryon or a nucleus depends only on how many light quarks of each flavor it contains. With the strangeness sector fixed by the previous analysis, a single constant, the ratio $r$ of light to strange quark abundances, determines the multiplicity dependence of protons, deuterons, He and hypertriton in pp and p--Pb collisions. Including the finite size of the nuclei, one obtains a very good fit of the data for $r=3.76\\pm0.38$, i.e. strange quarks about 0.27 times as abundant as light quarks per flavor, close to the value known from string fragmentation",
 "citR": [],
 "citE": [
 "2817040"
@@ -2508,7 +2559,7 @@
 "recid": "3219006",
 "src": "INSPIRE",
 "nref": 143,
-"title": "Large-$N$ $π^+π^+$ scattering from twisted Eguchi--Kawai reduction",
+"title": "Large-$N$$π^+π^+$ scattering from twisted Eguchi--Kawai reduction",
 "authors": [
 "Claudio Bonanno",
 "Margarita García Pérez",
@@ -2569,7 +2620,7 @@
 "title": "Can Randomness lead to non-anarchical mixing angles ?",
 "authors": [
 "Aadarsh Singh",
-"Sudhir K Vempati"
+"Sudhir K. Vempati"
 ],
 "abstract": "We study how disorder and graph connectivity affect neutrino masses and mixing in fermionic theory spaces. Extending the construction of Craig and Sutherland, we compare a nearest-neighbour chain, a non-local graph with distance-suppressed links, and a sparse Petersen-type graph, for Dirac and Majorana neutrinos. Strong site disorder suppresses boundary propagation through localisation. When the heavy mass matrix instead has a dominant approximately uniform diagonal, light masses can arise from cancellations in its inverse. A path expansion makes the dependence on graph connectivity explicit. Our benchmark ensembles display broad mixing distributions for some flavour couplings and peaked distributions for others, particularly with weak site disorder and structured flavour input. These observations do not establish a Haar distribution at strong disorder or a statistical preference over neutrino anarchy at weak disorder. The results identify conditions under which disorder can preserve structured mixing, while leaving its quantitative explanatory advantage to a controlled ensemble comparison.",
 "citR": [],
@@ -2624,7 +2675,7 @@
 "Jia-Jun Wu",
 "Xian-Hui Zhong"
 ],
-"abstract": "In this paper, as a continuation of our previous work on the low-lying heavy-light meson spectra, we systematically study the mass spectra and Okubo-Zweig-Iizuka-allowed strong decays of the higher $3S$-, $2P$-, $2D$-, and $1F$-wave charmed and charmed-strange mesons within a unified unquenched quark model. It is found that coupled-channel effects induce sizable state dependent mass shifts, which modify the relative level spacings and lower the predicted masses compared with conventional quenched calculations. The newly observed $D_{s1}(2933)^+$ reported by the LHCb collaboration could be identified as the low mass axial vector state $D_s(2P_1)$ via the $2^1P_1-2^3P_1$ mixing. For the broad structure $D_{sJ}(3040)^+$ observed earlier by the \\emph{BABAR} collaboration, the $D_s(3^1S_0)$ assignment seems to be favored over the high mass mixed state $D_s(2P_1^\\prime)$. Meanwhile, the $D(3000)^0$ signals reported by LHCb cannot be consistently explained by any of the considered $3S$, $2P$, $2D$, or $1F$ assignments. Our predicted masses and decay properties of the missing higher $D$ and $D_s$ mesons may provide useful information for future experimental searches.",
+"abstract": "In this paper, as a continuation of our previous work on the low-lying heavy-light meson spectra, we systematically study the mass spectra and Okubo-Zweig-Iizuka-allowed strong decays of the higher <math display=\"inline\"><mn>3</mn><mi>S</mi></math>-, <math display=\"inline\"><mn>2</mn><mi>P</mi></math>-, <math display=\"inline\"><mn>2</mn><mi>D</mi></math>-, and <math display=\"inline\"><mn>1</mn><mi>F</mi></math>-wave charmed and charmed-strange mesons within a unified unquenched quark model. It is found that coupled-channel effects induce sizable state dependent mass shifts, which modify the relative level spacings and lower the predicted masses compared with conventional quenched calculations. The newly observed <math display=\"inline\"><msub><mi>D</mi><mrow><mi>s</mi><mn>1</mn></mrow></msub><mo stretchy=\"false\">(</mo><mn>2933</mn><msup><mo stretchy=\"false\">)</mo><mo>+</mo></msup></math> reported by the LHCb collaboration could be identified as the low mass axial vector state <math display=\"inline\"><msub><mi>D</mi><mi>s</mi></msub><mo stretchy=\"false\">(</mo><mn>2</mn><msub><mi>P</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo></math> via the <math display=\"inline\"><msup><mn>2</mn><mn>1</mn></msup><msub><mi>P</mi><mn>1</mn></msub><mo>-</mo><msup><mn>2</mn><mn>3</mn></msup><msub><mi>P</mi><mn>1</mn></msub></math> mixing. For the broad structure <math display=\"inline\"><msub><mi>D</mi><mrow><mi>s</mi><mi>J</mi></mrow></msub><mo stretchy=\"false\">(</mo><mn>3040</mn><msup><mo stretchy=\"false\">)</mo><mo>+</mo></msup></math> observed earlier by the BABAR collaboration, the <math display=\"inline\"><msub><mi>D</mi><mi>s</mi></msub><mo stretchy=\"false\">(</mo><msup><mn>3</mn><mn>1</mn></msup><msub><mi>S</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo></math> assignment seems to be favored over the high mass mixed state <math display=\"inline\"><msub><mi>D</mi><mi>s</mi></msub><mo stretchy=\"false\">(</mo><mn>2</mn><msubsup><mi>P</mi><mn>1</mn><mo>′</mo></msubsup><mo stretchy=\"false\">)</mo></math>. Meanwhile, the <math display=\"inline\"><mi>D</mi><mo stretchy=\"false\">(</mo><mn>3000</mn><msup><mo stretchy=\"false\">)</mo><mn>0</mn></msup></math> signals reported by LHCb cannot be consistently explained by any of the considered <math display=\"inline\"><mn>3</mn><mi>S</mi></math>, <math display=\"inline\"><mn>2</mn><mi>P</mi></math>, <math display=\"inline\"><mn>2</mn><mi>D</mi></math>, or <math display=\"inline\"><mn>1</mn><mi>F</mi></math> assignments. Our predicted masses and decay properties of the missing higher <math display=\"inline\"><mi>D</mi></math> and <math display=\"inline\"><msub><mi>D</mi><mi>s</mi></msub></math> mesons may provide useful information for future experimental searches.",
 "citR": [],
 "citE": [
 "2817040"
@@ -2834,12 +2885,11 @@
 "nref": 160,
 "title": "Implications of exclusive photon leptoproduction measurements for the proton charge-radius puzzle",
 "authors": [
-" The MMGPDs Collaboration",
 "Muhammad Goharipour",
 "Anoushiravan Moradi",
 "K. Azizi"
 ],
-"abstract": "In the present study, we extend our previous analysis of the proton electromagnetic form factors (FFs) extracted from exclusive photon leptoproduction (EP) measurements in kinematic regions where the Bethe--Heitler (BH) process dominates the cross section by including all currently available high-precision EP data from CLAS and Hall~A Collaborations. Using the same phenomenological framework, we investigate the consistency among the different datasets, determine the proton electromagnetic FFs within several fitting scenarios, and extract the corresponding charge and magnetic radii. A significant tension is found between the CLAS 2018 measurements and the remaining EP data, with the low-$|t|$ region playing a dominant role in this tension. We systematically investigate this behavior through $|t|$-cut scans and assess its impact on the extracted FFs and radii. For all analyses, the extracted proton charge radius is smaller than the Particle Data Group average and most determinations based on elastic electron--proton scattering. However, the results are consistent, within uncertainties, with the PRad measurement and muonic hydrogen spectroscopy. In contrast, the magnetic radius is found to be compatible with the current world average. These results demonstrate that BH-dominated EP measurements provide an independent and complementary approach to determine the electromagnetic structure of the proton and offer additional support for the small-radius solution of the proton charge-radius puzzle.",
+"abstract": "In the present study, we extend our previous analysis of the proton electromagnetic form factors (FFs) extracted from exclusive photon leptoproduction (EP) measurements in kinematic regions where the Bethe-Heitler (BH) process dominates the cross section by including all currently available high-precision EP data from CLAS and Hall A Collaborations. Using the same phenomenological framework, we investigate the consistency among the different datasets, determine the proton electromagnetic FFs within several fitting scenarios, and extract the corresponding charge and magnetic radii. A significant tension is found between the CLAS 2018 measurements and the remaining EP data, with the low-<math display=\"inline\"><mo stretchy=\"false\">|</mo><mi>t</mi><mo stretchy=\"false\">|</mo></math> region playing a dominant role in this tension. We systematically investigate this behavior through <math display=\"inline\"><mo stretchy=\"false\">|</mo><mi>t</mi><mo stretchy=\"false\">|</mo></math>-cut scans and assess its impact on the extracted FFs and radii. For all analyses, the extracted proton charge radius is smaller than the Particle Data Group average and most determinations based on elastic electron-proton scattering. However, the results are consistent, within uncertainties, with the PRad measurement and muonic hydrogen spectroscopy. In contrast, the magnetic radius is found to be compatible with the current world average. These results demonstrate that BH-dominated EP measurements provide an independent and complementary approach to determine the electromagnetic structure of the proton and offer additional support for the small-radius solution of the proton charge-radius puzzle.",
 "citR": [],
 "citE": [
 "2817040"
@@ -2995,11 +3045,11 @@
 "nref": 46,
 "title": "Midrapidity dip and limiting fragmentation of charged hadrons from RHIC to LHC energies",
 "authors": [
-" Neeraj",
+"Neeraj",
 "Md. Kaosar Ali Mondal",
 "Amal Sarkar"
 ],
-"abstract": "The charged-hadron pseudorapidity density $\\dndeta$ in central heavy-ion collisions has a midrapidity depression that deepens with collision energy. Whether it reflects structure in the rapidity density $\\dndy$ or only the kinematics of the $y\\toη$ transformation has mostly been argued with effective or model-based Jacobians. We test this without an event generator, with a $y\\toη$ kernel built from measured identified-hadron spectra. In central Au+Au and Pb+Pb collisions from $\\snn=19.6$~GeV to 5.36~TeV the data do not require a dip in $\\dndy$: the decisive null-hypothesis family gives $p\\ge\\pMinAll$ in all variants. For dips up to one rapidity unit wide, the depth giving $p<0.05$ in half the pseudo-experiments is \\rng{\\dminLHClo}{\\dminLHChi}\\% at the LHC and \\rng{\\dminRHIClo}{\\dminRHIChi}\\% at 62.4--200~GeV. Generator closure tests show a false dip at top RHIC energy caused by the forward region. As the LHC data barely constrain the fragmentation region, an energy sum rule calibrated on RHIC data, with the RHIC shape of that region, gives best-fit LHC/RHIC ratios of \\rng{\\sLoE}{\\sHiE}, \\rng{\\sLoF}{\\sHiF} and \\rng{\\sLoG}{\\sHiG} at 2.76, 5.02 and 5.36~TeV for three shape families, with 95\\% intervals over the families of \\rng{\\sNFLoE}{\\sNFHiE}, \\rng{\\sNFLoF}{\\sNFHiF} and \\sNFG{} that include unity, although at 2.76 and 5.02~TeV the fits prefer \\rng{\\pullLoEF}{\\pullHiEF}$\\,σ$ more energy than calibrated. Over plausible RHIC covariances and kernels the best-fit ratios span \\rng{\\sSystAllLo}{\\sSystAllHi}, and single variants exclude unity at \\systUnionAbs: limiting fragmentation is neither established nor excluded.",
+"abstract": "The charged-hadron pseudorapidity density $\\dndeta$ in central heavy-ion collisions has a midrapidity depression that deepens with collision energy. Whether it reflects structure in the rapidity density $\\dndy$ or only the kinematics of the $y\\toη$ transformation has mostly been argued with effective or model-based Jacobians. We test this without an event generator, with a $y\\toη$ kernel built from measured identified-hadron spectra. In central Au+Au and Pb+Pb collisions from $\\snn=19.6$~GeV to 5.36~TeV the data do not require a dip in $\\dndy$: the decisive null-hypothesis family gives $p\\ge\\pMinAll$ in all variants. For dips up to one rapidity unit wide, the depth giving $p<0.05$ in half the pseudo-experiments is \\rng{\\dminLHClo}{\\dminLHChi}% at the LHC and \\rng{\\dminRHIClo}{\\dminRHIChi}% at 62.4--200~GeV. Generator closure tests show a false dip at top RHIC energy caused by the forward region. As the LHC data barely constrain the fragmentation region, an energy sum rule calibrated on RHIC data, with the RHIC shape of that region, gives best-fit LHC/RHIC ratios of \\rng{\\sLoE}{\\sHiE}, \\rng{\\sLoF}{\\sHiF} and \\rng{\\sLoG}{\\sHiG} at 2.76, 5.02 and 5.36~TeV for three shape families, with 95% intervals over the families of \\rng{\\sNFLoE}{\\sNFHiE}, \\rng{\\sNFLoF}{\\sNFHiF} and \\sNFG that include unity, although at 2.76 and 5.02~TeV the fits prefer \\rng{\\pullLoEF}{\\pullHiEF}$\\,σ$ more energy than calibrated. Over plausible RHIC covariances and kernels the best-fit ratios span \\rng{\\sSystAllLo}{\\sSystAllHi}, and single variants exclude unity at \\systUnionAbs: limiting fragmentation is neither established nor excluded.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -3046,11 +3096,11 @@
 "recid": "3135978",
 "src": "INSPIRE",
 "nref": 32,
-"title": "Two-Pion Exchange Paradigm in Hadron-Hadron Interactions from Lattice QCD",
+"title": "Two-pion exchange paradigm in hadron-hadron interactions from lattice QCD",
 "authors": [
 "Tetsuo Hatsuda"
 ],
-"abstract": "We study hadron-hadron interactions in (2+1)-flavor lattice QCD near the physical pion mass ($m_π\\simeq 146\\mathrm{MeV}$) using the HAL QCD method, with particular emphasis on two-pion exchange (TPE). The nucleon--flavor-singlet hadron potentials such as $φ$-$N$, $J/ψ$-$N$, and $η_c$-$N$ are found to be attractive at all distances. Moreover, in the long-range region where one-pion exchange is forbidden, we observe lattice signatures consistent with TPE dominance. These results demonstrate that the HAL QCD method can extract universal long-distance phenomena, such as TPE, directly from nonperturbative QCD dynamics.",
+"abstract": "We study hadron-hadron interactions in (2+1)-flavor lattice QCD near the\nphysical pion mass $(m_\\pi\\simeq146$MeV$)$ using the HAL QCD method, with\nparticular emphasis on two-pion exchange (TPE). The\nnucleon--flavor-singlet hadron potentials such as \\(\\phi\\, - \\, N\\),\n\\(J/\\psi\\, - \\, N\\), and \\(\\eta_{c}\\, - \\, N\\) are found to be\nattractive at all distances. Moreover, in the long-range region where\none-pion exchange is forbidden, we observe lattice signatures consistent\nwith TPE dominance. These results demonstrate that the HAL QCD method\ncan extract universal long-distance phenomena, such as TPE, directly\nfrom nonperturbative QCD dynamics.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -3258,7 +3308,7 @@
 "Antonino Di Piazza",
 "Giulio Audagnotto"
 ],
-"abstract": "Nonlinear Compton scattering is the process of emission of a single photon by a charge driven by an intense laser field. Here, we study the infrared behavior of the photon yield emitted via nonlinear Compton scattering. We first consider the idealized case of an electron in the presence of a plane wave and derive an analytical expression of the total yield in the form of a double integral over the laser phase. As it is known, the total yield is finite in the experimentally common case of a plane-wave laser field without a dc component whereas it diverges logarithmically in the complementary case of so-called unipolar fields. The divergence is found here to correspond to the longer-and-longer formation lengths of emitted photons with lower-and-lower frequency. Interestingly, we also find that the corrections to the Volkov states stemming from the fact that the field is unipolar cancel out in the computation of the probability of nonlinear Compton scattering, which is in agreement with the fact that in the classical limit the expression of the photon yield is independent of whether the plane wave is unipolar or not. Then, we pass to the more realistic case of an electron in a tightly-focused laser beam by assuming that the electron is ultrarelativistic. In this case we determine analytically the classical angular distribution of the yield of photons with an energy larger than a fixed value $\\hbarω_m$ as a double integral over the electron's trajectory. After obtaining also the corresponding quantum expression of the angular distribution of the photon yield within the quasiclassical approximation, we determine analytically the leading-order quantum correction, which scales as $\\hbarω_m/\\varepsilon$, where $\\varepsilon$ is the initial electron energy. Considerations on the experimental feasibility of the found results in the latter situations are also presented.",
+"abstract": "Nonlinear Compton scattering is the process of emission of a single photon by a charge driven by an intense laser field. Here, we study the infrared behavior of the photon yield emitted via nonlinear Compton scattering. We first consider the idealized case of an electron in the presence of a plane wave and derive an analytical expression of the total yield in the form of a double integral over the laser phase. As it is known, the total yield is finite in the experimentally common case of a plane wave laser field without a dc component whereas it diverges logarithmically in the complementary case of so-called unipolar fields. The divergence is found here to correspond to the longer-and-longer formation lengths of emitted photons with lower-and-lower frequency. Interestingly, we also find that the corrections to the Volkov states stemming from the fact that the field is unipolar cancel out in the computation of the probability of nonlinear Compton scattering, which is in agreement with the fact that in the classical limit the expression of the photon yield is independent of whether the plane wave is unipolar or not. Then, we pass to the more realistic case of an electron in a tightly focused laser beam by assuming that the electron is ultrarelativistic. In this case we determine analytically the classical angular distribution of the yield of photons with an energy larger than a fixed value <math display=\"inline\"><mrow><mi>ℏ</mi><msub><mrow><mi>ω</mi></mrow><mrow><mi>m</mi></mrow></msub></mrow></math> as a double integral over the electron’s trajectory. Indeed, in the case of a focused laser beam the electron does typically undergo a net acceleration and it is therefore appropriate to fix a lower bound to avoid the infrared divergence. After obtaining also the corresponding quantum expression of the angular distribution of the photon yield within the quasiclassical approximation, we determine analytically the leading-order quantum correction, which scales as <math display=\"inline\"><mi>ℏ</mi><msub><mi>ω</mi><mi>m</mi></msub><mo>/</mo><mi>ϵ</mi></math>, where <math display=\"inline\"><mi>ϵ</mi></math> is the initial electron energy. Considerations on the experimental feasibility of the found results in the latter situations are also presented.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -3307,7 +3357,7 @@
 "nref": 122,
 "title": "The Redshift-Space Galaxy Power Spectrum at Two-Loop Order",
 "authors": [
-"Oliver H. E. Philcox"
+"Oliver H.E. Philcox"
 ],
 "abstract": "Contemporary large-scale structure analyses center around the galaxy power spectrum, modeled with one-loop perturbation theory. This description naturally breaks down at large wavenumbers, prohibiting the extraction of cosmological information from small-scale clustering. In this work, we present a complete model for the redshift-space galaxy power spectrum up to two-loop order, derived in the framework of the Effective Field Theory of Large Scale Structure. This accounts for a wide variety of effects, including fifth-order galaxy bias, redshift-space distortions, small-scale non-linearities, spatial non-locality, bulk flows, coordinate distortions, and stochasticity, involving 49 free coefficients. Our model additionally encodes all deterministic and counterterm contributions to the one-loop bispectrum and trispectrum (as well as the tree-level quadspectrum and pentaspectrum), which depend on many of the same parameters. We implement the model numerically, using the VEGAS algorithm to precompute the loop integrals; this allows the full likelihood to be evaluated in milliseconds. The approach is validated using power spectra measured from high-resolution simulations, considering both dark matter and realistic galaxy samples. The extension to two-loop order greatly increases the range of scales over which the power spectrum can be modeled, with $k_{\\rm max}$ rising from $0.20h\\,\\mathrm{Mpc}^{-1}$ to $0.34h\\,\\mathrm{Mpc}^{-1}$ for a luminous red galaxy sample at $z=0.5$, or $0.27h\\,\\mathrm{Mpc}^{-1}$ to $0.42h\\,\\mathrm{Mpc}^{-1}$ for an emission line galaxy sample at $z=1.1$. Much of the additional information is absorbed by the numerous fifth-order biases and counterterms; for this reason, constraints on $σ_8$ are not significantly enhanced by the inclusion of two-loop terms. Future work will assess the implications of the two-loop model for cosmological parameter inference.",
 "citR": [],
@@ -3364,7 +3414,7 @@
 "Luis A. Anchordoqui",
 "Eleonora Di Valentino"
 ],
-"abstract": "We constrain three interacting dark matter--dark energy scenarios using cosmic microwave background measurements, DESI DR2 baryon acoustic oscillations, and the PantheonPlus, Union3, and DES-Dovekie Type Ia supernova compilations. We consider interacting vacuum energy and interacting dark energy with a constant equation of state in the phantom and quintessence regimes, analyzing each scenario with either a fixed total neutrino mass or a freely varying effective neutrino mass. When the positivity prior is relaxed, all three scenarios favor negative effective neutrino masses for every dataset combination. Although some combinations permit small positive masses, none of the 95\\% confidence intervals reaches the minimum mass required by neutrino oscillation experiments. Allowing the effective neutrino mass to vary produces significances for a nonzero coupling reaching approximately $3σ$, but the preferred masses remain negative. These results demonstrate that the interaction and constant dark energy equations of state considered here fail to resolve the DESI neutrino-mass tension.",
+"abstract": "We constrain three interacting dark matter--dark energy scenarios using cosmic microwave background measurements, DESI DR2 baryon acoustic oscillations, and the PantheonPlus, Union3, and DES-Dovekie Type Ia supernova compilations. We consider interacting vacuum energy and interacting dark energy with a constant equation of state in the phantom and quintessence regimes, analyzing each scenario with either a fixed total neutrino mass or a freely varying effective neutrino mass. When the positivity prior is relaxed, all three scenarios favor negative effective neutrino masses for every dataset combination. Although some combinations permit small positive masses, none of the 95% confidence intervals reaches the minimum mass required by neutrino oscillation experiments. Allowing the effective neutrino mass to vary produces significances for a nonzero coupling reaching approximately $3σ$, but the preferred masses remain negative. These results demonstrate that the interaction and constant dark energy equations of state considered here fail to resolve the DESI neutrino-mass tension.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -3415,7 +3465,7 @@
 "authors": [
 "Alexandre Salas-Bernárdez"
 ],
-"abstract": "We derive a novel representation of the partial wave amplitude over the left-hand cut for $2 \\to 2$ scattering. We express the left-hand cut of arbitrary isospin and angular momentum partial waves as an integral of right-hand cut imaginary parts. This formulation provides an explicit, exact extraction of the logarithmic branch cut structures, offering a valuable tool to systematically quantify left-hand cut uncertainties in unitarization methods such as the Inverse Amplitude Method or $N/D$ approaches.",
+"abstract": "•Derived a novel representation of 2 → 2 scattering left-hand cuts using right-hand cut imaginary parts.•Provides exact extraction of logarithmic branch left-cuts for arbitrary isospin and angular momentum partial waves.•Enables systematic quantification of left-hand cut uncertainties in unitarization methods like IAM and N/D. We derive a novel representation of the partial wave amplitude over the left-hand cut for 2 → 2 scattering. We express the left-hand cut of arbitrary isospin and angular momentum partial waves as an integral of right-hand cut imaginary parts. This formulation provides an explicit, exact extraction of the logarithmic branch cut structures, offering a valuable tool to systematically quantify left-hand cut uncertainties in unitarization methods such as the Inverse Amplitude Method or N/D approaches.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -3832,7 +3882,7 @@
 "authors": [
 "Mario Ramos-Hamud"
 ],
-"abstract": "In string compactifications, dilaton-like moduli always come paired with axions, and the two fields interact through a curved field-space metric. We study the cosmology of such an axio-dilaton system, in which the dilaton rolls down an exponential potential corrected by a polynomial prefactor and couples to a massless axion through the kinetic function $W=e^{-ξφ_1/M_p}$. A dynamical systems analysis shows that the late-time attractor follows a non-geodesic trajectory in field space with equation of state $ω_φ=(λ-2ξ)/(λ+2ξ)$, so accelerated expansion is possible for steep potentials provided $ξ\\ggλ$. No physical fixed point is phantom. A Bayesian analysis with DESI DR2 BAO, binned Pantheon supernovae and Planck 2018 distance priors gives $λ\\gtrsim7$--$9$ and $\\log_{10}ξ\\gtrsim2.5$ at 95% confidence, together with a degeneracy between the two parameters. The model is slightly favoured over $Λ$CDM by current data, while the different polynomial corrections cannot yet be distinguished. This contribution is based on arXiv:2609.22539.",
+"abstract": "In string compactifications, dilaton-like moduli always come paired with axions, and the two fields interact through a curved field-space metric. We study the cosmology of such an axio-dilaton system, in which the dilaton rolls down an exponential potential corrected by a polynomial prefactor and couples to a massless axion through the kinetic function $W=e^{-ξϕ_1/M_p}$. A dynamical systems analysis shows that the late-time attractor follows a non-geodesic trajectory in field space with equation of state $ω_ϕ=(λ-2ξ)/(λ+2ξ)$, so accelerated expansion is possible for steep potentials provided $ξ\\ggλ$. No physical fixed point is phantom. A Bayesian analysis with DESI DR2 BAO, binned Pantheon supernovae and Planck 2018 distance priors gives $λ\\gtrsim7$--$9$ and $\\log_{10}ξ\\gtrsim2.5$ at 95% confidence, together with a degeneracy between the two parameters. The model is slightly favoured over $Λ$CDM by current data, while the different polynomial corrections cannot yet be distinguished. This contribution is based on arXiv:2609.22539.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -4205,7 +4255,7 @@
 "Ling-Yun Dai",
 "Feng-Kun Guo"
 ],
-"abstract": "We present a complete dispersive evaluation of the Bernabéu-Ericson-Ferro Fontan-Tarrach (BEFT) sum rule for the nucleon dipole polarizability difference $α_{E1}-β_{M1}$. The analysis is based on hyperbolic dispersion relations, which separate the $s$- and $t$-channel contributions without double counting and are particularly suited to backward real Compton scattering. This framework makes it possible to precisely determine the polarizability difference from independent dispersive input rather than from fits to low-energy Compton scattering data. The $s$-channel part is updated with modern single-pion photoproduction multipoles and model estimates of non-$πN$ inelastic channels. For the $t$-channel, we use contemporary dispersive input for $γγ\\toππ/K\\bar K_{I_t=0}$ together with Roy-Steiner equation solutions for $ππ/K\\bar K_{I_t=0}\\to N\\bar N$, and we extend the calculation to the isovector $πη/K\\bar K_{I_t=1}$ channel associated with the $a_0(980)$. The resulting treatment resolves the long-standing puzzle of earlier BEFT evaluations driven by the scalar-isoscalar two-pion channel and gives a controlled estimate of the subleading isovector contribution. Combining the resulting BEFT values with the Baldin sum rule, we obtain, in units of $10^{-4}\\,\\mathrm{fm}^3$, \\[ α_{E1}^p=11.17(52),\\quad β_{M1}^p=2.84(52),\\quad α_{E1}^n=12.18(59),\\quad β_{M1}^n=3.03(59). \\] For the proton, these values provide a benchmark with a precision comparable to state-of-the-art dispersive and chiral effective field theory extractions. For the neutron, whose polarizabilities are much less directly constrained experimentally, the result provides an independent dispersive benchmark with an uncertainty comparable to that of the proton.",
+"abstract": "We present a complete dispersive evaluation of the Bernabéu-Ericson-Ferro Fontan-Tarrach (BEFT) sum rule for the nucleon dipole polarizability difference $α_{E1}-β_{M1}$. The analysis is based on hyperbolic dispersion relations, which separate the $s$- and $t$-channel contributions without double counting and are particularly suited to backward real Compton scattering. This framework makes it possible to precisely determine the polarizability difference from independent dispersive input rather than from fits to low-energy Compton scattering data. The $s$-channel part is updated with modern single-pion photoproduction multipoles and model estimates of non-$πN$ inelastic channels. For the $t$-channel, we use contemporary dispersive input for $γγ\\toππ/K\\bar K_{I_t=0}$ together with Roy-Steiner equation solutions for $ππ/K\\bar K_{I_t=0}\\to N\\bar N$, and we extend the calculation to the isovector $πη/K\\bar K_{I_t=1}$ channel associated with the $a_0(980)$. The resulting treatment resolves the long-standing puzzle of earlier BEFT evaluations driven by the scalar-isoscalar two-pion channel and gives a controlled estimate of the subleading isovector contribution. Combining the resulting BEFT values with the Baldin sum rule, we obtain, in units of $10^{-4}\\,\\mathrm{fm}^3$, \n\\[ α_{E1}^p=11.17(52),\\quad β_{M1}^p=2.84(52),\\quad α_{E1}^n=12.18(59),\\quad β_{M1}^n=3.03(59). \\]\n For the proton, these values provide a benchmark with a precision comparable to state-of-the-art dispersive and chiral effective field theory extractions. For the neutron, whose polarizabilities are much less directly constrained experimentally, the result provides an independent dispersive benchmark with an uncertainty comparable to that of the proton.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -4258,7 +4308,7 @@
 "Peter Lowdon",
 "Owe Philipsen"
 ],
-"abstract": "The standard approach to perturbation theory for finite-temperature quantum field theories has several issues, including the appearance of ill-defined on-shell contributions in the real-time formulation, and infrared divergences in massless theories. Earlier studies indicate that these issues all stem from the inconsistent thermal generalisation of the Gell-Mann-Low relation, which forms the foundation of perturbation theory in vacuum. This inconsistency arises from the use of free scattering states in the relation, which are known not to exist in interacting thermal theories. In this work, we propose a generalisation of the Gell-Mann-Low relation for scalar theories based on non-perturbative spectral insights, namely that finite-temperature scattering states can be described by damped but stable particle-like excitations, so-called thermoparticles. The perturbative expansion of this generalised relation gives rise to contributions with exactly the same topology as the standard finite-temperature approach, except that now the propagators appearing in this expansion are not those of a free field but of thermoparticles, which depend on the dynamics of the theory. We demonstrate that thermoparticle perturbation theory resolves the known problems of the standard approach. Furthermore, by comparing imaginary-time calculations at two-loop level with numerical lattice simulations of two-point correlation functions in massive $φ^{4}$ theory, we explicitly show that this framework gives rise to precise predictions, as in the vacuum case, in stark contrast to the standard approach.",
+"abstract": "The standard approach to perturbation theory for finite-temperature quantum field theories has several issues, including the appearance of ill-defined on-shell contributions in the real-time formulation, and infrared divergences in massless theories. Earlier studies indicate that these issues all stem from the inconsistent thermal generalisation of the Gell-Mann-Low relation, which forms the foundation of perturbation theory in vacuum. This inconsistency arises from the use of free scattering states in the relation, which are known not to exist in interacting thermal theories. In this work, we propose a generalisation of the Gell-Mann-Low relation for scalar theories based on non-perturbative spectral insights, namely that finite-temperature scattering states can be described by damped but stable particle-like excitations, so-called thermoparticles. The perturbative expansion of this generalised relation gives rise to contributions with exactly the same topology as the standard finite-temperature approach, except that now the propagators appearing in this expansion are not those of a free field but of thermoparticles, which depend on the dynamics of the theory. We demonstrate that thermoparticle perturbation theory resolves the known problems of the standard approach. Furthermore, by comparing imaginary-time calculations at two-loop level with numerical lattice simulations of two-point correlation functions in massive ϕ$^{4}$ theory, we explicitly show that this framework gives rise to precise predictions, as in the vacuum case, in stark contrast to the standard approach.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -4517,12 +4567,12 @@
 "recid": "2913483",
 "src": "INSPIRE",
 "nref": 141,
-"title": "Weizsäcker-Williams Gluon Helicity Distribution and Inclusive Dijet Production in Longitudinally Polarized Electron-Proton Collisions",
+"title": "Weizsäcker-Williams gluon helicity distribution and inclusive dijet production in longitudinally polarized electron-proton collisions",
 "authors": [
 "Yuri V. Kovchegov",
 "Ming Li"
 ],
-"abstract": "It is well-known that the back-to-back (correlation) limit of inclusive quark-antiquark dijet production in unpolarized high energy electron-proton collisions can probe the Weizsäcker-Williams (WW) gluon transverse momentum-dependent distribution (TMD) at small $x$ \\cite{Dominguez:2010xd, Dominguez:2011wm}. In this paper, we consider a helicity-dependent version of the same process: we study the double-spin asymmetry for inclusive quark-antiquark dijet production in longitudinally polarized electron-proton scattering at high energies. We show that in the back-to-back limit this process probes the WW gluon helicity TMD. Furthermore, we derive the small-$x$ evolution equation for the operator related to the WW gluon helicity distribution. We find that in the double-logarithmic approximation and in the large-$N_c$ limit, the small-$x$ asymptotics of the WW gluon helicity distribution is governed by exactly the same evolution equation as that for the dipole gluon helicity distribution. The longitudinal double-spin asymmetry for inclusive dijet production in the longitudinally polarized electron-proton collisions can thus test the small-$x$ helicity evolution equations and facilitate constraining the initial conditions for phenomenology based on these equations.",
+"abstract": "It is well-known that the back-to-back (correlation) limit of inclusive quark-antiquark dijet production in unpolarized high energy electron-proton collisions can probe the Weizsäcker-Williams (WW) gluon transverse momentum-dependent distribution (TMD) at small x [1, 2]. In this paper, we consider a helicity-dependent version of the same process: we study the double-spin asymmetry for inclusive quark-antiquark dijet production in longitudinally polarized electron-proton scattering at high energies. We show that in the back-to-back limit this process probes the WW gluon helicity TMD. Furthermore, we derive the small-x evolution equation for the operator related to the WW gluon helicity distribution. We find that in the double-logarithmic approximation and in the large-N$_{c}$ limit, the small-x asymptotics of the WW gluon helicity distribution is governed by exactly the same evolution equation as that for the dipole gluon helicity distribution. The longitudinal double-spin asymmetry for inclusive dijet production in the longitudinally polarized electron-proton collisions can thus test the small-x helicity evolution equations and facilitate constraining the initial conditions for phenomenology based on these equations.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -4892,9 +4942,9 @@
 "nref": 51,
 "title": "Paired charmonium and bottomonium production in rare exclusive decays of Z boson",
 "authors": [
-"F. A. Martynenko",
-"A. P. Martynenko",
-"A. A. Skakun"
+"F.A. Martynenko",
+"A.P. Martynenko",
+"A.A. Skakun"
 ],
 "abstract": "The processes of paired charmonium and bottomonium production in Z-boson decays are investigated within the relativistic quark model. Various decay mechanisms are examined, and relativistic decay amplitudes are constructed, taking into account the relative momenta of heavy quarks. Decay widths are calculated for various mechanisms in the nonrelativistic approximation and taking into account relativistic corrections.",
 "citR": [],
@@ -4948,7 +4998,7 @@
 "Yuri V. Kovchegov",
 "Brandon Manley"
 ],
-"abstract": "We consider elastic vector meson production in longitudinally polarized electron-proton collisions at small $x$. Inspired by previous pioneering proposals in the literature, we calculate the numerator of the longitudinal double-spin asymmetry (DSA) within the polarized small-$x$ formalism for both the transversely and longitudinally polarized vector mesons. Our calculation demonstrates that the $\\cosφ_{kΔ}$ azimuthal harmonic of the DSA for the elastic vector meson production at small transverse momentum transfer (with $φ_{kΔ}$ the azimuthal angle between the transverse momenta of the outgoing electron and meson in the dipole/Trento frame) provides a promising probe of the orbital angular momentum (OAM) distributions at small $x$. Our results can be applied to several different vector meson species, thus opening up a new class of observables that can be used to extract OAM distributions from experimental data.",
+"abstract": "We consider elastic vector meson production in longitudinally polarized electron-proton collisions at small $x$. Inspired by previous pioneering proposals in the literature, we calculate the numerator of the longitudinal double-spin asymmetry (DSA) within the polarized small-$x$ formalism for both the transversely and longitudinally polarized vector mesons. Our calculation demonstrates that the $\\cosϕ_{kΔ}$ azimuthal harmonic of the DSA for the elastic vector meson production at small transverse momentum transfer (with $ϕ_{kΔ}$ the azimuthal angle between the transverse momenta of the outgoing electron and meson in the dipole/Trento frame) provides a promising probe of the orbital angular momentum (OAM) distributions at small $x$. Our results can be applied to several different vector meson species, thus opening up a new class of observables that can be used to extract OAM distributions from experimental data.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -5048,10 +5098,10 @@
 "recid": "3158554",
 "src": "INSPIRE",
 "nref": 39,
-"title": "Factorization in quasi-free breakup reactions with two bodies left behind",
+"title": "Two bodies left behind",
 "authors": [
 "Raúl A. Briceño",
-"Caroline S. R. Costa",
+"Caroline S.R. Costa",
 "Hans-Werner Hammer",
 "Daniel R. Phillips"
 ],
@@ -5102,12 +5152,12 @@
 "recid": "3137679",
 "src": "INSPIRE",
 "nref": 71,
-"title": "Quasi-linear theory of fast flavor instabilities in homogeneous environments",
+"title": "Quasilinear Theory of Fast Flavor Instabilities",
 "authors": [
-"Damiano F. G. Fiorillo",
+"Damiano F.G. Fiorillo",
 "Georg G. Raffelt"
 ],
-"abstract": "Dense neutrino plasmas can develop instabilities that drive collisionless flavor exchange, equivalent to the emission of flavomons, the quanta of flavor waves. We treat these waves, for the first time, as independent linear degrees of freedom and develop a quasi-linear theory (QLT), including backreaction on the neutrino distribution and nonresonant neutrino--flavomon interactions, while neglecting wave--wave processes. In a homogeneous, axisymmetric model, the saturated neutrino and flavomon distributions agree closely with periodic-box solutions of the original quantum kinetic equation. These results support the use of QLT, well established in plasma physics, to bypass nonlinear small-scale effects that challenge direct simulations.",
+"abstract": "Dense neutrino plasmas can develop instabilities that drive collisionless flavor exchange, equivalent to the emission of flavomons, the quanta of flavor waves. We treat these waves as independent linear degrees of freedom and develop a quasilinear theory, including backreaction on the neutrino distribution and nonresonant neutrino-flavomon interactions, while neglecting wave-wave processes. In a statistically homogeneous, axisymmetric model, the saturated neutrino and flavomon distributions agree closely with periodic-box solutions of the original quantum kinetic equation. Our results provide the first theoretical interpretation for the numerical observations. They also show that flavomon phases have little influence on the final state, supporting the quasilinear theory as a framework for capturing flavor evolution without resolving nonlinear small-scale dynamics.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -5209,7 +5259,7 @@
 "authors": [
 "Klaus Reygers"
 ],
-"abstract": "These conference proceedings provide a compact experimental perspective on the soft-photon puzzle. The puzzle refers to the long-standing discrepancy between soft-photon data in hadronic reactions and predictions based on Low's soft-photon theorem. We summarize the theoretical baseline, representative measurements, and the main experimental challenges. For a detailed account of the experimental history and theory, we refer to the recent review article Phys. Rept., 1097:1, 2024.",
+"abstract": "These conference proceedings provide a compact experimental perspective on the soft-photon puzzle. The puzzle refers to the long-standing discrepancy between soft-photon data in hadronic reactions and predictions based on Low's soft-photon theorem. We summarize the theoretical baseline, representative measurements, and the main experimental challenges. For a detailed account of the experimental history and theory, we refer to the recent review article [1].",
 "citR": [],
 "citE": [],
 "topR": [

@@ -9,8 +9,8 @@
 "authors": [
 "D. Aristizabal Sierra",
 "V. De Romeri",
-"D. K. Papoulias",
-"I. M. Shoemaker"
+"D.K. Papoulias",
+"I.M. Shoemaker"
 ],
 "abstract": "The LUX-ZEPLIN (LZ) experiment has recently reported data extending to nuclear-recoil energies of about 270 keV, including a single event at 248 keV in a nearly background-free region, for an exposure of 2.84 tonne-years. We examine this dataset through neutrino up-scattering to a heavy sterile fermion induced by atmospheric neutrinos, mediated by vector, axial-vector, scalar and dipole interactions. Our main result is a set of constraints: using the part of the LZ data where no excess is observed, we obtain new bounds on all four scenarios that probe regions of parameter space not tested before, and show that dark matter detectors can provide competitive limits on neutrino up-scattering for sterile fermion masses above $\\sim 50$ MeV. We also test whether the 248~keV event can be explained in this way while remaining consistent with the absence of events at lower recoil energies. For the scalar, vector and axial mediators this requires couplings at the edge of perturbativity, while the dipole does not provide a good fit, so we conclude that up-scattering is not a compelling explanation of the event.",
 "citR": [],
@@ -63,11 +63,11 @@
 "nref": 145,
 "title": "Gauge-field energy density in inflationary kinetic-coupling models: QFT regularization versus horizon cutoffs",
 "authors": [
-"A. O. Naidenko",
-"O. O. Sobol",
-"S. I. Vilchinskii"
+"A.O. Naidenko",
+"O.O. Sobol",
+"S.I. Vilchinskii"
 ],
-"abstract": "Coupling gauge fields to the inflaton can amplify their quantum fluctuations during inflation, with potential applications to a range of cosmological phenomena. A central challenge is to define finite and physically meaningful observables, such as the gauge-field energy density. In this work, we study an Abelian gauge field kinetically coupled to the inflaton through $f^2(φ)F_{μν}F^{μν}$ in a de Sitter background with $f\\propto a^{γ_1}$, and compare conventional quantum-field-theoretic regularization with horizon-cutoff prescriptions. Using a hard physical-momentum cutoff and dimensional regularization, we derive the ultraviolet divergences in closed form and fix the remaining one-parameter finite-part ambiguity by requiring the coupling-induced total energy density to be nonnegative. We then examine five horizon-cutoff prescriptions based on characteristic scales of the mode equations. Their predictions depend sensitively on the choice of horizon scale and, for weak gauge-field production, can deviate substantially from the regularized result; for the adopted finite-part prescription, the minimal horizon agrees best with the regularized total energy density. As $|γ_1|\\to 2$, where infrared modes dominate, the relative deviation of all prescriptions from the regularized result vanishes, independently of the finite-part prescription. Outside this regime, the separate electric and magnetic contributions, which can become negative after regularization, are not reliably reproduced by any of the horizon-cutoff prescriptions.",
+"abstract": "Coupling gauge fields to the inflaton can amplify their quantum fluctuations during inflation, with potential applications to a range of cosmological phenomena. A central challenge is to define finite and physically meaningful observables, such as the gauge-field energy density. In this work, we study an Abelian gauge field kinetically coupled to the inflaton through $f^2(ϕ)F_{μν}F^{μν}$ in a de Sitter background with $f\\propto a^{γ_1}$, and compare conventional quantum-field-theoretic regularization with horizon-cutoff prescriptions. Using a hard physical-momentum cutoff and dimensional regularization, we derive the ultraviolet divergences in closed form and fix the remaining one-parameter finite-part ambiguity by requiring the coupling-induced total energy density to be nonnegative. We then examine five horizon-cutoff prescriptions based on characteristic scales of the mode equations. Their predictions depend sensitively on the choice of horizon scale and, for weak gauge-field production, can deviate substantially from the regularized result; for the adopted finite-part prescription, the minimal horizon agrees best with the regularized total energy density. As $|γ_1|\\to 2$, where infrared modes dominate, the relative deviation of all prescriptions from the regularized result vanishes, independently of the finite-part prescription. Outside this regime, the separate electric and magnetic contributions, which can become negative after regularization, are not reliably reproduced by any of the horizon-cutoff prescriptions.",
 "citR": [],
 "citE": [
 "2974439"
@@ -171,14 +171,14 @@
 "recid": "3089324",
 "src": "INSPIRE",
 "nref": 130,
-"title": "Primordial Black Holes from Inflation with a Spectator Field",
+"title": "Primordial black holes from inflation with a spectator field",
 "authors": [
 "Dario L. Lorenzoni",
 "Sarah R. Geller",
 "David I. Kaiser",
 "Evan McDonough"
 ],
-"abstract": "How is the production of primordial black holes (PBHs) in single-field models of inflation impacted by the presence of additional scalar fields? We consider the effect of a spectator field - a free scalar field with sub-Hubble mass and no direct coupling to the inflaton and which makes a subdominant contribution to the total energy density - in the context of single-field models of inflation featuring a transient phase of ultra-slow-roll evolution. Despite the modest title, a spectator field can have a dramatic impact: the slow-roll evolution of the spectator prevents the combined inflaton-and-spectator system from entering into ultra-slow-roll, which naively might be expected to preclude the production of PBHs. However, we demonstrate that the growth of perturbations is maintained or enhanced by the spectator, through the rich interplay of curvature and isocurvature perturbations. We show in a model-independent way that the single-field phase of ultra-slow-roll is replaced by two turns in field space encompassing a phase of tachyonic instability for the isocurvature perturbations and a transfer of power from isocurvature to curvature modes. Furthermore, we highlight a degeneracy between the fine-tuning of the feature in the inflaton potential and the parameters of the spectator, leading to an overall resilience of model predictions to parameter variations. This makes it easier for the underlying PBH model to accommodate both high-precision cosmic microwave background constraints and production of PBHs in the asteroid-mass range.",
+"abstract": "How is the production of primordial black holes (PBHs) in single-field models of inflation impacted by the presence of additional scalar fields? We consider the effect of a spectator field—a free scalar field with sub-Hubble mass and no direct coupling to the inflaton and which makes a subdominant contribution to the total energy density—in the context of single-field models of inflation featuring a transient phase of ultraslow-roll evolution. Despite the modest title, a spectator field can have a dramatic impact: the slow-roll evolution of the spectator prevents the combined inflaton-and-spectator system from entering into ultraslow-roll, which naively might be expected to preclude the production of PBHs. However, we demonstrate that the growth of perturbations is maintained or enhanced by the spectator, through the rich interplay of curvature and isocurvature perturbations. We show in a model-independent way that the single-field phase of ultraslow-roll is replaced by two turns in field space encompassing a phase of tachyonic instability for the isocurvature perturbations and a transfer of power from isocurvature to curvature modes. Furthermore, we highlight a degeneracy between the fine-tuning of the feature in the inflaton potential and the parameters of the spectator, leading to an overall resilience of model predictions to parameter variations. This makes it easier for the underlying PBH model to accommodate both high-precision cosmic microwave background constraints and production of PBHs in the asteroid-mass range.",
 "citR": [],
 "citE": [
 "1803656"
@@ -227,7 +227,7 @@
 "recid": "2913858",
 "src": "INSPIRE",
 "nref": 117,
-"title": "Resilience of Primordial Black Hole Formation from Inflation with a Light Spectator Field",
+"title": "Light Scalar Fields Foster Production of Primordial Black Holes",
 "authors": [
 "Dario L. Lorenzoni",
 "Sarah R. Geller",
@@ -236,7 +236,7 @@
 "Evan McDonough",
 "Kyle A. Wittmeier"
 ],
-"abstract": "Scalar fields are ubiquitous in theories of high-energy physics. In the context of cosmic inflation, this suggests the existence of spectator fields, which provide a subdominant source of energy density. We show that spectator fields boost the inflationary production of primordial black holes, with single-field ultra-slow-roll evolution supplanted by a phase of evolution along the spectator direction, and primordial perturbations amplified by the resulting multifield dynamics. This generic mechanism is largely free from the severe fine-tuning that afflicts single-field inflationary PBH models.",
+"abstract": "Scalar fields are ubiquitous in theories of high-energy physics. In the context of cosmic inflation, this suggests the existence of spectator fields, which provide a subdominant source of energy density. We show that spectator fields boost the inflationary production of primordial black holes, with single-field ultra-slow roll evolution supplanted by a phase of evolution along the spectator direction, and primordial perturbations amplified by the resulting multifield dynamics. This generic mechanism is largely free from the severe fine-tuning that afflicts single-field inflationary PBH models.",
 "citR": [],
 "citE": [
 "1803656"
@@ -514,7 +514,7 @@
 "Xianing Feng",
 "Qingquan Jiang",
 "Jin Li",
-"L. F. Wei"
+"L.F. Wei"
 ],
 "abstract": "Microwave cavities in strong magnetic fields are among the most sensitive detectors for axion dark matter detection. Its sensitivity, however, is fundamentally limited by the second order nature of axion photon energy conversion, which yields an extremely weak signal. Here we propose a feasible approach to break this limitation, by pre-exciting the target cavity mode to generate a first order power response signal in situ. The resulting signal amplitude scales linearly with the axion-photon coupling parameter, which is in sharp contrast to the quadratic scaling of conventional schemes, and is detectable via standard quadrature balanced homodyne detection system, even though its phase remains stochastic. Numerical simulations demonstrate that this pre-excited seed field can effectively suppress thermal noise, and thus the detection sensitivity of the system can approach the lower quantum noise limit. Consequently, the sensitivities predicted by the KSVZ and DFSZ models could be surpassed. This proposal might offer a pathway to a major leap in axion dark matter searches, as it is within reach of current technology.",
 "citR": [],
@@ -566,7 +566,7 @@
 "title": "Soft scalar-field corrections to the topological susceptibility",
 "authors": [
 "Dietrich Bodeker",
-"Rasmus S. K. Nielsen"
+"Rasmus S.K. Nielsen"
 ],
 "abstract": "We compute the contribution from soft scalar-field fluctuations to the topological susceptibility in SU(2) gauge theory at high temperature. We construct a 3-dimensional effective theory for the scalar field that accounts for the presence of an instanton. In the limit that the scalar selfcoupling $ λ$ is much larger than the square of the gauge coupling $g$ we obtain a correction of order $\\sqrtλ$ relative to the 1-loop result for the topological susceptibility.",
 "citR": [],
@@ -720,13 +720,13 @@
 "recid": "2789241",
 "src": "INSPIRE",
 "nref": 87,
-"title": "Natural Inflation with Exponentially Small Tensor-To-Scalar Ratio",
+"title": "Natural inflation with exponentially small tensor-to-scalar ratio",
 "authors": [
 "Dario L. Lorenzoni",
 "David I. Kaiser",
 "Evan McDonough"
 ],
-"abstract": "We demonstrate that \"natural inflation\", also known as \"axion inflation\", can be compatible with Planck 2018 measurements of the cosmic microwave background, while predicting an exponentially small tensor-to-scalar ratio, e.g., $r\\sim 10^{-15}$. The strong suppression of $r$ arises from dynamics of the radial component of the complex scalar field, whose phase is the axion. Such tiny values of $r$ remain well below the threshold for detection by CMB-S4 or Simons Observatory B-mode searches. The model is testable with the running $α_s$ of the spectral index, which is within reach of next-generation CMB and large-scale structure experiments, motivating the running as a primary science goal for future experiments.",
+"abstract": "We demonstrate that “natural inflation,” also known as “axion inflation,” can be compatible with Planck 2018 measurements of the cosmic microwave background while predicting an exponentially small tensor-to-scalar ratio, e.g., <math display=\"inline\"><mi>r</mi><mo>∼</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>15</mn></mrow></msup></math>. The strong suppression of <math display=\"inline\"><mi>r</mi></math> arises from dynamics of the radial component of the complex scalar field, whose phase is the axion. Such tiny values of <math display=\"inline\"><mi>r</mi></math> remain well below the threshold for detection by CMB-S4 or Simons Observatory B-mode searches. The model is testable with the running <math display=\"inline\"><msub><mi>α</mi><mi>s</mi></msub></math> of the spectral index, which is within reach of next-generation cosmic microwave background and large-scale structure experiments, motivating the running as a primary science goal for future experiments.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -945,7 +945,7 @@
 "Seth Koren",
 "Fabrizio Vassallo"
 ],
-"abstract": "Antideuterons and antihelium nuclei in the cosmic-ray spectrum have long been considered a smoking gun signature of dark matter annihilation, making the tentative observation of several such events by AMS highly intriguing. Conventional dark matter models, however, can produce only up to O(1) antideuteron events at AMS and are not capable of generating observable fluxes of antihelium. In this Letter, we propose a class of models in which dark matter annihilates into particles carrying baryon and lepton number, whose subsequent decays produce enhanced fluxes of antinucleons and antinuclei. Such scenarios are motivated by Grand Unified Theories and can lead to an order-of-magnitude or larger enhancement in the resulting antideuteron and antihelium-3 fluxes, providing a means by which to potentially explain the events reported by the AMS Collaboration.",
+"abstract": "Antideuterons and antihelium nuclei in the cosmic-ray spectrum have long been considered a smoking gun signature of dark matter annihilation, making the tentative observation of several such events by AMS highly intriguing. Conventional dark matter models, however, can produce only up to <math display=\"inline\"><mrow><mi mathvariant=\"script\">O</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow></math> antideuteron events at AMS and are not capable of generating observable fluxes of antihelium. In this Letter, we propose a class of models in which dark matter annihilates into particles carrying baryon and lepton number, whose subsequent decays produce enhanced fluxes of antinucleons and antinuclei. Such scenarios are motivated by grand unified theories and can lead to an order-of-magnitude or larger enhancement in the resulting antideuteron and antihelium-3 fluxes, providing a means by which to potentially explain the events reported by the AMS Collaboration.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -1202,7 +1202,7 @@
 "nref": 49,
 "title": "The renormalization of the shell-model neutrinoless double-beta decay operator starting from effective field theory at next-to-next-to-leading order",
 "authors": [
-"S. L. Lyu",
+"S.L. Lyu",
 "U. Carusone",
 "G. De Gregorio",
 "N. Itaco",
@@ -1311,10 +1311,7 @@
 "nref": 75,
 "title": "Systematic Study of Neutrino-Nucleus Interactions for the DUNE Experiment",
 "authors": [
-"L. F. B. M. Rodrigues",
-"F. G. Gardim",
-"G. A. Valdiviesso",
-" ."
+"L.F.B.M. Rodrigues"
 ],
 "abstract": "The recent generation of high-precision neutrino oscillation experiments, such as the Deep Underground Neutrino Experiment (DUNE), relies on the accurate reconstruction of incident neutrino energy to determine fundamental parameters like Charge-Parity (CP) violation and the neutrino mass hierarchy. The use of Liquid Argon, introduces significant theoretical complexities. This dissertation provides a investigation into neutrino-nucleus scattering phenomenologies, connecting fundamental electroweak theory with computational simulations using the GENIE Monte Carlo event generator. The study evaluates the limitations of traditional frameworks, such as the Relativistic Fermi Gas (RFG) model, specifically addressing the Axial Mass parameter and its impact on the Charged Current Quasi-Elastic (CCQE) channel. By comparing baseline RFG predictions against experimental data from MicroBooNE, this research quantifies the necessity of advanced many-body nuclear frameworks. The implementation of the Local Fermi Gas (LFG) model, Random Phase Approximation (RPA) screening, and the SuperScaling Approximation (SuSAv2) are systematically analyzed to resolve kinematic biases. Additionally, the impact of modernized phenomenological constraints, including the updated $M_A^{RES} = 0.96$ GeV for resonant pion production and the 2021 Bodek-Yang parameter updates for Deep Inelastic Scattering (DIS), is evaluated. Furthermore, this research integrates university extension initiatives by developing and presenting macroscopic 3D-printed educational models, consisting of a Linear Accelerator (LINAC) analog and a scattering experiment, and finally presenting it into the festival \"Mais Ciência Por Favor\".",
 "citR": [],
@@ -1522,10 +1519,9 @@
 "nref": 7,
 "title": "Neutrino-Nucleus Scattering Simulation Using GENIE Event Generator",
 "authors": [
-"L. F. B. M. Rodrigues",
-"F. G. Gardim",
-"G. A. Valdiviesso",
-" ."
+"L.F.B.M. Rodrigues",
+"F.G. Gardim",
+"G.A. Valdiviesso"
 ],
 "abstract": "The Deep Underground Neutrino Experiment (DUNE) relies on the precise reconstruction of incident neutrino energy to extract oscillation parameters. The use of Liquid Argon introduces significant theoretical complexities due to nuclear effects. This work evaluates neutrino-nucleus scattering models using the GENIE Monte Carlo event generator. We demonstrate the limitations of the Relativistic Fermi Gas (RFG) model in the Charged Current Quasi-Elastic (CCQE) channel and its reliance on an inflated Axial Mass to match experimental data from MicroBooNE. We show that transitioning to advanced many-body frameworks, specifically the Local Fermi Gas (LFG) supplemented with Random Phase Approximation (RPA), is needed. Additionally, we evaluate the impact of the 2021 Bodek-Yang parameter updates on Deep Inelastic Scattering (DIS), concluding that modernized constraints are a prerequisite for mitigating systematic biases in DUNE.",
 "citR": [],
@@ -1684,7 +1680,7 @@
 "Qing-Hong Cao",
 "Xiaohui Liu",
 "Zhite Yu",
-"C. -P. Yuan",
+"C.-P. Yuan",
 "Feng Yuan",
 "Shu-Tao Zhang",
 "Hua Xing Zhu"
