@@ -1,8 +1,36 @@
 [
  {
+  "date": "2026-10-30",
+  "page": "hep-ph-2026-10-30.html",
+  "built": "2026-10-30",
+  "code": "cefd75cca98c",
+  "nlist": 154,
+  "nrel": 28,
+  "top": [
+   {
+    "arxiv": "2608.05150",
+    "title": "The QCD Axion and Neutrino Masses",
+    "score": 58.4,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2610.39057",
+    "title": "Linking a 152 GeV diphoton excess to dark matter and gravitational waves in the singlet-extended 2HDM",
+    "score": 54.7,
+    "section": "new"
+   },
+   {
+    "arxiv": "2610.38397",
+    "title": "Gravitational Dark Matter Production from Spectator Field in $R^2$-Higgs Inflation",
+    "score": 45.8,
+    "section": "cross"
+   }
+  ]
+ },
+ {
   "date": "2026-10-28",
   "page": "hep-ph-2026-10-28.html",
-  "built": "2026-10-29",
+  "built": "2026-10-30",
   "code": "cefd75cca98c",
   "nlist": 95,
   "nrel": 23,

@@ -144,8 +144,8 @@
 "citR": [],
 "citE": [
 "3089716",
-"2795517",
-"1783234"
+"1783234",
+"2795517"
 ],
 "topR": [
 [
@@ -3537,7 +3537,7 @@
 "Subir Sarkar",
 "Kalyan Dey"
 ],
-"abstract": "We examine conditional charged-multiplicity fluctuations at fixed multiparton interaction (MPI) count in retained PYTHIA proton-proton samples at centre-of-mass energies of 2.76, 7, and 13 TeV. Charged particles satisfy |eta| < 0.8 and 0.15 < pT < 20 GeV/c. In the historical colour-reconnection (CR)-labelled baseline samples, the CR-ON conditional mean is smaller by a larger fraction than the standard deviation: the absolute width is smaller, while the coefficient of variation is larger in every retained matched MPI bin. Effective lifetime/decay settings and their per-run correspondence are unverified for this baseline, so these comparisons do not establish that CR alone causes the observed differences or their energy dependence. A separately documented 13 TeV comparison using the Compact Muon Solenoid (CMS) CP5 tune, with equal non-CR physics settings and particle data across the ON/OFF pair, exhibits the same absolute-versus-relative width ordering. Retained independent Monash and A14 samples also show this pattern, subject to historical production-record limitations. A comparison with mean-transverse-momentum data from A Large Ion Collider Experiment (ALICE) and simulated activity estimators provides final-state context within the stated particle-definition and provenance limits.",
+"abstract": "Color reconnection (CR) changes both the mean and the dispersion of charged-particle multiplicity in pp collisions. We study the conditional distribution P(Nch | nMPI = m) at fixed PYTHIA interaction count for sqrt(s) = 2.76, 7, and 13 TeV, using charged particles in |eta| < 0.8 and 0.15 < pT < 20 GeV/c. CR is switched on or off while the remaining tune parameters are held fixed. Enabling CR reduces the conditional mean by a larger fraction than the standard deviation. The absolute width therefore decreases, while the coefficient of variation increases in every retained matched MPI bin. This ordering also holds in independent 13 TeV samples with Monash, A14, and CMS CP5. Comparisons with ALICE mean-transverse-momentum data and simulated activity estimators relate these conditional fluctuations to experimentally accessible final-state observables.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -4573,14 +4573,14 @@
 "recid": "3219497",
 "src": "INSPIRE",
 "nref": 59,
-"title": "Reggeized $K*(892)$ exchange in $π^- p \\to K^0 Λ$ and implications for fixed-target measurements",
+"title": "Reggeized $K^*(892)$ exchange in $π^- p \\to K^0 Λ$ and implications for fixed-target measurements",
 "authors": [
 "Hao-Nan Wang",
 "Cheng Chen",
-"Yre Ma",
+"Yue Ma",
 "Ju-Jun Xie"
 ],
-"abstract": "The two-body \\(π^-p\\to K^0Λ\\) reaction provides a clean channel for studying strangeness production and producing tagged hyperon \\(Λ\\) samples. We describe its total cross section over the $π^-$ beam momentum \\(2.6 \\leq p_{π,\\lab}\\leq6.0~\\gev/c\\) using a single Reggeized \\(t\\)-channel \\(K^*(892)\\) exchange without polarization. We also examine the implications for future fixed-target measurements. An idealized event sample is used to determine the laboratory momentum and polar-angle distributions of the charged particles from \\(K_S^0\\toπ^+π^-\\) and \\(Λ\\to pπ^-\\). The \\(K_S^0\\) decayed two pions are strongly forward, whereas the proton and pion from the \\(Λ\\) decay extend to larger angles and lower momenta. These distributions provide a kinematic baseline for future acceptance and tracking studies.",
+"abstract": "The two-body $π^- p \\to K^0 Λ$ reaction provides a clean channel for studying strangeness production and producing tagged hyperon $Λ$ samples. We describe its total cross section over the $π^-$ beam momentum $2.6 \\leq p_{π, {\\rm lab}} \\leq 6.0~{\\rm GeV}/c$ using a single Reggeized $t$-channel $K^*(892)$ exchange without polarization. We also examine the implications for future fixed-target measurements. An idealized event sample is used to determine the laboratory momentum and polar-angle distributions of the charged particles from $K_S^0 \\to π^+ π^-$ and $Λ\\to p π^-$. The $K_S^0$ decayed two pions are strongly forward, whereas the proton and pion from the $Λ$ decay extend to larger angles and lower momenta. These distributions provide a kinematic baseline for future acceptance and tracking studies.",
 "citR": [],
 "citE": [],
 "topR": [
