@@ -197,7 +197,8 @@ def main():
                                 "--date", ds, "--threshold", str(args.threshold), "--category", args.category,
                                 "--next", str(args.next), "--next-min-score", str(args.next_min_score), "--topic-half-life", str(args.topic_half_life),
                                 "--extra-topics", args.extra_topics,
-                                "--work", os.path.join(args.work, ds), "--recent-html", recent, "--out", out],
+                                "--work", os.path.join(args.work, ds), "--recent-html", recent, "--out", out,
+                                "--listing-cache", os.path.join(args.site, "listings", f"{ds}.json")],
                                stderr=subprocess.PIPE, text=True)
             sys.stderr.write(p.stderr)
             if p.returncode == 0 or "no papers found" in p.stderr: break

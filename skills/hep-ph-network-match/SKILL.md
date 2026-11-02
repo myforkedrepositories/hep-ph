@@ -23,6 +23,10 @@ articles", to filter or rank the arXiv listing against their papers, or names th
   cross-lists from `https://arxiv.org/list/hep-ph/recent?skip=0&show=2000` (no replacements; a
   paper counts as cross-list when its primary category is not hep-ph). `--recent-html FILE` passes
   a saved copy of that page, so several days cost one request.
+  `--listing-cache FILE` keeps the day's listing as JSON: once saved complete (from the catchup
+  page) it is reused and arXiv is not asked again, so a later rebuild keeps every paper, replacements
+  included. When arXiv refuses and there is no complete copy, the largest of the recent-listing
+  fallback, an earlier saved listing and the day's previous page (`<out>.json`) is used.
 - **Threshold**: `--threshold`, default 10 (scores go from 0 to 100).
 - **Category**: `--category`, default `hep-ph`.
 - **Sections**: `--sections new,cross,replacement` (default all three; use `new,cross` if the
@@ -202,7 +206,7 @@ def listing(cat, date, work, recent_html=None):
         out = from_recent(cat, date, recent_html)
         if not out: sys.exit(f"could not fetch {url}, and {date} is not in the recent listing")
         print(f"[warn] {url} refused; using the recent listing (no replacements)", file=sys.stderr)
-        return out, time.strftime("%A, %d %B %Y", time.strptime(date, "%Y-%m-%d")), url
+        return out, time.strftime("%A, %d %B %Y", time.strptime(date, "%Y-%m-%d")), url, False
     if not h: sys.exit(f"could not fetch {url}")
     open(os.path.join(work, "listing.html"), "w").write(h)
     m = re.search(r"(?:Showing new listings for|New submissions for)\s*([^<]+)", h)
@@ -217,7 +221,33 @@ def listing(cat, date, work, recent_html=None):
         for a in re.findall(r'href\s*=\s*"/abs/(\d{4}\.\d{4,5})', parts[i + 1]):
             if a not in seen: seen.add(a); out.append({"arxiv": a, "section": sec})
     if not out: sys.exit(f"no papers found in {url} (no announcement that day?)")
-    return out, label, url
+    return out, label, url, True
+
+def day_listing(a):
+    """The day's papers: a saved complete listing (--listing-cache) when there is one, so later rebuilds do not
+    depend on arXiv; otherwise arXiv, and when arXiv refuses the day's page, the largest of the recent-listing
+    fallback, an earlier saved listing and the day's previous page. Returns (papers, label, url, complete, source)."""
+    cache = load_json(a.listing_cache) if a.listing_cache and os.path.exists(a.listing_cache) else None
+    if cache and cache.get("complete"):
+        return [dict(o) for o in cache["papers"]], cache["label"], cache["url"], True, "saved listing"
+    try:
+        L, label, url, complete = listing(a.category, a.date, a.work, a.recent_html)
+    except SystemExit as e:
+        if not a.date: raise
+        print(f"[warn] {e}", file=sys.stderr)
+        L, label, url, complete = [], time.strftime("%A, %d %B %Y", time.strptime(a.date, "%Y-%m-%d")), \
+            f"https://arxiv.org/catchup/{a.category}/{a.date}", False
+    if complete: return L, label, url, True, "arXiv"
+    prev = os.path.splitext(a.out)[0] + ".json"
+    others = [("saved listing", (cache or {}).get("papers", []))]
+    if os.path.exists(prev):
+        others.append(("previous page", [{"arxiv": r["arxiv"], "section": r["section"]} for r in load_json(prev)]))
+    name, best = max(others, key=lambda x: len(x[1]))
+    if len(best) > len(L):
+        print(f"[warn] using the {name} ({len(best)} papers) instead of the recent listing ({len(L)})", file=sys.stderr)
+        return [dict(o) for o in best], label, url, False, name
+    if not L: sys.exit(f"no papers for {a.date}: arXiv refused the day's page and nothing was saved")
+    return L, label, url, False, "recent listing"
 
 def arxiv_meta(ids):
     ns = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
@@ -556,6 +586,8 @@ def main():
     ap.add_argument("--sections", default="new,cross,replacement")
     ap.add_argument("--author-recid", default="991924"); ap.add_argument("--author-name", help="default: read from the network file or the author's INSPIRE records")
     ap.add_argument("--work", default="hepph_work"); ap.add_argument("--out", required=True)
+    ap.add_argument("--listing-cache", help="JSON file keeping the day's listing: reused once complete, so rebuilds "
+                    "do not depend on arXiv (which often refuses older days' pages)")
     ap.add_argument("--recent-html", help="saved arxiv.org/list/<cat>/recent?show=2000 page, used if the catchup page is refused")
     a = ap.parse_args()
     a.author_name_given = any(x.startswith("--author-name") for x in sys.argv)
@@ -563,11 +595,16 @@ def main():
     os.makedirs(os.path.join(a.work, "src"), exist_ok=True)
     if a.date in (None, "", "yesterday"): a.date = previous_day(a.category, a.tz)
     elif a.date == "latest": a.date = None
-    L, label, url = listing(a.category, a.date, a.work, a.recent_html)
     a.out = a.out.replace("{date}", a.date or time.strftime("%Y-%m-%d"))
+    L, label, url, complete, lsource = day_listing(a)
     A = arxiv_meta([o["arxiv"] for o in L])
     for o in L:   # recent-listing fallback: new submission if the primary category is ours, else cross-list
         if o.pop("guess", False) and A.get(o["arxiv"], {}).get("primary", a.category) != a.category: o["section"] = "cross"
+    if a.listing_cache and a.date and lsource != "saved listing":
+        os.makedirs(os.path.dirname(a.listing_cache) or ".", exist_ok=True)
+        json.dump({"date": a.date, "label": label, "url": url, "complete": complete, "source": lsource,
+                   "saved": time.strftime("%Y-%m-%d"), "papers": [{"arxiv": o["arxiv"], "section": o["section"]} for o in L]},
+                  open(a.listing_cache, "w"), indent=0)
     secs = set(a.sections.split(",")); L = [o for o in L if o["section"] in secs]
     ids = [o["arxiv"] for o in L]
     print(f"{label}: {len(ids)} papers {dict(Counter(o['section'] for o in L))}", file=sys.stderr)
