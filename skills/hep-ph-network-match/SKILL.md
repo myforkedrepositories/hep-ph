@@ -23,6 +23,13 @@ articles", to filter or rank the arXiv listing against their papers, or names th
   cross-lists from `https://arxiv.org/list/hep-ph/recent?skip=0&show=2000` (no replacements; a
   paper counts as cross-list when its primary category is not hep-ph). `--recent-html FILE` passes
   a saved copy of that page, so several days cost one request.
+  `--listing-cache FILE` keeps a JSON snapshot of the day: the listing (arXiv number, section) and
+  each paper's INSPIRE id, INSPIRE reference ids, title, authors and abstract. A complete listing is
+  reused, so arXiv is not asked again; with `--final` (the day is settled, e.g. 2 days old) and a
+  complete listing the snapshot is marked final, and later runs rebuild from it as is, with no arXiv
+  or INSPIRE requests, only redoing the scoring. When arXiv refuses and there is no complete copy,
+  the largest of the recent-listing fallback, an earlier saved listing and the day's previous page
+  (`<out>.json`) is used.
 - **Threshold**: `--threshold`, default 10 (scores go from 0 to 100).
 - **Category**: `--category`, default `hep-ph`.
 - **Sections**: `--sections new,cross,replacement` (default all three; use `new,cross` if the
@@ -202,7 +209,7 @@ def listing(cat, date, work, recent_html=None):
         out = from_recent(cat, date, recent_html)
         if not out: sys.exit(f"could not fetch {url}, and {date} is not in the recent listing")
         print(f"[warn] {url} refused; using the recent listing (no replacements)", file=sys.stderr)
-        return out, time.strftime("%A, %d %B %Y", time.strptime(date, "%Y-%m-%d")), url
+        return out, time.strftime("%A, %d %B %Y", time.strptime(date, "%Y-%m-%d")), url, False
     if not h: sys.exit(f"could not fetch {url}")
     open(os.path.join(work, "listing.html"), "w").write(h)
     m = re.search(r"(?:Showing new listings for|New submissions for)\s*([^<]+)", h)
@@ -217,7 +224,33 @@ def listing(cat, date, work, recent_html=None):
         for a in re.findall(r'href\s*=\s*"/abs/(\d{4}\.\d{4,5})', parts[i + 1]):
             if a not in seen: seen.add(a); out.append({"arxiv": a, "section": sec})
     if not out: sys.exit(f"no papers found in {url} (no announcement that day?)")
-    return out, label, url
+    return out, label, url, True
+
+def day_listing(a):
+    """The day's papers: a saved complete listing (--listing-cache) when there is one, so later rebuilds do not
+    depend on arXiv; otherwise arXiv, and when arXiv refuses the day's page, the largest of the recent-listing
+    fallback, an earlier saved listing and the day's previous page. Returns (papers, label, url, complete, source)."""
+    cache = load_json(a.listing_cache) if a.listing_cache and os.path.exists(a.listing_cache) else None
+    if cache and cache.get("complete"):
+        return [dict(o) for o in cache["papers"]], cache["label"], cache["url"], True, "saved listing"
+    try:
+        L, label, url, complete = listing(a.category, a.date, a.work, a.recent_html)
+    except SystemExit as e:
+        if not a.date: raise
+        print(f"[warn] {e}", file=sys.stderr)
+        L, label, url, complete = [], time.strftime("%A, %d %B %Y", time.strptime(a.date, "%Y-%m-%d")), \
+            f"https://arxiv.org/catchup/{a.category}/{a.date}", False
+    if complete: return L, label, url, True, "arXiv"
+    prev = os.path.splitext(a.out)[0] + ".json"
+    others = [("saved listing", (cache or {}).get("papers", []))]
+    if os.path.exists(prev):
+        others.append(("previous page", [{"arxiv": r["arxiv"], "section": r["section"]} for r in load_json(prev)]))
+    name, best = max(others, key=lambda x: len(x[1]))
+    if len(best) > len(L):
+        print(f"[warn] using the {name} ({len(best)} papers) instead of the recent listing ({len(L)})", file=sys.stderr)
+        return [dict(o) for o in best], label, url, False, name
+    if not L: sys.exit(f"no papers for {a.date}: arXiv refused the day's page and nothing was saved")
+    return L, label, url, False, "recent listing"
 
 def arxiv_meta(ids):
     ns = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
@@ -556,6 +589,11 @@ def main():
     ap.add_argument("--sections", default="new,cross,replacement")
     ap.add_argument("--author-recid", default="991924"); ap.add_argument("--author-name", help="default: read from the network file or the author's INSPIRE records")
     ap.add_argument("--work", default="hepph_work"); ap.add_argument("--out", required=True)
+    ap.add_argument("--listing-cache", help="JSON snapshot of the day: its papers (arXiv number, section) and each "
+                    "paper's INSPIRE id, reference ids, title, authors and abstract; a complete listing is reused, and a "
+                    "final snapshot (see --final) is reused as is, with no arXiv or INSPIRE requests")
+    ap.add_argument("--final", action="store_true",
+                    help="the day is settled: mark the saved snapshot final if its listing was complete")
     ap.add_argument("--recent-html", help="saved arxiv.org/list/<cat>/recent?show=2000 page, used if the catchup page is refused")
     a = ap.parse_args()
     a.author_name_given = any(x.startswith("--author-name") for x in sys.argv)
@@ -563,31 +601,54 @@ def main():
     os.makedirs(os.path.join(a.work, "src"), exist_ok=True)
     if a.date in (None, "", "yesterday"): a.date = previous_day(a.category, a.tz)
     elif a.date == "latest": a.date = None
-    L, label, url = listing(a.category, a.date, a.work, a.recent_html)
     a.out = a.out.replace("{date}", a.date or time.strftime("%Y-%m-%d"))
-    A = arxiv_meta([o["arxiv"] for o in L])
-    for o in L:   # recent-listing fallback: new submission if the primary category is ours, else cross-list
-        if o.pop("guess", False) and A.get(o["arxiv"], {}).get("primary", a.category) != a.category: o["section"] = "cross"
-    secs = set(a.sections.split(",")); L = [o for o in L if o["section"] in secs]
-    ids = [o["arxiv"] for o in L]
-    print(f"{label}: {len(ids)} papers {dict(Counter(o['section'] for o in L))}", file=sys.stderr)
-    F = inspire_records(ids)
-    print(f"INSPIRE has {len(F)} of {len(ids)}; reading arXiv sources for the rest", file=sys.stderr)
-    raw = {x: refs_from_source(x, os.path.join(a.work, "src")) for x in ids if x not in F}
-    R = resolve(raw)
-    rows = []
-    for o in L:
-        x = o["arxiv"]; m = A.get(x, {})
-        if x in F:
-            refs = {recid(r) for r in F[x].get("references", []) if "record" in r}
-            nref, rid, src = len(F[x].get("references", [])), str(F[x]["control_number"]), "INSPIRE"
-            if not m:
-                m = {"title": F[x]["titles"][0]["title"], "abstract": (F[x].get("abstracts") or [{"value": ""}])[0]["value"],
-                     "authors": [" ".join(reversed(au["full_name"].split(", ", 1))) for au in F[x].get("authors", [])]}
-        else:
-            nref, refs = R.get(x, (0, set())); rid, src = "", "arXiv source"
-        rows.append({"arxiv": x, "section": o["section"], "recid": rid, "src": src, "nref": nref, "refs": refs,
-                     "title": m.get("title", x), "authors": m.get("authors", []), "abstract": m.get("abstract", "")})
+    cache = load_json(a.listing_cache) if a.listing_cache and os.path.exists(a.listing_cache) else None
+    secs = set(a.sections.split(","))
+    if cache and cache.get("final") and cache.get("refs_saved"):
+        # definitive snapshot: the day's papers with their INSPIRE ids and reference ids; nothing is fetched again
+        label, url = cache["label"], cache["url"]
+        rows = [{"arxiv": p["arxiv"], "section": p["section"], "recid": p.get("recid", ""), "src": p["src"],
+                 "nref": p["nref"], "refs": set(p["refs"]), "title": p["title"], "authors": p["authors"],
+                 "abstract": p["abstract"]} for p in cache["papers"] if p["section"] in secs]
+        on_inspire = sum(r["src"] == "INSPIRE" for r in rows)
+        print(f"{label}: {len(rows)} papers from the final snapshot saved {cache.get('saved')} "
+              f"(no arXiv or INSPIRE requests)", file=sys.stderr)
+    else:
+        L, label, url, complete, lsource = day_listing(a)
+        A = arxiv_meta([o["arxiv"] for o in L])
+        for o in L:   # recent-listing fallback: new submission if the primary category is ours, else cross-list
+            if o.pop("guess", False) and A.get(o["arxiv"], {}).get("primary", a.category) != a.category: o["section"] = "cross"
+        L = [o for o in L if o["section"] in secs]
+        ids = [o["arxiv"] for o in L]
+        print(f"{label}: {len(ids)} papers {dict(Counter(o['section'] for o in L))}", file=sys.stderr)
+        F = inspire_records(ids); on_inspire = len(F)
+        print(f"INSPIRE has {len(F)} of {len(ids)}; reading arXiv sources for the rest", file=sys.stderr)
+        raw = {x: refs_from_source(x, os.path.join(a.work, "src")) for x in ids if x not in F}
+        R = resolve(raw)
+        rows = []
+        for o in L:
+            x = o["arxiv"]; m = A.get(x, {})
+            if x in F:
+                refs = {recid(r) for r in F[x].get("references", []) if "record" in r}
+                nref, rid, src = len(F[x].get("references", [])), str(F[x]["control_number"]), "INSPIRE"
+                if not m:
+                    m = {"title": F[x]["titles"][0]["title"], "abstract": (F[x].get("abstracts") or [{"value": ""}])[0]["value"],
+                         "authors": [" ".join(reversed(au["full_name"].split(", ", 1))) for au in F[x].get("authors", [])]}
+            else:
+                nref, refs = R.get(x, (0, set())); rid, src = "", "arXiv source"
+            rows.append({"arxiv": x, "section": o["section"], "recid": rid, "src": src, "nref": nref, "refs": refs,
+                         "title": m.get("title", x), "authors": m.get("authors", []), "abstract": m.get("abstract", "")})
+        if a.listing_cache and a.date:
+            # snapshot of the listing and each paper's references; final (reused as is by later rebuilds) once the
+            # day is settled (--final) and the listing was complete
+            os.makedirs(os.path.dirname(a.listing_cache) or ".", exist_ok=True)
+            json.dump({"date": a.date, "label": label, "url": url, "complete": complete, "source": lsource,
+                       "final": bool(a.final and complete), "refs_saved": True, "saved": time.strftime("%Y-%m-%d"),
+                       "on_inspire": on_inspire,
+                       "papers": [{"arxiv": r["arxiv"], "section": r["section"], "recid": r["recid"], "src": r["src"],
+                                   "nref": r["nref"], "refs": sorted(r["refs"], key=int), "title": r["title"],
+                                   "authors": r["authors"], "abstract": r["abstract"]} for r in rows]},
+                      open(a.listing_cache, "w"), ensure_ascii=False, separators=(",", ":"))
     if not a.network and not a.own:
         a.own = os.path.join(a.work, "own.json")
         if not os.path.exists(a.own):
@@ -601,11 +662,11 @@ def main():
     if nname and not a.author_name_given: a.author_name, a.author_recid = nname, nrecid
     watch = watch_topics(a.extra_topics)
     score_all(rows, net, co, a.author_name or "", phrases, watch)
-    yr = int("20" + ids[0][:2]) if ids else int(time.strftime("%Y"))
+    yr = int("20" + rows[0]["arxiv"][:2]) if rows else int(time.strftime("%Y"))
     meta = {"date": label, "url": url, "cat": a.category, "year": yr, "built": time.strftime("%Y-%m-%d"), "topics": bool(phrases),
             "halfLife": (phrases or {}).get("half_life"), "watch": sorted(watch), "nextMin": a.next_min_score, "nextCount": a.next,
             "nown": sum(1 for v in net.values() if v["kind"] == "R"), "next": sum(1 for v in net.values() if v["kind"] == "E"),
-            "onInspire": len(F)}
+            "onInspire": on_inspire}
     nr, nn, ne = build(rows, net, a.threshold, meta, a.out, a.next, a.next_min_score)
     json.dump([{**{k: v for k, v in r.items() if k not in ("refs",)},
                 "topR": [(round(c, 3), k) for c, k in r["topR"][:3]], "topE": [(round(c, 3), k) for c, k in r["topE"][:3]]}
