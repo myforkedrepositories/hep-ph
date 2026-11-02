@@ -198,7 +198,8 @@ def main():
                                 "--next", str(args.next), "--next-min-score", str(args.next_min_score), "--topic-half-life", str(args.topic_half_life),
                                 "--extra-topics", args.extra_topics,
                                 "--work", os.path.join(args.work, ds), "--recent-html", recent, "--out", out,
-                                "--listing-cache", os.path.join(args.site, "listings", f"{ds}.json")],
+                                "--listing-cache", os.path.join(args.site, "listings", f"{ds}.json")] +
+                               (["--final"] if (today - d).days >= args.settle else []),
                                stderr=subprocess.PIPE, text=True)
             sys.stderr.write(p.stderr)
             if p.returncode == 0 or "no papers found" in p.stderr: break
@@ -207,6 +208,11 @@ def main():
             continue
         standalone(out, ds)
         man[ds] = {"date": ds, "page": page, "built": today.isoformat(), "code": code, **summary(os.path.splitext(out)[0] + ".json", args.threshold)}
+    # day snapshots (listing + references) are only needed for days that can still be rebuilt
+    ldir = os.path.join(args.site, "listings")
+    if cand and os.path.isdir(ldir):
+        for f in os.listdir(ldir):
+            if f.endswith(".json") and f[:-5] < min(cand).isoformat(): os.remove(os.path.join(ldir, f))
     daynav(args.site, man)
     json.dump(sorted(man.values(), key=lambda x: x["date"], reverse=True), open(mpath, "w"), ensure_ascii=False, indent=1)
     index(args.site, man, net, args)
