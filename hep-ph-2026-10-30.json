@@ -118,8 +118,8 @@
 "coauthors": [],
 "topics": [
 "observed dm relic",
-"dm relic",
 "relic density",
+"dm relic",
 "complex scalar",
 "dark matter"
 ],
@@ -525,8 +525,8 @@
 "citR": [],
 "citE": [
 "2771408",
-"2795517",
 "1783234",
+"2795517",
 "1688995",
 "1518747"
 ],
@@ -881,7 +881,7 @@
 "section": "replacement",
 "recid": "3159206",
 "src": "INSPIRE",
-"nref": 49,
+"nref": 47,
 "title": "A D_5 Model of Quarks with Explicit CP Violation",
 "authors": [
 "Dong-Ping Fu",
@@ -899,25 +899,25 @@
 "2751074"
 ],
 [
-0.006,
+0.005,
 "3184726"
 ],
 [
-0.005,
+0.004,
 "2690106"
 ]
 ],
 "topE": [
 [
-0.066,
+0.065,
 "2932612"
 ],
 [
-0.065,
+0.063,
 "2815355"
 ],
 [
-0.065,
+0.063,
 "3174530"
 ]
 ],
@@ -927,11 +927,11 @@
 "parts": [
 0.48,
 0.06,
-0.19,
+0.18,
 0.0,
 0.0
 ],
-"score": 21.7
+"score": 21.5
 },
 {
 "arxiv": "2610.39930",
@@ -2489,7 +2489,7 @@
 "Sudhir Kumar Gupta",
 "Abbas Ali"
 ],
-"abstract": "We extend the horizon wave-function (HWF) formalism to a spherically symmetric, charged, spinless quantum source in $\\mathcal{D} + 1$ dimensional spacetime geometry and construct the HWFs associated with inner- as well as outer-horizons of the Tangherlini--Reissner--Nordström (TRN) black hole. The corresponding black hole formation probabilities, $P_{\\rm BH}^{\\pm}$, are also calculated and their sensitivities due to various source parameters including charge, mass, and $\\mathcal{D}$ are analysed as well. Our analysis reveals that the ratio of inner- to outer-horizon probabilities, $P_{\\rm BH}^{-}/P_{\\rm BH}^{+}$, changes drastically from being unity as the source departs away from being in the extremal limit defined by $α$ ($\\to 1$ for extremal case). Furthermore, black hole formation probabilities are found to be highly suppressed for higher values of $\\mathcal{D}$, particularly for the source mass, $m \\lesssim Λ_{\\mathcal{D}}$, e.g., for $α= 0.5$, the ratio, $P_{\\rm BH}^{+}(\\mathcal{D} = 5)/P_{\\rm BH}^{+}(\\mathcal{D}=10)$ turn out to be approximately associated with $\\mathcal{D}$ spatial-dimensions.",
+"abstract": "We extend the horizon wave-function (HWF) formalism to a spherically symmetric, charged, spinless quantum source in $\\mathcal{D} + 1$ dimensional spacetime geometry and construct the HWFs associated with inner- as well as outer-horizons of the Tangherlini--Reissner--Nordström (TRN) black hole. The corresponding black hole formation probabilities, $P_{\\rm BH}^{\\pm}$, are also calculated and their sensitivities due to various source parameters including charge, mass, and $\\mathcal{D}$ are analysed as well. Our analysis reveals that the ratio of inner- to outer-horizon probabilities, $P_{\\rm BH}^{-}/P_{\\rm BH}^{+}$, changes drastically from being unity as the source departs away from being in the extremal limit defined by $α$ ($\\to 1$ for extremal case). Furthermore, black hole formation probabilities are found to be highly suppressed for higher values of $\\mathcal{D}$, particularly for the source mass, $m \\lesssim Λ_{\\mathcal{D}}$, e.g., for $α= 0.5$, the ratio, $P_{\\rm BH}^{+}(\\mathcal{D} = 5)/P_{\\rm BH}^{+}(\\mathcal{D}=10)$ turn out to be approximately $2.95\\times10^3$, $117$, and $3.35$ respectively for $m/Λ_{\\mathcal{D}} = 0.5, 1$ and $2$, with $Λ_{\\mathcal{D}}$ being the reduced gravity scale associated with $\\mathcal{D}$ spatial-dimensions.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -2715,7 +2715,7 @@
 "section": "cross",
 "recid": "3220354",
 "src": "INSPIRE",
-"nref": 62,
+"nref": 63,
 "title": "Running cosmological constant in light of recent CMB-BAO data",
 "authors": [
 "A. Racioppi",
@@ -2744,7 +2744,7 @@
 "2669389"
 ],
 [
-0.067,
+0.066,
 "2630195"
 ],
 [
@@ -2824,7 +2824,7 @@
 "section": "new",
 "recid": "3220407",
 "src": "INSPIRE",
-"nref": 81,
+"nref": 82,
 "title": "Nucleon Wave Functions from QCD Vacuum Topology",
 "authors": [
 "Wei-Yang Liu",
@@ -2852,7 +2852,7 @@
 ],
 "topE": [
 [
-0.02,
+0.019,
 "3152706"
 ],
 [
@@ -4365,7 +4365,7 @@
 "section": "replacement",
 "recid": "3176571",
 "src": "INSPIRE",
-"nref": 51,
+"nref": 50,
 "title": "Identifying $Σ(1380)$ and $Σ(1430)$ in the $J/ψ\\to Λπ\\barΣ$ reaction",
 "authors": [
 "Wen-Tao Lyu",
@@ -4388,13 +4388,13 @@
 "2690106"
 ],
 [
-0.004,
+0.003,
 "2860896"
 ]
 ],
 "topE": [
 [
-0.017,
+0.016,
 "3091093"
 ],
 [
@@ -4402,7 +4402,7 @@
 "3156721"
 ],
 [
-0.006,
+0.005,
 "3148101"
 ]
 ],
@@ -4990,7 +4990,7 @@
 "section": "new",
 "recid": "3220218",
 "src": "INSPIRE",
-"nref": 79,
+"nref": 78,
 "title": "Positive-weight moment matching at NNLO and beyond",
 "authors": [
 "Benoît Assi",
@@ -5006,7 +5006,7 @@
 "2794409"
 ],
 [
-0.01,
+0.009,
 "3146383"
 ],
 [
@@ -5103,7 +5103,7 @@
 "section": "replacement",
 "recid": "3141849",
 "src": "INSPIRE",
-"nref": 46,
+"nref": 45,
 "title": "LHC di-dijet excesses as signals of fourth-generation tetraquarks",
 "authors": [
 "Hsiang-nan Li"
@@ -5433,7 +5433,7 @@
 "section": "replacement",
 "recid": "2658150",
 "src": "INSPIRE",
-"nref": 37,
+"nref": 36,
 "title": "Spontaneous Mutations from Terahertz Proton Tunneling",
 "authors": [
 "Noah Bray-Ali"
@@ -6362,9 +6362,9 @@
 "nref": 46,
 "title": "Meson-baryon final-state interactions in the $ψ(3686)\\to pK^-K_S^0\\barΞ^0$ decay",
 "authors": [
-"F. C. Sobrinho",
-"W. -T. Lyu",
-"E. Oset"
+"Fernando César Sobrinho",
+"Wen-Tao Lyu",
+"Eulogio Oset"
 ],
 "abstract": "We study the decay $ψ(3686)\\to p K^- \\bar K^0 \\barΞ^0$, treating the $ψ(3686)$ as a $c\\bar c$ state and therefore as a singlet under SU(3) transformations in the light-quark sector. We consider all possible combinations of a baryon, an antibaryon, and two pseudoscalar mesons that form an SU(3) singlet, retaining the terms that can lead to the $p K^- \\bar K^0 \\barΞ^0$ final state through $S$-wave final-state interactions. Three independent SU(3)-singlet structures are identified and assigned different weights. We also include the contribution of the $Λ(1520)$ in the meson-baryon $D$-wave. A fit to the data provides a good description of all six invariant-mass distributions. In addition to the $Λ(1520)$ contribution, we find a small contribution from the $Λ(1670)$ in the $K^-p$ invariant-mass distribution, generated by final-state interactions, and a contribution from the $Σ(1430)$, which produces a significant distortion of the $\\bar K^0p$ invariant-mass distribution relative to phase space. This study demonstrates the value of investigating charmonium decays into a baryon-antibaryon pair and two pseudoscalar mesons, complementing the more commonly studied decays into a baryon-antibaryon pair and a single pseudoscalar meson.",
 "citR": [],
@@ -6458,6 +6458,65 @@
 0.0,
 0.0,
 0.09,
+0.0,
+0.0
+],
+"score": 1.3
+},
+{
+"arxiv": "2608.18233",
+"section": "replacement",
+"recid": "3192605",
+"src": "INSPIRE",
+"nref": 90,
+"title": "Transferable Fast Calorimeter Shower Generation via Multi-Geometry Pre-training",
+"authors": [
+"Thorsten Buss",
+"Henry Day-Hall",
+"Frank Gaede",
+"Gregor Kasieczka",
+"Katja Krüger",
+"Peter McKeown",
+"Lorenzo Valente"
+],
+"abstract": "Detailed Geant4 simulation of calorimeter showers dominates the computing budget of high-energy physics experiments. Deep generative surrogates reduce this cost, but they have remained tied to the detector they were trained on, so each new geometry needs a large in-domain dataset. We study whether a single point cloud shower generator can be pre-trained on multiple detectors and transferred to unseen calorimeters. The pre-training geometries come from synthetic geometric variation rather than real-detector data. We introduce SimpleBox, a family of $10^4$ box calorimeters spanning the plane of sampling fraction and longitudinal segmentation, and benchmark it against pre-training on realistic detectors. On a calorimeter unseen in pre-training, with $10^3$ target showers for fine-tuning, the two priors reduce the aggregated sliced Wasserstein distance to Geant4 by factors of 5.2 (synthetic) and 8.0 (realistic) relative to training from scratch. At larger target sizes the synthetic prior performs better than the realistic one. Geometric diversity alone is therefore a practical way to pre-train a transferable shower generator.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.005,
+"2690106"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.023,
+"913031"
+],
+[
+0.017,
+"3154646"
+],
+[
+0.009,
+"2808986"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"parts": [
+0.0,
+0.01,
+0.07,
 0.0,
 0.0
 ],
@@ -7010,65 +7069,6 @@
 "score": 1.0
 },
 {
-"arxiv": "2608.18233",
-"section": "replacement",
-"recid": "3192605",
-"src": "INSPIRE",
-"nref": 91,
-"title": "Transferable Fast Calorimeter Shower Generation via Multi-Geometry Pre-training",
-"authors": [
-"Thorsten Buss",
-"Henry Day-Hall",
-"Frank Gaede",
-"Gregor Kasieczka",
-"Katja Krüger",
-"Peter McKeown",
-"Lorenzo Valente"
-],
-"abstract": "Detailed Geant4 simulation of calorimeter showers dominates the computing budget of high-energy physics experiments. Deep generative surrogates reduce this cost, but they have remained tied to the detector they were trained on, so each new geometry needs a large in-domain dataset. We study whether a single point cloud shower generator can be pre-trained on multiple detectors and transferred to unseen calorimeters. The pre-training geometries come from synthetic geometric variation rather than real-detector data. We introduce SimpleBox, a family of $10^4$ box calorimeters spanning the plane of sampling fraction and longitudinal segmentation, and benchmark it against pre-training on realistic detectors. On a calorimeter unseen in pre-training, with $10^3$ target showers for fine-tuning, the two priors reduce the aggregated sliced Wasserstein distance to Geant4 by factors of 5.2 (synthetic) and 8.0 (realistic) relative to training from scratch. At larger target sizes the synthetic prior performs better than the realistic one. Geometric diversity alone is therefore a practical way to pre-train a transferable shower generator.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.022,
-"913031"
-],
-[
-0.016,
-"3154646"
-],
-[
-0.007,
-"3204120"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"parts": [
-0.0,
-0.0,
-0.06,
-0.0,
-0.0
-],
-"score": 1.0
-},
-{
 "arxiv": "2610.39494",
 "section": "new",
 "recid": "3220426",
@@ -7127,12 +7127,12 @@
 "section": "cross",
 "recid": "3220334",
 "src": "INSPIRE",
-"nref": 77,
+"nref": 85,
 "title": "Quasinormal-mode encounters: Pseudospectra near Kerr--Newman exceptional points",
 "authors": [
 "Kyriakos Destounis"
 ],
-"abstract": "Exceptional points (EPs), at which two quasinormal frequencies and their eigenvectors coalesce, can strongly enhance the spectral instability of black hole quasinormal modes. We investigate this behavior in Kerr--Newman spacetimes through pseudospectra and condition numbers for neutral massless scalar fields and coupled gravitoelectromagnetic (GE) perturbations. For the scalar field, we follow the $(\\ell,m)=(1,1)$ spheroidal branch and derive the energy norm from the stress-energy tensor. For GE perturbations, we use a coupled four-field system equipped with a positive radiative energy. At the selected near-EP backgrounds, the condition numbers of both modes in the close pair exceed those of the two more-damped modes shown for comparison at the same background. Along a matched GE parameter path, the frequency splitting follows a square-root law and the condition numbers grow as the inverse square root of the distance to the EP. The pseudospectral contours resolve the transition from individual-mode sensitivity to the collective response of the pair. Within the discretized problems and energy norms considered here, these results quantify the amplification of spectral instability near EPs and provide a basis for studying their contribution to black-hole ringdown.",
+"abstract": "Exceptional points (EPs), at which two quasinormal frequencies and their eigenvectors coalesce, can enhance the spectral instability of black hole quasinormal modes. We investigate this behavior in Kerr--Newman spacetimes through pseudospectra and condition numbers for neutral massless scalar fields and coupled gravitoelectromagnetic (GE) perturbations. For the scalar field, we follow the $(\\ell,m)=(1,1)$ spheroidal branch and derive the energy norm from the stress-energy tensor. For GE perturbations, we use a coupled four-field system equipped with a positive radiative energy. Along matched parameter paths toward the selected EPs, the frequency splitting follows a square-root law and the condition numbers grow as the inverse square root of the distance to the EP. Their product, which approximates the norm of the double-pole coefficient, does not depend on the offset or, for GE, on the angular truncation and projection used. The pseudospectral contours resolve the transition from individual-mode sensitivity to the collective response of the pair. At the selected backgrounds and resolution, both pair members are more sensitive than two more-damped modes at the same background, but this ordering holds only below a crossover offset that decreases with radial resolution. For the GE pair, angular refinement also displaces the coalescence by more than the selected offset. Within the discretized problems and energy norms considered here, these results describe qualitative trends of spectral instability near EPs rather than continuum magnitudes, and motivate further study of their possible role in black-hole ringdown.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -7151,15 +7151,15 @@
 ],
 "topE": [
 [
-0.022,
+0.021,
 "3177521"
 ],
 [
-0.02,
+0.019,
 "2646376"
 ],
 [
-0.019,
+0.018,
 "2973967"
 ]
 ],
@@ -8901,7 +8901,7 @@
 "section": "cross",
 "recid": "3220148",
 "src": "INSPIRE",
-"nref": 32,
+"nref": 39,
 "title": "Quantum Correlations Between Two Giant Dipole Resonances in Ultra-Peripheral Collisions",
 "authors": [
 "Albandry Alshammri",

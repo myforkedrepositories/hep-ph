@@ -1,8 +1,64 @@
 [
  {
+  "date": "2026-11-03",
+  "page": "hep-ph-2026-11-03.html",
+  "built": "2026-11-03",
+  "code": "cefd75cca98c",
+  "nlist": 50,
+  "nrel": 9,
+  "top": [
+   {
+    "arxiv": "2611.00232",
+    "title": "Interacting scalar-fermion two-component dark matter in a gauged $\\boldsymbol{U(1)_{B-L}}$ model",
+    "score": 68.4,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.00930",
+    "title": "From Kination to Detection: Scotogenic Scalar Dark Matter",
+    "score": 62.2,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.01158",
+    "title": "Exothermic Higgs portal: from LUX-ZEPLIN recoil to Gamma Rays",
+    "score": 54.7,
+    "section": "new"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-02",
+  "page": "hep-ph-2026-11-02.html",
+  "built": "2026-11-03",
+  "code": "cefd75cca98c",
+  "nlist": 67,
+  "nrel": 11,
+  "top": [
+   {
+    "arxiv": "2610.40766",
+    "title": "Hints of self-interacting dark matter from strong gravitational lensing",
+    "score": 41.6,
+    "section": "cross"
+   },
+   {
+    "arxiv": "2610.40775",
+    "title": "On the Role of Gravity in Supercooled Phase Transitions",
+    "score": 37.1,
+    "section": "new"
+   },
+   {
+    "arxiv": "2602.11085",
+    "title": "Sterile neutrino dark matter in conformal Majoron models",
+    "score": 37.0,
+    "section": "replacement"
+   }
+  ]
+ },
+ {
   "date": "2026-10-30",
   "page": "hep-ph-2026-10-30.html",
-  "built": "2026-10-31",
+  "built": "2026-11-03",
   "code": "cefd75cca98c",
   "nlist": 154,
   "nrel": 28,
