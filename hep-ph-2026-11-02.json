@@ -1414,7 +1414,7 @@
 "section": "new",
 "recid": "3221023",
 "src": "INSPIRE",
-"nref": 161,
+"nref": 160,
 "title": "Phenomenological Chiral Effective Field Theory for Neutrino Event Generators",
 "authors": [
 "Zara Graham-Jones",
@@ -1434,26 +1434,26 @@
 "3094526"
 ],
 [
-0.006,
-"1854224"
+0.008,
+"2787890"
 ],
 [
-0.005,
-"1455793"
+0.007,
+"2964960"
 ]
 ],
 "topE": [
 [
-0.047,
+0.046,
 "1863322"
 ],
 [
-0.028,
+0.027,
 "3206672"
 ],
 [
-0.025,
-"2817040"
+0.026,
+"3179956"
 ]
 ],
 "isme": false,
@@ -1466,7 +1466,7 @@
 0.0,
 0.0
 ],
-"score": 4.8
+"score": 4.9
 },
 {
 "arxiv": "2606.10668",
@@ -1527,62 +1527,6 @@
 "score": 4.6
 },
 {
-"arxiv": "2610.40895",
-"section": "new",
-"recid": "3221019",
-"src": "INSPIRE",
-"nref": 81,
-"title": "Stars Can Quench Superradiance Around Supermassive Black Holes",
-"authors": [
-"Yu Cheng",
-"Andrea Caputo",
-"Giovanni Maria Tomaselli",
-"Samuel J. Witte"
-],
-"abstract": "Light scalar fields trigger an instability around rotating black holes which drives the rapid growth of high-density bound states on astrophysically short timescales---a phenomenon known as black hole superradiance. This process is usually tacitly assumed to happen independent of the local environment. Around supermassive black holes, however, orbiting stars and compact objects act as a perturbation that drains energy from the cloud, potentially preventing its formation altogether. In this work, we quantify under what conditions this happens, focusing on bound-free state transitions. We first compute the rate of energy dissipation due to gravitational interactions, finding that the superradiance growth rate almost always dominates the environmental depletion. The two rates are, however, close enough that the conclusion could be overturned once bound-bound transitions are included. Also, the environment dissipates the cloud faster than gravitational-wave emission, implying that stellar environments must be accounted for in a variety of indirect search strategies. We then investigate the impact of the scalar's quadratic couplings to nucleons and electromagnetism, showing that these interactions can greatly enhance energy dissipation, preventing the cloud's formation. This work highlights the importance of accounting for the local environment in studies of superradiance around intermediate and supermassive black holes.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.008,
-"1709434"
-],
-[
-0.008,
-"3130296"
-],
-[
-0.0,
-"926166"
-]
-],
-"topE": [
-[
-0.078,
-"2669622"
-],
-[
-0.077,
-"3170445"
-],
-[
-0.056,
-"2872253"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"parts": [
-0.0,
-0.02,
-0.22,
-0.0,
-0.0
-],
-"score": 4.1
-},
-{
 "arxiv": "2607.23737",
 "section": "replacement",
 "recid": "3183562",
@@ -1638,6 +1582,62 @@
 0.0
 ],
 "score": 4.1
+},
+{
+"arxiv": "2610.40895",
+"section": "new",
+"recid": "3221019",
+"src": "INSPIRE",
+"nref": 81,
+"title": "Stars Can Quench Superradiance Around Supermassive Black Holes",
+"authors": [
+"Yu Cheng",
+"Andrea Caputo",
+"Giovanni Maria Tomaselli",
+"Samuel J. Witte"
+],
+"abstract": "Light scalar fields trigger an instability around rotating black holes which drives the rapid growth of high-density bound states on astrophysically short timescales---a phenomenon known as black hole superradiance. This process is usually tacitly assumed to happen independent of the local environment. Around supermassive black holes, however, orbiting stars and compact objects act as a perturbation that drains energy from the cloud, potentially preventing its formation altogether. In this work, we quantify under what conditions this happens, focusing on bound-free state transitions. We first compute the rate of energy dissipation due to gravitational interactions, finding that the superradiance growth rate almost always dominates the environmental depletion. The two rates are, however, close enough that the conclusion could be overturned once bound-bound transitions are included. Also, the environment dissipates the cloud faster than gravitational-wave emission, implying that stellar environments must be accounted for in a variety of indirect search strategies. We then investigate the impact of the scalar's quadratic couplings to nucleons and electromagnetism, showing that these interactions can greatly enhance energy dissipation, preventing the cloud's formation. This work highlights the importance of accounting for the local environment in studies of superradiance around intermediate and supermassive black holes.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.008,
+"1709434"
+],
+[
+0.008,
+"3130296"
+],
+[
+0.0,
+"926166"
+]
+],
+"topE": [
+[
+0.078,
+"2669622"
+],
+[
+0.077,
+"3170445"
+],
+[
+0.055,
+"2872253"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"parts": [
+0.0,
+0.02,
+0.22,
+0.0,
+0.0
+],
+"score": 4.0
 },
 {
 "arxiv": "2605.07095",
@@ -2377,6 +2377,59 @@
 0.06,
 0.0,
 0.11
+],
+"score": 2.0
+},
+{
+"arxiv": "2610.42143",
+"section": "cross",
+"recid": "3221710",
+"src": "INSPIRE",
+"nref": 46,
+"title": "A first look at strange-quark polarization in top-quark decays with CMS Open Data",
+"authors": [
+"Yevgeny Kats"
+],
+"abstract": "We present a first realization of strange-quark polarimetry in top-quark decays. The longitudinal polarization of $Λ$ baryons is measured in the strange jets of hadronic $W\\to c\\bar s$ decays in semileptonic top-quark pair events, using 16.39 fb$^{-1}$ of the public CMS data of pp collisions at $\\sqrt{s}=13$ TeV. The $W$ decay produces the strange quark fully polarized, so that the $Λ$ polarization measures the transfer of the quark polarization in fragmentation. With the limited statistics available, our result is consistent both with zero and with the transfer inferred from the flavor-averaged LEP measurements. The statistical reach with the full Run-2, Run-3 and HL-LHC datasets is projected.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.012,
+"1455793"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.027,
+"2621240"
+],
+[
+0.026,
+"2721859"
+],
+[
+0.021,
+"2016443"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"parts": [
+0.0,
+0.03,
+0.08,
+0.0,
+0.0
 ],
 "score": 2.0
 },
@@ -3150,6 +3203,63 @@
 0.0
 ],
 "score": 0.6
+},
+{
+"arxiv": "2610.42062",
+"section": "new",
+"recid": "3221697",
+"src": "INSPIRE",
+"nref": 108,
+"title": "Two-loop integrals for $t\\bar{t}γ$ production at hadron colliders in the leading-colour approximation",
+"authors": [
+"Souvik Bera",
+"Colomba Brancaccio",
+"Dhimiter Canko",
+"Federico Ripani",
+"Simone Zoia"
+],
+"abstract": "We complete the calculation of the two-loop Feynman integrals required for the next-to-next-to-leading order QCD corrections to on-shell top--antitop production in association with a photon at hadron colliders, in the leading-colour approximation. The same integrals also enter the subleading-colour corrections to top--antitop production in association with a jet. We construct integral bases that satisfy algebraic differential equations. These are largely in canonical form; the exceptions are a few entries, associated with elliptic curves or nested square roots, that depend at most quadratically on the dimensional regulator $ε$. We solve the differential equations in terms of a tailored set of special functions, which will enable the analytic extraction of the two-loop finite remainder. We evaluate these functions by numerically solving the differential equations they satisfy, and show that the resulting routine is fast and stable enough in the physical region for phenomenological applications.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.011,
+"2153898"
+],
+[
+0.007,
+"2972436"
+],
+[
+0.006,
+"1865755"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"parts": [
+0.0,
+0.0,
+0.03,
+0.0,
+0.0
+],
+"score": 0.5
 },
 {
 "arxiv": "2506.03271",

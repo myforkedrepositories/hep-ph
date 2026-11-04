@@ -1,11 +1,39 @@
 [
  {
+  "date": "2026-11-04",
+  "page": "hep-ph-2026-11-04.html",
+  "built": "2026-11-04",
+  "code": "cefd75cca98c",
+  "nlist": 82,
+  "nrel": 15,
+  "top": [
+   {
+    "arxiv": "2605.21477",
+    "title": "Opening the Window of Ultra-Light PBHs by Exorcising the Poltergeist",
+    "score": 67.8,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2611.04136",
+    "title": "Revisiting the gamma-ray signal from light ALPs emitted during the evaporation of memory-burdened PBHs",
+    "score": 55.8,
+    "section": "new"
+   },
+   {
+    "arxiv": "2604.15006",
+    "title": "Cosmology of Inelastic Self-Interacting Dark Matter: Linear Evolution and Observational Constraints",
+    "score": 32.0,
+    "section": "replacement"
+   }
+  ]
+ },
+ {
   "date": "2026-11-03",
   "page": "hep-ph-2026-11-03.html",
-  "built": "2026-11-03",
+  "built": "2026-11-04",
   "code": "cefd75cca98c",
-  "nlist": 50,
-  "nrel": 9,
+  "nlist": 70,
+  "nrel": 10,
   "top": [
    {
     "arxiv": "2611.00232",
@@ -30,9 +58,9 @@
  {
   "date": "2026-11-02",
   "page": "hep-ph-2026-11-02.html",
-  "built": "2026-11-03",
+  "built": "2026-11-04",
   "code": "cefd75cca98c",
-  "nlist": 67,
+  "nlist": 69,
   "nrel": 11,
   "top": [
    {
