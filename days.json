@@ -1,36 +1,64 @@
 [
  {
-  "date": "2026-11-04",
-  "page": "hep-ph-2026-11-04.html",
-  "built": "2026-11-04",
+  "date": "2026-11-05",
+  "page": "hep-ph-2026-11-05.html",
+  "built": "2026-11-05",
   "code": "cefd75cca98c",
-  "nlist": 82,
-  "nrel": 15,
+  "nlist": 39,
+  "nrel": 8,
   "top": [
    {
-    "arxiv": "2605.21477",
-    "title": "Opening the Window of Ultra-Light PBHs by Exorcising the Poltergeist",
-    "score": 67.8,
-    "section": "replacement"
-   },
-   {
-    "arxiv": "2611.04136",
-    "title": "Revisiting the gamma-ray signal from light ALPs emitted during the evaporation of memory-burdened PBHs",
-    "score": 55.8,
+    "arxiv": "2611.05747",
+    "title": "The Cosmology of Hawking Axions",
+    "score": 62.1,
     "section": "new"
    },
    {
-    "arxiv": "2604.15006",
-    "title": "Cosmology of Inelastic Self-Interacting Dark Matter: Linear Evolution and Observational Constraints",
-    "score": 32.0,
-    "section": "replacement"
+    "arxiv": "2611.05685",
+    "title": "Probing CP Violation in the Complex 2HDMS with a 95 GeV Scalar at Future $e^+e^-$ Colliders",
+    "score": 50.8,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.05475",
+    "title": "Complete set of bounded-from-below conditions for the $A_4$-symmetric three-Higgs-doublet model",
+    "score": 25.0,
+    "section": "new"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-04",
+  "page": "hep-ph-2026-11-04.html",
+  "built": "2026-11-05",
+  "code": "cefd75cca98c",
+  "nlist": 44,
+  "nrel": 8,
+  "top": [
+   {
+    "arxiv": "2611.04136",
+    "title": "Revisiting the gamma-ray signal from light ALPs emitted during the evaporation of memory-burdened PBHs",
+    "score": 55.7,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.03793",
+    "title": "Gaia's dark partners: A new signature of dissipative dark matter",
+    "score": 22.5,
+    "section": "cross"
+   },
+   {
+    "arxiv": "2611.04237",
+    "title": "Observable gravitational waves from unstable ALP catastrogenesis",
+    "score": 16.1,
+    "section": "new"
    }
   ]
  },
  {
   "date": "2026-11-03",
   "page": "hep-ph-2026-11-03.html",
-  "built": "2026-11-04",
+  "built": "2026-11-05",
   "code": "cefd75cca98c",
   "nlist": 70,
   "nrel": 10,
@@ -38,13 +66,13 @@
    {
     "arxiv": "2611.00232",
     "title": "Interacting scalar-fermion two-component dark matter in a gauged $\\boldsymbol{U(1)_{B-L}}$ model",
-    "score": 68.4,
+    "score": 77.6,
     "section": "new"
    },
    {
     "arxiv": "2611.00930",
     "title": "From Kination to Detection: Scotogenic Scalar Dark Matter",
-    "score": 62.2,
+    "score": 67.4,
     "section": "new"
    },
    {

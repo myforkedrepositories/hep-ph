@@ -13,17 +13,17 @@
 ],
 "abstract": "We propose an interacting two-component dark matter model based on a gauged $U(1)_{B-L}$ extension of the Standard Model, which also accommodates neutrino masses through the type-I seesaw mechanism. The dark sector consists of a Dirac fermion $χ$ and a complex scalar $S$, which can both be stable without imposing an additional discrete symmetry and are directly coupled by a gauge-invariant Yukawa interaction. The resulting conversion, semi-conversion, and semi-annihilation processes lead to a genuinely coupled freeze-out. After imposing collider and dark matter constraints, we identify viable solutions away from the $Z'$ resonance for both mass hierarchies, $m_S > m_χ$ and $m_S < m_χ$. Despite the strong direct-detection constraints, part of the surviving parameter space remains within the reach of next-generation experiments.",
 "citR": [
-"1686334",
 "1803365",
+"1686334",
 "1764733",
-"2614919",
-"1990302"
+"1990302",
+"2614919"
 ],
 "citE": [
 "3086782",
 "3130997",
-"3131565",
 "2864372",
+"3131565",
 "2918610",
 "2913509",
 "3165814",
@@ -38,30 +38,30 @@
 ],
 "topR": [
 [
-0.136,
+0.139,
 "1990302"
 ],
 [
-0.128,
+0.13,
 "2751074"
 ],
 [
-0.121,
+0.123,
 "2794409"
 ]
 ],
 "topE": [
 [
-0.142,
+1.0,
+"3221793"
+],
+[
+0.145,
 "2843521"
 ],
 [
 0.137,
 "3131565"
-],
-[
-0.132,
-"3063360"
 ]
 ],
 "isme": false,
@@ -80,12 +80,12 @@
 ],
 "parts": [
 1.0,
-0.44,
-0.41,
+0.45,
+1,
 0.5,
-0.9
+0.91
 ],
-"score": 68.4
+"score": 77.6
 },
 {
 "arxiv": "2611.00930",
@@ -110,13 +110,13 @@
 "3062873",
 "2100409",
 "3165814",
-"2638716",
 "2962467",
+"2638716",
 "2793703",
 "2689316",
 "2835172",
-"2940359",
 "2072357",
+"2940359",
 "1989085",
 "1903588",
 "1861144",
@@ -140,16 +140,16 @@
 ],
 "topE": [
 [
-0.23,
+1.0,
+"3221883"
+],
+[
+0.229,
 "2962467"
 ],
 [
-0.196,
+0.192,
 "2940359"
-],
-[
-0.15,
-"3205155"
 ]
 ],
 "isme": false,
@@ -167,11 +167,11 @@
 "parts": [
 1.0,
 0.26,
-0.66,
+1,
 0.0,
 0.96
 ],
-"score": 62.2
+"score": 67.4
 },
 {
 "arxiv": "2611.01158",
@@ -234,7 +234,7 @@
 0.1,
 1,
 0.0,
-0.72
+0.73
 ],
 "score": 54.7
 },
@@ -355,7 +355,7 @@
 ],
 "parts": [
 0.45,
-0.26,
+0.27,
 0.33,
 0.0,
 0.55
@@ -777,7 +777,7 @@
 "1455793"
 ],
 [
-0.009,
+0.01,
 "1693823"
 ],
 [
@@ -809,7 +809,7 @@
 0.0,
 0.0
 ],
-"score": 7.0
+"score": 7.1
 },
 {
 "arxiv": "2611.02987",
@@ -1030,61 +1030,6 @@
 0.0,
 0.0
 ],
-"score": 5.9
-},
-{
-"arxiv": "2611.02049",
-"section": "cross",
-"recid": "3222112",
-"src": "INSPIRE",
-"nref": 291,
-"title": "Reinforcement Learning in High-Energy Physics: A Survey from Accelerator Control to Theory Exploration",
-"authors": [
-"Luca Anzalone"
-],
-"abstract": "Reinforcement learning (RL) is a machine learning paradigm in which an agent learns a decision-making policy by interacting with an environment, guided by a scalar reward rather than explicit supervision. Supervised and unsupervised learning have become indispensable tools in high-energy physics (HEP), but they learn from fixed datasets, whereas many HEP tasks are closed-loop decisions: the data an algorithm observes depend on its choices, the feedback is sparse or delayed, and the objective is often measured on a real machine or in a stochastic simulation, not by a differentiable model. This survey reviews the application of RL to such tasks: accelerator control and feedback, data quality monitoring, jet grooming, clustering, and representation, charged particle tracking, beyond-the-Standard-Model (BSM) and string model building, detector design, trigger control, analysis, and formal quantum field theory computation. It provides a self-contained introduction to the underlying RL methods, from model-free and model-based to multi-agent, offline, inverse, and bandit approaches, reviews each domain against its traditional methods, and summarizes the head-to-head comparisons. The applications range from policies deployed on real accelerators and evaluated on recorded collision data to exploratory studies in formal theory. RL is most advantageous for repeated tasks with a fast simulator, decisions inside fast control loops, operation under faults and corrupted measurements, physics-based rewards in place of labels, and sequential discrete constructions with a reusable policy, while Bayesian optimization, genetic algorithms, and differentiable methods remain competitive elsewhere. We conclude with the open challenges that recur across domains, including reward design, sim-to-real transfer, safety, the lack of shared benchmarks, and the statistical validity of policy-driven decisions.",
-"citR": [],
-"citE": [
-"2817040"
-],
-"topR": [
-[
-0.017,
-"3094526"
-],
-[
-0.013,
-"2751074"
-],
-[
-0.012,
-"1589847"
-]
-],
-"topE": [
-[
-0.051,
-"3090323"
-],
-[
-0.037,
-"2921193"
-],
-[
-0.023,
-"3158805"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"parts": [
-0.06,
-0.05,
-0.14,
-0.0,
-0.0
-],
 "score": 5.8
 },
 {
@@ -1095,7 +1040,7 @@
 "nref": 161,
 "title": "Electroweak-Scale Cosmic Magnetism: Magnetogenesis, Baryogenesis, Phase Transitions and Gravitational Waves",
 "authors": [
-"Fayez Abu-Ajamieb"
+"Fayez Abu-Ajamieh"
 ],
 "abstract": "Magnetic fields, the baryon asymmetry of the Universe, and stochastic gravitational waves provide complementary probes of physics in the early Universe. Near the electroweak scale, these phenomena are not necessarily independent. The electroweak anomaly allows hypermagnetic helicity to exchange charge with chiral fermions, sphalerons can change baryon and lepton number, and first-order phase transitions in extensions of the Standard Model can drive plasma motion, magnetogenesis, and gravitational waves. In this review, we explain these connections and examine the literature needed to make quantitative predictions. We begin with the properties of primordial magnetic fields and the electroweak plasma, then discuss the mechanisms that produce magnetic fields, the conversion between helicity and baryon number, magnetic backreaction, and the evolution of the field to the present day. We also review the observational constraints and recent developments, including gauge-invariant descriptions of magnetic flux through the crossover and reconnection-controlled field evolution. Particular attention is given to the assumptions behind commonly used formulas and to the distinction between established results and model-dependent estimates. We argue that the most useful way forward is to predict the baryon abundance, present-day magnetic-field spectrum, and gravitational-wave signal from the same microscopic model, with consistent treatment of the intervening plasma dynamics.",
 "citR": [],
@@ -1140,7 +1085,62 @@
 0.0,
 0.13
 ],
-"score": 5.6
+"score": 5.7
+},
+{
+"arxiv": "2611.02049",
+"section": "cross",
+"recid": "3222112",
+"src": "INSPIRE",
+"nref": 291,
+"title": "Reinforcement Learning in High-Energy Physics: A Survey from Accelerator Control to Theory Exploration",
+"authors": [
+"Luca Anzalone"
+],
+"abstract": "Reinforcement learning (RL) is a machine learning paradigm in which an agent learns a decision-making policy by interacting with an environment, guided by a scalar reward rather than explicit supervision. Supervised and unsupervised learning have become indispensable tools in high-energy physics (HEP), but they learn from fixed datasets, whereas many HEP tasks are closed-loop decisions: the data an algorithm observes depend on its choices, the feedback is sparse or delayed, and the objective is often measured on a real machine or in a stochastic simulation, not by a differentiable model. This survey reviews the application of RL to such tasks: accelerator control and feedback, data quality monitoring, jet grooming, clustering, and representation, charged particle tracking, beyond-the-Standard-Model (BSM) and string model building, detector design, trigger control, analysis, and formal quantum field theory computation. It provides a self-contained introduction to the underlying RL methods, from model-free and model-based to multi-agent, offline, inverse, and bandit approaches, reviews each domain against its traditional methods, and summarizes the head-to-head comparisons. The applications range from policies deployed on real accelerators and evaluated on recorded collision data to exploratory studies in formal theory. RL is most advantageous for repeated tasks with a fast simulator, decisions inside fast control loops, operation under faults and corrupted measurements, physics-based rewards in place of labels, and sequential discrete constructions with a reusable policy, while Bayesian optimization, genetic algorithms, and differentiable methods remain competitive elsewhere. We conclude with the open challenges that recur across domains, including reward design, sim-to-real transfer, safety, the lack of shared benchmarks, and the statistical validity of policy-driven decisions.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.017,
+"3094526"
+],
+[
+0.013,
+"2751074"
+],
+[
+0.012,
+"1589847"
+]
+],
+"topE": [
+[
+0.05,
+"3090323"
+],
+[
+0.037,
+"2921193"
+],
+[
+0.022,
+"3158805"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"parts": [
+0.06,
+0.05,
+0.14,
+0.0,
+0.0
+],
+"score": 5.7
 },
 {
 "arxiv": "2611.01662",
@@ -1234,11 +1234,11 @@
 "3115042"
 ],
 [
-0.048,
+0.047,
 "3190103"
 ],
 [
-0.047,
+0.046,
 "2863261"
 ]
 ],
@@ -1253,6 +1253,62 @@
 0.0
 ],
 "score": 5.2
+},
+{
+"arxiv": "2611.00205",
+"section": "cross",
+"recid": "3221753",
+"src": "INSPIRE",
+"nref": 61,
+"title": "Lightest and heaviest nuclei as keys to the origin of ultrahigh energy cosmic rays",
+"authors": [
+"Anna M. Suliga",
+"Glennys R. Farrar"
+],
+"abstract": "The origin of ultrahigh energy cosmic rays (UHECRs) has been a long-standing mystery. A unique feature of UHECRs originating in binary neutron star mergers (BNSMs) is two distinct populations of light elements -- those directly accelerated in the jets, and photo-disintegration products of massive nuclei accelerated in the bulk outflow. We show that Pierre Auger Observatory spectrum and composition data confirm the existence of the predicted two populations at $\\geq \\!7.2σ$ significance, having rigidity ($R\\equiv E/Ze$) cutoffs agreeing with prior estimates. The data also favor 5-10% of UHECRs originating as r-process nuclei, a signature of a BNSM origin. Our results provide strong evidence that UHECRs are produced by merging neutron stars, and show how UHECRs and UHE-neutrinos elucidate otherwise inaccessible aspects of neutron star mergers.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.004,
+"3184726"
+],
+[
+0.004,
+"2690106"
+],
+[
+0.003,
+"2860896"
+]
+],
+"topE": [
+[
+0.048,
+"3130305"
+],
+[
+0.035,
+"2894898"
+],
+[
+0.028,
+"2905773"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"parts": [
+0.06,
+0.01,
+0.14,
+0.0,
+0.0
+],
+"score": 4.5
 },
 {
 "arxiv": "2611.03218",
@@ -1439,7 +1495,7 @@
 ],
 "topR": [
 [
-0.006,
+0.005,
 "3184726"
 ],
 [
@@ -1526,7 +1582,7 @@
 "parts": [
 0.0,
 0.0,
-0.2,
+0.21,
 0.0,
 0.0
 ],
@@ -1567,11 +1623,11 @@
 ],
 [
 0.031,
-"2665284"
+"3221883"
 ],
 [
-0.025,
-"3199560"
+0.03,
+"2665284"
 ]
 ],
 "isme": false,
@@ -1848,7 +1904,7 @@
 ],
 [
 0.032,
-"3092194"
+"3170413"
 ]
 ],
 "isme": false,
@@ -3076,7 +3132,7 @@
 ],
 "topE": [
 [
-0.016,
+0.017,
 "2940264"
 ],
 [
@@ -3872,60 +3928,6 @@
 "Kiochi Hattori"
 ],
 "abstract": "We investigate the effects of nuclear deformation on global $Λ$ polarization in U+U collisions at $\\sqrt{s_{NN}}=2.85$~GeV using the JAM2 transport model, in view of future measurements at HIAF. The tip--tip and side--side configurations yield substantially larger global $Λ$ polarization than that in the body--body configuration. This separation grows with an increasing quadrupole deformation parameter $β_2$, highlighting the sensitivity of orientation-dependent polarization to nuclear deformation. These findings connect nuclear shape with hyperon spin, opening a new avenue for probing nuclear deformation through polarization measurements in intermediate-energy heavy-ion collisions.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.0,
-"913031"
-],
-[
-0.0,
-"881902"
-],
-[
-0.0,
-"877394"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"parts": [
-0.0,
-0.0,
-0.0,
-0.0,
-0.0
-],
-"score": 0.0
-},
-{
-"arxiv": "2611.00205",
-"section": "cross",
-"recid": "3221753",
-"src": "INSPIRE",
-"nref": 2,
-"title": "Lightest and heaviest nuclei as keys to the origin of ultrahigh energy cosmic rays",
-"authors": [
-"Anna M. Suliga",
-"Glennys R. Farrar"
-],
-"abstract": "The origin of ultrahigh energy cosmic rays (UHECRs) has been a long-standing mystery. A unique feature of UHECRs originating in binary neutron star mergers (BNSMs) is two distinct populations of light elements -- those directly accelerated in the jets, and photo-disintegration products of massive nuclei accelerated in the bulk outflow. We show that Pierre Auger Observatory spectrum and composition data confirm the existence of the predicted two populations at $\\geq \\!7.2σ$ significance, having rigidity ($R\\equiv E/Ze$) cutoffs agreeing with prior estimates. The data also favor 5-10% of UHECRs originating as r-process nuclei, a signature of a BNSM origin. Our results provide strong evidence that UHECRs are produced by merging neutron stars, and show how UHECRs and UHE-neutrinos elucidate otherwise inaccessible aspects of neutron star mergers.",
 "citR": [],
 "citE": [],
 "topR": [
