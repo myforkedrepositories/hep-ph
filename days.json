@@ -3,26 +3,26 @@
   "date": "2026-11-06",
   "page": "hep-ph-2026-11-06.html",
   "built": "2026-11-06",
-  "code": "cefd75cca98c",
-  "nlist": 51,
-  "nrel": 16,
+  "code": "5eab29859571",
+  "nlist": 89,
+  "nrel": 32,
   "top": [
    {
     "arxiv": "2611.08440",
     "title": "Signatures of Neutrinophilic Pion Dark Matter",
-    "score": 90.4,
+    "score": 90.5,
     "section": "new"
+   },
+   {
+    "arxiv": "2607.09282",
+    "title": "Leptogenesis with sub-electroweak-scale reheating temperature",
+    "score": 84.0,
+    "section": "replacement"
    },
    {
     "arxiv": "2611.07509",
     "title": "Scale-Invariant Three-Component Dark Matter and Gravitational Wave Signals",
-    "score": 77.1,
-    "section": "new"
-   },
-   {
-    "arxiv": "2611.08187",
-    "title": "Light Primordial Black Holes from a First-Order Phase Transition near the End of Inflation: Baryogenesis and Gravitational Wave Signatures",
-    "score": 55.9,
+    "score": 78.2,
     "section": "new"
    }
   ]
@@ -31,26 +31,26 @@
   "date": "2026-11-05",
   "page": "hep-ph-2026-11-05.html",
   "built": "2026-11-06",
-  "code": "cefd75cca98c",
-  "nlist": 39,
-  "nrel": 8,
+  "code": "5eab29859571",
+  "nlist": 68,
+  "nrel": 17,
   "top": [
+   {
+    "arxiv": "2605.24473",
+    "title": "Freeze-in $SU(2)$ vector dark matter at low reheating temperature",
+    "score": 68.7,
+    "section": "replacement"
+   },
    {
     "arxiv": "2611.05747",
     "title": "The Cosmology of Hawking Axions",
-    "score": 62.1,
+    "score": 62.7,
     "section": "new"
    },
    {
     "arxiv": "2611.05685",
     "title": "Probing CP Violation in the Complex 2HDMS with a 95 GeV Scalar at Future $e^+e^-$ Colliders",
     "score": 50.8,
-    "section": "new"
-   },
-   {
-    "arxiv": "2611.05475",
-    "title": "Complete set of bounded-from-below conditions for the $A_4$-symmetric three-Higgs-doublet model",
-    "score": 25.0,
     "section": "new"
    }
   ]
@@ -59,37 +59,37 @@
   "date": "2026-11-04",
   "page": "hep-ph-2026-11-04.html",
   "built": "2026-11-06",
-  "code": "cefd75cca98c",
-  "nlist": 44,
-  "nrel": 8,
+  "code": "5eab29859571",
+  "nlist": 83,
+  "nrel": 26,
   "top": [
+   {
+    "arxiv": "2605.21477",
+    "title": "Opening the Window of Ultra-Light PBHs by Exorcising the Poltergeist",
+    "score": 68.1,
+    "section": "replacement"
+   },
    {
     "arxiv": "2611.04136",
     "title": "Revisiting the gamma-ray signal from light ALPs emitted during the evaporation of memory-burdened PBHs",
-    "score": 55.7,
+    "score": 55.8,
     "section": "new"
    },
    {
-    "arxiv": "2611.03793",
-    "title": "Gaia's dark partners: A new signature of dissipative dark matter",
-    "score": 22.5,
-    "section": "cross"
-   },
-   {
-    "arxiv": "2611.04237",
-    "title": "Observable gravitational waves from unstable ALP catastrogenesis",
-    "score": 16.1,
-    "section": "new"
+    "arxiv": "2604.15006",
+    "title": "Cosmology of Inelastic Self-Interacting Dark Matter: Linear Evolution and Observational Constraints",
+    "score": 32.2,
+    "section": "replacement"
    }
   ]
  },
  {
   "date": "2026-11-03",
   "page": "hep-ph-2026-11-03.html",
-  "built": "2026-11-05",
-  "code": "cefd75cca98c",
-  "nlist": 70,
-  "nrel": 10,
+  "built": "2026-11-06",
+  "code": "5eab29859571",
+  "nlist": 120,
+  "nrel": 36,
   "top": [
    {
     "arxiv": "2611.00232",
@@ -106,7 +106,7 @@
    {
     "arxiv": "2611.01158",
     "title": "Exothermic Higgs portal: from LUX-ZEPLIN recoil to Gamma Rays",
-    "score": 54.7,
+    "score": 54.6,
     "section": "new"
    }
   ]
@@ -114,27 +114,27 @@
  {
   "date": "2026-11-02",
   "page": "hep-ph-2026-11-02.html",
-  "built": "2026-11-04",
-  "code": "cefd75cca98c",
-  "nlist": 69,
-  "nrel": 11,
+  "built": "2026-11-06",
+  "code": "5eab29859571",
+  "nlist": 70,
+  "nrel": 18,
   "top": [
    {
     "arxiv": "2610.40766",
     "title": "Hints of self-interacting dark matter from strong gravitational lensing",
-    "score": 41.6,
+    "score": 41.4,
     "section": "cross"
    },
    {
     "arxiv": "2610.40775",
     "title": "On the Role of Gravity in Supercooled Phase Transitions",
-    "score": 37.1,
+    "score": 38.0,
     "section": "new"
    },
    {
     "arxiv": "2602.11085",
     "title": "Sterile neutrino dark matter in conformal Majoron models",
-    "score": 37.0,
+    "score": 36.9,
     "section": "replacement"
    }
   ]
