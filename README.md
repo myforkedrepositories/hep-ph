@@ -6,14 +6,17 @@ variable `INSPIRE_AUTHOR`.
 
 - `tools/build_network.py` (hep-network-builder), `tools/hepph_match.py` + `tools/template.html`
   (hep-ph-network-match), `tools/build_site.py` (index and last-5-days logic).
-- `skills/hep-network-builder/SKILL.md`, `skills/hep-ph-network-match/SKILL.md` — the two skills with the current code
+- `skills/hep-network-builder/SKILL.md`, `skills/hep-ph-network-match/SKILL.md`, `skills/hep-ph-topic-boost/SKILL.md`
+  (`tools/boost_topics.py`: watch topics that lift a given paper) — the skills with the current code
   (upload them in claude.ai → Settings → Capabilities → Skills to update the skills).
 - `.github/workflows/hep-ph-pages.yml` — runs once each weekday evening, 21:17 Bogotá, Monday–Friday (and on demand from the
   Actions tab), rebuilds the network when it is older than 7 days (so new papers citing the author join it), builds the
   pages and publishes them to GitHub Pages.
 - Branch **`site`** (made and updated by the workflow, never edited by hand) — the generated files:
-  `index.html`, one `hep-ph-YYYY-MM-DD.html` per day (papers above the threshold, the network graph, then the next 20
-  papers by score in a collapsed list) and `network_<author>.json`, the compact network (own papers with ≤ 10 authors,
+  `index.html`, one `hep-ph-YYYY-MM-DD.html` per day (papers above the threshold, the network graph, then in a collapsed
+  list the papers below the threshold scoring at least `NEXT_MIN_SCORE`, and at least `NEXT_PAPERS` of them), `listings/<date>.json` (each day's
+  snapshot: its arXiv listing and every paper's INSPIRE id and INSPIRE reference ids; final once the day is 2 days old,
+  after which rebuilds reuse it as is and only redo the scoring; kept for the days shown) and `network_<author>.json`, the compact network (own papers with ≤ 10 authors,
   the papers most coupled to them, the important papers citing them and every paper citing them from the last 10 years
   and the current one), with the technical phrases they share most (used for the 10% "shared topics" part of
   the score). `main` holds only code and data, so forks can sync without conflicts.
@@ -65,9 +68,12 @@ is a repository variable.
 |---|---|---|
 | `ARXIV_CATEGORY` | `hep-ph` | arXiv listing to rank, e.g. `hep-th`, `astro-ph.CO`, `gr-qc`. |
 | `SCORE_THRESHOLD` | `10` | Papers scoring at least this (0–100) are listed in full on each day's page. |
-| `NEXT_PAPERS` | `20` | Papers just below the threshold shown in each page's folded list. |
+| `NEXT_MIN_SCORE` | `6` | The folded list below the threshold shows **every** paper scoring at least this… |
+| `NEXT_PAPERS` | `20` | …and **at least** this many papers, even if some score below `NEXT_MIN_SCORE` (they come after a "weaker relation" divider). About half the papers scoring 6–8 share a specific reference, coupling or topic with the network, and most above 8; below 6 few do, so 6 is the recommended minimum. |
 | `DAYS` | `5` | Announcement days shown on the site. |
 | `TIMEZONE` | `America/Bogota` | Time zone that decides which day is "today". |
+| `EXTRA_TOPICS` | (none) | Your **watch topics**: phrases you want to count in the shared-topics part even if your own papers don't use them, as `phrase=weight; phrase=weight` (weight 1 by default, at most 4; 2–5 words, no filler words such as "into"). Example: `neutrino portal=1; MeV dark matter=1.5`. Matching papers list them as "Your watch topics: …". The hep-ph-topic-boost skill suggests phrases and weights to lift a given paper. |
+| `TOPIC_HALF_LIFE` | `5` | Recent topics weigh more: in the shared-topics part of the score, a paper's use of a phrase counts half as much every this many years (`0` turns it off). Only the topic weights change, not the network. |
 
 The time of the daily run (21:17 Bogotá) is the one setting that cannot be a variable: GitHub needs
 it written in `.github/workflows/hep-ph-pages.yml` (`cron`, in UTC). Editing that line is fine, but it

@@ -71,6 +71,7 @@ input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid
 .nextlist{list-style:none;margin:0;padding:0 0 8px;display:grid}
 .nextlist li{display:grid;gap:4px;padding:12px 0;border-top:1px solid var(--line)}
 .nextlist .t{font-family:var(--f-display);font-weight:600;font-size:1.05rem;line-height:1.3}
+.nextlist .divider{display:block;padding:10px 0 8px;font-size:13px;color:var(--fg-3);border-top:2px dashed var(--line)}
 .nextlist .abs{font-size:14px}.nextlist .abs summary{cursor:pointer;color:var(--fg-3);font-size:13px}
 .toc{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
 .toc h3{font-size:1rem;margin:0 0 6px}
@@ -155,7 +156,7 @@ const NEWS=N.filter(isNew).sort((a,b)=>a.rank-b.rank);
 document.getElementById('eyebrow').innerHTML=`arXiv ${esc(M.cat)} · <a href="${esc(M.url)}" target="_blank" rel="noopener">${esc(M.date)}</a>`;
 document.getElementById('dek').textContent=`${M.nrel} of the ${M.nlist} papers in this listing (${M.counts.new} new, ${M.counts.cross} cross-lists, ${M.counts.replacement} replacements) score ${M.threshold} or more for belonging to the reference and citation network of your ${M.nown} papers and the ${M.next} papers by other authors around them. Highest score first.`;
 const T=!!M.topics;   // network file with shared phrases: 35/30/15/10 + 10% shared topics
-document.getElementById('foot').innerHTML=`<p><b>Score (0–100).</b> ${T?35:40}% direct citations of network papers (each of your papers counts 1, each other network paper 0.6, network papers with over 1,000 citations 0.06; saturating as 1 − e<sup>−x</sup>); ${T?30:35}% bibliographic coupling with your own papers (idf-weighted cosine of INSPIRE-linked reference sets, best match and mean of the top three, 0.30 = full marks); 15% best coupling with the other network papers (0.35 = full marks); 10% authorship (you, or your co-authors)${T?`; 10% shared topics: technical phrases of two or more words in the title and abstract that your papers and the network use much more often than hep-ph as a whole (each weighted by how much more, saturating as 1 − e<sup>−x/3</sup>)`:''}.</p>
+document.getElementById('foot').innerHTML=`<p><b>Score (0–100).</b> ${T?35:40}% direct citations of network papers (each of your papers counts 1, each other network paper 0.6, network papers with over 1,000 citations 0.06; saturating as 1 − e<sup>−x</sup>); ${T?30:35}% bibliographic coupling with your own papers (idf-weighted cosine of INSPIRE-linked reference sets, best match and mean of the top three, 0.30 = full marks); 15% best coupling with the other network papers (0.35 = full marks); 10% authorship (you, or your co-authors)${T?`; 10% shared topics: technical phrases of two or more words in the title and abstract that your papers and the network use much more often than hep-ph as a whole (each weighted by how much more${M.halfLife?`, with recent papers counting more: a paper's weight halves every ${M.halfLife} years`:''}; saturating as 1 − e<sup>−x/3</sup>)${(M.watch||[]).length?`, plus your watch topics (${M.watch.map(esc).join(', ')})`:''}`:''}.</p>
 <p><b>Data.</b> Network: INSPIRE records supplied with the project. Listing papers: INSPIRE records where already harvested (${M.onInspire} of ${M.nlist}); for the rest the reference list was read from the arXiv source and matched to INSPIRE by arXiv number, DOI and texkey. Only links between papers on this page are drawn. Built ${esc(M.built)}.</p>`;
 const P=['Direct citations','Coupling to your papers','Coupling to network','Authorship','Shared topics'];
 const PS=['Citations','Your papers','Network','Authors','Topics'];   // short labels for phones
@@ -240,8 +241,10 @@ svg.on('click',ev=>{if(ev.target.tagName!=='circle'){sel=null;panel();paint()}})
 let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw,200)});
 function nextList(){const X=RAW.next||[];if(!X.length)return;const box=document.getElementById('nextlist'),more=document.getElementById('more');
   more.hidden=false;more.querySelector('summary').firstChild.textContent=`The next ${X.length} papers by score `;
-  document.getElementById('moresub').textContent=`below the threshold of ${M.threshold}, not drawn in the network`;
-  box.innerHTML=X.map(n=>`<li><div class="role" style="color:var(--${n.section==='replacement'?'repl':'today'})">#${n.rank} · ${esc(SEC[n.section])} · score ${n.score.toFixed(1)}</div>
+  const nmin=M.nextMin;
+  document.getElementById('moresub').textContent=`below the threshold of ${M.threshold}${nmin!=null?`: every paper scoring ${nmin} or more, and at least ${M.nextCount} when available`:''}; not drawn in the network`;
+  const cut=nmin!=null?X.findIndex(n=>n.score<nmin):-1;
+  box.innerHTML=X.map((n,i)=>(i===cut?`<li class="divider">Below ${nmin}: weaker relation (most of these share no specific reference, coupling or topic with your work)</li>`:'')+`<li><div class="role" style="color:var(--${n.section==='replacement'?'repl':'today'})">#${n.rank} · ${esc(SEC[n.section])} · score ${n.score.toFixed(1)}</div>
     <div class="t">${esc(n.title)}</div><div class="authors">${authors(n.authors)} · arXiv:${esc(n.arxiv)}</div>
     ${n.note?`<p class="why">${why(n.note)}</p>`:''}
     <details class="abs"><summary>Abstract</summary><p class="abs">${esc(n.abstract)}</p></details>

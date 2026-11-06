@@ -108,10 +108,14 @@ def phrases(own, ext, a, log):
     """Phrases shared by >= a.phrase_min_own own papers and >= a.phrase_min_other others, weighted by how much more
     often the network uses them (own papers count a.phrase_own_weight times) than all of a.phrase_category."""
     df = {}
+    yrs = {}     # years of the own (0) and other (1) papers using each phrase: the matcher weighs recent ones more
+    year = lambda m: int((m.get("earliest_date") or "0")[:4] or 0)
     for k, ms in ((0, own), (1, ext)):
         for m in ms:
             text = m["titles"][0]["title"] + " . " + " ".join(x["value"] for x in m.get("abstracts", [])[:1])
-            for g in grams(text): df.setdefault(g, [0, 0])[k] += 1
+            for g in grams(text):
+                df.setdefault(g, [0, 0])[k] += 1
+                yrs.setdefault(g, ([], []))[k].append(year(m))
     W, NO, NE = a.phrase_own_weight, len(own), len(ext)
     share = lambda c: (W * c[0] + c[1]) / (W * NO + NE)
     cand = {g: c for g, c in df.items() if c[0] >= a.phrase_min_own and c[1] >= a.phrase_min_other and g not in GENERIC}
@@ -135,9 +139,12 @@ def phrases(own, ext, a, log):
         d = get({"q": q, "size": 1, "fields": "control_number"}); time.sleep(0.3)
         bg = d["hits"]["total"] if d else total
         w = min(4.0, max(0.0, math.log(share(c) / (max(bg, 1) / total)) - math.log(3)))   # 0 below 3x enrichment
-        if w > 0: out.append([g, round(w, 3), c[0], c[1], bg])
-    log(f"shared phrases: {len(keep)}; {len(out)} enriched over {a.phrase_category} (background {total} papers since {since})")
-    return {"category": a.phrase_category, "since": since, "total": total, "list": out}
+        out.append([g, round(w, 3), c[0], c[1], bg, sorted(yrs[g][0]), sorted(yrs[g][1])])
+    log(f"shared phrases: {len(out)}; {sum(x[1] > 0 for x in out)} enriched over {a.phrase_category} without recency "
+        f"(background {total} papers since {since})")
+    return {"category": a.phrase_category, "since": since, "total": total, "own_weight": W,
+            "years": {"own": sorted(year(m) for m in own), "other": sorted(year(m) for m in ext)},
+            "fields": ["phrase", "weight", "own", "other", "background", "own_years", "other_years"], "list": out}
 
 def main():
     ap = argparse.ArgumentParser()

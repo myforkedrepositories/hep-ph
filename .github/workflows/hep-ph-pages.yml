@@ -38,9 +38,12 @@ env:
   # listing (a change rebuilds the pages on the next run)
   ARXIV_CATEGORY: ${{ vars.ARXIV_CATEGORY || 'hep-ph' }}
   SCORE_THRESHOLD: ${{ vars.SCORE_THRESHOLD || '10' }}
-  NEXT_PAPERS: ${{ vars.NEXT_PAPERS || '20' }}              # papers in each page's folded "next" list
+  NEXT_MIN_SCORE: ${{ vars.NEXT_MIN_SCORE || '6' }}        # folded list: every paper scoring at least this...
+  NEXT_PAPERS: ${{ vars.NEXT_PAPERS || '20' }}              # ...and at least this many papers in the folded list
   DAYS: ${{ vars.DAYS || '5' }}                             # announcement days shown
   TIMEZONE: ${{ vars.TIMEZONE || 'America/Bogota' }}        # decides which day is "today"
+  EXTRA_TOPICS: ${{ vars.EXTRA_TOPICS || '' }}              # your watch topics: 'phrase[=weight]; ...'
+  TOPIC_HALF_LIFE: ${{ vars.TOPIC_HALF_LIFE || '5' }}       # years for a paper's weight in the shared topics to halve (0: off)
   SITE_BRANCH: site
 
 jobs:
@@ -92,7 +95,7 @@ jobs:
               n = json.load(open(p)); q = n.get("params", {})
               want = {"recent_years": int(E["RECENT_YEARS"]), "max_authors": int(E["MAX_AUTHORS"]), "top": int(E["COUPLED_PER_PAPER"])}
               age = (datetime.date.today() - datetime.date.fromisoformat(n["built"])).days
-              diff = [k for k, v in want.items() if q.get(k) != v] + ([] if "phrases" in n else ["phrases"])
+              diff = [k for k, v in want.items() if q.get(k) != v] + ([] if "years" in n.get("phrases", {}) else ["phrases with years"])
               print(f"settings changed: {diff}" if diff else f"{age} days old" if age > int(E["NETWORK_MAX_AGE"]) else "no")
           EOF
           )
@@ -108,7 +111,8 @@ jobs:
       - name: Build the daily pages and the index (hep-ph-network-match)
         run: |
           python3 -I tools/build_site.py --network "$NETWORK" --site site --include-today --days "$DAYS" \
-            --category "$ARXIV_CATEGORY" --threshold "$SCORE_THRESHOLD" --next "$NEXT_PAPERS" --tz "$TIMEZONE"
+            --category "$ARXIV_CATEGORY" --threshold "$SCORE_THRESHOLD" --next "$NEXT_PAPERS" --next-min-score "$NEXT_MIN_SCORE" --tz "$TIMEZONE" \
+            --topic-half-life "$TOPIC_HALF_LIFE" --extra-topics "$EXTRA_TOPICS"
 
       - name: Save the site on its branch
         working-directory: site

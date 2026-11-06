@@ -14,7 +14,7 @@
             arxiv.org/list/<cat>/recent dated before today in --tz; 'latest' = arxiv.org/list/<cat>/new
 If the catchup page for --date is refused, the day's new submissions and cross-lists are read from
 arxiv.org/list/<cat>/recent instead (replacements are then missing).
-Writes PAGE.html (self-contained page, with the next --next (20) papers below the threshold in a collapsed
+Writes PAGE.html (self-contained page, with the papers below the threshold (>= --next-min-score, at least --next) in a collapsed
 list) and PAGE.json (all scored papers).
 """
 import argparse, gzip, io, json, math, os, re, sys, tarfile, time, unicodedata
@@ -74,7 +74,7 @@ def listing(cat, date, work, recent_html=None):
         out = from_recent(cat, date, recent_html)
         if not out: sys.exit(f"could not fetch {url}, and {date} is not in the recent listing")
         print(f"[warn] {url} refused; using the recent listing (no replacements)", file=sys.stderr)
-        return out, time.strftime("%A, %d %B %Y", time.strptime(date, "%Y-%m-%d")), url
+        return out, time.strftime("%A, %d %B %Y", time.strptime(date, "%Y-%m-%d")), url, False
     if not h: sys.exit(f"could not fetch {url}")
     open(os.path.join(work, "listing.html"), "w").write(h)
     m = re.search(r"(?:Showing new listings for|New submissions for)\s*([^<]+)", h)
@@ -89,7 +89,33 @@ def listing(cat, date, work, recent_html=None):
         for a in re.findall(r'href\s*=\s*"/abs/(\d{4}\.\d{4,5})', parts[i + 1]):
             if a not in seen: seen.add(a); out.append({"arxiv": a, "section": sec})
     if not out: sys.exit(f"no papers found in {url} (no announcement that day?)")
-    return out, label, url
+    return out, label, url, True
+
+def day_listing(a):
+    """The day's papers: a saved complete listing (--listing-cache) when there is one, so later rebuilds do not
+    depend on arXiv; otherwise arXiv, and when arXiv refuses the day's page, the largest of the recent-listing
+    fallback, an earlier saved listing and the day's previous page. Returns (papers, label, url, complete, source)."""
+    cache = load_json(a.listing_cache) if a.listing_cache and os.path.exists(a.listing_cache) else None
+    if cache and cache.get("complete"):
+        return [dict(o) for o in cache["papers"]], cache["label"], cache["url"], True, "saved listing"
+    try:
+        L, label, url, complete = listing(a.category, a.date, a.work, a.recent_html)
+    except SystemExit as e:
+        if not a.date: raise
+        print(f"[warn] {e}", file=sys.stderr)
+        L, label, url, complete = [], time.strftime("%A, %d %B %Y", time.strptime(a.date, "%Y-%m-%d")), \
+            f"https://arxiv.org/catchup/{a.category}/{a.date}", False
+    if complete: return L, label, url, True, "arXiv"
+    prev = os.path.splitext(a.out)[0] + ".json"
+    others = [("saved listing", (cache or {}).get("papers", []))]
+    if os.path.exists(prev):
+        others.append(("previous page", [{"arxiv": r["arxiv"], "section": r["section"]} for r in load_json(prev)]))
+    name, best = max(others, key=lambda x: len(x[1]))
+    if len(best) > len(L):
+        print(f"[warn] using the {name} ({len(best)} papers) instead of the recent listing ({len(L)})", file=sys.stderr)
+        return [dict(o) for o in best], label, url, False, name
+    if not L: sys.exit(f"no papers for {a.date}: arXiv refused the day's page and nothing was saved")
+    return L, label, url, False, "recent listing"
 
 def arxiv_meta(ids):
     ns = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
@@ -273,11 +299,45 @@ def grams(text):
                 out.add(" ".join(g))
     return out
 
+def watch_topics(spec):
+    """Parse --extra-topics 'phrase[=weight]; ...' into {normalized phrase: weight} (default weight 1, at most 4).
+    Phrases are normalized like the network's (plurals, British spelling) and must have 2-5 words."""
+    out = {}
+    for item in (spec or "").replace("\n", ";").split(";"):
+        if not item.strip(): continue
+        ph, _, w = item.partition("=")
+        toks = [norm_tok(t.strip("-'")) for t in re.split(r"[^a-z0-9'\- ]+", ph.lower().replace("\u2019", "'"))[0].split()
+                if t.strip("-'")] if ph.strip() else []
+        if not 2 <= len(toks) <= 5:
+            print(f"[warn] watch topic ignored (2-5 words): {ph.strip()!r}", file=sys.stderr); continue
+        if toks[0] in STOP or toks[-1] in STOP or any(t in STOP and t not in ("of", "and") for t in toks[1:-1]):
+            print(f"[warn] watch topic ignored (filler words such as 'into' or 'the' never match): {ph.strip()!r}",
+                  file=sys.stderr); continue
+        try: wt = float(w) if w.strip() else 1.0
+        except ValueError: wt = 1.0
+        out[" ".join(toks)] = max(0.0, min(4.0, wt))
+    return out
+
+def recent_weights(phrases, half_life, now):
+    """Recompute the phrases' weights counting each paper 0.5**(age/half_life) (own papers still own_weight
+    times), from the years stored by build_network.py; the network itself is unchanged. Old files: as stored."""
+    if not phrases or half_life <= 0 or "years" not in phrases: return phrases
+    r = lambda y: 0.5 ** (max(0, now - y) / half_life)
+    W = phrases.get("own_weight", 5); Y = phrases["years"]
+    tot = W * sum(map(r, Y["own"])) + sum(map(r, Y["other"])); total = phrases["total"]
+    out = []
+    for p, w0, no, ne, bg, yo, ye in phrases["list"]:
+        share = (W * sum(map(r, yo)) + sum(map(r, ye))) / tot
+        w = min(4.0, max(0.0, math.log(share / (max(bg, 1) / total)) - math.log(3))) if share > 0 else 0.0
+        out.append([p, round(w, 3), no, ne, bg, yo, ye])
+    return {**phrases, "list": out, "half_life": half_life}
+
 # ---------- 4. score ----------
-def score_all(rows, net, co, me_name, phrases=None):
+def score_all(rows, net, co, me_name, phrases=None, watch=None):
     """Score 0-100. With the network's phrases: 35% direct citations, 30% coupling to own papers, 15% coupling to the
     network, 10% authorship, 10% shared topics; without them (older network file): 40/35/15/10."""
     P = {p: w for p, w, *_ in (phrases or {}).get("list", [])}
+    for p, w in (watch or {}).items(): P[p] = max(P.get(p, 0.0), w)     # your watch topics
     D = len(net); df = Counter()
     for v in net.values(): df.update(v["refs"])
     idf = lambda x: math.log((D + 1) / (df.get(x, 0) + 1)) + 1.0
@@ -304,7 +364,8 @@ def score_all(rows, net, co, me_name, phrases=None):
         parts = (s_dir, s_cpl, s_cplE, s_auth) + ((s_top,) if P else ())
         wts = (0.35, 0.30, 0.15, 0.10, 0.10) if P else (0.40, 0.35, 0.15, 0.10)
         r.update(citR=citR, citE=citE, topR=topR, topE=topE, isme=isme, coauthors=coa,
-                 topics=[p for p in tm if P[p] >= 0.3], parts=[round(x, 2) for x in parts],
+                 topics=[p for p in tm if P[p] >= 0.3 and p not in (watch or {})],
+                 watch=[p for p in tm if p in (watch or {})], parts=[round(x, 2) for x in parts],
                  score=round(100 * sum(w * x for w, x in zip(wts, parts)), 1))
     rows.sort(key=lambda r: -r["score"])
 
@@ -325,9 +386,10 @@ def why(r, net):
         if c > 0: bits.append(f"Closest {'of ' if who == 'your papers' else ''}{who}: {lab(b)} "
                               f"(coupling {c:.2f}, {len(refs & net[b]['refs'])} shared references).")
     if r.get("topics"): bits.append("Shared topics: " + ", ".join(r["topics"][:5]) + ".")
+    if r.get("watch"): bits.append("Your watch topics: " + ", ".join(r["watch"]) + ".")
     return " ".join(bits)
 
-def build(rows, net, th, meta, out, nnext=20):
+def build(rows, net, th, meta, out, nnext=20, nmin=6.0):
     rel = [r for r in rows if r["score"] >= th]
     nodes, edges = {}, set()
     for rank, r in enumerate(rel, 1):
@@ -359,7 +421,8 @@ def build(rows, net, th, meta, out, nnext=20):
     nxt = [{"arxiv": r["arxiv"], "id": r["recid"], "title": r["title"], "authors": ", ".join(r["authors"]),
             "score": r["score"], "section": r["section"], "rank": len(rel) + j, "parts": r["parts"],
             "note": why(r, net), "abstract": r["abstract"]}
-           for j, r in enumerate((r for r in rows if r["score"] < th), 1) if j <= nnext]
+           # below the threshold: every paper scoring at least nmin, and at least nnext papers in all
+           for j, r in enumerate((r for r in rows if r["score"] < th), 1) if j <= nnext or r["score"] >= nmin]
     keys = list(nodes); idx = {k: i for i, k in enumerate(keys)}
     cited = {k for x in [nd.get("note", "") for nd in nodes.values()] + [x["note"] for x in nxt] for k in re.findall(r"\[\[(\d+)\]\]", x)}
     refs = {k: {"first": net[k]["first"], "year": net[k]["year"], "nauth": net[k]["nauth"], "title": net[k]["title"],
@@ -381,10 +444,21 @@ def main():
     ap.add_argument("--date", help="YYYY-MM-DD, 'yesterday' (default) or 'latest'")
     ap.add_argument("--tz", default="America/Bogota"); ap.add_argument("--category", default="hep-ph")
     ap.add_argument("--threshold", type=float, default=10)
-    ap.add_argument("--next", type=int, default=20, help="papers below the threshold shown in the collapsed list")
+    ap.add_argument("--extra-topics", default="", help="your watch topics: 'phrase[=weight]; ...' (weight 1 by default, "
+                    "at most 4) added to the network's shared topics")
+    ap.add_argument("--topic-half-life", type=float, default=5,
+                    help="years for a paper's weight in the shared topics to halve (0: no recency weighting)")
+    ap.add_argument("--next", type=int, default=20, help="at least this many papers below the threshold in the folded list")
+    ap.add_argument("--next-min-score", type=float, default=6,
+                    help="the folded list also has every paper scoring at least this (below the threshold)")
     ap.add_argument("--sections", default="new,cross,replacement")
     ap.add_argument("--author-recid", default="991924"); ap.add_argument("--author-name", help="default: read from the network file or the author's INSPIRE records")
     ap.add_argument("--work", default="hepph_work"); ap.add_argument("--out", required=True)
+    ap.add_argument("--listing-cache", help="JSON snapshot of the day: its papers (arXiv number, section) and each "
+                    "paper's INSPIRE id, reference ids, title, authors and abstract; a complete listing is reused, and a "
+                    "final snapshot (see --final) is reused as is, with no arXiv or INSPIRE requests")
+    ap.add_argument("--final", action="store_true",
+                    help="the day is settled: mark the saved snapshot final if its listing was complete")
     ap.add_argument("--recent-html", help="saved arxiv.org/list/<cat>/recent?show=2000 page, used if the catchup page is refused")
     a = ap.parse_args()
     a.author_name_given = any(x.startswith("--author-name") for x in sys.argv)
@@ -392,31 +466,54 @@ def main():
     os.makedirs(os.path.join(a.work, "src"), exist_ok=True)
     if a.date in (None, "", "yesterday"): a.date = previous_day(a.category, a.tz)
     elif a.date == "latest": a.date = None
-    L, label, url = listing(a.category, a.date, a.work, a.recent_html)
     a.out = a.out.replace("{date}", a.date or time.strftime("%Y-%m-%d"))
-    A = arxiv_meta([o["arxiv"] for o in L])
-    for o in L:   # recent-listing fallback: new submission if the primary category is ours, else cross-list
-        if o.pop("guess", False) and A.get(o["arxiv"], {}).get("primary", a.category) != a.category: o["section"] = "cross"
-    secs = set(a.sections.split(",")); L = [o for o in L if o["section"] in secs]
-    ids = [o["arxiv"] for o in L]
-    print(f"{label}: {len(ids)} papers {dict(Counter(o['section'] for o in L))}", file=sys.stderr)
-    F = inspire_records(ids)
-    print(f"INSPIRE has {len(F)} of {len(ids)}; reading arXiv sources for the rest", file=sys.stderr)
-    raw = {x: refs_from_source(x, os.path.join(a.work, "src")) for x in ids if x not in F}
-    R = resolve(raw)
-    rows = []
-    for o in L:
-        x = o["arxiv"]; m = A.get(x, {})
-        if x in F:
-            refs = {recid(r) for r in F[x].get("references", []) if "record" in r}
-            nref, rid, src = len(F[x].get("references", [])), str(F[x]["control_number"]), "INSPIRE"
-            if not m:
-                m = {"title": F[x]["titles"][0]["title"], "abstract": (F[x].get("abstracts") or [{"value": ""}])[0]["value"],
-                     "authors": [" ".join(reversed(au["full_name"].split(", ", 1))) for au in F[x].get("authors", [])]}
-        else:
-            nref, refs = R.get(x, (0, set())); rid, src = "", "arXiv source"
-        rows.append({"arxiv": x, "section": o["section"], "recid": rid, "src": src, "nref": nref, "refs": refs,
-                     "title": m.get("title", x), "authors": m.get("authors", []), "abstract": m.get("abstract", "")})
+    cache = load_json(a.listing_cache) if a.listing_cache and os.path.exists(a.listing_cache) else None
+    secs = set(a.sections.split(","))
+    if cache and cache.get("final") and cache.get("refs_saved"):
+        # definitive snapshot: the day's papers with their INSPIRE ids and reference ids; nothing is fetched again
+        label, url = cache["label"], cache["url"]
+        rows = [{"arxiv": p["arxiv"], "section": p["section"], "recid": p.get("recid", ""), "src": p["src"],
+                 "nref": p["nref"], "refs": set(p["refs"]), "title": p["title"], "authors": p["authors"],
+                 "abstract": p["abstract"]} for p in cache["papers"] if p["section"] in secs]
+        on_inspire = sum(r["src"] == "INSPIRE" for r in rows)
+        print(f"{label}: {len(rows)} papers from the final snapshot saved {cache.get('saved')} "
+              f"(no arXiv or INSPIRE requests)", file=sys.stderr)
+    else:
+        L, label, url, complete, lsource = day_listing(a)
+        A = arxiv_meta([o["arxiv"] for o in L])
+        for o in L:   # recent-listing fallback: new submission if the primary category is ours, else cross-list
+            if o.pop("guess", False) and A.get(o["arxiv"], {}).get("primary", a.category) != a.category: o["section"] = "cross"
+        L = [o for o in L if o["section"] in secs]
+        ids = [o["arxiv"] for o in L]
+        print(f"{label}: {len(ids)} papers {dict(Counter(o['section'] for o in L))}", file=sys.stderr)
+        F = inspire_records(ids); on_inspire = len(F)
+        print(f"INSPIRE has {len(F)} of {len(ids)}; reading arXiv sources for the rest", file=sys.stderr)
+        raw = {x: refs_from_source(x, os.path.join(a.work, "src")) for x in ids if x not in F}
+        R = resolve(raw)
+        rows = []
+        for o in L:
+            x = o["arxiv"]; m = A.get(x, {})
+            if x in F:
+                refs = {recid(r) for r in F[x].get("references", []) if "record" in r}
+                nref, rid, src = len(F[x].get("references", [])), str(F[x]["control_number"]), "INSPIRE"
+                if not m:
+                    m = {"title": F[x]["titles"][0]["title"], "abstract": (F[x].get("abstracts") or [{"value": ""}])[0]["value"],
+                         "authors": [" ".join(reversed(au["full_name"].split(", ", 1))) for au in F[x].get("authors", [])]}
+            else:
+                nref, refs = R.get(x, (0, set())); rid, src = "", "arXiv source"
+            rows.append({"arxiv": x, "section": o["section"], "recid": rid, "src": src, "nref": nref, "refs": refs,
+                         "title": m.get("title", x), "authors": m.get("authors", []), "abstract": m.get("abstract", "")})
+        if a.listing_cache and a.date:
+            # snapshot of the listing and each paper's references; final (reused as is by later rebuilds) once the
+            # day is settled (--final) and the listing was complete
+            os.makedirs(os.path.dirname(a.listing_cache) or ".", exist_ok=True)
+            json.dump({"date": a.date, "label": label, "url": url, "complete": complete, "source": lsource,
+                       "final": bool(a.final and complete), "refs_saved": True, "saved": time.strftime("%Y-%m-%d"),
+                       "on_inspire": on_inspire,
+                       "papers": [{"arxiv": r["arxiv"], "section": r["section"], "recid": r["recid"], "src": r["src"],
+                                   "nref": r["nref"], "refs": sorted(r["refs"], key=int), "title": r["title"],
+                                   "authors": r["authors"], "abstract": r["abstract"]} for r in rows]},
+                      open(a.listing_cache, "w"), ensure_ascii=False, separators=(",", ":"))
     if not a.network and not a.own:
         a.own = os.path.join(a.work, "own.json")
         if not os.path.exists(a.own):
@@ -425,14 +522,17 @@ def main():
             if not t: sys.exit("could not download the own papers from INSPIRE")
             open(a.own, "w").write(t)
     net, co, nname, nrecid = network(a.network or a.own, a.external, a.author_recid)
-    phrases = load_json(a.network).get("phrases") if a.network else None
+    phrases = recent_weights(load_json(a.network).get("phrases") if a.network else None,
+                             a.topic_half_life, int(time.strftime("%Y")))
     if nname and not a.author_name_given: a.author_name, a.author_recid = nname, nrecid
-    score_all(rows, net, co, a.author_name or "", phrases)
-    yr = int("20" + ids[0][:2]) if ids else int(time.strftime("%Y"))
+    watch = watch_topics(a.extra_topics)
+    score_all(rows, net, co, a.author_name or "", phrases, watch)
+    yr = int("20" + rows[0]["arxiv"][:2]) if rows else int(time.strftime("%Y"))
     meta = {"date": label, "url": url, "cat": a.category, "year": yr, "built": time.strftime("%Y-%m-%d"), "topics": bool(phrases),
+            "halfLife": (phrases or {}).get("half_life"), "watch": sorted(watch), "nextMin": a.next_min_score, "nextCount": a.next,
             "nown": sum(1 for v in net.values() if v["kind"] == "R"), "next": sum(1 for v in net.values() if v["kind"] == "E"),
-            "onInspire": len(F)}
-    nr, nn, ne = build(rows, net, a.threshold, meta, a.out, a.next)
+            "onInspire": on_inspire}
+    nr, nn, ne = build(rows, net, a.threshold, meta, a.out, a.next, a.next_min_score)
     json.dump([{**{k: v for k, v in r.items() if k not in ("refs",)},
                 "topR": [(round(c, 3), k) for c, k in r["topR"][:3]], "topE": [(round(c, 3), k) for c, k in r["topE"][:3]]}
                for r in rows], open(os.path.splitext(a.out)[0] + ".json", "w"), ensure_ascii=False, indent=0)
