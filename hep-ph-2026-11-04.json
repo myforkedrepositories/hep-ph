@@ -18,8 +18,8 @@
 "2181757",
 "3076216",
 "1894389",
-"2935598",
 "2908650",
+"2935598",
 "2838981",
 "2780809",
 "1873918"
@@ -352,15 +352,15 @@
 ],
 "topE": [
 [
-0.197,
+0.193,
 "3115042"
 ],
 [
-0.062,
+0.061,
 "1850952"
 ],
 [
-0.06,
+0.059,
 "3214448"
 ]
 ],
@@ -372,11 +372,11 @@
 "parts": [
 0.0,
 0.08,
-0.56,
+0.55,
 0.5,
 0.0
 ],
-"score": 15.8
+"score": 15.5
 },
 {
 "arxiv": "2611.03893",
@@ -448,7 +448,9 @@
 "title": "Light Mediators at the Neutrino-Dark Matter Frontier: Coherent Scattering, Precision Constraints, and Complementary Searches",
 "authors": [
 "Raoul Serao",
-"Mohamed Ouchemhou"
+"Mohamed Ouchemhou",
+"Antonio Capolupo",
+"Salvatore Capozziello"
 ],
 "abstract": "Low-threshold neutrino and dark-matter experiments constrain light mediators through different momentum transfers, targets, and coupling combinations. We examine scalar and vector interactions in coherent neutrino--nucleus scattering, neutrino--electron scattering, and dark-matter direct detection. Three representative interaction models are used to compare recoil spectra and coupling degeneracies. For $^{73}\\mathrm{Ge}$ and $^{131}\\mathrm{Xe}$, the nuclear-charge response matrix has a condition number of approximately 115, so two different targets may still leave nearly parallel blind directions. An analytic profile-likelihood calculation shows how spectral overlap and uncertainties in neutrino interactions affect dark-matter discovery sensitivity in the neutrino fog. We discuss the implications of measurements from COHERENT, CONUS+, LZ, XENONnT, and PandaX-4T and specify which theoretical inputs, detector responses, and statistical correlations are needed to combine their constraints. keyword : coherent elastic neutrino-nucleus scattering; light mediators; neutrino--electron scattering; dark matter direct detection; non-standard interactions; solar neutrinos; complementarity",
 "citR": [],

@@ -1716,8 +1716,8 @@
 {
 "arxiv": "2610.42103",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3223702",
+"src": "INSPIRE",
 "nref": 57,
 "title": "Charge Pumping Leptogenesis from the Symmetric Mass Generation Phase on a Four-Leg Ladder Lattice",
 "authors": [
@@ -2409,11 +2409,11 @@
 ],
 [
 0.011,
-"1688995"
+"2817040"
 ],
 [
 0.011,
-"2817040"
+"1688995"
 ]
 ],
 "isme": false,
@@ -2422,7 +2422,7 @@
 "parts": [
 0.0,
 0.0,
-0.04,
+0.03,
 0.0,
 0.0
 ],

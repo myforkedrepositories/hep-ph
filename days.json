@@ -1,8 +1,36 @@
 [
  {
+  "date": "2026-11-06",
+  "page": "hep-ph-2026-11-06.html",
+  "built": "2026-11-06",
+  "code": "cefd75cca98c",
+  "nlist": 51,
+  "nrel": 16,
+  "top": [
+   {
+    "arxiv": "2611.08440",
+    "title": "Signatures of Neutrinophilic Pion Dark Matter",
+    "score": 90.4,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.07509",
+    "title": "Scale-Invariant Three-Component Dark Matter and Gravitational Wave Signals",
+    "score": 77.1,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.08187",
+    "title": "Light Primordial Black Holes from a First-Order Phase Transition near the End of Inflation: Baryogenesis and Gravitational Wave Signatures",
+    "score": 55.9,
+    "section": "new"
+   }
+  ]
+ },
+ {
   "date": "2026-11-05",
   "page": "hep-ph-2026-11-05.html",
-  "built": "2026-11-05",
+  "built": "2026-11-06",
   "code": "cefd75cca98c",
   "nlist": 39,
   "nrel": 8,
@@ -30,7 +58,7 @@
  {
   "date": "2026-11-04",
   "page": "hep-ph-2026-11-04.html",
-  "built": "2026-11-05",
+  "built": "2026-11-06",
   "code": "cefd75cca98c",
   "nlist": 44,
   "nrel": 8,
