@@ -2,8 +2,8 @@
 {
 "arxiv": "2611.08440",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3225492",
+"src": "INSPIRE",
 "nref": 93,
 "title": "Signatures of Neutrinophilic Pion Dark Matter",
 "authors": [
@@ -13,14 +13,14 @@
 ],
 "abstract": "We study the phenomenology of pion dark matter coupled to neutrinos in a confining sector that dynamically generates both small neutrino masses and dark matter mass from gauge confinement. Dark matter semi-annihilation to active neutrinos or annihilation to light sterile neutrinos can reproduce the observed relic abundance through thermal freeze-out while satisfying constraints from self-interactions. In the first scenario, semi-annihilations of sub-GeV dark matter in the galactic halo produce a flux of antineutrinos which can provide a viable interpretation for the mild electron antineutrino excess reported by the Super-Kamiokande collaboration. We assess the potential of the JUNO detector to test this interpretation. In the second scenario, light sterile neutrinos can leave signatures through displaced vertex searches at accelerator facilities.",
 "citR": [
-"2787890",
-"2964960"
+"2964960",
+"2787890"
 ],
 "citE": [
 "3210992",
 "3091093",
-"3115042",
 "3178478",
+"3115042",
 "2750604",
 "1515160",
 "1607799"
@@ -79,7 +79,7 @@
 "section": "replacement",
 "recid": "3179642",
 "src": "INSPIRE",
-"nref": 129,
+"nref": 132,
 "title": "Leptogenesis with sub-electroweak-scale reheating temperature",
 "authors": [
 "Basabendu Barman",
@@ -88,8 +88,11 @@
 "Nayan Das"
 ],
 "abstract": "We study the generation of the baryon asymmetry of the Universe via leptogenesis during the post-inflationary reheating epoch, considering reheating temperatures below the temperature of sphaleron freeze-out. Within the framework of a monomial inflaton potential during reheating, we analyze three perturbative reheating scenarios in which the inflaton decays into (i) a pair of Standard Model (SM)-like bosons, (ii) a pair of SM-like fermions, or (iii) exclusively into a pair of heavy right-handed neutrinos, which eventually decays into the SM final states after briefly dominating the energy density of the Universe. For each case, we identify the regions of parameter space that successfully reproduce the observed baryon asymmetry consistently tracking the sphaleron interaction rate during reheating, while satisfying existing cosmological constraints. We also highlight the potential of future primordial gravitational wave observations to probe this class of scenarios.",
-"citR": [],
+"citR": [
+"3184726"
+],
 "citE": [
+"3210485",
 "2956181",
 "2842814",
 "2820703",
@@ -102,29 +105,29 @@
 ],
 "topR": [
 [
-0.228,
+0.223,
 "2663002"
 ],
 [
-0.157,
+0.153,
 "3184726"
 ],
 [
-0.139,
+0.136,
 "2627241"
 ]
 ],
 "topE": [
 [
-0.618,
+0.604,
 "2842814"
 ],
 [
-0.345,
+0.351,
 "3210485"
 ],
 [
-0.313,
+0.306,
 "2767185"
 ]
 ],
@@ -140,12 +143,12 @@
 "watch": [],
 "parts": [
 1.0,
-0.69,
+0.67,
 1,
 0.5,
 0.85
 ],
-"score": 84.0
+"score": 83.6
 },
 {
 "arxiv": "2611.07509",
@@ -160,22 +163,22 @@
 ],
 "abstract": "We study a classically scale-invariant extension of the Standard Model (SM) with four new fields in a hidden sector: a complex scalar $S$, two Dirac fermions $ψ^{1,2}$ and the gauge boson $V_μ$ of a new $U(1)_D$ symmetry. The scalar $S$ couples to the SM through the Higgs portal. We identify regions of parameter space in which $V_μ$, $ψ^1$ and $ψ^2$ are all stable, giving a three-component dark matter (DM) scenario. The model is classically scale invariant, and the electroweak symmetry breaks because of the loop effects. We impose the observed relic density and current direct detection bounds, and then study the finite temperature effective potential. For a benchmark point, we find a first-order phase transition and compute the resulting gravitational wave (GW) spectrum, which we compare with the projected sensitivities of space-based interferometers. Although the viable parameter space is small, it can be probed by future experiments.",
 "citR": [
-"1869725",
-"1686334",
-"1803365",
 "1764733",
-"1990302"
+"1990302",
+"1803365",
+"1686334",
+"1869725"
 ],
 "citE": [
+"2921478",
 "3221793",
 "3183927",
-"2921478",
 "2843521",
-"3131565",
-"3117718",
 "3094784",
-"2918610",
+"3117718",
+"3131565",
 "3063360",
+"2918610",
 "2807770",
 "2684223",
 "2862278",
@@ -250,9 +253,9 @@
 ],
 "abstract": "We study dark matter production in a renormalisable $\\mathbb{Z}_4$ Higgs-portal model containing a complex scalar $S_A$ and a real scalar $S_B$, where one or both states remain out of thermal equilibrium with the Standard Model bath. We follow their coupled evolution through conversion, semi-annihilation, and the decay $S_B\\to S_A S_A$ when kinematically allowed. We impose theoretical consistency conditions, limits on invisible Higgs decays, and LZ direct-detection bounds, accounting for each component's relic fraction. We check WIMP/FIMP assignments against interaction rates. When both states are stable, we find viable FIMP--FIMP and mixed WIMP--FIMP scenarios. In mixed cases, the WIMP-like state remains constrained by its Higgs-portal interactions, with the surviving points mainly concentrated near the Higgs resonance. The FIMP-like state can, however, provide a substantial fraction of the relic density with a negligible direct-detection signal. For $M_{S_B}>2M_{S_A}$, the decay of the heavier scalar leads to three production histories: SuperWIMP production, injection-assisted freeze-out, and sequential freeze-in. The mechanism depends on parent and daughter production. These decays can increase the abundance of a WIMP after freeze-out or contribute to the final abundance of a FIMP, changing the relation between the daughter's Higgs coupling and its relic density. Since the primary decays produce no Standard Model particles, electromagnetic and hadronic BBN bounds on visible decay products do not apply directly. We find $r_{\\rm BBN}\\ll1$ throughout the retained sample. To assess effects on structure formation, we use the dark matter fraction produced through decays and an equivalent thermal-WDM mass as approximate diagnostics. Some late-decay configurations are flagged as potentially warm, whereas the sequential freeze-in sample satisfies $m_{\\rm WDM}^{\\rm eq}\\gtrsim1~\\mathrm{MeV}$.",
 "citR": [
-"1869725",
+"1764733",
 "2686856",
-"1764733"
+"1869725"
 ],
 "citE": [
 "2895388",
@@ -395,7 +398,7 @@
 "section": "replacement",
 "recid": "3190925",
 "src": "INSPIRE",
-"nref": 96,
+"nref": 112,
 "title": "Spontaneous Scoto-leptogenesis",
 "authors": [
 "Arghyajit Datta",
@@ -403,8 +406,11 @@
 "Jun-Ho Song"
 ],
 "abstract": "We propose a low-scale spontaneous leptogenesis scenario within the dynamical minimal scotogenic model for accommodating neutrino masses and inert scalar dark matter simultaneously. Thus, we dub the mechanism Spontaneous Scoto-leptogenesis. In this setup, a rolling Majoron arising from the global $U(1)_{B-L}$ symmetry breaking induces an effective chemical potential for the $B-L$ charge in the presence of $B-L$ violating interactions that allow for the efficient decays and inverse decays of right handed neutrinos (RHN) and RHN mediated scattering, so it gives rise to the observed baryon asymmetry of the Universe through the electroweak sphaleron conversion. The mechanism becomes effective in the strong washout regime and successfully lowers the viable mass scale of the lightest RHN to the range of TeV scales, thereby making the thermal scotogenic leptogenesis with two hierarchical RHNs accessible to direct tests. We identify the roles of the $λ_5$ coupling for spontaneous leptogenesis and inert scalar dark matter through the efficient erasure of the inert scalar asymmetry. We also explore the regime for Majoron dark matter from the kinetic misalignment, showing that a multicomponent dark sector comprising the inert scalar and the Majoron can be realized in the model. The resulting framework provides a unified origin for low-scale baryogenesis, neutrino masses, and multicomponent dark sector, so it can be tested by complementary experimental probes through direct detection experiments, collider searches for inert scalars, and future detection of Majoron dark matter or dark radiation.",
-"citR": [],
+"citR": [
+"3094526"
+],
 "citE": [
+"2827001",
 "2808986",
 "2623114",
 "2638716",
@@ -414,29 +420,29 @@
 ],
 "topR": [
 [
-0.098,
+0.088,
 "1294681"
 ],
 [
-0.069,
+0.066,
 "1455793"
 ],
 [
-0.067,
+0.06,
 "1413755"
 ]
 ],
 "topE": [
 [
-0.238,
+0.232,
 "2851262"
 ],
 [
-0.142,
+0.127,
 "3121627"
 ],
 [
-0.132,
+0.118,
 "2808986"
 ]
 ],
@@ -453,19 +459,19 @@
 ],
 "watch": [],
 "parts": [
-0.97,
-0.3,
-0.68,
+0.99,
+0.27,
+0.66,
 0.0,
 0.89
 ],
-"score": 62.1
+"score": 61.8
 },
 {
 "arxiv": "2611.08187",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3225487",
+"src": "INSPIRE",
 "nref": 97,
 "title": "Light Primordial Black Holes from a First-Order Phase Transition near the End of Inflation: Baryogenesis and Gravitational Wave Signatures",
 "authors": [
@@ -479,8 +485,8 @@
 "2901490",
 "1982883",
 "2657746",
-"2829767",
 "2824793",
+"2829767",
 "2091707",
 "1873918",
 "2817040"
@@ -1147,6 +1153,66 @@
 "score": 24.3
 },
 {
+"arxiv": "2611.08459",
+"section": "new",
+"recid": "3225516",
+"src": "INSPIRE",
+"nref": 64,
+"title": "Testing the Spin of New Physics with Top Precision Measurements",
+"authors": [
+"André Lessa",
+"Vinícius Rocca",
+"Veronica Sanz"
+],
+"abstract": "Precision measurements can reveal not only the presence of new physics, but also information about the dynamics that generated it. We study this question in top-pair production by comparing three top-philic scenarios: a colored scalar top partner, a colored vector-like fermion, and a spin-one $Z^\\prime$ mediator. The first two contribute through loop corrections, while the $Z^\\prime$ contributes at tree level. We show that the scalar and vector-like fermion scenarios match onto the same effective operator structure at low energies,making their distinction unfeasible using the EFT approach. However, near or above threshold their full loop amplitudes develop distinct momentum-dependent interference patterns. Using the top transverse momentum spectrum we find that resonant and loop-induced effects are relatively easy to distinguish, whereas separating the scalar and vector-like hypotheses is substantially more challenging. Nevertheless, their different analytic structures leave measurable information in the shape of the distribution. These results illustrate how precision differential measurements can probe the spin and dynamics of virtual new states even when they are not directly reconstructed, and motivate more powerful multidimensional analyses.",
+"citR": [],
+"citE": [
+"1982681"
+],
+"topR": [
+[
+0.014,
+"1455793"
+],
+[
+0.013,
+"1365306"
+],
+[
+0.013,
+"1679809"
+]
+],
+"topE": [
+[
+0.068,
+"3170413"
+],
+[
+0.057,
+"2864372"
+],
+[
+0.054,
+"2625199"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"vector-like fermion"
+],
+"watch": [],
+"parts": [
+0.45,
+0.04,
+0.2,
+0.0,
+0.14
+],
+"score": 21.5
+},
+{
 "arxiv": "2610.31254",
 "section": "replacement",
 "recid": "3218141",
@@ -1209,66 +1275,6 @@
 0.0
 ],
 "score": 21.4
-},
-{
-"arxiv": "2611.08459",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 63,
-"title": "Testing the Spin of New Physics with Top Precision Measurements",
-"authors": [
-"André Lessa",
-"Vinícius Rocca",
-"Veronica Sanz"
-],
-"abstract": "Precision measurements can reveal not only the presence of new physics, but also information about the dynamics that generated it. We study this question in top-pair production by comparing three top-philic scenarios: a colored scalar top partner, a colored vector-like fermion, and a spin-one $Z^\\prime$ mediator. The first two contribute through loop corrections, while the $Z^\\prime$ contributes at tree level. We show that the scalar and vector-like fermion scenarios match onto the same effective operator structure at low energies,making their distinction unfeasible using the EFT approach. However, near or above threshold their full loop amplitudes develop distinct momentum-dependent interference patterns. Using the top transverse momentum spectrum we find that resonant and loop-induced effects are relatively easy to distinguish, whereas separating the scalar and vector-like hypotheses is substantially more challenging. Nevertheless, their different analytic structures leave measurable information in the shape of the distribution. These results illustrate how precision differential measurements can probe the spin and dynamics of virtual new states even when they are not directly reconstructed, and motivate more powerful multidimensional analyses.",
-"citR": [],
-"citE": [
-"1982681"
-],
-"topR": [
-[
-0.013,
-"1455793"
-],
-[
-0.012,
-"1365306"
-],
-[
-0.012,
-"1679809"
-]
-],
-"topE": [
-[
-0.063,
-"3170413"
-],
-[
-0.052,
-"2864372"
-],
-[
-0.049,
-"2625199"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [
-"vector-like fermion"
-],
-"watch": [],
-"parts": [
-0.45,
-0.04,
-0.18,
-0.0,
-0.14
-],
-"score": 21.1
 },
 {
 "arxiv": "2611.08388",
@@ -1770,6 +1776,66 @@
 "score": 14.1
 },
 {
+"arxiv": "2611.04600",
+"section": "replacement",
+"recid": "3222604",
+"src": "INSPIRE",
+"nref": 232,
+"title": "Light Mediators at the Neutrino-Dark Matter Frontier: Coherent Scattering, Precision Constraints, and Complementary Searches",
+"authors": [
+"Raoul Serao",
+"Mohamed Ouchemhou",
+"Antonio Capolupo",
+"Salvatore Capozziello"
+],
+"abstract": "Low-threshold neutrino and dark-matter experiments constrain light mediators through different momentum transfers, targets, and coupling combinations. We examine scalar and vector interactions in coherent neutrino--nucleus scattering, neutrino--electron scattering, and dark-matter direct detection. Three representative interaction models are used to compare recoil spectra and coupling degeneracies. For $^{73}\\mathrm{Ge}$ and $^{131}\\mathrm{Xe}$, the nuclear-charge response matrix has a condition number of approximately 115, so two different targets may still leave nearly parallel blind directions. An analytic profile-likelihood calculation shows how spectral overlap and uncertainties in neutrino interactions affect dark-matter discovery sensitivity in the neutrino fog. We discuss the implications of measurements from COHERENT, CONUS+, LZ, XENONnT, and PandaX-4T and specify which theoretical inputs, detector responses, and statistical correlations are needed to combine their constraints. keyword : coherent elastic neutrino-nucleus scattering; light mediators; neutrino--electron scattering; dark matter direct detection; non-standard interactions; solar neutrinos; complementarity",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.044,
+"3130296"
+],
+[
+0.014,
+"2794409"
+],
+[
+0.009,
+"1955022"
+]
+],
+"topE": [
+[
+0.136,
+"3095306"
+],
+[
+0.034,
+"3090922"
+],
+[
+0.031,
+"3178478"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"direct detection",
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.12,
+0.39,
+0.0,
+0.31
+],
+"score": 12.5
+},
+{
 "arxiv": "2611.07574",
 "section": "cross",
 "recid": "3224040",
@@ -1826,66 +1892,6 @@
 0.43
 ],
 "score": 12.3
-},
-{
-"arxiv": "2611.04600",
-"section": "replacement",
-"recid": "3222604",
-"src": "INSPIRE",
-"nref": 77,
-"title": "Light Mediators at the Neutrino-Dark Matter Frontier: Coherent Scattering, Precision Constraints, and Complementary Searches",
-"authors": [
-"Raoul Serao",
-"Mohamed Ouchemhou",
-"Antonio Capolupo",
-"Salvatore Capozziello"
-],
-"abstract": "Low-threshold neutrino and dark-matter experiments constrain light mediators through different momentum transfers, targets, and coupling combinations. We examine scalar and vector interactions in coherent neutrino--nucleus scattering, neutrino--electron scattering, and dark-matter direct detection. Three representative interaction models are used to compare recoil spectra and coupling degeneracies. For $^{73}\\mathrm{Ge}$ and $^{131}\\mathrm{Xe}$, the nuclear-charge response matrix has a condition number of approximately 115, so two different targets may still leave nearly parallel blind directions. An analytic profile-likelihood calculation shows how spectral overlap and uncertainties in neutrino interactions affect dark-matter discovery sensitivity in the neutrino fog. We discuss the implications of measurements from COHERENT, CONUS+, LZ, XENONnT, and PandaX-4T and specify which theoretical inputs, detector responses, and statistical correlations are needed to combine their constraints. keyword : coherent elastic neutrino-nucleus scattering; light mediators; neutrino--electron scattering; dark matter direct detection; non-standard interactions; solar neutrinos; complementarity",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.037,
-"3130296"
-],
-[
-0.015,
-"2794409"
-],
-[
-0.01,
-"1955022"
-]
-],
-"topE": [
-[
-0.139,
-"3095306"
-],
-[
-0.033,
-"3207263"
-],
-[
-0.032,
-"2880293"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [
-"direct detection",
-"dark matter"
-],
-"watch": [],
-"parts": [
-0.0,
-0.1,
-0.4,
-0.0,
-0.31
-],
-"score": 12.2
 },
 {
 "arxiv": "2611.07877",
@@ -2061,8 +2067,8 @@
 {
 "arxiv": "2611.08387",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3225521",
+"src": "INSPIRE",
 "nref": 79,
 "title": "Algorithmic Construction of Vector-Valued Modular Forms and Application to an $A_4\\times\\mathbb{Z}_4$-invariant Model of Leptons",
 "authors": [
@@ -2692,6 +2698,62 @@
 "score": 5.9
 },
 {
+"arxiv": "2506.19053",
+"section": "replacement",
+"recid": "2938364",
+"src": "INSPIRE",
+"nref": 153,
+"title": "Dark Energy Crosses the Line: Quantifying and Testing the Evidence for Phantom Crossing",
+"authors": [
+"Emre Özülker",
+"Eleonora Di Valentino",
+"William Giarè"
+],
+"abstract": "Combinations of the most recent CMB, BAO, and SNeIa datasets, when analyzed using the CPL parametrization, $w(a) = w_0 + (1 - a) w_a$, exclude $Λ$CDM at $\\gtrsim\\!3σ$ in favor of a dark energy equation of state (EoS) parameter that crosses the phantom divide. We confirm this behavior and show that it persists when DESI BAO data are replaced by SH0ES $H_0$ measurements, despite the known tension between these probes in the presence of CMB data. In both cases, the constraints favor a transition from an early-time phantom-like phase to a late-time quintessence-like phase, with the crossing occurring at different redshifts depending on the dataset combination. The probability that a phantom divide line (PDL) crossing does not occur within the expansion history is excluded at significance levels ranging \\mbox{between $3.1σ$\\,--\\,$5.2σ$.} To investigate whether the apparent PDL crossing is a genuine feature preferred by the data or an artifact of the linear form of the CPL parametrization, we isolate the PDL crossing feature by introducing two modified versions of CPL that explicitly forbid it: CPL${}_{>a_\\mathrm{c}}$ and CPL${}_{<a_\\mathrm{c}}$. These models are physically motivated in that they phenomenologically capture the behavior of thawing and freezing scalar field scenarios. While previous studies have primarily considered thawing quintessence as a non-crossing alternative, we find that a freezing phantom-like model is the only one capable of performing comparably to CPL--and only in a few cases. Nevertheless, across all dataset combinations considered, the standard CPL model consistently provides the best fit, strongly indicating that the data genuinely favor a PDL crossing.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.01,
+"2663002"
+],
+[
+0.008,
+"1655573"
+],
+[
+0.002,
+"2787444"
+]
+],
+"topE": [
+[
+0.108,
+"3223723"
+],
+[
+0.038,
+"2895271"
+],
+[
+0.035,
+"2614940"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.03,
+0.31,
+0.0,
+0.0
+],
+"score": 5.5
+},
+{
 "arxiv": "2611.07897",
 "section": "cross",
 "recid": "3224044",
@@ -2745,6 +2807,63 @@
 0.1,
 0.0,
 0.0
+],
+"score": 5.0
+},
+{
+"arxiv": "2512.17695",
+"section": "replacement",
+"recid": "3220828",
+"src": "INSPIRE",
+"nref": 91,
+"title": "Baryogenesis and EDMs in the 2HDM with a Complex Singlet",
+"authors": [
+"Björn Garbrecht",
+"Edward Wang"
+],
+"abstract": "We perform the first joint analysis of baryogenesis from initial Higgs charges (also called Higgsogenesis) and electric dipole moments (EDMs) in a model with two Higgs doublets, a complex scalar, and a Majorana fermion. In our proposed scenario, baryogenesis happens in three steps: (1) The decay of the scalar produces an asymmetry between the two Higgs doublets which is partly transferred to fermions via Standard Model processes. (2) This asymmetry is converted into a $B-L$ charge via interactions mediated by the Majorana fermion. (3) The weak sphaleron processes partially convert the resulting $B-L$ charge into a $B$ asymmetry. We perform a numerical analysis of baryogenesis and the EDM contributions and find that, due to resonant enhancement, baryogenesis is possible with singlet masses as low as $10^5$ GeV. We also find that for some parameters, the model can give large contributions to the electron and neutron EDM while also producing baryogenesis. The present scenario offers a new perspective on interpreting observational bounds in terms of cosmology: Because it relies on out-of-equilibrium decays, the questions of baryogenesis and $CP$ violation in the Higgs sector may be linked with EDM signals without the additional assumption of a first order electroweak phase transition.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.007,
+"2663002"
+],
+[
+0.007,
+"1709434"
+],
+[
+0.007,
+"2627241"
+]
+],
+"topE": [
+[
+0.05,
+"2051136"
+],
+[
+0.044,
+"2860407"
+],
+[
+0.041,
+"3087237"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"complex scalar"
+],
+"watch": [],
+"parts": [
+0.0,
+0.02,
+0.14,
+0.0,
+0.21
 ],
 "score": 5.0
 },
@@ -2866,124 +2985,11 @@
 "score": 4.9
 },
 {
-"arxiv": "2512.17695",
-"section": "replacement",
-"recid": "3094408",
-"src": "INSPIRE",
-"nref": 85,
-"title": "Baryogenesis and EDMs in the 2HDM with a Complex Singlet",
-"authors": [
-"Björn Garbrecht",
-"Edward Wang"
-],
-"abstract": "We perform the first joint analysis of baryogenesis from initial Higgs charges (also called Higgsogenesis) and electric dipole moments (EDMs) in a model with two Higgs doublets, a complex scalar, and a Majorana fermion. In our proposed scenario, baryogenesis happens in three steps: (1) The decay of the scalar produces an asymmetry between the two Higgs doublets which is partly transferred to fermions via Standard Model processes. (2) This asymmetry is converted into a $B-L$ charge via interactions mediated by the Majorana fermion. (3) The weak sphaleron processes partially convert the resulting $B-L$ charge into a $B$ asymmetry. We perform a numerical analysis of baryogenesis and the EDM contributions and find that, due to resonant enhancement, baryogenesis is possible with singlet masses as low as $10^5$ GeV. We also find that for some parameters, the model can give large contributions to the electron and neutron EDM while also producing baryogenesis. The present scenario offers a new perspective on interpreting observational bounds in terms of cosmology: Because it relies on out-of-equilibrium decays, the questions of baryogenesis and $CP$ violation in the Higgs sector may be linked with EDM signals without the additional assumption of a first order electroweak phase transition.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.007,
-"2663002"
-],
-[
-0.007,
-"1709434"
-],
-[
-0.007,
-"2627241"
-]
-],
-"topE": [
-[
-0.046,
-"2860407"
-],
-[
-0.045,
-"2051136"
-],
-[
-0.038,
-"2851262"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [
-"complex scalar"
-],
-"watch": [],
-"parts": [
-0.0,
-0.02,
-0.13,
-0.0,
-0.21
-],
-"score": 4.8
-},
-{
-"arxiv": "2506.19053",
-"section": "replacement",
-"recid": "2938364",
-"src": "INSPIRE",
-"nref": 132,
-"title": "Dark Energy Crosses the Line: Quantifying and Testing the Evidence for Phantom Crossing",
-"authors": [
-"Emre Özülker",
-"Eleonora Di Valentino",
-"William Giarè"
-],
-"abstract": "Combinations of the most recent CMB, BAO, and SNeIa datasets, when analyzed using the CPL parametrization, $w(a) = w_0 + (1 - a) w_a$, exclude $Λ$CDM at $\\gtrsim\\!3σ$ in favor of a dark energy equation of state (EoS) parameter that crosses the phantom divide. We confirm this behavior and show that it persists when DESI BAO data are replaced by SH0ES $H_0$ measurements, despite the known tension between these probes in the presence of CMB data. In both cases, the constraints favor a transition from an early-time phantom-like phase to a late-time quintessence-like phase, with the crossing occurring at different redshifts depending on the dataset combination. The probability that a phantom divide line (PDL) crossing does not occur within the expansion history is excluded at significance levels ranging \\mbox{between $3.1σ$\\,--\\,$5.2σ$.} To investigate whether the apparent PDL crossing is a genuine feature preferred by the data or an artifact of the linear form of the CPL parametrization, we isolate the PDL crossing feature by introducing two modified versions of CPL that explicitly forbid it: CPL${}_{>a_\\mathrm{c}}$ and CPL${}_{<a_\\mathrm{c}}$. These models are physically motivated in that they phenomenologically capture the behavior of thawing and freezing scalar field scenarios. While previous studies have primarily considered thawing quintessence as a non-crossing alternative, we find that a freezing phantom-like model is the only one capable of performing comparably to CPL--and only in a few cases. Nevertheless, across all dataset combinations considered, the standard CPL model consistently provides the best fit, strongly indicating that the data genuinely favor a PDL crossing.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.01,
-"2663002"
-],
-[
-0.008,
-"1655573"
-],
-[
-0.003,
-"2787444"
-]
-],
-"topE": [
-[
-0.089,
-"3223723"
-],
-[
-0.041,
-"2895271"
-],
-[
-0.037,
-"2614940"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.03,
-0.25,
-0.0,
-0.0
-],
-"score": 4.7
-},
-{
 "arxiv": "2611.08221",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 175,
+"recid": "3225490",
+"src": "INSPIRE",
+"nref": 181,
 "title": "DIS-secting the universe with high-energy neutrinos",
 "authors": [
 "Rhorry Gauld",
@@ -3020,7 +3026,7 @@
 "2828803"
 ],
 [
-0.033,
+0.039,
 "2838690"
 ]
 ],
@@ -3624,8 +3630,8 @@
 {
 "arxiv": "2611.08272",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3225479",
+"src": "INSPIRE",
 "nref": 9,
 "title": "Analytic parametrisations of the scale dependence of proton parton distributions",
 "authors": [
@@ -3674,6 +3680,61 @@
 0.0
 ],
 "score": 2.5
+},
+{
+"arxiv": "2611.08463",
+"section": "new",
+"recid": "3225501",
+"src": "INSPIRE",
+"nref": 44,
+"title": "Joint Bayesian Inference for Extraction of Charmonium Long Distance Matrix Elements Using PYTHIA",
+"authors": [
+"Yubo Liu",
+"Rongrong Ma"
+],
+"abstract": "We present a joint Bayesian extraction of the nonrelativistic QCD long-distance matrix elements (LDMEs) for $J/ψ$, $ψ(2S)$, and $χ_c$ production, using short-distance coefficients and feed-down structure implemented in PYTHIA 8.317. Rather than fitting each charmonium state separately, we construct channel-resolved responses that link parent production to daughter feed-down and infer all LDMEs simultaneously from 286 prompt charmonium measurements in $pp$ collisions at $\\sqrt{s}=5.02$-13 TeV at the LHC. The extracted LDMEs provide a good description of the data, with an overall $χ^2/\\mathrm{ndf}=1.18$. We also provide a positivity-constrained set that can be used directly as PYTHIA input. Using the extracted LDMEs, we predict prompt $J/ψ$ and $ψ(2S)$ cross sections at high transverse momentum in $pp$ collisions at $\\sqrt{s}=200$ GeV, which can be tested with RHIC data.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.009,
+"3146383"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.041,
+"3097570"
+],
+[
+0.017,
+"3095771"
+],
+[
+0.013,
+"3170413"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.02,
+0.12,
+0.0,
+0.0
+],
+"score": 2.4
 },
 {
 "arxiv": "2611.07869",
@@ -3827,7 +3888,7 @@
 "2154677"
 ],
 [
-0.013,
+0.014,
 "3075243"
 ]
 ],
@@ -3898,115 +3959,6 @@
 0.0
 ],
 "score": 2.0
-},
-{
-"arxiv": "2611.08463",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 44,
-"title": "Joint Bayesian Inference for Extraction of Charmonium Long Distance Matrix Elements Using PYTHIA",
-"authors": [
-"Yubo Liu",
-"Rongrong Ma"
-],
-"abstract": "We present a joint Bayesian extraction of the nonrelativistic QCD long-distance matrix elements (LDMEs) for $J/ψ$, $ψ(2S)$, and $χ_c$ production, using short-distance coefficients and feed-down structure implemented in PYTHIA 8.317. Rather than fitting each charmonium state separately, we construct channel-resolved responses that link parent production to daughter feed-down and infer all LDMEs simultaneously from 286 prompt charmonium measurements in $pp$ collisions at $\\sqrt{s}=5.02$-13 TeV at the LHC. The extracted LDMEs provide a good description of the data, with an overall $χ^2/\\mathrm{ndf}=1.18$. We also provide a positivity-constrained set that can be used directly as PYTHIA input. Using the extracted LDMEs, we predict prompt $J/ψ$ and $ψ(2S)$ cross sections at high transverse momentum in $pp$ collisions at $\\sqrt{s}=200$ GeV, which can be tested with RHIC data.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.007,
-"3146383"
-],
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-]
-],
-"topE": [
-[
-0.033,
-"3097570"
-],
-[
-0.014,
-"3095771"
-],
-[
-0.01,
-"3170413"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.02,
-0.1,
-0.0,
-0.0
-],
-"score": 2.0
-},
-{
-"arxiv": "2610.40451",
-"section": "replacement",
-"recid": "3220545",
-"src": "INSPIRE",
-"nref": 8,
-"title": "FCC-μe: High Energy, High Luminosity Muon-Electron Collider & Neutrino Factory at CERN",
-"authors": [
-"K. Piotrzkowski"
-],
-"abstract": "The concept is presented of making at the FCC-$ee$ (or CEPC) facility $μ^+e^-$ collisions at the centre-of-mass energy between 1 and 2 TeV and the average luminosity above $10^{34}$cm$^{-2}$s$^{-1}$, concurrently to the $e^+e^-$ collisions. First, a concise scientific motivation is given, including the exciting prospect of measurements of the Higgs boson self-interaction, and is followed by a presentation of the FCC-$μe$ layout -- from the source of ultra-cold anti-muons, through the muon booster, to the main muon ring. Basic considerations are also given regarding the machine-detector interface and the performance of the FCC-$μe$ and associated neutrino factory. The paper concludes with an outlook underlying relevance of such anti-muon beams for any future high energy storage ring as well as for neutrino science.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.041,
-"3204120"
-],
-[
-0.004,
-"3193100"
-],
-[
-0.0,
-"913031"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.12,
-0.0,
-0.0
-],
-"score": 1.8
 },
 {
 "arxiv": "2611.07389",
@@ -4120,21 +4072,16 @@
 "score": 1.6
 },
 {
-"arxiv": "2611.08122",
-"section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 137,
-"title": "Linking chiral nuclear forces to light-ion collisions: a global sensitivity analysis",
+"arxiv": "2610.40451",
+"section": "replacement",
+"recid": "3220545",
+"src": "INSPIRE",
+"nref": 11,
+"title": "FCC-μe: High Energy, High Luminosity Muon-Electron Collider & Neutrino Factory at CERN",
 "authors": [
-"Thomas Duguet",
-"Andreas Ekström",
-"Giuliano Giacalone",
-"Gaute Hagen",
-"Takayuki Miyagi",
-"Alexander Tichai"
+"K. Piotrzkowski"
 ],
-"abstract": "Ultrarelativistic $^{16}$O+$^{16}$O and $^{20}$Ne+$^{20}$Ne collisions recently performed at the Large Hadron Collider have imaged quadrupole and octupole correlations between nucleons through the collective flow of emitted hadrons. We establish a quantitative link between these correlations and the low-energy constants (LECs) that enter chiral inter-nucleon interactions. Emulators built using the subspace-projected coupled-cluster method enable a global sensitivity analysis of the ground-state quadrupole mean-square eccentricity, revealing that quadrupole correlations respond linearly and additively to all 16 LECs at next-to-next-to-leading order in the chiral expansion. The sensitivities differ markedly in $^{16}$O and $^{20}$Ne, and are complementary to those of the binding energy and charge radius, the bulk observables to which nuclear interactions are typically calibrated. In particular, $^{20}$Ne collisions dominantly probe the spin-orbit part of two-nucleon interactions. Soft-particle correlations in light-ion collisions thus constitute a new type of data to study nuclear forces and their emergence from quantum chromodynamics.",
+"abstract": "The concept is presented of making at the FCC-$ee$ (or CEPC) facility $μ^+e^-$ collisions at the centre-of-mass energy between 1 and 2 TeV and the average luminosity above $10^{34}$cm$^{-2}$s$^{-1}$, concurrently to the $e^+e^-$ collisions. First, a concise scientific motivation is given, including the exciting prospect of measurements of the Higgs boson self-interaction, and is followed by a presentation of the FCC-$μe$ layout -- from the source of ultra-cold anti-muons, through the muon booster, to the main muon ring. Basic considerations are also given regarding the machine-detector interface and the performance of the FCC-$μe$ and associated neutrino factory. The paper concludes with an outlook underlying relevance of such anti-muon beams for any future high energy storage ring as well as for neutrino science.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -4154,15 +4101,15 @@
 "topE": [
 [
 0.034,
-"3216851"
+"3204120"
 ],
 [
-0.006,
-"2788951"
+0.003,
+"3193100"
 ],
 [
-0.005,
-"2169464"
+0.0,
+"913031"
 ]
 ],
 "isme": false,
@@ -4176,7 +4123,7 @@
 0.0,
 0.0
 ],
-"score": 1.5
+"score": 1.4
 },
 {
 "arxiv": "2611.07001",
@@ -4228,6 +4175,65 @@
 0.0,
 0.02,
 0.04,
+0.0,
+0.0
+],
+"score": 1.2
+},
+{
+"arxiv": "2611.08122",
+"section": "cross",
+"recid": "3225497",
+"src": "INSPIRE",
+"nref": 140,
+"title": "Linking chiral nuclear forces to light-ion collisions: a global sensitivity analysis",
+"authors": [
+"Thomas Duguet",
+"Andreas Ekström",
+"Giuliano Giacalone",
+"Gaute Hagen",
+"Takayuki Miyagi",
+"Alexander Tichai"
+],
+"abstract": "Ultrarelativistic $^{16}$O+$^{16}$O and $^{20}$Ne+$^{20}$Ne collisions recently performed at the Large Hadron Collider have imaged quadrupole and octupole correlations between nucleons through the collective flow of emitted hadrons. We establish a quantitative link between these correlations and the low-energy constants (LECs) that enter chiral inter-nucleon interactions. Emulators built using the subspace-projected coupled-cluster method enable a global sensitivity analysis of the ground-state quadrupole mean-square eccentricity, revealing that quadrupole correlations respond linearly and additively to all 16 LECs at next-to-next-to-leading order in the chiral expansion. The sensitivities differ markedly in $^{16}$O and $^{20}$Ne, and are complementary to those of the binding energy and charge radius, the bulk observables to which nuclear interactions are typically calibrated. In particular, $^{20}$Ne collisions dominantly probe the spin-orbit part of two-nucleon interactions. Soft-particle correlations in light-ion collisions thus constitute a new type of data to study nuclear forces and their emergence from quantum chromodynamics.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.028,
+"3216851"
+],
+[
+0.006,
+"2788951"
+],
+[
+0.005,
+"2169464"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.08,
 0.0,
 0.0
 ],
@@ -4472,9 +4478,9 @@
 {
 "arxiv": "2611.08183",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 43,
+"recid": "3225481",
+"src": "INSPIRE",
+"nref": 46,
 "title": "Investigating bottom quark effects in Higgs boson pair production",
 "authors": [
 "David Bürg",
@@ -4526,65 +4532,11 @@
 "score": 0.8
 },
 {
-"arxiv": "2611.08204",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 9,
-"title": "Quantum Fourier integration of decay rates at next-to-leading order",
-"authors": [
-"David F. Rentería-Estrada"
-],
-"abstract": "We discuss the use of quantum neural networks (QNNs) as a tool for integrating decay rates at next-to-leading order (NLO) in perturbation theory. Data-encoding quantum circuits admit a truncated Fourier-series representation, enabling a trained QNN to approximate a target integrand and provide the coefficients subsequently integrated with Quantum Fourier Iterative Amplitude Estimation (QFIAE). The causal-unitary formulation of the Loop-Tree Duality (LTD) combines virtual and real contributions into locally finite integrands suitable for this representation. We consider $H\\to q\\bar q(g)$, $γ^*\\to q\\bar q(g)$ and $Φ\\toφφ(φ)$, comparing quantum-simulator and quantum-hardware results with analytic NLO predictions. The study illustrates the potential of Fourier-based QNN integration for high-energy physics.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.019,
-"3127309"
-],
-[
-0.0,
-"913031"
-],
-[
-0.0,
-"881902"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.05,
-0.0,
-0.0
-],
-"score": 0.8
-},
-{
 "arxiv": "2611.08482",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 59,
+"recid": "3225494",
+"src": "INSPIRE",
+"nref": 60,
 "title": "Hypersurface covariance in relativistic local equilibrium",
 "authors": [
 "You-yu Li",
@@ -4689,10 +4641,64 @@
 "score": 0.7
 },
 {
+"arxiv": "2611.08204",
+"section": "new",
+"recid": "3225480",
+"src": "INSPIRE",
+"nref": 10,
+"title": "Quantum Fourier integration of decay rates at next-to-leading order",
+"authors": [
+"David F. Rentería-Estrada"
+],
+"abstract": "We discuss the use of quantum neural networks (QNNs) as a tool for integrating decay rates at next-to-leading order (NLO) in perturbation theory. Data-encoding quantum circuits admit a truncated Fourier-series representation, enabling a trained QNN to approximate a target integrand and provide the coefficients subsequently integrated with Quantum Fourier Iterative Amplitude Estimation (QFIAE). The causal-unitary formulation of the Loop-Tree Duality (LTD) combines virtual and real contributions into locally finite integrands suitable for this representation. We consider $H\\to q\\bar q(g)$, $γ^*\\to q\\bar q(g)$ and $Φ\\toφφ(φ)$, comparing quantum-simulator and quantum-hardware results with analytic NLO predictions. The study illustrates the potential of Fourier-based QNN integration for high-energy physics.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.015,
+"3127309"
+],
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.04,
+0.0,
+0.0
+],
+"score": 0.7
+},
+{
 "arxiv": "2611.08279",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3225499",
+"src": "INSPIRE",
 "nref": 104,
 "title": "Has Quarkyonic Matter Been Seen in Lattice Simulations?",
 "authors": [
