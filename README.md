@@ -14,7 +14,8 @@ variable `INSPIRE_AUTHOR`.
   pages and publishes them to GitHub Pages.
 - Branch **`site`** (made and updated by the workflow, never edited by hand) — the generated files:
   `index.html`, one `hep-ph-YYYY-MM-DD.html` per day (papers above the threshold, the network graph, then in a collapsed
-  list the papers below the threshold scoring at least `NEXT_MIN_SCORE`, and at least `NEXT_PAPERS` of them), `listings/<date>.json` (each day's
+  list the papers below the threshold scoring at least `NEXT_MIN_SCORE`, and at least `NEXT_PAPERS` of them, then a second collapsed list with
+  all the other papers of the day by score, as titles linked to arXiv), `listings/<date>.json` (each day's
   snapshot: its arXiv listing and every paper's INSPIRE id and INSPIRE reference ids; final once the day is 2 days old,
   after which rebuilds reuse it as is and only redo the scoring; kept for the days shown) and `network_<author>.json`, the compact network (own papers with ≤ 10 authors,
   the papers most coupled to them, the important papers citing them and every paper citing them from the last 10 years

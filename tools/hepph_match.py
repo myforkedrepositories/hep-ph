@@ -427,7 +427,12 @@ def build(rows, net, th, meta, out, nnext=20, nmin=6.0):
     cited = {k for x in [nd.get("note", "") for nd in nodes.values()] + [x["note"] for x in nxt] for k in re.findall(r"\[\[(\d+)\]\]", x)}
     refs = {k: {"first": net[k]["first"], "year": net[k]["year"], "nauth": net[k]["nauth"], "title": net[k]["title"],
                 "role": "seed" if net[k]["kind"] == "R" else "other"} for k in cited}
-    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges], "next": nxt, "refs": refs,
+    # the rest of the day's papers, by score: title and arXiv number only
+    shown = {r["arxiv"] for r in rel} | {x["arxiv"] for x in nxt}
+    rest = [{"arxiv": r["arxiv"], "title": r["title"], "score": r["score"], "section": r["section"], "rank": j}
+            for j, r in enumerate(rows, 1) if r["arxiv"] not in shown]
+    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges], "next": nxt, "rest": rest,
+            "refs": refs,
             "meta": {**meta, "threshold": th, "nrel": len(rel), "nlist": len(rows),
                      "counts": {s: sum(1 for r in rows if r["section"] == s) for s in ("new", "cross", "replacement")},
                      "below": [{"arxiv": r["arxiv"], "title": r["title"], "score": r["score"]}
