@@ -9,7 +9,7 @@ variable `INSPIRE_AUTHOR`.
 - `skills/hep-network-builder/SKILL.md`, `skills/hep-ph-network-match/SKILL.md`, `skills/hep-ph-topic-boost/SKILL.md`
   (`tools/boost_topics.py`: watch topics that lift a given paper) — the skills with the current code
   (upload them in claude.ai → Settings → Capabilities → Skills to update the skills).
-- `.github/workflows/hep-ph-pages.yml` — runs once each evening, 21:17 Bogotá, Sunday–Friday (and on demand from the
+- `.github/workflows/hep-ph-pages.yml` — runs once each weekday evening, 21:17 Bogotá, Monday–Friday (and on demand from the
   Actions tab), rebuilds the network when it is older than 7 days (so new papers citing the author join it), builds the
   pages and publishes them to GitHub Pages.
 - Branch **`site`** (made and updated by the workflow, never edited by hand) — the generated files:
@@ -47,7 +47,7 @@ is a repository variable.
    author's citation network from INSPIRE (10–25 minutes), then the pages for the last 5 arXiv hep-ph
    announcement days, creates the `site` branch with the generated files and publishes them.
 7. **Open the site** at `https://<github-user>.github.io/hep-ph/` (the run's *deploy* step shows the
-   address). From then on it updates by itself every evening Sunday–Friday (21:17 Bogotá) and rebuilds the
+   address). From then on it updates by itself every weekday evening (21:17 Bogotá) and rebuilds the
    network weekly.
 
 **Optional settings.** Add any of these as repository variables, next to `INSPIRE_AUTHOR`
