@@ -9,9 +9,10 @@ name: hep-ph network pages
 # (Settings -> Secrets and variables -> Actions -> Variables) and can "Sync fork" without conflicts.
 on:
   schedule:
-    # One late run per weekday: 21:17 Bogotá Monday-Friday (02:17 UTC Tuesday-Saturday). By then the
-    # day's listing, announced the evening before, is on INSPIRE with its references.
-    - cron: "17 2 * * 2-6"
+    # One late run each evening Sunday-Friday: 21:17 Bogotá (02:17 UTC Monday-Saturday). By then the
+    # day's listing, announced the evening before, is on INSPIRE with its references. The Sunday run
+    # refreshes Friday's page two days later, when its snapshot becomes final.
+    - cron: "17 2 * * 1-6"
   workflow_dispatch:
     inputs:
       rebuild_network:
