@@ -106,7 +106,8 @@ What it does:
   below the threshold: every one scoring at least `--next-min-score` (6) and at least `--next` (20)
   in all, those under 6 after a "weaker relation" divider (about half the papers scoring 6–8 share
   a specific reference, coupling or topic with the network, few below 6), with the same reasons, a folded abstract and links, not
-  drawn in the network; then the method notes.
+  drawn in the network; then, also collapsed, all the other papers of the day by score, each only
+  its rank, score and title linked to its arXiv record; then the method notes.
 - On phones (width ≤ 600 px) each abstract folds to 3 lines with a More/Less button, author
   lists longer than 3 show "et al. (+N)" (tap to expand), the four score bars sit in a 2×2 grid
   with short labels (Citations, Your papers, Network, Authors) and the links become tap-sized buttons ("HTML" is arXiv's experimental HTML version).
@@ -562,7 +563,12 @@ def build(rows, net, th, meta, out, nnext=20, nmin=6.0):
     cited = {k for x in [nd.get("note", "") for nd in nodes.values()] + [x["note"] for x in nxt] for k in re.findall(r"\[\[(\d+)\]\]", x)}
     refs = {k: {"first": net[k]["first"], "year": net[k]["year"], "nauth": net[k]["nauth"], "title": net[k]["title"],
                 "role": "seed" if net[k]["kind"] == "R" else "other"} for k in cited}
-    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges], "next": nxt, "refs": refs,
+    # the rest of the day's papers, by score: title and arXiv number only
+    shown = {r["arxiv"] for r in rel} | {x["arxiv"] for x in nxt}
+    rest = [{"arxiv": r["arxiv"], "title": r["title"], "score": r["score"], "section": r["section"], "rank": j}
+            for j, r in enumerate(rows, 1) if r["arxiv"] not in shown]
+    data = {"n": [nodes[k] for k in keys], "e": [[idx[s], idx[t], ty] for s, t, ty in edges], "next": nxt, "rest": rest,
+            "refs": refs,
             "meta": {**meta, "threshold": th, "nrel": len(rel), "nlist": len(rows),
                      "counts": {s: sum(1 for r in rows if r["section"] == s) for s in ("new", "cross", "replacement")},
                      "below": [{"arxiv": r["arxiv"], "title": r["title"], "score": r["score"]}
@@ -755,6 +761,10 @@ input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid
 .nextlist{list-style:none;margin:0;padding:0 0 8px;display:grid}
 .nextlist li{display:grid;gap:4px;padding:12px 0;border-top:1px solid var(--line)}
 .nextlist .t{font-family:var(--f-display);font-weight:600;font-size:1.05rem;line-height:1.3}
+.restlist{list-style:none;margin:0;padding:0 0 10px;display:grid;gap:2px}
+.restlist li{display:flex;gap:10px;align-items:baseline;padding:4px 0;font-size:14px;line-height:1.35;border-top:1px solid var(--line)}
+.restlist .sc{font-family:var(--f-mono);font-size:12px;color:var(--fg-3);min-width:4.2em;flex:none;font-variant-numeric:tabular-nums}
+.restlist a{color:var(--fg);text-decoration:none}.restlist a:hover{text-decoration:underline}
 .nextlist .divider{display:block;padding:10px 0 8px;font-size:13px;color:var(--fg-3);border-top:2px dashed var(--line)}
 .nextlist .abs{font-size:14px}.nextlist .abs summary{cursor:pointer;color:var(--fg-3);font-size:13px}
 .toc{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
@@ -810,6 +820,7 @@ input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid
   <aside class="panel" id="panel" aria-live="polite"></aside>
 </div>
 <details class="more" id="more" hidden><summary>Next papers by score <span id="moresub"></span></summary><ol class="nextlist" id="nextlist"></ol></details>
+<details class="more" id="rest" hidden><summary>All other papers <span id="restsub"></span></summary><ol class="restlist" id="restlist"></ol></details>
 <div class="foot" id="foot"></div>
 <div class="reftip" id="reftip" role="tooltip" hidden></div>
 </div>
@@ -946,7 +957,13 @@ document.addEventListener('focusin',e=>{const el=e.target.closest('.ref');if(el)
 document.addEventListener('focusout',e=>{if(e.target.closest('.ref'))refHide()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')refHide()});
 addEventListener('scroll',()=>{if(rcur)refHide()},{passive:true});
-list();nextList();fold();draw();panel();
+// the rest of the day's papers by score: only the title, linked to the arXiv record
+function restList(){const X=RAW.rest||[];if(!X.length)return;const d=document.getElementById('rest'),box=document.getElementById('restlist');
+  d.hidden=false;d.querySelector('summary').firstChild.textContent=`All other ${X.length} papers in this listing `;
+  document.getElementById('restsub').textContent='by score, title only';
+  box.innerHTML=X.map(n=>`<li><span class="sc">#${n.rank} · ${n.score.toFixed(1)}</span><a href="https://arxiv.org/abs/${esc(n.arxiv)}" target="_blank" rel="noopener">${esc(n.title)}</a></li>`).join('');
+  d.addEventListener('toggle',()=>{if(d.open)tex(box)})}
+list();nextList();restList();fold();draw();panel();
 window.addEventListener('load',()=>{tex(document.getElementById('list'));tex(document.getElementById('panel'));fold();
   if(window.MathJax&&MathJax.startup&&MathJax.startup.promise)MathJax.startup.promise.then(()=>setTimeout(fold,300))});
 addEventListener('resize',()=>{clearTimeout(window._ft);window._ft=setTimeout(fold,200)});
