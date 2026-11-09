@@ -13,14 +13,14 @@
 ],
 "abstract": "We study the phenomenology of pion dark matter coupled to neutrinos in a confining sector that dynamically generates both small neutrino masses and dark matter mass from gauge confinement. Dark matter semi-annihilation to active neutrinos or annihilation to light sterile neutrinos can reproduce the observed relic abundance through thermal freeze-out while satisfying constraints from self-interactions. In the first scenario, semi-annihilations of sub-GeV dark matter in the galactic halo produce a flux of antineutrinos which can provide a viable interpretation for the mild electron antineutrino excess reported by the Super-Kamiokande collaboration. We assess the potential of the JUNO detector to test this interpretation. In the second scenario, light sterile neutrinos can leave signatures through displaced vertex searches at accelerator facilities.",
 "citR": [
-"2964960",
-"2787890"
+"2787890",
+"2964960"
 ],
 "citE": [
 "3210992",
 "3091093",
-"3178478",
 "3115042",
+"3178478",
 "2750604",
 "1515160",
 "1607799"
@@ -163,17 +163,17 @@
 ],
 "abstract": "We study a classically scale-invariant extension of the Standard Model (SM) with four new fields in a hidden sector: a complex scalar $S$, two Dirac fermions $ψ^{1,2}$ and the gauge boson $V_μ$ of a new $U(1)_D$ symmetry. The scalar $S$ couples to the SM through the Higgs portal. We identify regions of parameter space in which $V_μ$, $ψ^1$ and $ψ^2$ are all stable, giving a three-component dark matter (DM) scenario. The model is classically scale invariant, and the electroweak symmetry breaks because of the loop effects. We impose the observed relic density and current direct detection bounds, and then study the finite temperature effective potential. For a benchmark point, we find a first-order phase transition and compute the resulting gravitational wave (GW) spectrum, which we compare with the projected sensitivities of space-based interferometers. Although the viable parameter space is small, it can be probed by future experiments.",
 "citR": [
-"1764733",
-"1990302",
-"1803365",
 "1686334",
-"1869725"
+"1803365",
+"1869725",
+"1764733",
+"1990302"
 ],
 "citE": [
-"2921478",
 "3221793",
 "3183927",
 "2843521",
+"2921478",
 "3094784",
 "3117718",
 "3131565",
@@ -253,9 +253,9 @@
 ],
 "abstract": "We study dark matter production in a renormalisable $\\mathbb{Z}_4$ Higgs-portal model containing a complex scalar $S_A$ and a real scalar $S_B$, where one or both states remain out of thermal equilibrium with the Standard Model bath. We follow their coupled evolution through conversion, semi-annihilation, and the decay $S_B\\to S_A S_A$ when kinematically allowed. We impose theoretical consistency conditions, limits on invisible Higgs decays, and LZ direct-detection bounds, accounting for each component's relic fraction. We check WIMP/FIMP assignments against interaction rates. When both states are stable, we find viable FIMP--FIMP and mixed WIMP--FIMP scenarios. In mixed cases, the WIMP-like state remains constrained by its Higgs-portal interactions, with the surviving points mainly concentrated near the Higgs resonance. The FIMP-like state can, however, provide a substantial fraction of the relic density with a negligible direct-detection signal. For $M_{S_B}>2M_{S_A}$, the decay of the heavier scalar leads to three production histories: SuperWIMP production, injection-assisted freeze-out, and sequential freeze-in. The mechanism depends on parent and daughter production. These decays can increase the abundance of a WIMP after freeze-out or contribute to the final abundance of a FIMP, changing the relation between the daughter's Higgs coupling and its relic density. Since the primary decays produce no Standard Model particles, electromagnetic and hadronic BBN bounds on visible decay products do not apply directly. We find $r_{\\rm BBN}\\ll1$ throughout the retained sample. To assess effects on structure formation, we use the dark matter fraction produced through decays and an equivalent thermal-WDM mass as approximate diagnostics. Some late-decay configurations are flagged as potentially warm, whereas the sequential freeze-in sample satisfies $m_{\\rm WDM}^{\\rm eq}\\gtrsim1~\\mathrm{MeV}$.",
 "citR": [
+"1869725",
 "1764733",
-"2686856",
-"1869725"
+"2686856"
 ],
 "citE": [
 "2895388",
@@ -485,8 +485,8 @@
 "2901490",
 "1982883",
 "2657746",
-"2824793",
 "2829767",
+"2824793",
 "2091707",
 "1873918",
 "2817040"

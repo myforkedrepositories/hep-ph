@@ -13,11 +13,11 @@
 ],
 "abstract": "We propose an interacting two-component dark matter model based on a gauged $U(1)_{B-L}$ extension of the Standard Model, which also accommodates neutrino masses through the type-I seesaw mechanism. The dark sector consists of a Dirac fermion $χ$ and a complex scalar $S$, which can both be stable without imposing an additional discrete symmetry and are directly coupled by a gauge-invariant Yukawa interaction. The resulting conversion, semi-conversion, and semi-annihilation processes lead to a genuinely coupled freeze-out. After imposing collider and dark matter constraints, we identify viable solutions away from the $Z'$ resonance for both mass hierarchies, $m_S > m_χ$ and $m_S < m_χ$. Despite the strong direct-detection constraints, part of the surviving parameter space remains within the reach of next-generation experiments.",
 "citR": [
-"1686334",
-"1990302",
 "1803365",
 "1764733",
-"2614919"
+"1686334",
+"2614919",
+"1990302"
 ],
 "citE": [
 "3086782",
@@ -110,8 +110,8 @@
 "1846923",
 "3062873",
 "2100409",
-"2962467",
 "2638716",
+"2962467",
 "3165814",
 "2793703",
 "2689316",
@@ -255,9 +255,9 @@
 "abstract": "The LZ 248 keV recoil candidate admits an interpretation in terms of pseudo-Dirac dark matter with a mixing-suppressed inelastic $Z$ interaction. In the MSSM, the Higgsino limit conflicts with the adopted solar-neutrino bound, while a gaugino realization requires an unprotected mass degeneracy. We realize such spectra in the MRSSM, where an $R$-symmetric Dirac bino produces the required $Z$ transition and wino coannihilation supplies the observed relic abundance. We impose the Higgs and gauge coupling relations of $N=2$ supersymmetry at a high scale and evolve them to low energy. With the remaining model parameters held fixed, we obtain spectra spanning roughly 300-850 GeV that satisfy the adopted constraints and have a small diagonal axial current. If anomaly mediation dominates the Majorana splitting, its local scale is tens of MeV for splittings of a few hundred keV. A five-dimensional warped construction generates this scale through Goldberger-Wise stabilization and a loop correction to the no-scale Kähler potential. The spectra remain testable through elastic scattering, solar neutrinos and long-lived charged states.",
 "citR": [],
 "citE": [
-"3207263",
-"3215016",
 "3217265",
+"3215016",
+"3207263",
 "1982681",
 "1647573"
 ],
