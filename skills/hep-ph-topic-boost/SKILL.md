@@ -22,8 +22,11 @@ python3 -I boost_topics.py --arxiv 2605.20162 --out boost.json \
   [--site https://<user>.github.io/hep-ph/] [--threshold 10]
 ```
 
-Default site: <https://restrepo.github.io/hep-ph/>; use the fork's address for another author and the
-repository's `SCORE_THRESHOLD` if it was changed. The script:
+Default site: the GitHub Pages site of the clone the script runs in (from its git remote, so a fork
+analyses its own pages), else <https://restrepo.github.io/hep-ph/>; pass `--site` for another one, and
+the repository's `SCORE_THRESHOLD` if it was changed. Watch topics are personal: they live only in the
+user's own repository variable `EXTRA_TOPICS` (GitHub does not copy variables to forks), never in the
+code, so suggest the value for the user to set and do not commit it to any file. The script:
 
 - finds the paper in the site's days (score, score parts, matched topics); if it is not there (older
   than the days shown) it takes title and abstract from arXiv and only lists candidates;
@@ -70,7 +73,7 @@ say so and suggest `SCORE_THRESHOLD` instead.
 #!/usr/bin/env python3
 """Suggest watch topics (EXTRA_TOPICS) that lift one arXiv paper above the threshold on the hep-ph network pages.
 
-  python3 -I boost_topics.py --arxiv 2605.20162 [--site https://restrepo.github.io/hep-ph/] [--threshold 10]
+  python3 -I boost_topics.py --arxiv 2605.20162 [--site https://<user>.github.io/hep-ph/] [--threshold 10]
          [--phrases "neutrino portal; mev dark matter"] [--top 8] [--out boost.json]
 
 1. Finds the paper in the site's days (days.json and hep-ph-<date>.json): score, score parts, matched topics.
@@ -81,8 +84,11 @@ say so and suggest `SCORE_THRESHOLD` instead.
    in the site's days contain it (they would gain too). --phrases evaluates given phrases instead.
 4. Proposes an EXTRA_TOPICS value: the most specific candidates, with the weight needed.
 Writes the analysis as JSON (--out) and prints a summary.
+Default --site: the GitHub Pages site of the clone it runs in (its git remote 'origin', so a fork analyses its
+own pages and scores), else https://restrepo.github.io/hep-ph/. Nothing is written to the repository: watch topics
+are set by each user in their own repository variable EXTRA_TOPICS.
 """
-import argparse, json, math, re, sys, time, urllib.parse, urllib.request
+import argparse, json, math, os, re, subprocess, sys, time, urllib.parse, urllib.request
 
 UA = {"User-Agent": "hep-ph-topic-boost/1.0 (academic literature alert)"}
 STOP = set("""a an the of and or in on at to for from by with without within into onto over under between among
@@ -144,9 +150,20 @@ def variants(p):
     v = {p, " ".join(w[:-1] + [pl])}
     return sorted(v | {x.replace("flavor", "flavour") for x in v} | {x.replace("violation", "violating") for x in v})
 
+def own_site():
+    """GitHub Pages address of the clone this script is in (https://<owner>.github.io/<repo>/), if any."""
+    try:
+        url = subprocess.run(["git", "-C", os.path.dirname(os.path.abspath(__file__)), "config", "--get",
+                              "remote.origin.url"], capture_output=True, text=True, timeout=10).stdout.strip()
+    except Exception: return None
+    m = re.search(r"github\.com[:/]([^/]+)/([^/]+?)(?:\.git)?/?$", url)
+    return f"https://{m.group(1).lower()}.github.io/{m.group(2)}/" if m else None
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--arxiv", required=True); ap.add_argument("--site", default="https://restrepo.github.io/hep-ph/")
+    ap.add_argument("--arxiv", required=True)
+    ap.add_argument("--site", default=own_site() or "https://restrepo.github.io/hep-ph/",
+                    help="the daily pages to analyse (default: this clone's GitHub Pages site)")
     ap.add_argument("--threshold", type=float, default=10); ap.add_argument("--category", default="hep-ph")
     ap.add_argument("--phrases", help="evaluate these phrases ('a; b') instead of extracting candidates")
     ap.add_argument("--top", type=int, default=8); ap.add_argument("--out")
