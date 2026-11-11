@@ -1,28 +1,56 @@
 [
  {
+  "date": "2026-11-11",
+  "page": "hep-ph-2026-11-11.html",
+  "built": "2026-11-11",
+  "code": "9ce8316673b1",
+  "nlist": 73,
+  "nrel": 28,
+  "top": [
+   {
+    "arxiv": "2606.06645",
+    "title": "micrOMEGAs 7: Beyond standard cosmology",
+    "score": 78.8,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2606.23787",
+    "title": "Multi-peaked high-frequency gravitational waves from PBH-assisted leptogenesis",
+    "score": 69.4,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2611.13617",
+    "title": "Self-interacting dark matter and neutrino masses from MeV-scale lepton-number breaking",
+    "score": 58.2,
+    "section": "new"
+   }
+  ]
+ },
+ {
   "date": "2026-11-10",
   "page": "hep-ph-2026-11-10.html",
-  "built": "2026-11-10",
+  "built": "2026-11-11",
   "code": "9ce8316673b1",
   "nlist": 128,
-  "nrel": 32,
+  "nrel": 37,
   "top": [
    {
     "arxiv": "2610.16968",
     "title": "Self-Interacting Dark Matter: From Particle Physics Theories to Structure Formation Simulations",
-    "score": 65.7,
+    "score": 65.9,
     "section": "replacement"
    },
    {
     "arxiv": "2611.12148",
     "title": "SuperWIMPs in the Kination Era: Imprints on $N_{\\rm eff}$ and CMB Spectral Distortions",
-    "score": 60.3,
+    "score": 60.4,
     "section": "new"
    },
    {
     "arxiv": "2611.10204",
     "title": "Real Intermediate States in Dark Matter Freeze-In from First Principles: Single Mediator",
-    "score": 54.4,
+    "score": 54.2,
     "section": "new"
    }
   ]
@@ -30,11 +58,17 @@
  {
   "date": "2026-11-09",
   "page": "hep-ph-2026-11-09.html",
-  "built": "2026-11-10",
+  "built": "2026-11-11",
   "code": "9ce8316673b1",
-  "nlist": 39,
-  "nrel": 11,
+  "nlist": 76,
+  "nrel": 21,
   "top": [
+   {
+    "arxiv": "2606.19757",
+    "title": "Graviton Floor",
+    "score": 53.4,
+    "section": "replacement"
+   },
    {
     "arxiv": "2611.09775",
     "title": "Uncovering TeV-scale dark matter with Z-fusion at a muon collider",
@@ -46,12 +80,6 @@
     "title": "DarkMatterFM-Registry: A Machine-Readable Registry of Dark-Matter Models Extracted from the arXiv Literature",
     "score": 35.5,
     "section": "cross"
-   },
-   {
-    "arxiv": "2611.09478",
-    "title": "An interrelation of three neutrino mixing angles",
-    "score": 29.4,
-    "section": "new"
    }
   ]
  },
