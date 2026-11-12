@@ -23,10 +23,10 @@
 "2964960"
 ],
 "citE": [
+"3209798",
+"3070028",
 "3209823",
 "3128103",
-"3070028",
-"3209798",
 "1969598",
 "2795517",
 "1846588",
@@ -91,18 +91,18 @@
 ],
 "abstract": "We investigate how the late-time decays of unstable particles into dark matter and neutrinos can leave measurable imprints on both cosmological observables and collider experiments. We study this mechanism within the scotogenic model, where the lightest singlet fermion $N_1$ serves as the dark matter candidate and is produced via the late decay of the lightest inert doublet scalar via the superWIMP mechanism. By incorporating a kination-dominated era in the early Universe, the altered expansion rate allows to match the observed $N_1$ relic density in parameter regions that would be underabundant in standard cosmology. The energy exchange between the injected neutrinos and photons resulting from the late-time decay can produce CMB spectral $μ$-distortions, detectable shifts in the effective number of relativistic species $N_{\\rm eff}$, or both simultaneously. Concentrating on the lightest component of inert doublet scalars with masses between $200$ and $500~\\text{GeV}$, we find that these cosmological signals are accompanied by complementary signatures accessible at the LHC. Although our analysis is derived within the scotogenic framework, our findings apply more broadly to scenarios in which the unstable particle undergoes late-time out-of-equilibrium decay to produce dark matter and non-thermal neutrinos, offering how future CMB measurements and collider searches can jointly probe dark matter production and the early Universe's thermal history.",
 "citR": [
-"2856850",
-"1294681"
+"1294681",
+"2856850"
 ],
 "citE": [
 "3221883",
-"3086782",
 "3206196",
+"3086782",
 "3205155",
 "1982681",
 "3165814",
-"2638716",
 "2962467",
+"2638716",
 "2940359",
 "1861144",
 "2802022",
@@ -1841,7 +1841,7 @@
 "section": "replacement",
 "recid": "3092472",
 "src": "INSPIRE",
-"nref": 165,
+"nref": 162,
 "title": "CANTON-$μ$ Proposal: A Next-Generation Muon $g-2$ Measurement at Sub-0.1 ppm Precision",
 "authors": [
 "Ce Zhang",
@@ -1863,7 +1863,7 @@
 "citE": [],
 "topR": [
 [
-0.031,
+0.037,
 "2690106"
 ],
 [
@@ -1877,15 +1877,15 @@
 ],
 "topE": [
 [
-0.133,
+0.132,
 "2706495"
 ],
 [
-0.116,
+0.12,
 "1938335"
 ],
 [
-0.088,
+0.091,
 "2059568"
 ]
 ],
@@ -1897,12 +1897,12 @@
 "watch": [],
 "parts": [
 0.0,
-0.08,
+0.1,
 0.38,
 0.5,
 0.0
 ],
-"score": 13.2
+"score": 13.6
 },
 {
 "arxiv": "2611.10753",
@@ -4347,7 +4347,7 @@
 "section": "replacement",
 "recid": "3179597",
 "src": "INSPIRE",
-"nref": 68,
+"nref": 66,
 "title": "Perusing confining pseudoreal theories: hints of emerging massless spin-1 bosons",
 "authors": [
 "Giacomo Cacciapaglia",
@@ -4358,29 +4358,29 @@
 "citE": [],
 "topR": [
 [
-0.012,
+0.013,
 "3094526"
 ],
 [
-0.011,
+0.012,
 "2856850"
 ],
 [
-0.011,
+0.012,
 "2964960"
 ]
 ],
 "topE": [
 [
-0.072,
+0.066,
 "3213062"
 ],
 [
-0.045,
+0.047,
 "1944631"
 ],
 [
-0.032,
+0.03,
 "1966767"
 ]
 ],
@@ -4391,11 +4391,11 @@
 "parts": [
 0.0,
 0.04,
-0.2,
+0.19,
 0.0,
 0.0
 ],
-"score": 4.2
+"score": 4.1
 },
 {
 "arxiv": "2611.12318",

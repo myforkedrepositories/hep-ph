@@ -17,8 +17,8 @@
 ],
 "abstract": "We present micrOMEGAs7, a major upgrade of the micrOMEGAs package for the computation of dark matter observables in generic models. This release introduces a generalized treatment of the Boltzmann equations, allowing for user-defined modifications of the Hubble expansion rate, entropy evolution, and non-thermal dark matter production from late-decaying cosmological components, thereby extending the framework beyond the standard radiation-dominated cosmology. The relic density can now be computed in scenarios such as low-temperature reheating, early matter domination, and kination. The new version also improves the treatment of sub-GeV dark matter, in particular annihilation into light mesons through scalar mediators, and provides updated spectra for indirect detection. Several experimental and observational constraints have been implemented or revised, including CMB bounds from Planck on energy injection during recombination and Fermi-LAT limits from dwarf spheroidal galaxies. For direct detection, a recast of recent LZ results has been included, and the code now takes into account effective electromagnetic couplings of spin-$1/2$ and spin-1 dark matter. Collider observables have also been extended through the implementation of CMS dilepton resonance constraints on $Z'$ mediators. Additional improvements include a more flexible treatment of effective relativistic degrees of freedom and an updated LHAPDF interface.",
 "citR": [
-"2856850",
-"2039411"
+"2039411",
+"2856850"
 ],
 "citE": [
 "3127262",
@@ -109,8 +109,8 @@
 "3075243",
 "2956181",
 "2842814",
-"2828434",
 "2905773",
+"2828434",
 "2134273",
 "3196096",
 "2771132",
@@ -310,7 +310,7 @@
 "section": "replacement",
 "recid": "3216300",
 "src": "INSPIRE",
-"nref": 121,
+"nref": 126,
 "title": "Exothermic Dark Matter with a Dark Higgs: The LZ 248 keV Event and the Galactic Center Excess",
 "authors": [
 "Jinheung Kim",
@@ -327,16 +327,16 @@
 ],
 "topR": [
 [
-0.024,
+0.031,
 "3146383"
 ],
 [
-0.019,
-"2794409"
+0.024,
+"2751074"
 ],
 [
-0.016,
-"1421624"
+0.018,
+"2794409"
 ]
 ],
 "topE": [
@@ -345,11 +345,11 @@
 "3202840"
 ],
 [
-0.382,
+0.361,
 "3215016"
 ],
 [
-0.208,
+0.216,
 "3201080"
 ]
 ],
@@ -362,12 +362,12 @@
 "watch": [],
 "parts": [
 0.91,
-0.07,
+0.09,
 1,
 0.0,
 0.41
 ],
-"score": 53.1
+"score": 53.7
 },
 {
 "arxiv": "2609.38316",
@@ -431,71 +431,6 @@
 0.39
 ],
 "score": 49.8
-},
-{
-"arxiv": "2609.17412",
-"section": "replacement",
-"recid": "3204104",
-"src": "INSPIRE",
-"nref": 84,
-"title": "Cosmological Constrained Axion-Portal Inelastic Dark Matter for the LZ Event",
-"authors": [
-"Haipeng An",
-"Fei Gao",
-"Jia Liu",
-"Minghao Liu",
-"Changlong Xu"
-],
-"abstract": "The recent high-recoil candidate event reported by LUX-ZEPLIN (LZ) motivates dark-matter scenarios with nonstandard kinematics and momentum-dependent interactions. We study a two-state inelastic dark-matter model in which $χ_1$ and $χ_2$ couple off-diagonally to an axion-like particle (ALP) that also couples to gluons and photons. Unlike treatments that assume only one dark-matter state is present today, we track the cosmological evolution of both states. The excited state $χ_2$ is sufficiently long-lived to survive to the present, with its relic fraction determined by the dark-sector conversion process $χ_2χ_2\\leftrightarrowχ_1χ_1$. We find that this fraction depends strongly on the Lorentz structure of the DM--ALP interaction. Scalar transition couplings lead to nonperturbative conversion rates with a pronounced resonant structure, yielding a final excited-state fraction that varies nonmonotonically with the mediator mass, from $f_2\\sim10^{-4}$ to approximately $1/2$ over the parameter range studied. The relative importance of endothermic and exothermic scattering is therefore parameter dependent. By contrast, pseudoscalar transition couplings preserve $f_2\\simeq1/2$, yielding recoil spectra dominated by exothermic $χ_2 N\\toχ_1 N$ down-scattering for the benchmarks considered. Benchmark spectra in all four scenarios can peak near the observed recoil energy of $250\\,\\mathrm{keV}$. Our results demonstrate that the dominant direction of inelastic scattering in direct detection can be dynamically selected by the early-Universe evolution of the dark sector. With additional data, annual modulation measurements could distinguish these scenarios. We further show that the ALP portal can be directly probed at colliders.",
-"citR": [],
-"citE": [
-"3202840",
-"3201080"
-],
-"topR": [
-[
-0.012,
-"3130296"
-],
-[
-0.006,
-"2964960"
-],
-[
-0.005,
-"3094526"
-]
-],
-"topE": [
-[
-0.761,
-"3202840"
-],
-[
-0.298,
-"3201080"
-],
-[
-0.153,
-"3215016"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [
-"direct detection",
-"dark sector",
-"dark matter"
-],
-"watch": [],
-"parts": [
-0.7,
-0.03,
-1,
-0.0,
-0.45
-],
-"score": 45.0
 },
 {
 "arxiv": "2502.13002",
@@ -760,9 +695,9 @@
 {
 "arxiv": "2611.14370",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 235,
+"recid": "3210725",
+"src": "INSPIRE",
+"nref": 239,
 "title": "The Higgs boson, naturalness, and the Universe",
 "authors": [
 "Mikhail Shaposhnikov"
@@ -791,15 +726,15 @@
 ],
 "topE": [
 [
-0.097,
+0.098,
 "2860407"
 ],
 [
-0.096,
+0.098,
 "3087237"
 ],
 [
-0.088,
+0.089,
 "1863157"
 ]
 ],
@@ -1116,8 +1051,8 @@
 {
 "arxiv": "2611.14473",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3227293",
+"src": "INSPIRE",
 "nref": 106,
 "title": "Running out of Field Range: Nonlinear Sourcing of Light Scalars",
 "authors": [
@@ -1132,7 +1067,7 @@
 ],
 "topR": [
 [
-0.01,
+0.009,
 "1955022"
 ],
 [
@@ -1146,11 +1081,11 @@
 ],
 "topE": [
 [
-0.099,
+0.098,
 "3089716"
 ],
 [
-0.056,
+0.055,
 "2810207"
 ],
 [
@@ -1169,13 +1104,75 @@
 0.0,
 0.0
 ],
-"score": 20.9
+"score": 20.8
+},
+{
+"arxiv": "2609.17412",
+"section": "replacement",
+"recid": "3204104",
+"src": "INSPIRE",
+"nref": 64,
+"title": "Cosmological Constrained Axion-Portal Inelastic Dark Matter for the LZ Event",
+"authors": [
+"Haipeng An",
+"Fei Gao",
+"Jia Liu",
+"Minghao Liu",
+"Changlong Xu"
+],
+"abstract": "The recent high-recoil candidate event reported by LUX-ZEPLIN (LZ) motivates dark-matter scenarios with nonstandard kinematics and momentum-dependent interactions. We study a two-state inelastic dark-matter model in which $χ_1$ and $χ_2$ couple off-diagonally to an axion-like particle (ALP) that also couples to gluons and photons. Unlike treatments that assume only one dark-matter state is present today, we track the cosmological evolution of both states. The excited state $χ_2$ is sufficiently long-lived to survive to the present, with its relic fraction determined by the dark-sector conversion process $χ_2χ_2\\leftrightarrowχ_1χ_1$. We find that this fraction depends strongly on the Lorentz structure of the DM--ALP interaction. Scalar transition couplings lead to nonperturbative conversion rates with a pronounced resonant structure, yielding a final excited-state fraction that varies nonmonotonically with the mediator mass, from $f_2\\sim10^{-4}$ to approximately $1/2$ over the parameter range studied. The relative importance of endothermic and exothermic scattering is therefore parameter dependent. By contrast, pseudoscalar transition couplings preserve $f_2\\simeq1/2$, yielding recoil spectra dominated by exothermic $χ_2 N\\toχ_1 N$ down-scattering for the benchmarks considered. Benchmark spectra in all four scenarios can peak near the observed recoil energy of $250\\,\\mathrm{keV}$. Our results demonstrate that the dominant direction of inelastic scattering in direct detection can be dynamically selected by the early-Universe evolution of the dark sector. With additional data, annual modulation measurements could distinguish these scenarios. We further show that the ALP portal can be directly probed at colliders.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.014,
+"3130296"
+],
+[
+0.008,
+"2964960"
+],
+[
+0.006,
+"3094526"
+]
+],
+"topE": [
+[
+0.473,
+"3202840"
+],
+[
+0.331,
+"3201080"
+],
+[
+0.141,
+"3215016"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"direct detection",
+"dark sector",
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.04,
+1,
+0.0,
+0.45
+],
+"score": 20.7
 },
 {
 "arxiv": "2611.14103",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3227222",
+"src": "INSPIRE",
 "nref": 52,
 "title": "Nucleon sigma terms in lattice QCD at physical pion mass and in the continuum",
 "authors": [
@@ -1348,8 +1345,8 @@
 {
 "arxiv": "2611.14251",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3227230",
+"src": "INSPIRE",
 "nref": 30,
 "title": "The $χ_{c1}(3872)$ Multiplet in the Diabatic Dynamical Diquark Model",
 "authors": [
@@ -1377,7 +1374,7 @@
 ],
 "topE": [
 [
-0.022,
+0.023,
 "3214449"
 ],
 [
@@ -1385,7 +1382,7 @@
 "3206672"
 ],
 [
-0.013,
+0.014,
 "3193100"
 ]
 ],
@@ -1400,7 +1397,7 @@
 0.0,
 0.0
 ],
-"score": 16.7
+"score": 16.8
 },
 {
 "arxiv": "2611.13679",
@@ -1852,61 +1849,6 @@
 "score": 8.8
 },
 {
-"arxiv": "2611.14086",
-"section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 65,
-"title": "Cosmic String Networks with Time-Varying Tension: Field-Theory Simulations and an Analytic Model",
-"authors": [
-"José Correia",
-"Ivan Rybak"
-],
-"abstract": "Cosmic string networks are predicted in some early-Universe scenarios, and in certain models, the string tension becomes a function of time. Here, for the first time, we perform numerical field-theory simulations of cosmic string networks with time-varying tension in an expanding Universe. We use a modified Abelian-Higgs model in which the tension varies as a power law of the scale factor $a$, that is, $μ\\propto a^{-2m}$. We perform simulations on grids containing $8192^3$ grid points, with $m\\in[-0.5,0.5]$, during radiation- and matter-dominated epochs. We find that, in our model, a string network forms only when the potential decreases more slowly than the amplitude of field oscillations redshifts due to the expansion of the Universe. Once formed, the network evolves according to the standard scaling behavior predicted by the velocity-dependent one-scale (VOS) model. To interpret these results, we compare the predictions of the VOS model with time-dependent tension to the asymptotic values obtained from the numerical simulations. Overall, we find good agreement between the numerical field-theory simulations and the calibrated VOS model. These results shed light on the evolution of cosmic string networks with time-varying tension and have potential implications for their observational signatures.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.007,
-"2826987"
-],
-[
-0.007,
-"2860896"
-],
-[
-0.007,
-"2787890"
-]
-],
-"topE": [
-[
-0.182,
-"2737686"
-],
-[
-0.116,
-"2650485"
-],
-[
-0.115,
-"1986809"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.02,
-0.52,
-0.0,
-0.0
-],
-"score": 8.5
-},
-{
 "arxiv": "2604.14282",
 "section": "replacement",
 "recid": "3145833",
@@ -1964,6 +1906,61 @@
 0.0
 ],
 "score": 8.3
+},
+{
+"arxiv": "2611.14086",
+"section": "cross",
+"recid": "3227215",
+"src": "INSPIRE",
+"nref": 70,
+"title": "Cosmic String Networks with Time-Varying Tension: Field-Theory Simulations and an Analytic Model",
+"authors": [
+"José Correia",
+"Ivan Rybak"
+],
+"abstract": "Cosmic string networks are predicted in some early-Universe scenarios, and in certain models, the string tension becomes a function of time. Here, for the first time, we perform numerical field-theory simulations of cosmic string networks with time-varying tension in an expanding Universe. We use a modified Abelian-Higgs model in which the tension varies as a power law of the scale factor $a$, that is, $μ\\propto a^{-2m}$. We perform simulations on grids containing $8192^3$ grid points, with $m\\in[-0.5,0.5]$, during radiation- and matter-dominated epochs. We find that, in our model, a string network forms only when the potential decreases more slowly than the amplitude of field oscillations redshifts due to the expansion of the Universe. Once formed, the network evolves according to the standard scaling behavior predicted by the velocity-dependent one-scale (VOS) model. To interpret these results, we compare the predictions of the VOS model with time-dependent tension to the asymptotic values obtained from the numerical simulations. Overall, we find good agreement between the numerical field-theory simulations and the calibrated VOS model. These results shed light on the evolution of cosmic string networks with time-varying tension and have potential implications for their observational signatures.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.007,
+"2826987"
+],
+[
+0.007,
+"2860896"
+],
+[
+0.007,
+"2787890"
+]
+],
+"topE": [
+[
+0.173,
+"2737686"
+],
+[
+0.116,
+"1986809"
+],
+[
+0.107,
+"2650485"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.02,
+0.5,
+0.0,
+0.0
+],
+"score": 8.1
 },
 {
 "arxiv": "2611.13429",
@@ -2026,8 +2023,8 @@
 {
 "arxiv": "2611.14170",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3227220",
+"src": "INSPIRE",
 "nref": 26,
 "title": "Projected sensitivity of the ANUBUIS detector to tau-coupled Heavy Neutral Leptons",
 "authors": [
@@ -2049,21 +2046,21 @@
 "3146383"
 ],
 [
-0.016,
+0.015,
 "2964960"
 ]
 ],
 "topE": [
 [
-0.085,
+0.083,
 "2617409"
 ],
 [
-0.083,
+0.081,
 "2835155"
 ],
 [
-0.068,
+0.066,
 "2836474"
 ]
 ],
@@ -2073,12 +2070,12 @@
 "watch": [],
 "parts": [
 0.0,
-0.08,
+0.07,
 0.24,
 0.0,
 0.0
 ],
-"score": 6.0
+"score": 5.8
 },
 {
 "arxiv": "2603.02652",
@@ -3162,8 +3159,8 @@
 {
 "arxiv": "2611.14318",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3227265",
+"src": "INSPIRE",
 "nref": 50,
 "title": "Resolved $Q_1^q$-$Q_{7γ}$ interference in $\\bar{B}\\to X_sγ$ at NLO: Hard matching and radiative charm-loop jet function for $m_c \\to 0$",
 "authors": [
@@ -3217,10 +3214,64 @@
 "score": 2.5
 },
 {
+"arxiv": "2611.14388",
+"section": "new",
+"recid": "3227273",
+"src": "INSPIRE",
+"nref": 78,
+"title": "The two-component picture of soft hadron production: Regge exchange, duality, and resonance cascades",
+"authors": [
+"Ondrej Chvala"
+],
+"abstract": "The fragmentation regions of soft hadronic collisions approach energy-independent limits. Benecke, Chou, Yang, and Yen stated this hypothesis of limiting fragmentation in 1969. Feynman gave it a parton-model formulation the same year. Measurements from the CERN Intersecting Storage Rings (ISR) to the Large Hadron Collider (LHC) still show this approach. Fischer and co-workers interpret the NA49 spectra from the CERN Super Proton Synchrotron (SPS) as the sum of a target and a projectile component, each the decay of an excited hadronic system. This review traces the theory behind that two-component picture. It examines the hypothesis that the hadronic tools that predate quantum chromodynamics (QCD) suffice for the soft, non-perturbative domain of QCD. Regge exchange organizes the fragmentation region in triple-Regge form. It supplies the diffractive mass law of the excited systems, with the shrinkage of the Pomeron in its transfer dependence. Finite-energy sum rules and the two-component duality of Harari and Freund equate averaged towers of resonances with that exchange. Duality therefore motivates describing the excited systems in hadronic degrees of freedom. The review follows the cascade description through its predecessors, namely the fireballs of Niu, the novas of Jacob and Slansky, the clusters of Hwa, Good-Walker diffraction, and the two-stage dissociation of Hama. HEART (Hadronic Excitations And Resonance Transitions) assembles these pieces into an event-level cascade of two-body hadronic transitions. A companion paper (arXiv:2611.11570) defines it and tests it against the NA49 data. The review closes with the fragmentation-region measurements that would separate a resonance cascade from a string, namely the isospin of forward baryons, the local balance of strangeness in associated production, and forward resonance signals with their mass tails.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.006,
+"3146383"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.042,
+"2821768"
+],
+[
+0.011,
+"3095771"
+],
+[
+0.011,
+"3097570"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.01,
+0.12,
+0.0,
+0.0
+],
+"score": 2.3
+},
+{
 "arxiv": "2611.14331",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3227268",
+"src": "INSPIRE",
 "nref": 30,
 "title": "Perturbative QCD Constraints on Hot Neutron-Star Matter",
 "authors": [
@@ -3387,8 +3438,8 @@
 {
 "arxiv": "2611.14351",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3227247",
+"src": "INSPIRE",
 "nref": 47,
 "title": "Renormalization-group flow of nucleon--$Δ$ contact interactions with an explicit $Δ$: decoupling and the scale dependence of large-$N_c$ relations",
 "authors": [
@@ -3415,7 +3466,7 @@
 ],
 "topE": [
 [
-0.035,
+0.034,
 "3091093"
 ],
 [
@@ -3423,8 +3474,8 @@
 "3206672"
 ],
 [
-0.008,
-"1796007"
+0.011,
+"2788951"
 ]
 ],
 "isme": false,
@@ -3439,60 +3490,6 @@
 0.0
 ],
 "score": 1.5
-},
-{
-"arxiv": "2611.14388",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 70,
-"title": "The two-component picture of soft hadron production: Regge exchange, duality, and resonance cascades",
-"authors": [
-"Ondrej Chvala"
-],
-"abstract": "The fragmentation regions of soft hadronic collisions approach energy-independent limits. Benecke, Chou, Yang, and Yen stated this hypothesis of limiting fragmentation in 1969. Feynman gave it a parton-model formulation the same year. Measurements from the CERN Intersecting Storage Rings (ISR) to the Large Hadron Collider (LHC) still show this approach. Fischer and co-workers interpret the NA49 spectra from the CERN Super Proton Synchrotron (SPS) as the sum of a target and a projectile component, each the decay of an excited hadronic system. This review traces the theory behind that two-component picture. It examines the hypothesis that the hadronic tools that predate quantum chromodynamics (QCD) suffice for the soft, non-perturbative domain of QCD. Regge exchange organizes the fragmentation region in triple-Regge form. It supplies the diffractive mass law of the excited systems, with the shrinkage of the Pomeron in its transfer dependence. Finite-energy sum rules and the two-component duality of Harari and Freund equate averaged towers of resonances with that exchange. Duality therefore motivates describing the excited systems in hadronic degrees of freedom. The review follows the cascade description through its predecessors, namely the fireballs of Niu, the novas of Jacob and Slansky, the clusters of Hwa, Good-Walker diffraction, and the two-stage dissociation of Hama. HEART (Hadronic Excitations And Resonance Transitions) assembles these pieces into an event-level cascade of two-body hadronic transitions. A companion paper (arXiv:2611.11570) defines it and tests it against the NA49 data. The review closes with the fragmentation-region measurements that would separate a resonance cascade from a string, namely the isospin of forward baryons, the local balance of strangeness in associated production, and forward resonance signals with their mass tails.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.007,
-"3146383"
-],
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-]
-],
-"topE": [
-[
-0.019,
-"2821768"
-],
-[
-0.014,
-"3095771"
-],
-[
-0.014,
-"3097570"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.02,
-0.05,
-0.0,
-0.0
-],
-"score": 1.3
 },
 {
 "arxiv": "2610.41082",
@@ -3730,7 +3727,7 @@
 "section": "replacement",
 "recid": "3179608",
 "src": "INSPIRE",
-"nref": 121,
+"nref": 124,
 "title": "High Energy Photon Polarimetry at Lepton Colliders: Quantum Information from Converted Photons",
 "authors": [
 "Carlos Henrique de Lima",
@@ -3756,7 +3753,7 @@
 ],
 "topE": [
 [
-0.021,
+0.02,
 "2682367"
 ],
 [
@@ -3764,7 +3761,7 @@
 "3216851"
 ],
 [
-0.014,
+0.013,
 "3154646"
 ]
 ],
@@ -4442,9 +4439,9 @@
 {
 "arxiv": "2611.14243",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 196,
+"recid": "3227174",
+"src": "INSPIRE",
+"nref": 198,
 "title": "Relativistic tidal response and mode excitation in neutron-star binaries",
 "authors": [
 "Yong Gao",
