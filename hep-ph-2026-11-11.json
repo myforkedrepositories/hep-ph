@@ -17,8 +17,8 @@
 ],
 "abstract": "We present micrOMEGAs7, a major upgrade of the micrOMEGAs package for the computation of dark matter observables in generic models. This release introduces a generalized treatment of the Boltzmann equations, allowing for user-defined modifications of the Hubble expansion rate, entropy evolution, and non-thermal dark matter production from late-decaying cosmological components, thereby extending the framework beyond the standard radiation-dominated cosmology. The relic density can now be computed in scenarios such as low-temperature reheating, early matter domination, and kination. The new version also improves the treatment of sub-GeV dark matter, in particular annihilation into light mesons through scalar mediators, and provides updated spectra for indirect detection. Several experimental and observational constraints have been implemented or revised, including CMB bounds from Planck on energy injection during recombination and Fermi-LAT limits from dwarf spheroidal galaxies. For direct detection, a recast of recent LZ results has been included, and the code now takes into account effective electromagnetic couplings of spin-$1/2$ and spin-1 dark matter. Collider observables have also been extended through the implementation of CMS dilepton resonance constraints on $Z'$ mediators. Additional improvements include a more flexible treatment of effective relativistic degrees of freedom and an updated LHAPDF interface.",
 "citR": [
-"2039411",
-"2856850"
+"2856850",
+"2039411"
 ],
 "citE": [
 "3127262",
@@ -35,8 +35,8 @@
 "2843535",
 "2802022",
 "1907141",
-"2756282",
 "2632045",
+"2756282",
 "2740358",
 "1803656",
 "1647573"
@@ -250,8 +250,8 @@
 "3162378",
 "3062873",
 "2793703",
-"1655576",
 "850629",
+"1655576",
 "2795517",
 "1607216"
 ],
@@ -883,8 +883,8 @@
 "abstract": "We present the first search for axion-like particle dark matter using SPHEREx data. We perform a conservative analysis on the first 16.5 months of SPHEREx data and derive new limits on the mass range $0.496 < m_a < 3.32\\,\\mathrm{eV}$ that are competitive with the literature. Our tightest limit on the coupling relative to those previously published is $g_{aγγ} < 2.10 \\times 10^{-11}\\,\\mathrm{GeV}^{-1}$ at $m_a = 0.606\\,\\mathrm{eV}$, with a median limit of $g_{aγγ} < 4.16 \\times 10^{-11}\\,\\mathrm{GeV}^{-1}$. Cast as model-independent limits on the lifetime of the dark matter particle, the median limit is $τ> 6.5 \\times 10^{25}\\,\\mathrm{s}$. We are also able to detect several expected emission features at high significance, such as atmospheric He I and the 3.3 $μ$m PAH feature. We calculate the Cramér-Rao bound and compare to sensitivity forecasts, finding that our limits could be improved by more than an order of magnitude with solely methodological improvements.",
 "citR": [],
 "citE": [
-"2795517",
-"1783234"
+"1783234",
+"2795517"
 ],
 "topR": [
 [
