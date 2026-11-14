@@ -2,10 +2,10 @@
  {
   "date": "2026-11-13",
   "page": "hep-ph-2026-11-13.html",
-  "built": "2026-11-13",
+  "built": "2026-11-14",
   "code": "9ce8316673b1",
   "nlist": 140,
-  "nrel": 42,
+  "nrel": 43,
   "top": [
    {
     "arxiv": "2611.16553",
@@ -14,15 +14,15 @@
     "section": "new"
    },
    {
-    "arxiv": "2611.15957",
-    "title": "The Curious Case of Anapole Dark Matter at LZ: Minimal, Elastic and Testable",
-    "score": 56.7,
+    "arxiv": "2611.14616",
+    "title": "$N_{\\mathrm{eff}}$, Radiative Dirac Neutrinos, and Flavor Physics from Leptoquarks",
+    "score": 59.4,
     "section": "new"
    },
    {
-    "arxiv": "2611.14616",
-    "title": "$N_{\\mathrm{eff}}$, Radiative Dirac Neutrinos, and Flavor Physics from Leptoquarks",
-    "score": 51.4,
+    "arxiv": "2611.15218",
+    "title": "Enhancing Graviton--Photon Conversion through Galactic Magnetic Turbulence",
+    "score": 45.3,
     "section": "new"
    }
   ]
