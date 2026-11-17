@@ -1,8 +1,64 @@
 [
  {
+  "date": "2026-11-17",
+  "page": "hep-ph-2026-11-17.html",
+  "built": "2026-11-17",
+  "code": "9ce8316673b1",
+  "nlist": 89,
+  "nrel": 29,
+  "top": [
+   {
+    "arxiv": "2605.27513",
+    "title": "Constraints on a Light Leptophilic Scalar from Dark-Sector Couplings",
+    "score": 49.3,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2611.21278",
+    "title": "Mono-Z Signatures of Vector Dark Matter Detection at Future Electron-Positron Colliders: FCC-ee and ILC",
+    "score": 43.2,
+    "section": "new"
+   },
+   {
+    "arxiv": "2609.05291",
+    "title": "Inelastic from the Other Side: Xenon Excitation Signals in Light of the LZ High-Recoil Event",
+    "score": 38.0,
+    "section": "replacement"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-16",
+  "page": "hep-ph-2026-11-16.html",
+  "built": "2026-11-17",
+  "code": "9ce8316673b1",
+  "nlist": 71,
+  "nrel": 20,
+  "top": [
+   {
+    "arxiv": "2611.18337",
+    "title": "Gravitational production of dark QED by the trace anomaly",
+    "score": 63.8,
+    "section": "new"
+   },
+   {
+    "arxiv": "2607.28564",
+    "title": "Dark Matter Constraints from Small-Scale Cosmic Structure",
+    "score": 39.7,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2611.18060",
+    "title": "Probing Dirac Heavy Neutral Leptons through EFT-Induced Meson Decays",
+    "score": 35.9,
+    "section": "new"
+   }
+  ]
+ },
+ {
   "date": "2026-11-13",
   "page": "hep-ph-2026-11-13.html",
-  "built": "2026-11-14",
+  "built": "2026-11-17",
   "code": "9ce8316673b1",
   "nlist": 140,
   "nrel": 43,

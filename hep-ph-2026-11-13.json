@@ -89,8 +89,8 @@
 "1708907"
 ],
 "citE": [
-"3193100",
 "2875244",
+"3193100",
 "1667059",
 "1655576"
 ],
@@ -392,7 +392,7 @@
 "section": "replacement",
 "recid": "2854064",
 "src": "INSPIRE",
-"nref": 89,
+"nref": 87,
 "title": "Generating the Dark Matter mass from the QCD vacuum: A new approach to the mass aspect of the Dark Matter-Baryon coincidence problem",
 "authors": [
 "Yi Chung"
@@ -770,7 +770,7 @@
 "section": "replacement",
 "recid": "3105005",
 "src": "INSPIRE",
-"nref": 138,
+"nref": 133,
 "title": "Heavy Neutrinos across the Electroweak-to-Multi-TeV Frontier via Novel ML-Enhanced Probes",
 "authors": [
 "Yin-Fa Shen",
@@ -786,7 +786,7 @@
 ],
 "topR": [
 [
-0.132,
+0.131,
 "3094526"
 ],
 [
@@ -800,11 +800,11 @@
 ],
 "topE": [
 [
-0.137,
+0.136,
 "3187199"
 ],
 [
-0.095,
+0.094,
 "2617409"
 ],
 [
@@ -829,7 +829,7 @@
 0.5,
 0.55
 ],
-"score": 29.3
+"score": 29.2
 },
 {
 "arxiv": "2611.15874",
@@ -1085,8 +1085,8 @@
 "title": "Connecting Electroweak Fine-Tuning, Tens-of-GeV Dark Matter, and Exotic Higgs Decays in the GNMSSM",
 "authors": [
 "Zhaoxia Heng",
-"Haijing Zhou",
-"Fei Li"
+"Fei Li",
+"Haijing Zhou"
 ],
 "abstract": "In the general next-to-minimal supersymmetric standard model (GNMSSM), we connect electroweak fine-tuning, a singlino dark matter candidate with mass around tens of GeV, and Exotic Higgs Decays, identifying a natural region characterized by the mass hierarchy $m_{\\tilde{S}}<m_{\\tilde{B}}<m_{\\tilde{H}}$ and $μ_{\\rm tot}\\in [200, 500]$ GeV. For fine-tuning measure $Δ\\leq 40$, the branching ratio $\\mathrm{Br}(h\\to a_sa_s)$ falls in the range 7\\%$-$25\\%, with the pseudoscalar mass $m_{a_s}$ lying mostly between 10 and 20 GeV. This region splits into two viable scenarios consistent with LZ 2024 direct detection: one where the lightest CP-even Higgs $h_1$ is SM-like ($h_1$ case), and another where the second-lightest $h_2$ is SM-like ($h_2$ case). LHC searches for $h\\to a_sa_s \\to b\\bar{b}τ^+τ^-$ exclude 12\\% (10\\%) of samples with 12 GeV $\\leq m_{a_s} \\leq$ 15.5 GeV in the $h_1$ ($h_2$) case, while a substantial fraction remains accessible at the HL-LHC in the $h_2$ case. Our analysis unifies naturalness, dark matter, and observable exotic Higgs decays, yielding concrete targets for future experiments.",
 "citR": [],
@@ -1852,7 +1852,7 @@
 "section": "replacement",
 "recid": "3198461",
 "src": "INSPIRE",
-"nref": 81,
+"nref": 77,
 "title": "Mixing-angle sensitivity of inclusive $Ξ_{bc} $ and $Ω_{bc}$ lifetimes",
 "authors": [
 "Hai-Yang Cheng",
@@ -4459,15 +4459,15 @@
 ],
 "topE": [
 [
-0.045,
+0.046,
 "3198665"
 ],
 [
-0.038,
+0.039,
 "3196194"
 ],
 [
-0.017,
+0.018,
 "2740358"
 ]
 ],
@@ -4482,7 +4482,7 @@
 0.0,
 0.0
 ],
-"score": 4.3
+"score": 4.4
 },
 {
 "arxiv": "2611.14624",
@@ -5873,7 +5873,7 @@
 "1294681"
 ],
 [
-0.011,
+0.01,
 "1413755"
 ],
 [
@@ -5902,7 +5902,7 @@
 "parts": [
 0.0,
 0.04,
-0.06,
+0.05,
 0.0,
 0.0
 ],
@@ -6598,7 +6598,7 @@
 "section": "replacement",
 "recid": "3157141",
 "src": "INSPIRE",
-"nref": 47,
+"nref": 46,
 "title": "Sequential Bayesian inference with correlated heavy-ion datasets",
 "authors": [
 "Lipei Du"
@@ -6622,11 +6622,11 @@
 ],
 "topE": [
 [
-0.025,
+0.026,
 "1881670"
 ],
 [
-0.013,
+0.014,
 "3216109"
 ],
 [
@@ -6878,13 +6878,13 @@
 "section": "cross",
 "recid": "3228168",
 "src": "INSPIRE",
-"nref": 36,
+"nref": 37,
 "title": "Resolving Radiogenic Heterogeneity in the Earth's Mantle with Multi-Site Geo-neutrino Measurements",
 "authors": [
 "Michael Leyton",
 "Stephen T. Dye"
 ],
-"abstract": "We present a global fit to geo-neutrino measurements at four underground sites (Kamioka, Gran Sasso, Sudbury, Jiangmen), combining signal rates with site-specific predictions of the lithospheric contribution to constrain the quantity and distribution of radioactivity in the Earth's mantle. Assuming a uniform distribution of radioactivity in the mantle, we find a geo-neutrino rate of $S_\\text{mantle} = 14.8 \\pm 4.5$ NIU when the lithospheric predictions are allowed to vary within their uncertainties. This uniform mantle signal rate corresponds to radiogenic heating of $18.5 \\pm 5.6$ TW. Although the uniform-mantle signal is resolved at $\\sim3.2σ$, there is noticeable tension between the inferred mantle signals at Jiangmen and Kamioka, which may indicate non-uniform geo-neutrino production in the mantle. We explore six families of models to describe the heterogeneous spatial distribution of radiogenic elements in the Earth's mantle. Each model contains anomalous bodies or reservoirs carrying an excess of heat-producing elements over a depleted mantle (DM) background, with total inventory set by bulk-silicate-Earth mass balance and by a geochemical Th/U constraint. For each model, we compute the geo-response at each detector site and fit the resulting signals to the four measurements. A total of 968,274 individual model configurations are defined and tested. The results of $\\sim$3 million distinct fits show that no plausible mantle or lithosphere model applied uniformly to all four sites reproduces the difference between the inferred mantle signals at the Jiangmen and Kamioka sites. Only local, site-specific prescriptions are able to reach the observed difference, suggesting that the Kamioka-Jiangmen tension is due to a local effect or statistical scatter, rather than large-scale mantle structure.",
+"abstract": "We present a global fit to geo-neutrino measurements at four underground sites (Kamioka, Gran Sasso, Sudbury, Jiangmen), combining signal rates with site-specific predictions of the lithospheric contribution to constrain the quantity and distribution of radioactivity in the Earth's mantle. Assuming a uniform distribution of radioactivity in the mantle, we find a geo-neutrino rate of $S_\\text{mantle} = 14.8 \\pm 4.5$ NIU when the lithospheric predictions are allowed to vary within their uncertainties. This uniform-mantle signal rate corresponds to radiogenic heating of $18.5 \\pm 5.6$ TW. Although the uniform-mantle signal is resolved at $\\sim3.2σ$, there is noticeable tension between the inferred mantle signals at Jiangmen and Kamioka, which may indicate non-uniform geo-neutrino production in the mantle. We explore six families of models to describe the heterogeneous spatial distribution of radiogenic elements in the Earth's mantle. Each model contains anomalous bodies or reservoirs carrying an excess of heat-producing elements over a depleted mantle (DM) background, with total inventory set by bulk-silicate-Earth mass balance and by a geochemical Th/U constraint. For each model, we compute the geo-response at each detector site and fit the resulting signals to the four measurements. A total of 968,274 individual model configurations are defined and tested. The results of $\\sim$3 million distinct fits show that no plausible mantle or lithosphere model applied uniformly to all four sites reproduces the difference between the inferred mantle signals at the Jiangmen and Kamioka sites. Only local, site-specific prescriptions are able to reach the observed difference, suggesting that the Kamioka-Jiangmen tension is due to a local effect or statistical scatter, rather than large-scale mantle structure.",
 "citR": [],
 "citE": [],
 "topR": [
@@ -7603,6 +7603,61 @@
 "score": 0.3
 },
 {
+"arxiv": "2611.16394",
+"section": "new",
+"recid": "3228862",
+"src": "INSPIRE",
+"nref": 39,
+"title": "Disentangling the Effects of Phase-Specific Transport Properties on Elliptic Flow Centrality Dependence in the AMPT Model",
+"authors": [
+"Yao Zhang",
+"Xipei Zhao"
+],
+"abstract": "The centrality dependence of charged hadron elliptic flow $v_{2}$ in Au+Au collisions at $\\sqrt{s_{NN}}=200~\\rm{GeV}$ is studied using the AMPT model with phase-specific control of partonic and hadronic transport properties. By separately varying the shear viscosity $η/s$, phase transition temperature $T_{tr}$, and hadronic scattering cross sections, we isolate their distinct effects on anisotropic flow. Hadronic rescattering is found to contribute increasingly to $v_{2}$ with centrality, with the contribution becoming dominant in peripheral collisions. Scaling up hadronic cross sections by a factor of four substantially amplifies $v_{2}$ in peripheral collisions and improves agreement with STAR data, suggesting that the flattening of $v_{2}$ at high centrality may reflect a larger effective hadronic cross section and highlighting the significant role of the hadronic phase in small systems.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.006,
+"2091707"
+],
+[
+0.005,
+"2695608"
+],
+[
+0.004,
+"3193100"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.02,
+0.0,
+0.0
+],
+"score": 0.2
+},
+{
 "arxiv": "2611.16977",
 "section": "cross",
 "recid": "3228189",
@@ -7824,61 +7879,6 @@
 "score": 0.0
 },
 {
-"arxiv": "2611.16394",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 39,
-"title": "Disentangling the Effects of Phase-Specific Transport Properties on Elliptic Flow Centrality Dependence in the AMPT Model",
-"authors": [
-"Yao Zhang",
-"Xipei Zhao"
-],
-"abstract": "The centrality dependence of charged hadron elliptic flow $v_{2}$ in Au+Au collisions at $\\sqrt{s_{NN}}=200~\\rm{GeV}$ is studied using the AMPT model with phase-specific control of partonic and hadronic transport properties. By separately varying the shear viscosity $η/s$, phase transition temperature $T_{tr}$, and hadronic scattering cross sections, we isolate their distinct effects on anisotropic flow. Hadronic rescattering is found to contribute increasingly to $v_{2}$ with centrality, with the contribution becoming dominant in peripheral collisions. Scaling up hadronic cross sections by a factor of four substantially amplifies $v_{2}$ in peripheral collisions and improves agreement with STAR data, suggesting that the flattening of $v_{2}$ at high centrality may reflect a larger effective hadronic cross section and highlighting the significant role of the hadronic phase in small systems.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.0,
-"913031"
-],
-[
-0.0,
-"881902"
-],
-[
-0.0,
-"877394"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.0,
-0.0,
-0.0
-],
-"score": 0.0
-},
-{
 "arxiv": "2611.16656",
 "section": "new",
 "recid": "3228286",
@@ -8049,7 +8049,7 @@
 "section": "replacement",
 "recid": "3191799",
 "src": "INSPIRE",
-"nref": 127,
+"nref": 130,
 "title": "Quantum Simulation of QCD in Axial Gauge",
 "authors": [
 "Xiaojun Yao"
