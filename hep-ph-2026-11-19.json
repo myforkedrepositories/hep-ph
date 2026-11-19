@@ -1,0 +1,4296 @@
+[
+{
+"arxiv": "2601.22740",
+"section": "replacement",
+"recid": "3113252",
+"src": "INSPIRE",
+"nref": 162,
+"title": "Radiative Dirac Neutrino Masses from Modular $S_3$ Symmetry in an Axion Model",
+"authors": [
+"Sin Kyu Kang",
+"Ranjeet Kumar",
+"Hiroshi Okada"
+],
+"abstract": "We present a unified axion model framework that simultaneously addresses the origin of neutrino masses, leptonic flavor structure, the strong CP problem, and dark matter. The model is based on a global $U(1)_{\\rm PQ}$ symmetry combined with a modular $S_3$ symmetry and is realized within a novel class of KSVZ-type axion model. Exotic colored fermions and scalars mediate radiative neutrino mass generation at the one loop-level. The PQ charge assignment forbids tree-level neutrino masses and leaves a residual $Z_3$ symmetry that ensures the Dirac nature of neutrinos. In the minimal realization, the neutrino mass matrix is of rank two, predicting one massless neutrino. Consequently, the sum of neutrino masses is constrained for both the normal and inverted hierarchies. We analyze the implications for charged lepton flavor violation and the lepton $g-2$. The axion emerging from this framework dynamically resolves the strong CP problem and accounts for the observed dark matter abundance. Notably, the predicted axion-photon coupling is within reach of upcoming experiments and consistent with existing astrophysical and cosmological bounds.",
+"citR": [],
+"citE": [
+"2822193",
+"2877739",
+"2963992",
+"2963338",
+"2931725",
+"2697191",
+"2871910",
+"3062873",
+"2793703",
+"2835172",
+"2940359",
+"1723712",
+"1796734",
+"1783234",
+"1688995"
+],
+"topR": [
+[
+0.072,
+"1941263"
+],
+[
+0.052,
+"1709434"
+],
+[
+0.051,
+"1597138"
+]
+],
+"topE": [
+[
+0.237,
+"3062873"
+],
+[
+0.235,
+"2822193"
+],
+[
+0.15,
+"2697191"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dirac neutrino mass",
+"radiative neutrino mass",
+"observed dark matter",
+"dark matter abundance",
+"lepton flavor violation",
+"neutrino mass",
+"dark matter"
+],
+"watch": [],
+"parts": [
+1.0,
+0.22,
+0.68,
+0.0,
+0.93
+],
+"score": 61.0
+},
+{
+"arxiv": "2611.14593",
+"section": "replacement",
+"recid": "3227632",
+"src": "INSPIRE",
+"nref": 124,
+"title": "Strongly supercooled first-order phase transitions: monopole abundance, entropy production and homogeneity consistency",
+"authors": [
+"Chen Zhang",
+"Yue Niu",
+"Xin Zhang"
+],
+"abstract": "We investigate whether monopole production in the early universe from a first-order phase transition in a unified gauge theory can be significantly suppressed if the phase transition is subject to strong supercooling but still completes successfully. This is facilitated by adopting a Gaussian nucleation model and assuming the false vacuum energy released is transferred to sectors which behave effectively as radiation in terms of cosmological evolution. We distinguish three criteria of phase-transition completion: the comoving measure completion (CMC) characterized by the eventual vanishing of the false-vacuum fraction (FVF), the physical volume completion (PVC) characterized by the eventual vanishing of the physical volume of false vacuum, and the asymptotic thermodynamic completion (ATC), which refers to the finiteness of total entropy production. Assuming an idealized Friedmann-Lemaître-Robertson-Walker (FLRW) cosmology, it is shown that the three criteria share exactly the same completion boundary, away from which they are completely equivalent. It is further shown that monopole abundance can be arbitrarily suppressed for parameter points approaching the completion boundary from the successful side. Nevertheless, for parameter points too close to the completion boundary, justification of the self-consistency of a homogeneous FLRW cosmology is difficult. We propose the use of the Hubble-scale FVF root-mean-square fluctuation to diagnose the homogeneity consistency issue, and find that arbitrarily strong suppression of monopole abundance relative to a reasonable Kibble estimate is not justifiable in terms of homogeneity consistency. These findings also have implications for gravitational wave production in strongly supercooled phase transitions.",
+"citR": [],
+"citE": [
+"2747842",
+"2657746"
+],
+"topR": [
+[
+0.015,
+"3130296"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.085,
+"3128752"
+],
+[
+0.075,
+"3167588"
+],
+[
+0.074,
+"2657746"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"early universe",
+"gravitational wave"
+],
+"watch": [],
+"parts": [
+0.7,
+0.04,
+0.24,
+0.0,
+0.23
+],
+"score": 31.4
+},
+{
+"arxiv": "2611.09478",
+"section": "replacement",
+"recid": "3225739",
+"src": "INSPIRE",
+"nref": 26,
+"title": "An interrelation of three neutrino mixing angles",
+"authors": [
+"Zhi-zhong Xing"
+],
+"abstract": "We conjecture a novel interrelation of three neutrino mixing angles: $θ^{}_{23} = \\left(θ^{}_{12} + θ^{}_{13}\\right)/2 + π/8$, which predicts $θ^{}_{23} = 43.46^\\circ \\pm 0.26^\\circ$ with inputs of the latest JUNO and Daya Bay precision data. A simple ansatz is proposed to derive this phenomenologically favored and experimentally testable angle relation, and a new expansion of the lepton flavor mixing matrix in powers of a single small parameter is presented as a by-product.",
+"citR": [],
+"citE": [
+"2762216",
+"3193100"
+],
+"topR": [
+[
+0.021,
+"1854224"
+],
+[
+0.015,
+"2690106"
+],
+[
+0.012,
+"3184726"
+]
+],
+"topE": [
+[
+0.07,
+"2762216"
+],
+[
+0.069,
+"3214449"
+],
+[
+0.06,
+"2730569"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.7,
+0.06,
+0.2,
+0.0,
+0.0
+],
+"score": 29.3
+},
+{
+"arxiv": "2605.28275",
+"section": "replacement",
+"recid": "3161788",
+"src": "INSPIRE",
+"nref": 71,
+"title": "Dark Matter Interpretation of the Super-Kamiokande Antineutrino Excess in $\\mathrm{U}(1)_{L_μ-L_τ}$ model",
+"authors": [
+"Motoi Endo",
+"Yushi Mura",
+"Tenta Tsuji"
+],
+"abstract": "Recent Super-Kamiokande analyses of the diffuse supernova neutrino background, based on data across all SK phases, indicate a mild preference over the zero-DSNB hypothesis at the level of about $2.3σ$ with electron-like antineutrino events at $E_{\\barν_e} \\simeq 20\\,\\mathrm{MeV}$. We investigate whether all or part of this excess can be accounted for by MeV-scale dark matter annihilation into neutrinos in a $\\mathrm{U}(1)_{L_μ-L_τ}$ model. The dark matter is a Dirac fermion with $m_χ\\simeq 22\\,\\mathrm{MeV}$ that annihilates via a light $Z'$ mediator into $ν_μ\\barν_μ$ and $ν_τ\\barν_τ$, which are partly converted into $\\barν_e$ through flavor oscillations. We find that this scenario can account for the excess, or a fraction thereof, while reproducing the observed relic abundance via thermal freeze-out. We further discuss the relevant laboratory and cosmological constraints, including neutrino trident production, NA64-$μ$, Borexino, and the contribution to $ΔN_\\mathrm{eff}$.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.144,
+"3130296"
+],
+[
+0.056,
+"2627241"
+],
+[
+0.049,
+"2663002"
+]
+],
+"topE": [
+[
+0.203,
+"2942039"
+],
+[
+0.16,
+"2971971"
+],
+[
+0.101,
+"2712207"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"observed relic",
+"relic abundance",
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.4,
+0.58,
+0.0,
+0.68
+],
+"score": 27.4
+},
+{
+"arxiv": "2611.24241",
+"section": "new",
+"recid": "",
+"src": "arXiv source",
+"nref": 52,
+"title": "Search for Heavy Charged Higgs Bosons in Boosted Top and Bottom Quark Final States at a 1.4 TeV Future Lepton Collider",
+"authors": [
+"Majid Hashemi"
+],
+"abstract": "The discovery potential for heavy charged Higgs bosons $H^\\pm$ decaying into a top-bottom quark pair is investigated at a future $e^+e^-$ collider operating at $\\sqrt{s}=1.4~\\mathrm{TeV}$. The study considers charged Higgs masses between 200 and 600 GeV within all four Yukawa types of the two-Higgs-doublet model (2HDM). The boosted $tb$ final state is explored using complementary cut-based and machine-learning analyses based on boosted decision trees (BDT). The expected signal significance and sensitivity contours in the $(m_{H^\\pm},\\tanβ)$ plane are obtained for each Yukawa type. The resulting sensitivity extends to regions of the 2HDM parameter space beyond the projected reach of the High-Luminosity LHC (HL-LHC), demonstrating the complementary potential of a future high-energy lepton collider to probe heavy charged Higgs bosons.",
+"citR": [],
+"citE": [
+"822544"
+],
+"topR": [
+[
+0.042,
+"1455793"
+],
+[
+0.036,
+"3094526"
+],
+[
+0.033,
+"1589847"
+]
+],
+"topE": [
+[
+0.097,
+"2183252"
+],
+[
+0.085,
+"2932612"
+],
+[
+0.08,
+"2972436"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.45,
+0.13,
+0.28,
+0.0,
+0.0
+],
+"score": 24.0
+},
+{
+"arxiv": "2611.24694",
+"section": "new",
+"recid": "",
+"src": "arXiv source",
+"nref": 48,
+"title": "Pole parameters of the $f_2(1270)$ and $f_2'(1525)$ from a coupled-channel analysis of the radiative $J/ψ$ multipoles",
+"authors": [
+"Igor Danilkin",
+"David Baron",
+"Emilie Passemar",
+"Marc Vanderhaeghen"
+],
+"abstract": "We determine the pole parameters of $f_2(1270)$ and $f_2'(1525)$ from the combined fit to the isoscalar $D$-wave $ππ$ phase shift, the $ππ\\to K\\bar K$ modulus, and the BESIII $J/ψ\\toγπ^0π^0$ and $γK_SK_S$ data: all three $2^{++}$ multipoles $E1$, $M2$ and $E3$, and the $M2$-$E1$ phases. The hadronic amplitude is a two-channel $K$-matrix with two poles and all parameters free, so that no resonance information is taken from the Particle Data Group. The radiative decay amplitudes are written as a coupled-channel Muskhelishvili-Omnès representation, with the Omnès matrix generated by that hadronic amplitude. The left-hand cuts, which carry the production dynamics, are approximated by a linear subtraction polynomial in the physical region. The model-independent kinematic constraints among the $J=2$ helicity amplitudes are implemented explicitly. The fit describes all $358$ points with $χ^2/N=1.29$ and gives $\\sqrt{s_p}=(1267.5\\pm1.3\\pm2.6)-i\\,\\frac{1}{2}\\,(175.5\\pm2.4\\pm7.4)\\ \\mathrm{MeV}$ for the $f_2(1270)$ and $(1514.8\\pm2.8\\pm1.5)-i\\,\\frac{1}{2}\\,(80.4\\pm3.4\\pm4.8)\\ \\mathrm{MeV}$ for the $f_2'(1525)$, where the first uncertainty is statistical, from a parametric bootstrap with the data errors rescaled by $\\sqrt{χ^2/N}$ of each set, and the second systematic, from $17$ variations of the analysis.",
+"citR": [],
+"citE": [
+"3193100",
+"2817040"
+],
+"topR": [
+[
+0.005,
+"3184726"
+],
+[
+0.004,
+"2690106"
+],
+[
+0.004,
+"2860896"
+]
+],
+"topE": [
+[
+0.022,
+"3193100"
+],
+[
+0.02,
+"2817040"
+],
+[
+0.017,
+"3227657"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.48,
+0.02,
+0.06,
+0.0,
+0.0
+],
+"score": 18.3
+},
+{
+"arxiv": "2611.23984",
+"section": "new",
+"recid": "3230853",
+"src": "INSPIRE",
+"nref": 56,
+"title": "Role of excited hyperons in $K^{*}Ξ$ production via $K^{-}N$ scattering",
+"authors": [
+"Si-Yu Ma",
+"Xiao-Yun Wang"
+],
+"abstract": "We investigate the production mechanism of $K^-N\\to K^*Ξ$ and the role of high-mass excited hyperons within an effective Lagrangian approach, using a combined fit to cross section and polarization data for $K^-p\\to K^{*+}Ξ^-$. The model includes $s$- and $u$-channel exchanges of the ground-state $Λ$ and $Σ$ hyperons, together with $s$-channel contributions from $Λ(2325)$ and $Σ(2230)$. The pronounced near-threshold enhancement of the total cross section is driven mainly by these excited hyperons, whereas $u$-channel exchange dominates at backward angles at higher energies. Polarization results show that both the $K^*$ spin-density matrix elements and the $Ξ$ recoil polarization are sensitive to excited-hyperon contributions near threshold. Notably, the latter remains sensitive to interference involving excited-hyperon amplitudes even at higher energies. Moreover, with the same fitted parameters and no additional free parameters, the predicted cross sections for $K^-p\\to K^{*0}Ξ^0$ and $K^-n\\to K^{*0}Ξ^-$ agree well with available measurements. Finally, a Dalitz analysis of $K^-p \\to K^{*+}Ξ^- \\to KπΞ^-$, together with existing $KπΞ^-$ cross section data, indicates the feasibility of reconstructing $K^{*+}Ξ^-$ through this final state. These results suggest that $K^*Ξ$ production provides a valuable reaction channel for investigating high-mass excited hyperons and their hadronic couplings, and offers theoretical guidance for future experimental measurements.",
+"citR": [],
+"citE": [
+"3193100"
+],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.015,
+"3227657"
+],
+[
+0.014,
+"3214449"
+],
+[
+0.013,
+"3206672"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"production mechanism"
+],
+"watch": [],
+"parts": [
+0.45,
+0.0,
+0.04,
+0.0,
+0.14
+],
+"score": 17.9
+},
+{
+"arxiv": "2608.23713",
+"section": "replacement",
+"recid": "3195622",
+"src": "INSPIRE",
+"nref": 39,
+"title": "Soft Scale Symmetry Breaking with Laguerre Explicit Regulators",
+"authors": [
+"A. R. Vieira"
+],
+"abstract": "In this work, we search for explicit regulators that do not spuriously break scale invariance starting from conditions established by implicit regularization. There is a family of regulator functions that obeys the conditions and leads to soft breaking terms of the dilatation current. This family of functions is shown to be related to the Laguerre polynomials. We apply this approach by revisiting quadratic divergences in the context of the naturalness problem of the Standard Model and show that the quadratic dependence of the Higgs mass on the cutoff is not required by consistency of scale-symmetry breaking and can be removed within this class of regulators. Applications of these regulators beyond 1-loop order are also considered.",
+"citR": [],
+"citE": [
+"3193100"
+],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.035,
+"1667060"
+],
+[
+0.033,
+"1966767"
+],
+[
+0.025,
+"3164308"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.45,
+0.0,
+0.1,
+0.0,
+0.0
+],
+"score": 17.3
+},
+{
+"arxiv": "2611.24344",
+"section": "new",
+"recid": "3230863",
+"src": "INSPIRE",
+"nref": 116,
+"title": "Doubly heavy open--flavor tetraquarks within the relativistic quark model",
+"authors": [
+"Vladimir O. Galkin",
+"Elena M. Savchenko"
+],
+"abstract": "Mass spectra of the ground, orbitally and radially excited states of doubly heavy open--flavor tetraquarks are calculated within the relativistic quark model based on the quasipotential approach and quantum chromodynamics. Tetraquarks are considered as bound states of a heavy diquark $\\mathrm{QQ^{\\prime}}$ ($\\mathrm{Q,Q^{\\prime} = c,b}$) and a light antidiquark $\\mathrm{\\overline{qq^{\\prime}}}$ ($\\mathrm{q,q^{\\prime} = u,d,s}$). The diquark--antidiquark interaction quasipotential includes both spin--independent and spin--dependent relativistic contributions. The finite sizes of the diquark and antidiquark are taken into account via the form factors of their interaction with gluons. Masses of the ground ($1S$) and excited ($1P$, $2S$, $1D$, $2P$, $3S$) states are calculated including the mixing of states with the same observable quantum numbers $J^{P}$ but different spins $S$. The obtained masses are compared with the lowest allowed thresholds for strong fall--apart decays into a pair of heavy--light mesons in $S$--wave. Most of the states lie significantly above these thresholds. However, several states, predominantly orbital excitations with large $J$, lie below or slightly above the corresponding thresholds and, thus, could be promising candidates for experimental observation. The number of such near--threshold states increases for tetraquarks containing bottom quarks. The predicted mass of the ground state of the $\\mathrm{cc\\overline{ud}}$ tetraquark with $J^{P}=1^{+}$ is consistent with the experimentally observed $\\mathrm{T}_{\\mathrm{cc}}(3875)^{+}$ state.",
+"citR": [],
+"citE": [
+"3193100"
+],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.033,
+"3193100"
+],
+[
+0.031,
+"2750604"
+],
+[
+0.027,
+"2817040"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.45,
+0.0,
+0.1,
+0.0,
+0.0
+],
+"score": 17.2
+},
+{
+"arxiv": "2605.25918",
+"section": "replacement",
+"recid": "3159166",
+"src": "INSPIRE",
+"nref": 87,
+"title": "Predicted Exotic Doubly Heavy-Strange Pentaquarks",
+"authors": [
+"Albert Feijoo",
+"Eulogio Oset"
+],
+"abstract": "We predict exotic doubly heavy--strange pentaquarks with minimal quark content $u\\bar d sQQ'$ ($QQ'=cc,bc,bb$) within a coupled-channel unitary framework where the interaction is derived from an extension of the local hidden gauge approach to the heavy-quark sector. We obtain a robust spectrum of manifestly exotic states; two states appear in the $u\\bar d scc$ sector, three in $u\\bar d scb$, and two in $u\\bar d sbb$. These emerge either as bound states or resonances, along with seven additional virtual states manifested as threshold cusps. The binding mechanism is dominated by off-diagonal transitions among heavy-baryon--light-meson channels, while diagonal interactions are strongly suppressed. These results extend exotic hadron spectroscopy into the doubly heavy--strange sector and provide concrete targets for future experimental searches.",
+"citR": [],
+"citE": [
+"3193100"
+],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.033,
+"3091093"
+],
+[
+0.026,
+"3193100"
+],
+[
+0.026,
+"2817040"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.45,
+0.0,
+0.09,
+0.0,
+0.0
+],
+"score": 17.2
+},
+{
+"arxiv": "2611.23922",
+"section": "new",
+"recid": "3230802",
+"src": "INSPIRE",
+"nref": 85,
+"title": "Gravitational Form Factors and Transverse Mechanical Structure of the Charged Kaon in a Two-Fock-Sector Light-Front Hamiltonian",
+"authors": [
+"Parashmani Thakuria",
+"Madhurjya Lalung",
+"Jayanta Kumar Sarma"
+],
+"abstract": "We study the electromagnetic and gravitational form factors of the charged kaon in a light-front Hamiltonian model with coupled $|u\\bar s\\rangle$ and $|u\\bar s g\\rangle$ Fock sectors. We solve the coupled Hamiltonian in a longitudinal Jacobi and transverse harmonic-oscillator basis, with the interaction strength fixed by the kaon mass. The momentum form factors are extracted from $T^{++}$, while the stress form factors are obtained from the transverse shear projection of the QCD Belinfante energy-momentum tensor, including diagonal, sector-changing, and constrained-field contributions. The strange antiquark carries the largest fraction of the kaon's longitudinal momentum, whereas the gluon carries only $2.05\\%$. Despite this small momentum fraction, the gluon contributes $42.4\\%$ of $|D_K(0)|$, for which we obtain $D_K(0)=-2.03610$. The charge and transverse momentum radii are $0.5178\\pm0.0278\\,\\mathrm{fm}$ and $0.3394\\pm0.0113\\,\\mathrm{fm}$, respectively, with uncertainties estimated from mass and basis variations. We obtain the transverse mechanical distributions using two ultraviolet continuations of the directly calculated $D$ form factors beyond $Q^2=2\\,\\mathrm{GeV}^2$. Both continuations give positive pressure at small transverse distances and negative pressure at larger distances. The corresponding transverse mechanical radii are $0.4616\\pm0.0130\\,\\mathrm{fm}$ and $0.4768\\pm0.0132\\,\\mathrm{fm}$, both larger than the transverse momentum radius. The central pressure changes substantially between the two continuations, whereas the pressure zero and mechanical radii vary much less.",
+"citR": [],
+"citE": [
+"3193100"
+],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.016,
+"2851201"
+],
+[
+0.012,
+"3227657"
+],
+[
+0.012,
+"3214449"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.45,
+0.0,
+0.04,
+0.0,
+0.0
+],
+"score": 16.5
+},
+{
+"arxiv": "2602.03384",
+"section": "replacement",
+"recid": "3115088",
+"src": "INSPIRE",
+"nref": 44,
+"title": "Asymmetric dark matter from leptogenesis in type-III seesaw framework with modular $S_4$ symmetry",
+"authors": [
+" Abhishek",
+"V. Suryanarayana Mummidi"
+],
+"abstract": "We present a unified framework for neutrino masses, baryogenesis, and dark matter based on a modular $S_4$ symmetry combined with a type-III seesaw mechanism. All Yukawa couplings, CP phases, and flavor textures originate from a single complex modulus $τ$, whose vacuum expectation value controls both visible and dark sector dynamics. The same modular parameter fixes the neutrino mass matrix, determines the CP asymmetries driving resonant leptogenesis, and correlates the resulting baryon and dark matter abundances. A detailed numerical analysis shows that the model reproduces all neutrino oscillation data within the $3σ$ NuFIT~5.2 (2024) ranges for normal ordering, predicting $δ_{\\rm CP} \\simeq \\pm (150^\\circ-180^\\circ)$, $\\sum m_ν\\simeq(0.06-0.08)~\\mathrm{eV}$, and an effective Majorana mass $m_{ββ} \\simeq (0.3 - 4)\\times 10^{-3}~\\mathrm{eV}$, testable in next-generation neutrinoless double-beta decay experiments. The same modular Yukawas yield resonantly enhanced CP asymmetries $|ε_{L,χ}| \\sim 10^{-9}-10^{-6}$ at $M_Σ\\sim 10^{7}~\\mathrm{GeV}$, successfully generating the observed baryon asymmetry $η_B\\simeq6\\times10^{-10}$ and dark relic density $Ω_χh^2\\simeq0.12$ without additional free parameters. The predicted correlation $Ω_χ/Ω_B\\simeq5.4$ fixes the dark matter mass to $m_χ\\simeq0.1-2~\\mathrm{GeV}$, consistent with all current constraints. This framework therefore realizes a fully predictive baryon$-$dark matter co-genesis, where the geometry of the modular symmetry links the origin of flavor, CP violation, and the cosmic matter asymmetry.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.03,
+"3184726"
+],
+[
+0.022,
+"1249404"
+],
+[
+0.017,
+"1589847"
+]
+],
+"topE": [
+[
+0.116,
+"3148101"
+],
+[
+0.115,
+"2692782"
+],
+[
+0.114,
+"2851262"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"relic density",
+"dark matter mass",
+"neutrino oscillation data",
+"dark matter abundance",
+"dark sector",
+"neutrino mass",
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.09,
+0.33,
+0.0,
+0.88
+],
+"score": 16.4
+},
+{
+"arxiv": "2611.24671",
+"section": "new",
+"recid": "",
+"src": "arXiv source",
+"nref": 54,
+"title": "A New GUT",
+"authors": [
+"Prateek Agrawal",
+"Michael Nee",
+"Mario Reig"
+],
+"abstract": "We present a new class of 4-dimensional Grand Unified Theories where the gauge sectors of the standard model have a novel embedding in the unified group that does not factor through an $SU(5)$ subgroup. The smallest example has gauge algebra $\\frak{su}(12)$ and an anomaly-free spectrum that produces the three standard model generations with no additional chiral matter. The embedding predicts the axion-photon anomaly ratio $E/N=2/3$ and the weak mixing angle $\\sin^2θ_W=1/2$ at the unification scale. Gauge-mediated proton decay proceeds through flipped-$SU(5)$-like operators and the minimally charged smooth monopole carries two Dirac charge units. The global gauge group can be $SU(12)$ or $SU(12)/\\mathbb{Z}_2$, with the former allowing color singlets of half-integer electric charge. We develop a GUT bootstrap to constrain $SU(n)$ embeddings with three generations and no additional chiral matter. For unified fermions in up to two-index representations, we prove that all new embeddings arise from the $SU(8m+4)$ family, including flavor unified models for $m \\geq 2$.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.026,
+"1663960"
+],
+[
+0.023,
+"1709434"
+],
+[
+0.022,
+"1679809"
+]
+],
+"topE": [
+[
+0.089,
+"1944631"
+],
+[
+0.082,
+"1966767"
+],
+[
+0.05,
+"2087943"
+]
+],
+"isme": false,
+"coauthors": [
+"Reig, M."
+],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.08,
+0.26,
+0.5,
+0.0
+],
+"score": 13.4
+},
+{
+"arxiv": "2610.12719",
+"section": "replacement",
+"recid": "3213657",
+"src": "INSPIRE",
+"nref": 49,
+"title": "Stochastic gravitational waves from narrow-band cosmological magnetic fields",
+"authors": [
+"Abdias Aires",
+"Tatsuya Daniel"
+],
+"abstract": "We calculate the spectrum of gravitational waves generated by a cosmological magnetic field with a narrow-band power spectrum. For a magnetic spectrum narrowly peaked at a comoving wavenumber $k_c$, we find that the gravitational wave signal has a maximum at $2k_c$ and, as expected from momentum conservation, has a sharp cutoff at that scale. We apply this analysis to an ultralight dark matter model of magnetogenesis operating around recombination, in which an axion-photon coupling generates a helical magnetic field by parametric resonance. We determine the conditions for the resulting gravitational waves to enter the frequency range of pulsar timing experiments. Although the required frequency can be reached for sufficiently large coupling, the corresponding amplitude is below the experimental sensitivity for physically allowed energy densities of the magnetic field. We generalize this conclusion to models of magnetogenesis operating at other epochs, estimating as $T \\simeq 160$ MeV the temperature of a magnetogenesis process assumed to be the source of the stochastic gravitational wave background suggested by pulsar timing arrays. We place the lower bound $T \\gtrsim 1$-10 MeV on such viable models.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.031,
+"2787890"
+],
+[
+0.013,
+"2860896"
+],
+[
+0.009,
+"2826987"
+]
+],
+"topE": [
+[
+0.103,
+"2134073"
+],
+[
+0.052,
+"2974439"
+],
+[
+0.046,
+"2854117"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter model",
+"dark matter",
+"gravitational wave"
+],
+"watch": [],
+"parts": [
+0.06,
+0.09,
+0.3,
+0.0,
+0.37
+],
+"score": 12.8
+},
+{
+"arxiv": "2611.21595",
+"section": "cross",
+"recid": "3230160",
+"src": "INSPIRE",
+"nref": 85,
+"title": "Rest-frame annihilation lines of $\\sim70$ GeV WIMPs in 23,000 stacked galaxy clusters",
+"authors": [
+"Uri Keshet"
+],
+"abstract": "Weakly interacting massive particle (WIMP) annihilation features were reported as a 43 GeV line in three Fermi-LAT galaxy clusters ($\\mathtt{S}_3$), as triad $\\{γγ, γZ,γh\\}$ lines from $\\sim70$ GeV WIMPs in LAT data cross-correlated ($\\mathtt{C}_{\\mathtt{W}}$) with western eROSITA X-rays, and as a nonad (combining three triads) of two cross-annihilating WIMPs in $\\mathtt{C}_{\\mathtt{W}}$. A blind scan of LAT 16.3-year data around 23,343 high-latitude clusters in their rest frames finds three triads, at 70 GeV ($2.8σ$ trial-corrected, henceforth), $72$ GeV ($1.3σ$; strengthening to $2.7σ$ if mass-fixed by $\\mathtt{S}_3$, $4.0σ$ combined with $\\mathtt{C}_{\\mathtt{W}}$ masked around the clusters, $5.7σ$ if also combined with $\\mathtt{S}_3$), and 74-75 GeV: a triplet not only rare ($3.5σ$) but also forming a $\\{70,74\\}$ GeV nonad ($3.4σ$; strengthening to $4.0σ$, $4.6σ$, and $6.1σ$, respectively). The spectral features, robust in and out of the $\\mathtt{C}_{\\mathtt{W}}$ region and $\\mathtt{S}_3$ clusters, appear in all Galactic quadrants and only in the cluster rest frame (vanishing upon redshift rescaling or permutation), fade away from cluster centers, are absent from their surrounding stacked fields, and like $\\mathtt{C}_{\\mathtt{W}}$ indicate intrinsic few $10^{-19}$ cm$^3$ s$^{-1}$ cross sections (uncorrected) across samples. All features are largely explained by cross-annihilating $69.7^{+0.4}_{-1.0}$ and $74.5^{+1.1}_{-0.6}$ GeV WIMPs.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.039,
+"1693823"
+],
+[
+0.031,
+"3094526"
+],
+[
+0.031,
+"926166"
+]
+],
+"topE": [
+[
+0.055,
+"2958466"
+],
+[
+0.048,
+"2924315"
+],
+[
+0.044,
+"2614915"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"interacting massive particle",
+"weakly interacting massive particle"
+],
+"watch": [],
+"parts": [
+0.06,
+0.12,
+0.16,
+0.0,
+0.38
+],
+"score": 11.9
+},
+{
+"arxiv": "2611.09106",
+"section": "replacement",
+"recid": "3225702",
+"src": "INSPIRE",
+"nref": 48,
+"title": "Probing Dark Matter via the Migdal Effect in LUX-ZEPLIN Data",
+"authors": [
+"Yang Yu",
+"Lei Feng"
+],
+"abstract": "Sub-GeV dark matter (DM) particles deposit little energy in conventional direct-detection experiments and are therefore difficult to probe, but the Migdal effect provides an electronic signal from atomic ionization accompanying the recoil. Using the new results of the LUX-ZEPLIN experiment with a 4.2 tonne-year exposure, we evaluate the sensitivity of the Migdal effect to the spin-independent DM--nucleon scattering cross section. For masses between $350~\\mathrm{MeV}$ and $10~\\mathrm{GeV}$, the projected 90\\% upper limits range from $6.5\\times10^{-37}$ to $3.1\\times10^{-43}~\\mathrm{cm^2}$. These limits are then used to constrain the minimal scalar- and vector-mediator DM models. For the light-mediator DM model, the constraint on the coupling reaches $α\\simeq 10^{-12}$, which is stronger than or comparable to the constraints from kaon decays, stellar cooling, and SN1987A.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.054,
+"2794409"
+],
+[
+0.046,
+"3130296"
+],
+[
+0.026,
+"1955022"
+]
+],
+"topE": [
+[
+0.108,
+"3207263"
+],
+[
+0.095,
+"2922810"
+],
+[
+0.078,
+"3125191"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.16,
+0.31,
+0.0,
+0.13
+],
+"score": 10.8
+},
+{
+"arxiv": "2611.23371",
+"section": "cross",
+"recid": "3230760",
+"src": "INSPIRE",
+"nref": 144,
+"title": "Seeing through the fog: astrophysical priors and the evidence for new physics in pulsar timing arrays",
+"authors": [
+"Torsten Bringmann",
+"Chris Gordon",
+"Carlo Tasillo"
+],
+"abstract": "Pulsar timing arrays (PTAs) have found evidence for a gravitational wave background at nHz frequencies. Inspiralling supermassive black hole binaries (SMBHBs) likely contribute to at least part of the signal, but there may be additional cosmological sources from new physics in the early universe. Disentangling the two is complicated by the prohibitively slow modelling of SMBHB spectra based on realistic population models. Here we introduce binaryfog, a surrogate of up-to-date population models also used by the NANOGrav collaboration, that returns the statistical distribution of bent spectra $\\mathcal{O}(10^6)$ faster than direct computation. We use binaryfog to profile over the six astrophysical parameters in fits of four extensively discussed new-physics models: a dark sector phase transition, cosmic superstrings, inflationary gravitational waves, and domain walls. Compared to the widely adopted power-law description of the SMBHB background, the preference for a phase transition drops from $2.8σ$ to $1.5σ$. The other three models follow a similar pattern. We also recommend updated astrophysical priors based on galaxy surveys published since 2014, which for current PTA data still only give a marginal preference of $1.7σ$ for a phase transition. An interpretation of the signal in terms of SMBHBs alone favours binaries that merge within about $2\\,$Gyr after their host galaxies have merged, requiring an efficient mechanism to overcome the final parsec of separation. If binaries need longer than about $6.5\\,$Gyr to merge, the preference for a phase transition exceeds $3σ$ under our recommended updated prior set. binaryfog can help resolve these questions, as it allows users to study the impact of updated astrophysical priors and a realistic SMBHB population model on new-physics searches with PTAs.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.032,
+"2787890"
+],
+[
+0.016,
+"2826987"
+],
+[
+0.013,
+"2663002"
+]
+],
+"topE": [
+[
+0.094,
+"2803557"
+],
+[
+0.081,
+"2825297"
+],
+[
+0.076,
+"2854117"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark sector",
+"early universe",
+"gravitational wave"
+],
+"watch": [],
+"parts": [
+0.0,
+0.09,
+0.27,
+0.0,
+0.38
+],
+"score": 10.6
+},
+{
+"arxiv": "2611.23374",
+"section": "new",
+"recid": "3230757",
+"src": "INSPIRE",
+"nref": 151,
+"title": "The Price of Discovery: Cost-Optimized Detectors for the GUT-Scale QCD Axion",
+"authors": [
+"Joshua N. Benabou",
+"Joshua W. Foster",
+"Benjamin R. Safdi"
+],
+"abstract": "Grand unification and string theory point to a quantum chromodynamics (QCD) axion with mass between $10^{-11}$ and $10^{-8}$ eV, while heterotic string theory suggests a mass of $0.5-0.8$ neV. We study which laboratory experiment could discover or exclude DFSZ-strength QCD axion dark matter at and above 0.5 neV at the lowest cost, which we estimate from scaling laws calibrated to historical data. We find that a lumped-element detector, building on the ABRACADABRA concept, can do so with demonstrated readout technology; an example is a shielded toroid about 14 m across with a 6 T NbTi magnet, whose magnet and cryostat we estimate at around 120 million Swiss francs (MCHF). If projected readout targets are met, a 5 m toroid at 25 MCHF suffices. We find these designs by optimizing the toroid, solenoid, and core lumped-element topologies under a common cost metric. The toroid emerges as the most promising and cost-effective topology. The optimal field of the toroid detector is far below the 16 T of the proposed DMRadio-GUT design, which would cost nearly twice as much as our optimum. Heterodyne searches with superconducting radio-frequency cavities, with cavity shapes that we optimize for price, cost between about the same as and twice as much as the lumped-element detectors, but require cavities of volumes $\\sim50-2000$ m$^3$. We find that nuclear-magnetic-resonance searches (CASPEr) need orders-of-magnitude gains in spin polarization and coherence. We release axionMultiPhysics, an open-source finite-element and multiphysics package for, e.g., magnetoquasistatic and full-wave electromagnetics, superconductors, readout circuits, and mechanics, from which most of our numerical results were obtained.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.072,
+"1941263"
+],
+[
+0.053,
+"1597138"
+],
+[
+0.025,
+"2751074"
+]
+],
+"topE": [
+[
+0.056,
+"1895232"
+],
+[
+0.055,
+"2739891"
+],
+[
+0.054,
+"2866211"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.21,
+0.16,
+0.0,
+0.13
+],
+"score": 10.0
+},
+{
+"arxiv": "2611.23385",
+"section": "new",
+"recid": "3230790",
+"src": "INSPIRE",
+"nref": 84,
+"title": "Leading Axion Sensitivity with Interstellar Medium Optical Line Emission",
+"authors": [
+"Rebecca K. Leane",
+"Gowri Sundaresan"
+],
+"abstract": "We introduce interstellar optical line emission as a new probe of axion dark matter. Axion decays to photons or electrons can excite or ionize neutral hydrogen, producing H$α$ emission at a fixed atomic wavelength rather than at an energy set by the axion mass. Developing the formalism and applying it to the Leo T galaxy with Very Large Telescope data, we derive strong constraints for eV--GeV scale axions, covering new regions of parameter space for both axion-photon and axion-electron couplings. These results establish optical line measurements as a new discovery channel for axion dark matter, probe poorly constrained parameter space below hydrogen's ionization threshold, and constrain axion explanations of JWST's high-redshift supermassive-black-hole observations.",
+"citR": [],
+"citE": [
+"1783234"
+],
+"topR": [
+[
+0.049,
+"2964960"
+],
+[
+0.014,
+"1597138"
+],
+[
+0.012,
+"1941263"
+]
+],
+"topE": [
+[
+0.052,
+"2725313"
+],
+[
+0.045,
+"2810207"
+],
+[
+0.041,
+"2971971"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.06,
+0.13,
+0.15,
+0.0,
+0.13
+],
+"score": 9.5
+},
+{
+"arxiv": "2611.23384",
+"section": "new",
+"recid": "3230775",
+"src": "INSPIRE",
+"nref": 75,
+"title": "Capturing Ultralight Dark Matter Around Black Holes",
+"authors": [
+"Salvatore Bottaro",
+"Viktor Firsov",
+"Gilad Perez",
+"Halil Steuer",
+"Ofri Telem"
+],
+"abstract": "Ultralight dark matter (DM) can form hydrogen-like bound states around black holes (BHs), that can be perturbatively described at small gravitational fine-structure constant alpha=G*M*mu<<1, where M and mu are the masses of the BH and the DM scalar, respectively. We show that self-interactions lead to the formation of a 2p-halo around a Schwarzschild BH, with the final cloud density as high as 10^5 times the background density. We also show that for the case of a Kerr BH with a superradiant cloud, the decay of the 211 state can populate the ground state faster than it decays into the BH. Consequently, the 211 cloud mass is bounded from above by M_{211}^{crit}/M~=5*10^{-3}*alpha^{-1/2}*[f_a/10^{16} GeV]^2 up to an O(1) factor depending on the spin of the BH. Crucially, for rapidly spinning BHs with M~<4*10^6 M_{sun}, alpha~<0.03, and f_a~<9*10^{15} GeV the resulting superradiant cloud mass is lower than previously assumed, which might have an impact on axion bounds from measurements of stellar BH spins.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.036,
+"1709434"
+],
+[
+0.036,
+"1941263"
+],
+[
+0.027,
+"1607572"
+]
+],
+"topE": [
+[
+0.104,
+"3170445"
+],
+[
+0.097,
+"2669622"
+],
+[
+0.089,
+"2087149"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.12,
+0.3,
+0.0,
+0.13
+],
+"score": 9.2
+},
+{
+"arxiv": "2411.08097",
+"section": "replacement",
+"recid": "2848010",
+"src": "INSPIRE",
+"nref": 155,
+"title": "Atomic Dark Matter, Interacting Dark Radiation, and the Hubble Tension",
+"authors": [
+"Manuel A. Buen-Abad",
+"Zackaria Chacko",
+"Ina Flood",
+"Can Kilic",
+"Gustavo Marques-Tavares",
+"Taewook Youn"
+],
+"abstract": "We present a new class of interacting dark sector models that can address the Hubble tension. Interacting dark radiation (DR) has previously been put forward as a solution to the problem, but this proposal is disfavored by the high-$\\ell$ cosmic microwave background (CMB) data. We modify this basic framework by introducing a subcomponent of dark matter (DM) that interacts strongly with the DR, so that together they constitute a tightly coupled fluid at early times. We show that if this subcomponent decouples from the interacting DR during the CMB epoch, the $\\ell$ modes of the CMB that entered the horizon before decoupling are impacted differently from those that entered after, allowing a solution to the problem. We present a model that realizes this framework, which we dub \"New Atomic Dark Matter\", or nuADaM, in which the interacting dark matter (iDM) subcomponent is composed of dark atoms, and dark \"neutrinos\" with long-range interactions contribute to the DR, hence the name of the model. This iDM subcomponent is acoustic at early times but decouples from the DR following dark recombination. In contrast to conventional atomic dark matter (ADM) models, the dark photon is part of a richer DR sector, which ensures that it continues to be self-interacting even after recombination. We show that this model admits a significantly larger value of $H_0$ than $Λ\\mathrm{CDM}$ when fit to CMB and BAO data, while maintaining a comparable goodness of fit. Once the SHOES data set is included, it provides a significantly better fit than $Λ\\mathrm{CDM}$.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.014,
+"1679809"
+],
+[
+0.01,
+"1941263"
+],
+[
+0.009,
+"2751074"
+]
+],
+"topE": [
+[
+0.094,
+"2051195"
+],
+[
+0.087,
+"2119988"
+],
+[
+0.066,
+"3223723"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark sector",
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.04,
+0.27,
+0.0,
+0.33
+],
+"score": 8.6
+},
+{
+"arxiv": "2611.24091",
+"section": "new",
+"recid": "3230857",
+"src": "INSPIRE",
+"nref": 143,
+"title": "Improving Sensitivity to Rare Processes at the LHC with Geodesic-Aware Graph Neural Networks",
+"authors": [
+"Benjamin Fuks",
+"A. Hammad",
+"Adil Jueid",
+"Mihoko Nojiri"
+],
+"abstract": "Rare processes at the Large Hadron Collider often lead to final states with quarks, for which the dominant backgrounds contain the same reconstructed objects as the signal. The colour structure of the hard process, imprinted on the pattern of soft QCD radiation, carries information that is largely left unused by standard analyses. We introduce a geometric representation of this colour flow by mapping hadronic constituents onto the unit sphere through a modified inverse stereographic projection centred on a pair of jets selected as a colour-singlet resonance candidate. The jet separation defines a circular region whose interior and exterior are mapped to opposite hemispheres, allowing a graph neural network to exploit the resulting radiation pattern using geodesic distances. As a benchmark, we consider flavour-changing neutral interactions of the top quark with the Higgs boson at $\\sqrt{s}=13.6$~TeV, through associated $tH$ production and $t\\bar t$ production with one top quark undergoing a $t\\to qH$ decay, where $q=u,c$, focusing on subsequent $H\\to b\\bar b$ and leptonically top quark decays in both channels. Relative to a baseline graph neural network operating in the $(η,φ)$ plane, the geodesic-aware network improves the expected 95\\% confidence-level limits on $\\mathrm{BR}(t\\to uH)$ and $\\mathrm{BR}(t\\to cH)$ by about an order of magnitude, to $1.1\\times10^{-4}$ and $8.3\\times10^{-5}$ for an assumed integrated luminosity of $139~\\mathrm{fb}^{-1}$. The approach can also be applied to searches for other colour-singlet resonances decaying into quarks or gluons.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.039,
+"1455793"
+],
+[
+0.014,
+"1402978"
+],
+[
+0.013,
+"2690106"
+]
+],
+"topE": [
+[
+0.075,
+"2623950"
+],
+[
+0.05,
+"3170413"
+],
+[
+0.042,
+"2658297"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.11,
+0.22,
+0.0,
+0.0
+],
+"score": 8.5
+},
+{
+"arxiv": "2207.08856",
+"section": "replacement",
+"recid": "2116929",
+"src": "INSPIRE",
+"nref": 34,
+"title": "Dimension-8 SMEFT Matching Conditions for the Low-Energy Effective Field Theory",
+"authors": [
+"Serge Hamoudou",
+"Jacky Kumar",
+"David London"
+],
+"abstract": "In particle physics, the modern view is to categorize things in terms of effective field theories (EFTs). Above the weak scale, we have the SMEFT, formed when the heavy new physics (NP) is integrated out, and for which the Standard Model (SM) is the leading part. Below $M_W$, we have the LEFT (low-energy EFT), formed when the heavy SM particles ($W^\\pm$, $Z^0$, $H$, $t$) are also integrated out. In order to determine how low-energy measurements depend on the underlying NP, it is necessary to compute the matching conditions of LEFT operators to SMEFT operators. These matching conditions have been worked out for all LEFT operators up to dimension 6 in terms of SMEFT operators up to dimension 6 at the one-loop level. However, this is not sufficient for all low-energy observables. In this paper we present the momentum-independent matching conditions of all such LEFT operators to SMEFT operators up to dimension 8 at tree level.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.161,
+"2778553"
+],
+[
+0.129,
+"2163299"
+],
+[
+0.083,
+"2630211"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"one-loop level"
+],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.46,
+0.0,
+0.14
+],
+"score": 8.3
+},
+{
+"arxiv": "2611.24674",
+"section": "new",
+"recid": "",
+"src": "arXiv source",
+"nref": 130,
+"title": "On the cosmic window for neutrino self-interactions",
+"authors": [
+"Ivan Pérez-Castro",
+"Jorge Venzor",
+"Josue De-Santiago",
+"Pablo Roig",
+"Abdel Pérez-Lorenzana"
+],
+"abstract": "Neutrino self-interactions ($ν$SI) beyond the Standard Model have arisen as a promising probe of new physics in cosmology. In this Letter, we show that $ν$SI emerging in the low-energy limit of renormalizable theories implies resonant mediator behavior. We identify two regions for $ν$SI: (i) neutrinos become tightly coupled with background evolution; for the first time, we establish how this evolution modifies the Boltzmann hierarchy equations (BHEs), and (ii) resonant $ν$SI dominates the dynamics with negligible background evolution, relevant for mediator masses $\\sim 10^{-6}-1$ MeV. In region (i), before matter-radiation equality, neutrino free-streaming is determined by the effective four-fermion interaction, known as the heavy-mediator limit (HML); we explore the impact of background evolution on this scenario, and from our modified BHEs, we show that self-interacting dark radiation scenarios require larger couplings than previously estimated to mimic $ν$SI. Region (ii) shows that the simplest realization of $ν$SI mediated by a (pseudo)scalar particle leads to an extra radiation contribution of $ΔN_{\\rm eff}^{\\rm CMB} \\approx 0$, instead of the commonly quoted $\\simeq 0.12$, at the CMB epoch. Overall, we highlight that our findings should be considered in any plausible scenario involving $ν$SI.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.031,
+"2663002"
+],
+[
+0.029,
+"2627241"
+],
+[
+0.024,
+"2826987"
+]
+],
+"topE": [
+[
+0.103,
+"3223723"
+],
+[
+0.086,
+"2736974"
+],
+[
+0.064,
+"2926248"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.1,
+0.3,
+0.0,
+0.0
+],
+"score": 7.4
+},
+{
+"arxiv": "2511.16554",
+"section": "replacement",
+"recid": "3085109",
+"src": "INSPIRE",
+"nref": 108,
+"title": "Dark Matter-Dark Radiation Interactions and the Hubble Tension",
+"authors": [
+"Manuel A. Buen-Abad",
+"Zackaria Chacko",
+"Ina Flood",
+"Can Kilic",
+"Gustavo Marques-Tavares",
+"Taewook Youn"
+],
+"abstract": "Models in which a subcomponent of dark matter interacts with dark radiation have been proposed as a solution to the Hubble tension. In this framework, the interacting subcomponent of dark matter is in thermal equilibrium with the dark radiation in the early universe, but decouples from it around the time of matter-radiation equality. We study this general class of models and evaluate the quality of fit to recent cosmological data on the cosmic microwave background (from Planck 2018 and ACT DR6), baryon acoustic oscillations, large-scale structure, supernovae type Ia, and Cepheid variables. We focus on three benchmark scenarios that differ in the rate at which the dark matter decouples from the dark radiation, resulting in different patterns of dark acoustic oscillations. Fitting without ACT DR6 data, we find that all three scenarios significantly reduce the Hubble tension relative to $Λ$CDM, with an exponentially fast decoupling being the most preferred. The tension is reduced to less than $2 \\, σ$ in fits that don't include the SH0ES collaboration results as part of the data and to less than $1 \\, σ$ when these are included. The preference for the interacting model is substantially reduced when ACT DR6 data are included. We find that the largest $H_0$ value at the $95 \\%$ confidence region is $70.1$ km/s/Mpc without the SH0ES data, leading to only a mild reduction in the tension. This increases to $72.5$ km/s/Mpc, corresponding to a reduction in the tension to less than $3 \\, σ$, if the SH0ES results are included in the fit.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.012,
+"1941263"
+],
+[
+0.009,
+"1828504"
+],
+[
+0.007,
+"2856850"
+]
+],
+"topE": [
+[
+0.082,
+"2119988"
+],
+[
+0.075,
+"2051195"
+],
+[
+0.073,
+"3223723"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"early universe",
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.04,
+0.23,
+0.0,
+0.25
+],
+"score": 7.1
+},
+{
+"arxiv": "2611.24625",
+"section": "cross",
+"recid": "",
+"src": "arXiv source",
+"nref": 65,
+"title": "LIGO-Virgo-KAGRA stochastic constraints on first-order phase transitions: A tale of priors",
+"authors": [
+"S. AbdusSalam",
+"J. Kersten",
+"S. A. Ojaghi",
+"L. Velasco-Sevilla",
+"A. Zafari"
+],
+"abstract": "We re-examine the methodology for constraining cosmological first-order phase transitions from gravitational-wave searches using Bayesian statistical analysis. Specifically, we use results from LIGO-Virgo-KAGRA searches for a stochastic gravitational wave background during observing runs O1--O4a. We explore multiple prior choices across three categories of fit parameters: geometrical parameters, thermodynamical parameters of phase transitions, and the parameters of an Abelian Higgs particle physics model. Our key finding is that the constraints on most parameters describing gravitational waves from a phase transition depend strongly on the prior. Consequently, the data do not yet allow to derive robust constraints on these parameters. Besides, even if a parameter is meaningfully constrained, the upper limit can vary significantly with the prior range. We provide practical recommendations for assessing the robustness of parameter estimates and guidelines for rigorously testing prior independence in future analyses.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.017,
+"3130296"
+],
+[
+0.011,
+"1854224"
+],
+[
+0.009,
+"2856850"
+]
+],
+"topE": [
+[
+0.099,
+"3128752"
+],
+[
+0.073,
+"3191566"
+],
+[
+0.072,
+"2128137"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"gravitational wave"
+],
+"watch": [],
+"parts": [
+0.0,
+0.05,
+0.28,
+0.0,
+0.1
+],
+"score": 6.8
+},
+{
+"arxiv": "2611.24825",
+"section": "cross",
+"recid": "",
+"src": "arXiv source",
+"nref": 71,
+"title": "Three-nucleon potentials and their matrix elements for $δ_{\\mathrm{NS}}$ in superallowed $β$ decays",
+"authors": [
+"Graham Chambers-Wall",
+"Maria Dawid",
+"Emanuele Mereghetti",
+"Saori Pastore",
+"Maria Piarulli"
+],
+"abstract": "We derive three-nucleon potentials for radiative corrections at order $\\mathcal{O}(αε_χ^2)$ in chiral effective field theory where $α$ is the electromagnetic coupling and $ε_χ$ is the chiral expansion parameter. These corrections contribute to the nuclear-structure-dependent term $δ_\\mathrm{NS}$ for determinations of the Cabibbo-Kobayashi-Maskawa matrix element $V_{ud}$ from superallowed nuclear $β$ decays. We compute matrix elements of three-nucleon contributions at orders $\\mathcal{O}(α^2)$ and $\\mathcal{O}(αε_χ^2)$ using quantum Monte Carlo methods. We find the matrix elements at order $\\mathcal{O}(α^2)$ to be large and to have an effect on the extraction of $V_{ud}$ at the scale of $10^{-4}$. In the case of $^{10}$C, the matrix elements of $\\mathcal{O}(αε_χ^2)$ three-nucleon operators provide a 2% correction to $δ_{\\text{NS}}$, and are thus beyond the current precision goals. The relative size of three-nucleon corrections to $δ_{\\text{NS}}$ in medium mass nuclei, where two-body contributions tend to be smaller, remains to be investigated. We then use these results to determine $V_{ud}$ from the superallowed transition ${}^{10}\\mathrm{C}\\rightarrow{}^{10}\\mathrm{B}$.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.019,
+"2690106"
+],
+[
+0.016,
+"1854224"
+],
+[
+0.004,
+"3184726"
+]
+],
+"topE": [
+[
+0.059,
+"1847652"
+],
+[
+0.043,
+"2169464"
+],
+[
+0.039,
+"2788951"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.05,
+0.17,
+0.0,
+0.0
+],
+"score": 6.2
+},
+{
+"arxiv": "2611.24537",
+"section": "new",
+"recid": "",
+"src": "arXiv source",
+"nref": 25,
+"title": "Active Learning and Genetic Search for Discrete Abelian Flavor Model Building",
+"authors": [
+"Selin Aşmanoğlu",
+"Christopher D. Carone"
+],
+"abstract": "The sequential breaking of discrete flavor symmetries provides a theoretical framework that can explain quark mass and mixing angle hierarchies. Each model is identified by its field content, charge assignments and symmetry breaking pattern, leading to an enormous space of possible models; this motivates the investigation of computational approaches for identifying promising candidates. In this work, we focus on quark flavor models with the flavor symmetry group $G_F=(\\mathbb{Z}_2)^p$, where $p$ is a positive integer; operators involving flavon fields which spontaneously break the flavor symmetry determine the size of the Yukawa matrix entries. We consider two search strategies: an active learning search employing a random forest regressor and a genetic search. The generation of candidate models is automated and models are evaluated using a loss function that takes into account the logarithmic discrepancy between the model prediction and target observable values as well as penalties for model complexity. We find that both our active learning and genetic algorithms significantly outperform random model generation, which we use as a control; our active learning approach identifies lower-loss models faster (i.e., with fewer exact model evaluations) than our genetic search, though each ultimately finds successful models. Our results support the effectiveness of active learning and evolutionary optimization as approaches to automate the search for promising models based on discrete flavor symmetries.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.046,
+"1394206"
+],
+[
+0.039,
+"1597138"
+],
+[
+0.015,
+"1222142"
+]
+],
+"topE": [
+[
+0.047,
+"820731"
+],
+[
+0.043,
+"2750604"
+],
+[
+0.032,
+"856239"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.14,
+0.13,
+0.0,
+0.0
+],
+"score": 6.1
+},
+{
+"arxiv": "2610.12623",
+"section": "replacement",
+"recid": "3213667",
+"src": "INSPIRE",
+"nref": 158,
+"title": "Probing $τ$ lepton dipole moments at FCC-ee",
+"authors": [
+"Dario Buttazzo",
+"Gabriele Levati",
+"Yang Ma",
+"Fabio Maltoni",
+"Paride Paradisi",
+"ZeQiang Wang"
+],
+"abstract": "We study the sensitivity of future high-luminosity $e^+e^-$ colliders to the electromagnetic and weak dipole moments of the $τ$ lepton within the Standard Model Effective Field Theory. We analyse several complementary processes across the FCC-ee operating stages and show that the exceptional luminosity and clean environment of future $e^+e^-$ colliders allow for substantial improvements over current limits from LEP and the LHC. The $e^+e^- \\to τ^+τ^-$ process provides excellent sensitivity to weak dipole operators through resonant $Z$ production and $Z$-pole energy scans, while $γγ\\to τ^+τ^-$ yields the strongest constraint on the anomalous magnetic moment owing to the dominance of linear interference effects in the near-threshold region. Higher-energy stages improve the sensitivity to the $τ$ electric dipole moment. The radiative processes $e^+e^- \\to τ^+τ^-γ$ and $H\\toτ^+τ^-γ$ provide complementary, though subleading, probes of $τ$ dipole operators. Combining all channels, we estimate the statistical reach at the 95% CL to be $|Δa_τ|<2.8\\times10^{-5}$, $|d_τ|<2.5\\times10^{-18}\\,e\\,{\\rm cm}$, $|Δa_τ^Z|<1.0\\times10^{-5}$, and $|d_τ^Z|<4.4\\times10^{-19}\\,e\\,{\\rm cm}$, improving upon the current bounds by several orders of magnitude. These projections quantify the potential statistical reach of the FCC-ee program, motivating dedicated studies incorporating detector effects, systematic uncertainties, and higher-order theoretical predictions.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.024,
+"2690106"
+],
+[
+0.009,
+"1692605"
+],
+[
+0.007,
+"3130296"
+]
+],
+"topE": [
+[
+0.097,
+"2706495"
+],
+[
+0.092,
+"1938335"
+],
+[
+0.078,
+"2059568"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.07,
+0.28,
+0.0,
+0.0
+],
+"score": 6.1
+},
+{
+"arxiv": "2611.23373",
+"section": "new",
+"recid": "3230753",
+"src": "INSPIRE",
+"nref": 44,
+"title": "Why supersonic UAP events are not accompanied by acoustic booms?",
+"authors": [
+"Ariel Zhitnitsky"
+],
+"abstract": "The Unidentified Anomalous Phenomena (UAP) events have been recorded for decades. However, the nature of these events remains unknown. We advocate an idea that the dark matter (DM) in form of the axion quark nuggets (AQN) made of standard model quarks (or {\\it antiquarks}) and gluons could {\\it simultaneously} explain many observed puzzling features which always accompany the UAP events, such as high velocity, enormous acceleration, absence of any remaining materials in affected area, etc. This long list of mysterious features also includes the absence of any sound which normally accompanies any supersonic motion. The AQN framework answers this last puzzle as well, which represents the title of the present work. The AQN dark matter model was invented long ago without any intension to apply the model to UAP events. Rather, it was invented with a single motivation to explain the observed similarity $Ω_{\\rm DM}\\sim Ω_{\\rm visible}$ between visible and DM components, which represents a very generic feature of this framework, not sensitive to any parameters of the construction. In this work we use the same framework with the same set of parameters to study the observed UAP events. Essentially we argue that a specific class of UAP represents the close cousin of other mysteries known for decades (even centuries), such as sky-quakes, Ball Lightnings, and Mysterious Transient events. In other words, the UAPs represent different manifestations of exactly the same objects, the AQNs propagating in atmosphere. The fuel powering all these mysterious energetic events is one and the same: it is the antiquark core of the AQNs. We also present some suggestions on type of instruments required to study this specific (and well defined) type of the UAP events.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.011,
+"2787890"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.043,
+"1998852"
+],
+[
+0.037,
+"1863581"
+],
+[
+0.027,
+"2051205"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter model",
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.03,
+0.12,
+0.0,
+0.29
+],
+"score": 5.5
+},
+{
+"arxiv": "2604.19864",
+"section": "replacement",
+"recid": "3148047",
+"src": "INSPIRE",
+"nref": 72,
+"title": "Low-Multiplicity Jets as Probes of GeV-Scale Light-Quark-Coupled Particles",
+"authors": [
+"Carlos Henrique de Lima",
+"David McKeen",
+"Maximilian Swiatlowski"
+],
+"abstract": "We propose a search at the LHC for GeV-scale particles coupling predominantly to light quarks based on low-multiplicity jets. The search targets production in association with a hard photon and uses the feature that a light gauge-singlet can only decay into a small number of hadronic channels, yielding jets with anomalously low charged-track multiplicity and mass compared to QCD jets at the same transverse momentum. We determine the sensitivity to scalar and pseudoscalar couplings to up-quarks, and suggest a data-driven estimate that reduces the sensitivity to jet modeling uncertainties. This search extends the reach to hadronically-coupled particles into a previously inaccessible regime.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.019,
+"1455793"
+],
+[
+0.009,
+"3146383"
+],
+[
+0.007,
+"1597138"
+]
+],
+"topE": [
+[
+0.038,
+"2621240"
+],
+[
+0.035,
+"3115042"
+],
+[
+0.033,
+"2080612"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.05,
+0.11,
+0.0,
+0.0
+],
+"score": 5.2
+},
+{
+"arxiv": "2611.23897",
+"section": "cross",
+"recid": "3230845",
+"src": "INSPIRE",
+"nref": 37,
+"title": "Projected Sensitivity of a Differential Torsion Sensor for Tests of the Weak Equivalence Principle",
+"authors": [
+"Jiayi Qin",
+"Sheon S. Y. Chua",
+"Ling Sun",
+"Bram J. J. Slagmolen"
+],
+"abstract": "Tests of the weak equivalence principle (WEP) are among the most sensitive probes of new long-range, composition-dependent interactions beyond general relativity and the Standard Model. We evaluate the potential of a differential torsion sensor, which combines long mechanical coherence times with optical-cavity readout and common-mode rejection, for laboratory WEP tests and fifth-force searches. For a representative configuration based on an existing prototype, with Be-Ti test masses and 180 days of coherent integration, the projected noise-limited sensitivity to the Eötvös parameter is $η\\simeq7.5\\times10^{-16}$ and $2.4\\times10^{-16}$ for signal modulation at 2 and 20 mHz, respectively, below current ground-based torsion-balance limits. For a baryon-coupled Yukawa interaction sourced by the Earth, the corresponding projected sensitivity to the coupling strength is $α\\simeq3.1\\times10^{-13}$ and $9.8\\times10^{-14}$ for ranges $λ\\gtrsim10^{7}$ m. We identify the modulation scheme, the material contrast, and the source geometry as the main factors that set the projected reach, and the control of systematic couplings as the main experimental requirement for attaining it. These results indicate that differential torsion sensors are a promising platform for future laboratory WEP tests.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.008,
+"2663002"
+],
+[
+0.008,
+"2627241"
+],
+[
+0.006,
+"2790381"
+]
+],
+"topE": [
+[
+0.048,
+"2051205"
+],
+[
+0.029,
+"1998852"
+],
+[
+0.028,
+"3089716"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"yukawa interaction"
+],
+"watch": [],
+"parts": [
+0.0,
+0.03,
+0.14,
+0.0,
+0.2
+],
+"score": 4.9
+},
+{
+"arxiv": "2606.15680",
+"section": "replacement",
+"recid": "3168706",
+"src": "INSPIRE",
+"nref": 126,
+"title": "Assessing the enrichment of heat-producing elements in deep-mantle structures using a directional geoneutrino detector",
+"authors": [
+"Zhihao Xu",
+"Misaki Hosoya",
+"William F. McDonough",
+"Taichi Sakai",
+"Hiroko Watanabe"
+],
+"abstract": "Determining the spatial distribution of heat-producing elements (HPEs) within the Earth is critical for understanding the planet's thermal and chemical evolution. A central debate is whether domains in the deep mantle, particularly the Large Low-Velocity Provinces (LLVP), represent anomalous, radiogenically enriched reservoirs. Variation in the surface flux of geoneutrinos provide a direct probe of Earth's internal radioactivity. However, current continental located detectors measure only the angle-integrated flux, leading to strong spatial trade-offs that substantially limit the ability of practical networks to uniquely resolve mantle compositional heterogeneity. In this study, we quantify the potential of directional geoneutrino detection to overcome this limitation. By evaluating realistic LLVP geometries in the context of the proposed Ocean Bottom Detector (OBD), we demonstrate that resolving the incoming direction of geoneutrinos can substantially improve the precision with which HPE enrichment in LLVPs can be constrained relative to the surrounding mantle, for a range of target angular resolutions envisioned for a future directional geoneutrino detector. These results indicate that future directional geoneutrino measurements could help determine whether LLVP host enhanced HPE abundances and assess their contribution to Earth's radiogenic heat budget. Such measurements would provide a new observational constraint on the chemical heterogeneity of the deep mantle and its role in Earth's long-term thermal evolution.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.019,
+"2751074"
+],
+[
+0.009,
+"2690106"
+],
+[
+0.008,
+"3094526"
+]
+],
+"topE": [
+[
+0.026,
+"1822456"
+],
+[
+0.026,
+"3201794"
+],
+[
+0.022,
+"3190962"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.05,
+0.08,
+0.0,
+0.0
+],
+"score": 4.8
+},
+{
+"arxiv": "2604.14281",
+"section": "replacement",
+"recid": "3145773",
+"src": "INSPIRE",
+"nref": 79,
+"title": "Probing $τ$ lepton dipole moments at future lepton colliders",
+"authors": [
+"Dario Buttazzo",
+"Gabriele Levati",
+"Yang Ma",
+"Fabio Maltoni",
+"Paride Paradisi",
+"ZeQiang Wang"
+],
+"abstract": "The electric and magnetic dipole moments of the electron and of the muon provide stringent tests of the Standard Model and sensitive probes of new physics. By contrast, the corresponding dipole moments of the $τ$ lepton remain weakly constrained. This study explores the potential of future lepton colliders, focusing on the $e^+e^-$ Future Circular Collider and a multi-TeV muon collider, to probe $τ$ dipole moments. We consider multiple channels, including $\\ell^+\\ell^- \\to τ^+τ^-$ ($\\ell=e,μ$), associated Higgs production $μ^+μ^- \\to τ^+τ^- H$, radiative Higgs decays $H \\to τ^+τ^-γ$, and vector-boson scattering $\\ell^+\\ell^- \\to \\ell^+\\ell^-τ^+τ^-$ and $μ^+μ^- \\to \\barνντ^+τ^-$. Our results show that these facilities are highly complementary and can extend existing bounds by several orders of magnitude.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.018,
+"2690106"
+],
+[
+0.012,
+"1692605"
+],
+[
+0.005,
+"2964960"
+]
+],
+"topE": [
+[
+0.07,
+"1455732"
+],
+[
+0.06,
+"3204120"
+],
+[
+0.053,
+"2115290"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.05,
+0.2,
+0.0,
+0.0
+],
+"score": 4.6
+},
+{
+"arxiv": "2511.15897",
+"section": "replacement",
+"recid": "3085079",
+"src": "INSPIRE",
+"nref": 71,
+"title": "Exploring enhanced non-resonant di-Higgs production at the HL-LHC with neural networks",
+"authors": [
+"Leandro Da Rold",
+"Manuel Epele",
+"Anibal D. Medina",
+"Nicolás I. Mileo",
+"Alejandro Szynkman"
+],
+"abstract": "We investigate di-Higgs production in the $b\\bar{b}γγ$ final state at the LHC, focusing on scenarios where the gluon fusion process is enhanced by new colored scalars, which could be identified as squarks or leptoquarks. We consider two benchmarks characterized by the mass of the lightest colored scalar, BM$_{\\mathrm{L}}$ and BM$_{\\mathrm{H}}$, corresponding to 464 GeV and 621 GeV, respectively. Using Monte Carlo simulations for both the signal and the dominant backgrounds, we perform a discovery analysis with deep neural networks, exploring various architectures and input variables. Our results show that the discrimination power is maximized by employing two dedicated classifiers, one trained against QCD backgrounds and another against backgrounds involving single-Higgs processes. Furthermore, we demonstrate that including high-level features -- such as the invariant masses $m_{γγ}$, $m_{bb}$, and $m_{hh}$, as well as the transverse momenta and angular separations of the photon and $b$-jet pairs -- significantly improves the performance compared to using only low-level features as the invariant mass and momenta of the final particles. For the latter case, we find that architectures processing photon and $b$-jet variables separately can enhance the significance for BM$_{\\mathrm{H}}$. Projecting for an integrated luminosity of 3 ab$^{-1}$, we obtain a significance of 7.2 for BM$_{\\mathrm{L}}$, while it drops to 3.1 for BM$_{\\mathrm{H}}$. In the particular case of BM$_{\\mathrm{L}}$, discovery level significance can be reached at 1.4 ab$^{-1}$. We also estimate how these results could be modified by potential systematic uncertainties.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.023,
+"3094526"
+],
+[
+0.021,
+"1455793"
+],
+[
+0.016,
+"1679809"
+]
+],
+"topE": [
+[
+0.051,
+"3206672"
+],
+[
+0.044,
+"1674879"
+],
+[
+0.043,
+"1397645"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.07,
+0.15,
+0.0,
+0.0
+],
+"score": 4.4
+},
+{
+"arxiv": "2611.23978",
+"section": "new",
+"recid": "",
+"src": "arXiv source",
+"nref": 134,
+"title": "Geoneutrinos (and reactor neutrinos) do not visibly decay",
+"authors": [
+"Mauricio Bustamante"
+],
+"abstract": "Neutrinos that decay on their way to a detector arrive depleted, more so at low energies, where time dilation lengthens their lifetime the least. Geoneutrinos---electron antineutrinos from the radioactive decay of uranium and thorium inside the Earth---have energies of a few MeV and travel up to the diameter of the Earth. We use them to test neutrino decay for the first time. We compute the geoneutrino signal at Borexino, KamLAND, SNO+, and JUNO for visible decay, in which the daughter neutrinos are themselves detected, and compare it against their published data. We find no evidence of decay that holds across Earth models. Combining the four experiments, we limit the decay $ν_1 \\to ν_3$ in the inverted mass ordering at 90% C.L.: $τ_1/m_1 > 3.7 \\times 10^{-9}$ s eV$^{-1}$ when the radiogenic power of the Earth is left free and $τ_1/m_1 > 4.4 \\times 10^{-9}$ to $1.6 \\times 10^{-8}$ s eV$^{-1}$ when it is taken from Earth models. With an Earth model assumed, the geoneutrinos set the limit; with the power free, the antineutrinos from nuclear reactors that the same experiments detect count as much as the geoneutrinos. These are the first terrestrial limits on the visible decay of $ν_1$.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.011,
+"2751074"
+],
+[
+0.008,
+"3184726"
+],
+[
+0.007,
+"731108"
+]
+],
+"topE": [
+[
+0.027,
+"3225492"
+],
+[
+0.024,
+"2942840"
+],
+[
+0.024,
+"2921177"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.03,
+0.08,
+0.0,
+0.0
+],
+"score": 4.2
+},
+{
+"arxiv": "2606.08329",
+"section": "replacement",
+"recid": "3166318",
+"src": "INSPIRE",
+"nref": 46,
+"title": "Lepton $g-2$ non-universality of hadronic contributions and a sub-GeV window to New Physics",
+"authors": [
+"Siyuan Li",
+"Vladimir Pascalutsa",
+"Maxim Pospelov"
+],
+"abstract": "We propose the linear combination of the anomalous magnetic moments of the muon and electron, $a_{μ-e} \\equiv a_μ- (m_μ/m_e)^2 a_e$, as a natural low-energy window quantity that may directly probe the current discrepancy between the data-driven and lattice-QCD evaluations of hadronic contributions. The rescaling ensures an exact cancellation of the leading short-range ($m_\\ell^2$-scaling) effects, thereby improving the UV behavior. Because entire classes of contributions cancel identically --- not merely in variance --- the combination is predictable in chiral perturbation theory with no free low-energy constant, and it isolates flavor-non-universal New Physics. The hadronic-vacuum-polarization effect in $a^{\\rm HVP}_{μ-e}$, together with its uncertainty, is reduced as compared to $a^{\\rm HVP}_μ$ by $\\sim 85\\%$. This is promising for tests of New Physics with some degree of flavor non-universality, conditional on significant improvements in the measurements of $a_e$ and $α$.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.02,
+"2690106"
+],
+[
+0.01,
+"1597138"
+],
+[
+0.0,
+"926166"
+]
+],
+"topE": [
+[
+0.062,
+"2059568"
+],
+[
+0.059,
+"1938335"
+],
+[
+0.056,
+"2940264"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.05,
+0.18,
+0.0,
+0.0
+],
+"score": 4.2
+},
+{
+"arxiv": "2611.24658",
+"section": "cross",
+"recid": "",
+"src": "arXiv source",
+"nref": 53,
+"title": "Light fermions can trigger a Brout-Englert-Higgs effect",
+"authors": [
+"Axel Maas",
+"Sofie Martins",
+"Georg Wieland"
+],
+"abstract": "The Brout-Englert-Higgs effect produces the masses of the Standard Model particles. However, the cause of this effect is unknown. Beyond-the-Standard-Model theories aim to find the source of this effect, for example using a composite Higgs and dynamically generating its vacuum expectation value. In this paper, we show evidence from lattice simulations with vectorially coupled fermions and without Yukawa couplings that the Brout-Englert-Higgs effect could be triggered by the light masses of fermions. This suggests that an explanation entirely within the Standard Model could be possible. Moreover, our results are consistent with weak couplings and fermions can only impact the Higgs potential at NNLO. This implies a so far unidentified mechanism in an SU(2) scalar-fermion-gauge system that produces a non-zero vacuum expectation value. In addition, we find that the transition from a QCD-like behavior to a Higgs-like behavior happens when the fermion mass falls below twice the W/Z mass: a threshold that is integer valued but not connected to other critical physical behavior.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.015,
+"2787890"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.026,
+"1455732"
+],
+[
+0.02,
+"1861144"
+],
+[
+0.017,
+"1489994"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"standard model particle"
+],
+"watch": [],
+"parts": [
+0.0,
+0.04,
+0.07,
+0.0,
+0.19
+],
+"score": 4.1
+},
+{
+"arxiv": "2611.23983",
+"section": "cross",
+"recid": "3230883",
+"src": "INSPIRE",
+"nref": 49,
+"title": "Positron escape from dark matter spikes in black hole X-ray binaries",
+"authors": [
+"Mpho Kgoadi",
+"Geoff Beck"
+],
+"abstract": "Chan and Lee present a model where the AMS-02 positron excess is explained by dark matter (DM) annihilation in spike halos around nearby black holes A0620-00 and XTE J1118+480. Their model assumes a uniform magnetic and diffusive environment en route to Earth. Thus, it depends on the assumption that one can ignore the small-scale, near-horizon environment in the diffusion-loss equation. We demonstrate that this is not the case. An accurate magnetic field model near the horizon means, without increasing the required cross-section by a factor of roughly 500 to 1400, depending on the transport near the horizon, the positron flux from these sources cannot account for a significant fraction of the AMS-02 excess.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.013,
+"1589847"
+],
+[
+0.013,
+"860906"
+],
+[
+0.012,
+"2686856"
+]
+],
+"topE": [
+[
+0.035,
+"2795517"
+],
+[
+0.032,
+"2054217"
+],
+[
+0.027,
+"1307379"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.04,
+0.1,
+0.0,
+0.13
+],
+"score": 4.0
+},
+{
+"arxiv": "2611.23869",
+"section": "new",
+"recid": "3230837",
+"src": "INSPIRE",
+"nref": 102,
+"title": "Coupled-channel pole structure and bare-state mixing of bottom-strange heavy-quark spin partners",
+"authors": [
+"Ying-Bo He",
+"Liu-Lin Wang",
+"Ze-Hao Luo",
+"Xiao-Hai Liu",
+"Mao-Jun Yan"
+],
+"abstract": "Motivated by the observation of the $B_{s0}^*(5700)$ and the heavy-quark symmetry relations connecting the $DK$, $D^*K$, $\\bar{B}K$, and $\\bar B^*K$ systems, we investigate whether the same chiral dynamics can generate negative-parity partners dominated by the $\\bar B_1K$ and $\\bar B_2^*K$ components. We further examine how nearby bare bottom-strange states reshape the pole spectrum through coupled-channel mixing. Both the relevant $S$-wave scattering and the lower-lying $P$-wave decay channels are explicitly included in the coupled-channel calculation. In the absence of bare states, the interaction generates two negative-parity poles near $6.15$ GeV. Coupling the hadronic channels to the corresponding quark-model configurations leads to a richer two-pole structure in each sector, with the pole masses, widths, and channel residues governed by the interplay between the bare states and the hadronic dynamics. In particular, the inclusion of the bare states substantially increases the widths of the negative-parity poles with the larger $S$-wave molecular components. The resulting correlated patterns in the pole spectrum provide testable signatures for future studies of excited bottom-strange mesons.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.003,
+"3184726"
+],
+[
+0.003,
+"2690106"
+],
+[
+0.002,
+"2860896"
+]
+],
+"topE": [
+[
+0.037,
+"3091093"
+],
+[
+0.021,
+"3193100"
+],
+[
+0.021,
+"2817040"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.01,
+0.11,
+0.0,
+0.0
+],
+"score": 3.9
+},
+{
+"arxiv": "2509.14701",
+"section": "replacement",
+"recid": "2971070",
+"src": "INSPIRE",
+"nref": 39,
+"title": "Enhancement of Weak Interactions in Phase Transitions in Condensed Matter and Early Universe",
+"authors": [
+"V. V. Flambaum"
+],
+"abstract": "Parity-violating weak interactions produce extremely small energy differences between left- and right-handed chiral systems. We show that these microscopic effects may be amplified during collective phenomena such as phase transitions. The enhancement factor is proportional to the critical number of atoms, $N_c$, in the nucleus of the new phase. Measurement of the ratio of produced left- and right-handed chiral structures may provide a way to determine $N_c$. Experiments in which spin-chiral structures are formed in ZnCr$_2$Se$_4$ during a phase transition in crossed electric and magnetic fields indicate an effective amplification corresponding to $N_c\\sim 10^9-10^{10}$. We emphasize, however, that such large values cannot be inferred from homogeneous capillary nucleation alone, since the same parameters imply a very large nucleation barrier; in real crystals heterogeneous nucleation, defects, strain, and domain-growth dynamics may be essential. We also discuss, more cautiously, whether analogous collective enhancement could operate in first-order cosmological phase transitions beyond the Standard Model. The Standard-Model electroweak transition for the observed Higgs mass is a crossover and therefore has no critical bubble nucleus.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.059,
+"2692782"
+],
+[
+0.025,
+"3087237"
+],
+[
+0.023,
+"2851262"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"early universe"
+],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.17,
+0.0,
+0.14
+],
+"score": 3.9
+},
+{
+"arxiv": "2611.24372",
+"section": "new",
+"recid": "3230906",
+"src": "INSPIRE",
+"nref": 25,
+"title": "No room for $X(2370)$ exceptionalism: the glueball interpretation warrants caution",
+"authors": [
+"Tian-Cai Peng",
+"Xiang Liu"
+],
+"abstract": "Motivated by recent BESIII claims that $X(2370)$ is a pseudoscalar glueball candidate, we reanalyze several radiative $J/ψ$ decays into three pseudoscalars, $J/ψ\\toγPPP$, with emphasis on the $X(2370)$ region. A simultaneous analysis of the three invariant-mass projections in $J/ψ\\toγK_S^0K_S^0η^\\prime$, including the pseudoscalar states $X(1835)$, $X(2120)$, $η(2225)$, $X(2370)$, $X(2500)$, and $η_c$, reproduces the observed dip near $2.2~\\mathrm{GeV}$ and the enhancement near $2.4~\\mathrm{GeV}$ through coherent interference, without invoking the additional broad $X(2800)$ component employed in the BESIII partial-wave analysis. We further analyze $J/ψ\\toγπ^0π^0η$ and $J/ψ\\toγK_S^0K_S^0π^0$ by including both pseudoscalar and axial-vector contributions, and show that multiple excited meson states collectively describe the data. The absence of a prominent $X(2370)$ signal in the $K^*(892)$ region can be understood from differing orbital angular-momentum requirements rather than flavor-singlet suppression alone. Our results indicate that $X(2370)$ is not exceptional compared with the other reported pseudoscalar states in this mass region. Therefore, interpreting $X(2370)$ as a glueball-dominated state should be treated with caution.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.007,
+"3184726"
+],
+[
+0.006,
+"2690106"
+],
+[
+0.005,
+"2860896"
+]
+],
+"topE": [
+[
+0.026,
+"3089042"
+],
+[
+0.022,
+"3209798"
+],
+[
+0.018,
+"3193100"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.02,
+0.08,
+0.0,
+0.0
+],
+"score": 3.8
+},
+{
+"arxiv": "2604.21755",
+"section": "replacement",
+"recid": "3148542",
+"src": "INSPIRE",
+"nref": 93,
+"title": "Quantum-information diagnostics of cosmological perturbations with nontrivial sound speed in inflation",
+"authors": [
+"Shi-Cheng Liu",
+"Lei-Hua Liu",
+"Bichu Li",
+"Hai-Qing Zhang",
+"Peng-Zhang He"
+],
+"abstract": "In this work, we systematically investigate the quantum-information diagnostics of cosmological perturbations with a nontrivial sound speed, utilizing a normalized open two-mode squeezed-state framework. Rather than introducing new observables, our analysis focuses on how a modified sound speed dynamically reshapes the Schrödinger evolution of the squeezing parameters ($r_k$ and $φ_k$). We demonstrate how these dynamical changes are inherited by the reduced density matrix of the observable sector. By employing a sound-speed-resonance parametrization, we derive and evaluate the purity, von Neumann entropy, Rényi entropies, and logarithmic negativity. We introduce a bounded variable $x = \\tanh r_k$ and perform numerical simulations within the inflationary regime. Our numerical results reveal that a nontrivial sound speed significantly suppresses the purity of the reduced state, indicating enhanced effective mixedness. Simultaneously, it strongly amplifies and modulates both the entropic and entanglement diagnostics. More precisely, a nontrivial sound speed postpones the onset of classicality by modulating the decoherence process. Ultimately, we show that a nontrivial sound speed leaves distinct and identifiable quantum-information signatures within the entanglement structure of the early universe.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.008,
+"3184726"
+],
+[
+0.007,
+"1655573"
+],
+[
+0.0,
+"926166"
+]
+],
+"topE": [
+[
+0.039,
+"2951309"
+],
+[
+0.032,
+"3103226"
+],
+[
+0.024,
+"2819739"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"early universe"
+],
+"watch": [],
+"parts": [
+0.0,
+0.02,
+0.11,
+0.0,
+0.14
+],
+"score": 3.8
+},
+{
+"arxiv": "2603.16266",
+"section": "replacement",
+"recid": "3130196",
+"src": "INSPIRE",
+"nref": 80,
+"title": "Lattice QCD study of the $K^*(892)$ resonance at the physical point",
+"authors": [
+"Qu-Zhi Li",
+"Chuan Liu",
+"Liuming Liu",
+"Peng Sun",
+"Jia-Jun Wu",
+"Zhiguang Xiao",
+"Yi-Bo Yang",
+"Han-Qing Zheng"
+],
+"abstract": "We present a lattice QCD study of the $K^*(892)$ resonance using eight $N_f=2+1$ Wilson-Clover ensembles with three lattice spacings and six pion masses ranging from 135 to 320 MeV. For each ensemble, a large number of finite volume energy levels in the $P$-wave $Kπ$ channel are determined. The energy dependence of the scattering phase shift is then obtained from Lüscher's finite-volume method. To systematically assess parametrization dependence, the amplitude is described using three different models, which yield consistent results. The resulting phase shifts show a clear resonant behavior for all ensembles, and the corresponding $K^*(892)$ resonance pole is identified on the second Riemann sheet in the complex energy plane. The pole positions are extrapolated to the physical pion mass and the continuum limit, yielding a $K^*(892)$ resonance located at $\\sqrt{s_0} = [882.10\\binom{+7.36}{-10.29} (0.30) -i22.73(3.32)(0.63)] \\mathrm{MeV}$, which is in excellent agreement with the experimental value. The quoted uncertainty includes the statistical uncertainty and systematic uncertainties associated with the choice of fit windows and three parameterizations of the scattering amplitude.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.004,
+"3184726"
+],
+[
+0.003,
+"2690106"
+],
+[
+0.003,
+"2860896"
+]
+],
+"topE": [
+[
+0.028,
+"3193100"
+],
+[
+0.017,
+"2817040"
+],
+[
+0.009,
+"1688995"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.01,
+0.08,
+0.0,
+0.0
+],
+"score": 3.6
+},
+{
+"arxiv": "2611.24435",
+"section": "new",
+"recid": "",
+"src": "arXiv source",
+"nref": 108,
+"title": "Total Angular Momentum Assignments in the Hadron Spectrum",
+"authors": [
+" The HADLENS Collaboration",
+"S. Rostami",
+"Omid Zamani Jamshidi",
+"B. Dehghanzad",
+"K. Azizi"
+],
+"abstract": "Predicting the total angular momentum $J$ for hadronic resonances whose spins have not yet been experimentally determined constitutes an important step in the spectroscopy of observed hadrons. In the present study, we develop a data-driven model in order to predict the value of $ J $ for hadrons with unknown spins using a dataset of known mesons and baryons from the PDG, including information on their quark content, isospin, parity, mass and other spectroscopic features. In particular, we employ XGBoost classifiers along with nested optimization in order to discover spectroscopic patterns across different hadronic sectors. We also prepare a systematic list of hadrons with unknown or poorly determined values of $ J $, and study spin-parity assignments for those hadrons. Since the parity hypothesis is taken as an input to the model, our model predicts the value of $ J $ conditional on a given parity hypothesis rather than independently determining the full $J^P$ assignment. Our predictions for several theoretically studied states show good agreement with results from quark models, QCD sum rules, molecular models, and other phenomenological approaches, while predictions for some other states differ from existing theoretical assignments. These differences motivate further theoretical investigations and may be tested by future experimental measurements.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.003,
+"3184726"
+],
+[
+0.002,
+"2690106"
+],
+[
+0.002,
+"2860896"
+]
+],
+"topE": [
+[
+0.014,
+"3112949"
+],
+[
+0.011,
+"2921206"
+],
+[
+0.009,
+"2621240"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.01,
+0.04,
+0.0,
+0.0
+],
+"score": 2.9
+},
+{
+"arxiv": "2611.23924",
+"section": "cross",
+"recid": "3230843",
+"src": "INSPIRE",
+"nref": 44,
+"title": "Precision Measurements of the Effective Leptonic Weak Mixing Angle at Hadron Colliders",
+"authors": [
+"Arie Bodek",
+"Hyon-San Seo",
+"Un-Ki Yang"
+],
+"abstract": "We review precision determinations of the effective leptonic weak mixing angle, $\\sin^2θ^\\ell_{\\mathrm{eff}}$, from Drell-Yan angular asymmetries at the Tevatron and the LHC. As statistical uncertainties have dramatically decreased, parton distribution function (PDF) uncertainty now dominates the most precise hadron-collider results. We describe the angular observables, electroweak calculation schemes, and advanced methods such as replica reweighting and Hessian profiling, used to constrain PDFs directly from measured angular distributions. To identify the origin of differences between modern PDF sets (e.g., CT18, MSHT20, NNPDF) in the extracted mixing angle, we employ a simplified leading-order Z-pole calculation that separates quark-flavor production weights from quark-direction dilution. We demonstrate how these PDF-induced differences can be mitigated by incorporating complementary constraints from W/Z cross-section ratios and W-boson decay asymmetries. Furthermore, we discuss the requirements for a common reinterpretation and future combination of LHC measurements, highlighting how correlated PDF uncertainties limit the ultimate combined precision. Finally, we outline future prospects, including complementary measurements in $Z+b$ production and high-mass tests of the running $\\overline{\\mathrm{MS}}$ weak mixing angle.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.015,
+"1764733"
+],
+[
+0.015,
+"3094526"
+],
+[
+0.012,
+"1755250"
+]
+],
+"topE": [
+[
+0.025,
+"2817040"
+],
+[
+0.023,
+"3206672"
+],
+[
+0.021,
+"3167599"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.05,
+0.07,
+0.0,
+0.0
+],
+"score": 2.5
+},
+{
+"arxiv": "2611.23884",
+"section": "new",
+"recid": "3230844",
+"src": "INSPIRE",
+"nref": 81,
+"title": "Long-lived linear slow roll near critical and spinodal points in soft-wall AdS/QCD",
+"authors": [
+"Han Tang",
+"Jia-jie Jiang",
+"Danning Li"
+],
+"abstract": "We systematically investigate the real-time evolution of the chiral condensate near critical and spinodal points within soft-wall AdS/QCD, focusing primarily on the long-lived prethermalization stage, in contrast to the conventional early transients and late-time relaxation. While the quasi-steady nature of this stage has been previously identified, we demonstrate that it is intrinsically a continuous linear slow roll, fundamentally distinct from the asymptotic critical slowing down at late times. By showing that the bulk evolution adiabatically follows the boundary condensate on a slow configuration space, we analytically project the 5D partial differential equation onto a boundary first-order Ginzburg-Landau (GL) equation. We find that the long lifetime of this linear regime is protected by a ``double-zero'' condition: the simultaneous vanishing of the local potential gradient (suppressing the drift velocity) and curvature (suppressing the acceleration). This geometric flatness inherently emerges at the second-order point and both first-order spinodal endpoints. Crucially, this behavior is not a fine-tuned artifact, but a generic consequence of the effective potential landscape intrinsic to these phase-transition endpoints, persisting across a broad class of physically relevant initial conditions and temperature quenches. A local short-time expansion further relates the interval duration to the potential curvature and its higher-order derivatives, in good agreement with our numerical simulations. This work establishes a direct link between the local structure of phase-transition endpoints and the dynamical evolution of the long-lived intermediate stage of the condensate.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.012,
+"636564"
+],
+[
+0.007,
+"695291"
+],
+[
+0.007,
+"643759"
+]
+],
+"topE": [
+[
+0.027,
+"634308"
+],
+[
+0.023,
+"606952"
+],
+[
+0.021,
+"671895"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.04,
+0.08,
+0.0,
+0.0
+],
+"score": 2.2
+},
+{
+"arxiv": "2610.37198",
+"section": "replacement",
+"recid": "3219541",
+"src": "INSPIRE",
+"nref": 275,
+"title": "Searches for new particle physics by methods of classical and neutrino astronomy",
+"authors": [
+"Sergey Troitsky"
+],
+"abstract": "Selected astrophysical methods for testing particle-physics models are reviewed. Stellar structure and evolution constrain additional channels of energy loss and transport; high-energy photon propagation probes photon mixing with new particles and modifications of electron-positron pair production; large-volume neutrino telescopes are used to search for magnetic monopoles, neutrinos from superheavy dark-matter decay, and non-standard neutrino propagation. Recent applications of these methods are discussed, involving the tip of the red-giant branch in the color-luminosity diagram, gamma-ray burst 221009A, and data from the Baikal Gigaton Volume Detector (Baikal-GVD) and the IceCube experiment. In each case, particle-physics parameters are inferred through a forward model that accounts for the response to new physics, propagation, detection, and nuisance parameters.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.01,
+"1607572"
+],
+[
+0.009,
+"2856850"
+],
+[
+0.006,
+"860906"
+]
+],
+"topE": [
+[
+0.029,
+"3150177"
+],
+[
+0.029,
+"2969908"
+],
+[
+0.027,
+"2905773"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.03,
+0.08,
+0.0,
+0.0
+],
+"score": 2.2
+},
+{
+"arxiv": "2611.23580",
+"section": "cross",
+"recid": "3230791",
+"src": "INSPIRE",
+"nref": 4,
+"title": "Fuzzy Dark Matter as a diffractive barrier: Wave-optics Signatures of Ultralight Fields on Lensed Gravitational Waves",
+"authors": [
+"Manish Tamta",
+"Han Gil Choi",
+"Diego Blas",
+"Miguel Zumalacárregui"
+],
+"abstract": "Gravitational waves (GWs) propagate through the universe from sources at high redshift, experiencing the gravitational fields of the intervening matter distribution. Halos composed of ultralight dark matter (ULDM) contain strong density fluctuations, reflecting the interference pattern in the field distribution of the ultralight bosons. In the wave-optics regime, ULDM fluctuations act as a diffractive grating, imprinting frequency-dependent modulations of GWs, in addition to magnification and other gravitational lensing effects. Since lensing depends on the projected surface density, we derive its approximate probability distribution and show how it departs from a Gaussian distribution depending on the halo profile and coherence length. We then quantify how the GW diffraction signatures produced by the granules depend on macroimage magnification and parity. The ULDM interference network imprints stochastic diffraction fluctuations at the $O(1)\\%$ level on GWs moderately lensed by the host when the Fresnel scale is comparable to the granule coherence length $r_F(f)\\sim\\ell_c$. These fluctuations can be enhanced to $\\gtrsim10\\%$ when the host macroimage forms near the critical curve or for Type II macroimages. For massive black hole binaries observed by LISA, the diffraction signature can be detectable around the ULDM particle mass $m_φ\\sim10^{-21}$ eV, providing either a smoking-gun signature of ULDM or new constraints on $m_φ$.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+],
+[
+0.0,
+"877394"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter",
+"gravitational wave"
+],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.0,
+0.0,
+0.21
+],
+"score": 2.1
+},
+{
+"arxiv": "2607.21395",
+"section": "replacement",
+"recid": "3182738",
+"src": "INSPIRE",
+"nref": 78,
+"title": "Transverse-momentum resummation effects on angular coefficients in Z and W boson hadroproduction",
+"authors": [
+"Stefano Camarda",
+"Giancarlo Ferrera",
+"Lorenzo Rossi",
+"Gabriele Francesco Sala"
+],
+"abstract": "We present a comprehensive analysis of the angular coefficients of $Z$ and $W$ boson production at hadron colliders in different kinematical ranges, using data from the ATLAS, LHCb, and CMS Collaborations at the LHC, including the recent CMS measurement at $\\sqrt{s}=13$~TeV, as well as CDF data at the Tevatron. We provide theoretical predictions obtained by consistently combining the resummation of logarithmically enhanced QCD corrections at small transverse momentum $q_T$ up to next-to-next-to-leading logarithmic accuracy (NNLL) with the fixed-order calculation through $\\mathcal{O}(α_S^2)$. The fixed-order helicity cross sections entering the finite component are evaluated using the new complete analytic NLO calculation implemented in the DYTurbo program. This implementation makes it possible to obtain fast and numerically stable predictions for all the angular coefficients and to perform an extensive study of their theoretical uncertainties. We quantify the impact of transverse-momentum resummation on the angular coefficients and we estimate the associated theoretical uncertainties, including scale variations, parton distribution functions, non-perturbative effects, the treatment of the transition region and the recoil prescription used to generate the lepton angular distribution of the resummed component. Within the estimated theoretical uncertainties, resummation improves the description of several measurements, particularly for $A_2$, while its impact on $A_0$ depends more strongly on the dataset and on the theoretical choices. The Lam--Tung combination $A_0-A_2$ is essentially unaffected by resummation.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.011,
+"3094526"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.028,
+"2817040"
+],
+[
+0.017,
+"2065390"
+],
+[
+0.014,
+"1688995"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.03,
+0.08,
+0.0,
+0.0
+],
+"score": 2.0
+},
+{
+"arxiv": "2609.33029",
+"section": "replacement",
+"recid": "3208593",
+"src": "INSPIRE",
+"nref": 84,
+"title": "Accelerating systems as probes of Lorentz violation",
+"authors": [
+"Quentin G. Bailey",
+"Nils A. Nilsson",
+"Sawyer J. Star"
+],
+"abstract": "We investigate the Fulling-Davies-Unruh effect in a local Lorentz-violating effective field theory, focusing on the quantum-field response of accelerated detectors. We canonically quantize a real scalar field exactly in the coefficients for Lorentz violation. The dispersion relation, Hamiltonian, and massless and massive Wightman functions are obtained. We determine the conditions under which the scalar dynamics preserves boost symmetry and distinguish these from the weaker conditions required for stationarity along a single accelerated worldline. The Wightman functions are used to construct the finite-time Unruh-DeWitt response for a uniformly accelerated detector. For generic coefficients the response is nonstationary and depends on both the duration and temporal location of the measurement. The spectrum, which is the resulting excitation rate as a function of the energy level difference in the detector, is obtained numerically. It shows discernable differences with the usual massive thermal spectrum for dimensionless coefficients on the order of $10^{-7}$. Experimental implications of the result are discussed. As an alternative viewpoint, we place Lorentz violation in the point-particle sector, derive the exact trajectory generated by a constant electric field, and study the proper-time Fourier response of a conventional scalar wave along the modified trajectory.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.045,
+"3087115"
+],
+[
+0.041,
+"2944315"
+],
+[
+0.034,
+"3164308"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.13,
+0.0,
+0.0
+],
+"score": 1.9
+},
+{
+"arxiv": "2611.23343",
+"section": "new",
+"recid": "3230777",
+"src": "INSPIRE",
+"nref": 22,
+"title": "An energy-dependent rescaling of the neutrino propagation Hamiltonian: Standard Model Extension identification, matter sector, and long-baseline degeneracy",
+"authors": [
+"Neda Razzaghi"
+],
+"abstract": "We study the consequences of multiplying the neutrino propagation Hamiltonian by a real, energy-dependent scalar, $H_η(E)=f(E)H_0(E)$ with $f(E)=1-η_0(E/E_0)^2$, a minimal-length ansatz. Its vacuum part is a dimension-four, CPT-even Lorentz-violating term of the Standard Model Extension with coefficient $(\\cL)_{ii}=-η_0(m_i^2-m_1^2)/(2E_0^2)$, diagonal in the mass basis and fixed by the mass matrix, hence removable by a reparametrization. The matter-potential rescaling has dimension-five behaviour and is CPT-odd. For $f=1-η_0(E/E_0)^p$ the vacuum term behaves as a dimension $p+2$ operator and the matter term as $p+3$, so only $p=2$ gives a marginal vacuum operator; $p=0$ is absorbed into the measured mass splittings, and non-integer $p$ admits no local operator. For $η_0=0.02$ at $E_0=2.5$~GeV we find $|(\\cL)_{33}|\\simeq4\\times10^{-24}$, comparable to present atmospheric bounds, whereas a Planck-suppressed deformation with $β_0=\\mathcal{O}(1)$ gives $3.2\\times10^{-58}$. At constant density it is equivalent to $L\\to f(E)L$: mixing angles and the Dirac phase are unchanged, the CP asymmetry is reparametrized rather than generated, and the leading observable is a rescaling of $\\dm_{31}$. At $1297$~km a re-fit of $\\dm_{31}$ alone absorbs $23$~per cent of the squared probability difference, and a four-parameter re-fit absorbs $41.5$~per cent. No statistical analysis is performed; degeneracy means a distance in probability space, not a confidence interval.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.011,
+"3184726"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.024,
+"3062873"
+],
+[
+0.023,
+"2721859"
+],
+[
+0.013,
+"2926248"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.03,
+0.07,
+0.0,
+0.0
+],
+"score": 1.8
+},
+{
+"arxiv": "2608.00142",
+"section": "replacement",
+"recid": "3186436",
+"src": "INSPIRE",
+"nref": 17,
+"title": "Low-lying singly heavy baryon states based on the rigorous calculation with the relativized quark model",
+"authors": [
+"Zhen-Yu Li",
+"Guo-Liang Yu",
+"Zhi-Gang Wang",
+"Jian-Zhong Gu"
+],
+"abstract": "In this work, the low-lying $\\mathbf{6}_{F}$ singly heavy baryon states with positive-parity are studied in detail in the framework of the relativized quark model by using the improved calculation scheme which has nicely explained the fine structure of the low-lying negative-parity singly heavy baryons. The low-lying spectra of all the singly heavy baryon families obtained in the same framework and calculation scheme are systematically analyzed. The baryon states marked with (mass)$J^{P}$ are obtained by considering the mixing effect rigorously. It is found that the mixing effect in the singly heavy baryons depends on the flavor symmetry of the two light quarks and the baryon parity. The results show that the high-precision calculation reproduces the majority of the assigned experimental masses within the maximum deviation range of 20 MeV and the mean absolute deviation between the calculated masses and the experimental data is only 6.88 MeV. The rigorous calculation achieved by the two-step GEM enables us to analyze the detailed behavior of the various strong interaction components within the baryons with a high-precision. The large amount of data obtained in this work serves as the useful references for related experimental and theoretical researches.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.042,
+"3152711"
+],
+[
+0.016,
+"3193100"
+],
+[
+0.016,
+"2817040"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.12,
+0.0,
+0.0
+],
+"score": 1.8
+},
+{
+"arxiv": "2608.30240",
+"section": "replacement",
+"recid": "3198007",
+"src": "INSPIRE",
+"nref": 41,
+"title": "Spin-dependent fermion potentials from mixed tensor couplings of massive spin-1 and spin-2 bosons",
+"authors": [
+"D. Khadka",
+"V. V. Flambaum"
+],
+"abstract": "Searches for weak spin-dependent forces are commonly interpreted in terms of a basis of sixteen rotationally invariant two-fermion potentials. We derive finite-range coordinate-space potentials generated by a massive spin-1 boson with vector, axial-vector, tensor, and pseudotensor couplings to Dirac fermions. In addition to the familiar vector--vector, vector--axial-vector, and axial-vector--axial-vector interactions, we obtain the mixed vector--tensor, vector--pseudotensor, axial-vector--tensor, and axial-vector--pseudotensor potentials, together with tensor--tensor, tensor--pseudotensor, and pseudotensor--pseudotensor terms. We retain the contact terms needed in atomic-scale applications and give compact expressions that include both orderings of inequivalent fermion vertices. We then extend the analysis to a massive spin-2 mediator described by a symmetric Fierz--Pauli field. Besides the conventional coupling to the conserved fermion energy--momentum tensor, we consider a symmetric axial-tensor current. Its nonconservation for massive fermions makes the longitudinal spin-2 helicities contribute to axial-tensor--axial-tensor exchange. The leading minimal spin-2 interactions are either P,T even or P odd and T evenl. Heavy-mediator contact limits and the distinction between the M-->0 massive-spin-2 limit and a genuine massless graviton are also discussed. We map the resulting interactions onto the sixteen-potential Dobrescu--Mocioiu basis and use this mapping to translate existing experimental constraints into numerical limits on spin-1 and spin-2 coupling products in the small- and large-mediator-mass regimes, together with representative limits at finite mediator masses. The derived relations between the boson-exchange coupling constants and the coefficients of the basis potentials also allow published exclusion curves to be rescaled to arbitrary mediator masses.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.043,
+"2639544"
+],
+[
+0.034,
+"2832249"
+],
+[
+0.023,
+"3148080"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.12,
+0.0,
+0.0
+],
+"score": 1.8
+},
+{
+"arxiv": "2610.31458",
+"section": "replacement",
+"recid": "3218179",
+"src": "INSPIRE",
+"nref": 26,
+"title": "Evidence for Kaluza-Klein excitations of the graviton, gluon and quark at LHC",
+"authors": [
+"Alain Le Yaouanc",
+"François Richard"
+],
+"abstract": "Following our paper showing evidence for a tower of Kaluza-Klein gravitons, we interpret the massive 4 jet excesses observed by CMS. They could come from the decay of two heavy KK gluons gkk(3.6TeV) and gkk(8.6TeV) into pairs of KK quarks qkk(1TeV) and qkk(2.1TeV). Present limits on gkk into top pairs seem to exclude gkk(3.6TeV) but these limits assume a dominant decay into top pairs, which can be questioned as was the case in our study of KK graviton decays. The cross section predicted for gkk(8.6) requires a BR into a pair of qkk(2.1TeV) or order 10% which is not unlikely. We also discuss the issue of a hierarchy between the KK graviton masses and the vector boson masses and the solution provided by the RS multi-brane models. Prospects for reaching a 6 s.d. level local evidence with RUN3 data are promising for 3 channels. KK excitations of the Z boson are discussed and appear also promising. Indirect evidences for these particles are also presented.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.041,
+"1089014"
+],
+[
+0.039,
+"1873918"
+],
+[
+0.03,
+"2851201"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.12,
+0.0,
+0.0
+],
+"score": 1.8
+},
+{
+"arxiv": "2611.23368",
+"section": "new",
+"recid": "3230751",
+"src": "INSPIRE",
+"nref": 179,
+"title": "Steerability in top quark decays at the LHC",
+"authors": [
+"Tao Han",
+"Navin McGinnis",
+"Sepehr Salamat",
+"Shufang Su",
+"Xingzhou Yu"
+],
+"abstract": "Quantum information observables in top quark pair production have opened a new experimental window on non-classical correlations of particle interactions at colliders. Einstein-Podolsky-Rosen (EPR) steering occupies a distinguished place in the quantum hierarchy, lying between entanglement and Bell nonlocality. We present a detailed collider analysis of steerability for top quark pairs at the Large Hadron Collider (LHC). In particular, we utilize both the decay and kinematic methods to estimate the expected sensitivity of the LHC and High Luminosity LHC (HL-LHC) to detect steerable states. We find that with the current LHC dataset of $139~\\mathrm{fb}^{-1}$ the steerability of the $t\\bar t$ state in the boosted region can be established at $7.7σ$ ($1.8σ$) in the semileptonic (dileptonic) channel with the decay method, corresponding to a measurement of the steerability integral at a precision of $1.5\\%$ ($5.2\\%$), while the kinematic method reaches a precision of $0.05\\%$ in both channels. At the HL-LHC the decay-method precision improves to $0.3\\%$ ($1.1\\%$). Near threshold, where the inclusive selections used for entanglement and discord yield a state at the steerability boundary, an optimized selection $M_{t\\bar{t}}\\lesssim360$--$400$~GeV isolates a steerable singlet-dominated state, where the sensitivity is projected to reach $7σ$ ($3.4σ$). We also provide a detailed discussion on the interpretation of these results with respect to fictitious quantum states, and argue for the robust nature of the steerability measurement at colliders.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.01,
+"3094526"
+],
+[
+0.006,
+"1679809"
+],
+[
+0.003,
+"1455793"
+]
+],
+"topE": [
+[
+0.017,
+"3193100"
+],
+[
+0.013,
+"2817040"
+],
+[
+0.011,
+"1397645"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.03,
+0.05,
+0.0,
+0.0
+],
+"score": 1.6
+},
+{
+"arxiv": "2605.15910",
+"section": "replacement",
+"recid": "3156709",
+"src": "INSPIRE",
+"nref": 50,
+"title": "Geometric algebra as the input language of collider foundation models",
+"authors": [
+"E. Abasov",
+"L. Dudko",
+"F. Grigoryev",
+"P. Volkov",
+"A. Zaborenko"
+],
+"abstract": "We describe a hard hadron-collider event as a single geometric object. Each reconstructed final-state object is a multivector of $\\Cl(1,3)\\otimes\\Vflav$ that combines its four-momentum with its object-type label. The event multivector $\\evMV$ is the direct sum of these per-object multivectors. Products in the algebra generate the higher grades from the measured four-momenta. The grades organise nearly every observable in current use, from invariants at grade zero to decay-plane bivectors, oriented three-volumes and the CP-odd pseudoscalar at grades two to four. The high-level invariants and the low-level four-momentum recipe of earlier analyses, and the inputs of equivariant networks, are recovered as projections onto specific grades. We give a per-grade dictionary of $32$ classical observables and an inventory of the symmetries acting on $\\evMV$. A theorem extending the Cayley--Menger identity to Minkowski space shows that the higher grades give no Lorentz invariant beyond $\\{p_i\\!\\cdot\\!p_j,\\,m_i^2\\}$ except the CP-odd sign of the pseudoscalar. Grades two and three n evertheless describe the decay planes and decay volumes of the event compactly, as covariant objects. The representation is intended as a uniform input layer for foundation models of collider physics. As a simple example of its use, we apply it to the resonance-topology separation of $pp\\!\\to\\!tWb$ with a small Lorentz-equivariant multivector transformer of L-GATr type. In an ablation over eight input representations of this example, the classifier improves when a fixed reference bivector encoding the beam plane, which the momenta do not contain, is added to the input.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.035,
+"2621240"
+],
+[
+0.027,
+"3193100"
+],
+[
+0.015,
+"1857582"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.1,
+0.0,
+0.0
+],
+"score": 1.5
+},
+{
+"arxiv": "2611.23597",
+"section": "cross",
+"recid": "3230779",
+"src": "INSPIRE",
+"nref": 1,
+"title": "Comment on \"Exact, nonsingular black holes from a phantom DBI field as primordial dark matter\"",
+"authors": [
+"Mustapha Azreg-Aïnou",
+"Marco A. A. de Paula"
+],
+"abstract": "We demonstrate that the metric and scalar configuration proposed in Ref.~[1] do not satisfy the complete set of field equations of the Dirac-Born-Infeld (DBI) field theory minimally coupled to general relativity on a radial domain containing the event horizon. The physical DBI branch for this gravitational setup terminates outside the event horizon. Thus, the proposed configuration does not describe a black hole solution of that theory.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+],
+[
+0.0,
+"877394"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.0,
+0.0,
+0.13
+],
+"score": 1.3
+},
+{
+"arxiv": "2611.23993",
+"section": "new",
+"recid": "",
+"src": "arXiv source",
+"nref": 29,
+"title": "Probing dimension-six SMEFT operators in heavy-quark sector at future muon collider",
+"authors": [
+"Serdar Spor"
+],
+"abstract": "We investigate the sensitivity to the dimension-six Standard Model Effective Field Theory (SMEFT) operators which define the interactions of heavy-quarks with electroweak gauge bosons and with leptons via the process $μ^- μ^+ \\rightarrow Wtb$, followed by leptonic W-boson decays, at a 10 TeV muon collider with an integrated luminosity of 10 ab$^{-1}$. Signal and background events are generated at leading order using MadGraph5aMC@NLO, interfaced with Pythia 8 for parton showering and hadronization, and passed through Delphes 3.5 for fast detector simulation. The 95% confidence level (C.L.) limits on nine Wilson coefficients are derived using a cut-based method for two $b$-tagging working points (70% and 90% efficiencies). These limits are significantly tighter than those currently reported by the CMS Collaboration; furthermore, these results highlight the advanced potential of a future high-energy muon collider to investigate new physics within the electroweak sector through precise measurements of heavy-quark interactions.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.025,
+"3154544"
+],
+[
+0.019,
+"2664140"
+],
+[
+0.007,
+"3193100"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.07,
+0.0,
+0.0
+],
+"score": 1.1
+},
+{
+"arxiv": "2611.24572",
+"section": "cross",
+"recid": "",
+"src": "arXiv source",
+"nref": 25,
+"title": "Radii of Sn Isotopes near the Proton Dripline from Nuclear Lattice Effective Field Theory",
+"authors": [
+"Fabian Hildenbrand",
+"Serdar Elhatisari",
+"Ulf-G. Meißner"
+],
+"abstract": "We present the first $\\textit{ab initio}$ lattice calculations of charge and matter radii of tin isotopes $^{96}$Sn, $^{98}$Sn, $^{100}$Sn, $^{102}$Sn and $^{104}$Sn near the proton dripline using nuclear lattice effective field theory with high-fidelity two- and three-nucleon forces combined with the partial-pinhole algorithm. The resulting radii are larger then predicted from other ab-initio methods. We find that variations of the three-nucleon interaction reveal substantial radius differences even among interactions with similar binding energies. We intensively discuss of the role of different choices of the three-body forces.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.027,
+"3216851"
+],
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.08,
+0.0,
+0.0
+],
+"score": 1.1
+},
+{
+"arxiv": "2611.24916",
+"section": "new",
+"recid": "",
+"src": "arXiv source",
+"nref": 40,
+"title": "Locally infrared finite two-loop amplitudes for multi Higgs production in association with one jet",
+"authors": [
+"Aniruddha Venkata"
+],
+"abstract": "We study the two-loop amplitudes for multi-Higgs production through a massive top-quark loop in association with one jet. We consider the quark-antiquark channel with a final-state gluon, $q\\bar q\\to g+nH$ although our construction applies to crossed channel as well. We utilize (non-local in momentum space) Ward identities to factorize longitudinal and gauge degrees of freedom through exact identities between Feynman graphs without reference to an infrared region. In the genuine two loop topologies, we replace the internal gluons by their physical degrees of freedom and show that the resulting amplitude is free of collinear singularities. The only remaining infrared divergence is a soft singularity that can be identified with a change of reference gauge vector. We construct explicit soft counterterms for these singularities, obtaining a locally infrared-finite representation. We verify that the factorized longitudinal degrees of freedom reproduce the remaining infrared poles of the original Feynman graphs. Our formalism requires no counter-terms for collinear finiteness or for manifesting Ward identities in various regions since we perform a decomposition of covariant gauge Feynman graphs. We expect its extension to more complicated processes to eliminate all collinear singularities--particularly in the initial state.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.024,
+"3206672"
+],
+[
+0.018,
+"2030477"
+],
+[
+0.016,
+"2817040"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.07,
+0.0,
+0.0
+],
+"score": 1.0
+},
+{
+"arxiv": "2611.23394",
+"section": "new",
+"recid": "3230768",
+"src": "INSPIRE",
+"nref": 50,
+"title": "Twist-4 QCD Factorization for One-Point Correlators at Next-to-Leading Order in Electron-Ion Collisions",
+"authors": [
+"Omar Elgedawy",
+"Zhong-Bo Kang",
+"Hongxi Xing"
+],
+"abstract": "Energy and charge correlators have emerged as powerful, infrared- and collinear-safe (IRC-safe) observables for probing QCD dynamics in the vacuum, established within the leading-twist factorization formalism. However, their IRC safety and factorization properties in a nuclear medium, where higher-twist contributions are critically enhanced, remain unproven. In this letter, we present the first proof of next-to-leading order QCD factorization for one-point energy and charge correlators (OPEC and OPCC) in electron-ion collisions at twist-4. Working within the higher-twist expansion framework, we calculate the twist-4 power corrections to the angular widths of the OPEC and OPCC, and explicitly demonstrate that the IRC singularities cancel and fragmentation-function dependence reduces to momentum and charge moments for final-state medium-enhanced observables in semi-inclusive deep inelastic scattering. Supported by numerical evaluations, this framework establishes OPEC and OPCC angular widths as sensitive probes of higher-twist dynamics and fundamental properties of cold nuclear matter.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.021,
+"2164775"
+],
+[
+0.02,
+"3198665"
+],
+[
+0.017,
+"3206672"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.06,
+0.0,
+0.0
+],
+"score": 0.9
+},
+{
+"arxiv": "2611.23834",
+"section": "new",
+"recid": "3230834",
+"src": "INSPIRE",
+"nref": 71,
+"title": "Unpolarized Generalized Parton Distributions of the Nucleon in a Covariant Quark-Diquark Approach",
+"authors": [
+"Hao Zhang",
+"Dongyan Fu",
+"Jiaqi Wang",
+"Yubing Dong"
+],
+"abstract": "We study the unpolarized generalized parton distributions (GPDs) of the nucleon in a covariant quark-diquark approach, in which both scalar and axial-vector diquarks are treated as composite subsystems. Motivated by previous form factor studies, we introduce a vertex correction based on the pion cloud picture as a first exploratory treatment of pion cloud effects at the GPD level, in order to improve the description of $E^q(ξ, x, t)$ and related magnetic observables. At the model input scale, only valence quarks are included. With the vertex correction, the electromagnetic form factors $G_{E, M}$ and the mass form factor $A$ obtained from the Mellin moments of the GPDs agree well with those obtained from direct calculations. The vertex correction brings the evolved charge weighted distribution $\\sum{e^q E^q(ξ, x, t)}$ closer to the phenomenological parametrization. The correction shifts transverse strength from the central region toward the peripheral region, consistent with the long range character of the pion cloud contribution. The transverse structure results further suggest a harder longitudinal momentum distribution in the central region of the nucleon than in its periphery. Furthermore, the evolved real part of the proton Compton form factor, $\\mathrm{Re} \\mathcal{H}(ξ, t)$, has a reasonable magnitude and follows the main trend of the Quantum Deep Neural Networks (QDNN) extraction. In addition, $\\mathrm{Re} \\mathcal{H}$ may be more sensitive to the ERBL region than the other physical quantities calculated in this work.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.021,
+"3074282"
+],
+[
+0.018,
+"2658297"
+],
+[
+0.016,
+"3193100"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.06,
+0.0,
+0.0
+],
+"score": 0.9
+},
+{
+"arxiv": "2611.24368",
+"section": "new",
+"recid": "3230897",
+"src": "INSPIRE",
+"nref": 51,
+"title": "Hadronic production of excited $B_c$ mesons at the LHC",
+"authors": [
+"Hong-Tai Li",
+"Xu-Chang Zheng",
+"Xing-Gang Wu",
+"Jiang Yan"
+],
+"abstract": "We study the hadronic production of ground-state and excited $B_c$ mesons at the LHC for $\\sqrt{S}=13$ TeV within the framework of NRQCD factorization at leading order in QCD. The calculation includes the $1S$, $1P$, and $2S$ multiplets, with both color-singlet and color-octet contributions to direct $1P$ production. For $p_T>0.2$ GeV, the summed production cross section is $336.04^{+275.80}_{-175.43}$ nb; the quoted uncertainty combines the specified heavy-quark mass and common-scale variations and does not include PDF-set differences. The NNPDF3.0 and MSHT20LO predictions are approximately $23\\%$--$24\\%$ below the CT18LO result. With the adopted radiative-transition branching fractions, $2S$ feed-down increases the total $1P$ yield from $34.73$ to $75.34$ nb. The relative enhancement differs markedly among the four spectroscopic states, ranging from $38\\%$ for $1^1P_1$ to $262\\%$ for $1^3P_0$, and it reorders their integrated production hierarchy. Within the set of states included here, the ratio of the $1P$ yield to the inclusive ground-state yield increases from $0.103$ to $0.224$. We present the state-resolved distributions and the dependence of direct production on kinematic cuts, parton distributions, quark masses, and scale choices. These results illustrate the potential impact of $2S$ feed-down on the relative yields of the lowest $P$-wave $B_c$ states.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.019,
+"2921232"
+],
+[
+0.013,
+"2047160"
+],
+[
+0.012,
+"3132089"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.05,
+0.0,
+0.0
+],
+"score": 0.8
+},
+{
+"arxiv": "2611.23577",
+"section": "new",
+"recid": "3230807",
+"src": "INSPIRE",
+"nref": 72,
+"title": "Perspective on Proton Transversity Distribution Functions",
+"authors": [
+"Ke-Xin Zeng",
+"Peng Cheng",
+"Yang Yu",
+"Daniele Binosi",
+"Craig D. Roberts"
+],
+"abstract": "Using available information on proton tensor charges and constraints from perturbative quantum chromodynamics (QCD), Ansaetze are introduced for hadron-scale in-proton valence-quark transversity distributions functions (DFs). The concept of a QCD effective charge, which defines an evolution scheme for collinear parton distribution and fragmentation functions that is all-orders exact, is then used to deliver predictions for the $x$-dependence of these DFs at the scale $ζ_{2} = 2\\,$GeV. Although the approach is largely algebraic, its predictions remain viable after comparisons with results obtained using computationally intensive methods. Thus, given the scarcity of data that can today be used for inference of proton transversity DFs, it may be worth using the results herein to inform and constrain related experiments and phenomenological fits.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.013,
+"2895324"
+],
+[
+0.012,
+"2658297"
+],
+[
+0.011,
+"2063283"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.04,
+0.0,
+0.0
+],
+"score": 0.6
+},
+{
+"arxiv": "2512.05923",
+"section": "replacement",
+"recid": "3089755",
+"src": "INSPIRE",
+"nref": 46,
+"title": "Untangling the Integration-By-Parts Equations",
+"authors": [
+"Junhan W. Liu",
+"Alexander Mitov"
+],
+"abstract": "In this work, we present an algorithm which converts the Integration-by-Parts (IBP) equations into single-variable recurrence relations. We refer to this procedure as {\\it diagonalization}. Diagonalized IBP equations are indispensable for reducing loop integrals with extremely high numerator powers to master integrals, and for solving IBP identities in closed analytic form. A prime example is provided by multivariate Mellin representations of loop amplitudes and cross sections. The extension of these methods to other multivariate recurrence relations is also discussed. As a by-product of our diagonalization procedure, we show how the IBP equations can be cast into an efficient, fully triangular form that is well suited for computer implementation. Several complicated topologies have been computed.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.014,
+"2677060"
+],
+[
+0.01,
+"1865755"
+],
+[
+0.01,
+"1863476"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.04,
+0.0,
+0.0
+],
+"score": 0.6
+},
+{
+"arxiv": "2611.15894",
+"section": "replacement",
+"recid": "3228016",
+"src": "INSPIRE",
+"nref": 70,
+"title": "Strangeness in the Chiral Mean Field model phase diagram",
+"authors": [
+"Mateus Reinke Pelicer",
+"Nikolas Cruz-Camacho",
+"Rajesh Kumar",
+"Veronica Dexheimer",
+"Jacquelyn Noronha-Hostler"
+],
+"abstract": "We explore the phase diagram of the Chiral Mean Field model in the space of temperature and baryon, charge, and strangeness chemical potentials, focusing on the role of the strangeness direction. At low density, a negative $μ_S$ leads to finite strangeness in the nuclear liquid--gas transition and rotates the order parameter away from the purely baryonic direction. The critical mode remains baryon dominated over the $μ_S$ range considered, while the critical locus develops a strong parametrization dependence once multistrange baryons appear. At higher density, a separate first-order transition toward strangeness-rich hadronic matter appears only for one of the two parametrizations considered, emphasizing its interaction dependence. The high density transition reorganizes octet-dominated matter into decuplet-dominated matter: $Δ$ baryons provide most of the baryon-density discontinuity, while $Ξ^*(1530)$ baryons provide the largest contribution to the strangeness-density discontinuity. Its order parameter is dominated by the strangeness density, and its normalized direction in the $BQS$ space changes little with temperature even as the discontinuity vanishes at the critical point. The critical baryon chemical potential changes by almost $1$~GeV over $μ_S\\in [-300, 300]$~MeV. We characterize both transitions using the fixed-temperature $BQS$ susceptibility matrix, the density discontinuity between the coexisting phases, and a generalized Clausius--Clapeyron relation. This work also accompanies the release of \\cmfpp{} \\texttt{v2.0.0} as part of the MUSES framework. The extension of the initial release includes, among other features, finite-temperature thermodynamics, new interactions and parametrizations, and susceptibility calculations based on a Jacobian method.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.014,
+"3147506"
+],
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.04,
+0.0,
+0.0
+],
+"score": 0.6
+},
+{
+"arxiv": "2611.23506",
+"section": "cross",
+"recid": "3230799",
+"src": "INSPIRE",
+"nref": 102,
+"title": "The production of lepton pairs in heavy-ion collisions at SPS and RHIC energies",
+"authors": [
+"Xiang-Yu Wu",
+"Han Gao",
+"Charles Gale",
+"Sangyong Jeon",
+"Ralf Rapp"
+],
+"abstract": "We perform a quantitative study of dilepton production and elliptic flow in In+In collisions at $\\sqrt{s_{\\rm NN}}=17.3$ GeV and isobar collisions at $\\sqrt{s_{\\rm NN}}=200$ GeV, concentrating on the low and intermediate invariant mass regions. The medium evolution is simulated event-by-event with the multistage iEBE-MUSIC framework, and the electromagnetic emission combines for the first time quark-gluon plasma (QGP) emission calculated at next-to-leading order (NLO) in the strong coupling with in-medium radiation calculated with hadronic many-body theory. Freeze-out and surviving primordial $ρ$ decays are also included. The calculations are compared with the high-precision dimuon spectra measured by the NA60 Collaboration, and with STAR preliminary measurements of dielectron spectra and elliptic flow. We obtain effective temperatures extracted from the transverse-mass spectra, and we calculate the elliptic flow of the different dilepton sources. Our results suggest that dilepton measurements in the low-mass and high $p_T$ region can provide insight into higher-order corrections to the QGP emission rate.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.007,
+"1903588"
+],
+[
+0.007,
+"2721859"
+],
+[
+0.007,
+"2958466"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.02,
+0.0,
+0.0
+],
+"score": 0.3
+},
+{
+"arxiv": "2611.24624",
+"section": "cross",
+"recid": "",
+"src": "arXiv source",
+"nref": 50,
+"title": "Instanton tunnelling as a verifiable benchmark for digital quantum simulation: circuit structure, classical simulability and hardware reproducibility",
+"authors": [
+"Gerhard Hellstern",
+"Marc Maussner"
+],
+"abstract": "We use instanton-mediated tunnelling in the quartic double well as a benchmark for digital quantum simulation that is checkable against an exact answer at every step. The instanton enters through the classical analysis; the hardware tests the dynamics of the lattice model. A unary (single-excitation) encoding maps N lattice sites to N qubits, with the single-excitation dynamics as a reference that remains classically cheap at any N. For a second-order Trotter circuit with adjacent, equal-angle XX/YY pairs on each bond, we prove that the Schmidt rank across any cut is at most four at every gate boundary and at most two after each pair, independently of N. Matrix-product-state simulations of this gate list reproduce the exact splitting up to N = 48. For this bond-wise formula the admissible Trotter step shrinks roughly as N^-2, so one tunnelling period costs about N^3.3 two-qubit gates; a kinetic/potential splitting keeps the step near 0.065 up to N=128, so this scaling belongs to splitting the kinetic term bond by bond. At a coarser, separately bounded step we measure the full transfer at N=8 on two superconducting processors, recovering the lattice splitting to a few percent and its dependence on the barrier height, which at this resolution is set by the lattice rather than by the instanton. Over 9 repetitions, runs taken minutes apart agree to shot noise, while runs hours to weeks apart differ by up to 6.1%, also on a fixed set of qubits; with sessions as the sampling unit, the processors differ in the damping, while a difference in the splitting is not established. Normalising by the measured single-excitation population extends the usable depth about 4-fold but does not improve the splitting. A Gaussian start state, which needs no diagonalisation, reproduces the splitting of the eigenvector-based start to within 1.6 percentage points.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.006,
+"1783234"
+],
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.02,
+0.0,
+0.0
+],
+"score": 0.2
+},
+{
+"arxiv": "2607.16825",
+"section": "replacement",
+"recid": "3181802",
+"src": "INSPIRE",
+"nref": 84,
+"title": "Particle accelerators as a path to intergovernmental collaboration: the case of the first electron positron collider and the power of theoretical physics",
+"authors": [
+"Giulia Pancheri"
+],
+"abstract": "I revisit the history of the first matter-antimatter collider built in Italy in 1960 and carried to success through an inter-European collaboration with France, to underline the need for large intergovernmental efforts in the realization of particle accelerators such as the proposed electron synchrotron in the Greater Caribbean region. The foundational role of the Austrian born theoretical physicist Bruno Touschek and his life path through Europe before and after World War II is briefly recalled. The role of CERN as a post-war intergovernmental institution in jump-starting the international collaboration between the Frascati National Laboratories in Italy and the Laboratoire de l'Accelerateur Lineaire d'Orsay in France is highlighted through historical documents, and contributions from interviews with the protagonists of Touschek's game-changing proposal.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.002,
+"3193100"
+],
+[
+0.002,
+"2817040"
+],
+[
+0.0,
+"913031"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.0,
+0.0,
+0.0
+],
+"score": 0.1
+},
+{
+"arxiv": "2611.19306",
+"section": "replacement",
+"recid": "3229487",
+"src": "INSPIRE",
+"nref": 41,
+"title": "Spatiotemporal K-Shape: Reconstructing inhomogeneous condensate profiles on the lattice",
+"authors": [
+"Keita Horie",
+"Rin Kagami",
+"Chiho Nonaka"
+],
+"abstract": "Spatially modulated chiral condensates can affect the phase structure of dense QCD effective models. Understanding such order requires characterizing its real-space structure as well as detecting a modulation. Spatial two-point correlators retain the ensemble-averaged power spectrum but discard relative Fourier phases, leaving the configuration shapes undetermined in general. We propose the Spatiotemporal K-Shape method to extract representative shapes from lattice Monte Carlo ensembles without assuming a functional form. The method extends K-Shape clustering to periodic lattice fields, aligning configurations modulo translations and, optionally, a global sign or phase before extracting cluster centroids. Comparisons across clusterings assess whether one representative shape suffices. Controlled tests recover distinct profiles with identical correlators and separate mixtures of different shapes. Applied to the $(1+1)$-dimensional Gross-Neveu model with $N_f=8$, the method extracts non-sinusoidal profiles with two sign changes at two chemical potentials and separates multiple shape families at a third, where a single centroid is insufficient. Including the discrete chiral sign symmetry in the alignment can fold domain-length fluctuations into an asymmetric centroid without implying a preferred ensemble asymmetry. The method thus complements correlator diagnostics with representative real-space shapes and information on their diversity. The application to the Gross-Neveu model provides a testing ground for configuration-based studies of inhomogeneous order relevant to the QCD phase diagram.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.001,
+"3193100"
+],
+[
+0.001,
+"2817040"
+],
+[
+0.0,
+"913031"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.0,
+0.0,
+0.0
+],
+"score": 0.1
+},
+{
+"arxiv": "2611.23593",
+"section": "new",
+"recid": "3230798",
+"src": "INSPIRE",
+"nref": 15,
+"title": "Cold Magnetized Quark Matter under Compact-Star Conditions",
+"authors": [
+"S. A. Ferraris",
+"J. P. Carlomagno",
+"G. A. Contrera",
+"A. G. Grunfeld"
+],
+"abstract": "We investigate the phase structure of cold magnetized two-flavor quark matter under compact-star conditions within a nonlocal chiral quark model with separable interactions. Electric charge neutrality and beta equilibrium are imposed in order to describe matter under realistic neutron-star conditions, while nonlocality is implemented through a Gaussian form factor. We find that low and moderate magnetic fields reduce the critical chemical potential for chiral symmetry restoration, signaling inverse magnetic catalysis. For stronger magnetic fields, the critical chemical potential becomes nearly independent of the magnetic field strength, Compared with the isospin-symmetric case, the combined effects of charge neutrality and beta equilibrium shift the first-order chiral transition to slightly higher chemical potentials, indicating that compact-star constraints delay the onset of chiral symmetry restoration. We further show that charge neutrality and beta equilibrium modify the de Haas--van Alphen oscillations in the quark density, shifting the Landau-level thresholds for the $u$ and $d$ quarks in opposite directions relative to the isospin-symmetric case. The effect on the chiral transition is small ($\\sim 5$MeV) for fields $B\\lesssim 10^{19}$G, relevant for magnetar interiors, and becomes sizable only for $B\\gtrsim 3\\times10^{19}$G. These results highlight the importance of incorporating realistic stellar conditions in studies of the QCD phase diagram at high baryon density.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+],
+[
+0.0,
+"877394"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.0,
+0.0,
+0.0
+],
+"score": 0.0
+},
+{
+"arxiv": "2611.24878",
+"section": "cross",
+"recid": "",
+"src": "arXiv source",
+"nref": 40,
+"title": "From geometric curvature to effective backgrounds: a dictionary for Dirac fermions in one, two and three spatial dimensions",
+"authors": [
+"David Valenzuela",
+"Alfredo Raya"
+],
+"abstract": "Dirac equation on curved backgrounds can be rewritten as a flat-space equation in which geometry appears as a tensorial Fermi velocity together with a set of background fields. We derive this correspondence from a single Clifford-algebra identity and follow it through one, two, and three spatial dimensions. Once the spin connection is written in terms of Ricci rotation coefficients, only two contractions can occur. The trace produces a term with the index structure of a vector potential in every dimensionality; it enters with an imaginary factor i and is precisely the term that keeps the operator Hermitian when the Fermi velocity depends on position. The totally antisymmetric contraction produces an object that depends on the number of indices available to the Levi-Civita symbol: a trace on a line, a pseudoscalar mass on a surface, and an axial vector potential in a volume. Neither contraction is invariant under local rotations of the frame, and we give the transformation laws. On a surface, the curl of the trace term can always be removed by a frame rotation, while its divergence is proportional to the Gaussian curvature. We apply the correspondence to a Gaussian bump, where the local density of states at the center falls below its flat value and obeys a closed form at low energy; to a wire, where a nonuniform lapse binds states inside the gap and a nonuniform velocity cannot; to stationary frames on a surface, where a circulating drag shifts the Dirac mass locally with either sign; and to twisted and rotating frames in a volume, where the axial term takes the form of a chiral chemical potential produced by the frame alone, or separates Weyl nodes in a rotating sample. We separate the geometric contribution from the lattice pseudogauge field that dominates the response of strained samples",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+],
+[
+0.0,
+"877394"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.0,
+0.0,
+0.0
+],
+"score": 0.0
+},
+{
+"arxiv": "2608.15855",
+"section": "replacement",
+"recid": "3191690",
+"src": "INSPIRE",
+"nref": 6,
+"title": "Estimation of the cumulant $b_4$ and sextic self-coupling of the QCD axion at finite temperature and density",
+"authors": [
+"Xinguang Li",
+"Zhao Zhang"
+],
+"abstract": "The sixth-order cumulant $b_4$ of the QCD topological charge distribution and the axion's sextic self-coupling at finite temperature $T$ and baryon chemical potential $μ$ are calculated within the two-flavor quark-meson (QM) model without and with the Polyakov-loop dynamics. The $b_4$ in the vacuum falls within the range predicted by lattice SU(3) pure-gauge simulations, and at large $T$ and/or $μ$, it tends to a constant predicted by the dilute instanton gas approximation. Both $b_4$ and the axion's sextic self-coupling diverge at the QCD critical point and flip sign across the phase transition. The range of accuracy of the fourth- and sixth-order Taylor expansions of the free energy as a function of the $θ$ parameter is investigated via comparison with the full potential at the mean-field level.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.0,
+"913031"
+],
+[
+0.0,
+"881902"
+],
+[
+0.0,
+"877394"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.0,
+0.0,
+0.0
+],
+"score": 0.0
+}
+]

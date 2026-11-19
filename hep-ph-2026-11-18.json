@@ -1,75 +1,10 @@
 [
 {
-"arxiv": "2511.10731",
-"section": "replacement",
-"recid": "3083432",
-"src": "INSPIRE",
-"nref": 33,
-"title": "Keeping It Renormalizable: Minimal Baryogenesis induced Asymmetric Dark Matter",
-"authors": [
-"Miguel Escudero",
-"Thomas Hambye",
-"Chandan Hati"
-],
-"abstract": "Many asymmetric dark matter scenarios have been proposed to date. Among them, perhaps the most motivated ones are those in which the dark matter asymmetry is induced from the baryon/lepton asymmetries via chemical equilibration without any new sources of CP violation. However, most of the models put forward along these lines have been excluded by now and/or are based on complicated setups. In this letter, we present a new, simple, and viable scenario. It assumes only two new fields: a scalar singlet and an inert scalar doublet, and is based only on renormalizable interactions, that slowly generate the dark matter asymmetry from the Standard Model Higgs asymmetry. The successful asymmetry transfer requires small (but technically natural) couplings which in turn make the model CP conserving in practice. The model allows for the direct detection of dark matter in the upcoming generation of experiments, and the inert doublet is predicted to be light enough to be potentially produced and observed at the LHC and future colliders, $46\\,{\\rm GeV}<m_{H'}<580\\,{\\rm GeV}$. Quite remarkably, the mass and lifetime of the inert doublet may be inferred from direct detection experiments, indicating long-lived compressed electroweak states that can be searched for at the HL-LHC.",
-"citR": [],
-"citE": [
-"1907141",
-"2795517"
-],
-"topR": [
-[
-0.032,
-"2794409"
-],
-[
-0.028,
-"1764733"
-],
-[
-0.028,
-"2686856"
-]
-],
-"topE": [
-[
-0.09,
-"2107164"
-],
-[
-0.087,
-"2815960"
-],
-[
-0.082,
-"2141293"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [
-"scalar doublet",
-"dark matter scenario",
-"direct detection",
-"direct detection experiment",
-"dark matter"
-],
-"watch": [],
-"parts": [
-0.7,
-0.1,
-0.26,
-0.0,
-0.75
-],
-"score": 38.9
-},
-{
 "arxiv": "2611.22807",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 124,
+"recid": "3230675",
+"src": "INSPIRE",
+"nref": 126,
 "title": "Millicharged Fermions as Dark Matter: Theoretical Modeling and Experimental Detection",
 "authors": [
 "Momchil Naydenov"
@@ -124,11 +59,76 @@
 "score": 38.1
 },
 {
+"arxiv": "2511.10731",
+"section": "replacement",
+"recid": "3083432",
+"src": "INSPIRE",
+"nref": 42,
+"title": "Keeping It Renormalizable: Minimal Baryogenesis induced Asymmetric Dark Matter",
+"authors": [
+"Miguel Escudero",
+"Thomas Hambye",
+"Chandan Hati"
+],
+"abstract": "Many asymmetric dark matter scenarios have been proposed to date. Among them, perhaps the most motivated ones are those in which the dark matter asymmetry is induced from the baryon/lepton asymmetries via chemical equilibration without any new sources of CP violation. However, most of the models put forward along these lines have been excluded by now and/or are based on complicated setups. In this letter, we present a new, simple, and viable scenario. It assumes only two new fields: a scalar singlet and an inert scalar doublet, and is based only on renormalizable interactions, that slowly generate the dark matter asymmetry from the Standard Model Higgs asymmetry. The successful asymmetry transfer requires small (but technically natural) couplings which in turn make the model CP conserving in practice. The model allows for the direct detection of dark matter in the upcoming generation of experiments, and the inert doublet is predicted to be light enough to be potentially produced and observed at the LHC and future colliders, $46\\,{\\rm GeV}<m_{H'}<580\\,{\\rm GeV}$. Quite remarkably, the mass and lifetime of the inert doublet may be inferred from direct detection experiments, indicating long-lived compressed electroweak states that can be searched for at the HL-LHC.",
+"citR": [],
+"citE": [
+"1907141",
+"2795517"
+],
+"topR": [
+[
+0.024,
+"1764733"
+],
+[
+0.024,
+"2686856"
+],
+[
+0.019,
+"2794409"
+]
+],
+"topE": [
+[
+0.078,
+"2107164"
+],
+[
+0.075,
+"2815960"
+],
+[
+0.07,
+"2141293"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"scalar doublet",
+"dark matter scenario",
+"direct detection",
+"direct detection experiment",
+"dark matter"
+],
+"watch": [],
+"parts": [
+0.7,
+0.08,
+0.22,
+0.0,
+0.75
+],
+"score": 37.6
+},
+{
 "arxiv": "2608.05304",
 "section": "replacement",
 "recid": "3188142",
 "src": "INSPIRE",
-"nref": 78,
+"nref": 79,
 "title": "GOOFy-compatible 3HDMs and beyond",
 "authors": [
 "I. de Medeiros Varzielas",
@@ -156,15 +156,15 @@
 ],
 "topE": [
 [
-0.216,
+0.211,
 "2932612"
 ],
 [
-0.181,
+0.182,
 "2815355"
 ],
 [
-0.099,
+0.1,
 "2658189"
 ]
 ],
@@ -175,11 +175,11 @@
 "parts": [
 0.7,
 0.03,
-0.62,
+0.6,
 0.0,
 0.0
 ],
-"score": 34.7
+"score": 34.5
 },
 {
 "arxiv": "2611.21737",
@@ -251,7 +251,7 @@
 "section": "replacement",
 "recid": "3227632",
 "src": "INSPIRE",
-"nref": 105,
+"nref": 124,
 "title": "Strongly supercooled first-order phase transitions: monopole abundance, entropy production and homogeneity consistency",
 "authors": [
 "Chen Zhang",
@@ -266,7 +266,7 @@
 ],
 "topR": [
 [
-0.016,
+0.015,
 "3130296"
 ],
 [
@@ -280,15 +280,15 @@
 ],
 "topE": [
 [
-0.077,
+0.085,
 "3128752"
 ],
 [
-0.073,
+0.075,
 "3167588"
 ],
 [
-0.055,
+0.074,
 "2657746"
 ]
 ],
@@ -302,11 +302,11 @@
 "parts": [
 0.7,
 0.04,
-0.22,
+0.24,
 0.0,
 0.23
 ],
-"score": 31.2
+"score": 31.4
 },
 {
 "arxiv": "2611.21714",
@@ -926,9 +926,9 @@
 {
 "arxiv": "2611.22945",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 32,
+"recid": "3230697",
+"src": "INSPIRE",
+"nref": 35,
 "title": "Universal Mass Equation for Equal-Quantum Excited-States Sets~III",
 "authors": [
 "L. David Roper",
@@ -956,11 +956,11 @@
 ],
 "topE": [
 [
-0.034,
+0.032,
 "2750604"
 ],
 [
-0.032,
+0.031,
 "3089042"
 ],
 [
@@ -975,7 +975,7 @@
 "parts": [
 0.48,
 0.02,
-0.1,
+0.09,
 0.0,
 0.0
 ],
@@ -1166,63 +1166,6 @@
 "score": 16.4
 },
 {
-"arxiv": "2610.21307",
-"section": "replacement",
-"recid": "3215555",
-"src": "INSPIRE",
-"nref": 79,
-"title": "Nonleptonic decays of the double-charmed baryon $Ξ_{cc}^{+}$ with dynamically determined baryon wave functions",
-"authors": [
-"Yu-Shuai Li",
-"Hong-Tao An"
-],
-"abstract": "Motivated by the recent observation of the double-charmed baryon $Ξ_{cc}^{+}$ by the LHCb Collaboration, we systematically investigate the two-body nonleptonic decays of the $Ξ_{cc}^{+}$ into a single-charmed baryon and a light pseudoscalar meson. In our calculation, both factorizable and nonfactorizable decay amplitudes are evaluated within the framework of nonrelativistic quark model combined with the baryon wave functions dynamically determined by numerically solving the three-body Schrödinger equation with a nonrelativistic potential model. In particular, the nonfactorizable $W$-exchange amplitudes are estimated under pole model by considering $J^{P}=1/2^{\\pm}$ low-lying intermediate charmed-baryon poles, and our results show that these contributions are comparable to or even dominate the factorizable amplitudes in several decay channels. Moreover, assuming a lifetime of $τ_{Ξ_{cc}^{+}}=47~\\text{fs}$, we predict relatively large branching fractions for several CF decays, including $\\mathcal{B}(Ξ_{cc}^{+}\\toΞ_{c}^{\\prime0}π^{+})=8.90\\%$, $\\mathcal{B}(Ξ_{cc}^{+}\\toΩ_{c}^{0}K^{+})=7.09\\%$, $\\mathcal{B}(Ξ_{cc}^{+}\\toΣ_{c}^{+}\\bar{K}^{0})=6.92\\%$, $\\mathcal{B}(Ξ_{cc}^{+}\\toΞ_{c}^{+}π^{0})=5.28\\%$, and $\\mathcal{B}(Ξ_{cc}^{+}\\toΣ_{c}^{++}K^{-})=5.17\\%$. These channels are promising candidates for future experimental searches at the LHCb.",
-"citR": [],
-"citE": [
-"3193100"
-],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.013,
-"3227657"
-],
-[
-0.012,
-"3214449"
-],
-[
-0.011,
-"3206672"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.45,
-0.0,
-0.04,
-0.0,
-0.0
-],
-"score": 16.3
-},
-{
 "arxiv": "2611.21764",
 "section": "new",
 "recid": "3230198",
@@ -1285,9 +1228,9 @@
 {
 "arxiv": "2611.22890",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 68,
+"recid": "3230674",
+"src": "INSPIRE",
+"nref": 71,
 "title": "Scalar inelastic scattering of pseudo-Majorana dark matter through a radion portal",
 "authors": [
 "Ruifeng Leng",
@@ -1344,66 +1287,6 @@
 0.6
 ],
 "score": 13.4
-},
-{
-"arxiv": "2606.30910",
-"section": "replacement",
-"recid": "3175030",
-"src": "INSPIRE",
-"nref": 32,
-"title": "Phenomenology of Long-Lived Dark Photons and Axion-Like Particles in a Mixed Portal Framework",
-"authors": [
-"Caglar Zorbilmez",
-"Beyhan Tatar",
-"Azmi Ali Altintas",
-"Cihan Bayindir",
-"Fatih Ozaydin"
-],
-"abstract": "We investigate the phenomenology of a dark photon \\(A'\\) and an axion-like particle (ALP) ,\\(a\\), connected through a mixed portal framework which simultaneously allows the conventional visible decay $(A'\\rightarrow f\\bar f)$ and the exotic cascade process $(A'\\rightarrow aγ\\rightarrow3γ)$. We derive the relevant decay widths, branching ratios, and Lorentz-boosted decay lengths, and introduce a dominance parameter \\(D=Γ(A'\\to aγ)/Γ_{\\rm SM}\\) to distinguish Standard Model-dominated and cascade-dominated regions, with the transition occurring at $(D=1)$. A detailed analysis of both light $(0.1\\leq m_{A'}\\leq10~{\\rm GeV})$ and heavy $(10\\leq m_{A'}\\leq100~{\\rm GeV})$ dark-photon scenarios shows that the exotic channel can substantially modify the expected dark-photon signatures, transforming otherwise long-lived or detector-stable states into experimentally accessible displaced multi-photon events. In addition, the ALP sector itself may exhibit long-lived particle behavior, leading to distinct displaced diphoton signatures. Our results show that mixed dark-photon-ALP portals offer a rich LLP phenomenology that can be explored at future high-luminosity lepton colliders such as the FCC-ee.",
-"citR": [],
-"citE": [
-"2817040"
-],
-"topR": [
-[
-0.052,
-"1941263"
-],
-[
-0.033,
-"1597138"
-],
-[
-0.025,
-"3130296"
-]
-],
-"topE": [
-[
-0.106,
-"3154646"
-],
-[
-0.098,
-"2836474"
-],
-[
-0.098,
-"2835155"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.06,
-0.15,
-0.3,
-0.0,
-0.04
-],
-"score": 11.6
 },
 {
 "arxiv": "2611.21729",
@@ -1528,8 +1411,8 @@
 {
 "arxiv": "2611.23015",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3230677",
+"src": "INSPIRE",
 "nref": 20,
 "title": "A Universal Axion in a Twin-QCD Sector",
 "authors": [
@@ -1647,7 +1530,7 @@
 "section": "replacement",
 "recid": "3164302",
 "src": "INSPIRE",
-"nref": 67,
+"nref": 75,
 "title": "Reinterpreting the ATLAS HHH$\\to 6b$ Search with CheckMATE and Rivet: Validation, TRSM Benchmarks, and HL-LHC Prospects",
 "authors": [
 "Tomasz Procter",
@@ -1659,29 +1542,29 @@
 "citE": [],
 "topR": [
 [
-0.046,
+0.043,
 "1455793"
 ],
 [
-0.022,
+0.021,
 "3094526"
 ],
 [
-0.021,
+0.02,
 "2751074"
 ]
 ],
 "topE": [
 [
-0.069,
+0.065,
 "3170413"
 ],
 [
-0.063,
+0.06,
 "2845027"
 ],
 [
-0.058,
+0.054,
 "2621240"
 ]
 ],
@@ -1693,12 +1576,12 @@
 "watch": [],
 "parts": [
 0.0,
-0.13,
-0.2,
+0.12,
+0.18,
 0.0,
 0.26
 ],
-"score": 9.5
+"score": 9.1
 },
 {
 "arxiv": "2611.21719",
@@ -1755,6 +1638,124 @@
 0.16
 ],
 "score": 8.4
+},
+{
+"arxiv": "2606.30910",
+"section": "replacement",
+"recid": "3175030",
+"src": "INSPIRE",
+"nref": 48,
+"title": "Phenomenology of Long-Lived Dark Photons and Axion-Like Particles in a Mixed Portal Framework",
+"authors": [
+"Caglar Zorbilmez",
+"Beyhan Tatar",
+"Azmi Ali Altintas",
+"Cihan Bayindir",
+"Fatih Ozaydin"
+],
+"abstract": "We investigate the phenomenology of a dark photon \\(A'\\) and an axion-like particle (ALP) ,\\(a\\), connected through a mixed portal framework which simultaneously allows the conventional visible decay $(A'\\rightarrow f\\bar f)$ and the exotic cascade process $(A'\\rightarrow aγ\\rightarrow3γ)$. We derive the relevant decay widths, branching ratios, and Lorentz-boosted decay lengths, and introduce a dominance parameter \\(D=Γ(A'\\to aγ)/Γ_{\\rm SM}\\) to distinguish Standard Model-dominated and cascade-dominated regions, with the transition occurring at $(D=1)$. A detailed analysis of both light $(0.1\\leq m_{A'}\\leq10~{\\rm GeV})$ and heavy $(10\\leq m_{A'}\\leq100~{\\rm GeV})$ dark-photon scenarios shows that the exotic channel can substantially modify the expected dark-photon signatures, transforming otherwise long-lived or detector-stable states into experimentally accessible displaced multi-photon events. In addition, the ALP sector itself may exhibit long-lived particle behavior, leading to distinct displaced diphoton signatures. Our results show that mixed dark-photon-ALP portals offer a rich LLP phenomenology that can be explored at future high-luminosity lepton colliders such as the FCC-ee.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.03,
+"1941263"
+],
+[
+0.023,
+"3146383"
+],
+[
+0.021,
+"1597138"
+]
+],
+"topE": [
+[
+0.069,
+"2835155"
+],
+[
+0.065,
+"2836474"
+],
+[
+0.062,
+"2616081"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.09,
+0.2,
+0.0,
+0.04
+],
+"score": 8.2
+},
+{
+"arxiv": "2611.23028",
+"section": "new",
+"recid": "3230730",
+"src": "INSPIRE",
+"nref": 67,
+"title": "Imprints of Non-local Top-Higgs Interaction on Loop Induced Higgs Processes",
+"authors": [
+"Avik Banerjee",
+"Rohan Pramanick",
+"Tirtha Sankar Ray"
+],
+"abstract": "A composite Higgs arising from an underlying strong sector generally has non-local interactions with the elementary sector, formulated in terms of momentum-dependent form factors. We construct the minimal Ball-Chiu-type vertices consistent with gauge-invariant non-local $\\bar{t}th$ couplings containing Wilson lines, where recursive Ward-Takahashi identities connect the Yukawa interaction to higher-order contact interactions. For a symmetric monopole form factor motivated by lowest-resonance dominance, we compute the top-loop contributions to $gg \\to h$ and $h \\to γγ$ amplitudes in closed form, and demonstrate a logarithmically enhanced deviation from the Standard Model. Current measurements at the LHC exclude the characteristic new physics scale below 3.6 TeV at $2σ$, while future colliders could extend the sensitivity to approximately 8 TeV.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.029,
+"1832796"
+],
+[
+0.02,
+"3094526"
+],
+[
+0.02,
+"2751074"
+]
+],
+"topE": [
+[
+0.08,
+"1455732"
+],
+[
+0.052,
+"2873857"
+],
+[
+0.046,
+"2664140"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"yukawa interaction"
+],
+"watch": [],
+"parts": [
+0.0,
+0.09,
+0.23,
+0.0,
+0.2
+],
+"score": 8.1
 },
 {
 "arxiv": "2611.21813",
@@ -1816,64 +1817,6 @@
 0.0
 ],
 "score": 8.0
-},
-{
-"arxiv": "2611.23028",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 76,
-"title": "Imprints of Non-local Top-Higgs Interaction on Loop Induced Higgs Processes",
-"authors": [
-"Avik Banerjee",
-"Rohan Pramanick",
-"Tirtha Sankar Ray"
-],
-"abstract": "A composite Higgs arising from an underlying strong sector generally has non-local interactions with the elementary sector, formulated in terms of momentum-dependent form factors. We construct the minimal Ball-Chiu-type vertices consistent with gauge-invariant non-local $\\bar{t}th$ couplings containing Wilson lines, where recursive Ward-Takahashi identities connect the Yukawa interaction to higher-order contact interactions. For a symmetric monopole form factor motivated by lowest-resonance dominance, we compute the top-loop contributions to $gg \\to h$ and $h \\to γγ$ amplitudes in closed form, and demonstrate a logarithmically enhanced deviation from the Standard Model. Current measurements at the LHC exclude the characteristic new physics scale below 3.6 TeV at $2σ$, while future colliders could extend the sensitivity to approximately 8 TeV.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.028,
-"1832796"
-],
-[
-0.019,
-"3094526"
-],
-[
-0.018,
-"2751074"
-]
-],
-"topE": [
-[
-0.075,
-"1455732"
-],
-[
-0.049,
-"2873857"
-],
-[
-0.043,
-"2664140"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [
-"yukawa interaction"
-],
-"watch": [],
-"parts": [
-0.0,
-0.08,
-0.22,
-0.0,
-0.2
-],
-"score": 7.8
 },
 {
 "arxiv": "2602.15100",
@@ -2162,9 +2105,9 @@
 {
 "arxiv": "2611.23220",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 101,
+"recid": "3230739",
+"src": "INSPIRE",
+"nref": 105,
 "title": "Complete Cosmological Collider Signatures from Right-handed Neutrino Loops",
 "authors": [
 "Linghao Song",
@@ -2178,7 +2121,7 @@
 "citE": [],
 "topR": [
 [
-0.037,
+0.042,
 "3184726"
 ],
 [
@@ -2196,12 +2139,12 @@
 "2737356"
 ],
 [
-0.038,
-"3070661"
+0.039,
+"3204438"
 ],
 [
-0.034,
-"3204438"
+0.038,
+"3070661"
 ]
 ],
 "isme": false,
@@ -2210,12 +2153,67 @@
 "watch": [],
 "parts": [
 0.0,
-0.1,
+0.11,
 0.14,
 0.0,
 0.04
 ],
-"score": 5.5
+"score": 5.9
+},
+{
+"arxiv": "2607.00079",
+"section": "replacement",
+"recid": "3176240",
+"src": "INSPIRE",
+"nref": 91,
+"title": "QFT as a set of ODEs: higher dimensions",
+"authors": [
+"Fabiana De Cesare",
+"Manuel Loparco"
+],
+"abstract": "Correlation functions of local operators in Quantum Field Theory (QFT) in Anti-de Sitter space (AdS) are completely fixed by the QFT data: the set of scaling dimensions $Δ_i$ and OPE coefficients $C_{ijk}$ of the boundary operators, and the bulk-boundary (BOE) coefficients $b^{\\hatΦ}_i$ encoding how bulk fields decompose into boundary operators. In this work, we generalize the ordinary differential equations (ODEs) that govern the variation of the QFT data under a bulk relevant deformation, originally derived for AdS$_2$ \\cite{Loparco:2026fki}, to the cases of AdS$_3$ and AdS$_4$. We demonstrate that these flow equations natively capture the mechanism of merger-annihilation when a boundary operator hits marginality, as well as level repulsion when different $Δ_i$'s approach each other. Furthermore, we address the practical implementation of the framework: we propose substituting the ODE for the OPE coefficients with the crossing equation for greater efficiency, and we observe that Padé approximants dramatically improve the convergence of the sums over boundary operators, at least in free theories. Altogether, these advances lay the groundwork for the future application of the flow equations to the study of strongly coupled QFTs in AdS and their flat space limits.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.13,
+"2030477"
+],
+[
+0.013,
+"3150418"
+],
+[
+0.001,
+"3193100"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.37,
+0.0,
+0.0
+],
+"score": 5.6
 },
 {
 "arxiv": "2605.09000",
@@ -2277,8 +2275,8 @@
 {
 "arxiv": "2611.23082",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3230713",
+"src": "INSPIRE",
 "nref": 112,
 "title": "Probing Lorentz-violating electrodynamics with CMB polarization. II. Updated constraints and forecasts for the Simons Observatory and LiteBIRD",
 "authors": [
@@ -2330,61 +2328,6 @@
 0.0,
 0.1,
 0.14,
-0.0,
-0.0
-],
-"score": 4.9
-},
-{
-"arxiv": "2607.00079",
-"section": "replacement",
-"recid": "3176240",
-"src": "INSPIRE",
-"nref": 91,
-"title": "QFT as a set of ODEs: higher dimensions",
-"authors": [
-"Fabiana De Cesare",
-"Manuel Loparco"
-],
-"abstract": "Correlation functions of local operators in Quantum Field Theory (QFT) in Anti-de Sitter space (AdS) are completely fixed by the QFT data: the set of scaling dimensions $Δ_i$ and OPE coefficients $C_{ijk}$ of the boundary operators, and the bulk-boundary (BOE) coefficients $b^{\\hatΦ}_i$ encoding how bulk fields decompose into boundary operators. In this work, we generalize the ordinary differential equations (ODEs) that govern the variation of the QFT data under a bulk relevant deformation, originally derived for AdS$_2$ \\cite{Loparco:2026fki}, to the cases of AdS$_3$ and AdS$_4$. We demonstrate that these flow equations natively capture the mechanism of merger-annihilation when a boundary operator hits marginality, as well as level repulsion when different $Δ_i$'s approach each other. Furthermore, we address the practical implementation of the framework: we propose substituting the ODE for the OPE coefficients with the crossing equation for greater efficiency, and we observe that Padé approximants dramatically improve the convergence of the sums over boundary operators, at least in free theories. Altogether, these advances lay the groundwork for the future application of the flow equations to the study of strongly coupled QFTs in AdS and their flat space limits.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.114,
-"2030477"
-],
-[
-0.013,
-"3150418"
-],
-[
-0.001,
-"3193100"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.33,
 0.0,
 0.0
 ],
@@ -3073,9 +3016,9 @@
 {
 "arxiv": "2611.23071",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 13,
+"recid": "3230693",
+"src": "INSPIRE",
+"nref": 19,
 "title": "Flavor-dependent quark-mass scaling and the fate of the strange-matter window in self-bound quark stars",
 "authors": [
 "G. Teruya",
@@ -3415,9 +3358,9 @@
 {
 "arxiv": "2611.23020",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 61,
+"recid": "3230684",
+"src": "INSPIRE",
+"nref": 63,
 "title": "Loop-induced $gg\\to ZH$ at NLO+PS for LHC simulations: exact, fast scale and PDF event weights, theory uncertainties, and the limits of rescaled LO+PS",
 "authors": [
 "Licheng Zhang",
@@ -3450,7 +3393,7 @@
 "2815960"
 ],
 [
-0.025,
+0.024,
 "2621240"
 ]
 ],
@@ -3614,7 +3557,7 @@
 ],
 "topE": [
 [
-0.041,
+0.04,
 "2757608"
 ],
 [
@@ -3633,7 +3576,7 @@
 "parts": [
 0.0,
 0.01,
-0.12,
+0.11,
 0.0,
 0.02
 ],
@@ -3833,66 +3776,10 @@
 "score": 1.9
 },
 {
-"arxiv": "2611.23146",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 63,
-"title": "Electromagnetic form factors of the hidden-charm pentaquarks in a coupled-channel unitary approach",
-"authors": [
-"Nongnapat Ponkhuha",
-"Ratirat Suntharawirat",
-"Daris Samart"
-],
-"abstract": "We study the electromagnetic form factors of the hidden-charm pentaquarks $P_c(4312)$, $P_c(4440)$ and $P_c(4457)$ and of their four heavy-quark spin partners, treated as $\\bar D^{(*)}Σ_c^{(*)}$ hadronic molecules. The states are poles of a coupled-channel unitary amplitude with a vector-meson exchange kernel that respects heavy-quark spin symmetry. The form factors are the residues at the double pole of the photon-coupled amplitude. The current consists of one-body currents and a photon--four-hadron vertex, which we construct for this channel space. Its gauged-kernel part ensures the charge normalization through the compositeness sum rule, while its contact parts contain couplings that the model does not determine. For $J^P=\\tfrac12^-$, $\\tfrac12^-$, $\\tfrac32^-$ and pointlike constituents, the mean squared distances between the constituents of the three observed states are $0.85-0.47i$, $0.35-0.18i$ and $1.76-0.57i\\,\\mathrm{fm}^2$. Within $2\\%$, they equal the zero-range value $1/(4μ_{\\rm red} B_c)$, with reduced mass $μ_{\\rm red}$ and complex binding energy $B_c$, times the effective-range factor of the amplitude. The real parts of the magnetic moments are $1.7$, $-0.9$ and $1.3\\,μ_N$, within $11\\%$ of the additive moments of the constituents. Variations of the constituent moments and of the magnetic contact couplings within bounds from dimensional analysis give the ranges $0.8$ to $2.0$, $-1.3$ to $-0.2$ and $0.2$ to $1.8\\,μ_N$. The charge radii depend also on the constituent structure and on electric contact currents. The photon loops of open channels have a triangle singularity at spacelike momentum transfer. We specify the analytic continuation of the residue in $Q^2$ and give the difference between its two adjacent branches in closed form.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.043,
-"3091093"
-],
-[
-0.027,
-"3193100"
-],
-[
-0.027,
-"2817040"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.12,
-0.0,
-0.0
-],
-"score": 1.9
-},
-{
 "arxiv": "2611.23148",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3230711",
+"src": "INSPIRE",
 "nref": 150,
 "title": "Bayesian Multimessenger Constraints on Self-Bound Quark Stars in Revised Perturbative QCD",
 "authors": [
@@ -3941,7 +3828,7 @@
 "parts": [
 0.0,
 0.03,
-0.05,
+0.06,
 0.0,
 0.02
 ],
@@ -4060,8 +3947,8 @@
 {
 "arxiv": "2611.23125",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3230724",
+"src": "INSPIRE",
 "nref": 68,
 "title": "Analytic Two-Loop Classical Bremsstrahlung Amplitude in Electrodynamics",
 "authors": [
@@ -4397,7 +4284,7 @@
 "section": "replacement",
 "recid": "3187920",
 "src": "INSPIRE",
-"nref": 51,
+"nref": 52,
 "title": "Constraining Lorentz invariance violation from the depth of air-shower maximum",
 "authors": [
 "Nickolay S. Martynenko",
@@ -4425,11 +4312,11 @@
 ],
 "topE": [
 [
-0.023,
+0.022,
 "3164308"
 ],
 [
-0.018,
+0.017,
 "2164775"
 ],
 [
@@ -4505,6 +4392,62 @@
 0.0
 ],
 "score": 0.9
+},
+{
+"arxiv": "2611.23146",
+"section": "new",
+"recid": "3230722",
+"src": "INSPIRE",
+"nref": 5,
+"title": "Electromagnetic form factors of the hidden-charm pentaquarks in a coupled-channel unitary approach",
+"authors": [
+"Nongnapat Ponkhuha",
+"Ratirat Suntharawirat",
+"Daris Samart"
+],
+"abstract": "We study the electromagnetic form factors of the hidden-charm pentaquarks $P_c(4312)$, $P_c(4440)$ and $P_c(4457)$ and of their four heavy-quark spin partners, treated as $\\bar D^{(*)}Σ_c^{(*)}$ hadronic molecules. The states are poles of a coupled-channel unitary amplitude with a vector-meson exchange kernel that respects heavy-quark spin symmetry. The form factors are the residues at the double pole of the photon-coupled amplitude. The current consists of one-body currents and a photon--four-hadron vertex, which we construct for this channel space. Its gauged-kernel part ensures the charge normalization through the compositeness sum rule, while its contact parts contain couplings that the model does not determine. For $J^P=\\tfrac12^-$, $\\tfrac12^-$, $\\tfrac32^-$ and pointlike constituents, the mean squared distances between the constituents of the three observed states are $0.85-0.47i$, $0.35-0.18i$ and $1.76-0.57i\\,\\mathrm{fm}^2$. Within $2\\%$, they equal the zero-range value $1/(4μ_{\\rm red} B_c)$, with reduced mass $μ_{\\rm red}$ and complex binding energy $B_c$, times the effective-range factor of the amplitude. The real parts of the magnetic moments are $1.7$, $-0.9$ and $1.3\\,μ_N$, within $11\\%$ of the additive moments of the constituents. Variations of the constituent moments and of the magnetic contact couplings within bounds from dimensional analysis give the ranges $0.8$ to $2.0$, $-1.3$ to $-0.2$ and $0.2$ to $1.8\\,μ_N$. The charge radii depend also on the constituent structure and on electric contact currents. The photon loops of open channels have a triangle singularity at spacelike momentum transfer. We specify the analytic continuation of the residue in $Q^2$ and give the difference between its two adjacent branches in closed form.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.019,
+"3193100"
+],
+[
+0.019,
+"2817040"
+],
+[
+0.011,
+"1688995"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.06,
+0.0,
+0.0
+],
+"score": 0.8
 },
 {
 "arxiv": "2511.15779",
@@ -4795,7 +4738,7 @@
 "section": "replacement",
 "recid": "3165434",
 "src": "INSPIRE",
-"nref": 44,
+"nref": 47,
 "title": "Bulk viscosity of a binary mixture: the role of the intra-species interaction",
 "authors": [
 "Gabriele Parisi",
@@ -4833,6 +4776,61 @@
 [
 0.0,
 "913031"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.04,
+0.0,
+0.0
+],
+"score": 0.6
+},
+{
+"arxiv": "2610.21307",
+"section": "replacement",
+"recid": "3215555",
+"src": "INSPIRE",
+"nref": 18,
+"title": "Nonleptonic decays of the double-charmed baryon $Ξ_{cc}^{+}$ with dynamically determined baryon wave functions",
+"authors": [
+"Yu-Shuai Li",
+"Hong-Tao An"
+],
+"abstract": "Motivated by the recent observation of the double-charmed baryon $Ξ_{cc}^{+}$ by the LHCb Collaboration, we systematically investigate the two-body nonleptonic decays of the $Ξ_{cc}^{+}$ into a single-charmed baryon and a light pseudoscalar meson. In our calculation, both factorizable and nonfactorizable decay amplitudes are evaluated within the framework of nonrelativistic quark model combined with the baryon wave functions dynamically determined by numerically solving the three-body Schrödinger equation with a nonrelativistic potential model. In particular, the nonfactorizable $W$-exchange amplitudes are estimated under pole model by considering $J^{P}=1/2^{\\pm}$ low-lying intermediate charmed-baryon poles, and our results show that these contributions are comparable to or even dominate the factorizable amplitudes in several decay channels. Moreover, assuming a lifetime of $τ_{Ξ_{cc}^{+}}=47~\\text{fs}$, we predict relatively large branching fractions for several CF decays, including $\\mathcal{B}(Ξ_{cc}^{+}\\toΞ_{c}^{\\prime0}π^{+})=8.90\\%$, $\\mathcal{B}(Ξ_{cc}^{+}\\toΩ_{c}^{0}K^{+})=7.09\\%$, $\\mathcal{B}(Ξ_{cc}^{+}\\toΣ_{c}^{+}\\bar{K}^{0})=6.92\\%$, $\\mathcal{B}(Ξ_{cc}^{+}\\toΞ_{c}^{+}π^{0})=5.28\\%$, and $\\mathcal{B}(Ξ_{cc}^{+}\\toΣ_{c}^{++}K^{-})=5.17\\%$. These channels are promising candidates for future experimental searches at the LHCb.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.013,
+"3193100"
+],
+[
+0.008,
+"2817040"
+],
+[
+0.007,
+"1688995"
 ]
 ],
 "isme": false,
@@ -5190,9 +5188,9 @@
 {
 "arxiv": "2611.22791",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 18,
+"recid": "3230662",
+"src": "INSPIRE",
+"nref": 21,
 "title": "Quantum phase transition and superselection sectors in two-color one-flavor matrix QCD at weak coupling",
 "authors": [
 "Nirmalendu Acharyya",
@@ -5247,9 +5245,9 @@
 {
 "arxiv": "2611.22798",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 16,
+"recid": "3230664",
+"src": "INSPIRE",
+"nref": 24,
 "title": "How can every physicist become a Bohmian",
 "authors": [
 "Hrvoje Nikolić"
