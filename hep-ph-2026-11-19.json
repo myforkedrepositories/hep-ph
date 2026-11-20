@@ -14,13 +14,13 @@
 "abstract": "We present a unified axion model framework that simultaneously addresses the origin of neutrino masses, leptonic flavor structure, the strong CP problem, and dark matter. The model is based on a global $U(1)_{\\rm PQ}$ symmetry combined with a modular $S_3$ symmetry and is realized within a novel class of KSVZ-type axion model. Exotic colored fermions and scalars mediate radiative neutrino mass generation at the one loop-level. The PQ charge assignment forbids tree-level neutrino masses and leaves a residual $Z_3$ symmetry that ensures the Dirac nature of neutrinos. In the minimal realization, the neutrino mass matrix is of rank two, predicting one massless neutrino. Consequently, the sum of neutrino masses is constrained for both the normal and inverted hierarchies. We analyze the implications for charged lepton flavor violation and the lepton $g-2$. The axion emerging from this framework dynamically resolves the strong CP problem and accounts for the observed dark matter abundance. Notably, the predicted axion-photon coupling is within reach of upcoming experiments and consistent with existing astrophysical and cosmological bounds.",
 "citR": [],
 "citE": [
-"2822193",
 "2877739",
+"2822193",
 "2963992",
 "2963338",
 "2931725",
-"2697191",
 "2871910",
+"2697191",
 "3062873",
 "2793703",
 "2835172",
@@ -261,9 +261,9 @@
 {
 "arxiv": "2611.24241",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 52,
+"recid": "3230948",
+"src": "INSPIRE",
+"nref": 53,
 "title": "Search for Heavy Charged Higgs Bosons in Boosted Top and Bottom Quark Final States at a 1.4 TeV Future Lepton Collider",
 "authors": [
 "Majid Hashemi"
@@ -275,29 +275,29 @@
 ],
 "topR": [
 [
-0.042,
-"1455793"
-],
-[
-0.036,
+0.046,
 "3094526"
 ],
 [
-0.033,
+0.041,
+"1455793"
+],
+[
+0.032,
 "1589847"
 ]
 ],
 "topE": [
 [
-0.097,
+0.093,
 "2183252"
 ],
 [
-0.085,
+0.086,
 "2932612"
 ],
 [
-0.08,
+0.084,
 "2972436"
 ]
 ],
@@ -307,19 +307,19 @@
 "watch": [],
 "parts": [
 0.45,
-0.13,
-0.28,
+0.14,
+0.27,
 0.0,
 0.0
 ],
-"score": 24.0
+"score": 24.1
 },
 {
 "arxiv": "2611.24694",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 48,
+"recid": "3231110",
+"src": "INSPIRE",
+"nref": 50,
 "title": "Pole parameters of the $f_2(1270)$ and $f_2'(1525)$ from a coupled-channel analysis of the radiative $J/ψ$ multipoles",
 "authors": [
 "Igor Danilkin",
@@ -434,62 +434,6 @@
 "score": 17.9
 },
 {
-"arxiv": "2608.23713",
-"section": "replacement",
-"recid": "3195622",
-"src": "INSPIRE",
-"nref": 39,
-"title": "Soft Scale Symmetry Breaking with Laguerre Explicit Regulators",
-"authors": [
-"A. R. Vieira"
-],
-"abstract": "In this work, we search for explicit regulators that do not spuriously break scale invariance starting from conditions established by implicit regularization. There is a family of regulator functions that obeys the conditions and leads to soft breaking terms of the dilatation current. This family of functions is shown to be related to the Laguerre polynomials. We apply this approach by revisiting quadratic divergences in the context of the naturalness problem of the Standard Model and show that the quadratic dependence of the Higgs mass on the cutoff is not required by consistency of scale-symmetry breaking and can be removed within this class of regulators. Applications of these regulators beyond 1-loop order are also considered.",
-"citR": [],
-"citE": [
-"3193100"
-],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.035,
-"1667060"
-],
-[
-0.033,
-"1966767"
-],
-[
-0.025,
-"3164308"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.45,
-0.0,
-0.1,
-0.0,
-0.0
-],
-"score": 17.3
-},
-{
 "arxiv": "2611.24344",
 "section": "new",
 "recid": "3230863",
@@ -602,6 +546,62 @@
 0.0
 ],
 "score": 17.2
+},
+{
+"arxiv": "2608.23713",
+"section": "replacement",
+"recid": "3195622",
+"src": "INSPIRE",
+"nref": 54,
+"title": "Soft Scale Symmetry Breaking with Laguerre Explicit Regulators",
+"authors": [
+"A. R. Vieira"
+],
+"abstract": "In this work, we search for explicit regulators that do not spuriously break scale invariance starting from conditions established by implicit regularization. There is a family of regulator functions that obeys the conditions and leads to soft breaking terms of the dilatation current. This family of functions is shown to be related to the Laguerre polynomials. We apply this approach by revisiting quadratic divergences in the context of the naturalness problem of the Standard Model and show that the quadratic dependence of the Higgs mass on the cutoff is not required by consistency of scale-symmetry breaking and can be removed within this class of regulators. Applications of these regulators beyond 1-loop order are also considered.",
+"citR": [],
+"citE": [
+"3193100"
+],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.029,
+"1667060"
+],
+[
+0.028,
+"1966767"
+],
+[
+0.022,
+"2921177"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.45,
+0.0,
+0.08,
+0.0,
+0.0
+],
+"score": 17.1
 },
 {
 "arxiv": "2611.23922",
@@ -727,9 +727,9 @@
 {
 "arxiv": "2611.24671",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 54,
+"recid": "3231108",
+"src": "INSPIRE",
+"nref": 56,
 "title": "A New GUT",
 "authors": [
 "Prateek Agrawal",
@@ -743,7 +743,7 @@
 ],
 "topR": [
 [
-0.026,
+0.027,
 "1663960"
 ],
 [
@@ -757,12 +757,12 @@
 ],
 "topE": [
 [
-0.089,
-"1944631"
+0.092,
+"1966767"
 ],
 [
-0.082,
-"1966767"
+0.09,
+"1944631"
 ],
 [
 0.05,
@@ -777,12 +777,12 @@
 "watch": [],
 "parts": [
 0.06,
-0.08,
+0.09,
 0.26,
 0.5,
 0.0
 ],
-"score": 13.4
+"score": 13.6
 },
 {
 "arxiv": "2610.12719",
@@ -1380,9 +1380,9 @@
 {
 "arxiv": "2611.24674",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 130,
+"recid": "3231140",
+"src": "INSPIRE",
+"nref": 131,
 "title": "On the cosmic window for neutrino self-interactions",
 "authors": [
 "Ivan Pérez-Castro",
@@ -1500,9 +1500,9 @@
 {
 "arxiv": "2611.24625",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 65,
+"recid": "3231134",
+"src": "INSPIRE",
+"nref": 68,
 "title": "LIGO-Virgo-KAGRA stochastic constraints on first-order phase transitions: A tale of priors",
 "authors": [
 "S. AbdusSalam",
@@ -1520,25 +1520,25 @@
 "3130296"
 ],
 [
-0.011,
+0.012,
 "1854224"
 ],
 [
-0.009,
+0.01,
 "2856850"
 ]
 ],
 "topE": [
 [
-0.099,
+0.102,
 "3128752"
 ],
 [
-0.073,
+0.075,
 "3191566"
 ],
 [
-0.072,
+0.074,
 "2128137"
 ]
 ],
@@ -1551,133 +1551,18 @@
 "parts": [
 0.0,
 0.05,
-0.28,
+0.29,
 0.0,
 0.1
 ],
-"score": 6.8
-},
-{
-"arxiv": "2611.24825",
-"section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 71,
-"title": "Three-nucleon potentials and their matrix elements for $δ_{\\mathrm{NS}}$ in superallowed $β$ decays",
-"authors": [
-"Graham Chambers-Wall",
-"Maria Dawid",
-"Emanuele Mereghetti",
-"Saori Pastore",
-"Maria Piarulli"
-],
-"abstract": "We derive three-nucleon potentials for radiative corrections at order $\\mathcal{O}(αε_χ^2)$ in chiral effective field theory where $α$ is the electromagnetic coupling and $ε_χ$ is the chiral expansion parameter. These corrections contribute to the nuclear-structure-dependent term $δ_\\mathrm{NS}$ for determinations of the Cabibbo-Kobayashi-Maskawa matrix element $V_{ud}$ from superallowed nuclear $β$ decays. We compute matrix elements of three-nucleon contributions at orders $\\mathcal{O}(α^2)$ and $\\mathcal{O}(αε_χ^2)$ using quantum Monte Carlo methods. We find the matrix elements at order $\\mathcal{O}(α^2)$ to be large and to have an effect on the extraction of $V_{ud}$ at the scale of $10^{-4}$. In the case of $^{10}$C, the matrix elements of $\\mathcal{O}(αε_χ^2)$ three-nucleon operators provide a 2% correction to $δ_{\\text{NS}}$, and are thus beyond the current precision goals. The relative size of three-nucleon corrections to $δ_{\\text{NS}}$ in medium mass nuclei, where two-body contributions tend to be smaller, remains to be investigated. We then use these results to determine $V_{ud}$ from the superallowed transition ${}^{10}\\mathrm{C}\\rightarrow{}^{10}\\mathrm{B}$.",
-"citR": [],
-"citE": [
-"2817040"
-],
-"topR": [
-[
-0.019,
-"2690106"
-],
-[
-0.016,
-"1854224"
-],
-[
-0.004,
-"3184726"
-]
-],
-"topE": [
-[
-0.059,
-"1847652"
-],
-[
-0.043,
-"2169464"
-],
-[
-0.039,
-"2788951"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.06,
-0.05,
-0.17,
-0.0,
-0.0
-],
-"score": 6.2
-},
-{
-"arxiv": "2611.24537",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 25,
-"title": "Active Learning and Genetic Search for Discrete Abelian Flavor Model Building",
-"authors": [
-"Selin Aşmanoğlu",
-"Christopher D. Carone"
-],
-"abstract": "The sequential breaking of discrete flavor symmetries provides a theoretical framework that can explain quark mass and mixing angle hierarchies. Each model is identified by its field content, charge assignments and symmetry breaking pattern, leading to an enormous space of possible models; this motivates the investigation of computational approaches for identifying promising candidates. In this work, we focus on quark flavor models with the flavor symmetry group $G_F=(\\mathbb{Z}_2)^p$, where $p$ is a positive integer; operators involving flavon fields which spontaneously break the flavor symmetry determine the size of the Yukawa matrix entries. We consider two search strategies: an active learning search employing a random forest regressor and a genetic search. The generation of candidate models is automated and models are evaluated using a loss function that takes into account the logarithmic discrepancy between the model prediction and target observable values as well as penalties for model complexity. We find that both our active learning and genetic algorithms significantly outperform random model generation, which we use as a control; our active learning approach identifies lower-loss models faster (i.e., with fewer exact model evaluations) than our genetic search, though each ultimately finds successful models. Our results support the effectiveness of active learning and evolutionary optimization as approaches to automate the search for promising models based on discrete flavor symmetries.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.046,
-"1394206"
-],
-[
-0.039,
-"1597138"
-],
-[
-0.015,
-"1222142"
-]
-],
-"topE": [
-[
-0.047,
-"820731"
-],
-[
-0.043,
-"2750604"
-],
-[
-0.032,
-"856239"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.14,
-0.13,
-0.0,
-0.0
-],
-"score": 6.1
+"score": 6.9
 },
 {
 "arxiv": "2610.12623",
 "section": "replacement",
 "recid": "3213667",
 "src": "INSPIRE",
-"nref": 158,
+"nref": 162,
 "title": "Probing $τ$ lepton dipole moments at FCC-ee",
 "authors": [
 "Dario Buttazzo",
@@ -1706,15 +1591,15 @@
 ],
 "topE": [
 [
-0.097,
+0.096,
 "2706495"
 ],
 [
-0.092,
+0.091,
 "1938335"
 ],
 [
-0.078,
+0.077,
 "2059568"
 ]
 ],
@@ -1725,11 +1610,126 @@
 "parts": [
 0.0,
 0.07,
-0.28,
+0.27,
 0.0,
 0.0
 ],
 "score": 6.1
+},
+{
+"arxiv": "2611.24825",
+"section": "cross",
+"recid": "3231163",
+"src": "INSPIRE",
+"nref": 71,
+"title": "Three-nucleon potentials and their matrix elements for $δ_{\\mathrm{NS}}$ in superallowed $β$ decays",
+"authors": [
+"Graham Chambers-Wall",
+"Maria Dawid",
+"Emanuele Mereghetti",
+"Saori Pastore",
+"Maria Piarulli"
+],
+"abstract": "We derive three-nucleon potentials for radiative corrections at order $\\mathcal{O}(αε_χ^2)$ in chiral effective field theory where $α$ is the electromagnetic coupling and $ε_χ$ is the chiral expansion parameter. These corrections contribute to the nuclear-structure-dependent term $δ_\\mathrm{NS}$ for determinations of the Cabibbo-Kobayashi-Maskawa matrix element $V_{ud}$ from superallowed nuclear $β$ decays. We compute matrix elements of three-nucleon contributions at orders $\\mathcal{O}(α^2)$ and $\\mathcal{O}(αε_χ^2)$ using quantum Monte Carlo methods. We find the matrix elements at order $\\mathcal{O}(α^2)$ to be large and to have an effect on the extraction of $V_{ud}$ at the scale of $10^{-4}$. In the case of $^{10}$C, the matrix elements of $\\mathcal{O}(αε_χ^2)$ three-nucleon operators provide a 2% correction to $δ_{\\text{NS}}$, and are thus beyond the current precision goals. The relative size of three-nucleon corrections to $δ_{\\text{NS}}$ in medium mass nuclei, where two-body contributions tend to be smaller, remains to be investigated. We then use these results to determine $V_{ud}$ from the superallowed transition ${}^{10}\\mathrm{C}\\rightarrow{}^{10}\\mathrm{B}$.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.018,
+"2690106"
+],
+[
+0.015,
+"1854224"
+],
+[
+0.004,
+"3184726"
+]
+],
+"topE": [
+[
+0.056,
+"1847652"
+],
+[
+0.055,
+"2788951"
+],
+[
+0.041,
+"2169464"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.05,
+0.16,
+0.0,
+0.0
+],
+"score": 6.0
+},
+{
+"arxiv": "2611.24537",
+"section": "new",
+"recid": "3231101",
+"src": "INSPIRE",
+"nref": 25,
+"title": "Active Learning and Genetic Search for Discrete Abelian Flavor Model Building",
+"authors": [
+"Selin Aşmanoğlu",
+"Christopher D. Carone"
+],
+"abstract": "The sequential breaking of discrete flavor symmetries provides a theoretical framework that can explain quark mass and mixing angle hierarchies. Each model is identified by its field content, charge assignments and symmetry breaking pattern, leading to an enormous space of possible models; this motivates the investigation of computational approaches for identifying promising candidates. In this work, we focus on quark flavor models with the flavor symmetry group $G_F=(\\mathbb{Z}_2)^p$, where $p$ is a positive integer; operators involving flavon fields which spontaneously break the flavor symmetry determine the size of the Yukawa matrix entries. We consider two search strategies: an active learning search employing a random forest regressor and a genetic search. The generation of candidate models is automated and models are evaluated using a loss function that takes into account the logarithmic discrepancy between the model prediction and target observable values as well as penalties for model complexity. We find that both our active learning and genetic algorithms significantly outperform random model generation, which we use as a control; our active learning approach identifies lower-loss models faster (i.e., with fewer exact model evaluations) than our genetic search, though each ultimately finds successful models. Our results support the effectiveness of active learning and evolutionary optimization as approaches to automate the search for promising models based on discrete flavor symmetries.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.044,
+"1394206"
+],
+[
+0.038,
+"1597138"
+],
+[
+0.014,
+"1222142"
+]
+],
+"topE": [
+[
+0.045,
+"820731"
+],
+[
+0.041,
+"2750604"
+],
+[
+0.031,
+"856239"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.13,
+0.13,
+0.0,
+0.0
+],
+"score": 5.9
 },
 {
 "arxiv": "2611.23373",
@@ -1787,6 +1787,60 @@
 0.29
 ],
 "score": 5.5
+},
+{
+"arxiv": "2611.23993",
+"section": "new",
+"recid": "3230940",
+"src": "INSPIRE",
+"nref": 29,
+"title": "Probing dimension-six SMEFT operators in heavy-quark sector at future muon collider",
+"authors": [
+"Serdar Spor"
+],
+"abstract": "We investigate the sensitivity to the dimension-six Standard Model Effective Field Theory (SMEFT) operators which define the interactions of heavy-quarks with electroweak gauge bosons and with leptons via the process $μ^- μ^+ \\rightarrow Wtb$, followed by leptonic W-boson decays, at a 10 TeV muon collider with an integrated luminosity of 10 ab$^{-1}$. Signal and background events are generated at leading order using MadGraph5aMC@NLO, interfaced with Pythia 8 for parton showering and hadronization, and passed through Delphes 3.5 for fast detector simulation. The 95% confidence level (C.L.) limits on nine Wilson coefficients are derived using a cut-based method for two $b$-tagging working points (70% and 90% efficiencies). These limits are significantly tighter than those currently reported by the CMS Collaboration; furthermore, these results highlight the advanced potential of a future high-energy muon collider to investigate new physics within the electroweak sector through precise measurements of heavy-quark interactions.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.028,
+"1455793"
+],
+[
+0.021,
+"3094526"
+],
+[
+0.014,
+"3146383"
+]
+],
+"topE": [
+[
+0.065,
+"1674879"
+],
+[
+0.053,
+"2630198"
+],
+[
+0.05,
+"3206672"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.08,
+0.19,
+0.0,
+0.0
+],
+"score": 5.3
 },
 {
 "arxiv": "2604.19864",
@@ -1970,7 +2024,7 @@
 "section": "replacement",
 "recid": "3145773",
 "src": "INSPIRE",
-"nref": 79,
+"nref": 82,
 "title": "Probing $τ$ lepton dipole moments at future lepton colliders",
 "authors": [
 "Dario Buttazzo",
@@ -1999,15 +2053,15 @@
 ],
 "topE": [
 [
-0.07,
+0.069,
 "1455732"
 ],
 [
-0.06,
+0.059,
 "3204120"
 ],
 [
-0.053,
+0.052,
 "2115290"
 ]
 ],
@@ -2022,7 +2076,7 @@
 0.0,
 0.0
 ],
-"score": 4.6
+"score": 4.5
 },
 {
 "arxiv": "2511.15897",
@@ -2085,9 +2139,9 @@
 {
 "arxiv": "2611.23978",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 134,
+"recid": "3230935",
+"src": "INSPIRE",
+"nref": 140,
 "title": "Geoneutrinos (and reactor neutrinos) do not visibly decay",
 "authors": [
 "Mauricio Bustamante"
@@ -2197,8 +2251,8 @@
 {
 "arxiv": "2611.24658",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3231114",
+"src": "INSPIRE",
 "nref": 53,
 "title": "Light fermions can trigger a Brout-Englert-Higgs effect",
 "authors": [
@@ -2426,63 +2480,6 @@
 "score": 3.9
 },
 {
-"arxiv": "2611.24372",
-"section": "new",
-"recid": "3230906",
-"src": "INSPIRE",
-"nref": 25,
-"title": "No room for $X(2370)$ exceptionalism: the glueball interpretation warrants caution",
-"authors": [
-"Tian-Cai Peng",
-"Xiang Liu"
-],
-"abstract": "Motivated by recent BESIII claims that $X(2370)$ is a pseudoscalar glueball candidate, we reanalyze several radiative $J/ψ$ decays into three pseudoscalars, $J/ψ\\toγPPP$, with emphasis on the $X(2370)$ region. A simultaneous analysis of the three invariant-mass projections in $J/ψ\\toγK_S^0K_S^0η^\\prime$, including the pseudoscalar states $X(1835)$, $X(2120)$, $η(2225)$, $X(2370)$, $X(2500)$, and $η_c$, reproduces the observed dip near $2.2~\\mathrm{GeV}$ and the enhancement near $2.4~\\mathrm{GeV}$ through coherent interference, without invoking the additional broad $X(2800)$ component employed in the BESIII partial-wave analysis. We further analyze $J/ψ\\toγπ^0π^0η$ and $J/ψ\\toγK_S^0K_S^0π^0$ by including both pseudoscalar and axial-vector contributions, and show that multiple excited meson states collectively describe the data. The absence of a prominent $X(2370)$ signal in the $K^*(892)$ region can be understood from differing orbital angular-momentum requirements rather than flavor-singlet suppression alone. Our results indicate that $X(2370)$ is not exceptional compared with the other reported pseudoscalar states in this mass region. Therefore, interpreting $X(2370)$ as a glueball-dominated state should be treated with caution.",
-"citR": [],
-"citE": [
-"2817040"
-],
-"topR": [
-[
-0.007,
-"3184726"
-],
-[
-0.006,
-"2690106"
-],
-[
-0.005,
-"2860896"
-]
-],
-"topE": [
-[
-0.026,
-"3089042"
-],
-[
-0.022,
-"3209798"
-],
-[
-0.018,
-"3193100"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.06,
-0.02,
-0.08,
-0.0,
-0.0
-],
-"score": 3.8
-},
-{
 "arxiv": "2604.21755",
 "section": "replacement",
 "recid": "3148542",
@@ -2543,11 +2540,68 @@
 "score": 3.8
 },
 {
+"arxiv": "2611.24372",
+"section": "new",
+"recid": "3230906",
+"src": "INSPIRE",
+"nref": 30,
+"title": "Reproducing $J/ψ\\to γ+3P$ data with meson spectroscopy and understanding $X(2370)$",
+"authors": [
+"Tian-Cai Peng",
+"Xiang Liu"
+],
+"abstract": "Motivated by recent BESIII claims that $X(2370)$ is a pseudoscalar glueball candidate, we reanalyze several radiative $J/ψ$ decays into three pseudoscalars, $J/ψ\\toγPPP$, with emphasis on the $X(2370)$ region. A simultaneous analysis of the three invariant-mass projections in $J/ψ\\toγK_S^0K_S^0η^\\prime$, including the pseudoscalar states $X(1835)$, $X(2120)$, $η(2225)$, $X(2370)$, $X(2500)$, and $η_c$, reproduces the observed dip near $2.2~\\mathrm{GeV}$ and the enhancement near $2.4~\\mathrm{GeV}$ through coherent interference, without invoking the additional broad $X(2800)$ component employed in the BESIII partial-wave analysis. We further analyze $J/ψ\\toγπ^0π^0η$ and $J/ψ\\toγK_S^0K_S^0π^0$ by including both pseudoscalar and axial-vector contributions, and show that multiple excited meson states collectively describe the data. The absence of a prominent $X(2370)$ signal in the $K^*(892)$ region can be understood from differing orbital angular-momentum requirements rather than flavor-singlet suppression alone. Our results indicate that $X(2370)$ is not exceptional compared with the other reported pseudoscalar states in this mass region. Therefore, interpreting $X(2370)$ as a glueball-dominated state should be treated with caution.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.006,
+"3184726"
+],
+[
+0.005,
+"2690106"
+],
+[
+0.005,
+"2860896"
+]
+],
+"topE": [
+[
+0.023,
+"3089042"
+],
+[
+0.02,
+"3209798"
+],
+[
+0.016,
+"3193100"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.02,
+0.07,
+0.0,
+0.0
+],
+"score": 3.6
+},
+{
 "arxiv": "2603.16266",
 "section": "replacement",
 "recid": "3130196",
 "src": "INSPIRE",
-"nref": 80,
+"nref": 82,
 "title": "Lattice QCD study of the $K^*(892)$ resonance at the physical point",
 "authors": [
 "Qu-Zhi Li",
@@ -2580,7 +2634,7 @@
 ],
 "topE": [
 [
-0.028,
+0.027,
 "3193100"
 ],
 [
@@ -2608,9 +2662,9 @@
 {
 "arxiv": "2611.24435",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 108,
+"recid": "3231090",
+"src": "INSPIRE",
+"nref": 109,
 "title": "Total Angular Momentum Assignments in the Hadron Spectrum",
 "authors": [
 " The HADLENS Collaboration",
@@ -2896,7 +2950,7 @@
 "section": "replacement",
 "recid": "3182738",
 "src": "INSPIRE",
-"nref": 78,
+"nref": 83,
 "title": "Transverse-momentum resummation effects on angular coefficients in Z and W boson hadroproduction",
 "authors": [
 "Stefano Camarda",
@@ -2909,7 +2963,7 @@
 "citE": [],
 "topR": [
 [
-0.011,
+0.01,
 "3094526"
 ],
 [
@@ -2923,15 +2977,15 @@
 ],
 "topE": [
 [
-0.028,
+0.027,
 "2817040"
 ],
 [
-0.017,
+0.016,
 "2065390"
 ],
 [
-0.014,
+0.013,
 "1688995"
 ]
 ],
@@ -2941,12 +2995,12 @@
 "watch": [],
 "parts": [
 0.0,
-0.03,
+0.02,
 0.08,
 0.0,
 0.0
 ],
-"score": 2.0
+"score": 1.9
 },
 {
 "arxiv": "2609.33029",
@@ -3399,64 +3453,10 @@
 "score": 1.3
 },
 {
-"arxiv": "2611.23993",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 29,
-"title": "Probing dimension-six SMEFT operators in heavy-quark sector at future muon collider",
-"authors": [
-"Serdar Spor"
-],
-"abstract": "We investigate the sensitivity to the dimension-six Standard Model Effective Field Theory (SMEFT) operators which define the interactions of heavy-quarks with electroweak gauge bosons and with leptons via the process $μ^- μ^+ \\rightarrow Wtb$, followed by leptonic W-boson decays, at a 10 TeV muon collider with an integrated luminosity of 10 ab$^{-1}$. Signal and background events are generated at leading order using MadGraph5aMC@NLO, interfaced with Pythia 8 for parton showering and hadronization, and passed through Delphes 3.5 for fast detector simulation. The 95% confidence level (C.L.) limits on nine Wilson coefficients are derived using a cut-based method for two $b$-tagging working points (70% and 90% efficiencies). These limits are significantly tighter than those currently reported by the CMS Collaboration; furthermore, these results highlight the advanced potential of a future high-energy muon collider to investigate new physics within the electroweak sector through precise measurements of heavy-quark interactions.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.025,
-"3154544"
-],
-[
-0.019,
-"2664140"
-],
-[
-0.007,
-"3193100"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.07,
-0.0,
-0.0
-],
-"score": 1.1
-},
-{
 "arxiv": "2611.24572",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3231096",
+"src": "INSPIRE",
 "nref": 25,
 "title": "Radii of Sn Isotopes near the Proton Dripline from Nuclear Lattice Effective Field Theory",
 "authors": [
@@ -3511,8 +3511,8 @@
 {
 "arxiv": "2611.24916",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3231152",
+"src": "INSPIRE",
 "nref": 40,
 "title": "Locally infrared finite two-loop amplitudes for multi Higgs production in association with one jet",
 "authors": [
@@ -3727,6 +3727,61 @@
 0.0,
 0.0,
 0.05,
+0.0,
+0.0
+],
+"score": 0.8
+},
+{
+"arxiv": "2611.24878",
+"section": "cross",
+"recid": "3231063",
+"src": "INSPIRE",
+"nref": 40,
+"title": "From geometric curvature to effective backgrounds: a dictionary for Dirac fermions in one, two and three spatial dimensions",
+"authors": [
+"David Valenzuela",
+"Alfredo Raya"
+],
+"abstract": "Dirac equation on curved backgrounds can be rewritten as a flat-space equation in which geometry appears as a tensorial Fermi velocity together with a set of background fields. We derive this correspondence from a single Clifford-algebra identity and follow it through one, two, and three spatial dimensions. Once the spin connection is written in terms of Ricci rotation coefficients, only two contractions can occur. The trace produces a term with the index structure of a vector potential in every dimensionality; it enters with an imaginary factor i and is precisely the term that keeps the operator Hermitian when the Fermi velocity depends on position. The totally antisymmetric contraction produces an object that depends on the number of indices available to the Levi-Civita symbol: a trace on a line, a pseudoscalar mass on a surface, and an axial vector potential in a volume. Neither contraction is invariant under local rotations of the frame, and we give the transformation laws. On a surface, the curl of the trace term can always be removed by a frame rotation, while its divergence is proportional to the Gaussian curvature. We apply the correspondence to a Gaussian bump, where the local density of states at the center falls below its flat value and obeys a closed form at low energy; to a wire, where a nonuniform lapse binds states inside the gap and a nonuniform velocity cannot; to stationary frames on a surface, where a circulating drag shifts the Dirac mass locally with either sign; and to twisted and rotating frames in a volume, where the axial term takes the form of a chiral chemical potential produced by the frame alone, or separates Weyl nodes in a rotating sample. We separate the geometric contribution from the lattice pseudogauge field that dominates the response of strained samples",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.02,
+"2682367"
+],
+[
+0.018,
+"3185270"
+],
+[
+0.005,
+"1421898"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.06,
 0.0,
 0.0
 ],
@@ -3964,8 +4019,8 @@
 {
 "arxiv": "2611.24624",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3231104",
+"src": "INSPIRE",
 "nref": 50,
 "title": "Instanton tunnelling as a verifiable benchmark for digital quantum simulation: circuit structure, classical simulability and hardware reproducibility",
 "authors": [
@@ -3991,7 +4046,7 @@
 ],
 "topE": [
 [
-0.006,
+0.005,
 "1783234"
 ],
 [
@@ -4140,61 +4195,6 @@
 "A. G. Grunfeld"
 ],
 "abstract": "We investigate the phase structure of cold magnetized two-flavor quark matter under compact-star conditions within a nonlocal chiral quark model with separable interactions. Electric charge neutrality and beta equilibrium are imposed in order to describe matter under realistic neutron-star conditions, while nonlocality is implemented through a Gaussian form factor. We find that low and moderate magnetic fields reduce the critical chemical potential for chiral symmetry restoration, signaling inverse magnetic catalysis. For stronger magnetic fields, the critical chemical potential becomes nearly independent of the magnetic field strength, Compared with the isospin-symmetric case, the combined effects of charge neutrality and beta equilibrium shift the first-order chiral transition to slightly higher chemical potentials, indicating that compact-star constraints delay the onset of chiral symmetry restoration. We further show that charge neutrality and beta equilibrium modify the de Haas--van Alphen oscillations in the quark density, shifting the Landau-level thresholds for the $u$ and $d$ quarks in opposite directions relative to the isospin-symmetric case. The effect on the chiral transition is small ($\\sim 5$MeV) for fields $B\\lesssim 10^{19}$G, relevant for magnetar interiors, and becomes sizable only for $B\\gtrsim 3\\times10^{19}$G. These results highlight the importance of incorporating realistic stellar conditions in studies of the QCD phase diagram at high baryon density.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.0,
-"913031"
-],
-[
-0.0,
-"881902"
-],
-[
-0.0,
-"877394"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.0,
-0.0,
-0.0
-],
-"score": 0.0
-},
-{
-"arxiv": "2611.24878",
-"section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 40,
-"title": "From geometric curvature to effective backgrounds: a dictionary for Dirac fermions in one, two and three spatial dimensions",
-"authors": [
-"David Valenzuela",
-"Alfredo Raya"
-],
-"abstract": "Dirac equation on curved backgrounds can be rewritten as a flat-space equation in which geometry appears as a tensorial Fermi velocity together with a set of background fields. We derive this correspondence from a single Clifford-algebra identity and follow it through one, two, and three spatial dimensions. Once the spin connection is written in terms of Ricci rotation coefficients, only two contractions can occur. The trace produces a term with the index structure of a vector potential in every dimensionality; it enters with an imaginary factor i and is precisely the term that keeps the operator Hermitian when the Fermi velocity depends on position. The totally antisymmetric contraction produces an object that depends on the number of indices available to the Levi-Civita symbol: a trace on a line, a pseudoscalar mass on a surface, and an axial vector potential in a volume. Neither contraction is invariant under local rotations of the frame, and we give the transformation laws. On a surface, the curl of the trace term can always be removed by a frame rotation, while its divergence is proportional to the Gaussian curvature. We apply the correspondence to a Gaussian bump, where the local density of states at the center falls below its flat value and obeys a closed form at low energy; to a wire, where a nonuniform lapse binds states inside the gap and a nonuniform velocity cannot; to stationary frames on a surface, where a circulating drag shifts the Dirac mass locally with either sign; and to twisted and rotating frames in a volume, where the axial term takes the form of a chiral chemical potential produced by the frame alone, or separates Weyl nodes in a rotating sample. We separate the geometric contribution from the lattice pseudogauge field that dominates the response of strained samples",
 "citR": [],
 "citE": [],
 "topR": [
