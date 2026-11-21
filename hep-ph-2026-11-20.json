@@ -1228,7 +1228,7 @@
 "section": "replacement",
 "recid": "3140676",
 "src": "INSPIRE",
-"nref": 131,
+"nref": 130,
 "title": "Aspects of a Five-Dimensional $U(1)_{L_μ- L_τ}$ Model at Future Muon-Based Colliders",
 "authors": [
 "Dibyendu Chakraborty",
@@ -1242,7 +1242,7 @@
 "citE": [],
 "topR": [
 [
-0.088,
+0.087,
 "3130296"
 ],
 [
@@ -1256,15 +1256,15 @@
 ],
 "topE": [
 [
-0.197,
+0.195,
 "2942039"
 ],
 [
-0.148,
+0.146,
 "2712207"
 ],
 [
-0.127,
+0.126,
 "1918090"
 ]
 ],
@@ -1279,7 +1279,7 @@
 0.0,
 0.0
 ],
-"score": 15.6
+"score": 15.5
 },
 {
 "arxiv": "2611.25581",
@@ -1575,7 +1575,7 @@
 "section": "replacement",
 "recid": "3167932",
 "src": "INSPIRE",
-"nref": 82,
+"nref": 80,
 "title": "Mass Varying Neutrino Oscillation in Teleparallel Gravity",
 "authors": [
 "H. Mohseni Sadjadi",
@@ -1606,7 +1606,7 @@
 "1796007"
 ],
 [
-0.043,
+0.042,
 "1873642"
 ],
 [
