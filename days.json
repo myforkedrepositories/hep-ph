@@ -1,8 +1,64 @@
 [
  {
+  "date": "2026-11-24",
+  "page": "hep-ph-2026-11-24.html",
+  "built": "2026-11-24",
+  "code": "9ce8316673b1",
+  "nlist": 117,
+  "nrel": 36,
+  "top": [
+   {
+    "arxiv": "2611.28217",
+    "title": "WIMPs as FIMPs: the Inert Doublet Model and low-temperature reheating",
+    "score": 84.6,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.30799",
+    "title": "Fermionic dark linear seesaw with an anomalous Majoron",
+    "score": 62.4,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.28223",
+    "title": "Scotogenic dark matter from gauged $L_μ+L_τ$",
+    "score": 53.6,
+    "section": "new"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-23",
+  "page": "hep-ph-2026-11-23.html",
+  "built": "2026-11-24",
+  "code": "9ce8316673b1",
+  "nlist": 60,
+  "nrel": 13,
+  "top": [
+   {
+    "arxiv": "2611.27518",
+    "title": "Probing Compressed Dark Sectors at a Muon Collider through Dilepton Signatures and Machine Learning",
+    "score": 55.0,
+    "section": "new"
+   },
+   {
+    "arxiv": "2605.27910",
+    "title": "Matching second-order classical and 1-loop quantum tensor power spectra in de Sitter spacetime",
+    "score": 31.9,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2605.18944",
+    "title": "The Majoron Cosmological Window: Dark Matter and Thermal Leptogenesis",
+    "score": 31.0,
+    "section": "replacement"
+   }
+  ]
+ },
+ {
   "date": "2026-11-20",
   "page": "hep-ph-2026-11-20.html",
-  "built": "2026-11-21",
+  "built": "2026-11-24",
   "code": "9ce8316673b1",
   "nlist": 82,
   "nrel": 26,
@@ -10,7 +66,7 @@
    {
     "arxiv": "2602.12154",
     "title": "Resurrecting Kaluza-Klein Dark Matter with Low-Temperature Reheating",
-    "score": 56.5,
+    "score": 56.6,
     "section": "replacement"
    },
    {

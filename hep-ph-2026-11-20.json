@@ -36,7 +36,7 @@
 ],
 "topE": [
 [
-0.118,
+0.119,
 "2860397"
 ],
 [
@@ -66,7 +66,7 @@
 0.0,
 0.93
 ],
-"score": 56.5
+"score": 56.6
 },
 {
 "arxiv": "2611.26303",
@@ -163,7 +163,7 @@
 ],
 "topE": [
 [
-0.237,
+0.238,
 "3081713"
 ],
 [
@@ -171,7 +171,7 @@
 "2935629"
 ],
 [
-0.095,
+0.096,
 "2933368"
 ]
 ],
@@ -188,7 +188,7 @@
 0.11,
 0.68,
 0.0,
-0.38
+0.37
 ],
 "score": 41.6
 },
@@ -213,21 +213,21 @@
 ],
 "topR": [
 [
-0.036,
+0.038,
 "2751074"
 ],
 [
-0.028,
+0.029,
 "1832796"
 ],
 [
-0.026,
+0.027,
 "2686856"
 ]
 ],
 "topE": [
 [
-0.074,
+0.076,
 "2958466"
 ],
 [
@@ -246,8 +246,8 @@
 "fermionic dark matter",
 "relic density",
 "dark matter scenario",
-"direct detection",
 "dark matter candidate",
+"direct detection",
 "direct detection experiment",
 "dark matter model",
 "dark matter"
@@ -255,12 +255,12 @@
 "watch": [],
 "parts": [
 0.72,
-0.11,
-0.21,
+0.12,
+0.22,
 0.0,
 0.93
 ],
-"score": 40.9
+"score": 41.2
 },
 {
 "arxiv": "2605.27519",
@@ -285,7 +285,7 @@
 ],
 "topR": [
 [
-0.032,
+0.033,
 "1249404"
 ],
 [
@@ -299,7 +299,7 @@
 ],
 "topE": [
 [
-0.192,
+0.193,
 "3190827"
 ],
 [
@@ -307,7 +307,7 @@
 "2750594"
 ],
 [
-0.128,
+0.129,
 "2134273"
 ]
 ],
@@ -368,7 +368,7 @@
 "3215016"
 ],
 [
-0.225,
+0.224,
 "3207263"
 ]
 ],
@@ -415,7 +415,7 @@
 "1455793"
 ],
 [
-0.048,
+0.047,
 "1402978"
 ],
 [
@@ -476,7 +476,7 @@
 "2794409"
 ],
 [
-0.034,
+0.033,
 "3130296"
 ],
 [
@@ -548,11 +548,11 @@
 ],
 "topE": [
 [
-0.154,
+0.153,
 "3128752"
 ],
 [
-0.143,
+0.142,
 "3167588"
 ],
 [
@@ -732,7 +732,7 @@
 "3070028"
 ],
 [
-0.101,
+0.102,
 "2931725"
 ],
 [
@@ -754,7 +754,7 @@
 0.0,
 0.36
 ],
-"score": 26.4
+"score": 26.5
 },
 {
 "arxiv": "2605.01318",
@@ -788,7 +788,7 @@
 ],
 "topE": [
 [
-0.243,
+0.244,
 "2734721"
 ],
 [
@@ -811,9 +811,9 @@
 "parts": [
 0.06,
 0.11,
-0.69,
+0.7,
 0.0,
-0.47
+0.46
 ],
 "score": 20.4
 },
@@ -874,7 +874,7 @@
 0.0,
 0.16
 ],
-"score": 20.3
+"score": 20.4
 },
 {
 "arxiv": "2611.26324",
@@ -915,7 +915,7 @@
 "3206672"
 ],
 [
-0.029,
+0.03,
 "2630211"
 ],
 [
@@ -934,7 +934,7 @@
 0.0,
 0.0
 ],
-"score": 20.0
+"score": 20.1
 },
 {
 "arxiv": "2611.24985",
@@ -986,7 +986,7 @@
 "parts": [
 0.45,
 0.0,
-0.16,
+0.17,
 0.0,
 0.0
 ],
@@ -1024,7 +1024,7 @@
 ],
 "topE": [
 [
-0.023,
+0.024,
 "3227657"
 ],
 [
@@ -1048,66 +1048,6 @@
 0.0
 ],
 "score": 16.8
-},
-{
-"arxiv": "2611.25062",
-"section": "new",
-"recid": "3231200",
-"src": "INSPIRE",
-"nref": 60,
-"title": "Naturalness scale inference in chiral perturbation theory and chiral logarithms",
-"authors": [
-"Tara Hassanzadeh",
-"Martin Hoferichter",
-"Lucas Platter",
-"Jacobo Ruiz de Elvira",
-"Matthias R. Schindler"
-],
-"abstract": "We infer naturalness scales of chiral perturbation theory in the mesonic sector using Bayesian techniques that are extended to explicitly take into account chiral logarithms. To demonstrate our approach, we consider the chiral expansion of the pion decay constant $F_π$ and the threshold and subthreshold parameters of $ππ$ scattering. We find a strong observable dependence of the inferred naturalness scales, and show that they need not coincide with the pion mass at which the order-by-order hierarchy of the chiral expansion breaks down. As an application, we discuss the requirements for lattice-QCD constraints on the two combinations of $O(p^6)$ low-energy constants that in the current matching of Roy-equation analyses to chiral perturbation theory need to be estimated from resonance saturation, but could be extracted from the pion-mass dependence of $ππ$ scattering parameters.",
-"citR": [],
-"citE": [
-"3193100"
-],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.016,
-"3193100"
-],
-[
-0.015,
-"3227657"
-],
-[
-0.014,
-"3214449"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.45,
-0.0,
-0.05,
-0.0,
-0.0
-],
-"score": 16.5
 },
 {
 "arxiv": "2610.05727",
@@ -1166,6 +1106,66 @@
 "score": 16.5
 },
 {
+"arxiv": "2611.25062",
+"section": "new",
+"recid": "3231200",
+"src": "INSPIRE",
+"nref": 60,
+"title": "Naturalness scale inference in chiral perturbation theory and chiral logarithms",
+"authors": [
+"Tara Hassanzadeh",
+"Martin Hoferichter",
+"Lucas Platter",
+"Jacobo Ruiz de Elvira",
+"Matthias R. Schindler"
+],
+"abstract": "We infer naturalness scales of chiral perturbation theory in the mesonic sector using Bayesian techniques that are extended to explicitly take into account chiral logarithms. To demonstrate our approach, we consider the chiral expansion of the pion decay constant $F_π$ and the threshold and subthreshold parameters of $ππ$ scattering. We find a strong observable dependence of the inferred naturalness scales, and show that they need not coincide with the pion mass at which the order-by-order hierarchy of the chiral expansion breaks down. As an application, we discuss the requirements for lattice-QCD constraints on the two combinations of $O(p^6)$ low-energy constants that in the current matching of Roy-equation analyses to chiral perturbation theory need to be estimated from resonance saturation, but could be extracted from the pion-mass dependence of $ππ$ scattering parameters.",
+"citR": [],
+"citE": [
+"3193100"
+],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.015,
+"3227657"
+],
+[
+0.014,
+"3214449"
+],
+[
+0.013,
+"1863322"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.45,
+0.0,
+0.04,
+0.0,
+0.0
+],
+"score": 16.4
+},
+{
 "arxiv": "2611.25846",
 "section": "new",
 "recid": "3231317",
@@ -1182,11 +1182,11 @@
 "citE": [],
 "topR": [
 [
-0.123,
+0.124,
 "1941263"
 ],
 [
-0.065,
+0.066,
 "1955022"
 ],
 [
@@ -1196,15 +1196,15 @@
 ],
 "topE": [
 [
-0.108,
+0.109,
 "2688651"
 ],
 [
-0.103,
+0.104,
 "2691930"
 ],
 [
-0.1,
+0.101,
 "1895232"
 ]
 ],
@@ -1221,7 +1221,7 @@
 0.0,
 0.13
 ],
-"score": 16.3
+"score": 16.4
 },
 {
 "arxiv": "2604.05041",
@@ -1242,7 +1242,7 @@
 "citE": [],
 "topR": [
 [
-0.087,
+0.085,
 "3130296"
 ],
 [
@@ -1256,11 +1256,11 @@
 ],
 "topE": [
 [
-0.195,
+0.191,
 "2942039"
 ],
 [
-0.146,
+0.145,
 "2712207"
 ],
 [
@@ -1274,12 +1274,12 @@
 "watch": [],
 "parts": [
 0.0,
-0.24,
-0.56,
+0.23,
+0.55,
 0.0,
 0.0
 ],
-"score": 15.5
+"score": 15.1
 },
 {
 "arxiv": "2611.25581",
@@ -1339,7 +1339,7 @@
 0.0,
 0.1
 ],
-"score": 11.5
+"score": 11.4
 },
 {
 "arxiv": "2611.25359",
@@ -1379,7 +1379,7 @@
 "2719600"
 ],
 [
-0.051,
+0.052,
 "2818719"
 ]
 ],
@@ -1451,12 +1451,12 @@
 "watch": [],
 "parts": [
 0.0,
-0.1,
+0.11,
 0.51,
 0.0,
 0.0
 ],
-"score": 10.8
+"score": 10.9
 },
 {
 "arxiv": "2611.25060",
@@ -1547,7 +1547,7 @@
 "2128137"
 ],
 [
-0.165,
+0.164,
 "2734072"
 ],
 [
@@ -1588,7 +1588,7 @@
 ],
 "topR": [
 [
-0.042,
+0.041,
 "1854224"
 ],
 [
@@ -1602,11 +1602,11 @@
 ],
 "topE": [
 [
-0.054,
+0.052,
 "1796007"
 ],
 [
-0.042,
+0.041,
 "1873642"
 ],
 [
@@ -1627,7 +1627,7 @@
 0.0,
 0.16
 ],
-"score": 9.3
+"score": 9.1
 },
 {
 "arxiv": "2611.25872",
@@ -1663,11 +1663,11 @@
 ],
 [
 0.068,
-"3109323"
+"3070024"
 ],
 [
-0.068,
-"3070024"
+0.067,
+"3109323"
 ]
 ],
 "isme": false,
@@ -1798,7 +1798,7 @@
 0.03,
 0.25,
 0.0,
-0.35
+0.34
 ],
 "score": 8.1
 },
@@ -1858,7 +1858,7 @@
 0.03,
 0.13,
 0.0,
-0.49
+0.48
 ],
 "score": 7.8
 },
@@ -1948,7 +1948,7 @@
 ],
 "topE": [
 [
-0.106,
+0.107,
 "3170413"
 ],
 [
@@ -1967,7 +1967,7 @@
 "parts": [
 0.0,
 0.06,
-0.3,
+0.31,
 0.0,
 0.0
 ],
@@ -2063,7 +2063,7 @@
 "3158607"
 ],
 [
-0.039,
+0.04,
 "2942840"
 ],
 [
@@ -2120,7 +2120,7 @@
 "3147506"
 ],
 [
-0.014,
+0.015,
 "3152706"
 ],
 [
@@ -2221,7 +2221,7 @@
 ],
 "topR": [
 [
-0.007,
+0.008,
 "1421624"
 ],
 [
@@ -2235,16 +2235,16 @@
 ],
 "topE": [
 [
-0.063,
+0.064,
 "3090922"
 ],
 [
-0.031,
+0.03,
 "2617409"
 ],
 [
-0.027,
-"3206672"
+0.026,
+"3095306"
 ]
 ],
 "isme": false,
@@ -2258,7 +2258,7 @@
 0.0,
 0.0
 ],
-"score": 5.4
+"score": 5.5
 },
 {
 "arxiv": "2611.26364",
@@ -2276,11 +2276,11 @@
 "citE": [],
 "topR": [
 [
-0.021,
+0.022,
 "1455793"
 ],
 [
-0.011,
+0.012,
 "3130296"
 ],
 [
@@ -2290,15 +2290,15 @@
 ],
 "topE": [
 [
-0.078,
+0.08,
 "2115290"
 ],
 [
-0.061,
+0.062,
 "2665284"
 ],
 [
-0.038,
+0.039,
 "2874649"
 ]
 ],
@@ -2309,11 +2309,11 @@
 "parts": [
 0.0,
 0.06,
-0.22,
+0.23,
 0.0,
 0.0
 ],
-"score": 5.2
+"score": 5.3
 },
 {
 "arxiv": "2611.25013",
@@ -2427,107 +2427,6 @@
 0.11,
 0.0,
 0.1
-],
-"score": 4.7
-},
-{
-"arxiv": "2611.26281",
-"section": "new",
-"recid": "3231427",
-"src": "INSPIRE",
-"nref": 277,
-"title": "Predictions for Inclusive Production Cross Sections of the Higgs Boson at the LHC and HL-LHC",
-"authors": [
-"Robin Hayes",
-"Alexander Karlberg",
-"Bernhard Mistlberger",
-"Dermot Moran",
-"Hannah Arnold",
-"Gaetano Barone",
-"Christian Biello",
-"Johannes Blümlein",
-"Valeria Botta",
-"Christian Brønnum-Hansen",
-"Alessandro Calandri",
-"Benjamin Campillo",
-"Alessandra Cappati",
-"Andrea Cardini",
-"Suman Chatterjee",
-"Jiayi Chen",
-"Michal Czakon",
-"Valerio Dao",
-"Goutam Das",
-"Felix Eschment",
-"Silvia Ferrario Ravasio",
-"Giancarlo Ferrera",
-"Alessandro Gavardi",
-"Yanping Huang",
-"Alexander Huss",
-"Stephen Jones",
-"Judith Katzy",
-"Sven Yannick Klein",
-"Matthew Lim",
-"Stefano Manzoni",
-"Josh McFayden",
-"Sven-Olaf Moch",
-"Alexander Mück",
-"Marco Niggetiedt",
-"Mathieu Pellen",
-"Christian T. Preuss",
-"Tom Schellenberger",
-"Lukas Simon",
-"Michael Spira",
-"Lourdes Urda Gómez",
-"Davide Valsecchi",
-"Marco Vitti",
-"Marius Wiesemann",
-"Malgorzata Worek",
-"Sebastian Wuchterl",
-"Silvia Zanoli",
-"Marco Zaro",
-"Licheng Zhang"
-],
-"abstract": "We present updated recommendations of the LHC Higgs Working Group (LHCHWG) for the inclusive production cross sections of a Standard Model Higgs boson in proton--proton collisions at centre-of-mass energies between $7$ and $14$ TeV, including the Run-3 energy of $13.6$ TeV, and for Higgs-boson masses between $120$ and $130$ GeV. All the major production modes are covered. The central values remain consistent with those of Yellow Report 4 (YR4) [arXiv:1610.07922] within the uncertainties quoted there, while the theoretical uncertainties are reduced for most production modes. The improvements rest on specific calculations rather than on a uniform advance: the complete N$^3$LO result in the heavy-top limit together with exact NNLO top-quark mass effects for gluon fusion; the N$^3$LO structure-function calculation supplemented by non-factorisable corrections for vector-boson fusion; the completion of the NLO QCD corrections to the loop-induced $gg\\to ZH$ channel for $VH$; NNLO QCD matched to NNLL soft-gluon resummation and combined with NLO electroweak corrections for $t\\bar{t}H$, and updated predictions for $tH$; and the matched four- and five-flavour-scheme prediction, with its explicit resummation-scale uncertainty, for $b\\bar{b}H$. Since no PDF4LHC recommendation exists beyond NNLO, the mismatch between an N$^3$LO matrix element and NNLO distributions has to be carried as an uncertainty, estimated process by process: it is well determined for vector-boson fusion, whereas for gluon fusion it is doubled relative to YR4. PDFs are now the leading source of uncertainty for the most precisely predicted modes, while residual perturbative uncertainties dominate for the remainder. These results supersede the inclusive cross sections of YR4 and the ad interim recommendations of Ref. [arXiv:2402.09955], and form part of Report 5 of the LHCHWG.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.02,
-"3094526"
-],
-[
-0.013,
-"2751074"
-],
-[
-0.005,
-"2794409"
-]
-],
-"topE": [
-[
-0.069,
-"3193100"
-],
-[
-0.058,
-"2817040"
-],
-[
-0.039,
-"1688995"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.06,
-0.2,
-0.0,
-0.0
 ],
 "score": 4.6
 },
@@ -2646,6 +2545,107 @@
 "score": 4.3
 },
 {
+"arxiv": "2611.26281",
+"section": "new",
+"recid": "3231427",
+"src": "INSPIRE",
+"nref": 277,
+"title": "Predictions for Inclusive Production Cross Sections of the Higgs Boson at the LHC and HL-LHC",
+"authors": [
+"Robin Hayes",
+"Alexander Karlberg",
+"Bernhard Mistlberger",
+"Dermot Moran",
+"Hannah Arnold",
+"Gaetano Barone",
+"Christian Biello",
+"Johannes Blümlein",
+"Valeria Botta",
+"Christian Brønnum-Hansen",
+"Alessandro Calandri",
+"Benjamin Campillo",
+"Alessandra Cappati",
+"Andrea Cardini",
+"Suman Chatterjee",
+"Jiayi Chen",
+"Michal Czakon",
+"Valerio Dao",
+"Goutam Das",
+"Felix Eschment",
+"Silvia Ferrario Ravasio",
+"Giancarlo Ferrera",
+"Alessandro Gavardi",
+"Yanping Huang",
+"Alexander Huss",
+"Stephen Jones",
+"Judith Katzy",
+"Sven Yannick Klein",
+"Matthew Lim",
+"Stefano Manzoni",
+"Josh McFayden",
+"Sven-Olaf Moch",
+"Alexander Mück",
+"Marco Niggetiedt",
+"Mathieu Pellen",
+"Christian T. Preuss",
+"Tom Schellenberger",
+"Lukas Simon",
+"Michael Spira",
+"Lourdes Urda Gómez",
+"Davide Valsecchi",
+"Marco Vitti",
+"Marius Wiesemann",
+"Malgorzata Worek",
+"Sebastian Wuchterl",
+"Silvia Zanoli",
+"Marco Zaro",
+"Licheng Zhang"
+],
+"abstract": "We present updated recommendations of the LHC Higgs Working Group (LHCHWG) for the inclusive production cross sections of a Standard Model Higgs boson in proton--proton collisions at centre-of-mass energies between $7$ and $14$ TeV, including the Run-3 energy of $13.6$ TeV, and for Higgs-boson masses between $120$ and $130$ GeV. All the major production modes are covered. The central values remain consistent with those of Yellow Report 4 (YR4) [arXiv:1610.07922] within the uncertainties quoted there, while the theoretical uncertainties are reduced for most production modes. The improvements rest on specific calculations rather than on a uniform advance: the complete N$^3$LO result in the heavy-top limit together with exact NNLO top-quark mass effects for gluon fusion; the N$^3$LO structure-function calculation supplemented by non-factorisable corrections for vector-boson fusion; the completion of the NLO QCD corrections to the loop-induced $gg\\to ZH$ channel for $VH$; NNLO QCD matched to NNLL soft-gluon resummation and combined with NLO electroweak corrections for $t\\bar{t}H$, and updated predictions for $tH$; and the matched four- and five-flavour-scheme prediction, with its explicit resummation-scale uncertainty, for $b\\bar{b}H$. Since no PDF4LHC recommendation exists beyond NNLO, the mismatch between an N$^3$LO matrix element and NNLO distributions has to be carried as an uncertainty, estimated process by process: it is well determined for vector-boson fusion, whereas for gluon fusion it is doubled relative to YR4. PDFs are now the leading source of uncertainty for the most precisely predicted modes, while residual perturbative uncertainties dominate for the remainder. These results supersede the inclusive cross sections of YR4 and the ad interim recommendations of Ref. [arXiv:2402.09955], and form part of Report 5 of the LHCHWG.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.02,
+"3094526"
+],
+[
+0.013,
+"2751074"
+],
+[
+0.005,
+"2794409"
+]
+],
+"topE": [
+[
+0.058,
+"2817040"
+],
+[
+0.046,
+"3193100"
+],
+[
+0.039,
+"1688995"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.06,
+0.17,
+0.0,
+0.0
+],
+"score": 4.2
+},
+{
 "arxiv": "2607.06255",
 "section": "replacement",
 "recid": "3178089",
@@ -2686,7 +2686,7 @@
 "1688995"
 ],
 [
-0.01,
+0.012,
 "3193100"
 ]
 ],
@@ -2742,8 +2742,8 @@
 "2817040"
 ],
 [
-0.038,
-"3193100"
+0.033,
+"2972436"
 ]
 ],
 "isme": false,
@@ -2757,7 +2757,7 @@
 0.0,
 0.0
 ],
-"score": 4.0
+"score": 4.1
 },
 {
 "arxiv": "2611.25014",
@@ -2853,8 +2853,8 @@
 "3147506"
 ],
 [
-0.018,
-"3193100"
+0.015,
+"3179956"
 ]
 ],
 "isme": false,
@@ -2983,7 +2983,7 @@
 0.0,
 0.0
 ],
-"score": 3.7
+"score": 3.8
 },
 {
 "arxiv": "2605.22088",
@@ -3050,7 +3050,7 @@
 "recid": "3230906",
 "src": "INSPIRE",
 "nref": 30,
-"title": "Reproducing $J/ψ\\to γ+3P$ data with meson spectroscopy and understanding $X(2370)$",
+"title": "$X(2370)$ without exceptionalism from reanalyzing $J/ψ\\to γ+ 3P$ data",
 "authors": [
 "Tian-Cai Peng",
 "Xiang Liu"
@@ -3076,7 +3076,7 @@
 ],
 "topE": [
 [
-0.023,
+0.024,
 "3089042"
 ],
 [
@@ -3084,7 +3084,7 @@
 "3209798"
 ],
 [
-0.016,
+0.017,
 "3193100"
 ]
 ],
@@ -3141,7 +3141,7 @@
 "1674879"
 ],
 [
-0.028,
+0.029,
 "2971033"
 ]
 ],
@@ -3250,7 +3250,7 @@
 ],
 "topE": [
 [
-0.016,
+0.017,
 "3074282"
 ],
 [
@@ -3258,8 +3258,8 @@
 "2817040"
 ],
 [
-0.011,
-"3193100"
+0.009,
+"3179956"
 ]
 ],
 "isme": false,
@@ -3274,6 +3274,64 @@
 0.0
 ],
 "score": 3.0
+},
+{
+"arxiv": "2611.26357",
+"section": "cross",
+"recid": "3231386",
+"src": "INSPIRE",
+"nref": 157,
+"title": "The antibaryon-baryon interaction based on chiral EFT with a focus on $\\bar pp$ and $\\barΛΛ$ reactions",
+"authors": [
+"Qin-He Yang",
+"Johann Haidenbauer",
+"Ulf-G. Meißner"
+],
+"abstract": "The antibaryon-baryon ($\\bar BB$) interaction is reviewed in the context of the hyperon(Y)-production reactions $\\bar NN\\to\\bar YY$ with special emphasis on the $\\bar ΛΛ$ system. The experimental situation for $\\bar BB\\to\\bar YY$ from threshold up to antiproton lab momenta of $2$ GeV/c is discussed and likewise past theoretical approaches and results. The formalism for a description of the $\\bar BB$ interaction in terms of potentials derived within SU(3) chiral effective field theory (EFT) is outlined. Constraints from SU(3) flavor symmetry on the $\\bar BB$ interaction in the various reaction channels are discussed. As concrete application a new analysis of the reaction $\\bar pp\\to\\bar ΛΛ$ is performed utilizing potentials for the $\\bar NN$ and $\\bar ΛΛ$ channels, and for the $\\bar NN\\to\\barΛΛ$ transition, up to next-to-leading order in the chiral expansion, supplemented by a phenomenological part to account for annihilation processes. An excellent reproduction of data from the PS185 experiment at CERN up to momenta of $1.55$ GeV/c is achieved. When including higher-order contact terms in the analysis the range of agreement can be extended up to momenta around $1.65$ GeV/c, where a complete set of scattering observables is available. Predictions for $\\barΛΛ$ scattering are provided and compared to results from the literature.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.003,
+"3184726"
+],
+[
+0.002,
+"2690106"
+],
+[
+0.002,
+"2860896"
+]
+],
+"topE": [
+[
+0.015,
+"3193100"
+],
+[
+0.005,
+"2817040"
+],
+[
+0.005,
+"3216851"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.01,
+0.04,
+0.0,
+0.0
+],
+"score": 2.9
 },
 {
 "arxiv": "2610.12525",
@@ -3392,64 +3450,6 @@
 "score": 2.7
 },
 {
-"arxiv": "2611.26357",
-"section": "cross",
-"recid": "3231386",
-"src": "INSPIRE",
-"nref": 157,
-"title": "The antibaryon-baryon interaction based on chiral EFT with a focus on $\\bar pp$ and $\\barΛΛ$ reactions",
-"authors": [
-"Qin-He Yang",
-"Johann Haidenbauer",
-"Ulf-G. Meißner"
-],
-"abstract": "The antibaryon-baryon ($\\bar BB$) interaction is reviewed in the context of the hyperon(Y)-production reactions $\\bar NN\\to\\bar YY$ with special emphasis on the $\\bar ΛΛ$ system. The experimental situation for $\\bar BB\\to\\bar YY$ from threshold up to antiproton lab momenta of $2$ GeV/c is discussed and likewise past theoretical approaches and results. The formalism for a description of the $\\bar BB$ interaction in terms of potentials derived within SU(3) chiral effective field theory (EFT) is outlined. Constraints from SU(3) flavor symmetry on the $\\bar BB$ interaction in the various reaction channels are discussed. As concrete application a new analysis of the reaction $\\bar pp\\to\\bar ΛΛ$ is performed utilizing potentials for the $\\bar NN$ and $\\bar ΛΛ$ channels, and for the $\\bar NN\\to\\barΛΛ$ transition, up to next-to-leading order in the chiral expansion, supplemented by a phenomenological part to account for annihilation processes. An excellent reproduction of data from the PS185 experiment at CERN up to momenta of $1.55$ GeV/c is achieved. When including higher-order contact terms in the analysis the range of agreement can be extended up to momenta around $1.65$ GeV/c, where a complete set of scattering observables is available. Predictions for $\\barΛΛ$ scattering are provided and compared to results from the literature.",
-"citR": [],
-"citE": [
-"2817040"
-],
-"topR": [
-[
-0.003,
-"3184726"
-],
-[
-0.002,
-"2690106"
-],
-[
-0.002,
-"2860896"
-]
-],
-"topE": [
-[
-0.007,
-"3193100"
-],
-[
-0.005,
-"2817040"
-],
-[
-0.005,
-"3216851"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.06,
-0.01,
-0.02,
-0.0,
-0.0
-],
-"score": 2.6
-},
-{
 "arxiv": "2608.15944",
 "section": "replacement",
 "recid": "3191711",
@@ -3538,7 +3538,7 @@
 "3152706"
 ],
 [
-0.017,
+0.018,
 "2802615"
 ],
 [
@@ -3595,11 +3595,11 @@
 ],
 [
 0.013,
-"3193100"
+"3095771"
 ],
 [
 0.013,
-"3095771"
+"2817040"
 ]
 ],
 "isme": false,
@@ -3955,7 +3955,7 @@
 0.0,
 0.1
 ],
-"score": 1.7
+"score": 1.6
 },
 {
 "arxiv": "2611.14388",
@@ -4010,61 +4010,6 @@
 0.0
 ],
 "score": 1.6
-},
-{
-"arxiv": "2611.26443",
-"section": "cross",
-"recid": "3231429",
-"src": "INSPIRE",
-"nref": 668,
-"title": "Review of Pion and Nucleon Gluon Parton Distribution Functions from Lattice QCD",
-"authors": [
-"William Good",
-"Huey-Wen Lin"
-],
-"abstract": "Gluons play an essential role in the strong interaction that binds quarks into hadrons, as described by quantum chromodynamics (QCD). Understanding how the fundamental dynamics of QCD give rise to hadron structure remains one of the outstanding challenges in nuclear and particle physics. Parton distribution functions (PDFs) provide a successful framework for describing high-energy scattering processes involving hadrons. However, our knowledge of gluon PDFs remains comparatively limited because of the experimental challenges associated with directly constraining the gluon structure of hadrons. In recent years, a major breakthrough has enabled the calculation of the Bjorken-$x$ dependence of PDFs directly from lattice QCD. Among the available approaches, the large-momentum effective theory (LaMET) and pseudo-PDF frameworks have emerged as the most widely used methods and have produced the majority of lattice determinations of parton distributions. These developments have sparked rapid progress in first-principles studies of the $x$-dependent structure of hadrons, including gluon PDFs of the nucleon and pseudoscalar mesons. In this review, we summarize recent advances in lattice QCD calculations of gluon PDFs {using the LaMET and pseudo-PDF methods}, discuss the current status and impacts of these developments, and highlight the remaining challenges and future opportunities.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.008,
-"3094526"
-],
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-]
-],
-"topE": [
-[
-0.021,
-"3193100"
-],
-[
-0.016,
-"2817040"
-],
-[
-0.013,
-"3127309"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.02,
-0.06,
-0.0,
-0.0
-],
-"score": 1.5
 },
 {
 "arxiv": "2611.24946",
@@ -4157,7 +4102,7 @@
 "2815960"
 ],
 [
-0.014,
+0.013,
 "2972436"
 ],
 [
@@ -4177,6 +4122,117 @@
 0.0
 ],
 "score": 1.4
+},
+{
+"arxiv": "2611.26443",
+"section": "cross",
+"recid": "3231429",
+"src": "INSPIRE",
+"nref": 668,
+"title": "Review of Pion and Nucleon Gluon Parton Distribution Functions from Lattice QCD",
+"authors": [
+"William Good",
+"Huey-Wen Lin"
+],
+"abstract": "Gluons play an essential role in the strong interaction that binds quarks into hadrons, as described by quantum chromodynamics (QCD). Understanding how the fundamental dynamics of QCD give rise to hadron structure remains one of the outstanding challenges in nuclear and particle physics. Parton distribution functions (PDFs) provide a successful framework for describing high-energy scattering processes involving hadrons. However, our knowledge of gluon PDFs remains comparatively limited because of the experimental challenges associated with directly constraining the gluon structure of hadrons. In recent years, a major breakthrough has enabled the calculation of the Bjorken-$x$ dependence of PDFs directly from lattice QCD. Among the available approaches, the large-momentum effective theory (LaMET) and pseudo-PDF frameworks have emerged as the most widely used methods and have produced the majority of lattice determinations of parton distributions. These developments have sparked rapid progress in first-principles studies of the $x$-dependent structure of hadrons, including gluon PDFs of the nucleon and pseudoscalar mesons. In this review, we summarize recent advances in lattice QCD calculations of gluon PDFs {using the LaMET and pseudo-PDF methods}, discuss the current status and impacts of these developments, and highlight the remaining challenges and future opportunities.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.008,
+"3094526"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.016,
+"2817040"
+],
+[
+0.014,
+"3193100"
+],
+[
+0.013,
+"3127309"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.02,
+0.05,
+0.0,
+0.0
+],
+"score": 1.3
+},
+{
+"arxiv": "2611.25910",
+"section": "new",
+"recid": "3231896",
+"src": "INSPIRE",
+"nref": 66,
+"title": "New unintegrated gluon density in proton and nuclei tested with small $x$ processes at modern colliders",
+"authors": [
+"Maxim Malyshev",
+"Artem Lipatov",
+"Gennady Lykasov"
+],
+"abstract": "We present a new unintegrated, or transverse momentum dependent (TMD) gluon density in proton and nuclei. Parameters of the new function have been obtained from a fit on inclusive soft charged hadron production and structure functions at low scales, and from comparison with data on a number of processes at higher scales results taken at LHC and HERA, such as heavy quarks production, prompt photon photoproduction and Higgs boson production. A modification employing the geometric scaling approach has been made to extend the obtained parton density to the case of light and heavy nuclei. As a test of the nuclear TMD distribution we perform a calculation of the charged hadrons multiplicity spectra in pPb collisions at the LHC energies.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.025,
+"2658297"
+],
+[
+0.02,
+"3074282"
+],
+[
+0.019,
+"2817040"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.07,
+0.0,
+0.0
+],
+"score": 1.1
 },
 {
 "arxiv": "2611.26026",
@@ -4217,7 +4273,7 @@
 ],
 [
 0.015,
-"3193100"
+"1688995"
 ]
 ],
 "isme": false,
@@ -4292,61 +4348,6 @@
 "score": 0.9
 },
 {
-"arxiv": "2611.26374",
-"section": "cross",
-"recid": "3231070",
-"src": "INSPIRE",
-"nref": 84,
-"title": "Classification of Chern-Simons Couplings and Deformed Pull-Backs on D-Branes",
-"authors": [
-"Armin Hatefi",
-"Ehsan Hatefi"
-],
-"abstract": "We establish a framework for classifying higher-derivative Ramond-Ramond (RR) couplings on Dp-branes, focusing on the complete scattering amplitude of a closed-string RR state, a gauge field, and two transverse scalars. The low-energy expansion reveals infinite massless poles and local interaction terms, surpassing standard Myers and Taylor expansions. We propose a higher-class deformation of the pullback using mixed Chern-Simons transgression operators to address these complexities. Our three conjectures are as follows: 1. For fixed field content and derivative order, effective couplings form a finite-dimensional space under stated equivalences. 2. A family of mixed RR, gauge, and scalar interactions exists at all orders, represented by a finite number of effective even forms. 3. The higher-derivative contact-term sector can be constructed from a finite set of basic tensor structures using polynomials in derivative symbols. We introduce a higher-class pullback operator \\( P_{\\infty} \\) and mixed transgression operators \\( \\mathcal{T}_{\\infty} \\), emphasizing amplitude-derived pole residues and local contact terms as key physical data. This formalism distinguishes admissible tensor structures, presenting characteristic-form aspects as conjectures alongside their validity considerations.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.016,
-"626985"
-],
-[
-0.011,
-"606952"
-],
-[
-0.003,
-"1362180"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.05,
-0.0,
-0.0
-],
-"score": 0.7
-},
-{
 "arxiv": "2611.25401",
 "section": "new",
 "recid": "3231285",
@@ -4379,68 +4380,12 @@
 "2817040"
 ],
 [
-0.013,
-"3193100"
-],
-[
-0.011,
+0.012,
 "2942039"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.04,
-0.0,
-0.0
-],
-"score": 0.6
-},
-{
-"arxiv": "2611.25910",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 66,
-"title": "New unintegrated gluon density in proton and nuclei tested with small $x$ processes at modern colliders",
-"authors": [
-"Maxim Malyshev",
-"Artem Lipatov",
-"Gennady Lykasov"
-],
-"abstract": "We present a new unintegrated, or transverse momentum dependent (TMD) gluon density in proton and nuclei. Parameters of the new function have been obtained from a fit on inclusive soft charged hadron production and structure functions at low scales, and from comparison with data on a number of processes at higher scales results taken at LHC and HERA, such as heavy quarks production, prompt photon photoproduction and Higgs boson production. A modification employing the geometric scaling approach has been made to extend the obtained parton density to the case of light and heavy nuclei. As a test of the nuclear TMD distribution we perform a calculation of the charged hadrons multiplicity spectra in pPb collisions at the LHC energies.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
 ],
 [
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.015,
-"2815960"
-],
-[
-0.014,
-"3097570"
-],
-[
-0.011,
-"2952952"
+0.009,
+"3074282"
 ]
 ],
 "isme": false,
@@ -4510,6 +4455,172 @@
 0.0
 ],
 "score": 0.6
+},
+{
+"arxiv": "2611.26374",
+"section": "cross",
+"recid": "3231070",
+"src": "INSPIRE",
+"nref": 99,
+"title": "Classification of Chern-Simons Couplings and Deformed Pull-Backs on D-Branes",
+"authors": [
+"Armin Hatefi",
+"Ehsan Hatefi"
+],
+"abstract": "We establish a geometric framework for classifying higher-derivative Ramond-Ramond (RR) couplings on Dp-branes, focusing on the complete scattering amplitude of a closed-string RR state, a gauge field, and two transverse scalars. The low-energy expansion reveals infinite massless poles and local interaction terms that are beyond standard Myers and Taylor expansions. We propose a higher-class deformation of the pullback using mixed Chern-Simons transgression operators to address these complexities. We also propose a generalized class Chern character and three conjectures: (i) the finite dimensionality of independent couplings at fixed derivative order, (ii) the representation of all-order mixed RR-gauge-scalar interactions through finitely many effective even forms, and (iii) the generation of higher-derivative contact terms from finitely many primitive tensor structures. Our framework provides a systematic mathematical foundation for reconstructing D-brane effective actions and exploring their underlying geometric and cohomological structures. We also introduce a higher-class pullback operator \\( P_{\\infty} \\) and mixed transgression operators \\( \\mathcal{T}_{\\infty} \\), emphasizing amplitude-derived pole residues and local contact terms as key physical data. This formalism distinguishes admissible tensor structures, presenting characteristic-form aspects as conjectures alongside their validity and their constraints.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.015,
+"626985"
+],
+[
+0.014,
+"2969908"
+],
+[
+0.011,
+"606952"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.04,
+0.0,
+0.0
+],
+"score": 0.6
+},
+{
+"arxiv": "2611.25913",
+"section": "cross",
+"recid": "3231337",
+"src": "INSPIRE",
+"nref": 191,
+"title": "Nucleon Short-Range Correlations and Supersoft Nuclear Symmetry Energy: Compatibility with Massive Neutron Stars and GW170817",
+"authors": [
+"Hai-Xiang Zhu",
+"Bao-Jun Cai",
+"Yu-Gang Ma"
+],
+"abstract": "Massive neutron stars (NSs) require a sufficiently stiff core equation of state (EOS), while the relatively small tidal deformability inferred from GW170817 favors softer nuclear matter at intermediate densities. Given the importance of the nuclear symmetry energy in neutron-rich matter, an intriguing question arises: Can the symmetry energy become supersoft at high densities while remaining compatible with these seemingly competing constraints? Within the nonlinear Walecka framework, we demonstrate that nucleon short-range correlations (SRCs), manifested as a high-momentum tail (HMT) in the nucleon momentum distribution, can accommodate such behavior without introducing additional interaction parameters. We derive for the first time analytical expressions for the symmetry energy curvature $K_{\\rm{sym}}$ for both free Fermi gas (FFG) and HMT momentum distributions. Using model parameter sets that reproduce empirical nuclear matter properties around saturation density, we find that SRC-HMT yields substantially more negative $K_{\\rm{sym}}$ than the FFG case, allowing the symmetry energy to reach a maximum at low supra-saturation densities and subsequently decrease while the total pressure remains sufficient to support massive NSs. The resulting EOSs also predict smaller NS radii and tidal deformabilities consistent with GW170817. These results connect the microscopic nucleon momentum distribution with the density dependence of the symmetry energy and macroscopic NS properties.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.011,
+"3092207"
+],
+[
+0.006,
+"2091707"
+],
+[
+0.006,
+"2771132"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.03,
+0.0,
+0.0
+],
+"score": 0.5
+},
+{
+"arxiv": "2312.03578",
+"section": "replacement",
+"recid": "2731374",
+"src": "INSPIRE",
+"nref": 33,
+"title": "Charged pion production in the annihilation reactions $e^+ + e^- \\to p + \\bar{n} +π^-$ and $e^+ + e^- \\to n + \\bar{p} +π^+.$ Contribution of the nonresonant mechanism",
+"authors": [
+"M. I. Konchatnij",
+"N. P. Merenkov"
+],
+"abstract": "The nonresonant mechanism in the reactions $e^+\\,e^-\\to π^-\\,p\\,\\bar{n}$ and $e^+\\,e^-\\to π^+\\,n\\,\\bar{p}$ is investigated in frame of the one-photon exchange approximation. The description of the hadronic phase space and the invariant amplitude formalism, earlier developed for the neutral pion channel, are applied here. Some modification is required to fulfill the conservation of the hadron electromagnetic current and to account for an additional contribution due to diagram with the pion pole. The double and single distributions over the invariant variables as well the total cross section, are obtained. The results are plotted for $s=$5,\\,10,\\,16\\, GeV$^2$. The calculations are performed for the $π^-\\,p\\,\\bar{n}$ channel and the rules to proceed to the $π^+\\,n\\,\\bar{p}$ channel are formulated for every distribution.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.008,
+"3092207"
+],
+[
+0.007,
+"3193100"
+],
+[
+0.006,
+"3084653"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.02,
+0.0,
+0.0
+],
+"score": 0.4
 },
 {
 "arxiv": "2607.22403",
@@ -4623,117 +4734,6 @@
 0.0
 ],
 "score": 0.4
-},
-{
-"arxiv": "2611.25913",
-"section": "cross",
-"recid": "3231337",
-"src": "INSPIRE",
-"nref": 191,
-"title": "Nucleon Short-Range Correlations and Supersoft Nuclear Symmetry Energy: Compatibility with Massive Neutron Stars and GW170817",
-"authors": [
-"Hai-Xiang Zhu",
-"Bao-Jun Cai",
-"Yu-Gang Ma"
-],
-"abstract": "Massive neutron stars (NSs) require a sufficiently stiff core equation of state (EOS), while the relatively small tidal deformability inferred from GW170817 favors softer nuclear matter at intermediate densities. Given the importance of the nuclear symmetry energy in neutron-rich matter, an intriguing question arises: Can the symmetry energy become supersoft at high densities while remaining compatible with these seemingly competing constraints? Within the nonlinear Walecka framework, we demonstrate that nucleon short-range correlations (SRCs), manifested as a high-momentum tail (HMT) in the nucleon momentum distribution, can accommodate such behavior without introducing additional interaction parameters. We derive for the first time analytical expressions for the symmetry energy curvature $K_{\\rm{sym}}$ for both free Fermi gas (FFG) and HMT momentum distributions. Using model parameter sets that reproduce empirical nuclear matter properties around saturation density, we find that SRC-HMT yields substantially more negative $K_{\\rm{sym}}$ than the FFG case, allowing the symmetry energy to reach a maximum at low supra-saturation densities and subsequently decrease while the total pressure remains sufficient to support massive NSs. The resulting EOSs also predict smaller NS radii and tidal deformabilities consistent with GW170817. These results connect the microscopic nucleon momentum distribution with the density dependence of the symmetry energy and macroscopic NS properties.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.006,
-"2091707"
-],
-[
-0.006,
-"2771132"
-],
-[
-0.005,
-"2695608"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.02,
-0.0,
-0.0
-],
-"score": 0.3
-},
-{
-"arxiv": "2312.03578",
-"section": "replacement",
-"recid": "2731374",
-"src": "INSPIRE",
-"nref": 33,
-"title": "Charged pion production in the annihilation reactions $e^+ + e^- \\to p + \\bar{n} +π^-$ and $e^+ + e^- \\to n + \\bar{p} +π^+.$ Contribution of the nonresonant mechanism",
-"authors": [
-"M. I. Konchatnij",
-"N. P. Merenkov"
-],
-"abstract": "The nonresonant mechanism in the reactions $e^+\\,e^-\\to π^-\\,p\\,\\bar{n}$ and $e^+\\,e^-\\to π^+\\,n\\,\\bar{p}$ is investigated in frame of the one-photon exchange approximation. The description of the hadronic phase space and the invariant amplitude formalism, earlier developed for the neutral pion channel, are applied here. Some modification is required to fulfill the conservation of the hadron electromagnetic current and to account for an additional contribution due to diagram with the pion pole. The double and single distributions over the invariant variables as well the total cross section, are obtained. The results are plotted for $s=$5,\\,10,\\,16\\, GeV$^2$. The calculations are performed for the $π^-\\,p\\,\\bar{n}$ channel and the rules to proceed to the $π^+\\,n\\,\\bar{p}$ channel are formulated for every distribution.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.006,
-"3084653"
-],
-[
-0.005,
-"3193100"
-],
-[
-0.003,
-"2817040"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.02,
-0.0,
-0.0
-],
-"score": 0.3
 },
 {
 "arxiv": "2611.25188",
