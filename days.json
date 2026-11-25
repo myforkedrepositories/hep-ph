@@ -1,8 +1,36 @@
 [
  {
+  "date": "2026-11-25",
+  "page": "hep-ph-2026-11-25.html",
+  "built": "2026-11-25",
+  "code": "9ce8316673b1",
+  "nlist": 76,
+  "nrel": 19,
+  "top": [
+   {
+    "arxiv": "2610.23658",
+    "title": "Hidden Sector Relic Abundances from an Effective Planck Mass",
+    "score": 44.9,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2611.32925",
+    "title": "Multi-Component Axion Dark Matter Revisited and the Role of Ultralight ALPs",
+    "score": 43.7,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.31373",
+    "title": "Discovering Warped Extra Dimensions at Next Generation Dark Matter Detectors",
+    "score": 38.7,
+    "section": "new"
+   }
+  ]
+ },
+ {
   "date": "2026-11-24",
   "page": "hep-ph-2026-11-24.html",
-  "built": "2026-11-24",
+  "built": "2026-11-25",
   "code": "9ce8316673b1",
   "nlist": 117,
   "nrel": 36,
@@ -16,7 +44,7 @@
    {
     "arxiv": "2611.30799",
     "title": "Fermionic dark linear seesaw with an anomalous Majoron",
-    "score": 62.4,
+    "score": 62.5,
     "section": "new"
    },
    {
@@ -30,7 +58,7 @@
  {
   "date": "2026-11-23",
   "page": "hep-ph-2026-11-23.html",
-  "built": "2026-11-24",
+  "built": "2026-11-25",
   "code": "9ce8316673b1",
   "nlist": 60,
   "nrel": 13,

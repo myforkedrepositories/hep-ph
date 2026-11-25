@@ -19,22 +19,22 @@
 "2856850"
 ],
 "citE": [
-"3159193",
-"3127262",
 "3170413",
-"3206196",
+"3127262",
+"3159193",
 "3138530",
 "3167584",
+"3206196",
 "3118148",
 "2942039",
 "2944101",
 "2952952",
 "2933368",
-"3165814",
 "2962467",
+"3165814",
 "3033967",
-"1218029",
 "2858283",
+"1218029",
 "1842671",
 "2819170",
 "2860397",
@@ -106,9 +106,9 @@
 {
 "arxiv": "2611.30799",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 213,
+"recid": "3233342",
+"src": "INSPIRE",
+"nref": 227,
 "title": "Fermionic dark linear seesaw with an anomalous Majoron",
 "authors": [
 "A. Batra",
@@ -125,8 +125,8 @@
 "3092811",
 "3178456",
 "3152380",
-"2931725",
 "3193100",
+"2931725",
 "2134261",
 "2940264",
 "2623114",
@@ -149,7 +149,7 @@
 ],
 "topR": [
 [
-0.08,
+0.081,
 "3094526"
 ],
 [
@@ -157,21 +157,21 @@
 "1607572"
 ],
 [
-0.035,
+0.036,
 "1679809"
 ]
 ],
 "topE": [
 [
-0.354,
+0.355,
 "2656226"
 ],
 [
-0.176,
+0.177,
 "2638716"
 ],
 [
-0.17,
+0.171,
 "3088651"
 ]
 ],
@@ -191,7 +191,7 @@
 0.0,
 0.56
 ],
-"score": 62.4
+"score": 62.5
 },
 {
 "arxiv": "2611.28223",
@@ -531,7 +531,7 @@
 "section": "replacement",
 "recid": "3220170",
 "src": "INSPIRE",
-"nref": 61,
+"nref": 62,
 "title": "Inelastic Kinetic Decoupling in WIMP Leptogenesis: A Minimal $Z_4$ Model",
 "authors": [
 "An Liu",
@@ -548,7 +548,7 @@
 "2614919"
 ],
 [
-0.02,
+0.019,
 "2794409"
 ],
 [
@@ -558,15 +558,15 @@
 ],
 "topE": [
 [
-0.125,
+0.123,
 "2141293"
 ],
 [
-0.105,
+0.104,
 "2606513"
 ],
 [
-0.105,
+0.103,
 "2703905"
 ]
 ],
@@ -582,11 +582,69 @@
 "parts": [
 0.45,
 0.08,
-0.36,
+0.35,
 0.0,
 0.66
 ],
-"score": 30.2
+"score": 30.1
+},
+{
+"arxiv": "2611.30780",
+"section": "new",
+"recid": "3233338",
+"src": "INSPIRE",
+"nref": 51,
+"title": "Light on GeV-scale seesaw",
+"authors": [
+"Enrico Bertuzzo",
+"Michele Frigerio",
+"Salvador Urrea"
+],
+"abstract": "The next generation of beam-dump and accelerator-neutrino experiments will probe GeV-scale sterile neutrinos with unprecedented sensitivity. However, the tiny active-sterile mixing predicted by the minimal seesaw mechanism is expected to remain out of reach. Oscillation data require at least two sterile neutrinos, $N_1$ and $N_2$, which may couple to the photon through a transition dipole. Such a coupling can radically change the picture, both by strongly enhancing sterile-neutrino production and by opening new decay channels. We identify charged-lepton pairs produced by an off-shell photon as the most promising experimental signature. We show that the seesaw band can be probed by the T2K near detector for sterile-neutrino masses $m_N\\lesssim 500$ MeV, and by SHiP for $m_N\\lesssim 5$ GeV. For a sufficiently large dipole, $d\\gtrsim (10~\\mathrm{TeV})^{-1}$, SHiP can selectively measure decay channels that require nonzero active-sterile mixing. This would give rise to a distinctive hierarchy of signatures, providing a direct test of the seesaw mechanism.",
+"citR": [],
+"citE": [
+"3193100"
+],
+"topR": [
+[
+0.049,
+"1249404"
+],
+[
+0.039,
+"3184726"
+],
+[
+0.038,
+"3146383"
+]
+],
+"topE": [
+[
+0.176,
+"2835155"
+],
+[
+0.148,
+"3073459"
+],
+[
+0.135,
+"2836474"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.45,
+0.15,
+0.5,
+0.0,
+0.09
+],
+"score": 28.8
 },
 {
 "arxiv": "2611.28211",
@@ -649,64 +707,6 @@
 0.36
 ],
 "score": 28.7
-},
-{
-"arxiv": "2611.30780",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 50,
-"title": "Light on GeV-scale seesaw",
-"authors": [
-"Enrico Bertuzzo",
-"Michele Frigerio",
-"Salvador Urrea"
-],
-"abstract": "The next generation of beam-dump and accelerator-neutrino experiments will probe GeV-scale sterile neutrinos with unprecedented sensitivity. However, the tiny active-sterile mixing predicted by the minimal seesaw mechanism is expected to remain out of reach. Oscillation data require at least two sterile neutrinos, $N_1$ and $N_2$, which may couple to the photon through a transition dipole. Such a coupling can radically change the picture, both by strongly enhancing sterile-neutrino production and by opening new decay channels. We identify charged-lepton pairs produced by an off-shell photon as the most promising experimental signature. We show that the seesaw band can be probed by the T2K near detector for sterile-neutrino masses $m_N\\lesssim 500$ MeV, and by SHiP for $m_N\\lesssim 5$ GeV. For a sufficiently large dipole, $d\\gtrsim (10~\\mathrm{TeV})^{-1}$, SHiP can selectively measure decay channels that require nonzero active-sterile mixing. This would give rise to a distinctive hierarchy of signatures, providing a direct test of the seesaw mechanism.",
-"citR": [],
-"citE": [
-"3193100"
-],
-"topR": [
-[
-0.049,
-"1249404"
-],
-[
-0.039,
-"3184726"
-],
-[
-0.039,
-"3146383"
-]
-],
-"topE": [
-[
-0.169,
-"2835155"
-],
-[
-0.143,
-"3073459"
-],
-[
-0.126,
-"2836474"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.45,
-0.15,
-0.48,
-0.0,
-0.09
-],
-"score": 28.5
 },
 {
 "arxiv": "2611.28230",
@@ -833,8 +833,8 @@
 {
 "arxiv": "2611.31142",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3233390",
+"src": "INSPIRE",
 "nref": 78,
 "title": "A proposal for an LHC search for baryon number violation in complementarity with trilepton nucleon decay searches",
 "authors": [
@@ -866,7 +866,7 @@
 ],
 "topE": [
 [
-0.16,
+0.159,
 "1861353"
 ],
 [
@@ -884,8 +884,8 @@
 "watch": [],
 "parts": [
 0.48,
-0.1,
-0.46,
+0.09,
+0.45,
 0.0,
 0.0
 ],
@@ -896,7 +896,7 @@
 "section": "replacement",
 "recid": "3230948",
 "src": "INSPIRE",
-"nref": 53,
+"nref": 54,
 "title": "Search for Heavy Charged Higgs Bosons in Boosted Top and Bottom Quark Final States at a 1.4 TeV Future Lepton Collider",
 "authors": [
 "Majid Hashemi"
@@ -912,7 +912,7 @@
 "3094526"
 ],
 [
-0.041,
+0.04,
 "1455793"
 ],
 [
@@ -922,15 +922,15 @@
 ],
 "topE": [
 [
-0.094,
+0.093,
 "2183252"
 ],
 [
-0.087,
+0.09,
 "2932612"
 ],
 [
-0.084,
+0.089,
 "2972436"
 ]
 ],
@@ -1182,10 +1182,68 @@
 "score": 21.9
 },
 {
+"arxiv": "2611.30877",
+"section": "cross",
+"recid": "3233334",
+"src": "INSPIRE",
+"nref": 42,
+"title": "Unbinned Likelihoods for Probability Densities with Poles",
+"authors": [
+"Méril Reboud",
+"Danny van Dyk",
+"Matteo Verzeletti"
+],
+"abstract": "Unbinned likelihood fits to detector-level data become prohibitively expensive when narrow resonances interfere with a nonresonant amplitude. The convolution of the truth-level probability density with the detector resolution must then resolve the resonances, whose widths are much smaller than the resolution. We propose a simple approach that subtracts one simple-pole term per resonance from the probability density. This term captures the resonant contribution in closed form, and the smooth remainder is convolved numerically on a grid whose spacing is set by the resolution alone. The approach applies to multidimensional densities and to densities known only on the real axis. Using two benchmark problems, we quantify the accuracy, computational cost, and statistical impact of the approach. We emphasise that the subtraction is a general approach to the computational problems of unbinned likelihoods in the presence of poles in their probability density and that it is applicable to a wide variety of problems in experimental particle physics.",
+"citR": [],
+"citE": [
+"3193100"
+],
+"topR": [
+[
+0.019,
+"2751074"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.075,
+"2753529"
+],
+[
+0.039,
+"3144756"
+],
+[
+0.039,
+"3117426"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.45,
+0.05,
+0.21,
+0.0,
+0.0
+],
+"score": 20.4
+},
+{
 "arxiv": "2611.30764",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3233341",
+"src": "INSPIRE",
 "nref": 116,
 "title": "Fate of Vainshtein Screening for UV/IR Mixing with a $P(X)$ Higgs Classicalizer",
 "authors": [
@@ -1239,69 +1297,11 @@
 "score": 20.3
 },
 {
-"arxiv": "2611.30877",
-"section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 41,
-"title": "Unbinned Likelihoods for Probability Densities with Poles",
-"authors": [
-"Méril Reboud",
-"Danny van Dyk",
-"Matteo Verzeletti"
-],
-"abstract": "Unbinned likelihood fits to detector-level data become prohibitively expensive when narrow resonances interfere with a nonresonant amplitude. The convolution of the truth-level probability density with the detector resolution must then resolve the resonances, whose widths are much smaller than the resolution. We propose a simple approach that subtracts one simple-pole term per resonance from the probability density. This term captures the resonant contribution in closed form, and the smooth remainder is convolved numerically on a grid whose spacing is set by the resolution alone. The approach applies to multidimensional densities and to densities known only on the real axis. Using two benchmark problems, we quantify the accuracy, computational cost, and statistical impact of the approach. We emphasise that the subtraction is a general approach to the computational problems of unbinned likelihoods in the presence of poles in their probability density and that it is applicable to a wide variety of problems in experimental particle physics.",
-"citR": [],
-"citE": [
-"3193100"
-],
-"topR": [
-[
-0.017,
-"2751074"
-],
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-]
-],
-"topE": [
-[
-0.069,
-"2753529"
-],
-[
-0.036,
-"3144756"
-],
-[
-0.036,
-"3117426"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.45,
-0.04,
-0.2,
-0.0,
-0.0
-],
-"score": 20.0
-},
-{
 "arxiv": "2611.31130",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 74,
+"recid": "3233360",
+"src": "INSPIRE",
+"nref": 83,
 "title": "The Sensitivity of Gamma-Ray Searches for Dark Matter Annihilation in Milky Way Dwarf Galaxies: the LSST Era and Beyond",
 "authors": [
 "Ilumi Chavez",
@@ -1316,7 +1316,7 @@
 "citE": [],
 "topR": [
 [
-0.099,
+0.098,
 "1421624"
 ],
 [
@@ -1330,15 +1330,15 @@
 ],
 "topE": [
 [
-0.178,
+0.176,
 "2674992"
 ],
 [
-0.178,
+0.176,
 "2634487"
 ],
 [
-0.109,
+0.107,
 "1312198"
 ]
 ],
@@ -1353,11 +1353,11 @@
 "parts": [
 0.0,
 0.26,
-0.51,
+0.5,
 0.0,
 0.37
 ],
-"score": 19.1
+"score": 18.9
 },
 {
 "arxiv": "2611.30321",
@@ -1772,6 +1772,69 @@
 "score": 16.5
 },
 {
+"arxiv": "2511.22949",
+"section": "replacement",
+"recid": "3232885",
+"src": "INSPIRE",
+"nref": 92,
+"title": "Solving the Domain Wall Problem: Primordial Magnetic Fields as a Dynamical Solution",
+"authors": [
+"Zizhuo Zhao",
+"Yuefeng Di",
+"Ligong Bian",
+"Jing Shu"
+],
+"abstract": "To prevent overclosing the Universe, stable domain walls must decay-a problem typically addressed by breaking the Peccei-Quinn symmetry with a bias term. In this Letter, we present a novel mechanism in which a helical primordial magnetic field provides a spatially inhomogeneous Chern-Simons source that drives the axion field. We validate this mechanism through three-dimensional lattice simulations of the evolving domain-wall network, demonstrating its efficacy in inducing decay. Our quantitative analysis reveals that the correlation length of the primordial magnetic field is a crucial determinant of the decay rate of the network and the properties of the emitted axions and gravitational waves. In particular, the axion emitted from the decaying domain-wall network can contribute to the dark matter abundance, and the associated gravitational-wave signal lies in the frequency range probed by pulsar timing array experiments.",
+"citR": [],
+"citE": [
+"1783234"
+],
+"topR": [
+[
+0.059,
+"1941263"
+],
+[
+0.045,
+"1955022"
+],
+[
+0.033,
+"1607572"
+]
+],
+"topE": [
+[
+0.075,
+"2065390"
+],
+[
+0.067,
+"2134073"
+],
+[
+0.067,
+"2822193"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [
+"dark matter abundance",
+"dark matter",
+"gravitational wave"
+],
+"watch": [],
+"parts": [
+0.06,
+0.18,
+0.21,
+0.0,
+0.41
+],
+"score": 14.8
+},
+{
 "arxiv": "2611.29197",
 "section": "new",
 "recid": "3232234",
@@ -1830,69 +1893,6 @@
 0.13
 ],
 "score": 14.6
-},
-{
-"arxiv": "2511.22949",
-"section": "replacement",
-"recid": "3087412",
-"src": "INSPIRE",
-"nref": 60,
-"title": "Solving the Domain Wall Problem: Primordial Magnetic Fields as a Dynamical Solution",
-"authors": [
-"Zizhuo Zhao",
-"Yuefeng Di",
-"Ligong Bian",
-"Jing Shu"
-],
-"abstract": "To prevent overclosing the Universe, stable domain walls must decay-a problem typically addressed by breaking the Peccei-Quinn symmetry with a bias term. In this Letter, we present a novel mechanism in which a helical primordial magnetic field provides a spatially inhomogeneous Chern-Simons source that drives the axion field. We validate this mechanism through three-dimensional lattice simulations of the evolving domain-wall network, demonstrating its efficacy in inducing decay. Our quantitative analysis reveals that the correlation length of the primordial magnetic field is a crucial determinant of the decay rate of the network and the properties of the emitted axions and gravitational waves. In particular, the axion emitted from the decaying domain-wall network can contribute to the dark matter abundance, and the associated gravitational-wave signal lies in the frequency range probed by pulsar timing array experiments.",
-"citR": [],
-"citE": [
-"1783234"
-],
-"topR": [
-[
-0.043,
-"1607572"
-],
-[
-0.042,
-"2790381"
-],
-[
-0.036,
-"2663002"
-]
-],
-"topE": [
-[
-0.082,
-"2861922"
-],
-[
-0.075,
-"2065390"
-],
-[
-0.071,
-"2822193"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [
-"dark matter abundance",
-"dark matter",
-"gravitational wave"
-],
-"watch": [],
-"parts": [
-0.06,
-0.14,
-0.23,
-0.0,
-0.41
-],
-"score": 13.9
 },
 {
 "arxiv": "2606.28717",
@@ -2357,7 +2357,7 @@
 ],
 "topE": [
 [
-0.094,
+0.093,
 "3095306"
 ],
 [
@@ -2375,7 +2375,7 @@
 "watch": [],
 "parts": [
 0.06,
-0.1,
+0.09,
 0.27,
 0.0,
 0.0
@@ -2441,6 +2441,63 @@
 "score": 8.0
 },
 {
+"arxiv": "2611.30638",
+"section": "new",
+"recid": "3233321",
+"src": "INSPIRE",
+"nref": 140,
+"title": "Towards a Global CE$ν$NS Picture",
+"authors": [
+"Heerak Banerjee",
+"Philipp Eller"
+],
+"abstract": "We present a general framework for extracting and interpreting the Coherent Elastic Neutrino-Nucleus Scattering (CE$ν$NS) differential cross-section from experimental data. A generalized parametric basis, constructed from common kinematic terms recurring in generalized neutrino interaction models, is employed to numerically constrain the shape and normalization of the observed CE$ν$NS response. The framework was applied to the COHERENT CsI and liquid argon datasets using Bayesian inference, yielding normalization constraints comparable to those reported by the Collaboration while providing additional constraints on the correlated spectral shape. A combined analysis was also performed, exploiting the complementary sensitivities of the two datasets to constrain features of the differential cross-section that are less accessible to either dataset individually. The framework has been implemented in the open-source Julia package Newtrinos.jl, which supports modular forward modeling, parallel computation, and automatic differentiation.",
+"citR": [],
+"citE": [
+"2817040"
+],
+"topR": [
+[
+0.02,
+"1955022"
+],
+[
+0.014,
+"2794409"
+],
+[
+0.013,
+"3130296"
+]
+],
+"topE": [
+[
+0.086,
+"3092207"
+],
+[
+0.055,
+"3095306"
+],
+[
+0.034,
+"3207263"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.06,
+0.06,
+0.25,
+0.0,
+0.0
+],
+"score": 7.6
+},
+{
 "arxiv": "2606.16754",
 "section": "replacement",
 "recid": "3168717",
@@ -2501,63 +2558,6 @@
 0.0
 ],
 "score": 7.5
-},
-{
-"arxiv": "2611.30638",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 135,
-"title": "Towards a Global CE$ν$NS Picture",
-"authors": [
-"Heerak Banerjee",
-"Philipp Eller"
-],
-"abstract": "We present a general framework for extracting and interpreting the Coherent Elastic Neutrino-Nucleus Scattering (CE$ν$NS) differential cross-section from experimental data. A generalized parametric basis, constructed from common kinematic terms recurring in generalized neutrino interaction models, is employed to numerically constrain the shape and normalization of the observed CE$ν$NS response. The framework was applied to the COHERENT CsI and liquid argon datasets using Bayesian inference, yielding normalization constraints comparable to those reported by the Collaboration while providing additional constraints on the correlated spectral shape. A combined analysis was also performed, exploiting the complementary sensitivities of the two datasets to constrain features of the differential cross-section that are less accessible to either dataset individually. The framework has been implemented in the open-source Julia package Newtrinos.jl, which supports modular forward modeling, parallel computation, and automatic differentiation.",
-"citR": [],
-"citE": [
-"2817040"
-],
-"topR": [
-[
-0.015,
-"2794409"
-],
-[
-0.013,
-"3130296"
-],
-[
-0.013,
-"1955022"
-]
-],
-"topE": [
-[
-0.089,
-"3092207"
-],
-[
-0.057,
-"3095306"
-],
-[
-0.035,
-"3207263"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.06,
-0.05,
-0.26,
-0.0,
-0.0
-],
-"score": 7.3
 },
 {
 "arxiv": "2611.29939",
@@ -2843,6 +2843,62 @@
 0.0,
 0.07,
 0.23,
+0.0,
+0.0
+],
+"score": 5.6
+},
+{
+"arxiv": "2611.31011",
+"section": "new",
+"recid": "3233213",
+"src": "INSPIRE",
+"nref": 65,
+"title": "Lorentz symmetry in self-supervised representation learning",
+"authors": [
+"Andreas Hermansen",
+"Tobias Golling",
+"Slava Voloshynovskiy"
+],
+"abstract": "Self-supervised learning (SSL) and explicit physical inductive biases have driven major advances in jet tagging, yet they are typically pursued along separate tracks. In this work, we unify both paradigms by integrating the Lorentz-equivariant Geometric Algebra Transformer slim (L-GATr-slim) architecture with the LeJEPA framework for representation learning. Pre-training on 100 million jets from the JetClass dataset, we optimize towards a latent space, which is invariant across physics-motivated jet augmentations. We demonstrate that enforcing Lorentz symmetry in the latent space is critical for representation quality and that this can be achieved either architecturally or learned via kinematic augmentations. With a standard non-invariant Transformer backbone, LeJEPA outperforms established autoregressive, masked particle modelling, and self-distillation baselines in linear- and MLP-probe accuracy, with L-GATr-slim providing further complementary gains. Across downstream benchmarks, our pre-trained models consistently outperform baselines trained from scratch or through different pre-training objectives.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.042,
+"1455793"
+],
+[
+0.009,
+"1421624"
+],
+[
+0.007,
+"1693823"
+]
+],
+"topE": [
+[
+0.054,
+"3187354"
+],
+[
+0.043,
+"1674879"
+],
+[
+0.042,
+"2016443"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.11,
+0.15,
 0.0,
 0.0
 ],
@@ -3530,62 +3586,6 @@
 "score": 3.5
 },
 {
-"arxiv": "2611.31011",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 61,
-"title": "Lorentz symmetry in self-supervised representation learning",
-"authors": [
-"Andreas Hermansen",
-"Tobias Golling",
-"Slava Voloshynovskiy"
-],
-"abstract": "Self-supervised learning (SSL) and explicit physical inductive biases have driven major advances in jet tagging, yet they are typically pursued along separate tracks. In this work, we unify both paradigms by integrating the Lorentz-equivariant Geometric Algebra Transformer slim (L-GATr-slim) architecture with the LeJEPA framework for representation learning. Pre-training on 100 million jets from the JetClass dataset, we optimize towards a latent space, which is invariant across physics-motivated jet augmentations. We demonstrate that enforcing Lorentz symmetry in the latent space is critical for representation quality and that this can be achieved either architecturally or learned via kinematic augmentations. With a standard non-invariant Transformer backbone, LeJEPA outperforms established autoregressive, masked particle modelling, and self-distillation baselines in linear- and MLP-probe accuracy, with L-GATr-slim providing further complementary gains. Across downstream benchmarks, our pre-trained models consistently outperform baselines trained from scratch or through different pre-training objectives.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.024,
-"1455793"
-],
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-]
-],
-"topE": [
-[
-0.036,
-"1674879"
-],
-[
-0.035,
-"3187354"
-],
-[
-0.03,
-"2721859"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.06,
-0.1,
-0.0,
-0.0
-],
-"score": 3.3
-},
-{
 "arxiv": "2611.28160",
 "section": "new",
 "recid": "3232164",
@@ -4216,10 +4216,65 @@
 "score": 2.2
 },
 {
+"arxiv": "2603.09732",
+"section": "replacement",
+"recid": "3128057",
+"src": "INSPIRE",
+"nref": 37,
+"title": "Event-by-Event Multiplicity Cumulants as Probes of Partonic Energy Loss and Phase Structure in Au+Au Collisions within a Modified HIJING Model",
+"authors": [
+"Y. A. Rusak",
+"L. F. Babichev"
+],
+"abstract": "Event-by-event fluctuations of charged hadron multiplicity, net-proton, and net-electric charge are investigated in central Au+Au collisions at $\\sqrt{s_{NN}} =$ 20-200 GeV using a modified HIJING Monte Carlo generator. The model incorporates QCD-inspired partonic energy-loss formalisms in hot (quark--gluon plasma) and cold media, reducing reliance on the default HIJING energy-loss parameter. At energies above 100 GeV/nucleon, multiplicity and net-charge fluctuations show sensitivity to the assumed medium properties, while net-proton results provide an additional comparison with available STAR measurements. By introducing a probabilistic distribution for a first-order phase transition, we find within the present modified-HIJING framework that multiplicity cumulant ratios ($σ^2/M$ and $Sσ$) show a pronounced non-linear response to the adopted phase-allocation ansatz near the selected binodal energy, whereas net-charge and net-proton fluctuations remain relatively insensitive. Furthermore, expanding the kinematic acceptance enhances the sensitivity of multiplicity fluctuations to the selected transition region in the present phenomenological ansatz.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.016,
+"2787890"
+],
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+]
+],
+"topE": [
+[
+0.024,
+"3198665"
+],
+[
+0.015,
+"2706040"
+],
+[
+0.012,
+"2807770"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.04,
+0.07,
+0.0,
+0.0
+],
+"score": 2.2
+},
+{
 "arxiv": "2611.31107",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3233380",
+"src": "INSPIRE",
 "nref": 36,
 "title": "Electromagnetic Memory as a Collider Observable",
 "authors": [
@@ -4388,6 +4443,60 @@
 "score": 2.0
 },
 {
+"arxiv": "2611.31214",
+"section": "cross",
+"recid": "3233394",
+"src": "INSPIRE",
+"nref": 156,
+"title": "Massive de Sitter correlators at one loop",
+"authors": [
+"Amara McCune"
+],
+"abstract": "Fermions and massive fields charged under an unbroken symmetry couple to the inflaton only in pairs, so their signals in primordial correlators begin at one loop. Templates for these signals are mostly late-time estimates. Starting from a representation of massive de Sitter correlators as finite Mellin-Barnes integrals, we compute the exact squeezed coefficients of these signals and their corrections away from the squeezed limit. The leading coefficient factorizes into a hard part and a soft vertex. Late-time estimates treat the hard part exactly but approximate the soft vertex by its late-time limit, whereas we compute both exactly. Without a chemical potential, the exact coefficient differs from the late-time one by a universal factor that depends only on the masses in the loop and the coupling at the soft vertex. For the heavy Standard Model loops, the exact signals are ten to thirty times larger than their late-time estimates. With a chemical potential, the ratio depends on the model, and at our benchmarks it reaches a factor of thirty for helical vectors and about a hundred for the fermion triangle, where we agree with recent exact results. Away from the squeezed limit the leading term soon fails, mainly through a drift in the phase of the oscillation, which we derive for scalar and fermion loops.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.045,
+"2737356"
+],
+[
+0.024,
+"2154677"
+],
+[
+0.014,
+"3070661"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.13,
+0.0,
+0.0
+],
+"score": 1.9
+},
+{
 "arxiv": "2611.29670",
 "section": "cross",
 "recid": "3232329",
@@ -4443,60 +4552,6 @@
 "score": 1.8
 },
 {
-"arxiv": "2611.31214",
-"section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 154,
-"title": "Massive de Sitter correlators at one loop",
-"authors": [
-"Amara McCune"
-],
-"abstract": "Fermions and massive fields charged under an unbroken symmetry couple to the inflaton only in pairs, so their signals in primordial correlators begin at one loop. Templates for these signals are mostly late-time estimates. Starting from a representation of massive de Sitter correlators as finite Mellin-Barnes integrals, we compute the exact squeezed coefficients of these signals and their corrections away from the squeezed limit. The leading coefficient factorizes into a hard part and a soft vertex. Late-time estimates treat the hard part exactly but approximate the soft vertex by its late-time limit, whereas we compute both exactly. Without a chemical potential, the exact coefficient differs from the late-time one by a universal factor that depends only on the masses in the loop and the coupling at the soft vertex. For the heavy Standard Model loops, the exact signals are ten to thirty times larger than their late-time estimates. With a chemical potential, the ratio depends on the model, and at our benchmarks it reaches a factor of thirty for helical vectors and about a hundred for the fermion triangle, where we agree with recent exact results. Away from the squeezed limit the leading term soon fails, mainly through a drift in the phase of the oscillation, which we derive for scalar and fermion loops.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.041,
-"2737356"
-],
-[
-0.024,
-"2154677"
-],
-[
-0.014,
-"3070661"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.12,
-0.0,
-0.0
-],
-"score": 1.8
-},
-{
 "arxiv": "2611.28513",
 "section": "cross",
 "recid": "3232228",
@@ -4546,60 +4601,6 @@
 0.0,
 0.02,
 0.07,
-0.0,
-0.0
-],
-"score": 1.7
-},
-{
-"arxiv": "2610.10921",
-"section": "replacement",
-"recid": "3212856",
-"src": "INSPIRE",
-"nref": 84,
-"title": "Massive de Sitter Correlators as Finite Mellin-Barnes Integrals",
-"authors": [
-"Amara McCune"
-],
-"abstract": "Using the Mellin-Barnes representation of de Sitter propagators, we reduce tree-level heavy-particle exchange to finite integrals that converge at physical kinematics on mass-independent contours, and one-loop diagrams to the same integrand times a flat-space momentum factor. We compute the complete one-loop triangle at general masses, with its collider signal in closed form to all orders in the squeezed-limit expansion, and give the triple-exchange bispectrum at arbitrary heavy masses as a double series that converges at every physical shape. The loop reduction also applies at strong mixing.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.039,
-"2154677"
-],
-[
-0.032,
-"2737356"
-],
-[
-0.015,
-"3075243"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.11,
 0.0,
 0.0
 ],
@@ -4665,11 +4666,65 @@
 "score": 1.5
 },
 {
+"arxiv": "2610.10921",
+"section": "replacement",
+"recid": "3212856",
+"src": "INSPIRE",
+"nref": 99,
+"title": "Massive de Sitter Correlators as Finite Mellin-Barnes Integrals",
+"authors": [
+"Amara McCune"
+],
+"abstract": "Using the Mellin-Barnes representation of de Sitter propagators, we reduce tree-level heavy-particle exchange to finite integrals that converge at physical kinematics on mass-independent contours, and one-loop diagrams to the same integrand times a flat-space momentum factor. We compute the complete one-loop triangle at general masses, with its collider signal in closed form to all orders in the squeezed-limit expansion, and give the triple-exchange bispectrum at arbitrary heavy masses as a double series that converges at every physical shape. The loop reduction also applies at strong mixing.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.036,
+"2154677"
+],
+[
+0.029,
+"2737356"
+],
+[
+0.014,
+"3075243"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.1,
+0.0,
+0.0
+],
+"score": 1.5
+},
+{
 "arxiv": "2611.31080",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 53,
+"recid": "3233388",
+"src": "INSPIRE",
+"nref": 52,
 "title": "Kaon-pair production with NNLO effects",
 "authors": [
 "Yizhou Fang",
@@ -4778,61 +4833,6 @@
 "score": 1.4
 },
 {
-"arxiv": "2603.09732",
-"section": "replacement",
-"recid": "3128057",
-"src": "INSPIRE",
-"nref": 27,
-"title": "Event-by-Event Multiplicity Cumulants as Probes of Partonic Energy Loss and Phase Structure in Au+Au Collisions within a Modified HIJING Model",
-"authors": [
-"Y. A. Rusak",
-"L. F. Babichev"
-],
-"abstract": "Event-by-event fluctuations of charged hadron multiplicity, net-proton, and net-electric charge are investigated in central Au+Au collisions at $\\sqrt{s_{NN}} =$ 20-200 GeV using a modified HIJING Monte Carlo generator. The model incorporates QCD-inspired partonic energy-loss formalisms in hot (quark--gluon plasma) and cold media, reducing reliance on the default HIJING energy-loss parameter. At energies above 100 GeV/nucleon, multiplicity and net-charge fluctuations show sensitivity to the assumed medium properties, while net-proton results provide an additional comparison with available STAR measurements. By introducing a probabilistic distribution for a first-order phase transition, we find within the present modified-HIJING framework that multiplicity cumulant ratios ($σ^2/M$ and $Sσ$) show a pronounced non-linear response to the adopted phase-allocation ansatz near the selected binodal energy, whereas net-charge and net-proton fluctuations remain relatively insensitive. Furthermore, expanding the kinematic acceptance enhances the sensitivity of multiplicity fluctuations to the selected transition region in the present phenomenological ansatz.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.032,
-"3198665"
-],
-[
-0.0,
-"913031"
-],
-[
-0.0,
-"881902"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.09,
-0.0,
-0.0
-],
-"score": 1.4
-},
-{
 "arxiv": "2611.29072",
 "section": "new",
 "recid": "3232229",
@@ -4891,7 +4891,7 @@
 "section": "replacement",
 "recid": "3217346",
 "src": "INSPIRE",
-"nref": 43,
+"nref": 44,
 "title": "Production of the weakly bound $T_{cc}^+$ state combining the coalescence model with its mass spectrum",
 "authors": [
 "Ao Wang",
@@ -4941,61 +4941,6 @@
 0.0
 ],
 "score": 1.2
-},
-{
-"arxiv": "2611.30712",
-"section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 27,
-"title": "Exact analytic solutions for the $n=1$ chameleon field in planar systems with an arbitrary number of uniform layers",
-"authors": [
-"Chad Briddon",
-"Mario Pitschmann"
-],
-"abstract": "Scalar fields have long been investigated as a potential dark energy candidate. Of these models, screened scalar fields like the chameleon have received interest due to their ability to avoid observational constraints. However, the non-linear nature of these models has led to there being only a small number of exact analytic solutions within the literature. In this work, we present exact analytic solutions for the $n=1$ chameleon model in a planar system consisting of $N$ discrete regions of uniform density. We compare these to the relevant approximate solutions within the literature. We also use our solutions to forecast constraints from CANNEX, a recent experiment devised to measure Casimir forces and detect hypothetical fifth forces. Unlike in previous works, we consider the full fifteen-layered setup of CANNEX, as opposed to treating the plate and wall as single uniform objects. Doing so revealed an increase in the induced chameleon pressure of up to $\\sim 7 \\%$. However, the resulting gain is insufficient to probe new regions of parameter space at the projected sensitivities.",
-"citR": [],
-"citE": [],
-"topR": [
-[
-0.0,
-"926166"
-],
-[
-0.0,
-"860906"
-],
-[
-0.0,
-"824906"
-]
-],
-"topE": [
-[
-0.026,
-"2789509"
-],
-[
-0.025,
-"2784382"
-],
-[
-0.022,
-"2145346"
-]
-],
-"isme": false,
-"coauthors": [],
-"topics": [],
-"watch": [],
-"parts": [
-0.0,
-0.0,
-0.07,
-0.0,
-0.0
-],
-"score": 1.1
 },
 {
 "arxiv": "2611.28206",
@@ -5054,9 +4999,9 @@
 {
 "arxiv": "2611.31050",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 53,
+"recid": "3233253",
+"src": "INSPIRE",
+"nref": 54,
 "title": "Gradient formula from the sphere for perturbative RG flows near critical dimensions",
 "authors": [
 "Marten Reehorst"
@@ -5084,11 +5029,11 @@
 "2718919"
 ],
 [
-0.011,
+0.012,
 "3092194"
 ],
 [
-0.009,
+0.01,
 "2898226"
 ]
 ],
@@ -5099,7 +5044,7 @@
 "parts": [
 0.0,
 0.0,
-0.06,
+0.07,
 0.0,
 0.0
 ],
@@ -5158,6 +5103,61 @@
 0.0
 ],
 "score": 1.0
+},
+{
+"arxiv": "2611.30712",
+"section": "new",
+"recid": "3233337",
+"src": "INSPIRE",
+"nref": 26,
+"title": "Exact analytic solutions for the $n=1$ chameleon field in planar systems with an arbitrary number of uniform layers",
+"authors": [
+"Chad Briddon",
+"Mario Pitschmann"
+],
+"abstract": "Scalar fields have long been investigated as a potential dark energy candidate. Of these models, screened scalar fields like the chameleon have received interest due to their ability to avoid observational constraints. However, the non-linear nature of these models has led to there being only a small number of exact analytic solutions within the literature. In this work, we present exact analytic solutions for the $n=1$ chameleon model in a planar system consisting of $N$ discrete regions of uniform density. We compare these to the relevant approximate solutions within the literature. We also use our solutions to forecast constraints from CANNEX, a recent experiment devised to measure Casimir forces and detect hypothetical fifth forces. Unlike in previous works, we consider the full fifteen-layered setup of CANNEX, as opposed to treating the plate and wall as single uniform objects. Doing so revealed an increase in the induced chameleon pressure of up to $\\sim 7 \\%$. However, the resulting gain is insufficient to probe new regions of parameter space at the projected sensitivities.",
+"citR": [],
+"citE": [],
+"topR": [
+[
+0.0,
+"926166"
+],
+[
+0.0,
+"860906"
+],
+[
+0.0,
+"824906"
+]
+],
+"topE": [
+[
+0.022,
+"2789509"
+],
+[
+0.022,
+"2784382"
+],
+[
+0.019,
+"2145346"
+]
+],
+"isme": false,
+"coauthors": [],
+"topics": [],
+"watch": [],
+"parts": [
+0.0,
+0.0,
+0.06,
+0.0,
+0.0
+],
+"score": 0.9
 },
 {
 "arxiv": "2609.28700",
@@ -5219,7 +5219,7 @@
 "section": "replacement",
 "recid": "3189177",
 "src": "INSPIRE",
-"nref": 51,
+"nref": 54,
 "title": "Matrix Multiverses Meet Multiple Mythologies",
 "authors": [
 "Sidan A",
@@ -5250,11 +5250,11 @@
 ],
 [
 0.017,
-"2826986"
+"3150418"
 ],
 [
-0.015,
-"3090372"
+0.017,
+"2826986"
 ]
 ],
 "isme": false,
@@ -5550,8 +5550,8 @@
 {
 "arxiv": "2611.30535",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
+"recid": "3233294",
+"src": "INSPIRE",
 "nref": 46,
 "title": "Chiral crossover responses in a magnetic field: Finite-$μ_5$ matching in the NJL model",
 "authors": [
@@ -5604,9 +5604,9 @@
 {
 "arxiv": "2611.30698",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 72,
+"recid": "3233335",
+"src": "INSPIRE",
+"nref": 76,
 "title": "Construction of a conserved energy-momentum tensor of the Skyrmion coupled to additional dynamical degrees in the large-$N_c$ expansion",
 "authors": [
 "Mitsuru Tanaka",
@@ -5660,9 +5660,9 @@
 {
 "arxiv": "2611.30755",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 74,
+"recid": "3233345",
+"src": "INSPIRE",
+"nref": 75,
 "title": "A general formalism for electromagnetic production of two mesons on the nucleon",
 "authors": [
 "Reddy Malik Priandika",
@@ -5716,9 +5716,9 @@
 {
 "arxiv": "2611.30966",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 46,
+"recid": "3233383",
+"src": "INSPIRE",
+"nref": 47,
 "title": "Diffractive Photoproduction of High $p_T$ Photons in Ultraperipheral Collisions at the LHC",
 "authors": [
 "João V. Bulhões",
@@ -5771,9 +5771,9 @@
 {
 "arxiv": "2611.31168",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 171,
+"recid": "3233392",
+"src": "INSPIRE",
+"nref": 172,
 "title": "New analytic constraints for the soft anomalous dimension bootstrap at three loops",
 "authors": [
 "Einan Gardi",
@@ -5802,11 +5802,11 @@
 ],
 "topE": [
 [
-0.017,
+0.016,
 "3206672"
 ],
 [
-0.015,
+0.014,
 "3084425"
 ],
 [
@@ -5884,9 +5884,9 @@
 {
 "arxiv": "2611.30762",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
-"nref": 105,
+"recid": "3233350",
+"src": "INSPIRE",
+"nref": 114,
 "title": "Conservative tidal effects to third post-Minkowskian order in scalar-tensor theories",
 "authors": [
 "Zhengwen Liu",
@@ -5997,7 +5997,7 @@
 "section": "replacement",
 "recid": "3228789",
 "src": "INSPIRE",
-"nref": 77,
+"nref": 98,
 "title": "RG evolution of the $B$-meson LCDA and radiative jet function at three loops",
 "authors": [
 "Ze Long Liu",
@@ -6024,15 +6024,15 @@
 "topE": [
 [
 0.014,
-"2163299"
-],
-[
-0.013,
 "2817040"
 ],
 [
-0.012,
+0.013,
 "1688995"
+],
+[
+0.012,
+"2163299"
 ]
 ],
 "isme": false,
@@ -6223,7 +6223,7 @@
 "section": "replacement",
 "recid": "2929331",
 "src": "INSPIRE",
-"nref": 107,
+"nref": 110,
 "title": "Local-equilibrium theory of neutrino oscillations",
 "authors": [
 "Lucas Johns",
@@ -6267,7 +6267,7 @@
 "parts": [
 0.0,
 0.0,
-0.04,
+0.03,
 0.0,
 0.0
 ],
@@ -6385,9 +6385,9 @@
 {
 "arxiv": "2611.30475",
 "section": "new",
-"recid": "",
-"src": "arXiv source",
-"nref": 8,
+"recid": "3233291",
+"src": "INSPIRE",
+"nref": 7,
 "title": "Pion scattering in finite volume within the Inverse Amplitude Method: Extension to moving frames",
 "authors": [
 "Julián A. Sánchez",
@@ -6413,16 +6413,16 @@
 ],
 "topE": [
 [
-0.006,
+0.007,
 "2817040"
 ],
 [
-0.004,
+0.005,
 "3193100"
 ],
 [
-0.0,
-"913031"
+0.004,
+"1688995"
 ]
 ],
 "isme": false,
@@ -6611,8 +6611,8 @@
 {
 "arxiv": "2611.31040",
 "section": "cross",
-"recid": "",
-"src": "arXiv source",
+"recid": "3233371",
+"src": "INSPIRE",
 "nref": 51,
 "title": "Finite Temperature Isoscalar Instabilities and Moat Regimes in Relativistic Nuclear Matter",
 "authors": [

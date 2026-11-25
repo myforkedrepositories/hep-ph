@@ -1648,9 +1648,9 @@
 {
 "arxiv": "2511.02363",
 "section": "replacement",
-"recid": "3076737",
+"recid": "3233155",
 "src": "INSPIRE",
-"nref": 67,
+"nref": 72,
 "title": "Testing Electromagnetic Memory and Aharonov--Bohm Effect via Acceleration-Imprinted Superconducting Phases",
 "authors": [
 "Jie Sheng",
@@ -1677,11 +1677,11 @@
 ],
 "topE": [
 [
-0.081,
+0.082,
 "3196194"
 ],
 [
-0.016,
+0.017,
 "2877688"
 ],
 [
