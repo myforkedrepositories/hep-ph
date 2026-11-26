@@ -2914,7 +2914,7 @@
 "section": "new",
 "recid": "3233585",
 "src": "INSPIRE",
-"nref": 32,
+"nref": 33,
 "title": "Parton Branching evolution in updfevolv: NNLO spacelike evolution in the ZM-VFNS and NLO timelike evolution with heavy-flavour matching",
 "authors": [
 "H. Jung"
@@ -2938,15 +2938,15 @@
 ],
 "topE": [
 [
-0.031,
+0.03,
 "2658297"
 ],
 [
-0.029,
+0.028,
 "2817040"
 ],
 [
-0.026,
+0.025,
 "1688995"
 ]
 ],

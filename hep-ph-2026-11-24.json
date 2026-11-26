@@ -19,23 +19,23 @@
 "2856850"
 ],
 "citE": [
+"3159193",
 "3170413",
 "3127262",
-"3159193",
-"3138530",
-"3167584",
 "3206196",
+"3167584",
+"3138530",
 "3118148",
 "2942039",
 "2944101",
 "2952952",
 "2933368",
-"2962467",
 "3165814",
+"2962467",
 "3033967",
-"2858283",
 "1218029",
 "1842671",
+"2858283",
 "2819170",
 "2860397",
 "2784023",
@@ -45,8 +45,8 @@
 "875754",
 "2152955",
 "2795517",
-"2740358",
 "1803656",
+"2740358",
 "1607216",
 "2817040",
 "1518747"
@@ -117,16 +117,16 @@
 ],
 "abstract": "We propose a minimal fermionic realisation of the $\\textit{dark}$ linear seesaw with spontaneous breaking of lepton number. The small lepton-number-violating parameter responsible for linear-seesaw neutrino masses is generated radiatively by a $\\textit{dark}$ sector consisting of a singlet and a doublet fermion, together with scalar singlets. The global U(1)$_L$ symmetry is broken to a residual $\\mathcal{Z}_2$ under which the $\\textit{dark}$ sector is odd. This breaking yields a Majoron $J$ and makes the lightest $\\textit{dark}$ particle stable. The charged $\\textit{dark}$ fermion acquires its mass solely from U(1)$_L$ breaking and thus induces an anomalous Majoron coupling to photons. Current bounds on this coupling exclude a massless Majoron for TeV-scale U(1)$_L$ breaking. We add a linear term that breaks lepton number softly and gives the Majoron a GeV-scale mass. Such a Majoron decays into two photons and can be probed at beam-dump experiments. We study the dark matter phenomenology, focusing on the case where the stable particle is a fermionic weakly interacting massive particle. We analyse how the framework can be tested through charged-lepton flavour-violating decays such as $μ\\to eγ$, which receive contributions from both the $\\textit{dark}$ and the seesaw sectors. Moreover, both sectors enhance the Majoron couplings to charged leptons, so that the Majoron-emitting decays $τ\\to \\ell J$ ($\\ell = e,μ$) typically exceed $τ\\to \\ellγ$ by orders of magnitude and can probe parameter space beyond the reach of $μ\\to eγ$.",
 "citR": [
-"1365306",
-"3094526"
+"3094526",
+"1365306"
 ],
 "citE": [
 "3190925",
-"3092811",
 "3178456",
+"3092811",
 "3152380",
-"3193100",
 "2931725",
+"3193100",
 "2134261",
 "2940264",
 "2623114",
@@ -289,8 +289,8 @@
 "citE": [
 "3183927",
 "3193100",
-"1846923",
 "2134261",
+"1846923",
 "1929060"
 ],
 "topR": [

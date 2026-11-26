@@ -1,8 +1,36 @@
 [
  {
+  "date": "2026-11-26",
+  "page": "hep-ph-2026-11-26.html",
+  "built": "2026-11-26",
+  "code": "9ce8316673b1",
+  "nlist": 72,
+  "nrel": 18,
+  "top": [
+   {
+    "arxiv": "2606.13514",
+    "title": "Electroweak First-Order Phase Transition Triggered by Non-Gaussian Fluctuations of a $\\mathbb{Z}_2$-Symmetric Spectator Scalar",
+    "score": 40.0,
+    "section": "replacement"
+   },
+   {
+    "arxiv": "2611.34438",
+    "title": "Lighting up LZ with Loopy Transitions in a leptophilic Dark Sector",
+    "score": 36.0,
+    "section": "new"
+   },
+   {
+    "arxiv": "2611.17411",
+    "title": "HydróDex: gotta match 'em all!",
+    "score": 32.7,
+    "section": "replacement"
+   }
+  ]
+ },
+ {
   "date": "2026-11-25",
   "page": "hep-ph-2026-11-25.html",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "code": "9ce8316673b1",
   "nlist": 76,
   "nrel": 19,
@@ -30,7 +58,7 @@
  {
   "date": "2026-11-24",
   "page": "hep-ph-2026-11-24.html",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "code": "9ce8316673b1",
   "nlist": 117,
   "nrel": 36,
